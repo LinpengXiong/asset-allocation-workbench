@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="宏观、资产、产业、产品与组合配置的一体化资产配置工作台">
+  <title>资产配置工作台</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <div class="background-orb orb-one"></div>
+  <div class="background-orb orb-two"></div>
+
+  <main id="login-view" class="login-shell">
+    <section class="login-card">
+      <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="eyebrow">PRIVATE INVESTMENT ADVISORY</p>
+      <h1>资产配置工作台</h1>
+      <p class="login-copy">请输入访问密码。系统使用服务端验证，授权后可查看实时同步的数据与建议。</p>
+      <form id="login-form">
+        <label for="password">访问密码</label>
+        <div class="password-row">
+          <input id="password" name="password" type="password" autocomplete="current-password" required placeholder="请输入密码">
+          <button type="submit" class="primary-button">授权进入</button>
+        </div>
+        <p id="login-error" class="form-error" role="alert"></p>
+      </form>
+      <div class="login-foot"><span><i></i> 数据加密传输</span><span>12小时登录有效期</span></div>
+    </section>
+  </main>
+
+  <main id="app-view" class="app-shell" hidden>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">INVESTMENT ADVISORY SYSTEM</p>
+        <h1>资产配置工作台</h1>
+      </div>
+      <div class="topbar-actions">
+        <div class="live-status"><span></span><div><strong id="freshness">正在同步</strong><small id="data-date">数据日 —</small></div></div>
+        <button id="refresh-button" class="ghost-button">同步最新</button>
+        <button id="logout-button" class="ghost-button">退出</button>
+      </div>
+    </header>
+
+    <div id="data-banner" class="data-banner"><strong id="data-status">数据状态</strong><span id="data-note">正在获取数据…</span><em id="sync-message"></em></div>
+
+    <nav id="tabs" class="tabs" aria-label="系统页面">
+      <button data-tab="macro" class="active">宏观</button>
+      <button data-tab="assets">大类资产</button>
+      <button data-tab="meso">中观</button>
+      <button data-tab="micro">微观</button>
+      <button data-tab="allocation">资产配置</button>
+    </nav>
+
+    <div id="content" class="content" aria-live="polite"></div>
+
+    <footer><span>数据自动同步 · 观点保留来源、时点与触发条件</span><strong>纪律化决策支持，不构成投资建议</strong></footer>
+  </main>
+</body>
+</html>

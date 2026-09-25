@@ -1,0 +1,10 @@
+{
+  "provider": "wind",
+  "mode": "collector-bridge",
+  "cliPath": "~/.agents/skills/wind-mcp-skill/scripts/cli.mjs",
+  "serverType": "economic_data",
+  "searchTool": "search_economic_indicator",
+  "queryTool": "query_economic_indicator_data",
+  "publish": false,
+  "notes": "Wind CLI runs outside Cloudflare Worker. Keep WIND_API_KEY in Wind's own local credential store; never put it in this file or the Worker."
+}

@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-07-29",
+  "collectedAt": "2026-07-29T16:14:20+08:00",
+  "status": "partial",
+  "index": {
+    "name": "上证指数",
+    "code": "000001.SH",
+    "value": 3828.47,
+    "changePct": 0.4,
+    "observedAt": "2026-07-29T16:14:20+08:00",
+    "sourceId": "tencent-sh000001-20260729"
+  },
+  "currentHoldings": {
+    "股票": 0.65,
+    "债券": 0.1,
+    "商品": 0.2,
+    "另类": 0.05
+  },
+  "factors": [
+    {
+      "asset": "股票",
+      "factor": "盈利趋势",
+      "indicator": "全A盈利预测修正、ROE与盈利扩散",
+      "weight": 0.25,
+      "score": 0,
+      "frequency": "月/季",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "股票",
+      "factor": "政策与流动性",
+      "indicator": "社融、M1、货币与资本市场政策",
+      "weight": 0.2,
+      "score": 0,
+      "frequency": "月/事件",
+      "evidence": "截至2026-06末，M2同比增长8.0%、M1增长4.0%、人民币贷款余额增长5.2%、社会融资规模存量增长7.4%；2026-07-20公布的1年期和5年期以上LPR分别维持3.0%和3.5%。流动性取向仍偏支持，但金融总量增速较5月边际放缓，方向相互抵消，评分记中性。",
+      "sourceIds": [
+        "gov-pbc-finance-20260715",
+        "chinamoney-lpr-20260720"
+      ],
+      "verified": true
+    },
+    {
+      "asset": "股票",
+      "factor": "估值赔率",
+      "indicator": "ERP、PE/PB分位与股债性价比",
+      "weight": 0.2,
+      "score": 0,
+      "frequency": "周",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "股票",
+      "factor": "趋势与资金",
+      "indicator": "中期趋势、ETF与两融资金",
+      "weight": 0.2,
+      "score": 0,
+      "frequency": "周",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "股票",
+      "factor": "情绪与尾部风险",
+      "indicator": "拥挤度、波动率、信用与地缘风险",
+      "weight": 0.15,
+      "score": 0,
+      "frequency": "周/事件",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "债券",
+      "factor": "增长环境",
+      "indicator": "PMI、信贷脉冲、地产与财政落地",
+      "weight": 0.25,
+      "score": 0,
+      "frequency": "月",
+      "evidence": "2026年二季度GDP同比增长4.3%，6月制造业PMI为50.3%、规上工业增加值增长5.3%；但6月社零仅增长1.0%，上半年房地产开发投资下降18.0%。生产端扩张与内需、地产偏弱相互抵消；按债券口径，增长环境记中性。",
+      "sourceIds": [
+        "nbs-pmi-20260630",
+        "nbs-gdp-20260716",
+        "nbs-industrial-20260715",
+        "nbs-retail-20260715",
+        "nbs-property-20260715"
+      ],
+      "verified": true
+    },
+    {
+      "asset": "债券",
+      "factor": "通胀环境",
+      "indicator": "CPI/PPI、商品价格与通胀预期",
+      "weight": 0.2,
+      "score": 0,
+      "frequency": "月",
+      "evidence": "2026年6月CPI同比上涨1.0%、核心CPI上涨1.0%，通胀温和；PPI同比上涨4.1%，但环比下降0.3%。居民端温和与生产端同比涨幅偏高相互抵消，按债券口径记中性。",
+      "sourceIds": [
+        "nbs-cpi-20260709",
+        "nbs-ppi-20260709"
+      ],
+      "verified": true
+    },
+    {
+      "asset": "债券",
+      "factor": "货币政策",
+      "indicator": "OMO/MLF/LPR、资金利率",
+      "weight": 0.2,
+      "score": 0,
+      "frequency": "周/事件",
+      "evidence": "2026-07-20，1年期LPR为3.0%、5年期以上LPR为3.5%，与6月持平；国务院发布的央行数据同时显示货币政策继续保持适度宽松。宽松取向与本月政策利率未进一步下调并存，评分记中性。",
+      "sourceIds": [
+        "gov-pbc-finance-20260715",
+        "chinamoney-lpr-20260622",
+        "chinamoney-lpr-20260720"
+      ],
+      "verified": true
+    },
+    {
+      "asset": "债券",
+      "factor": "估值与期限利差",
+      "indicator": "10Y收益率分位、期限利差",
+      "weight": 0.2,
+      "score": -1,
+      "frequency": "周",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "债券",
+      "factor": "信用与趋势",
+      "indicator": "信用利差、违约风险、价格趋势",
+      "weight": 0.15,
+      "score": -1,
+      "frequency": "周",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "商品",
+      "factor": "通胀与再通胀",
+      "indicator": "通胀预期、PPI与库存周期",
+      "weight": 0.2,
+      "score": 1,
+      "frequency": "月",
+      "evidence": "2026年6月PPI同比上涨4.1%，其中生产资料价格上涨5.5%；CPI与核心CPI均同比上涨1.0%。再通胀信号主要集中在生产资料端，方向偏有利但未达到极端状态，维持+1。",
+      "sourceIds": [
+        "nbs-cpi-20260709",
+        "nbs-ppi-20260709"
+      ],
+      "verified": true
+    },
+    {
+      "asset": "商品",
+      "factor": "全球需求",
+      "indicator": "全球PMI、中国需求与贸易",
+      "weight": 0.2,
+      "score": 1,
+      "frequency": "月",
+      "evidence": "2026年6月制造业PMI为50.3%、新订单指数51.2%，规上工业增加值同比增长5.3%；上半年货物贸易增长16.9%，进口增长22.1%，能源和金属矿石等大宗商品进口量增长3.4%。需求证据总体偏有利但仍有国内消费与地产拖累，维持+1。",
+      "sourceIds": [
+        "nbs-pmi-20260630",
+        "nbs-industrial-20260715",
+        "gov-gac-trade-20260714"
+      ],
+      "verified": true
+    },
+    {
+      "asset": "商品",
+      "factor": "美元与实际利率",
+      "indicator": "DXY与美国实际利率",
+      "weight": 0.2,
+      "score": 1,
+      "frequency": "周",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "商品",
+      "factor": "供给与地缘",
+      "indicator": "供给约束、库存与地缘事件",
+      "weight": 0.25,
+      "score": 1,
+      "frequency": "周/事件",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "商品",
+      "factor": "价格趋势",
+      "indicator": "商品指数与趋势强度",
+      "weight": 0.15,
+      "score": 1,
+      "frequency": "周",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "另类",
+      "factor": "分散化需求",
+      "indicator": "股债相关性与组合尾部风险",
+      "weight": 0.25,
+      "score": 0,
+      "frequency": "月",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "另类",
+      "factor": "波动与趋势机会",
+      "indicator": "跨资产波动、趋势持续性",
+      "weight": 0.25,
+      "score": 0,
+      "frequency": "周",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "另类",
+      "factor": "Alpha与价差机会",
+      "indicator": "截面离散度、基差、相对价值",
+      "weight": 0.25,
+      "score": 0,
+      "frequency": "周",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "asset": "另类",
+      "factor": "成本与流动性",
+      "indicator": "策略容量、费用、保证金与赎回约束",
+      "weight": 0.25,
+      "score": -2,
+      "frequency": "月",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    }
+  ],
+  "styleFactors": [
+    {
+      "factor": "长端利率下行",
+      "score": 0,
+      "weight": 0.15,
+      "exposure": {
+        "dividend": 0.4,
+        "garp": 0.3,
+        "growth": 1
+      },
+      "methodology": "10Y国债收益率趋势下行记正分",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "factor": "盈利扩散改善",
+      "score": 0,
+      "weight": 0.2,
+      "exposure": {
+        "dividend": 0.3,
+        "garp": 1,
+        "growth": 0.6
+      },
+      "methodology": "盈利上修由少数行业向全市场扩散",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "factor": "风险偏好上升",
+      "score": 0,
+      "weight": 0.15,
+      "exposure": {
+        "dividend": -0.3,
+        "garp": 0.5,
+        "growth": 1
+      },
+      "methodology": "成交、融资、波动率和小盘相对强弱综合",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "factor": "科技产业政策增强",
+      "score": 0,
+      "weight": 0.15,
+      "exposure": {
+        "dividend": -0.3,
+        "garp": 0.4,
+        "growth": 1
+      },
+      "methodology": "政策强度与订单或资本开支相互验证",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "factor": "成长相对赔率改善",
+      "score": 0,
+      "weight": 0.2,
+      "exposure": {
+        "dividend": -1,
+        "garp": 0.4,
+        "growth": 1
+      },
+      "methodology": "成长相对价值估值差回到有利区间",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    },
+    {
+      "factor": "股息替代吸引力上升",
+      "score": 0,
+      "weight": 0.15,
+      "exposure": {
+        "dividend": 1,
+        "garp": 0,
+        "growth": -0.3
+      },
+      "methodology": "股息率与债券收益率之差走阔",
+      "evidence": "工作簿初始评分，待定时任务依据最新证据复核",
+      "sourceIds": [],
+      "verified": false
+    }
+  ],
+  "subTilts": {
+    "利率债": 0,
+    "高等级信用": 0,
+    "可转债": 0,
+    "REITs": 0,
+    "境外债": 0,
+    "量化CTA": 0,
+    "黄金": 0,
+    "宏观对冲": 0,
+    "宏观及期货": 0,
+    "市场中性": 0
+  },
+  "sources": [
+    {
+      "id": "tencent-sh000001-20260729",
+      "title": "上证指数实时行情",
+      "publisher": "腾讯财经",
+      "url": "https://qt.gtimg.cn/q=sh000001",
+      "observedAt": "2026-07-29T16:14:20+08:00",
+      "note": "收盘后行情快照；点位与涨跌幅直接取自接口。"
+    },
+    {
+      "id": "nbs-pmi-20260630",
+      "title": "2026年6月中国采购经理指数运行情况",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202606/t20260630_1964032.html",
+      "observedAt": "2026-06-30T09:30:00+08:00",
+      "note": "制造业PMI、生产、新订单及其他分项均取自官方发布。"
+    },
+    {
+      "id": "nbs-gdp-20260716",
+      "title": "2026年二季度和上半年国内生产总值初步核算结果",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260716_1964142.html",
+      "observedAt": "2026-07-16T09:30:00+08:00",
+      "note": "二季度和上半年GDP增速取自官方初步核算。"
+    },
+    {
+      "id": "nbs-industrial-20260715",
+      "title": "2026年6月份规模以上工业增加值增长5.3%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964123.html",
+      "observedAt": "2026-07-15T10:00:00+08:00",
+      "note": "工业增加值同比与环比数据取自官方发布。"
+    },
+    {
+      "id": "nbs-retail-20260715",
+      "title": "2026年上半年社会消费品零售总额增长1.3%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964127.html",
+      "observedAt": "2026-07-15T10:00:00+08:00",
+      "note": "6月与上半年社会消费品零售数据取自官方发布。"
+    },
+    {
+      "id": "nbs-property-20260715",
+      "title": "2026年1—6月份全国房地产市场基本情况",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/zwfwck/sjfb/202607/t20260715_1964126.html",
+      "observedAt": "2026-07-15T10:00:00+08:00",
+      "note": "房地产开发投资、销售和到位资金取自官方发布。"
+    },
+    {
+      "id": "nbs-cpi-20260709",
+      "title": "2026年6月份居民消费价格同比上涨1.0%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260709_1964084.html",
+      "observedAt": "2026-07-09T09:30:00+08:00",
+      "note": "CPI、核心CPI及环比数据取自官方发布。"
+    },
+    {
+      "id": "nbs-ppi-20260709",
+      "title": "2026年6月份工业生产者出厂价格同比上涨4.1% 环比下降0.3%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260709_1964083.html",
+      "observedAt": "2026-07-09T09:30:00+08:00",
+      "note": "PPI及生产资料分项取自官方发布。"
+    },
+    {
+      "id": "gov-pbc-finance-20260715",
+      "title": "2026年上半年人民币贷款与货币金融数据",
+      "publisher": "中国政府网（数据来源：中国人民银行）",
+      "url": "https://english.www.gov.cn/archive/statistics/202607/15/content_WS6a577323c6d00ca5f9a0c3b6.html",
+      "observedAt": "2026-07-15T19:46:00+08:00",
+      "note": "M2、M1、人民币贷款和社会融资规模存量数据来自中国人民银行。"
+    },
+    {
+      "id": "chinamoney-lpr-20260622",
+      "title": "2026年6月22日贷款市场报价利率（LPR）公告",
+      "publisher": "全国银行间同业拆借中心（中国货币网）",
+      "url": "https://www.chinamoney.com.cn/chinese/rdgz/20260622/3361525.html",
+      "observedAt": "2026-06-22T09:00:00+08:00",
+      "note": "1年期和5年期以上LPR取自受权发布公告。"
+    },
+    {
+      "id": "chinamoney-lpr-20260720",
+      "title": "2026年7月20日贷款市场报价利率（LPR）公告",
+      "publisher": "全国银行间同业拆借中心（中国货币网）",
+      "url": "https://www.chinamoney.com.cn/chinese/rdgz/20260720/3379021.html",
+      "observedAt": "2026-07-20T09:00:00+08:00",
+      "note": "1年期和5年期以上LPR取自受权发布公告。"
+    },
+    {
+      "id": "gov-gac-trade-20260714",
+      "title": "2026年上半年货物贸易数据",
+      "publisher": "中国政府网（数据来源：海关总署）",
+      "url": "https://english.www.gov.cn/archive/statistics/202607/14/content_WS6a55c183c6d00ca5f9a0c2da.html",
+      "observedAt": "2026-07-14T12:56:00+08:00",
+      "note": "进出口总额、进口增速及大宗商品进口量取自海关总署数据。"
+    }
+  ],
+  "notes": [
+    "上证指数已更新至2026-07-28收盘行情；本次依据6月及上半年官方数据、7月LPR政策事件核验6项大类因子，其余因子因未到周度全面复核日或缺少匹配口径的官方证据，保留上一期评分与待核验状态。",
+    "债券增长环境、通胀环境和货币政策由-1调整至0，单项变化均为1分；未发生超过1分的评分变化。currentHoldings保持不变。",
+    "本系统用于纪律化资产配置讨论，不构成投资建议或收益承诺。"
+  ]
+}

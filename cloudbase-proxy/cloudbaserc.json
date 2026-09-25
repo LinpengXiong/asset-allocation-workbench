@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.cloudbase.net/cli/cloudbaserc.schema.json",
+  "envId": "asset-allocation-cn-d7bm4ee66816",
+  "functionRoot": ".",
+  "functions": [
+    {
+      "name": "asset-allocation-cn",
+      "dir": ".",
+      "type": "Event",
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "timeout": 60,
+      "memorySize": 256,
+      "description": "China-accessible gateway for the protected asset-allocation dashboard"
+    }
+  ]
+}

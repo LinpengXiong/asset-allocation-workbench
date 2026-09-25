@@ -1,0 +1,9 @@
+{
+  "name": "asset-allocation-cn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "China-accessible CloudBase gateway for the protected asset-allocation dashboard",
+  "engines": {
+    "node": ">=20"
+  }
+}

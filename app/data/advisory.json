@@ -1,0 +1,3322 @@
+{
+  "updatedAt": "2026-07-29T20:25:00+08:00",
+  "dataThrough": "2026-08 / 2026-01—08",
+  "regime": "温和增长 · 结构分化",
+  "macroState": "状态 III｜中性平稳（暂定）",
+  "coreConflict": "外需与制造韧性，对冲内需、地产与信用传导偏弱",
+  "macroNote": "Excel 共 67 项指标；本期已核验 40 项。缺失或口径不匹配项不计分，因此暂不发布加权总分；状态 III 为基于已核验增长、价格、信用与政策证据的研究判断，不冒充完整模型结果。",
+  "macroPillars": [
+    {
+      "name": "经济运行",
+      "weight": "30%",
+      "signal": "中性",
+      "direction": "增长放缓、价格回升",
+      "evidence": "H1 GDP 4.7%，Q2 4.3%；CPI 1.0%、PPI 1.5%，制造业 PMI 50.3。增长仍在扩张区，但环比与内需动能放缓。",
+      "watch": "PMI 新订单、核心 CPI、就业、GDP 平减指数",
+      "role": "决定总风险预算、利率中枢与盈利名义增速",
+      "coverage": "13/20"
+    },
+    {
+      "name": "增长动力",
+      "weight": "25%",
+      "signal": "分化",
+      "direction": "出口与工业强、地产消费弱",
+      "evidence": "工业增加值 5.3%、工业利润 18.8%；社零 1.0%，FAI -5.7%、地产投资 -18.0%。进出口人民币口径较强，但美元口径待核验。",
+      "watch": "盈利扩散、居民收入、地产销售、民间投资",
+      "role": "判断盈利由少数行业扩散还是继续结构化",
+      "coverage": "11/24"
+    },
+    {
+      "name": "金融信贷",
+      "weight": "25%",
+      "signal": "偏弱",
+      "direction": "总量托底、私人信用不足",
+      "evidence": "社融存量 7.4%、贷款存量 5.2%，M1 4.0% 低于 M2 8.0%；居民贷款 H1 净减少。",
+      "watch": "M1-M2、居民中长贷、企业中长贷、信用利差",
+      "role": "判断流动性是否从银行体系进入实体与风险资产",
+      "coverage": "10/10"
+    },
+    {
+      "name": "政策制度",
+      "weight": "20%",
+      "signal": "积极但待传导",
+      "direction": "稳增长与稳市场并行",
+      "evidence": "财政收入 H1 +4.7%、支出 +1.5%；LPR 低位，专项债发行进度 47%，证监会强调逆周期与中长期资金。",
+      "watch": "专项债落地、土地收入、稳市工具、中长期资金新增",
+      "role": "降低尾部风险并改变结构性风险溢价",
+      "coverage": "6/13"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "基准",
+      "description": "增长温和、结构分化延续，政策托底且盈利缓慢修复。",
+      "trigger": "PMI 在荣枯线附近、信用不显著转弱、盈利逐季改善",
+      "action": "权益适度超配；红利、制造与 GARP 做底仓"
+    },
+    {
+      "name": "上行",
+      "description": "内需和信用传导改善，盈利扩散至消费与顺周期。",
+      "trigger": "M1 与居民中长贷连续改善、地产销售企稳",
+      "action": "增加消费、金融、顺周期和中小盘"
+    },
+    {
+      "name": "下行",
+      "description": "能源冲击、科技拥挤松动，国内需求继续走弱。",
+      "trigger": "油价、实际利率与波动率同步上行",
+      "action": "降低权益贝塔，增加短久期、CTA 与市场中性"
+    }
+  ],
+  "policyMeetings": [
+    {
+      "date": "2026-07-23",
+      "title": "证监会党的建设暨监管工作座谈会",
+      "core": "综合施策维护市场平稳运行，精准实施逆周期调节，推动中长期资金稳步提升入市规模和比例。",
+      "mapping": "稳市机制、中长期资金、投融资改革、上市公司治理与科技企业融资。",
+      "watch": "逆周期工具、中长期资金新增规模、基金与证券公司制度安排。",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7647101/content.shtml"
+    },
+    {
+      "date": "2026-07-20—21",
+      "title": "证监会投资者及市场主体系列座谈会",
+      "core": "围绕一二级市场逆周期调节、量化与 AI 规范、上市公司回报和稳市机制制度化听取意见。",
+      "mapping": "长期资金配置、高分红与治理改善、量化监管、再融资并购制度。",
+      "watch": "量化及 AI 规则、长期考核、分红治理和投资者保护制度。",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7646232/content.shtml"
+    },
+    {
+      "date": "2026-06-17—18",
+      "title": "2026 陆家嘴论坛",
+      "core": "投融资协调、服务新质生产力、稳步扩大金融制度型开放。",
+      "mapping": "科创板与创业板改革、并购重组、耐心资本、创投和科技成长。",
+      "watch": "改革细则与中长期资金入市规模。",
+      "url": "https://www.csrc.gov.cn/csrc/c106311/c7639684/content.shtml"
+    }
+  ],
+  "marketSnapshots": [
+    {
+      "name": "标普 500",
+      "ytd": "+9.32%",
+      "asOf": "2026-07-03"
+    },
+    {
+      "name": "纳斯达克",
+      "ytd": "+11.15%",
+      "asOf": "2026-07-03"
+    },
+    {
+      "name": "日经 225",
+      "ytd": "+38.55%",
+      "asOf": "2026-07-03"
+    },
+    {
+      "name": "MSCI 新兴市场",
+      "ytd": "+22.58%",
+      "asOf": "2026-07-03"
+    },
+    {
+      "name": "沪深 300",
+      "ytd": "+0.42%",
+      "asOf": "2026-07-24"
+    },
+    {
+      "name": "中证 500",
+      "ytd": "+0.90%",
+      "asOf": "2026-07-24"
+    },
+    {
+      "name": "中证 1000",
+      "ytd": "−7.89%",
+      "asOf": "2026-07-24"
+    },
+    {
+      "name": "恒生指数",
+      "ytd": "−2.60%",
+      "asOf": "2026-07-24"
+    },
+    {
+      "name": "大宗商品",
+      "ytd": "+12.20%",
+      "asOf": "2026-07-03"
+    },
+    {
+      "name": "黄金",
+      "ytd": "−4.66%",
+      "asOf": "2026-07-03"
+    }
+  ],
+  "assetViews": [
+    {
+      "asset": "中国权益",
+      "stance": "适度超配",
+      "role": "主要收益来源",
+      "evidence": "政策和流动性占优，但盈利与信用尚未全面共振。",
+      "risk": "内需偏弱、科技拥挤",
+      "trigger": "盈利上修扩散与增量资金持续流入"
+    },
+    {
+      "asset": "红利 / 价值",
+      "stance": "超配",
+      "role": "权益底仓",
+      "evidence": "治理、分红回购和长期资金入市构成支撑。",
+      "risk": "利率快速上行",
+      "trigger": "股息覆盖率与自由现金流改善"
+    },
+    {
+      "asset": "成长 / 科技",
+      "stance": "中性",
+      "role": "结构增强",
+      "evidence": "AI 趋势明确，但交易集中度和估值分化提高。",
+      "risk": "拥挤交易松动",
+      "trigger": "订单、收入与资本回报验证"
+    },
+    {
+      "asset": "境内债券",
+      "stance": "适度低配",
+      "role": "流动性",
+      "evidence": "稳增长与风险资产修复限制久期收益空间。",
+      "risk": "经济再度走弱",
+      "trigger": "信用与 PMI 明显走弱时提高久期"
+    },
+    {
+      "asset": "海外债券",
+      "stance": "适度超配",
+      "role": "票息与分散",
+      "evidence": "较高票息提供持有收益，但需控制通胀与久期风险。",
+      "risk": "通胀与能源冲击",
+      "trigger": "通胀回落与政策转向后延长久期"
+    },
+    {
+      "asset": "CTA",
+      "stance": "适度超配",
+      "role": "尾部对冲",
+      "evidence": "商品、利率与地缘波动提供趋势机会。",
+      "risk": "快速均值回归",
+      "trigger": "趋势强度与策略回撤同步监测"
+    },
+    {
+      "asset": "黄金",
+      "stance": "适度低配",
+      "role": "尾部保险",
+      "evidence": "分散价值仍在，但真实利率、美元与获利回吐压制表现。",
+      "risk": "突发避险踏空",
+      "trigger": "实际利率、美元、央行需求中两项转向"
+    },
+    {
+      "asset": "REITs / 市场中性",
+      "stance": "中性",
+      "role": "收益分散",
+      "evidence": "可补充现金流和低方向性收益。",
+      "risk": "融资成本与策略拥挤",
+      "trigger": "底层现金流、折价率和真实独立性"
+    }
+  ],
+  "regions": [
+    {
+      "region": "中国",
+      "stance": "结构性超配",
+      "logic": "增长温和、政策积极；先进制造、AI 与红利治理为抓手。",
+      "watch": "M1、地产销售、盈利扩散和中长期资金"
+    },
+    {
+      "region": "日本",
+      "stance": "中性偏多",
+      "logic": "公司治理和居民资产再配置提供支撑；关注自动化、精密制造与金融。",
+      "watch": "日本银行会议、日元与工资—通胀循环"
+    },
+    {
+      "region": "韩国",
+      "stance": "中性观察",
+      "logic": "半导体出口弹性大，但市场集中度与波动同样较高。",
+      "watch": "芯片价格、库存、出口与外资流向"
+    },
+    {
+      "region": "美国",
+      "stance": "中性",
+      "logic": "经济扩张但通胀仍高于目标；AI 基建需从估值转向盈利验证。",
+      "watch": "联储、真实利率与科技资本开支回报"
+    },
+    {
+      "region": "全球 / 欧洲",
+      "stance": "中性分散",
+      "logic": "能源、贸易与财政主导差异；关注工业升级和能源基础设施。",
+      "watch": "能源、贸易政策、盈利修正广度与美元"
+    }
+  ],
+  "styles": [
+    {
+      "factor": "价值 / 成长",
+      "reading": "0.63",
+      "signal": "成长占优但拥挤",
+      "action": "用 GARP 和红利平衡纯成长暴露"
+    },
+    {
+      "factor": "大盘 / 小盘",
+      "reading": "1.49",
+      "signal": "大盘相对占优",
+      "action": "大盘做底仓，小盘等待盈利扩散"
+    },
+    {
+      "factor": "科技成交集中度",
+      "reading": "约 46%",
+      "signal": "交易集中",
+      "action": "把拥挤度纳入止盈和风险预算"
+    }
+  ],
+  "industries": [
+    {
+      "name": "能源",
+      "erp": 5.03,
+      "pe": 14.78,
+      "pePct": 58.01,
+      "pb": 1.35,
+      "pbPct": 83.83,
+      "roe": 9.04,
+      "dividend": 3.66,
+      "revenueGrowth": -2.68,
+      "profitGrowth": 5.17,
+      "stance": "中性",
+      "logic": "价格与地缘驱动，PB/PS 分位偏高",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    },
+    {
+      "name": "材料",
+      "erp": 1.59,
+      "pe": 30.02,
+      "pePct": 62.49,
+      "pb": 2.22,
+      "pbPct": 53.19,
+      "roe": 7.28,
+      "dividend": 1.26,
+      "revenueGrowth": 15.06,
+      "profitGrowth": 66.5,
+      "stance": "精选",
+      "logic": "利润高增但需剔除价格与低基数",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    },
+    {
+      "name": "工业",
+      "erp": 1.35,
+      "pe": 32.34,
+      "pePct": 69.63,
+      "pb": 1.88,
+      "pbPct": 38.24,
+      "roe": 5.57,
+      "dividend": 1.69,
+      "revenueGrowth": 3.18,
+      "profitGrowth": 8.49,
+      "stance": "超配",
+      "logic": "先进制造与设备更新是结构主线",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    },
+    {
+      "name": "可选消费",
+      "erp": 2.08,
+      "pe": 26.21,
+      "pePct": 25.79,
+      "pb": 2,
+      "pbPct": 17.39,
+      "roe": 7.42,
+      "dividend": 2.37,
+      "revenueGrowth": 0.74,
+      "profitGrowth": -14.77,
+      "stance": "观察",
+      "logic": "估值分位低但利润仍负增长",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    },
+    {
+      "name": "必选消费",
+      "erp": 2.27,
+      "pe": 24.94,
+      "pePct": 17.26,
+      "pb": 2.94,
+      "pbPct": 1.15,
+      "roe": 11.36,
+      "dividend": 3.62,
+      "revenueGrowth": 3.49,
+      "profitGrowth": -15.39,
+      "stance": "观察",
+      "logic": "估值较低、ROE 尚可，但盈利未企稳",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    },
+    {
+      "name": "医药",
+      "erp": 0.49,
+      "pe": 44.8,
+      "pePct": 67.12,
+      "pb": 2.77,
+      "pbPct": 9.44,
+      "roe": 6.01,
+      "dividend": 1.51,
+      "revenueGrowth": 2,
+      "profitGrowth": 0.69,
+      "stance": "精选",
+      "logic": "PB 分位低，PE 不低；看创新兑现与政策",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    },
+    {
+      "name": "金融",
+      "erp": 11.36,
+      "pe": 7.63,
+      "pePct": 35.19,
+      "pb": 0.77,
+      "pbPct": 27.19,
+      "roe": 9.05,
+      "dividend": 4.06,
+      "revenueGrowth": 3.92,
+      "profitGrowth": 2.07,
+      "stance": "超配",
+      "logic": "ERP、股息和 PB 提供安全边际",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    },
+    {
+      "name": "信息技术",
+      "erp": -0.72,
+      "pe": 98.33,
+      "pePct": 92.13,
+      "pb": 6.29,
+      "pbPct": 97.9,
+      "roe": 6.73,
+      "dividend": 0.46,
+      "revenueGrowth": 21.84,
+      "profitGrowth": 69.17,
+      "stance": "精选/控仓",
+      "logic": "盈利强但估值与拥挤极高",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    },
+    {
+      "name": "通信服务",
+      "erp": 3.11,
+      "pe": 20.61,
+      "pePct": 33.31,
+      "pb": 1.69,
+      "pbPct": 57.31,
+      "roe": 7.57,
+      "dividend": 2.65,
+      "revenueGrowth": 0.94,
+      "profitGrowth": -7.43,
+      "stance": "中性",
+      "logic": "估值合理但利润承压",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    },
+    {
+      "name": "公用事业",
+      "erp": 3.56,
+      "pe": 18.85,
+      "pePct": 29.91,
+      "pb": 1.69,
+      "pbPct": 40.83,
+      "roe": 8.16,
+      "dividend": 3.05,
+      "revenueGrowth": -3.67,
+      "profitGrowth": -4.74,
+      "stance": "中性偏多",
+      "logic": "现金流与股息有防御性",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    },
+    {
+      "name": "房地产",
+      "erp": -1.74,
+      "pe": null,
+      "pePct": null,
+      "pb": 0.79,
+      "pbPct": 12.92,
+      "roe": -17.1,
+      "dividend": 1.3,
+      "revenueGrowth": -23.95,
+      "profitGrowth": -0.13,
+      "stance": "低配",
+      "logic": "PB 低但 ROE 为负、销售投资未稳",
+      "asOf": "估值 2026-07-18；盈利 2026-03-31"
+    }
+  ],
+  "productCoverage": [
+    "主观选股",
+    "量化选股",
+    "债券主动",
+    "市场中性",
+    "多空",
+    "CTA",
+    "多策略",
+    "宏观商品",
+    "灵活配置",
+    "全球配置",
+    "REITs"
+  ],
+  "benchmarks": [
+    {
+      "name": "沪深 300",
+      "mtd": "−6.63%",
+      "ytd": "+0.42%",
+      "sharpe": "1.42",
+      "drawdown": "−8.35%"
+    },
+    {
+      "name": "中证 500",
+      "mtd": "−16.59%",
+      "ytd": "+0.90%",
+      "sharpe": "0.81",
+      "drawdown": "−14.08%"
+    },
+    {
+      "name": "中证 1000",
+      "mtd": "−20.59%",
+      "ytd": "−7.89%",
+      "sharpe": "0.25",
+      "drawdown": "−20.24%"
+    },
+    {
+      "name": "恒生指数",
+      "mtd": "−9.10%",
+      "ytd": "−2.60%",
+      "sharpe": "−0.09",
+      "drawdown": "−17.22%"
+    }
+  ],
+  "productGates": [
+    {
+      "name": "收益",
+      "detail": "绝对收益、同类、基准超额、月度胜率和收益来源"
+    },
+    {
+      "name": "风险",
+      "detail": "波动、回撤、修复期、尾部损失、杠杆和集中度"
+    },
+    {
+      "name": "稳定性",
+      "detail": "滚动 Alpha/Beta、Sharpe/Sortino、风格漂移和相关性"
+    },
+    {
+      "name": "组织治理",
+      "detail": "团队、流程、风控、透明度、运营尽调和利益一致"
+    },
+    {
+      "name": "组合适配",
+      "detail": "容量、流动性、费用与穿透后的边际风险贡献"
+    }
+  ],
+  "sources": [
+    {
+      "label": "国家统计局｜2026 年上半年国民经济运行",
+      "url": "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202607/t20260715_1964121.html",
+      "date": "2026-07-15",
+      "scope": "增长、生产、消费、投资、地产、物价、就业、外贸"
+    },
+    {
+      "label": "中国人民银行口径｜2026 年 6 月金融统计与社融",
+      "url": "https://dfjrjgj.hlj.gov.cn/hljjrjd/c113262/202607/c00_31958680.shtml",
+      "date": "2026-07",
+      "scope": "社融、信贷、M0/M1/M2、利率、外储、汇率"
+    },
+    {
+      "label": "中国货币网｜2026 年 7 月 LPR",
+      "url": "https://www.chinamoney.com.cn/chinese/rdgz/20260720/3379021.html",
+      "date": "2026-07-20",
+      "scope": "1 年期与 5 年期以上 LPR"
+    },
+    {
+      "label": "财政部口径｜2026 年上半年财政收支",
+      "url": "https://www.shanwei.gov.cn/swczj/yaowen/tpxw/content/post_1263760.html",
+      "date": "2026-07",
+      "scope": "财政收入、支出、政府性基金与专项债"
+    },
+    {
+      "label": "国家统计局｜2025 年统计公报",
+      "url": "https://www.stats.gov.cn/xxgk/sjfb/tjgb2020/202602/t20260228_1962662.html",
+      "date": "2026-02-28",
+      "scope": "2025 年宏观历史序列"
+    },
+    {
+      "label": "国家统计局｜2024 年统计公报",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html",
+      "date": "2025-02-28",
+      "scope": "2024 年宏观历史序列"
+    },
+    {
+      "label": "国家统计局｜2023 年统计公报",
+      "url": "https://www.stats.gov.cn/xxgk/sjfb/tjgb2020/202402/t20240229_1947923.html",
+      "date": "2024-02-29",
+      "scope": "2023 年宏观历史序列"
+    },
+    {
+      "label": "国家统计局｜2022 年统计公报",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230228_1919011.html",
+      "date": "2023-02-28",
+      "scope": "2022 年宏观历史序列"
+    },
+    {
+      "label": "证监会｜证监会党的建设暨监管工作座谈会",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7647101/content.shtml",
+      "date": "2026-07-23",
+      "scope": "资本市场政策与配置映射"
+    },
+    {
+      "label": "证监会｜证监会投资者及市场主体系列座谈会",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7646232/content.shtml",
+      "date": "2026-07-20—21",
+      "scope": "资本市场政策与配置映射"
+    },
+    {
+      "label": "证监会｜2026 陆家嘴论坛",
+      "url": "https://www.csrc.gov.cn/csrc/c106311/c7639684/content.shtml",
+      "date": "2026-06-17—18",
+      "scope": "资本市场政策与配置映射"
+    },
+    {
+      "label": "用户上传｜2026 年中期投资内参",
+      "url": "",
+      "date": "估值截至 2026-07-18",
+      "scope": "中国/海外权益估值、盈利、风格、产业与大类配置观点"
+    },
+    {
+      "label": "用户上传｜中国50产品池快照",
+      "url": "",
+      "date": "2026-07-24",
+      "scope": "策略分类与基准压力背景"
+    }
+  ],
+  "macroFramework": {
+    "sourceFile": "中国宏观分析框架.xlsx",
+    "strictCoverage": "四大一级维度、67 项三级指标、逐项 1—5 分阈值、报告目录全部保留",
+    "totalIndicators": 67,
+    "verifiedIndicators": 40,
+    "coveragePct": 59.7,
+    "pillars": [
+      {
+        "name": "经济运行",
+        "weight": "30%",
+        "coreQuestion": "经济、物价、国际收支和景气处在什么位置？"
+      },
+      {
+        "name": "增长动力",
+        "weight": "25%",
+        "coreQuestion": "工业、地产、投资、消费与出口谁在拉动或拖累？"
+      },
+      {
+        "name": "金融信贷",
+        "weight": "25%",
+        "coreQuestion": "货币与信用是否进入实体并支持盈利？"
+      },
+      {
+        "name": "政策制度",
+        "weight": "20%",
+        "coreQuestion": "产业、财政、货币政策如何改变尾部风险与结构机会？"
+      }
+    ],
+    "ratings": [
+      {
+        "range": "4.2–5.0",
+        "grade": "I档",
+        "state": "强复苏"
+      },
+      {
+        "range": "3.4–4.2",
+        "grade": "II档",
+        "state": "温和改善"
+      },
+      {
+        "range": "2.6–3.4",
+        "grade": "III档",
+        "state": "中性平稳"
+      },
+      {
+        "range": "1.8–2.6",
+        "grade": "IV档",
+        "state": "偏弱承压"
+      },
+      {
+        "range": "1.0–1.8",
+        "grade": "V档",
+        "state": "明显下行"
+      }
+    ],
+    "reportOutline": [
+      "中国宏观分析评级报告目录",
+      "1、当前宏观状态判断",
+      "2、宏观边际变化分析",
+      "3、经济运行分析",
+      "4、增长动力分析",
+      "5、金融信贷分析",
+      "6、政策制度分析",
+      "7、宏观评分与评级原因",
+      "8、当前宏观核心矛盾",
+      "9、宏观约束条件",
+      "10、情景推演与评级触发"
+    ]
+  },
+  "macroIndicators": [
+    {
+      "id": "M01",
+      "primary": "经济运行",
+      "secondary": "经济增长",
+      "name": "GDP总量（亿元）",
+      "frequency": "季度",
+      "purpose": "判断经济总量与利率中枢方向",
+      "expectedSource": "国家统计局 / 名义与实际值",
+      "currentValue": "695704",
+      "prior": "2025 全年 1401879",
+      "period": "2026 H1",
+      "trend": "总量增长、增速放缓",
+      "score": null,
+      "currentSource": "国家统计局",
+      "assetMeaning": "增长中枢下移压制周期品与信用扩张，但政策托底降低尾部风险",
+      "status": "已核验",
+      "scoreRules": null
+    },
+    {
+      "id": "M02",
+      "primary": "经济运行",
+      "secondary": "经济增长",
+      "name": "GDP同比增速（%）",
+      "frequency": "季度",
+      "purpose": "判断经济总量与利率中枢方向",
+      "expectedSource": "国家统计局 / 按不变价计算",
+      "currentValue": "4.7%",
+      "prior": "2025 全年 5.0%；2026 Q1 5.0%",
+      "period": "2026 H1",
+      "trend": "Q2 降至 4.3%",
+      "score": 3,
+      "currentSource": "国家统计局",
+      "assetMeaning": "权益盈利仍有支撑，但需要结构选择；债券久期不宜单边激进",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<3.0% 明显低于目标",
+        "score2": "3.0-4.0% 低于目标",
+        "score3": "4.0-5.0% 接近目标",
+        "score4": "5.0-6.0% 超额完成",
+        "score5": ">=6.0% 明显偏强",
+        "logic": "单调递增",
+        "reference": "以5%政策目标为中枢"
+      }
+    },
+    {
+      "id": "M03",
+      "primary": "经济运行",
+      "secondary": "经济增长",
+      "name": "GDP环比增速（%）",
+      "frequency": "季度",
+      "purpose": "判断经济总量与利率中枢方向",
+      "expectedSource": "国家统计局 / 季节调整后",
+      "currentValue": "0.9%",
+      "prior": "2026 Q1 1.3%",
+      "period": "2026 Q2",
+      "trend": "边际放缓",
+      "score": 3,
+      "currentSource": "国家统计局",
+      "assetMeaning": "验证增长动能而非只看同比基数",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<0.3% 动能极弱",
+        "score2": "0.3-0.6% 偏弱",
+        "score3": "0.6-1.0% 正常",
+        "score4": "1.0-1.5% 偏强",
+        "score5": ">=1.5% 明显偏强",
+        "logic": "单调递增",
+        "reference": "季调环比正常0.5-1.2%"
+      }
+    },
+    {
+      "id": "M04",
+      "primary": "经济运行",
+      "secondary": "经济增长",
+      "name": "GDP平减指数",
+      "frequency": "季度",
+      "purpose": "判断经济总量与利率中枢方向",
+      "expectedSource": "推算 / 名义GDP/实际GDP",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<-1.0% 深度通缩",
+        "score2": "-1.0~0.0% 通缩区间",
+        "score3": "0.0-1.5% 偏低可接受",
+        "score4": "1.5-3.0% 温和通胀",
+        "score5": ">=3.0% 通胀偏高",
+        "logic": "倒U型",
+        "reference": "0-2%为健康区间"
+      }
+    },
+    {
+      "id": "M05",
+      "primary": "经济运行",
+      "secondary": "物价水平",
+      "name": "CPI同比（%）",
+      "frequency": "月度",
+      "purpose": "观察通缩/通胀压力和实际利率",
+      "expectedSource": "国家统计局 / 消费者价格指数",
+      "currentValue": "0.8%",
+      "prior": "2026 H1 均值 1.0%；2025 全年 0.0%",
+      "period": "2026-08",
+      "trend": "同比回升，环比 +0.4%",
+      "score": 4,
+      "currentSource": "国家统计局",
+      "assetMeaning": "通缩压力缓和，有利盈利名义增速；尚未形成债券通胀冲击",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<0.0%或>5.0%",
+        "score2": "0.0-0.5%或4.0-5.0%",
+        "score3": "0.5-1.0%或3.0-4.0%",
+        "score4": "1.0-2.0% 温和偏低",
+        "score5": "2.0-3.0% 政策最优",
+        "logic": "倒U型",
+        "reference": "2-3%为政策目标区间"
+      }
+    },
+    {
+      "id": "M06",
+      "primary": "经济运行",
+      "secondary": "物价水平",
+      "name": "CPI环比（%）",
+      "frequency": "月度",
+      "purpose": "观察通缩/通胀压力和实际利率",
+      "expectedSource": "国家统计局",
+      "currentValue": "0.4%",
+      "prior": "—",
+      "period": "2026-08",
+      "trend": "环比回升",
+      "score": 2,
+      "currentSource": "国家统计局",
+      "assetMeaning": "短期需求仍不强，需与核心 CPI 联合判断",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-0.5%或>1.0%",
+        "score2": "-0.5~-0.1% 偏弱",
+        "score3": "-0.1~0.2% 正常",
+        "score4": "0.2-0.5% 温和上涨",
+        "score5": "0.5-1.0% 较好",
+        "logic": "偏标准",
+        "reference": "正常波动-0.2~0.5%"
+      }
+    },
+    {
+      "id": "M07",
+      "primary": "经济运行",
+      "secondary": "物价水平",
+      "name": "核心CPI同比（%）",
+      "frequency": "月度",
+      "purpose": "观察通缩/通胀压力和实际利率",
+      "expectedSource": "国家统计局 / 扣除食品能源",
+      "currentValue": "1.0%",
+      "prior": "2026 H1 均值 1.2%",
+      "period": "2026-08",
+      "trend": "月度处于温和区间",
+      "score": 3,
+      "currentSource": "国家统计局",
+      "assetMeaning": "服务与内需价格改善决定消费盈利能否扩散",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<0.5%或>4.0%",
+        "score2": "0.5-1.0%或3.0-4.0%",
+        "score3": "1.0-1.5%或2.5-3.0%",
+        "score4": "1.5-2.0% 温和偏低",
+        "score5": "2.0-2.5% 健康",
+        "logic": "倒U型",
+        "reference": "核心CPI中枢低0.5-1pct"
+      }
+    },
+    {
+      "id": "M08",
+      "primary": "经济运行",
+      "secondary": "物价水平",
+      "name": "PPI同比（%）",
+      "frequency": "月度",
+      "purpose": "观察通缩/通胀压力和实际利率",
+      "expectedSource": "国家统计局 / 工业生产者出厂价格",
+      "currentValue": "3.8%",
+      "prior": "2026 H1 均值 1.5%；2025 全年 -2.6%",
+      "period": "2026-08",
+      "trend": "同比涨幅扩大，环比 +0.4%",
+      "score": 5,
+      "currentSource": "国家统计局",
+      "assetMeaning": "工业品价格与名义利润修复，但月度环比仍弱，需排除基数和供给冲击",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-3.0%或>10.0%",
+        "score2": "-3.0~-1.0% 明显通缩",
+        "score3": "-1.0~0.5% 偏弱",
+        "score4": "0.5-3.0% 温和正增",
+        "score5": "3.0-8.0% 较好",
+        "logic": "倒U型",
+        "reference": "温和正增最优"
+      }
+    },
+    {
+      "id": "M09",
+      "primary": "经济运行",
+      "secondary": "物价水平",
+      "name": "PPI环比（%）",
+      "frequency": "月度",
+      "purpose": "观察通缩/通胀压力和实际利率",
+      "expectedSource": "国家统计局",
+      "currentValue": "0.4%",
+      "prior": "—",
+      "period": "2026-08",
+      "trend": "环比回升",
+      "score": 2,
+      "currentSource": "国家统计局",
+      "assetMeaning": "再通胀尚未形成单边趋势",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-0.8%或>1.5%",
+        "score2": "-0.8~-0.2% 偏弱",
+        "score3": "-0.2~0.2% 正常",
+        "score4": "0.2-0.6% 温和上涨",
+        "score5": "0.6-1.2% 较好",
+        "logic": "偏标准",
+        "reference": "正常波动-0.3~0.5%"
+      }
+    },
+    {
+      "id": "M10",
+      "primary": "经济运行",
+      "secondary": "国际收支",
+      "name": "外汇储备（亿美元）",
+      "frequency": "月度",
+      "purpose": "判断外需、汇率和跨境资金约束",
+      "expectedSource": "国家外汇管理局",
+      "currentValue": "34200",
+      "prior": "—",
+      "period": "2026-06",
+      "trend": "处于较充足区间",
+      "score": 5,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "外部流动性缓冲较强，降低汇率尾部约束",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<28000 警戒线下",
+        "score2": "28000-30000 偏低",
+        "score3": "30000-32000 正常",
+        "score4": "32000-34000 充裕",
+        "score5": ">=34000 非常充裕",
+        "logic": "单调递增",
+        "reference": "3万亿为心理关口"
+      }
+    },
+    {
+      "id": "M11",
+      "primary": "经济运行",
+      "secondary": "国际收支",
+      "name": "美元兑人民币汇率",
+      "frequency": "日度",
+      "purpose": "判断外需、汇率和跨境资金约束",
+      "expectedSource": "外汇交易中心 / 中间价/即期价",
+      "currentValue": "6.8109",
+      "prior": "—",
+      "period": "2026-06",
+      "trend": "人民币阶段性偏强",
+      "score": 5,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "有利人民币资产估值与外资风险偏好，但出口价格竞争力需跟踪",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": ">7.5或<6.3",
+        "score2": "7.3-7.5或6.3-6.5",
+        "score3": "7.1-7.3或6.5-6.7",
+        "score4": "6.9-7.1 接近均衡",
+        "score5": "6.7-6.9 均衡偏强",
+        "logic": "倒U型",
+        "reference": "6.7-7.1为均衡区间"
+      }
+    },
+    {
+      "id": "M12",
+      "primary": "经济运行",
+      "secondary": "国际收支",
+      "name": "CFETS人民币汇率指数",
+      "frequency": "周度",
+      "purpose": "判断外需、汇率和跨境资金约束",
+      "expectedSource": "中国外汇交易中心 / 一篮子货币",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<90或>110",
+        "score2": "90-95或105-110",
+        "score3": "95-100或102-105",
+        "score4": "100-102 均衡",
+        "score5": "-- 稳定性优先",
+        "logic": "以100为基准",
+        "reference": "正常波动95-105"
+      }
+    },
+    {
+      "id": "M13",
+      "primary": "经济运行",
+      "secondary": "国际收支",
+      "name": "货物贸易顺差（亿美元）",
+      "frequency": "月度",
+      "purpose": "判断外需、汇率和跨境资金约束",
+      "expectedSource": "海关总署",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<200或>1200",
+        "score2": "200-400或900-1200",
+        "score3": "400-600或700-900",
+        "score4": "600-700 健康顺差",
+        "score5": "-- 过大反映内需不足",
+        "logic": "倒U型",
+        "reference": "适度顺差为最优"
+      }
+    },
+    {
+      "id": "M14",
+      "primary": "经济运行",
+      "secondary": "国际收支",
+      "name": "服务贸易差额（亿美元）",
+      "frequency": "季度",
+      "purpose": "判断外需、汇率和跨境资金约束",
+      "expectedSource": "国家外汇管理局",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<-1500 逆差失控",
+        "score2": "-1500~-1000 偏大",
+        "score3": "-1000~-500 正常",
+        "score4": "-500~-200 偏低正常",
+        "score5": "-- 适度逆差正常",
+        "logic": "适度逆差",
+        "reference": "逆差反映境外消费"
+      }
+    },
+    {
+      "id": "M15",
+      "primary": "经济运行",
+      "secondary": "就业市场",
+      "name": "城镇调查失业率（%）",
+      "frequency": "月度",
+      "purpose": "观察居民收入和政策托底压力",
+      "expectedSource": "国家统计局",
+      "currentValue": "5.3%",
+      "prior": "2026 H1 均值 5.2%；2025 全年 5.2%",
+      "period": "2026-08",
+      "trend": "毕业季环比上升，整体稳定",
+      "score": 3,
+      "currentSource": "国家统计局",
+      "assetMeaning": "居民收入预期未显著恶化，但消费修复仍需工资与就业结构验证",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": ">6.0% 明显偏高",
+        "score2": "5.5-6.0% 偏高",
+        "score3": "5.0-5.5% 正常",
+        "score4": "4.5-5.0% 接近充分",
+        "score5": "<4.5% 充分就业",
+        "logic": "单调递减",
+        "reference": "政策目标约5.5%"
+      }
+    },
+    {
+      "id": "M16",
+      "primary": "经济运行",
+      "secondary": "景气指数",
+      "name": "制造业PMI（%）",
+      "frequency": "月度",
+      "purpose": "跟踪经济边际动能",
+      "expectedSource": "国家统计局 / 荣枯线50",
+      "currentValue": "49.8",
+      "prior": "荣枯线 50",
+      "period": "2026-08",
+      "trend": "景气水平回升但仍低于荣枯线",
+      "score": 3,
+      "currentSource": "国家统计局",
+      "assetMeaning": "权益可维持风险预算，新增订单决定顺周期是否加仓",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<47 深度收缩",
+        "score2": "47-49 收缩",
+        "score3": "49-51 荣枯线附近",
+        "score4": "51-53 温和扩张",
+        "score5": ">=53 强扩张",
+        "logic": "单调递增",
+        "reference": "50为荣枯线"
+      }
+    },
+    {
+      "id": "M17",
+      "primary": "经济运行",
+      "secondary": "景气指数",
+      "name": "非制造业PMI（%）",
+      "frequency": "月度",
+      "purpose": "跟踪经济边际动能",
+      "expectedSource": "国家统计局",
+      "currentValue": "49.0",
+      "prior": "荣枯线 50",
+      "period": "2026-08",
+      "trend": "与上月持平，低于荣枯线",
+      "score": 3,
+      "currentSource": "国家统计局",
+      "assetMeaning": "服务活动稳定，但需要消费与就业交叉验证",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<48 收缩",
+        "score2": "48-50 偏弱",
+        "score3": "50-53 正常",
+        "score4": "53-56 较好",
+        "score5": ">=56 强扩张",
+        "logic": "单调递增",
+        "reference": "非制造业PMI均值53-54"
+      }
+    },
+    {
+      "id": "M18",
+      "primary": "经济运行",
+      "secondary": "景气指数",
+      "name": "综合PMI产出指数",
+      "frequency": "月度",
+      "purpose": "跟踪经济边际动能",
+      "expectedSource": "国家统计局",
+      "currentValue": "49.5",
+      "prior": "2026-07 49.3",
+      "period": "2026-08",
+      "trend": "产出景气水平改善但仍低于荣枯线",
+      "score": null,
+      "currentSource": "国家统计局（2026-08）",
+      "assetMeaning": null,
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<48 收缩",
+        "score2": "48-50 偏弱",
+        "score3": "50-52 正常",
+        "score4": "52-54 较好",
+        "score5": ">=54 强扩张",
+        "logic": "单调递增",
+        "reference": "覆盖制造+非制造"
+      }
+    },
+    {
+      "id": "M19",
+      "primary": "经济运行",
+      "secondary": "景气指数",
+      "name": "BCI中国企业经营状况指数",
+      "frequency": "月度",
+      "purpose": "跟踪经济边际动能",
+      "expectedSource": "长江商学院",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<40 深度悲观",
+        "score2": "40-50 偏弱",
+        "score3": "50-55 中性",
+        "score4": "55-65 偏乐观",
+        "score5": ">=65 强乐观",
+        "logic": "单调递增",
+        "reference": "长江商学院BCI"
+      }
+    },
+    {
+      "id": "M20",
+      "primary": "经济运行",
+      "secondary": "景气指数",
+      "name": "消费者信心指数",
+      "frequency": "月度",
+      "purpose": "跟踪经济边际动能",
+      "expectedSource": "国家统计局",
+      "currentValue": "89.2",
+      "prior": null,
+      "period": "2026-07",
+      "trend": "最新可得值偏弱",
+      "score": null,
+      "currentSource": "财新 API（国家统计局）",
+      "assetMeaning": null,
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<90 深度悲观",
+        "score2": "90-100 偏弱",
+        "score3": "100-110 中性",
+        "score4": "110-120 偏乐观",
+        "score5": ">=120 强乐观",
+        "logic": "单调递增",
+        "reference": "疫前约120疫后缓慢"
+      }
+    },
+    {
+      "id": "M21",
+      "primary": "增长动力",
+      "secondary": "工业生产",
+      "name": "规模以上工业增加值增速（%）",
+      "frequency": "月度",
+      "purpose": "验证生产端景气",
+      "expectedSource": "国家统计局",
+      "currentValue": "5.2%",
+      "prior": "2026 H1 累计 5.4%",
+      "period": "2026-08",
+      "trend": "处于正常增长区",
+      "score": 3,
+      "currentSource": "国家统计局",
+      "assetMeaning": "先进制造与设备链景气仍是权益主要基本面支撑",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<3.0% 明显偏低",
+        "score2": "3.0-5.0% 偏弱",
+        "score3": "5.0-6.0% 正常",
+        "score4": "6.0-8.0% 偏强",
+        "score5": ">=8.0% 强增长",
+        "logic": "单调递增",
+        "reference": "历史均值约6%"
+      }
+    },
+    {
+      "id": "M22",
+      "primary": "增长动力",
+      "secondary": "工业生产",
+      "name": "工业企业利润总额增速（%）",
+      "frequency": "月度",
+      "purpose": "验证生产端景气",
+      "expectedSource": "国家统计局",
+      "currentValue": "18.8%",
+      "prior": "2025 全年 —",
+      "period": "2026 1—5月",
+      "trend": "利润显著修复",
+      "score": 5,
+      "currentSource": "国家统计局",
+      "assetMeaning": "盈利修复提高中国权益赔率，但需剔除基数与行业集中效应",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-10% 深度下滑",
+        "score2": "-10~0% 下滑",
+        "score3": "0-8% 小幅增长",
+        "score4": "8-15% 较好增长",
+        "score5": ">=15% 强劲增长",
+        "logic": "单调递增",
+        "reference": "利润是信用质量核心"
+      }
+    },
+  {
+    "id": "M23",
+      "primary": "增长动力",
+      "secondary": "工业生产",
+      "name": "工业企业产能利用率（%）",
+      "frequency": "季度",
+      "purpose": "验证生产端景气",
+      "expectedSource": "国家统计局",
+    "currentValue": "73.0%",
+      "prior": null,
+    "period": "2026 Q2",
+    "trend": "低于健康区间，产能利用偏弱",
+      "score": null,
+    "currentSource": "国家统计局（2026-07-15）",
+      "assetMeaning": null,
+    "status": "已核验",
+      "scoreRules": {
+        "score1": "<72% 明显过剩",
+        "score2": "72-75% 偏低",
+        "score3": "75-78% 正常",
+        "score4": "78-81% 偏高",
+        "score5": ">=81% 过热",
+        "logic": "倒U型",
+        "reference": "健康区间75-80%"
+      }
+    },
+  {
+    "id": "M24",
+      "primary": "增长动力",
+      "secondary": "工业生产",
+      "name": "发电量增速（%）",
+      "frequency": "月度",
+      "purpose": "验证生产端景气",
+      "expectedSource": "国家统计局",
+    "currentValue": "-0.8%",
+      "prior": null,
+    "period": "2026-08",
+    "trend": "发电量同比小幅下降",
+      "score": null,
+    "currentSource": "国家统计局（2026-09-16）",
+      "assetMeaning": null,
+    "status": "已核验",
+      "scoreRules": {
+        "score1": "<1.0% 明显偏低",
+        "score2": "1.0-3.0% 偏低",
+        "score3": "3.0-5.0% 正常",
+        "score4": "5.0-8.0% 偏强",
+        "score5": ">=8.0% 强增长",
+        "logic": "单调递增",
+        "reference": "克强指数成分"
+      }
+    },
+    {
+      "id": "M25",
+      "primary": "增长动力",
+      "secondary": "工业生产",
+      "name": "铁路货运量增速（%）",
+      "frequency": "月度",
+      "purpose": "验证生产端景气",
+      "expectedSource": "交通运输部 / 克强指数成分",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<-5.0% 深度下滑",
+        "score2": "-5.0~0% 下滑",
+        "score3": "0-3.0% 低速增长",
+        "score4": "3.0-6.0% 正常",
+        "score5": ">=6.0% 较快增长",
+        "logic": "单调递增",
+        "reference": "克强指数成分"
+      }
+    },
+    {
+      "id": "M26",
+      "primary": "增长动力",
+      "secondary": "房地产",
+      "name": "商品房销售面积增速（%）",
+      "frequency": "月度",
+      "purpose": "判断地产链拖累与政策效果",
+      "expectedSource": "国家统计局 / 累计值",
+      "currentValue": "-12.1%",
+      "prior": "2025 全年 —",
+      "period": "2026-01—08",
+      "trend": "仍在收缩",
+      "score": 2,
+      "currentSource": "国家统计局",
+      "assetMeaning": "地产链、居民信用与地方财政仍受约束",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-20% 深度下滑",
+        "score2": "-20~-10% 明显下滑",
+        "score3": "-10~0% 小幅下滑",
+        "score4": "0-5% 平稳",
+        "score5": ">=5% 明显增长",
+        "logic": "单调递增",
+        "reference": "销售是地产链领先指标"
+      }
+    },
+    {
+      "id": "M27",
+      "primary": "增长动力",
+      "secondary": "房地产",
+      "name": "商品房销售额增速（%）",
+      "frequency": "月度",
+      "purpose": "判断地产链拖累与政策效果",
+      "expectedSource": "国家统计局",
+      "currentValue": "-13.0%",
+      "prior": "2025 全年 —",
+      "period": "2026-01—08",
+      "trend": "仍在收缩",
+      "score": 2,
+      "currentSource": "国家统计局",
+      "assetMeaning": "量价未稳前不把地产低估值等同于高赔率",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-20% 深度下滑",
+        "score2": "-20~-10% 明显下滑",
+        "score3": "-10~0% 小幅下滑",
+        "score4": "0-8% 平稳增长",
+        "score5": ">=8% 明显增长",
+        "logic": "单调递增",
+        "reference": "销售额=面积*价格"
+      }
+    },
+    {
+      "id": "M28",
+      "primary": "增长动力",
+      "secondary": "房地产",
+      "name": "房屋新开工面积增速（%）",
+      "frequency": "月度",
+      "purpose": "判断地产链拖累与政策效果",
+      "expectedSource": "国家统计局",
+      "currentValue": "-24.8%",
+      "prior": null,
+      "period": "2026-01—08",
+      "trend": "新开工继续收缩",
+      "score": null,
+      "currentSource": "国家统计局（2026-09-15）",
+      "assetMeaning": null,
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-25% 深度下滑",
+        "score2": "-25~-10% 明显下滑",
+        "score3": "-10~0% 下滑收窄",
+        "score4": "0-10% 回正",
+        "score5": ">=10% 明显扩张",
+        "logic": "单调递增",
+        "reference": "新开工领先投资6M"
+      }
+    },
+    {
+      "id": "M29",
+      "primary": "增长动力",
+      "secondary": "房地产",
+      "name": "房屋竣工面积增速（%）",
+      "frequency": "月度",
+      "purpose": "判断地产链拖累与政策效果",
+      "expectedSource": "国家统计局",
+      "currentValue": "-23.7%",
+      "prior": null,
+      "period": "2026-01—08",
+      "trend": "竣工继续收缩",
+      "score": null,
+      "currentSource": "国家统计局（2026-09-15）",
+      "assetMeaning": null,
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-20% 深度下滑",
+        "score2": "-20~-5% 明显下滑",
+        "score3": "-5~5% 小幅波动",
+        "score4": "5-15% 正常增长",
+        "score5": ">=15% 明显增长",
+        "logic": "单调递增",
+        "reference": "竣工反映保交楼进度"
+      }
+    },
+    {
+      "id": "M30",
+      "primary": "增长动力",
+      "secondary": "房地产",
+      "name": "房地产开发企业土地购置面积增速（%）",
+      "frequency": "月度",
+      "purpose": "判断地产链拖累与政策效果",
+      "expectedSource": "国家统计局",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<-30% 深度下滑",
+        "score2": "-30~-15% 明显下滑",
+        "score3": "-15~0% 下滑",
+        "score4": "0-10% 回正",
+        "score5": ">=10% 明显扩张",
+        "logic": "单调递增",
+        "reference": "土地购置领先新开工6-12M"
+      }
+    },
+    {
+      "id": "M31",
+      "primary": "增长动力",
+      "secondary": "房地产",
+      "name": "70个大中城市新建商品住宅价格指数（%）",
+      "frequency": "月度",
+      "purpose": "判断地产链拖累与政策效果",
+      "expectedSource": "国家统计局 / 同比/环比",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<-3% 深度下跌",
+        "score2": "-3~-1% 下跌",
+        "score3": "-1~1% 小幅波动",
+        "score4": "1-3% 温和上涨",
+        "score5": "3-6% 较好上涨",
+        "logic": "倒U型",
+        "reference": "温和上涨最优"
+      }
+    },
+    {
+      "id": "M32",
+      "primary": "增长动力",
+      "secondary": "房地产",
+      "name": "国房景气指数",
+      "frequency": "月度",
+      "purpose": "判断地产链拖累与政策效果",
+      "expectedSource": "国家统计局",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<93 深度悲观",
+        "score2": "93-96 偏弱",
+        "score3": "96-100 正常",
+        "score4": "100-102 偏强",
+        "score5": ">=102 强景气",
+        "logic": "单调递增",
+        "reference": "100为适度水平"
+      }
+    },
+    {
+      "id": "M33",
+      "primary": "增长动力",
+      "secondary": "房地产",
+      "name": "房地产开发企业资金来源增速（%）",
+      "frequency": "月度",
+      "purpose": "判断地产链拖累与政策效果",
+      "expectedSource": "国家统计局",
+      "currentValue": "-21.0%",
+      "prior": null,
+      "period": "2026-01—08",
+      "trend": "房企到位资金继续收缩",
+      "score": null,
+      "currentSource": "国家统计局（2026-09-15）",
+      "assetMeaning": null,
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-15% 深度恶化",
+        "score2": "-15~-5% 明显恶化",
+        "score3": "-5~0% 小幅恶化",
+        "score4": "0-10% 回正",
+        "score5": ">=10% 明显改善",
+        "logic": "单调递增",
+        "reference": "资金来源领先投资6M"
+      }
+    },
+    {
+      "id": "M34",
+      "primary": "增长动力",
+      "secondary": "投资",
+      "name": "固定资产投资（FAI）增速（%）",
+      "frequency": "月度",
+      "purpose": "观察基建、制造业和地产投资分化",
+      "expectedSource": "国家统计局 / 不含农户",
+      "currentValue": "-7.2%",
+      "prior": "2025 全年 -3.8%",
+      "period": "2026-01—08",
+      "trend": "降幅扩大",
+      "score": 1,
+      "currentSource": "国家统计局",
+      "assetMeaning": "总需求约束明显，压制广义顺周期",
+      "status": "已核验",
+      "scoreRules": null
+    },
+    {
+      "id": "M35",
+      "primary": "增长动力",
+      "secondary": "投资",
+      "name": "基建投资增速（%）",
+      "frequency": "月度",
+      "purpose": "观察基建、制造业和地产投资分化",
+      "expectedSource": "国家统计局 / 不含电力",
+      "currentValue": "-4.0%",
+      "prior": "—",
+      "period": "2026-01—08",
+      "trend": "偏弱",
+      "score": 1,
+      "currentSource": "国家统计局",
+      "assetMeaning": "财政资金到实物工作量的转化需验证",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<4.0% 明显偏低",
+        "score2": "4.0-7.0% 偏低",
+        "score3": "7.0-10.0% 正常",
+        "score4": "10.0-13.0% 偏强",
+        "score5": ">=13.0% 强增长",
+        "logic": "单调递增",
+        "reference": "财政发力重要观测指标"
+      }
+    },
+    {
+      "id": "M36",
+      "primary": "增长动力",
+      "secondary": "投资",
+      "name": "制造业投资增速（%）",
+      "frequency": "月度",
+      "purpose": "观察基建、制造业和地产投资分化",
+      "expectedSource": "国家统计局",
+      "currentValue": "-2.3%",
+      "prior": "—",
+      "period": "2026-01—08",
+      "trend": "短期转弱",
+      "score": 1,
+      "currentSource": "国家统计局",
+      "assetMeaning": "制造盈利较强但资本开支尚未全面共振",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<4.0% 明显偏低",
+        "score2": "4.0-7.0% 偏低",
+        "score3": "7.0-10.0% 正常",
+        "score4": "10.0-14.0% 偏强",
+        "score5": ">=14.0% 强增长",
+        "logic": "单调递增",
+        "reference": "反映企业资本开支意愿"
+      }
+    },
+    {
+      "id": "M37",
+      "primary": "增长动力",
+      "secondary": "投资",
+      "name": "房地产开发投资增速（%）",
+      "frequency": "月度",
+      "purpose": "观察基建、制造业和地产投资分化",
+      "expectedSource": "国家统计局",
+      "currentValue": "-19.9%",
+      "prior": "2025 全年 -17.2%",
+      "period": "2026-01—08",
+      "trend": "深度收缩",
+      "score": 1,
+      "currentSource": "国家统计局",
+      "assetMeaning": "拖累建材、地产信用与地方财政",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-10% 深度下滑",
+        "score2": "-10~-3% 明显下滑",
+        "score3": "-3~0% 小幅下滑",
+        "score4": "0-5% 回正",
+        "score5": ">=5% 明显扩张",
+        "logic": "单调递增",
+        "reference": "地产投资是最大拖累项"
+      }
+    },
+    {
+      "id": "M38",
+      "primary": "增长动力",
+      "secondary": "投资",
+      "name": "民间固定资产投资增速（%）",
+      "frequency": "月度",
+      "purpose": "观察基建、制造业和地产投资分化",
+      "expectedSource": "国家统计局",
+      "currentValue": "-10.1%",
+      "prior": "—",
+      "period": "2026-01—08",
+      "trend": "偏弱",
+      "score": 1,
+      "currentSource": "国家统计局",
+      "assetMeaning": "企业信心与内生信用需求不足",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<2.0% 明显偏低",
+        "score2": "2.0-4.0% 偏低",
+        "score3": "4.0-6.0% 正常",
+        "score4": "6.0-9.0% 偏强",
+        "score5": ">=9.0% 强增长",
+        "logic": "单调递增",
+        "reference": "反映民营经济信心"
+      }
+    },
+    {
+      "id": "M39",
+      "primary": "增长动力",
+      "secondary": "投资",
+      "name": "高技术产业投资增速（%）",
+      "frequency": "月度",
+      "purpose": "观察基建、制造业和地产投资分化",
+      "expectedSource": "国家统计局",
+      "currentValue": "4.6%",
+      "prior": "—",
+      "period": "2026 H1",
+      "trend": "保持增长",
+      "score": 1,
+      "currentSource": "国家统计局",
+      "assetMeaning": "结构亮点仍在，但按 Excel 绝对阈值尚处低分区",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<8.0% 明显偏低",
+        "score2": "8.0-12.0% 偏低",
+        "score3": "12.0-16.0% 正常",
+        "score4": "16.0-20.0% 偏强",
+        "score5": ">=20.0% 强增长",
+        "logic": "单调递增",
+        "reference": "新质生产力核心指标"
+      }
+    },
+    {
+      "id": "M40",
+      "primary": "增长动力",
+      "secondary": "消费",
+      "name": "社会消费品零售总额增速（%）",
+      "frequency": "月度",
+      "purpose": "判断内需和居民修复质量",
+      "expectedSource": "国家统计局 / 名义/实际增速",
+      "currentValue": "0.4%",
+      "prior": "2026 H1 累计 1.3%；2025 全年 3.7%",
+      "period": "2026-08",
+      "trend": "月度偏弱",
+      "score": 1,
+      "currentSource": "国家统计局",
+      "assetMeaning": "消费配置需等待收入、信心和盈利共同改善",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<2.0% 明显偏低",
+        "score2": "2.0-4.0% 偏低",
+        "score3": "4.0-6.0% 正常",
+        "score4": "6.0-8.0% 偏强",
+        "score5": ">=8.0% 强增长",
+        "logic": "单调递增",
+        "reference": "疫前正常8-10%疫后恢复缓慢"
+      }
+    },
+    {
+      "id": "M41",
+      "primary": "增长动力",
+      "secondary": "进出口",
+      "name": "出口金额增速（美元计，%）",
+      "frequency": "月度",
+      "purpose": "观察外需韧性和全球周期",
+      "expectedSource": "海关总署",
+      "currentValue": "人民币口径参考 +13.4%",
+      "prior": null,
+      "period": "2026 H1（非本指标口径）",
+      "trend": "等待海关美元口径",
+      "score": null,
+      "currentSource": "国家统计局（人民币口径参考）",
+      "assetMeaning": "当前参考值与 Excel 要求的美元口径不一致，不据此评分或改变配置",
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<-5.0% 深度下滑",
+        "score2": "-5.0~0% 下滑",
+        "score3": "0-5.0% 低速增长",
+        "score4": "5.0-10.0% 正常",
+        "score5": ">=10.0% 强增长",
+        "logic": "单调递增",
+        "reference": "外需韧性核心指标"
+      }
+    },
+    {
+      "id": "M42",
+      "primary": "增长动力",
+      "secondary": "进出口",
+      "name": "进口金额增速（美元计，%）",
+      "frequency": "月度",
+      "purpose": "观察外需韧性和全球周期",
+      "expectedSource": "海关总署",
+      "currentValue": "人民币口径参考 +22.1%",
+      "prior": null,
+      "period": "2026 H1（非本指标口径）",
+      "trend": "等待海关美元口径",
+      "score": null,
+      "currentSource": "国家统计局（人民币口径参考）",
+      "assetMeaning": "当前参考值与 Excel 要求的美元口径不一致，不据此评分或改变配置",
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<-5.0% 深度下滑",
+        "score2": "-5.0~0% 下滑",
+        "score3": "0-4.0% 低速增长",
+        "score4": "4.0-8.0% 正常",
+        "score5": ">=8.0% 强增长",
+        "logic": "单调递增",
+        "reference": "进口反映内需强弱"
+      }
+    },
+    {
+      "id": "M43",
+      "primary": "增长动力",
+      "secondary": "进出口",
+      "name": "贸易差额（亿美元）",
+      "frequency": "月度",
+      "purpose": "观察外需韧性和全球周期",
+      "expectedSource": "海关总署",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": null
+    },
+    {
+      "id": "M44",
+      "primary": "增长动力",
+      "secondary": "进出口",
+      "name": "出口集装箱运价指数（CCFI）",
+      "frequency": "周度",
+      "purpose": "观察外需韧性和全球周期",
+      "expectedSource": "上海航运交易所",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<600或>2500",
+        "score2": "600-900或2000-2500",
+        "score3": "900-1100或1600-2000",
+        "score4": "1100-1600 正常",
+        "score5": "-- 适中最好",
+        "logic": "偏标准",
+        "reference": "正常区间900-1600"
+      }
+    },
+    {
+      "id": "M45",
+      "primary": "金融信贷",
+      "secondary": "信贷结构",
+      "name": "居民户短期贷款增量（亿元）",
+      "frequency": "月度",
+      "purpose": "判断实体融资需求质量",
+      "expectedSource": "中国人民银行",
+      "currentValue": "-5881",
+      "prior": "—",
+      "period": "2026 H1",
+      "trend": "净减少",
+      "score": null,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "耐用品消费与居民加杠杆意愿偏弱",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "同比少增>=2000亿",
+        "score2": "同比少增1000-2000亿",
+        "score3": "同比少增0-1000亿",
+        "score4": "同比多增0-1000亿",
+        "score5": "同比多增>=1000亿",
+        "logic": "方向信号",
+        "reference": "反映消费信贷需求"
+      }
+    },
+    {
+      "id": "M46",
+      "primary": "金融信贷",
+      "secondary": "信贷结构",
+      "name": "居民户中长期贷款增量（亿元）",
+      "frequency": "月度",
+      "purpose": "判断实体融资需求质量",
+      "expectedSource": "中国人民银行 / 主要反映房贷",
+      "currentValue": "2212",
+      "prior": "—",
+      "period": "2026 H1",
+      "trend": "增量有限",
+      "score": null,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "房贷与居民资产负债表修复仍弱",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "同比少增>=3000亿",
+        "score2": "同比少增1500-3000亿",
+        "score3": "同比少增0-1500亿",
+        "score4": "同比多增0-1500亿",
+        "score5": "同比多增>=1500亿",
+        "logic": "方向信号",
+        "reference": "主要反映房贷需求"
+      }
+    },
+    {
+      "id": "M47",
+      "primary": "金融信贷",
+      "secondary": "信贷结构",
+      "name": "非金融企业短期贷款增量（亿元）",
+      "frequency": "月度",
+      "purpose": "判断实体融资需求质量",
+      "expectedSource": "中国人民银行",
+      "currentValue": "45900",
+      "prior": "—",
+      "period": "2026 H1",
+      "trend": "短贷贡献较多",
+      "score": null,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "需观察是否转化为中长期资本开支",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "同比少增>=2000亿",
+        "score2": "同比少增1000-2000亿",
+        "score3": "同比少增0-1000亿",
+        "score4": "同比多增0-1500亿",
+        "score5": "同比多增>=1500亿",
+        "logic": "方向信号",
+        "reference": "反映企业周转资金需求"
+      }
+    },
+    {
+      "id": "M48",
+      "primary": "金融信贷",
+      "secondary": "信贷结构",
+      "name": "非金融企业中长期贷款增量（亿元）",
+      "frequency": "月度",
+      "purpose": "判断实体融资需求质量",
+      "expectedSource": "中国人民银行 / 反映资本开支",
+      "currentValue": "55500",
+      "prior": "—",
+      "period": "2026 H1",
+      "trend": "保持投放",
+      "score": null,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "企业融资仍有政策支持，但结构质量需配合投资数据判断",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "同比少增>=3000亿",
+        "score2": "同比少增1500-3000亿",
+        "score3": "同比少增0-2000亿",
+        "score4": "同比多增0-2000亿",
+        "score5": "同比多增>=2000亿",
+        "logic": "方向信号",
+        "reference": "反映企业资本开支意愿"
+      }
+    },
+    {
+      "id": "M49",
+      "primary": "金融信贷",
+      "secondary": "信贷结构",
+      "name": "社融规模存量增速（%）",
+      "frequency": "月度",
+      "purpose": "观察信用周期和融资总量",
+      "expectedSource": "中国人民银行",
+      "currentValue": "7.4%",
+      "prior": "—",
+      "period": "2026-06",
+      "trend": "偏低",
+      "score": 2,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "政府债支撑总量，私人部门信用扩张不足",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<7.0% 信用收缩",
+        "score2": "7.0-8.5% 偏低",
+        "score3": "8.5-10.0% 正常",
+        "score4": "10.0-12.0% 偏强",
+        "score5": ">=12.0% 强扩张",
+        "logic": "单调递增",
+        "reference": "8-10%为近年正常区间"
+      }
+    },
+    {
+      "id": "M50",
+      "primary": "金融信贷",
+      "secondary": "信贷结构",
+      "name": "人民币贷款存量增速（%）",
+      "frequency": "月度",
+      "purpose": "观察信用周期和融资总量",
+      "expectedSource": "中国人民银行",
+      "currentValue": "5.2%",
+      "prior": "—",
+      "period": "2026-06",
+      "trend": "偏弱",
+      "score": 1,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "内生融资需求偏弱，权益盈利扩散仍受限制",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<7.0% 收缩",
+        "score2": "7.0-9.0% 偏低",
+        "score3": "9.0-11.0% 正常",
+        "score4": "11.0-13.0% 偏强",
+        "score5": ">=13.0% 强扩张",
+        "logic": "单调递增",
+        "reference": "贷款增速略高于社融增速"
+      }
+    },
+    {
+      "id": "M51",
+      "primary": "金融信贷",
+      "secondary": "信贷结构",
+      "name": "M0增速（%）",
+      "frequency": "月度",
+      "purpose": "判断资金活化和风险偏好",
+      "expectedSource": "中国人民银行 / 流通中现金",
+      "currentValue": "11.8%",
+      "prior": "—",
+      "period": "2026-06",
+      "trend": "偏高",
+      "score": 3,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "现金需求高不等于企业活跃，需与 M1 联判",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<2.0%或>18.0%",
+        "score2": "2.0-4.0%或14.0-18.0%",
+        "score3": "4.0-6.0%或10.0-14.0%",
+        "score4": "6.0-8.0% 正常",
+        "score5": "8.0-10.0% 偏强",
+        "logic": "偏标准",
+        "reference": "M0反映流通中现金"
+      }
+    },
+    {
+      "id": "M52",
+      "primary": "金融信贷",
+      "secondary": "信贷结构",
+      "name": "M1增速（%）",
+      "frequency": "月度",
+      "purpose": "判断资金活化和风险偏好",
+      "expectedSource": "中国人民银行 / 狭义货币",
+      "currentValue": "4.0%",
+      "prior": "—",
+      "period": "2026-06",
+      "trend": "温和",
+      "score": 3,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "企业资金活化尚未进入强扩张区",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<2.0% 活化极低",
+        "score2": "2.0-4.0% 偏低",
+        "score3": "4.0-6.0% 正常",
+        "score4": "6.0-9.0% 偏强",
+        "score5": ">=9.0% 强活化",
+        "logic": "单调递增",
+        "reference": "M1反映企业活期存款"
+      }
+    },
+    {
+      "id": "M53",
+      "primary": "金融信贷",
+      "secondary": "信贷结构",
+      "name": "M2增速（%）",
+      "frequency": "月度",
+      "purpose": "判断资金活化和风险偏好",
+      "expectedSource": "中国人民银行 / 广义货币",
+      "currentValue": "8.0%",
+      "prior": "—",
+      "period": "2026-06",
+      "trend": "高于 M1",
+      "score": 3,
+      "currentSource": "中国人民银行",
+      "assetMeaning": "流动性总量不差，但传导效率是关键",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<6.0% 偏紧",
+        "score2": "6.0-8.0% 偏低",
+        "score3": "8.0-10.0% 正常",
+        "score4": "10.0-12.0% 偏强",
+        "score5": ">=12.0% 强扩张",
+        "logic": "单调递增",
+        "reference": "M2与名义GDP匹配最优"
+      }
+    },
+    {
+      "id": "M54",
+      "primary": "金融信贷",
+      "secondary": "信贷结构",
+      "name": "M1-M2剪刀差",
+      "frequency": "月度",
+      "purpose": "判断资金活化和风险偏好",
+      "expectedSource": "推算 / 反映企业活存",
+      "currentValue": "-4.0pct",
+      "prior": "—",
+      "period": "2026-06",
+      "trend": "负剪刀差",
+      "score": 2,
+      "currentSource": "中国人民银行 / 推算",
+      "assetMeaning": "企业活期存款与风险偏好弱于广义流动性",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<-5pct 深度固化",
+        "score2": "-5~-2pct 偏低",
+        "score3": "-2~1pct 正常",
+        "score4": "1-3pct 偏强",
+        "score5": ">=3pct 强活化",
+        "logic": "绝对值递减最优",
+        "reference": "剪刀差收窄反映活化改善"
+      }
+    },
+    {
+      "id": "M55",
+      "primary": "政策制度",
+      "secondary": "产业政策",
+      "name": "资本市场核心会议跟踪.xlsx",
+      "frequency": "事件驱动",
+      "purpose": "识别结构性投资主线",
+      "expectedSource": "\"C:\\Users\\熊林鹏\\Desktop\\大模型\\资本市场核心会议跟踪.xlsx\"",
+      "currentValue": "3 项正式更新",
+      "prior": "持续更新",
+      "period": "截至 2026-07-23",
+      "trend": "稳市与中长期资金",
+      "score": null,
+      "currentSource": "证监会官方原文",
+      "assetMeaning": "政策信号进入情景触发，不把会议措辞直接等同于盈利",
+      "status": "已核验",
+      "scoreRules": null
+    },
+    {
+      "id": "M56",
+      "primary": "政策制度",
+      "secondary": "财政政策",
+      "name": "财政赤字率（%）",
+      "frequency": "年度",
+      "purpose": "评估财政托底力度",
+      "expectedSource": "全国人大 / 一般债+专项债",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": ">5.0% 可持续性担忧",
+        "score2": "4.0-5.0% 偏高",
+        "score3": "3.0-4.0% 积极可控",
+        "score4": "2.5-3.0% 适度积极",
+        "score5": "<2.5% 偏保守",
+        "logic": "倒U型",
+        "reference": "3.0-3.5%为最优积极区间"
+      }
+    },
+    {
+      "id": "M57",
+      "primary": "政策制度",
+      "secondary": "财政政策",
+      "name": "全国公共财政收入增速（%）",
+      "frequency": "月度",
+      "purpose": "评估财政托底力度",
+      "expectedSource": "财政部 / 累计同比",
+      "currentValue": "5.7%",
+      "prior": "—",
+      "period": "2026-01—08",
+      "trend": "收入改善",
+      "score": 3,
+      "currentSource": "财政部",
+      "assetMeaning": "财政空间改善，但需关注土地财政与支出乘数",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<0.0% 收入下滑",
+        "score2": "0.0-2.0% 偏低",
+        "score3": "2.0-4.0% 正常",
+        "score4": "4.0-6.0% 偏强",
+        "score5": ">=6.0% 强增长",
+        "logic": "单调递增",
+        "reference": "收入增长反映经济税基健康"
+      }
+    },
+    {
+      "id": "M58",
+      "primary": "政策制度",
+      "secondary": "财政政策",
+      "name": "全国公共财政支出增速（%）",
+      "frequency": "月度",
+      "purpose": "评估财政托底力度",
+      "expectedSource": "财政部 / 累计同比",
+      "currentValue": "1.2%",
+      "prior": "—",
+      "period": "2026-01—08",
+      "trend": "温和",
+      "score": 3,
+      "currentSource": "财政部",
+      "assetMeaning": "预算支出力度不弱，但实物工作量和专项债进度更关键",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": "<0.0% 支出收缩",
+        "score2": "0.0-2.0% 偏低",
+        "score3": "2.0-4.0% 正常",
+        "score4": "4.0-6.0% 积极",
+        "score5": ">=6.0% 强积极",
+        "logic": "单调递增",
+        "reference": "支出高增长反映财政托底力度"
+      }
+    },
+    {
+      "id": "M59",
+      "primary": "政策制度",
+      "secondary": "货币政策",
+      "name": "1年期MLF利率（%）",
+      "frequency": "不定期",
+      "purpose": "评估流动性和利率政策方向",
+      "expectedSource": "中国人民银行 / 中期政策利率",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": ">2.8% 偏紧",
+        "score2": "2.3-2.8% 中性偏紧",
+        "score3": "1.8-2.3% 中性",
+        "score4": "1.3-1.8% 偏松",
+        "score5": "<1.3% 极度宽松",
+        "logic": "单调递减",
+        "reference": "利率越低政策越宽松"
+      }
+    },
+    {
+      "id": "M60",
+      "primary": "政策制度",
+      "secondary": "货币政策",
+      "name": "1年期LPR（%）",
+      "frequency": "月度",
+      "purpose": "评估流动性和利率政策方向",
+      "expectedSource": "全国银行间同业拆借中心 / 贷款基准利率",
+      "currentValue": "3.0%",
+      "prior": "—",
+      "period": "2026-07-20",
+      "trend": "低位",
+      "score": 2,
+      "currentSource": "全国银行间同业拆借中心",
+      "assetMeaning": "融资成本低，但信用需求对降息的敏感度下降",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": ">3.5% 偏紧",
+        "score2": "3.0-3.5% 中性偏紧",
+        "score3": "2.5-3.0% 中性",
+        "score4": "2.0-2.5% 偏松",
+        "score5": "<2.0% 极度宽松",
+        "logic": "单调递减",
+        "reference": "房贷和企业贷款基准"
+      }
+    },
+    {
+      "id": "M61",
+      "primary": "政策制度",
+      "secondary": "货币政策",
+      "name": "5年期以上LPR（%）",
+      "frequency": "月度",
+      "purpose": "评估流动性和利率政策方向",
+      "expectedSource": "全国银行间同业拆借中心 / 房贷定价基准",
+      "currentValue": "3.5%",
+      "prior": "—",
+      "period": "2026-07-20",
+      "trend": "低位",
+      "score": 2,
+      "currentSource": "全国银行间同业拆借中心",
+      "assetMeaning": "支持住房与长期融资，效果需地产销售验证",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": ">4.0% 偏紧",
+        "score2": "3.5-4.0% 中性偏紧",
+        "score3": "3.0-3.5% 中性",
+        "score4": "2.5-3.0% 偏松",
+        "score5": "<2.5% 极度宽松",
+        "logic": "单调递减",
+        "reference": "房贷定价基准"
+      }
+    },
+    {
+      "id": "M62",
+      "primary": "政策制度",
+      "secondary": "货币政策",
+      "name": "DR007（%）",
+      "frequency": "日度",
+      "purpose": "评估流动性和利率政策方向",
+      "expectedSource": "中国货币网 / 银行间7天回购利率",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": ">2.5% 偏紧",
+        "score2": "2.0-2.5% 中性偏紧",
+        "score3": "1.5-2.0% 中性",
+        "score4": "1.0-1.5% 偏松",
+        "score5": "<1.0% 极度宽松",
+        "logic": "单调递减",
+        "reference": "银行间7天回购利率"
+      }
+    },
+    {
+      "id": "M63",
+      "primary": "政策制度",
+      "secondary": "货币政策",
+      "name": "R007（%）",
+      "frequency": "日度",
+      "purpose": "评估流动性和利率政策方向",
+      "expectedSource": "中国货币网 / 全市场7天回购利率",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": ">2.8% 偏紧",
+        "score2": "2.2-2.8% 中性偏紧",
+        "score3": "1.7-2.2% 中性",
+        "score4": "1.2-1.7% 偏松",
+        "score5": "<1.2% 极度宽松",
+        "logic": "单调递减",
+        "reference": "全市场7天回购利率"
+      }
+    },
+    {
+      "id": "M64",
+      "primary": "政策制度",
+      "secondary": "货币政策",
+      "name": "10年期国债收益率（%）",
+      "frequency": "日度",
+      "purpose": "评估流动性和利率政策方向",
+      "expectedSource": "中债估值/交易所",
+      "currentValue": "1.7433%",
+      "prior": "美国 10Y 4.5700%",
+      "period": "2026-07-18",
+      "trend": "低位",
+      "score": 3,
+      "currentSource": "用户上传 2026 年中期内参",
+      "assetMeaning": "境内债票息较薄，久期赔率依赖增长再度下行",
+      "status": "已核验",
+      "scoreRules": {
+        "score1": ">3.5%偏紧或<1.0%极度弱势",
+        "score2": "1.0-1.5%或2.8-3.5%",
+        "score3": "1.5-1.8%或2.2-2.8%",
+        "score4": "1.8-2.2%温和偏低",
+        "score5": "2.2-2.8%健康均衡",
+        "logic": "倒U型",
+        "reference": "2.2-2.8%为健康均衡水平"
+      }
+    },
+    {
+      "id": "M65",
+      "primary": "政策制度",
+      "secondary": "货币政策",
+      "name": "1年期国债收益率（%）",
+      "frequency": "日度",
+      "purpose": "评估流动性和利率政策方向",
+      "expectedSource": "中债估值",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": ">2.5%偏紧或<0.5%极度弱势",
+        "score2": "0.5-1.0%或2.0-2.5%",
+        "score3": "1.0-1.3%或1.7-2.0%",
+        "score4": "1.3-1.7%温和偏低",
+        "score5": "1.7-2.0%偏低",
+        "logic": "倒U型",
+        "reference": "短端收益率倒U型"
+      }
+    },
+    {
+      "id": "M66",
+      "primary": "政策制度",
+      "secondary": "货币政策",
+      "name": "期限利差（10Y-1Y，bp）",
+      "frequency": "日度",
+      "purpose": "评估流动性和利率政策方向",
+      "expectedSource": "推算",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": "<0bp倒挂或>200bp过陡",
+        "score2": "0-20bp或160-200bp",
+        "score3": "20-40bp或130-160bp",
+        "score4": "40-80bp健康正斜率",
+        "score5": "80-130bp偏陡可接受",
+        "logic": "倒U型",
+        "reference": "健康正斜率40-100bp"
+      }
+    },
+    {
+      "id": "M67",
+      "primary": "政策制度",
+      "secondary": "货币政策",
+      "name": "信用利差（AAA企业债-国债，bp）",
+      "frequency": "日度",
+      "purpose": "评估流动性和利率政策方向",
+      "expectedSource": "推算",
+      "currentValue": null,
+      "prior": null,
+      "period": null,
+      "trend": null,
+      "score": null,
+      "currentSource": null,
+      "assetMeaning": null,
+      "status": "待采集",
+      "scoreRules": {
+        "score1": ">200bp信用紧缩",
+        "score2": "150-200bp偏高",
+        "score3": "100-150bp正常",
+        "score4": "60-100bp偏窄",
+        "score5": "30-60bp极窄风险定价不足",
+        "logic": "倒U型",
+        "reference": "利差收窄反映信用环境友好"
+      }
+    }
+  ],
+  "macroHistory": {
+    "periods": [
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026 H1*"
+    ],
+    "note": "* 2026 为上半年累计/均值，不能与全年机械比较；口径差异在解释中单列。",
+    "series": [
+      {
+        "metric": "GDP 实际增速",
+        "unit": "%",
+        "values": [
+          3,
+          5.2,
+          5,
+          5,
+          4.7
+        ],
+        "interpretation": "2023 修复后稳定在约 5%，2026 H1 边际降至 4.7%；Q2 4.3% 显示环比动能更重要。"
+      },
+      {
+        "metric": "CPI",
+        "unit": "%",
+        "values": [
+          2,
+          0.2,
+          0.2,
+          0,
+          1
+        ],
+        "interpretation": "价格从近零区间回升，但仍低于高通胀状态；有利实际利率回落。"
+      },
+      {
+        "metric": "PPI",
+        "unit": "%",
+        "values": [
+          4.1,
+          -3,
+          -2.2,
+          -2.6,
+          1.5
+        ],
+        "interpretation": "工业品价格由负转正，是名义盈利修复的重要证据，但 6 月环比仍为负。"
+      },
+      {
+        "metric": "城镇调查失业率",
+        "unit": "%",
+        "values": [
+          5.6,
+          5.2,
+          5.1,
+          5.2,
+          5.2
+        ],
+        "interpretation": "总量稳定，消费仍需结合工资、青年就业与信心判断。"
+      },
+      {
+        "metric": "社会消费品零售",
+        "unit": "%",
+        "values": [
+          -0.2,
+          7.2,
+          3.5,
+          3.7,
+          1.3
+        ],
+        "interpretation": "消费增速明显放缓，是当前内需的主要短板。"
+      },
+      {
+        "metric": "固定资产投资",
+        "unit": "%",
+        "values": [
+          5.1,
+          3,
+          3.2,
+          -3.8,
+          -5.7
+        ],
+        "interpretation": "总投资连续走弱，制造和基建 2026 H1 也转负。"
+      },
+      {
+        "metric": "房地产开发投资",
+        "unit": "%",
+        "values": [
+          -10,
+          -9.6,
+          -10.6,
+          -17.2,
+          -18
+        ],
+        "interpretation": "地产拖累持续加深，低估值不能替代销售、融资和现金流企稳。"
+      },
+      {
+        "metric": "货物进出口总额",
+        "unit": "%",
+        "values": [
+          7.7,
+          0.2,
+          5,
+          3.8,
+          16.9
+        ],
+        "interpretation": "外贸成为增长支撑，但 2026 H1 为人民币口径且受基数影响。"
+      }
+    ]
+  },
+  "macroExtensions": [
+    {
+      "layer": "领先指标",
+      "purpose": "提前 1—2 个季度识别拐点",
+      "metrics": "PMI 新订单/库存、信用脉冲、M1-M2、地产销售、企业中长贷、期限利差",
+      "current": "PMI 略高于 50，但信用与地产仍弱",
+      "decision": "领先指标未形成全面共振，风险预算宜结构化"
+    },
+    {
+      "layer": "同步指标",
+      "purpose": "确认当前增长强弱",
+      "metrics": "工业、服务业生产、社零、就业、发电与货运",
+      "current": "工业与服务稳定，消费偏弱",
+      "decision": "制造链强于广义内需"
+    },
+    {
+      "layer": "滞后指标",
+      "purpose": "验证盈利与通胀传导",
+      "metrics": "CPI/PPI、工业利润、失业率、信用利差、不良率",
+      "current": "PPI 和利润修复，就业稳定",
+      "decision": "名义盈利改善，但扩散度需验证"
+    },
+    {
+      "layer": "资产负债表",
+      "purpose": "判断政策乘数",
+      "metrics": "居民收入/储蓄/杠杆、企业现金流/资本开支、地方土地收入与债务",
+      "current": "居民贷款减少、土地收入 -31.5%",
+      "decision": "政策宽松向私人需求传导仍是核心约束"
+    },
+    {
+      "layer": "全球约束",
+      "purpose": "判断外部流动性与贸易周期",
+      "metrics": "美债实际利率、美元、全球 PMI、油价、贸易摩擦、全球半导体周期",
+      "current": "中美 10Y 利差较大，出口强但摩擦风险在",
+      "decision": "海外债有票息，成长估值受真实利率制约"
+    }
+  ],
+  "assetTransmission": [
+    {
+      "driver": "增长/盈利",
+      "current": "增长放缓、利润修复",
+      "equity": "盈利修复支撑；低增长压制广度",
+      "bond": "增长弱利多久期",
+      "commodity": "真实需求不强",
+      "gold": "中性",
+      "alternatives": "利好市场中性/相对价值"
+    },
+    {
+      "driver": "通胀/价格",
+      "current": "CPI 1.0%、PPI 1.5%",
+      "equity": "名义盈利改善",
+      "bond": "温和不构成冲击",
+      "commodity": "PPI 回升有利但环比待确认",
+      "gold": "真实利率回落时受益",
+      "alternatives": "CTA 观察趋势持续性"
+    },
+    {
+      "driver": "信用/货币",
+      "current": "社融 7.4%、M1-M2 -4pct",
+      "equity": "压制全面估值扩张",
+      "bond": "流动性支撑",
+      "commodity": "内需传导偏弱",
+      "gold": "宽货币提供中期支撑",
+      "alternatives": "低相关策略价值上升"
+    },
+    {
+      "driver": "财政/政策",
+      "current": "支出 +1.5%、专项债 47%",
+      "equity": "降低尾部风险、支持结构主线",
+      "bond": "供给与稳增长约束长久期",
+      "commodity": "取决于实物工作量",
+      "gold": "中性",
+      "alternatives": "REITs 关注现金流与融资成本"
+    },
+    {
+      "driver": "美元/真实利率",
+      "current": "中国 10Y 1.74%、美国 10Y 4.57%",
+      "equity": "高估值成长承压",
+      "bond": "海外债票息较高",
+      "commodity": "美元强弱决定价格弹性",
+      "gold": "核心负相关驱动",
+      "alternatives": "全球宏观策略机会增加"
+    },
+    {
+      "driver": "风险偏好/拥挤",
+      "current": "科技成交约 46%",
+      "equity": "集中度高，需控制尾部",
+      "bond": "风险回撤时对冲",
+      "commodity": "趋势与地缘双向",
+      "gold": "尾部保险",
+      "alternatives": "CTA/中性提供分散"
+    }
+  ],
+  "assetRatingDimensions": [
+    {
+      "name": "宏观匹配",
+      "weight": "20%",
+      "question": "当前增长、通胀、信用与政策组合是否有利？"
+    },
+    {
+      "name": "估值/赔率",
+      "weight": "25%",
+      "question": "PE/PB/ERP、票息/期限溢价、真实利率或库存定价是否留出安全边际？"
+    },
+    {
+      "name": "盈利/Carry",
+      "weight": "20%",
+      "question": "盈利修正、股息、票息、滚动收益或现金流能否兑现？"
+    },
+    {
+      "name": "趋势/资金",
+      "weight": "15%",
+      "question": "价格趋势、成交、资金流和仓位是否确认？"
+    },
+    {
+      "name": "流动性",
+      "weight": "10%",
+      "question": "政策与市场流动性是否支持持有和交易？"
+    },
+    {
+      "name": "拥挤/尾部",
+      "weight": "10%",
+      "question": "集中度、杠杆、相关性和情景损失是否可承受？"
+    }
+  ],
+  "assetScorecards": [
+    {
+      "asset": "中国权益",
+      "stance": "适度超配",
+      "macro": "政策积极/增长分化",
+      "valuation": "A500 ERP 4.19%；恒指 ERP 6.77%；小盘与科创偏贵",
+      "carry": "工业利润 1—5月 +18.8%，A500 Q1 利润 +6.96%",
+      "trend": "YTD 大盘小幅正、小盘回撤",
+      "liquidity": "政策托底但 M1-M2 -4pct",
+      "risk": "科技拥挤、内需弱",
+      "conclusion": "红利+GARP 做核心，科技精选，避免小盘高估值泛化"
+    },
+    {
+      "asset": "境内债券",
+      "stance": "适度低配",
+      "macro": "增长偏弱但政策稳增长",
+      "valuation": "10Y 国债约 1.7433%，票息与安全边际较薄",
+      "carry": "低票息，主要依赖久期资本利得",
+      "trend": "需跟踪收益率与供给",
+      "liquidity": "银行间利率约 1.4%",
+      "risk": "财政供给、增长企稳导致收益率上行",
+      "conclusion": "短久期流动性为主，增长再下行时才增久期"
+    },
+    {
+      "asset": "海外债券",
+      "stance": "适度超配",
+      "macro": "美债收益率高、外部增长有韧性",
+      "valuation": "美国 10Y 约 4.57%，票息显著高于境内",
+      "carry": "高票息提供持有收益",
+      "trend": "受通胀和降息预期驱动",
+      "liquidity": "深度高但汇率需对冲",
+      "risk": "能源冲击、通胀再加速、美元波动",
+      "conclusion": "中短久期票息优先，通胀确认回落再延长久期"
+    },
+    {
+      "asset": "商品",
+      "stance": "中性",
+      "macro": "外需强、内需弱；地缘提高波动",
+      "valuation": "按库存/成本曲线/期限结构评估，当前缺统一估值",
+      "carry": "滚动收益待分品种采集",
+      "trend": "综合商品 YTD +12.20%",
+      "liquidity": "主要期货品种较好",
+      "risk": "需求走弱与快速均值回归",
+      "conclusion": "不做大类单向重仓，优先 CTA 或品种分散"
+    },
+    {
+      "asset": "黄金",
+      "stance": "适度低配",
+      "macro": "尾部风险在，但高真实利率约束",
+      "valuation": "无传统现金流估值；看真实利率、美元、央行需求",
+      "carry": "无息资产，持有成本取决于利率",
+      "trend": "截至 07-03 YTD -4.66%",
+      "liquidity": "高",
+      "risk": "避险事件导致踏空",
+      "conclusion": "保留保险仓，不追涨；三驱动中两项转强再加仓"
+    },
+    {
+      "asset": "CTA",
+      "stance": "适度超配",
+      "macro": "跨资产波动与趋势机会增加",
+      "valuation": "不适用 PE/PB，按趋势广度、危机 Alpha、回撤恢复评估",
+      "carry": "来自趋势/期限结构/跨品种",
+      "trend": "需按管理人真实净值验证",
+      "liquidity": "取决于品种和保证金",
+      "risk": "震荡反复、模型拥挤",
+      "conclusion": "作为尾部对冲，分管理人与模型源"
+    },
+    {
+      "asset": "REITs",
+      "stance": "中性",
+      "macro": "利率低有利，但现金流与融资约束分化",
+      "valuation": "看 P/NAV、分派率、租金/通行量与债务成本；当前待采集",
+      "carry": "现金分派是核心",
+      "trend": "待采集",
+      "liquidity": "低于股票 ETF",
+      "risk": "底层现金流、再融资、行业集中",
+      "conclusion": "仅在分派覆盖与折价具安全边际时进入"
+    },
+    {
+      "asset": "市场中性",
+      "stance": "中性",
+      "macro": "方向性赔率下降时分散价值上升",
+      "valuation": "不适用资产估值，按 Alpha、基差、融券成本评估",
+      "carry": "Alpha 减成本",
+      "trend": "待补真实产品序列",
+      "liquidity": "依策略与锁定期",
+      "risk": "基差、杠杆、拥挤、模型漂移",
+      "conclusion": "补齐净值与穿透后小仓位试配"
+    }
+  ],
+  "equityValuations": [
+    {
+      "name": "中证A500",
+      "erp": 4.19,
+      "pe": 16.85,
+      "pePct": 81.42,
+      "pb": 1.65,
+      "pbPct": 44.89,
+      "ps": 1.45,
+      "psPct": 78.9,
+      "roe": 9.11,
+      "dividend": 2.53,
+      "read": "盈利修复但 PE/PS 分位偏高",
+      "asOf": "2026-07-18"
+    },
+    {
+      "name": "中证全指",
+      "erp": 3.08,
+      "pe": 20.76,
+      "pePct": 83.4,
+      "pb": 1.71,
+      "pbPct": 50.72,
+      "ps": 1.59,
+      "psPct": 73.01,
+      "roe": 7.62,
+      "dividend": 2.02,
+      "read": "广谱估值不便宜，依赖盈利兑现",
+      "asOf": "2026-07-18"
+    },
+    {
+      "name": "中证500",
+      "erp": 1.08,
+      "pe": 35.5,
+      "pePct": 87.56,
+      "pb": 2.39,
+      "pbPct": 79.19,
+      "ps": 1.66,
+      "psPct": 81.5,
+      "roe": 6.8,
+      "dividend": 1.43,
+      "read": "风险溢价有限，盈利改善需持续",
+      "asOf": "2026-07-18"
+    },
+    {
+      "name": "中证1000",
+      "erp": 0.56,
+      "pe": 43.39,
+      "pePct": 69.88,
+      "pb": 2.31,
+      "pbPct": 38.61,
+      "ps": 1.63,
+      "psPct": 54.55,
+      "roe": 4.93,
+      "dividend": 1.15,
+      "read": "成长性与低 ROE 并存",
+      "asOf": "2026-07-18"
+    },
+    {
+      "name": "中证2000",
+      "erp": -0.82,
+      "pe": 108.75,
+      "pePct": 58.19,
+      "pb": 2.38,
+      "pbPct": 54.66,
+      "ps": 1.97,
+      "psPct": 60.88,
+      "roe": 1.43,
+      "dividend": 0.9,
+      "read": "盈利基础薄、赔率偏低",
+      "asOf": "2026-07-18"
+    },
+    {
+      "name": "创业板指",
+      "erp": 0.55,
+      "pe": 43.74,
+      "pePct": 55.46,
+      "pb": 5.83,
+      "pbPct": 70.5,
+      "ps": 4.35,
+      "psPct": 43.39,
+      "roe": 13.42,
+      "dividend": 0.92,
+      "read": "ROE 较好但估值不低",
+      "asOf": "2026-07-18"
+    },
+    {
+      "name": "科创50",
+      "erp": -1.26,
+      "pe": 209.94,
+      "pePct": 98.67,
+      "pb": 8.27,
+      "pbPct": 97.16,
+      "ps": 9.91,
+      "psPct": 87.56,
+      "roe": 5.02,
+      "dividend": 0.21,
+      "read": "估值极高且拥挤，必须用业绩验证",
+      "asOf": "2026-07-18"
+    },
+    {
+      "name": "恒生指数",
+      "erp": 6.77,
+      "pe": 11.74,
+      "pePct": 70.42,
+      "pb": 1.17,
+      "pbPct": 67.88,
+      "ps": 1.5,
+      "psPct": 50.1,
+      "roe": 9.72,
+      "dividend": 3.22,
+      "read": "ERP 与股息较高，具相对安全边际",
+      "asOf": "2026-07-18"
+    },
+    {
+      "name": "恒生科技",
+      "erp": -1.67,
+      "pe": 34.76,
+      "pePct": 71.07,
+      "pb": 10.21,
+      "pbPct": 96.78,
+      "ps": 7.4,
+      "psPct": 96.06,
+      "roe": 25.73,
+      "dividend": 0.44,
+      "read": "ROE 强但 PB/PS 极高",
+      "asOf": "2026-07-18"
+    },
+    {
+      "name": "标普500",
+      "erp": -0.97,
+      "pe": 27.9,
+      "pePct": 75.69,
+      "pb": 5.69,
+      "pbPct": 98.49,
+      "ps": 3.76,
+      "psPct": 98.41,
+      "roe": 17.94,
+      "dividend": 1.03,
+      "read": "盈利质量高但估值与真实利率约束明显",
+      "asOf": "2026-07-18"
+    }
+  ],
+  "styleValuations": [
+    {
+      "style": "价值",
+      "erp": 8.66,
+      "pe": 9.61,
+      "pePct": 63.21,
+      "pb": 0.95,
+      "pbPct": 40.67,
+      "roe": 8.93,
+      "dividend": 4.25,
+      "revenueGrowth": 0.29,
+      "profitGrowth": 2.04,
+      "view": "超配底仓",
+      "logic": "高 ERP 与股息提供安全垫，盈利增速偏低限制进攻性"
+    },
+    {
+      "style": "成长",
+      "erp": 2.49,
+      "pe": 23.63,
+      "pePct": 67.57,
+      "pb": 3.83,
+      "pbPct": 77.75,
+      "roe": 13.52,
+      "dividend": 1.52,
+      "revenueGrowth": 8.98,
+      "profitGrowth": 18.44,
+      "view": "中性偏多",
+      "logic": "盈利增速和 ROE 更强，但估值与拥挤需要约束"
+    },
+    {
+      "style": "红利",
+      "erp": 10.38,
+      "pe": 8.25,
+      "pePct": 70.54,
+      "pb": 0.8,
+      "pbPct": 41.94,
+      "roe": 8.84,
+      "dividend": 4.83,
+      "revenueGrowth": 0.19,
+      "profitGrowth": 0.97,
+      "view": "超配",
+      "logic": "最高 ERP/股息，适合底仓；关注利率上行和盈利覆盖"
+    }
+  ],
+  "mesoLenses": [
+    {
+      "lens": "盈利周期",
+      "metrics": "收入/利润增速、盈利修正广度、毛利率、ROE/ROIC、现金流",
+      "decision": "判断景气是真改善还是基数/价格驱动"
+    },
+    {
+      "lens": "估值与质量",
+      "metrics": "PE/PB/PS/ERP 分位、股息、自由现金流、杠杆",
+      "decision": "把好产业与好价格分开"
+    },
+    {
+      "lens": "供需与库存",
+      "metrics": "产能利用率、库存天数、价格/价差、订单、交货期",
+      "decision": "识别补库、去库和产能周期"
+    },
+    {
+      "lens": "资本开支与政策",
+      "metrics": "固定资产投资、设备订单、产业政策、补贴/监管、融资",
+      "decision": "判断供给扩张是否侵蚀回报"
+    },
+    {
+      "lens": "资金与拥挤",
+      "metrics": "成交占比、ETF/北向/两融、主动仓位、换手、相关性",
+      "decision": "决定仓位上限与止盈规则"
+    },
+    {
+      "lens": "全球映射",
+      "metrics": "出口、海外同业、汇率、贸易政策、全球份额",
+      "decision": "把中国、日韩、美国产业链放在同一供需表中"
+    }
+  ],
+  "regionalIndicators": [
+    {
+      "region": "中国",
+      "growth": "GDP H1 4.7%",
+      "inflation": "CPI 1.0% / PPI 1.5%",
+      "rates": "10Y 1.74%",
+      "earnings": "工业利润 +18.8%",
+      "valuation": "恒指 ERP 6.77%；A500 4.19%",
+      "industries": "AI、先进制造、金融红利",
+      "stance": "结构性超配",
+      "missing": "盈利修正广度、资金流"
+    },
+    {
+      "region": "日本",
+      "growth": "待采集",
+      "inflation": "待采集",
+      "rates": "待采集",
+      "earnings": "待采集",
+      "valuation": "待采集",
+      "industries": "自动化、精密制造、金融",
+      "stance": "中性偏多",
+      "missing": "TOPIX 估值、工资、日元、BOJ"
+    },
+    {
+      "region": "韩国",
+      "growth": "待采集",
+      "inflation": "待采集",
+      "rates": "待采集",
+      "earnings": "待采集",
+      "valuation": "待采集",
+      "industries": "存储、先进封装、出口链",
+      "stance": "中性观察",
+      "missing": "芯片价格、库存、出口、外资"
+    },
+    {
+      "region": "美国",
+      "growth": "待采集",
+      "inflation": "高于目标（待补最新值）",
+      "rates": "10Y 4.57%",
+      "earnings": "待采集",
+      "valuation": "S&P500 PE 27.9 / PB分位 98.49%",
+      "industries": "AI基础设施、软件、电力",
+      "stance": "中性",
+      "missing": "EPS修正、真实利率、资本开支回报"
+    },
+    {
+      "region": "欧洲/全球",
+      "growth": "待采集",
+      "inflation": "待采集",
+      "rates": "待采集",
+      "earnings": "待采集",
+      "valuation": "待采集",
+      "industries": "工业升级、能源基础设施",
+      "stance": "中性分散",
+      "missing": "全球 PMI、能源、美元、贸易政策"
+    }
+  ],
+  "productRatingModels": [
+    {
+      "type": "指数 ETF",
+      "dimensions": [
+        [
+          "跟踪效率",
+          25,
+          "跟踪差、跟踪误差、复制方式"
+        ],
+        [
+          "流动性",
+          20,
+          "日均成交、买卖价差、申赎效率"
+        ],
+        [
+          "成本",
+          15,
+          "管理费、托管费、交易冲击"
+        ],
+        [
+          "基准适配",
+          15,
+          "指数代表性、集中度、风格暴露"
+        ],
+        [
+          "管理与运营",
+          10,
+          "基金公司、做市、异常事件"
+        ],
+        [
+          "历史稳定",
+          10,
+          "规模、存续期、份额稳定"
+        ],
+        [
+          "结构/税务",
+          5,
+          "跨境额度、分红与税务"
+        ]
+      ],
+      "grade": "A≥85；B 75–84；C 65–74；D 50–64；<50 观察"
+    },
+    {
+      "type": "主动公募",
+      "dimensions": [
+        [
+          "超额收益",
+          20,
+          "相对基准与同类"
+        ],
+        [
+          "一致性",
+          15,
+          "滚动胜率、排名稳定"
+        ],
+        [
+          "下行控制",
+          15,
+          "回撤、下行捕获、修复期"
+        ],
+        [
+          "风格纯度",
+          15,
+          "持仓与因子漂移"
+        ],
+        [
+          "基金经理",
+          15,
+          "任职期、团队、容量"
+        ],
+        [
+          "集中/流动性",
+          10,
+          "持仓穿透与赎回压力"
+        ],
+        [
+          "费用",
+          5,
+          "总费率"
+        ],
+        [
+          "机构治理",
+          5,
+          "投研与风控"
+        ]
+      ],
+      "grade": "覆盖率≥70%才发布内部等级"
+    },
+    {
+      "type": "私募产品",
+      "dimensions": [
+        [
+          "收益与归因",
+          20,
+          "绝对/超额、月胜率、来源"
+        ],
+        [
+          "风险",
+          20,
+          "波动、回撤、尾部、杠杆"
+        ],
+        [
+          "稳定性",
+          15,
+          "滚动Alpha/Beta、相关性"
+        ],
+        [
+          "策略真实性",
+          15,
+          "风格漂移、可复制性、模型治理"
+        ],
+        [
+          "组织治理",
+          15,
+          "关键人、运营、托管、合规"
+        ],
+        [
+          "流动性/容量/费用",
+          10,
+          "锁定期、容量、费率"
+        ],
+        [
+          "组合适配",
+          5,
+          "边际风险贡献"
+        ]
+      ],
+      "grade": "先准入、后评级；尽调未完成不进入正式评级"
+    }
+  ],
+  "etfCandidates": [
+    {
+      "code": "510300",
+      "name": "华泰柏瑞沪深300ETF",
+      "role": "中国核心大盘 Beta",
+      "vehicle": "指数ETF",
+      "benchmark": "沪深300",
+      "currentView": "候选/优先补数",
+      "aum": null,
+      "trackingError": null,
+      "avgTurnover": null,
+      "totalFee": null,
+      "score": null,
+      "missing": "规模、跟踪误差、成交与总费率",
+      "source": "https://www.sse.com.cn/assortment/options/disclo/update/c/c_20260116_10805396.shtml"
+    },
+    {
+      "code": "512890",
+      "name": "红利低波ETF",
+      "role": "红利/价值底仓",
+      "vehicle": "指数ETF",
+      "benchmark": "红利低波策略",
+      "currentView": "优先研究",
+      "aum": null,
+      "trackingError": null,
+      "avgTurnover": null,
+      "totalFee": null,
+      "score": null,
+      "missing": "最新规模、指数编制、跟踪与流动性",
+      "source": "https://www.sse.com.cn/disclosure/fund/announcement/c/2021-10-25/512890_20211025_1_lJ5GeyLb.pdf"
+    },
+    {
+      "code": "159915",
+      "name": "易方达创业板ETF",
+      "role": "成长增强",
+      "vehicle": "指数ETF",
+      "benchmark": "创业板指",
+      "currentView": "观察/控仓",
+      "aum": null,
+      "trackingError": null,
+      "avgTurnover": null,
+      "totalFee": null,
+      "score": null,
+      "missing": "估值压力下的仓位上限、跟踪与流动性",
+      "source": "https://www.szse.cn/lawrules/rule/derivative/t20220916_595887.html"
+    },
+    {
+      "code": "518880",
+      "name": "华安黄金ETF",
+      "role": "尾部保险",
+      "vehicle": "商品ETF",
+      "benchmark": "国内黄金现货",
+      "currentView": "保险仓候选",
+      "aum": null,
+      "trackingError": null,
+      "avgTurnover": null,
+      "totalFee": null,
+      "score": null,
+      "missing": "最新规模、折溢价、跟踪与费用",
+      "source": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-11-13/518880_20251113_4B36.pdf"
+    }
+  ],
+  "privateStrategyMatrix": [
+    {
+      "strategy": "主观选股",
+      "mustSee": "相对基准 Alpha、下行捕获、行业/个股集中、换手、风格漂移",
+      "macroLink": "适合盈利扩散与结构选股",
+      "currentUse": "重点研究红利/GARP/制造",
+      "status": "待产品级净值与持仓"
+    },
+    {
+      "strategy": "量化选股",
+      "mustSee": "Alpha 衰减、因子暴露、换手、冲击成本、容量、模型治理",
+      "macroLink": "市场广度提高时更有利",
+      "currentUse": "控制小盘与拥挤暴露",
+      "status": "待产品级序列"
+    },
+    {
+      "strategy": "债券主动",
+      "mustSee": "久期、信用下沉、杠杆、回撤、流动性、信用事件",
+      "macroLink": "增长走弱时增加久期",
+      "currentUse": "短久期与高等级为主",
+      "status": "待穿透"
+    },
+    {
+      "strategy": "市场中性",
+      "mustSee": "Beta、Alpha、基差、融券/对冲成本、杠杆、容量",
+      "macroLink": "方向赔率不足时分散",
+      "currentUse": "小仓位候选",
+      "status": "待尽调"
+    },
+    {
+      "strategy": "多空",
+      "mustSee": "净/总敞口、空头来源、挤兑风险、风格暴露",
+      "macroLink": "结构分化环境可发挥",
+      "currentUse": "谨慎候选",
+      "status": "待穿透"
+    },
+    {
+      "strategy": "CTA",
+      "mustSee": "危机 Alpha、趋势广度、品种分布、保证金、回撤修复",
+      "macroLink": "商品/利率/地缘趋势增多",
+      "currentUse": "适度超配方向",
+      "status": "待管理人筛选"
+    },
+    {
+      "strategy": "多策略",
+      "mustSee": "子策略归因、风险贡献、相关性、流动性错配、杠杆",
+      "macroLink": "降低单一情景依赖",
+      "currentUse": "核心替代候选",
+      "status": "待穿透"
+    },
+    {
+      "strategy": "宏观商品",
+      "mustSee": "方向/相对价值、期限结构、地缘敏感度、回撤",
+      "macroLink": "通胀与政策分化",
+      "currentUse": "小仓位/高波动",
+      "status": "待净值"
+    },
+    {
+      "strategy": "灵活配置",
+      "mustSee": "择时贡献、仓位轨迹、风格漂移、基准一致性",
+      "macroLink": "情景切换期有价值",
+      "currentUse": "需证明择时能力",
+      "status": "待净值"
+    },
+    {
+      "strategy": "全球配置",
+      "mustSee": "币种、区域、资产归因、对冲成本、税务与流动性",
+      "macroLink": "分散中国单一周期",
+      "currentUse": "海外债优先于高估值美股",
+      "status": "待产品清单"
+    },
+    {
+      "strategy": "REITs",
+      "mustSee": "P/NAV、分派覆盖、底层现金流、债务、出租率/通行量",
+      "macroLink": "低利率受益、经济走弱伤现金流",
+      "currentUse": "中性观察",
+      "status": "待底层数据"
+    }
+  ],
+  "implementationMap": [
+    {
+      "objective": "中国核心 Beta",
+      "macro": "政策积极但增长分化",
+      "asset": "中国权益适度超配",
+      "meso": "大盘/红利/GARP 优于高估值小盘",
+      "preferred": "公募/ETF",
+      "candidates": "510300、512890",
+      "action": "先补齐规模、跟踪、费率后评分"
+    },
+    {
+      "objective": "成长增强",
+      "macro": "工业与高技术较强",
+      "asset": "成长中性",
+      "meso": "IT 盈利强但估值拥挤",
+      "preferred": "ETF 或高纯度主动公募",
+      "candidates": "159915 / 主题基金待筛",
+      "action": "控仓、用盈利兑现做加仓触发"
+    },
+    {
+      "objective": "尾部对冲",
+      "macro": "地缘与跨资产波动",
+      "asset": "CTA 适度超配、黄金保险仓",
+      "meso": "不依赖单一产业",
+      "preferred": "私募 CTA + 黄金 ETF",
+      "candidates": "518880；CTA 管理人待尽调",
+      "action": "分策略源，小仓位试配"
+    },
+    {
+      "objective": "低方向性收益",
+      "macro": "信用传导弱、风险溢价分化",
+      "asset": "市场中性/多策略中性",
+      "meso": "结构分化提供 Alpha",
+      "preferred": "私募",
+      "candidates": "产品名以原截图为候选，待净值与穿透",
+      "action": "尽调完成后才评级"
+    },
+    {
+      "objective": "海外票息",
+      "macro": "中美利差大",
+      "asset": "海外债适度超配",
+      "meso": "避免高估值成长集中",
+      "preferred": "QDII 债券公募/ETF",
+      "candidates": "待官方产品数据采集",
+      "action": "优先中短久期并评估汇率对冲"
+    }
+  ],
+  "ratingPolicy": {
+    "title": "内部研究评级，不是信用评级或收益承诺",
+    "dataGate": "数据覆盖率低于 70%、净值少于 24 个月或关键尽调未完成时，只显示“待补数/观察”，不发布等级。",
+    "grades": [
+      "A：85–100，核心候选",
+      "B：75–84，配置候选",
+      "C：65–74，小仓观察",
+      "D：50–64，不建议新增",
+      "观察：<50 或数据不足"
+    ],
+    "review": "月度更新量化指标；季度归因与风格复核；年度运营和组织深度尽调；重大关键人/回撤/合规事件随时触发。"
+  },
+  "memoEvolution": [
+    {
+      "period": "2025 Q3",
+      "source": "2025年第3季度投资内参",
+      "chinaEquity": "A股标配；港股标配",
+      "overseasEquity": "适度低配",
+      "domesticBond": "适度低配",
+      "overseasBond": "适度高配",
+      "cta": "适度高配",
+      "evidence": "A/H 股结构分化，港股估值优势收窄；美股风险溢价低。境内利率处低位，海外债优先中短久期票息；地缘与商品趋势提高 CTA 机会。",
+      "review": "最早建立“境外权益降权 + 海外债票息 + CTA 分散”的组合主线。"
+    },
+    {
+      "period": "2025 Q4",
+      "source": "2025年第4季度投资内参",
+      "chinaEquity": "A股标配；港股标配",
+      "overseasEquity": "适度低配",
+      "domesticBond": "适度低配",
+      "overseasBond": "适度高配",
+      "cta": "适度高配",
+      "evidence": "中国权益六维评分为估值40、经济25、政策85、资金65、利率70、情绪70。政策强而经济弱，A/H 股继续标配；美股估值高，CTA 受地缘与趋势支撑。",
+      "review": "Q3 主线延续；政策改善尚不足以转成广谱权益高配，继续强调多路径与波动管理。"
+    },
+    {
+      "period": "2026 中期",
+      "source": "2026年中期投资内参",
+      "chinaEquity": "适度超配；红利/价值超配；GARP适度超配；成长中性",
+      "overseasEquity": "全球权益结构配置",
+      "domesticBond": "适度低配",
+      "overseasBond": "适度超配",
+      "cta": "适度超配；黄金适度低配",
+      "evidence": "中国权益六维为基本面53、估值56、政策69、资金54、流动性62、情绪60，综合58.45；盈利修复但估值与拥挤分化，红利、价值与 GARP 赔率优于泛成长。",
+      "review": "中国权益由标配上调为适度超配，但升级的是结构性风险预算；海外债与 CTA 的分散主线继续保留。"
+    }
+  ]
+}

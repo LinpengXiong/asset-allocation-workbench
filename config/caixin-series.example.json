@@ -1,0 +1,13 @@
+{
+  "series": [
+    {
+      "id": "<series_id>",
+      "name": "<先用 search 命令确认的指标名>",
+      "target": "macroIndicators",
+      "targetKey": "<现有指标键>",
+      "frequency": "M",
+      "enabled": false,
+      "notes": "只有确认序列 has_data=true、单位/频率/来源和现有指标口径一致后，才将 enabled 改为 true。"
+    }
+  ]
+}
