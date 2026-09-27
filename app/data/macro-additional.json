@@ -1,0 +1,64 @@
+{
+  "reviewedAt": "2026-09-28",
+  "population": {
+    "basis": "年末全国人口，0—14岁、15—64岁、65岁及以上占总人口比重；2025年占比按公报三组人数和总人口计算，其他年度为年鉴披露的一位小数",
+    "unit": "%",
+    "yearbookUrl": "https://www.stats.gov.cn/sj/ndsj/2025/html/C02-04.jpg",
+    "latestUrl": "https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html",
+    "latestCountsWan": { "total": 140489, "age0to14": 21276, "age15to64": 96848, "age65plus": 22365 },
+    "rows": [
+      [1990,27.7,66.7,5.6],[1991,27.7,66.3,6.0],[1992,27.6,66.2,6.2],[1993,27.2,66.7,6.2],
+      [1994,27.0,66.6,6.4],[1995,26.6,67.2,6.2],[1996,26.4,67.2,6.4],[1997,26.0,67.5,6.5],
+      [1998,25.7,67.6,6.7],[1999,25.4,67.7,6.9],[2000,22.9,70.1,7.0],[2001,22.5,70.4,7.1],
+      [2002,22.4,70.3,7.3],[2003,22.1,70.4,7.5],[2004,21.5,70.9,7.6],[2005,20.3,72.0,7.7],
+      [2006,19.8,72.3,7.9],[2007,19.4,72.5,8.1],[2008,19.0,72.7,8.3],[2009,18.5,73.0,8.5],
+      [2010,16.6,74.5,8.9],[2011,16.5,74.4,9.1],[2012,16.5,74.1,9.4],[2013,16.4,73.9,9.7],
+      [2014,16.5,73.4,10.1],[2015,16.5,73.0,10.5],[2016,16.7,72.5,10.8],[2017,16.8,71.8,11.4],
+      [2018,16.9,71.2,11.9],[2019,16.8,70.6,12.6],[2020,17.9,68.6,13.5],[2021,17.5,68.3,14.2],
+      [2022,16.9,68.2,14.9],[2023,16.3,68.3,15.4],[2024,15.8,68.6,15.6],
+      [2025,15.1442,68.9364,15.9194]
+    ]
+  },
+  "inwardFdi": {
+    "basis": "全国实际使用外资金额，人民币亿元，年初累计；同比为同期累计同比。并非中国对外直接投资。",
+    "rows": [
+      { "period": "1月", "amount": 920.1, "yoy": -5.7, "url": "https://fdi.mofcom.gov.cn/come-datatongji-con.html?id=16717" },
+      { "period": "1—2月", "amount": 1614.5, "yoy": -5.7, "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_7ae83a22c80d4d298e35ebcd14615507.html" },
+      { "period": "1—3月", "amount": 2496, "yoy": -7.3, "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_33ac5de476f64dfaa187350f7f756d0a.html" },
+      { "period": "1—4月", "amount": 2876.9, "yoy": -10.3, "url": "https://www.mofcom.gov.cn/xwfb/rcxwfb/art/2026/art_21245f836d4e435fbe30701c54cca7fc.html" },
+      { "period": "1—5月", "amount": 3272.9, "yoy": -8.6, "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_275e4911fca142608b878945b32f9dac.html" },
+      { "period": "1—6月", "amount": 4021.4, "yoy": -5.0, "url": "https://www.mofcom.gov.cn/xwfb/rcxwfb/art/2026/art_ea6d68fe5ee74367a2be1ca271765033.html" },
+      { "period": "1—7月", "amount": 4383.3, "yoy": -6.2, "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_03f09f72e2d843e8bc004f9a11e3ecd0.html" },
+      { "period": "1—8月", "amount": 4799.5, "yoy": -5.3, "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_a2d8ba8791a943fba8234fde09b443f4.html" }
+    ]
+  },
+  "goodsTrade": {
+    "basis": "海关货物贸易美元计价；出口和进口为当月金额及当月同比，顺差为当月出口减进口。1—2月未合并，按海关月度表逐月列示；不与外汇局国际收支口径混用。",
+    "unit": "亿美元",
+    "sourceUrl": "https://data.mofcom.gov.cn/hwmy/imexmonth.shtml",
+    "sourceAgency": "海关总署（商务部商务数据中心原表）",
+    "rows": [
+      { "period": "1月", "export": 3567, "exportYoy": 10, "import": 2340.59, "importYoy": 25.6, "surplus": 1226.41 },
+      { "period": "2月", "export": 2998.78, "exportYoy": 39.6, "import": 2089, "importYoy": 13.8, "surplus": 909.77 },
+      { "period": "3月", "export": 3210.33, "exportYoy": 2.5, "import": 2699.04, "importYoy": 27.8, "surplus": 511.29 },
+      { "period": "4月", "export": 3594.42, "exportYoy": 14.1, "import": 2746.18, "importYoy": 25.3, "surplus": 848.24 },
+      { "period": "5月", "export": 3767.8, "exportYoy": 19.4, "import": 2713.5, "importYoy": 27.4, "surplus": 1054.3 },
+      { "period": "6月", "export": 4123.87, "exportYoy": 27, "import": 2867.64, "importYoy": 36, "surplus": 1256.23 },
+      { "period": "7月", "export": 3978.52, "exportYoy": 23.9, "import": 2855.14, "importYoy": 27.6, "surplus": 1123.37 },
+      { "period": "8月", "export": 4014.41, "exportYoy": 25, "import": 2823.56, "importYoy": 28.2, "surplus": 1190.85 }
+    ]
+  },
+  "ccfi": {
+    "basis": "中国出口集装箱综合运价指数（CCFI）月平均值，点；不是上海出口集装箱运价指数（SCFI）",
+    "rows": [
+      { "period": "1月", "value": 1197.27, "url": "https://www.mot.gov.cn/shuju/yunjiazhishu/chukoujizhuangxiangyjzs/202602/t20260209_4199966.html" },
+      { "period": "2月", "value": 1084.95, "url": "https://www.mot.gov.cn/shuju/yunjiazhishu/chukoujizhuangxiangyjzs/202603/t20260305_4201363.html" },
+      { "period": "3月", "value": 1096.52, "url": "https://www.mot.gov.cn/shuju/yunjiazhishu/chukoujizhuangxiangyjzs/202604/t20260424_4204242.html" },
+      { "period": "4月", "value": 1221.8, "url": "https://www.mot.gov.cn/shuju/yunjiazhishu/chukoujizhuangxiangyjzs/202605/t20260509_4205146.html" },
+      { "period": "5月", "value": 1310.84, "url": "https://www.mot.gov.cn/shuju/yunjiazhishu/chukoujizhuangxiangyjzs/202606/t20260604_4206869.html" },
+      { "period": "6月", "value": 1550.31, "url": "https://www.mot.gov.cn/shuju/yunjiazhishu/chukoujizhuangxiangyjzs/202607/t20260708_4209130.html" },
+      { "period": "7月", "value": 1870.66, "url": "https://www.mot.gov.cn/shuju/yunjiazhishu/chukoujizhuangxiangyjzs/202608/t20260805_4211130.html" },
+      { "period": "8月", "value": 1835.55, "url": "https://www.mot.gov.cn/shuju/yunjiazhishu/chukoujizhuangxiangyjzs/202609/t20260903_4223764.html" }
+    ]
+  }
+}
