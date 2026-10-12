@@ -1,0 +1,1139 @@
+{
+  "asOf": "2026-10-11",
+  "frameworkVersion": "V1.11",
+  "candidateStatus": "独立核验候选；尚未写入本期评分或发布",
+  "observations": {
+    "F01": {
+      "value": -2893,
+      "period": "2026-08",
+      "unit": "亿元",
+      "basis": "近3月当月新增额同比多增",
+      "originalPublisher": "中国人民银行",
+      "latestAvailablePeriod": "2026-08",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+      "releaseDate": "2026-09-14",
+      "components": [
+        {
+          "period": "2025-06",
+          "value": 3353,
+          "unit": "亿元",
+          "series": "householdLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+          "releaseDate": "2025-07-14",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2025-05",
+              "value": 8347,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+              "releaseDate": "2025-06-13"
+            },
+            {
+              "period": "2025-06",
+              "value": 11700,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+              "releaseDate": "2025-07-14"
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "value": -1100,
+          "unit": "亿元",
+          "series": "householdLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+          "releaseDate": "2025-08-13",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2025-06",
+              "value": 11700,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+              "releaseDate": "2025-07-14"
+            },
+            {
+              "period": "2025-07",
+              "value": 10600,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+              "releaseDate": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "value": 200,
+          "unit": "亿元",
+          "series": "householdLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+          "releaseDate": "2025-09-12",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2025-07",
+              "value": 10600,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+              "releaseDate": "2025-08-13"
+            },
+            {
+              "period": "2025-08",
+              "value": 10800,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+              "releaseDate": "2025-09-12"
+            }
+          ]
+        },
+        {
+          "period": "2026-06",
+          "value": 1584,
+          "unit": "亿元",
+          "series": "householdLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+          "releaseDate": "2026-07-15",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2026-05",
+              "value": 628,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061214273613328/index.html",
+              "releaseDate": "2026-06-12"
+            },
+            {
+              "period": "2026-06",
+              "value": 2212,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+              "releaseDate": "2026-07-15"
+            }
+          ]
+        },
+        {
+          "period": "2026-07",
+          "value": -1202,
+          "unit": "亿元",
+          "series": "householdLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+          "releaseDate": "2026-08-14",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2026-06",
+              "value": 2212,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+              "releaseDate": "2026-07-15"
+            },
+            {
+              "period": "2026-07",
+              "value": 1010,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+              "releaseDate": "2026-08-14"
+            }
+          ]
+        },
+        {
+          "period": "2026-08",
+          "value": -822,
+          "unit": "亿元",
+          "series": "householdLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+          "releaseDate": "2026-09-14",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2026-07",
+              "value": 1010,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+              "releaseDate": "2026-08-14"
+            },
+            {
+              "period": "2026-08",
+              "value": 188,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+              "releaseDate": "2026-09-14"
+            }
+          ]
+        }
+      ],
+      "frequency": "月度",
+      "derivationNote": "依据官方分部门贷款累计新增额逐月差分，再比较两年相同6—8月合计；每一原始累计值及出处均保留。",
+      "scopeNote": "住户中长期贷款并非全部都是住房按揭。",
+      "precisionNote": "原文部分累计值以0.01万亿元披露（约100亿元粒度），差分带舍入误差。3个月合计可直接用8月累计−5月累计校验；居民多增误差界约51.5亿元、企事业约200亿元，均不足改变本次分档。未改用月末余额差分。"
+    },
+    "F02": {
+      "value": -5700,
+      "period": "2026-08",
+      "unit": "亿元",
+      "basis": "近3月当月新增额同比多增",
+      "originalPublisher": "中国人民银行",
+      "latestAvailablePeriod": "2026-08",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+      "releaseDate": "2026-09-14",
+      "components": [
+        {
+          "period": "2025-06",
+          "value": 10100,
+          "unit": "亿元",
+          "series": "enterpriseLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+          "releaseDate": "2025-07-14",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2025-05",
+              "value": 61600,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+              "releaseDate": "2025-06-13"
+            },
+            {
+              "period": "2025-06",
+              "value": 71700,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+              "releaseDate": "2025-07-14"
+            }
+          ]
+        },
+        {
+          "period": "2025-07",
+          "value": -2600,
+          "unit": "亿元",
+          "series": "enterpriseLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+          "releaseDate": "2025-08-13",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2025-06",
+              "value": 71700,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+              "releaseDate": "2025-07-14"
+            },
+            {
+              "period": "2025-07",
+              "value": 69100,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+              "releaseDate": "2025-08-13"
+            }
+          ]
+        },
+        {
+          "period": "2025-08",
+          "value": 4700,
+          "unit": "亿元",
+          "series": "enterpriseLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+          "releaseDate": "2025-09-12",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2025-07",
+              "value": 69100,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+              "releaseDate": "2025-08-13"
+            },
+            {
+              "period": "2025-08",
+              "value": 73800,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+              "releaseDate": "2025-09-12"
+            }
+          ]
+        },
+        {
+          "period": "2026-06",
+          "value": 5600,
+          "unit": "亿元",
+          "series": "enterpriseLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+          "releaseDate": "2026-07-15",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2026-05",
+              "value": 49900,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061214273613328/index.html",
+              "releaseDate": "2026-06-12"
+            },
+            {
+              "period": "2026-06",
+              "value": 55500,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+              "releaseDate": "2026-07-15"
+            }
+          ]
+        },
+        {
+          "period": "2026-07",
+          "value": -2300,
+          "unit": "亿元",
+          "series": "enterpriseLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+          "releaseDate": "2026-08-14",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2026-06",
+              "value": 55500,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+              "releaseDate": "2026-07-15"
+            },
+            {
+              "period": "2026-07",
+              "value": 53200,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+              "releaseDate": "2026-08-14"
+            }
+          ]
+        },
+        {
+          "period": "2026-08",
+          "value": 3200,
+          "unit": "亿元",
+          "series": "enterpriseLong",
+          "basis": "当月新增",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+          "releaseDate": "2026-09-14",
+          "originalPublisher": "中国人民银行",
+          "calculation": "当月新增额=本期年初累计新增额−上月年初累计新增额；不是存量差分。",
+          "cumulativeParts": [
+            {
+              "period": "2026-07",
+              "value": 53200,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+              "releaseDate": "2026-08-14"
+            },
+            {
+              "period": "2026-08",
+              "value": 56400,
+              "unit": "亿元",
+              "basis": "年初累计新增",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+              "releaseDate": "2026-09-14"
+            }
+          ]
+        }
+      ],
+      "frequency": "月度",
+      "derivationNote": "依据官方分部门贷款累计新增额逐月差分，再比较两年相同6—8月合计；每一原始累计值及出处均保留。",
+      "scopeNote": "企（事）业单位指非金融企业及机关团体，不是纯民营企业或上市公司。",
+      "precisionNote": "原文部分累计值以0.01万亿元披露（约100亿元粒度），差分带舍入误差。3个月合计可直接用8月累计−5月累计校验；居民多增误差界约51.5亿元、企事业约200亿元，均不足改变本次分档。未改用月末余额差分。"
+    },
+    "F07": {
+      "value": 5.498262,
+      "period": "2026-08",
+      "unit": "%",
+      "basis": "剔除政府债后月末存量同比",
+      "originalPublisher": "中国人民银行",
+      "latestAvailablePeriod": "2026-08",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+      "releaseDate": "2026-09-14",
+      "components": [
+        {
+          "period": "2025-08",
+          "totalStock": 433.65,
+          "governmentBondStock": 91.36,
+          "value": 342.29,
+          "unit": "万亿元",
+          "basis": "同口径月末存量",
+          "originalPublisher": "中国人民银行",
+          "sourceUrl": "https://www.pbc.gov.cn/diaochatongjisi/attachDir/2026/02/2026021416101539242.htm",
+          "releaseDate": "2026-02-14",
+          "revisionVersion": "2025年度原表，2026-02-14修订附件",
+          "releaseDateEvidence": "官方附件Last-Modified: Sat, 14 Feb 2026 08:10:15 GMT，附件路径同日；这是该版原表可得日，不冒充2025年各月初值的发布日期。"
+        },
+        {
+          "period": "2026-08",
+          "totalStock": 464.8,
+          "governmentBondStock": 103.69,
+          "value": 361.11,
+          "unit": "万亿元",
+          "basis": "同口径月末存量",
+          "originalPublisher": "中国人民银行",
+          "sourceUrl": "https://www.pbc.gov.cn/diaochatongjisi/attachDir/2026/09/2026091417325051118.htm",
+          "releaseDate": "2026-09-14",
+          "revisionVersion": "2026年度原表，2026-09-14附件",
+          "releaseDateEvidence": "官方8月报告页内2026-09-14发布日期与原表Last-Modified同日。"
+        }
+      ],
+      "derivationNote": "[(社融总存量−政府债券存量)本月/(同口径上年同月)−1]×100；使用当前官方年度修订表，不沿用433.66万亿元初值。",
+      "scopeNote": "剔除政府债券后仍含国企、融资平台及其他非政府债融资，不能命名纯私人社融。",
+      "revisionNote": "2025-08原发布总存量433.66，2025年度修订原表433.65；政府债仍91.36。最新修订复算5.498262%，原初值方案5.495180%，不混用。"
+    },
+    "F08": {
+      "value": -0.240145,
+      "period": "2026-08",
+      "unit": "百分点",
+      "basis": "剔除政府债后存量同比近3月变动",
+      "originalPublisher": "中国人民银行",
+      "latestAvailablePeriod": "2026-08",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+      "releaseDate": "2026-09-14",
+      "components": [
+        {
+          "period": "2025-05",
+          "totalStock": 426.16,
+          "governmentBondStock": 87.39,
+          "value": 338.77,
+          "unit": "万亿元",
+          "basis": "同口径月末存量",
+          "originalPublisher": "中国人民银行",
+          "sourceUrl": "https://www.pbc.gov.cn/diaochatongjisi/attachDir/2026/02/2026021416101539242.htm",
+          "releaseDate": "2026-02-14",
+          "revisionVersion": "2025年度原表，2026-02-14修订附件",
+          "releaseDateEvidence": "官方附件Last-Modified: Sat, 14 Feb 2026 08:10:15 GMT，附件路径同日；这是该版原表可得日，不冒充2025年各月初值的发布日期。"
+        },
+        {
+          "period": "2026-05",
+          "totalStock": 458.81,
+          "governmentBondStock": 100.6,
+          "value": 358.21,
+          "unit": "万亿元",
+          "basis": "同口径月末存量",
+          "originalPublisher": "中国人民银行",
+          "sourceUrl": "https://www.pbc.gov.cn/diaochatongjisi/attachDir/2026/09/2026091417325051118.htm",
+          "releaseDate": "2026-09-14",
+          "revisionVersion": "2026年度原表，2026-09-14附件",
+          "releaseDateEvidence": "官方8月报告页内2026-09-14发布日期与原表Last-Modified同日。"
+        },
+        {
+          "period": "2025-08",
+          "totalStock": 433.65,
+          "governmentBondStock": 91.36,
+          "value": 342.29,
+          "unit": "万亿元",
+          "basis": "同口径月末存量",
+          "originalPublisher": "中国人民银行",
+          "sourceUrl": "https://www.pbc.gov.cn/diaochatongjisi/attachDir/2026/02/2026021416101539242.htm",
+          "releaseDate": "2026-02-14",
+          "revisionVersion": "2025年度原表，2026-02-14修订附件",
+          "releaseDateEvidence": "官方附件Last-Modified: Sat, 14 Feb 2026 08:10:15 GMT，附件路径同日；这是该版原表可得日，不冒充2025年各月初值的发布日期。"
+        },
+        {
+          "period": "2026-08",
+          "totalStock": 464.8,
+          "governmentBondStock": 103.69,
+          "value": 361.11,
+          "unit": "万亿元",
+          "basis": "同口径月末存量",
+          "originalPublisher": "中国人民银行",
+          "sourceUrl": "https://www.pbc.gov.cn/diaochatongjisi/attachDir/2026/09/2026091417325051118.htm",
+          "releaseDate": "2026-09-14",
+          "revisionVersion": "2026年度原表，2026-09-14附件",
+          "releaseDateEvidence": "官方8月报告页内2026-09-14发布日期与原表Last-Modified同日。"
+        }
+      ],
+      "derivationNote": "本月剔政府债存量同比−3个月前剔政府债存量同比；5月5.738407%、8月5.498262%，变化-0.240145个百分点。",
+      "scopeNote": "近3个月指8月相对5月同比的变化，不是连续3个月同比均值或信用脉冲。"
+    },
+    "F05": {
+      "value": -3.4,
+      "period": "2026-08",
+      "unit": "百分点",
+      "basis": "新口径同月同比差",
+      "originalPublisher": "中国人民银行",
+      "latestAvailablePeriod": "2026-08",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+      "releaseDate": "2026-09-14",
+      "components": [
+        {
+          "period": "2026-08",
+          "value": 4.1,
+          "unit": "%",
+          "basis": "月末余额同比",
+          "series": "m1New",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+          "releaseDate": "2026-09-14",
+          "originalPublisher": "中国人民银行"
+        },
+        {
+          "period": "2026-08",
+          "value": 7.5,
+          "unit": "%",
+          "basis": "月末余额同比",
+          "series": "m2",
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+          "releaseDate": "2026-09-14",
+          "originalPublisher": "中国人民银行"
+        }
+      ],
+      "derivationNote": "按央行正文公布增速4.1%−7.5%；M1为2025年起新口径，不从四舍五入余额自行估算增速。",
+      "scopeNote": "仅反映货币余额增长结构；M1新增个人活期与非银行支付备付金，不能直接当旧口径企业资金活化率或资产买入信号。"
+    },
+    "F09": {
+      "value": 3,
+      "period": "2026-Q2",
+      "unit": "1—5分",
+      "basis": "季度杠杆约束研判",
+      "originalPublisher": "国家资产负债表研究中心",
+      "latestAvailablePeriod": "2026-Q2",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+      "sourceDocumentUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+      "releaseDate": "2026-07-30",
+      "rationale": "试行3分：同比杠杆下降3.4个百分点、居民收入增长与贷款定价下行提供缓冲，但住户贷款及房贷收缩、消费意愿与资产价格承压，信号混合。没有公开总部门偿债负担率与家庭分布证据，不足支持4—5分；也不因贷款负增长直接推定违约危机给1分。",
+      "leverageRatio": 57.7,
+      "yearAgoLeverageRatio": 61.1,
+      "leverageComponents": [
+        {
+          "period": "2025-Q2",
+          "value": 61.1,
+          "unit": "%",
+          "series": "householdLeverage",
+          "basis": "部门债务/过去四季名义GDP",
+          "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4728",
+          "releaseDate": "2025-07-30",
+          "originalPublisher": "国家资产负债表研究中心"
+        },
+        {
+          "period": "2026-Q2",
+          "value": 57.7,
+          "unit": "%",
+          "series": "householdLeverage",
+          "basis": "部门债务/过去四季名义GDP",
+          "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+          "releaseDate": "2026-07-30",
+          "originalPublisher": "国家资产负债表研究中心"
+        }
+      ],
+      "leverageReview": {
+        "reviewDate": "2026-10-11",
+        "scoreReason": "试行3分：同比杠杆下降3.4个百分点、居民收入增长与贷款定价下行提供缓冲，但住户贷款及房贷收缩、消费意愿与资产价格承压，信号混合。没有公开总部门偿债负担率与家庭分布证据，不足支持4—5分；也不因贷款负增长直接推定违约危机给1分。",
+        "nominalGdpEffect": {
+          "debtGrowthPct": -1.3,
+          "nominalGdpGrowthPct": 4.60418,
+          "revisionVersion": "杠杆/债务：NIFD-2026-Q2-2026-07-30；分母背景：2026-09-15-SDDS（GDP两期同版）",
+          "summary": "居民债务同比下降而过去四季名义GDP增长，比率下降不全等于借债空间改善；名义分母扩大也促降比率。",
+          "denominatorEvidence": {
+            "priorTtm": 1374816,
+            "currentTtm": 1438115,
+            "unit": "亿元",
+            "nominalGdpGrowthPct": 4.60418,
+            "formula": "[(2025Q3+2025Q4+2026Q1+2026Q2)/(2024Q3+2024Q4+2025Q1+2025Q2)−1]×100",
+            "components": [
+              {
+                "metric": "季度现价GDP",
+                "period": "2024-Q3",
+                "value": 341443,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2024-Q4",
+                "value": 373512,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q1",
+                "value": 318466,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q2",
+                "value": 341395,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q3",
+                "value": 354500,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q4",
+                "value": 387911,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2026-Q1",
+                "value": 334193,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2026-Q2",
+                "value": 361511,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              }
+            ],
+            "revisionVersion": "2026-09-15-SDDS同表修订版",
+            "limitation": "GDP两组均取同一现价表；NIFD杠杆与债务增速是7月30日发布的Q2版本，四舍五入及后续GDP修订会使精确恒等式出现小差，不能用更新分母冒称重算了原报告杠杆。这里只说明分母支持方向。"
+          },
+          "evidence": [
+            {
+              "metric": "居民债务同比",
+              "period": "2026-Q2",
+              "value": -1.3,
+              "unit": "%",
+              "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+              "releaseDate": "2026-07-30",
+              "originalPublisher": "国家资产负债表研究中心",
+              "basis": "报告原值"
+            },
+            {
+              "metric": "过去四季现价GDP同比（复算）",
+              "period": "2026-Q2",
+              "value": 4.60418,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+              "releaseDate": "2026-09-15",
+              "originalPublisher": "国家统计局",
+              "basis": "同版TTM现价GDP，同比，不用单季5.9%"
+            }
+          ]
+        },
+        "incomeOrProfit": {
+          "summary": "上半年收入平均增速为正，但这是累计人均数据，不是负债家庭或本季新增贷款人群收入；不据此断言偿债能力普遍改善。",
+          "evidence": [
+            {
+              "metric": "全国居民人均可支配收入名义累计同比",
+              "period": "2026-Q2",
+              "value": 5.2,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "originalPublisher": "国家统计局",
+              "basis": "上半年累计"
+            },
+            {
+              "metric": "全国居民人均可支配收入实际累计同比",
+              "period": "2026-Q2",
+              "value": 4.2,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "originalPublisher": "国家统计局",
+              "basis": "上半年累计"
+            }
+          ]
+        },
+        "debtService": {
+          "summary": "6月个人住房新发放利率是增量贷款定价代理，不代表存量家庭实际偿债负担。房贷余额继续收缩支持资产负债表承压；未获取全体居民债务服务/收入比，不能把降息直接判为已修复。",
+          "evidence": [
+            {
+              "metric": "6月新发放个人住房贷款加权平均利率",
+              "period": "2026-06",
+              "value": 3.05,
+              "unit": "%",
+              "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+              "releaseDate": "2026-08-12",
+              "originalPublisher": "中国人民银行",
+              "basis": "新发放，非存量贷款；表4，PDF第14页/印刷第7页"
+            },
+            {
+              "metric": "人民币个人住房贷款余额同比",
+              "period": "2026-Q2",
+              "value": -3.8,
+              "unit": "%",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026072719364116939/index.html",
+              "releaseDate": "2026-07-28",
+              "originalPublisher": "中国人民银行",
+              "basis": "季度末余额同比"
+            },
+            {
+              "metric": "人民币个人住房贷款上半年减少",
+              "period": "2026-Q2",
+              "value": 7163,
+              "unit": "亿元",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026072719364116939/index.html",
+              "releaseDate": "2026-07-28",
+              "originalPublisher": "中国人民银行",
+              "basis": "累计减少量；不是当季月度值"
+            }
+          ]
+        },
+        "counterEvidence": {
+          "summary": "正向反证为收入与工资增长，不宜仅凭缩表判极差；负向反证为消费支出增速低于收入、信用需求收缩。不把这些代理机械加分，也不把它们与其他评分项二次加权。",
+          "evidence": [
+            {
+              "metric": "全国居民人均工资性收入累计同比",
+              "period": "2026-Q2",
+              "value": 5.3,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "originalPublisher": "国家统计局",
+              "basis": "上半年累计"
+            },
+            {
+              "metric": "全国居民人均消费支出名义累计同比",
+              "period": "2026-Q2",
+              "value": 3.7,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "originalPublisher": "国家统计局",
+              "basis": "上半年累计"
+            },
+            {
+              "metric": "本外币住户贷款余额同比",
+              "period": "2026-Q2",
+              "value": -1.3,
+              "unit": "%",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026072719364116939/index.html",
+              "releaseDate": "2026-07-28",
+              "originalPublisher": "中国人民银行",
+              "basis": "本外币，不混作F01人民币流量"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "本季杠杆比率为2026-Q2；10月11日复核使用已发布最新辅证，不伪造Q3杠杆。",
+        "试行质性评分，不是算法推导的最优评级或买卖信号。",
+        "公开数据缺少全部门债务服务率与负债分布，融资成本和回款只作为代理；不把信息缺口等同事实恶化。"
+      ],
+      "evidenceConflicts": [
+        "NIFD叙述房贷增速-3.7%、房贷利率3.06%；央行原始贷款投向/利率表分别-3.8%、3.05%，本候选采用央行原值并保留差异。"
+      ]
+    },
+    "F10": {
+      "value": 3,
+      "period": "2026-Q2",
+      "unit": "1—5分",
+      "basis": "季度杠杆约束研判",
+      "originalPublisher": "国家资产负债表研究中心",
+      "latestAvailablePeriod": "2026-Q2",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+      "sourceDocumentUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+      "releaseDate": "2026-07-30",
+      "rationale": "试行3分：同比杠杆上升5.5个百分点，但本季环比回落，最新工业盈利和贷款成本改善；回款及存货周转偏弱、民营与国企信号分化，工业并非全部非金融企业。无法证明全部门现金流持续承接债务，不足给4—5分，亦缺全部门显著失衡证据给1分。",
+      "leverageRatio": 179.5,
+      "yearAgoLeverageRatio": 174,
+      "leverageComponents": [
+        {
+          "period": "2025-Q2",
+          "value": 174,
+          "unit": "%",
+          "series": "corporateLeverage",
+          "basis": "部门债务/过去四季名义GDP",
+          "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4728",
+          "releaseDate": "2025-07-30",
+          "originalPublisher": "国家资产负债表研究中心"
+        },
+        {
+          "period": "2026-Q2",
+          "value": 179.5,
+          "unit": "%",
+          "series": "corporateLeverage",
+          "basis": "部门债务/过去四季名义GDP",
+          "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+          "releaseDate": "2026-07-30",
+          "originalPublisher": "国家资产负债表研究中心"
+        }
+      ],
+      "leverageReview": {
+        "reviewDate": "2026-10-11",
+        "scoreReason": "试行3分：同比杠杆上升5.5个百分点，但本季环比回落，最新工业盈利和贷款成本改善；回款及存货周转偏弱、民营与国企信号分化，工业并非全部非金融企业。无法证明全部门现金流持续承接债务，不足给4—5分，亦缺全部门显著失衡证据给1分。",
+        "nominalGdpEffect": {
+          "debtGrowthPct": 7.8,
+          "nominalGdpGrowthPct": 4.60418,
+          "revisionVersion": "杠杆/债务：NIFD-2026-Q2-2026-07-30；分母背景：2026-09-15-SDDS（GDP两期同版）",
+          "summary": "企业债务同比增速高于同版TTM名义GDP增速，支持同比杠杆上行；本季环比下降不等于全年减债。",
+          "denominatorEvidence": {
+            "priorTtm": 1374816,
+            "currentTtm": 1438115,
+            "unit": "亿元",
+            "nominalGdpGrowthPct": 4.60418,
+            "formula": "[(2025Q3+2025Q4+2026Q1+2026Q2)/(2024Q3+2024Q4+2025Q1+2025Q2)−1]×100",
+            "components": [
+              {
+                "metric": "季度现价GDP",
+                "period": "2024-Q3",
+                "value": 341443,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2024-Q4",
+                "value": 373512,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q1",
+                "value": 318466,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q2",
+                "value": 341395,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q3",
+                "value": 354500,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q4",
+                "value": 387911,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2026-Q1",
+                "value": 334193,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2026-Q2",
+                "value": 361511,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              }
+            ],
+            "revisionVersion": "2026-09-15-SDDS同表修订版",
+            "limitation": "GDP两组均取同一现价表；NIFD杠杆与债务增速是7月30日发布的Q2版本，四舍五入及后续GDP修订会使精确恒等式出现小差，不能用更新分母冒称重算了原报告杠杆。这里只说明分母支持方向。"
+          },
+          "evidence": [
+            {
+              "metric": "企业债务同比",
+              "period": "2026-Q2",
+              "value": 7.8,
+              "unit": "%",
+              "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+              "releaseDate": "2026-07-30",
+              "originalPublisher": "国家资产负债表研究中心",
+              "basis": "报告原值"
+            },
+            {
+              "metric": "过去四季现价GDP同比（复算）",
+              "period": "2026-Q2",
+              "value": 4.60418,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+              "releaseDate": "2026-09-15",
+              "originalPublisher": "国家统计局",
+              "basis": "同版TTM现价GDP，同比，不用单季5.9%"
+            }
+          ]
+        },
+        "incomeOrProfit": {
+          "summary": "8月前工业利润和利润率改善构成支撑，但规模以上工业只代表企业子集；电子与上游贡献集中，不能把工业利润当全部非金融企业现金流。",
+          "evidence": [
+            {
+              "metric": "规模以上工业企业利润累计同比",
+              "period": "2026-08",
+              "value": 15.7,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "1—8月可比口径"
+            },
+            {
+              "metric": "规模以上工业企业营业收入利润率",
+              "period": "2026-08",
+              "value": 5.66,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "1—8月累计"
+            }
+          ]
+        },
+        "debtService": {
+          "summary": "新发放企业贷款定价降低缓解融资成本；工业应收账款回收期延长与存货周转放缓提示现金回收压力。两者均为代理证据，未冒称有全企业利息保障倍数或实际违约率。",
+          "evidence": [
+            {
+              "metric": "6月新发放企业贷款加权平均利率",
+              "period": "2026-06",
+              "value": 3.04,
+              "unit": "%",
+              "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+              "releaseDate": "2026-08-12",
+              "originalPublisher": "中国人民银行",
+              "basis": "新发放企业贷款；表4，PDF第14页/印刷第7页"
+            },
+            {
+              "metric": "工业企业应收账款平均回收期",
+              "period": "2026-08",
+              "value": 72.2,
+              "unit": "天",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "月末，规模以上工业企业"
+            },
+            {
+              "metric": "工业企业应收账款回收期同比延长",
+              "period": "2026-08",
+              "value": 0.9,
+              "unit": "天",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "官方可比同比差；不机械相减去年的初值"
+            },
+            {
+              "metric": "工业产成品存货周转天数同比增加",
+              "period": "2026-08",
+              "value": 0.6,
+              "unit": "天",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "官方可比同比差"
+            }
+          ]
+        },
+        "counterEvidence": {
+          "summary": "利润改善反对一刀切看空；应收回款偏弱和利润贡献集中反对直接升级。宏观杠杆含国企而工业利润是子集，保留中性而非把同比债务增加一律看成健康扩张。",
+          "evidence": [
+            {
+              "metric": "工业利润增长的电子行业贡献率",
+              "period": "2026-08",
+              "value": 62,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965426.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "1—8月增长贡献率，非利润占比"
+            },
+            {
+              "metric": "工业企业资产负债率同比提高",
+              "period": "2026-08",
+              "value": 0.3,
+              "unit": "百分点",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "月末，非CNBS全企业债务/GDP"
+            },
+            {
+              "metric": "工业私营企业利润累计同比",
+              "period": "2026-08",
+              "value": 10.4,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "1—8月可比口径，非全部私营企业"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "本季杠杆比率为2026-Q2；10月11日复核使用已发布最新辅证，不伪造Q3杠杆。",
+        "试行质性评分，不是算法推导的最优评级或买卖信号。",
+        "公开数据缺少全部门债务服务率与负债分布，融资成本和回款只作为代理；不把信息缺口等同事实恶化。"
+      ],
+      "evidenceConflicts": [
+        "NIFD叙述企业贷款利率3.05%；央行执行报告原表为企业3.04%、总新发放3.05%，本候选采用企业3.04%。"
+      ]
+    }
+  },
+  "sourceChecks": [
+    {
+      "metric": "金融统计最新已发布月",
+      "latestAvailablePeriod": "2026-08",
+      "verifiedAt": "2026-10-11",
+      "sourceUrl": "https://www.pbc.gov.cn/diaochatongjisi/116219/116225/index.html",
+      "finding": "数据解读列表第一条为2026年8月报告（2026-09-14）；2026年度三张原表均只填至8月，9—12月为空。检索摘要没有9月结果不是此判断的依据。"
+    },
+    {
+      "metric": "宏观杠杆率最新已发布季",
+      "latestAvailablePeriod": "2026-Q2",
+      "verifiedAt": "2026-10-11",
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/SeriesReportList?pageIndex=1&title=%E5%AE%8F%E8%A7%82%E6%9D%A0%E6%9D%86%E7%8E%87",
+      "finding": "官方系列报告按宏观杠杆率标题检索，最新为2026-Q2、2026-07-30；未用Q2时效上限替代最新检查。"
+    },
+    {
+      "metric": "2025社融修订原表附件版次",
+      "verifiedAt": "2026-10-11",
+      "sourceUrl": "https://www.pbc.gov.cn/diaochatongjisi/attachDir/2026/02/2026021416101539242.htm",
+      "availabilityDate": "2026-02-14",
+      "dateBasis": "本次HTTP响应Last-Modified与官方附件路径一致；原表未单列发布日期。该日期指修订附件可得版次，不是2025月报初值日期。"
+    }
+  ],
+  "sourceOrderAudit": {
+    "official": "已核央行年度统计原表、分部门月报、NIFD季度原报告及央行/统计局相关佐证。",
+    "wind": "原始机构来源已满足所需观察，未降级到Wind。",
+    "caixin": "前级已满足，未使用财新。"
+  },
+  "gaps": [
+    {
+      "items": ["F09", "F10"],
+      "severity": "研判限制，不是原始杠杆数据缺失",
+      "reason": "未取得可核验的全部门债务服务率或债务期限/负债人收入分布。候选仅按实际公开的增量贷款定价、收入、工业回款和反证给混合3分，不声称偿债能力已充分验证。"
+    }
+  ],
+  "limitations": [
+    "本候选只涵盖金融信贷7项，不代表整套38项齐备或可发布正式宏观总分。",
+    "杠杆约束为带结构证据的试行研判分，不是低杠杆自动高分，仍需季度复核与样本外验证。"
+  ],
+  "validation": {
+    "method": "2026-10-11逐项调用当前V1.11 scoreIndicator，使用framework.freshness；七项均返回有效分数。",
+    "passed": 7,
+    "failed": 0,
+    "engineResults": {"F01": 2, "F02": 1, "F07": 3, "F08": 3, "F05": 3, "F09": 3, "F10": 3},
+    "manualJudgementItems": ["F09", "F10"],
+    "interpretation": "杠杆分数为结构证据支持的研究者研判，引擎核验格式/来源/时效，不把格式通过冒称独立实证最优分。此文件尚未写入本期观察或评分记录。"
+  }
+}

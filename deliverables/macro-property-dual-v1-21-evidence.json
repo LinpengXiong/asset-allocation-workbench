@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "candidateVersion": "V1.21",
+  "asOf": "2026-10-11",
+  "verifiedAt": "2026-10-11",
+  "role": "房地产双口径与三项投资单月数据的只读核验",
+  "status": "DONE_WITH_LIMITS",
+  "sourceOrder": ["官方原始发布及国家数据", "万得 Wind", "财新数据 API"],
+  "skillsUsed": ["china-macro-rating", "wind-find-finance-skill", "wind-mcp-skill", "spreadsheets:Spreadsheets"],
+  "decision": "房地产两项保留原累计计分，最新单月同比不得启用；三项投资同样未取得满足同范围可比性条件的单月输入。已有数值不等于满足同比分母口径，不能以旧年刊载金额或隐含反推基数补造分数。",
+  "sourceChecks": {
+    "officialPropertyReports": {
+      "status": "verified_full_html_tables_and_notes",
+      "periods": ["2025-07", "2025-08", "2026-07", "2026-08"],
+      "result": "四期完整官方表有累计面积/金额及累计可比同比。2026年8月综合表的房地产单月绝对量和同比格明确为空。附注明确对上年同期房地产开发投资、新建商品房销售面积等数据进行修订，增长率按可比口径计算。",
+      "limitation": "未在已核验的月报原表取得直接单月可比同比，或2026当前可比范围下2025年7、8月累计分母。不能扩大成官方所有数据库不存在该数据。"
+    },
+    "officialDatabase": {
+      "status": "access_failed_not_data_absence",
+      "pageUrl": "https://data.stats.gov.cn/easyquery.htm?cn=A01",
+      "treeUrl": "https://data.stats.gov.cn/easyquery.htm?m=getTree&dbcode=hgyd&wdcode=zb&id=zb",
+      "attempts": [
+        {"route": "网页读取首页", "result": "超时"},
+        {"route": "网页读取getTree", "result": "无法读取"},
+        {"route": "本机默认网络getTree", "result": "HTTP403 UrlACL"},
+        {"route": "本机en0直接网络getTree", "result": "超时，HTTP状态未获得"}
+      ],
+      "interpretation": "国家数据入口访问失败；未遍历指标树，不能据此断言官方数据库未发布单月序列。"
+    },
+    "officialAttachments": {
+      "status": "verified_read_only_xlsx_all_worksheets",
+      "method": "从官方已解析附件链接下载新源文件，使用Codex bundled Python和openpyxl.load_workbook(read_only=True, data_only=True)读取每张工作表所有非空单元格；未修改或重新导出源工作簿。",
+      "files": [
+        {
+          "url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/P020260915324238686429.xlsx",
+          "localPath": "deliverables/nbs-property-2026-08-v1-21-source.xlsx",
+          "bytes": 14027,
+          "sha256": "b520b106ca9509b99d727a3dd089c5f455490803dcf77aefbfdb9174e591e482",
+          "publisher": "国家统计局",
+          "releaseDate": "2026-09-15",
+          "period": "2026-08",
+          "sheets": [
+            {"name": "表1", "usedExtent": "A1:C37", "titleCell": "A1", "title": "表1 2026年1—8月份全国房地产开发和销售情况", "headersRange": "A2:C2", "headers": ["指标", "绝对量", "同比增长（%）"], "keyRows": [{"range": "A3:C3", "name": "房地产开发投资（亿元）", "amount": 47979, "cumulativeYoyPct": -19.9}, {"range": "A19:C19", "name": "新建商品房销售面积（万平方米）", "amount": 49880, "cumulativeYoyPct": -12.1}], "latestMonthColumn": false, "previousYearComparableAmounts": false},
+            {"name": "表2", "usedExtent": "A1:E10", "titleCell": "A1", "title": "2026年1—8月份东中西部和东北地区房地产开发投资情况", "nationalTotalRange": "A5:E5", "nationalTotal": ["全国总计", 47979, 37017, -19.9, -19.7], "latestMonthColumn": false, "previousYearComparableAmounts": false},
+            {"name": "表3", "usedExtent": "A1:H10", "titleCell": "A1", "title": "表3 2026年1—8月份东中西部和东北地区房地产销售情况", "nationalTotalRange": "A5:E5", "nationalTotal": ["全国总计", 49880, -12.1, 47470, -13], "latestMonthColumn": false, "previousYearComparableAmounts": false}
+          ],
+          "result": "已实际读取全部三张表。表1、表2、表3均为年初至8月累计范围，与对应HTML数据表相符，没有8月单月同比或同一修订版本的上年7、8月累计分母。二手房网签面积54923万平方米、累计同比10.6%是独立口径，不能替代新建商品房销售面积。"
+        },
+        {
+          "url": "https://www.stats.gov.cn/sj/zxfbhjd/202609/P020260915322963420060.xlsx",
+          "localPath": "deliverables/nbs-investment-2026-08-v1-21-source.xlsx",
+          "bytes": 11069,
+          "sha256": "d397d60c989b72f61c12b661b1bac4b1799761f01608cd98173f05b168cf60c4",
+          "publisher": "国家统计局",
+          "releaseDate": "2026-09-15",
+          "period": "2026-08",
+          "sheets": [{"name": "表", "usedExtent": "A1:B45", "titleCell": "A1", "title": "2026年1-8月份固定资产投资（不含农户）主要数据", "headersRange": "A2:B2", "headers": ["指标", "同比增长（%）"], "keyRows": [{"range": "A18:B18", "name": "制造业", "cumulativeYoyPct": -2.3}, {"range": "A6:B6", "name": "民间投资", "cumulativeYoyPct": -10.1, "scope": "全口径，不是扣除房地产开发投资"}, {"range": "A32:B32", "name": "电力、热力、燃气及水生产和供应业", "cumulativeYoyPct": -6.9}, {"range": "A33:B33", "name": "交通运输、仓储和邮政业", "cumulativeYoyPct": 2.1}, {"range": "A35:B35", "name": "水利、环境和公共设施管理业", "cumulativeYoyPct": -11}], "latestMonthColumn": false, "absoluteAmountColumn": false, "previousYearComparableAmounts": false}],
+          "result": "已实际读取唯一工作表全部45行。附件与对应HTML表相符，仅有累计同比，没有分项累计金额、单月同比或可比四端。含电力的现行基建累计-4.0%及扣除房地产开发的民间投资累计-6.4%由对应官方正文核验，附件分行业增速不能相加推算这两项，也不能替换为全口径民间投资。"
+        }
+      ],
+      "conclusion": "两份官方附件已完成实际只读核验，不再以网页读取器不支持二进制作为附件取数限制。附件未补出满足单月同比评分条件的数据，房地产两项及三项投资的安全启用结论不变。",
+      "limitation": "这里的未提供仅指这两份已核验附件。国家数据入口仍因访问失败未遍历指标树，不能据此断言官方全部数据库没有单月序列。"
+    },
+    "wind": {
+      "status": "cumulative_data_obtained_but_not_comparable_monthly",
+      "calls": [
+        {"tool": "economic_data.search_economic_indicator", "scope": "全国新建商品房销售面积、开发投资的单月同比，不要累计", "result": "返回S0073300、S0029657等累计同比，没有匹配直接单月"},
+        {"tool": "economic_data.search_economic_indicator", "scope": "房地产单月值/同比及制造业、含电力基建、扣房地产民间投资单月", "result": "返回累计值/累计同比及不匹配年度项，没有匹配直接单月"},
+        {"tool": "economic_data.query_economic_indicator_data", "codes": ["S0029656", "S0029657", "S0029658", "S0073300", "M0000357", "A7546569"], "beginDate": "2025-07-01", "endDate": "2026-08-31", "result": "成功获取累计原值与同比；与本期官方刊载取整值重叠核对，但上年原值不匹配本期可比同比"},
+        {"tool": "economic_data.search_economic_indicator", "scope": "含电力热力燃气及水的基建当月及扣房地产民间投资当月", "result": "返回教育部年度基本建设投资，无同范围有效匹配，不采纳"}
+      ],
+      "scopeLimit": "搜索回执不声称结果完整，未取得不等于Wind完整数据库不存在。返回频率月只表示按月发布，不能把累计值改称单月。",
+      "dataSourceStatement": "数据来源于万得 Wind 金融数据服务。"
+    },
+    "caixin": {
+      "status": "not_configured",
+      "query": "全国新建商品房销售面积当月同比 房地产开发投资当月同比",
+      "errorCode": "not_configured",
+      "result": "实跑既有检索脚本返回未配置API凭据，未取得序列ID或数据；未添加凭据或安装新服务。",
+      "interpretation": "这是连接配置限制，不是财新数据库没有数据。"
+    }
+  },
+  "officialSources": [
+    {"id": "NBS_PROPERTY_2026_07", "title": "2026年1—7月份全国房地产市场基本情况", "publisher": "国家统计局", "period": "2026-07", "releaseDate": "2026-08-17", "url": "https://www.stats.gov.cn/zwfwck/sjfb/202608/t20260817_1965053.html", "table": "表1全国房地产开发和销售情况、附注5", "verified": true},
+    {"id": "NBS_PROPERTY_2026_08", "title": "2026年1—8月份全国房地产市场基本情况", "publisher": "国家统计局", "period": "2026-08", "releaseDate": "2026-09-15", "url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260915_1965310.html", "table": "表1全国房地产开发和销售情况、附注5", "verified": true},
+    {"id": "NBS_PROPERTY_2025_07", "title": "2025年1—7月份全国房地产市场基本情况", "publisher": "国家统计局", "period": "2025-07", "releaseDate": "2025-08-15", "url": "https://www.stats.gov.cn/sj/zxfb/202508/t20250815_1960787.html", "table": "表1全国房地产开发和销售情况、附注6", "verified": true},
+    {"id": "NBS_PROPERTY_2025_08", "title": "2025年1—8月份全国房地产市场基本情况", "publisher": "国家统计局", "period": "2025-08", "releaseDate": "2025-09-15", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202509/t20250915_1961183.html", "table": "表1全国房地产开发和销售情况、附注6", "verified": true},
+    {"id": "NBS_INVESTMENT_2026_08", "title": "2026年1—8月份全国固定资产投资基本情况", "publisher": "国家统计局", "period": "2026-08", "releaseDate": "2026-09-15", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260915_1965309.html", "table": "主要数据、附注1/7", "verified": true},
+    {"id": "NBS_MACRO_2026_08", "title": "8月份国民经济运行平稳、发展向新向优", "publisher": "国家统计局", "period": "2026-08", "releaseDate": "2026-09-15", "url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260915_1965307.html", "table": "第四部分固定资产投资、附表房地产8月空格、附注6", "verified": true}
+  ],
+  "propertyRules": [
+    {
+      "id": "G03",
+      "name": "新建商品房销售面积",
+      "proposedAllocation": {"yearToDateGrowth": 0.4, "latestMonthGrowth": 0.6},
+      "period": "2026-08",
+      "scope": "全国新建商品房正式合同销售面积，不是二手房、不以金额代替面积",
+      "currentValuePreserved": -12.1,
+      "unit": "%",
+      "basis": "年初累计可比同比",
+      "latestMonthScorable": false,
+      "directLatestMonthYoy": null,
+      "sameVintagePreviousYearEndpoints": null,
+      "officialCumulativeRows": [
+        {"period": "2025-07", "amount": 51560, "amountUnit": "万平方米", "reportedYoyPct": -4.0, "sourceId": "NBS_PROPERTY_2025_07"},
+        {"period": "2025-08", "amount": 57304, "amountUnit": "万平方米", "reportedYoyPct": -4.7, "sourceId": "NBS_PROPERTY_2025_08"},
+        {"period": "2026-07", "amount": 45021, "amountUnit": "万平方米", "reportedYoyPct": -11.8, "sourceId": "NBS_PROPERTY_2026_07"},
+        {"period": "2026-08", "amount": 49880, "amountUnit": "万平方米", "reportedYoyPct": -12.1, "sourceId": "NBS_PROPERTY_2026_08"}
+      ],
+      "windAmounts": {
+        "code": "S0029658", "name": "中国:商品房销售面积:累计值", "unit": "万平方米", "magnitude": "万", "source": "国家统计局", "frequency": "月", "updateDate": "2026-09-17",
+        "periods": ["2025-07", "2025-08", "2026-07", "2026-08"], "values": [51559.77, 57303.92, 45020.81, 49879.77],
+        "officialRoundedOverlapVerified": true, "sameComparativeVintageVerified": false
+      },
+      "windYoy": {"code": "S0073300", "name": "中国:商品房销售面积:累计同比", "unit": "%", "source": "国家统计局", "frequency": "月", "updateDate": "2026-09-15", "periods": ["2026-07", "2026-08"], "values": [-11.8, -12.1], "officialOverlapVerified": true},
+      "comparabilityDiagnostic": {
+        "kind": "not_a_score_input",
+        "formula": "(2026累计金额或面积/2025旧刊累计金额或面积-1)*100",
+        "usingWindExactPublishedAmounts": {"julyYoyPct": -12.682290863593849, "augustYoyPct": -12.955745435914334},
+        "officialComparableYoyPct": {"july": -11.8, "august": -12.1},
+        "conclusion": "偏差约0.88/0.86个百分点，远超刊载数字舍入；旧刊去年累计量不是本期可比同比分母。",
+        "unvalidatedMonthlyYoyRejected": -15.410286987630927,
+        "rejectedValueExplanation": "这只是展示为何不能采用四端旧刊差分，不是官方单月同比，也不是可用于评分的研究估值。"
+      },
+      "displayReason": "累计原值已核验；本期可比口径的单月同比或修订后上年7、8月分母尚未取得。官方月报附注明确上年数据修订，旧刊金额直接差分会偏离官方累计可比同比；国家数据访问失败，Wind未返回可用单月，财新未配置。",
+      "safeImplementation": "保留-12.1%累计评分及原权重；可列出最新单月待核验子行但不生成得分或重新分配权重；双口径尚未启用。"
+    },
+    {
+      "id": "G14",
+      "name": "房地产开发投资",
+      "proposedAllocation": {"yearToDateGrowth": 0.6, "latestMonthGrowth": 0.4},
+      "period": "2026-08",
+      "scope": "全国房地产开发企业本年完成投资，含土地购置费，名义投入",
+      "currentValuePreserved": -19.9,
+      "unit": "%",
+      "basis": "年初累计可比同比",
+      "latestMonthScorable": false,
+      "directLatestMonthYoy": null,
+      "sameVintagePreviousYearEndpoints": null,
+      "officialCumulativeRows": [
+        {"period": "2025-07", "amount": 53580, "amountUnit": "亿元", "reportedYoyPct": -12.0, "sourceId": "NBS_PROPERTY_2025_07"},
+        {"period": "2025-08", "amount": 60309, "amountUnit": "亿元", "reportedYoyPct": -12.9, "sourceId": "NBS_PROPERTY_2025_08"},
+        {"period": "2026-07", "amount": 43009, "amountUnit": "亿元", "reportedYoyPct": -19.2, "sourceId": "NBS_PROPERTY_2026_07"},
+        {"period": "2026-08", "amount": 47979, "amountUnit": "亿元", "reportedYoyPct": -19.9, "sourceId": "NBS_PROPERTY_2026_08"}
+      ],
+      "windAmounts": {
+        "code": "S0029656", "name": "中国:房地产开发投资完成额:累计值", "unit": "亿元", "magnitude": "亿", "currency": "人民币", "source": "国家统计局", "frequency": "月", "updateDate": "2026-09-17",
+        "periods": ["2025-07", "2025-08", "2026-07", "2026-08"], "values": [53579.77, 60309.19, 43008.95, 47978.85],
+        "officialRoundedOverlapVerified": true, "sameComparativeVintageVerified": false
+      },
+      "windYoy": {"code": "S0029657", "name": "中国:房地产开发投资完成额:累计同比", "unit": "%", "source": "国家统计局", "frequency": "月", "updateDate": "2026-09-15", "periods": ["2026-07", "2026-08"], "values": [-19.2, -19.9], "officialOverlapVerified": true},
+      "comparabilityDiagnostic": {
+        "kind": "not_a_score_input",
+        "formula": "(2026累计金额/2025旧刊累计金额-1)*100",
+        "usingWindExactPublishedAmounts": {"julyYoyPct": -19.729125376984634, "augustYoyPct": -20.445209096656747},
+        "officialComparableYoyPct": {"july": -19.2, "august": -19.9},
+        "conclusion": "偏差约0.53/0.55个百分点，远超刊载数字舍入；旧刊去年累计量不是本期可比同比分母。",
+        "unvalidatedMonthlyYoyRejected": -26.14668128902643,
+        "rejectedValueExplanation": "这只是展示为何不能采用四端旧刊差分，不是官方单月同比，也不是可用于评分的研究估值。"
+      },
+      "displayReason": "累计原值已核验；同一可比修订范围下的当月同比或上年7、8月累计分母未取得。旧刊金额直接相除不匹配官方可比同比，不能差分后评分。",
+      "safeImplementation": "保留-19.9%累计评分及原权重；双口径尚未启用，不以隐含反推基数或旧刊金额补当月。"
+    }
+  ],
+  "investmentRules": [
+    {"id": "G07", "name": "制造业投资", "period": "2026-08", "proposedAllocation": "累计60% / 单月40%", "officialCumulativeYoyPct": -2.3, "officialSourceId": "NBS_INVESTMENT_2026_08", "status": "same_scope_monthly_not_obtained", "reason": "官方投资表按年初累计公布行业同比，未提供制造业当月可比同比或完整同修订累计金额四端；不能用整个工业、总投资环比或制造业工业增加值替代。", "wind": {"code": "M0000357", "name": "中国:固定资产投资完成额:制造业:累计同比", "source": "国家统计局", "unit": "%", "frequency": "月", "updateDate": "2026-09-15", "periods": ["2026-07", "2026-08"], "values": [-1.7, -2.3], "officialAugustOverlapVerified": true}},
+    {"id": "G13", "name": "基础设施投资", "period": "2026-08", "proposedAllocation": "累计60% / 单月40%", "officialCumulativeYoyPct": -4.0, "officialSourceId": "NBS_INVESTMENT_2026_08", "status": "same_scope_monthly_not_obtained", "scope": "含电力、热力、燃气及水生产和供应业的现行官方范围", "reason": "当前官方分项只直接公布累计同比；未取得同范围当月可比同比/完整可比金额四端。不能用旧不含电力基建、教育年度基本建设或总投资环比替代。", "wind": {"matchedSameScopeMonthlyCode": null, "retrievedOffScopeAnnualItemsRejected": ["M5686661", "M5686673", "M5686721"]}},
+    {"id": "G16", "name": "扣除房地产开发的民间投资", "period": "2026-08", "proposedAllocation": "累计60% / 单月40%", "officialCumulativeYoyPct": -6.4, "officialSourceId": "NBS_MACRO_2026_08", "status": "same_scope_monthly_not_obtained", "reason": "官方宏观原文直接给扣除房地产开发的民间投资累计同比，未取得同范围可比单月原值；不能使用全口径民间投资-10.1%或投资增速相减替代。", "wind": {"code": "A7546569", "name": "中国:民间固定资产投资完成额(扣除房地产开发投资):累计同比", "source": "国家统计局", "unit": "%", "frequency": "月", "updateDate": "2026-09-15", "periods": ["2026-07", "2026-08"], "values": [-5.7, -6.4], "officialAugustOverlapVerified": true}}
+  ],
+  "activationRequirements": [
+    "取得官方直接单月可比同比，或有明确同修订范围证明的本年/上年7、8月四端累计原值。",
+    "单位、范围、观测月和基数版本一致，发布日期不晚于信息截止；累计金额舍入误差须单独处理。",
+    "本期官方累计可比同比须与四端金额计算的累计同比交叉核对；偏差不能仅用容忍阈值掩盖。",
+    "不得累计同比相减、跨年累计差分、使用旧不同比较范围或从四舍五入累计同比反推旧基数冒充原值。",
+    "最新单月未满足核验条件前保留原累计评分，不给缺项中性分，不把拟议分量权重自动重分。",
+    "本次未引入近三个月层，未修改App原值、评分规则或历史记录。"
+  ]
+}

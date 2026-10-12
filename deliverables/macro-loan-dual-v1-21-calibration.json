@@ -1,0 +1,2360 @@
+{
+  "version": "V1.21",
+  "asOf": "2026-10-11",
+  "status": "有限历史分布尺度诊断及披露舍入敏感性；不是宏观预警或资产收益回测",
+  "marker": "loan-year-to-date-and-latest-month",
+  "skills": [
+    "china-macro-rating"
+  ],
+  "calibrationWindow": {
+    "training": "2025-01—2025-12；同比基期2024同月",
+    "holdout": "2026-01—2026-08仅作尺度诊断，不参与选择",
+    "nTrainingEach": 12,
+    "nHoldoutEach": 8,
+    "exclusion": "2023年原发布混合直接单月和累计，未用于训练；不将机械拼接累计视为原文累计。"
+  },
+  "formulas": {
+    "latestMonthMoreIncrease": "(YTD_t - YTD_previous_month_same_year) - (YTD_t_minus_12_months - YTD_previous_month_same_year_minus_12_months)",
+    "yearToDateMoreIncrease": "YTD_t - YTD_t_minus_12_months",
+    "cumulativeScoreInput": "yearToDateMoreIncrease / integer_calendar_month_t；展示原始累计亿元不变",
+    "trainingQuantile": "对12个绝对差值排序，线性插值位置=(n-1)*p，p为0.5/0.9",
+    "roundedAnchors": "P50/P90各取最接近100亿元或100亿元/月的整百刻度；0→3，负/正内节点→2/4，外节点→1/5",
+    "composite": "0.4*cumulative_score + 0.6*latest_month_score",
+    "january": "历史尺度诊断1月累计即当月，不减上年12月；实时四端点合同暂不支持1月，未来需要独立直接单月合同。"
+  },
+  "sourceEvidence": {
+    "originalPublisher": "中国人民银行",
+    "primaryInputFile": "app/data/macro-finance-credit.json",
+    "sha256": "2fe8c2e0f3f755e236326a9cbd5a6de9b73d15f819b9d50f630c1e31b18930ef",
+    "basis": "金融机构人民币贷款分部门新增额；2023年部分原报为当月值，其余当月值由同年累计值差分；累计披露金额有舍入误差",
+    "originalMonthlyPublicationUrls": [
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554572702/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553720837/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554596450/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553782501/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554667292/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553942589/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554748591/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554025225/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554128681/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554139432/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554232639/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554212585/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5868082/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554385951/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5899343/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554352381/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025121215073692061/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554425517/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026011509294440745/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554556876/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026021314205610794/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026031314240986260/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026041311133582598/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026051414253144700/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061214273613328/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+      "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html"
+    ],
+    "frozenCurrentFile": "deliverables/macro-rating-current-before-v1-21-2026-10-11.json",
+    "sourceStatus": "历史行依据项目已收集官方月报累计金额；本报告复算完整性、公式和来源域名，未声称逐条重新联网复核或拥有当时实时历史快照。"
+  },
+  "rules": {
+    "F01": {
+      "series": "householdLong",
+      "training": [
+        {
+          "period": "2025-01",
+          "current": {
+            "period": "2025-01",
+            "value": 4935,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554572702/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-01",
+            "value": 6272,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553720837/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "januaryNote": "历史尺度诊断中1月累计即1月；实时四端点契约暂不支持1月。",
+          "currentMonthAmount": 4935,
+          "previousMonthAmount": 6272,
+          "latestMonthMoreIncrease": -1337,
+          "yearToDateMoreIncrease": -1337,
+          "cumulativeMonthAverage": -1337,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1.7315,
+            "parentPoints": 1.4388999999999998
+          }
+        },
+        {
+          "period": "2025-02",
+          "current": {
+            "period": "2025-02",
+            "value": 3785,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554596450/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-02",
+            "value": 5234,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553782501/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-01",
+            "value": 4935,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554572702/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-01",
+            "value": 6272,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553720837/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": -1150,
+          "previousMonthAmount": -1038,
+          "latestMonthMoreIncrease": -112,
+          "yearToDateMoreIncrease": -1449,
+          "cumulativeMonthAverage": -724.5,
+          "trialScore": {
+            "cumulativePoints": 1.151,
+            "latestMonthPoints": 2.86,
+            "parentPoints": 2.1764
+          }
+        },
+        {
+          "period": "2025-03",
+          "current": {
+            "period": "2025-03",
+            "value": 8832,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554667292/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-03",
+            "value": 9750,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553942589/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-02",
+            "value": 3785,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554596450/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-02",
+            "value": 5234,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553782501/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": 5047,
+          "previousMonthAmount": 4516,
+          "latestMonthMoreIncrease": 531,
+          "yearToDateMoreIncrease": -918,
+          "cumulativeMonthAverage": -306,
+          "trialScore": {
+            "cumulativePoints": 1.988,
+            "latestMonthPoints": 3.66375,
+            "parentPoints": 2.9934499999999997
+          }
+        },
+        {
+          "period": "2025-04",
+          "current": {
+            "period": "2025-04",
+            "value": 7601,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554748591/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-04",
+            "value": 8084,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554025225/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-03",
+            "value": 8832,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554667292/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-03",
+            "value": 9750,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553942589/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": -1231,
+          "previousMonthAmount": -1666,
+          "latestMonthMoreIncrease": 435,
+          "yearToDateMoreIncrease": -483,
+          "cumulativeMonthAverage": -120.75,
+          "trialScore": {
+            "cumulativePoints": 2.5975,
+            "latestMonthPoints": 3.54375,
+            "parentPoints": 3.1652500000000003
+          }
+        },
+        {
+          "period": "2025-05",
+          "current": {
+            "period": "2025-05",
+            "value": 8347,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-05",
+            "value": 8598,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554128681/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-04",
+            "value": 7601,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554748591/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-04",
+            "value": 8084,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554025225/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": 746,
+          "previousMonthAmount": 514,
+          "latestMonthMoreIncrease": 232,
+          "yearToDateMoreIncrease": -251,
+          "cumulativeMonthAverage": -50.2,
+          "trialScore": {
+            "cumulativePoints": 2.8326666666666664,
+            "latestMonthPoints": 3.29,
+            "parentPoints": 3.1070666666666664
+          }
+        },
+        {
+          "period": "2025-06",
+          "current": {
+            "period": "2025-06",
+            "value": 11700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-06",
+            "value": 11800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554139432/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-05",
+            "value": 8347,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-05",
+            "value": 8598,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554128681/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": 3353,
+          "previousMonthAmount": 3202,
+          "latestMonthMoreIncrease": 151,
+          "yearToDateMoreIncrease": -100,
+          "cumulativeMonthAverage": -16.666666666666668,
+          "trialScore": {
+            "cumulativePoints": 2.9444444444444446,
+            "latestMonthPoints": 3.18875,
+            "parentPoints": 3.0910277777777777
+          }
+        },
+        {
+          "period": "2025-07",
+          "current": {
+            "period": "2025-07",
+            "value": 10600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-07",
+            "value": 11900,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554232639/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-06",
+            "value": 11700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-06",
+            "value": 11800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554139432/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": -1100,
+          "previousMonthAmount": 100,
+          "latestMonthMoreIncrease": -1200,
+          "yearToDateMoreIncrease": -1300,
+          "cumulativeMonthAverage": -185.71428571428572,
+          "trialScore": {
+            "cumulativePoints": 2.380952380952381,
+            "latestMonthPoints": 1.8,
+            "parentPoints": 2.0323809523809526
+          }
+        },
+        {
+          "period": "2025-08",
+          "current": {
+            "period": "2025-08",
+            "value": 10800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-08",
+            "value": 13100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554212585/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-07",
+            "value": 10600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-07",
+            "value": 11900,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554232639/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": 200,
+          "previousMonthAmount": 1200,
+          "latestMonthMoreIncrease": -1000,
+          "yearToDateMoreIncrease": -2300,
+          "cumulativeMonthAverage": -287.5,
+          "trialScore": {
+            "cumulativePoints": 2.0416666666666665,
+            "latestMonthPoints": 1.9,
+            "parentPoints": 1.9566666666666666
+          }
+        },
+        {
+          "period": "2025-09",
+          "current": {
+            "period": "2025-09",
+            "value": 13300,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5868082/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-09",
+            "value": 15400,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554385951/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-08",
+            "value": 10800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-08",
+            "value": 13100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554212585/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": 2500,
+          "previousMonthAmount": 2300,
+          "latestMonthMoreIncrease": 200,
+          "yearToDateMoreIncrease": -2100,
+          "cumulativeMonthAverage": -233.33333333333334,
+          "trialScore": {
+            "cumulativePoints": 2.2222222222222223,
+            "latestMonthPoints": 3.25,
+            "parentPoints": 2.838888888888889
+          }
+        },
+        {
+          "period": "2025-10",
+          "current": {
+            "period": "2025-10",
+            "value": 12600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5899343/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-10",
+            "value": 16500,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554352381/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-09",
+            "value": 13300,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5868082/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-09",
+            "value": 15400,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554385951/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": -700,
+          "previousMonthAmount": 1100,
+          "latestMonthMoreIncrease": -1800,
+          "yearToDateMoreIncrease": -3900,
+          "cumulativeMonthAverage": -390,
+          "trialScore": {
+            "cumulativePoints": 1.8199999999999998,
+            "latestMonthPoints": 1.5,
+            "parentPoints": 1.628
+          }
+        },
+        {
+          "period": "2025-11",
+          "current": {
+            "period": "2025-11",
+            "value": 12700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025121215073692061/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-11",
+            "value": 19500,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554425517/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-10",
+            "value": 12600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5899343/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-10",
+            "value": 16500,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554352381/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": 100,
+          "previousMonthAmount": 3000,
+          "latestMonthMoreIncrease": -2900,
+          "yearToDateMoreIncrease": -6800,
+          "cumulativeMonthAverage": -618.1818181818181,
+          "trialScore": {
+            "cumulativePoints": 1.3636363636363638,
+            "latestMonthPoints": 1,
+            "parentPoints": 1.1454545454545455
+          }
+        },
+        {
+          "period": "2025-12",
+          "current": {
+            "period": "2025-12",
+            "value": 12800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026011509294440745/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2024-12",
+            "value": 22500,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554556876/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2025-11",
+            "value": 12700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025121215073692061/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2024-11",
+            "value": 19500,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554425517/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": 100,
+          "previousMonthAmount": 3000,
+          "latestMonthMoreIncrease": -2900,
+          "yearToDateMoreIncrease": -9700,
+          "cumulativeMonthAverage": -808.3333333333334,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1,
+            "parentPoints": 1
+          }
+        }
+      ],
+      "holdout": [
+        {
+          "period": "2026-01",
+          "current": {
+            "period": "2026-01",
+            "value": 3469,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026021314205610794/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2025-01",
+            "value": 4935,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554572702/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "januaryNote": "历史尺度诊断中1月累计即1月；实时四端点契约暂不支持1月。",
+          "currentMonthAmount": 3469,
+          "previousMonthAmount": 4935,
+          "latestMonthMoreIncrease": -1466,
+          "yearToDateMoreIncrease": -1466,
+          "cumulativeMonthAverage": -1466,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1.667,
+            "parentPoints": 1.4002
+          }
+        },
+        {
+          "period": "2026-02",
+          "current": {
+            "period": "2026-02",
+            "value": 1654,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026031314240986260/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2025-02",
+            "value": 3785,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554596450/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2026-01",
+            "value": 3469,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026021314205610794/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2025-01",
+            "value": 4935,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554572702/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": -1815,
+          "previousMonthAmount": -1150,
+          "latestMonthMoreIncrease": -665,
+          "yearToDateMoreIncrease": -2131,
+          "cumulativeMonthAverage": -1065.5,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 2.16875,
+            "parentPoints": 1.70125
+          }
+        },
+        {
+          "period": "2026-03",
+          "current": {
+            "period": "2026-03",
+            "value": 4607,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026041311133582598/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2025-03",
+            "value": 8832,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554667292/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2026-02",
+            "value": 1654,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026031314240986260/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2025-02",
+            "value": 3785,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554596450/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": 2953,
+          "previousMonthAmount": 5047,
+          "latestMonthMoreIncrease": -2094,
+          "yearToDateMoreIncrease": -4225,
+          "cumulativeMonthAverage": -1408.3333333333333,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1.353,
+            "parentPoints": 1.2118
+          }
+        },
+        {
+          "period": "2026-04",
+          "current": {
+            "period": "2026-04",
+            "value": 1199,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026051414253144700/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2025-04",
+            "value": 7601,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554748591/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2026-03",
+            "value": 4607,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026041311133582598/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2025-03",
+            "value": 8832,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554667292/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": -3408,
+          "previousMonthAmount": -1231,
+          "latestMonthMoreIncrease": -2177,
+          "yearToDateMoreIncrease": -6402,
+          "cumulativeMonthAverage": -1600.5,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1.3115,
+            "parentPoints": 1.1869
+          }
+        },
+        {
+          "period": "2026-05",
+          "current": {
+            "period": "2026-05",
+            "value": 628,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061214273613328/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2025-05",
+            "value": 8347,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2026-04",
+            "value": 1199,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026051414253144700/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2025-04",
+            "value": 7601,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554748591/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": -571,
+          "previousMonthAmount": 746,
+          "latestMonthMoreIncrease": -1317,
+          "yearToDateMoreIncrease": -7719,
+          "cumulativeMonthAverage": -1543.8,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1.7415,
+            "parentPoints": 1.4449
+          }
+        },
+        {
+          "period": "2026-06",
+          "current": {
+            "period": "2026-06",
+            "value": 2212,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2025-06",
+            "value": 11700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2026-05",
+            "value": 628,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061214273613328/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2025-05",
+            "value": 8347,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": 1584,
+          "previousMonthAmount": 3353,
+          "latestMonthMoreIncrease": -1769,
+          "yearToDateMoreIncrease": -9488,
+          "cumulativeMonthAverage": -1581.3333333333333,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1.5154999999999998,
+            "parentPoints": 1.3093
+          }
+        },
+        {
+          "period": "2026-07",
+          "current": {
+            "period": "2026-07",
+            "value": 1010,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2025-07",
+            "value": 10600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2026-06",
+            "value": 2212,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2025-06",
+            "value": 11700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": -1202,
+          "previousMonthAmount": -1100,
+          "latestMonthMoreIncrease": -102,
+          "yearToDateMoreIncrease": -9590,
+          "cumulativeMonthAverage": -1370,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 2.8725,
+            "parentPoints": 2.1235
+          }
+        },
+        {
+          "period": "2026-08",
+          "current": {
+            "period": "2026-08",
+            "value": 188,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previous": {
+            "period": "2025-08",
+            "value": 10800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentPreceding": {
+            "period": "2026-07",
+            "value": 1010,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "previousPreceding": {
+            "period": "2025-07",
+            "value": 10600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "householdLong"
+          },
+          "currentMonthAmount": -822,
+          "previousMonthAmount": 200,
+          "latestMonthMoreIncrease": -1022,
+          "yearToDateMoreIncrease": -10612,
+          "cumulativeMonthAverage": -1326.5,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1.889,
+            "parentPoints": 1.5333999999999999
+          }
+        }
+      ],
+      "latestMonth": {
+        "n": 12,
+        "minimum": -2900,
+        "maximum": 531,
+        "negativeCount": 7,
+        "absoluteP50": 765.5,
+        "absoluteP90": 2790.0000000000005,
+        "roundedInner": 800,
+        "roundedOuter": 2800
+      },
+      "cumulativeMonthAverage": {
+        "n": 12,
+        "minimum": -1337,
+        "maximum": -16.666666666666668,
+        "negativeCount": 12,
+        "absoluteP50": 296.75,
+        "absoluteP90": 799.95,
+        "roundedInner": 300,
+        "roundedOuter": 800
+      },
+      "fixedTrialScales": {
+        "latestMonth": {
+          "inner": 800,
+          "outer": 2800
+        },
+        "cumulativeMonthAverage": {
+          "inner": 300,
+          "outer": 800
+        }
+      },
+      "saturationDiagnostics": {
+        "trainingCumulative": {
+          "n": 12,
+          "atLowerEndpoint": 2,
+          "atUpperEndpoint": 0
+        },
+        "trainingLatestMonth": {
+          "n": 12,
+          "atLowerEndpoint": 2,
+          "atUpperEndpoint": 0
+        },
+        "holdoutCumulative": {
+          "n": 8,
+          "atLowerEndpoint": 8,
+          "atUpperEndpoint": 0
+        },
+        "holdoutLatestMonth": {
+          "n": 8,
+          "atLowerEndpoint": 0,
+          "atUpperEndpoint": 0
+        }
+      }
+    },
+    "F02": {
+      "series": "enterpriseLong",
+      "training": [
+        {
+          "period": "2025-01",
+          "current": {
+            "period": "2025-01",
+            "value": 34600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554572702/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-01",
+            "value": 33100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553720837/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "januaryNote": "历史尺度诊断中1月累计即1月；实时四端点契约暂不支持1月。",
+          "currentMonthAmount": 34600,
+          "previousMonthAmount": 33100,
+          "latestMonthMoreIncrease": 1500,
+          "yearToDateMoreIncrease": 1500,
+          "cumulativeMonthAverage": 1500,
+          "trialScore": {
+            "cumulativePoints": 3.9375,
+            "latestMonthPoints": 4,
+            "parentPoints": 3.975
+          }
+        },
+        {
+          "period": "2025-02",
+          "current": {
+            "period": "2025-02",
+            "value": 40000,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554596450/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-02",
+            "value": 46000,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553782501/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-01",
+            "value": 34600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554572702/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-01",
+            "value": 33100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553720837/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 5400,
+          "previousMonthAmount": 12900,
+          "latestMonthMoreIncrease": -7500,
+          "yearToDateMoreIncrease": -6000,
+          "cumulativeMonthAverage": -3000,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1,
+            "parentPoints": 1
+          }
+        },
+        {
+          "period": "2025-03",
+          "current": {
+            "period": "2025-03",
+            "value": 55800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554667292/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-03",
+            "value": 62000,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553942589/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-02",
+            "value": 40000,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554596450/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-02",
+            "value": 46000,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553782501/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 15800,
+          "previousMonthAmount": 16000,
+          "latestMonthMoreIncrease": -200,
+          "yearToDateMoreIncrease": -6200,
+          "cumulativeMonthAverage": -2066.6666666666665,
+          "trialScore": {
+            "cumulativePoints": 1.0666666666666669,
+            "latestMonthPoints": 2.8666666666666667,
+            "parentPoints": 2.1466666666666665
+          }
+        },
+        {
+          "period": "2025-04",
+          "current": {
+            "period": "2025-04",
+            "value": 58300,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554748591/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-04",
+            "value": 66100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554025225/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-03",
+            "value": 55800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554667292/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-03",
+            "value": 62000,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212553942589/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 2500,
+          "previousMonthAmount": 4100,
+          "latestMonthMoreIncrease": -1600,
+          "yearToDateMoreIncrease": -7800,
+          "cumulativeMonthAverage": -1950,
+          "trialScore": {
+            "cumulativePoints": 1.3,
+            "latestMonthPoints": 1.9565217391304348,
+            "parentPoints": 1.6939130434782608
+          }
+        },
+        {
+          "period": "2025-05",
+          "current": {
+            "period": "2025-05",
+            "value": 61600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-05",
+            "value": 71100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554128681/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-04",
+            "value": 58300,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554748591/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-04",
+            "value": 66100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554025225/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 3300,
+          "previousMonthAmount": 5000,
+          "latestMonthMoreIncrease": -1700,
+          "yearToDateMoreIncrease": -9500,
+          "cumulativeMonthAverage": -1900,
+          "trialScore": {
+            "cumulativePoints": 1.4,
+            "latestMonthPoints": 1.9130434782608696,
+            "parentPoints": 1.7078260869565218
+          }
+        },
+        {
+          "period": "2025-06",
+          "current": {
+            "period": "2025-06",
+            "value": 71700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-06",
+            "value": 80800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554139432/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-05",
+            "value": 61600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-05",
+            "value": 71100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554128681/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 10100,
+          "previousMonthAmount": 9700,
+          "latestMonthMoreIncrease": 400,
+          "yearToDateMoreIncrease": -9100,
+          "cumulativeMonthAverage": -1516.6666666666667,
+          "trialScore": {
+            "cumulativePoints": 2.0520833333333335,
+            "latestMonthPoints": 3.2666666666666666,
+            "parentPoints": 2.7808333333333333
+          }
+        },
+        {
+          "period": "2025-07",
+          "current": {
+            "period": "2025-07",
+            "value": 69100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-07",
+            "value": 82100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554232639/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-06",
+            "value": 71700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-06",
+            "value": 80800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554139432/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": -2600,
+          "previousMonthAmount": 1300,
+          "latestMonthMoreIncrease": -3900,
+          "yearToDateMoreIncrease": -13000,
+          "cumulativeMonthAverage": -1857.142857142857,
+          "trialScore": {
+            "cumulativePoints": 1.4857142857142858,
+            "latestMonthPoints": 1,
+            "parentPoints": 1.1942857142857144
+          }
+        },
+        {
+          "period": "2025-08",
+          "current": {
+            "period": "2025-08",
+            "value": 73800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-08",
+            "value": 87000,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554212585/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-07",
+            "value": 69100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-07",
+            "value": 82100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554232639/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 4700,
+          "previousMonthAmount": 4900,
+          "latestMonthMoreIncrease": -200,
+          "yearToDateMoreIncrease": -13200,
+          "cumulativeMonthAverage": -1650,
+          "trialScore": {
+            "cumulativePoints": 1.9,
+            "latestMonthPoints": 2.8666666666666667,
+            "parentPoints": 2.48
+          }
+        },
+        {
+          "period": "2025-09",
+          "current": {
+            "period": "2025-09",
+            "value": 82900,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5868082/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-09",
+            "value": 96600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554385951/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-08",
+            "value": 73800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-08",
+            "value": 87000,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554212585/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 9100,
+          "previousMonthAmount": 9600,
+          "latestMonthMoreIncrease": -500,
+          "yearToDateMoreIncrease": -13700,
+          "cumulativeMonthAverage": -1522.2222222222222,
+          "trialScore": {
+            "cumulativePoints": 2.048611111111111,
+            "latestMonthPoints": 2.6666666666666665,
+            "parentPoints": 2.4194444444444443
+          }
+        },
+        {
+          "period": "2025-10",
+          "current": {
+            "period": "2025-10",
+            "value": 83200,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5899343/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-10",
+            "value": 98300,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554352381/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-09",
+            "value": 82900,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5868082/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-09",
+            "value": 96600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554385951/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 300,
+          "previousMonthAmount": 1700,
+          "latestMonthMoreIncrease": -1400,
+          "yearToDateMoreIncrease": -15100,
+          "cumulativeMonthAverage": -1510,
+          "trialScore": {
+            "cumulativePoints": 2.05625,
+            "latestMonthPoints": 2.066666666666667,
+            "parentPoints": 2.0625
+          }
+        },
+        {
+          "period": "2025-11",
+          "current": {
+            "period": "2025-11",
+            "value": 84900,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025121215073692061/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-11",
+            "value": 100400,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554425517/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-10",
+            "value": 83200,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5899343/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-10",
+            "value": 98300,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554352381/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 1700,
+          "previousMonthAmount": 2100,
+          "latestMonthMoreIncrease": -400,
+          "yearToDateMoreIncrease": -15500,
+          "cumulativeMonthAverage": -1409.090909090909,
+          "trialScore": {
+            "cumulativePoints": 2.1193181818181817,
+            "latestMonthPoints": 2.7333333333333334,
+            "parentPoints": 2.4877272727272723
+          }
+        },
+        {
+          "period": "2025-12",
+          "current": {
+            "period": "2025-12",
+            "value": 88200,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026011509294440745/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2024-12",
+            "value": 100800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554556876/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2025-11",
+            "value": 84900,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025121215073692061/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2024-11",
+            "value": 100400,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554425517/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 3300,
+          "previousMonthAmount": 400,
+          "latestMonthMoreIncrease": 2900,
+          "yearToDateMoreIncrease": -12600,
+          "cumulativeMonthAverage": -1050,
+          "trialScore": {
+            "cumulativePoints": 2.34375,
+            "latestMonthPoints": 4.608695652173913,
+            "parentPoints": 3.702717391304348
+          }
+        }
+      ],
+      "holdout": [
+        {
+          "period": "2026-01",
+          "current": {
+            "period": "2026-01",
+            "value": 31800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026021314205610794/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2025-01",
+            "value": 34600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554572702/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "januaryNote": "历史尺度诊断中1月累计即1月；实时四端点契约暂不支持1月。",
+          "currentMonthAmount": 31800,
+          "previousMonthAmount": 34600,
+          "latestMonthMoreIncrease": -2800,
+          "yearToDateMoreIncrease": -2800,
+          "cumulativeMonthAverage": -2800,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1.434782608695652,
+            "parentPoints": 1.2608695652173911
+          }
+        },
+        {
+          "period": "2026-02",
+          "current": {
+            "period": "2026-02",
+            "value": 40700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026031314240986260/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2025-02",
+            "value": 40000,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554596450/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2026-01",
+            "value": 31800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026021314205610794/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2025-01",
+            "value": 34600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554572702/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 8900,
+          "previousMonthAmount": 5400,
+          "latestMonthMoreIncrease": 3500,
+          "yearToDateMoreIncrease": 700,
+          "cumulativeMonthAverage": 350,
+          "trialScore": {
+            "cumulativePoints": 3.21875,
+            "latestMonthPoints": 4.869565217391305,
+            "parentPoints": 4.209239130434783
+          }
+        },
+        {
+          "period": "2026-03",
+          "current": {
+            "period": "2026-03",
+            "value": 54200,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026041311133582598/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2025-03",
+            "value": 55800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554667292/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2026-02",
+            "value": 40700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026031314240986260/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2025-02",
+            "value": 40000,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554596450/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 13500,
+          "previousMonthAmount": 15800,
+          "latestMonthMoreIncrease": -2300,
+          "yearToDateMoreIncrease": -1600,
+          "cumulativeMonthAverage": -533.3333333333334,
+          "trialScore": {
+            "cumulativePoints": 2.6666666666666665,
+            "latestMonthPoints": 1.6521739130434783,
+            "parentPoints": 2.0579710144927534
+          }
+        },
+        {
+          "period": "2026-04",
+          "current": {
+            "period": "2026-04",
+            "value": 50100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026051414253144700/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2025-04",
+            "value": 58300,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554748591/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2026-03",
+            "value": 54200,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026041311133582598/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2025-03",
+            "value": 55800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554667292/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": -4100,
+          "previousMonthAmount": 2500,
+          "latestMonthMoreIncrease": -6600,
+          "yearToDateMoreIncrease": -8200,
+          "cumulativeMonthAverage": -2050,
+          "trialScore": {
+            "cumulativePoints": 1.1,
+            "latestMonthPoints": 1,
+            "parentPoints": 1.04
+          }
+        },
+        {
+          "period": "2026-05",
+          "current": {
+            "period": "2026-05",
+            "value": 49900,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061214273613328/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2025-05",
+            "value": 61600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2026-04",
+            "value": 50100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026051414253144700/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2025-04",
+            "value": 58300,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554748591/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": -200,
+          "previousMonthAmount": 3300,
+          "latestMonthMoreIncrease": -3500,
+          "yearToDateMoreIncrease": -11700,
+          "cumulativeMonthAverage": -2340,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1.1304347826086956,
+            "parentPoints": 1.0782608695652174
+          }
+        },
+        {
+          "period": "2026-06",
+          "current": {
+            "period": "2026-06",
+            "value": 55500,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2025-06",
+            "value": 71700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2026-05",
+            "value": 49900,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061214273613328/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2025-05",
+            "value": 61600,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554778119/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 5600,
+          "previousMonthAmount": 10100,
+          "latestMonthMoreIncrease": -4500,
+          "yearToDateMoreIncrease": -16200,
+          "cumulativeMonthAverage": -2700,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 1,
+            "parentPoints": 1
+          }
+        },
+        {
+          "period": "2026-07",
+          "current": {
+            "period": "2026-07",
+            "value": 53200,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2025-07",
+            "value": 69100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2026-06",
+            "value": 55500,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071512340454869/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2025-06",
+            "value": 71700,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554857593/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": -2300,
+          "previousMonthAmount": -2600,
+          "latestMonthMoreIncrease": 300,
+          "yearToDateMoreIncrease": -15900,
+          "cumulativeMonthAverage": -2271.4285714285716,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 3.2,
+            "parentPoints": 2.32
+          }
+        },
+        {
+          "period": "2026-08",
+          "current": {
+            "period": "2026-08",
+            "value": 56400,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previous": {
+            "period": "2025-08",
+            "value": 73800,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentPreceding": {
+            "period": "2026-07",
+            "value": 53200,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "previousPreceding": {
+            "period": "2025-07",
+            "value": 69100,
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "originalPublisher": "中国人民银行",
+            "series": "enterpriseLong"
+          },
+          "currentMonthAmount": 3200,
+          "previousMonthAmount": 4700,
+          "latestMonthMoreIncrease": -1500,
+          "yearToDateMoreIncrease": -17400,
+          "cumulativeMonthAverage": -2175,
+          "trialScore": {
+            "cumulativePoints": 1,
+            "latestMonthPoints": 2,
+            "parentPoints": 1.6
+          }
+        }
+      ],
+      "latestMonth": {
+        "n": 12,
+        "minimum": -7500,
+        "maximum": 2900,
+        "negativeCount": 9,
+        "absoluteP50": 1450,
+        "absoluteP90": 3800.0000000000005,
+        "roundedInner": 1500,
+        "roundedOuter": 3800
+      },
+      "cumulativeMonthAverage": {
+        "n": 12,
+        "minimum": -3000,
+        "maximum": 1500,
+        "negativeCount": 11,
+        "absoluteP50": 1586.111111111111,
+        "absoluteP90": 2055,
+        "roundedInner": 1600,
+        "roundedOuter": 2100
+      },
+      "fixedTrialScales": {
+        "latestMonth": {
+          "inner": 1500,
+          "outer": 3800
+        },
+        "cumulativeMonthAverage": {
+          "inner": 1600,
+          "outer": 2100
+        }
+      },
+      "saturationDiagnostics": {
+        "trainingCumulative": {
+          "n": 12,
+          "atLowerEndpoint": 1,
+          "atUpperEndpoint": 0
+        },
+        "trainingLatestMonth": {
+          "n": 12,
+          "atLowerEndpoint": 2,
+          "atUpperEndpoint": 0
+        },
+        "holdoutCumulative": {
+          "n": 8,
+          "atLowerEndpoint": 5,
+          "atUpperEndpoint": 0
+        },
+        "holdoutLatestMonth": {
+          "n": 8,
+          "atLowerEndpoint": 2,
+          "atUpperEndpoint": 0
+        }
+      }
+    }
+  },
+  "current": {
+    "F01": {
+      "period": "2026-08",
+      "originalPrimaryObservation": {
+        "value": -2893,
+        "basis": "近3月当月新增额同比多增",
+        "unit": "亿元",
+        "unchanged": true,
+        "usedInNewComposite": false
+      },
+      "rawAmounts": {
+        "currentYear": {
+          "preceding": {
+            "period": "2026-07",
+            "value": 1010,
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+            "releaseDate": "2026-08-14",
+            "roundingUnit": 1
+          },
+          "current": {
+            "period": "2026-08",
+            "value": 188,
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+            "releaseDate": "2026-09-14",
+            "roundingUnit": 1
+          }
+        },
+        "previousYear": {
+          "preceding": {
+            "period": "2025-07",
+            "value": 10600,
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+            "releaseDate": "2025-08-13",
+            "roundingUnit": 100
+          },
+          "current": {
+            "period": "2025-08",
+            "value": 10800,
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+            "releaseDate": "2025-09-12",
+            "roundingUnit": 100
+          }
+        }
+      },
+      "yearToDateMoreIncrease": {
+        "value": -10612,
+        "unit": "亿元",
+        "scoreValue": -1326.5,
+        "scoreUnit": "亿元/月",
+        "scoreTransform": "calendar-month-average",
+        "weight": 0.4,
+        "anchors": [
+          [
+            -800,
+            1
+          ],
+          [
+            -300,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            300,
+            4
+          ],
+          [
+            800,
+            5
+          ]
+        ],
+        "points": 1
+      },
+      "latestMonthMoreIncrease": {
+        "currentMonthAmount": -822,
+        "previousMonthAmount": 200,
+        "value": -1022,
+        "unit": "亿元",
+        "weight": 0.6,
+        "anchors": [
+          [
+            -2800,
+            1
+          ],
+          [
+            -800,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            800,
+            4
+          ],
+          [
+            2800,
+            5
+          ]
+        ],
+        "points": 1.889
+      },
+      "points": 1.5333999999999999,
+      "roundingSensitivity": {
+        "kind": "worst-case-endpoint-half-grain-sum",
+        "roundingErrorBoundsYuan100Million": {
+          "cumulative": 50.5,
+          "monthly": 101
+        },
+        "cumulativeScoreInterval": [
+          1,
+          1
+        ],
+        "monthlyScoreInterval": [
+          1.8385,
+          1.9395
+        ],
+        "parentScoreInterval": [
+          1.5030999999999999,
+          1.5636999999999999
+        ],
+        "interpretation": "仅披露舍入造成的上界，不是抽样置信区间；四端误差可能相关，该区间是保守可复算范围。"
+      }
+    },
+    "F02": {
+      "period": "2026-08",
+      "originalPrimaryObservation": {
+        "value": -5700,
+        "basis": "近3月当月新增额同比多增",
+        "unit": "亿元",
+        "unchanged": true,
+        "usedInNewComposite": false
+      },
+      "rawAmounts": {
+        "currentYear": {
+          "preceding": {
+            "period": "2026-07",
+            "value": 53200,
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026081414193264304/index.html",
+            "releaseDate": "2026-08-14",
+            "roundingUnit": 100
+          },
+          "current": {
+            "period": "2026-08",
+            "value": 56400,
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+            "releaseDate": "2026-09-14",
+            "roundingUnit": 100
+          }
+        },
+        "previousYear": {
+          "preceding": {
+            "period": "2025-07",
+            "value": 69100,
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212554853258/index.html",
+            "releaseDate": "2025-08-13",
+            "roundingUnit": 100
+          },
+          "current": {
+            "period": "2025-08",
+            "value": 73800,
+            "unit": "亿元",
+            "basis": "年初累计新增",
+            "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5837479/index.html",
+            "releaseDate": "2025-09-12",
+            "roundingUnit": 100
+          }
+        }
+      },
+      "yearToDateMoreIncrease": {
+        "value": -17400,
+        "unit": "亿元",
+        "scoreValue": -2175,
+        "scoreUnit": "亿元/月",
+        "scoreTransform": "calendar-month-average",
+        "weight": 0.4,
+        "anchors": [
+          [
+            -2100,
+            1
+          ],
+          [
+            -1600,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1600,
+            4
+          ],
+          [
+            2100,
+            5
+          ]
+        ],
+        "points": 1
+      },
+      "latestMonthMoreIncrease": {
+        "currentMonthAmount": 3200,
+        "previousMonthAmount": 4700,
+        "value": -1500,
+        "unit": "亿元",
+        "weight": 0.6,
+        "anchors": [
+          [
+            -3800,
+            1
+          ],
+          [
+            -1500,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1500,
+            4
+          ],
+          [
+            3800,
+            5
+          ]
+        ],
+        "points": 2
+      },
+      "points": 1.6,
+      "roundingSensitivity": {
+        "kind": "worst-case-endpoint-half-grain-sum",
+        "roundingErrorBoundsYuan100Million": {
+          "cumulative": 100,
+          "monthly": 200
+        },
+        "cumulativeScoreInterval": [
+          1,
+          1
+        ],
+        "monthlyScoreInterval": [
+          1.9130434782608696,
+          2.1333333333333333
+        ],
+        "parentScoreInterval": [
+          1.5478260869565217,
+          1.6800000000000002
+        ],
+        "interpretation": "仅披露舍入造成的上界，不是抽样置信区间；四端误差可能相关，该区间是保守可复算范围。"
+      }
+    }
+  },
+  "limits": [
+    "12个月训练样本较短且信用收缩占多数，不能称为最优、稳定风险阈值或长期永久尺度；正向对称参照是研究设定，未被该偏负样本充分验证。",
+    "2026年八个诊断月中，居民累计分量8/8期触底1分、企业累计分量5/8期触底；并未解决累计极弱区间的全部灵敏度问题。最新单月60%仍可响应变化，后续扩大历史窗口应重新审查外端点，不为当前总分方向临时改尺度。累计各月重叠，12个样本不能当成12个独立经济周期。",
+    "0多增3分表示与上年流量持平，不等于偿债能力健康、信贷增长充足；需与两项杠杆约束及非政府社融一起解读。",
+    "按月份标准化仅纠正累计观察长度，不消除春节错位、季度集中投放和信用需求结构变化；两条同比不被称为完全独立信息。",
+    "历史原文金额可能为初步数并存在舍入；未获得统一修订后的全期原值版本，不可称为无修订误差或点时回测。",
+    "当前期舍入区间可按明确端点粒度复算；未逐条重读训练期原文数字精度，因此不为训练行伪造精确舍入粒度。",
+    "企（事）业单位包括非金融企业及机关团体，不直接等于上市公司、民企或盈利变化；住户中长期并非全部按揭。",
+    "不得把两个累计增速相减伪称当月同比；不得跨年累计相减；不得用零/负贷款新增额为百分比同比分母。",
+    "总宏观权重、父指标权重、原始主观察及过去快照均不变；按新规则另行追加快照。"
+  ]
+}

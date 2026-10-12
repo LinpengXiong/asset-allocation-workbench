@@ -1,0 +1,1900 @@
+{
+  "version": "V1.19",
+  "baseVersion": "V1.18",
+  "asOf": "2026-10-11",
+  "status": "one-observation fixed-budget sensitivity disclosure; not backtest-optimal or asset-allocation signal",
+  "inputFiles": {
+    "framework": "deliverables/macro-rating-framework-before-v1-19-2026-10-11.json",
+    "current": "deliverables/macro-rating-current-before-v1-19-2026-10-11.json"
+  },
+  "hypothesis": "在宏观背景框架中强调需求、盈利及改善广度，保留信用约束；公开预算配平与相依性，不用本期目标总分选权重。",
+  "selected": {
+    "pillars": {
+      "经济运行": 0.25,
+      "增长动力": 0.4,
+      "金融信贷": 0.2,
+      "宏观调控": 0.15
+    },
+    "weights": {
+      "E01": 0.07,
+      "E02": 0.015,
+      "E03": 0.025,
+      "E04": 0.05,
+      "E05": 0.025,
+      "E07": 0.02,
+      "E08": 0.02,
+      "E09": 0.025,
+      "G01": 0.035,
+      "G02": 0.04,
+      "G19": 0.04,
+      "G03": 0.02,
+      "G14": 0.01,
+      "G15": 0.015,
+      "G07": 0.025,
+      "G16": 0.035,
+      "G13": 0.02,
+      "G17": 0.06,
+      "G12": 0.035,
+      "G10": 0.04,
+      "G11": 0.015,
+      "G18": 0.01,
+      "F01": 0.025,
+      "F02": 0.035,
+      "F07": 0.035,
+      "F08": 0.02,
+      "F09": 0.03,
+      "F10": 0.03,
+      "F05": 0.025,
+      "P01E": 0.035,
+      "P01F": 0.015,
+      "P02A": 0.02,
+      "P02E": 0.005,
+      "P02D": 0.025,
+      "P03A": 0.0125,
+      "P03B": 0.0125,
+      "P04A": 0.0125,
+      "P04B": 0.0125
+    },
+    "pillarSummary": [
+      {
+        "name": "经济运行",
+        "weight": 0.25,
+        "count": 8,
+        "contribution": 0.745420768455,
+        "normalizedScore": 2.98168307382,
+        "groups": [
+          {
+            "name": "经济增长",
+            "weight": 0.07
+          },
+          {
+            "name": "物价水平",
+            "weight": 0.11
+          },
+          {
+            "name": "就业市场",
+            "weight": 0.025
+          },
+          {
+            "name": "景气指数",
+            "weight": 0.045
+          }
+        ]
+      },
+      {
+        "name": "增长动力",
+        "weight": 0.4,
+        "count": 14,
+        "contribution": 1.103753651203,
+        "normalizedScore": 2.759384128008,
+        "groups": [
+          {
+            "name": "工业生产",
+            "weight": 0.14
+          },
+          {
+            "name": "房地产",
+            "weight": 0.045
+          },
+          {
+            "name": "投资",
+            "weight": 0.08
+          },
+          {
+            "name": "消费",
+            "weight": 0.095
+          },
+          {
+            "name": "进出口",
+            "weight": 0.04
+          }
+        ]
+      },
+      {
+        "name": "金融信贷",
+        "weight": 0.2,
+        "count": 7,
+        "contribution": 0.46790978,
+        "normalizedScore": 2.3395489,
+        "groups": [
+          {
+            "name": "信贷结构",
+            "weight": 0.06
+          },
+          {
+            "name": "社会融资",
+            "weight": 0.055
+          },
+          {
+            "name": "部门杠杆率",
+            "weight": 0.06
+          },
+          {
+            "name": "货币供给",
+            "weight": 0.025
+          }
+        ]
+      },
+      {
+        "name": "宏观调控",
+        "weight": 0.15,
+        "count": 9,
+        "contribution": 0.475,
+        "normalizedScore": 3.166666666667,
+        "groups": [
+          {
+            "name": "财政政策",
+            "weight": 0.05
+          },
+          {
+            "name": "货币政策",
+            "weight": 0.05
+          },
+          {
+            "name": "产业政策",
+            "weight": 0.025
+          },
+          {
+            "name": "制度建设",
+            "weight": 0.025
+          }
+        ]
+      }
+    ],
+    "totalDiagnostic": 2.792084199658,
+    "baselineTotal": 2.835546657056,
+    "changeFromBaseline": -0.043462457398,
+    "count": 38,
+    "coreComponentWeights": {
+      "cumulativeComparableProfitGrowth": 0.5,
+      "officialCurrentMonthComparableProfitGrowth": 0.25,
+      "reportedProfitMarginYoyChange": 0.125,
+      "reportedReceivablesDaysYoyChange": 0.125
+    },
+    "profitBudget": 0.08,
+    "breadthShare": 0.5
+  },
+  "checks": {
+    "protectedChecks": [
+      {
+        "label": "PPI",
+        "ids": [
+          "E04"
+        ],
+        "expected": 0.05,
+        "actual": 0.05,
+        "passed": true
+      },
+      {
+        "label": "城镇调查失业率",
+        "ids": [
+          "E05"
+        ],
+        "expected": 0.025,
+        "actual": 0.025,
+        "passed": true
+      },
+      {
+        "label": "房地产三项合计",
+        "ids": [
+          "G03",
+          "G14",
+          "G15"
+        ],
+        "expected": 0.045,
+        "actual": 0.045,
+        "passed": true
+      },
+      {
+        "label": "居民杠杆",
+        "ids": [
+          "F09"
+        ],
+        "expected": 0.03,
+        "actual": 0.03,
+        "passed": true
+      },
+      {
+        "label": "企业杠杆",
+        "ids": [
+          "F10"
+        ],
+        "expected": 0.03,
+        "actual": 0.03,
+        "passed": true
+      }
+    ],
+    "unchangedCredit": [
+      {
+        "id": "F01",
+        "weight": 0.025,
+        "passed": true
+      },
+      {
+        "id": "F02",
+        "weight": 0.035,
+        "passed": true
+      },
+      {
+        "id": "F07",
+        "weight": 0.035,
+        "passed": true
+      },
+      {
+        "id": "F08",
+        "weight": 0.02,
+        "passed": true
+      },
+      {
+        "id": "F09",
+        "weight": 0.03,
+        "passed": true
+      },
+      {
+        "id": "F10",
+        "weight": 0.03,
+        "passed": true
+      },
+      {
+        "id": "F05",
+        "weight": 0.025,
+        "passed": true
+      }
+    ],
+    "weightSum": 1.0000000000000002,
+    "arithmeticPassed": true
+  },
+  "observations": {
+    "profitQuality": {
+      "period": "2026-08",
+      "value": 15.7,
+      "unit": "%",
+      "basis": "年初累计可比同比",
+      "originalPublisher": "国家统计局",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+      "releaseDate": "2026-09-28",
+      "oldFiveComponentScore": 3.4749349593495937,
+      "newFourComponentScore": 3.5570833333333334,
+      "components": [
+        {
+          "key": "cumulativeComparableProfitGrowth",
+          "label": "年初累计利润可比同比",
+          "weight": 0.5,
+          "unit": "%",
+          "value": 15.7,
+          "points": 4.046666666666667
+        },
+        {
+          "key": "officialCurrentMonthComparableProfitGrowth",
+          "label": "当月利润可比同比",
+          "weight": 0.25,
+          "unit": "%",
+          "value": 4.2,
+          "points": 2.92
+        },
+        {
+          "key": "reportedProfitMarginYoyChange",
+          "label": "营业收入利润率同比变化",
+          "weight": 0.125,
+          "unit": "百分点",
+          "value": 0.44,
+          "points": 3.88
+        },
+        {
+          "key": "reportedReceivablesDaysYoyChange",
+          "label": "应收账款回收期同比变化",
+          "weight": 0.125,
+          "unit": "天",
+          "value": 0.9,
+          "points": 2.55
+        }
+      ]
+    },
+    "breadth": {
+      "period": "2026-08",
+      "value": 53.65853658536586,
+      "unit": "%",
+      "basis": "年初累计分行业利润改善广度",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260928_1965425.html",
+      "originalPublisher": "国家统计局",
+      "releaseDate": "2026-09-28",
+      "points": 3.1463414634146343,
+      "numberOfIndustries": 41,
+      "definition": "(改善行业数+0.5×持平行业数)/41×100%，分数1+4×广度/100"
+    }
+  },
+  "rows": [
+    {
+      "id": "E01",
+      "name": "GDP实际单季同比增速（%）",
+      "pillar": "经济运行",
+      "group": "经济增长",
+      "weight": 0.07,
+      "baselineWeight": 0.09,
+      "points": 2.5399999999999996,
+      "period": "2026-Q2",
+      "observedValue": 4.3,
+      "unit": "%",
+      "basis": "单季实际同比",
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.1778,
+      "baselineContribution": 0.2286
+    },
+    {
+      "id": "E02",
+      "name": "CPI同比（%）",
+      "pillar": "经济运行",
+      "group": "物价水平",
+      "weight": 0.015,
+      "baselineWeight": 0.025,
+      "points": 3.3,
+      "period": "2026-08",
+      "observedValue": 0.8,
+      "unit": "%",
+      "basis": "当月同比",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260909_1965263.html",
+      "releaseDate": "2026-09-09",
+      "contribution": 0.0495,
+      "baselineContribution": 0.0825
+    },
+    {
+      "id": "E03",
+      "name": "核心CPI同比（%）",
+      "pillar": "经济运行",
+      "group": "物价水平",
+      "weight": 0.025,
+      "baselineWeight": 0.035,
+      "points": 4,
+      "period": "2026-08",
+      "observedValue": 1,
+      "unit": "%",
+      "basis": "当月同比",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260909_1965263.html",
+      "releaseDate": "2026-09-09",
+      "contribution": 0.1,
+      "baselineContribution": 0.14
+    },
+    {
+      "id": "E04",
+      "name": "PPI同比（%）",
+      "pillar": "经济运行",
+      "group": "物价水平",
+      "weight": 0.05,
+      "baselineWeight": 0.05,
+      "points": 3.1,
+      "period": "2026-08",
+      "observedValue": 3.8,
+      "unit": "%",
+      "basis": "当月同比",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260909_1965262.html",
+      "releaseDate": "2026-09-09",
+      "contribution": 0.155,
+      "baselineContribution": 0.155
+    },
+    {
+      "id": "E05",
+      "name": "城镇调查失业率（%）",
+      "pillar": "经济运行",
+      "group": "就业市场",
+      "weight": 0.025,
+      "baselineWeight": 0.025,
+      "points": 2.7500000000000004,
+      "period": "2026-08",
+      "observedValue": 5.3,
+      "unit": "%",
+      "basis": "当月调查失业率",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.06875,
+      "baselineContribution": 0.06875
+    },
+    {
+      "id": "E07",
+      "name": "GDP平减指数单季同比（%）",
+      "pillar": "经济运行",
+      "group": "物价水平",
+      "weight": 0.02,
+      "baselineWeight": 0.03,
+      "points": 4.033538422750041,
+      "period": "2026-Q2",
+      "observedValue": 1.526649,
+      "unit": "%",
+      "basis": "GDP平减指数单季同比派生",
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.080670768455,
+      "baselineContribution": 0.121006152683
+    },
+    {
+      "id": "E08",
+      "name": "制造业PMI（近3月均值）",
+      "pillar": "经济运行",
+      "group": "景气指数",
+      "weight": 0.02,
+      "baselineWeight": 0.02,
+      "points": 2.6600000000000024,
+      "period": "2026-09",
+      "observedValue": 49.7,
+      "unit": "指数点",
+      "basis": "近3月季调均值",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+      "releaseDate": "2026-09-30",
+      "contribution": 0.0532,
+      "baselineContribution": 0.0532
+    },
+    {
+      "id": "E09",
+      "name": "非制造业商务活动指数（近3月均值）",
+      "pillar": "经济运行",
+      "group": "景气指数",
+      "weight": 0.025,
+      "baselineWeight": 0.025,
+      "points": 2.419999999999999,
+      "period": "2026-09",
+      "observedValue": 49.4,
+      "unit": "指数点",
+      "basis": "近3月季调均值",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+      "releaseDate": "2026-09-30",
+      "contribution": 0.0605,
+      "baselineContribution": 0.0605
+    },
+    {
+      "id": "G01",
+      "name": "规模以上工业增加值增速（%）",
+      "pillar": "增长动力",
+      "group": "工业生产",
+      "weight": 0.035,
+      "baselineWeight": 0.03,
+      "points": 3.1,
+      "period": "2026-08",
+      "observedValue": 5.2,
+      "unit": "%",
+      "basis": "当月实际同比",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.1085,
+      "baselineContribution": 0.093
+    },
+    {
+      "id": "G02",
+      "name": "规模以上工业企业盈利增长与质量",
+      "pillar": "增长动力",
+      "group": "工业生产",
+      "weight": 0.04,
+      "baselineWeight": 0.04,
+      "points": 3.5570833333333334,
+      "period": "2026-08",
+      "observedValue": 15.7,
+      "unit": "%",
+      "basis": "年初累计可比同比",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+      "releaseDate": "2026-09-28",
+      "contribution": 0.142283333333,
+      "baselineContribution": 0.138997398374
+    },
+    {
+      "id": "G19",
+      "name": "规模以上工业企业利润改善广度",
+      "pillar": "增长动力",
+      "group": "工业生产",
+      "weight": 0.04,
+      "baselineWeight": 0,
+      "points": 3.1463414634146343,
+      "period": "2026-08",
+      "observedValue": 53.65853658536586,
+      "unit": "%",
+      "basis": "年初累计分行业利润改善广度",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260928_1965425.html",
+      "releaseDate": "2026-09-28",
+      "contribution": 0.125853658537,
+      "baselineContribution": 0
+    },
+    {
+      "id": "G03",
+      "name": "商品房销售面积增速（%）",
+      "pillar": "增长动力",
+      "group": "房地产",
+      "weight": 0.02,
+      "baselineWeight": 0.02,
+      "points": 2.1933333333333334,
+      "period": "2026-08",
+      "observedValue": -12.1,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.043866666667,
+      "baselineContribution": 0.043866666667
+    },
+    {
+      "id": "G14",
+      "name": "房地产开发投资增速（累计同比，%）",
+      "pillar": "增长动力",
+      "group": "房地产",
+      "weight": 0.01,
+      "baselineWeight": 0.01,
+      "points": 1.6733333333333333,
+      "period": "2026-08",
+      "observedValue": -19.9,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.016733333333,
+      "baselineContribution": 0.016733333333
+    },
+    {
+      "id": "G15",
+      "name": "70城二手住宅价格环比中位数（近3月均值，%）",
+      "pillar": "增长动力",
+      "group": "房地产",
+      "weight": 0.015,
+      "baselineWeight": 0.015,
+      "points": 2.366666,
+      "period": "2026-08",
+      "observedValue": -0.316667,
+      "unit": "%",
+      "basis": "70城二手住宅环比中位数近3月均值",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965304.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.03549999,
+      "baselineContribution": 0.03549999
+    },
+    {
+      "id": "G07",
+      "name": "制造业投资增速（%）",
+      "pillar": "增长动力",
+      "group": "投资",
+      "weight": 0.025,
+      "baselineWeight": 0.02,
+      "points": 1.77,
+      "period": "2026-08",
+      "observedValue": -2.3,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965309.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.04425,
+      "baselineContribution": 0.0354
+    },
+    {
+      "id": "G16",
+      "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+      "pillar": "增长动力",
+      "group": "投资",
+      "weight": 0.035,
+      "baselineWeight": 0.025,
+      "points": 1.8599999999999999,
+      "period": "2026-08",
+      "observedValue": -6.4,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.0651,
+      "baselineContribution": 0.0465
+    },
+    {
+      "id": "G13",
+      "name": "基础设施投资增速（年初累计同比，%）",
+      "pillar": "增长动力",
+      "group": "投资",
+      "weight": 0.02,
+      "baselineWeight": 0.015,
+      "points": 1.75,
+      "period": "2026-08",
+      "observedValue": -4,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965309.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.035,
+      "baselineContribution": 0.02625
+    },
+    {
+      "id": "G17",
+      "name": "商品零售额增速（当月名义同比，%）",
+      "pillar": "增长动力",
+      "group": "消费",
+      "weight": 0.06,
+      "baselineWeight": 0.045,
+      "points": 1.7666666666666666,
+      "period": "2026-08",
+      "observedValue": 0.3,
+      "unit": "%",
+      "basis": "当月名义同比",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.106,
+      "baselineContribution": 0.0795
+    },
+    {
+      "id": "G12",
+      "name": "服务零售额增速（年初累计同比，%）",
+      "pillar": "增长动力",
+      "group": "消费",
+      "weight": 0.035,
+      "baselineWeight": 0.025,
+      "points": 3.3000000000000003,
+      "period": "2026-08",
+      "observedValue": 4.9,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "releaseDate": "2026-09-15",
+      "contribution": 0.1155,
+      "baselineContribution": 0.0825
+    },
+    {
+      "id": "G10",
+      "name": "出口金额增速（美元计，%）",
+      "pillar": "增长动力",
+      "group": "进出口",
+      "weight": 0.04,
+      "baselineWeight": 0.03,
+      "points": 5,
+      "period": "2026-08",
+      "observedValue": 25,
+      "unit": "%",
+      "basis": "当月美元金额同比",
+      "sourceUrl": "http://english.customs.gov.cn/Statics/d14f71f5-1ac9-431f-b8d7-b7a7a0b58af7.html",
+      "releaseDate": "2026-09-18",
+      "contribution": 0.2,
+      "baselineContribution": 0.15
+    },
+    {
+      "id": "G11",
+      "name": "制造业PMI新订单指数（近3月均值）",
+      "pillar": "增长动力",
+      "group": "工业生产",
+      "weight": 0.015,
+      "baselineWeight": 0.015,
+      "points": 2.7888890666666675,
+      "period": "2026-09",
+      "observedValue": 49.866667,
+      "unit": "指数点",
+      "basis": "近3月季调均值",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+      "releaseDate": "2026-09-30",
+      "contribution": 0.041833336,
+      "baselineContribution": 0.041833336
+    },
+    {
+      "id": "G18",
+      "name": "工业产能利用率季度同比变动（百分点）",
+      "pillar": "增长动力",
+      "group": "工业生产",
+      "weight": 0.01,
+      "baselineWeight": 0.01,
+      "points": 2.3333333333333335,
+      "period": "2026-Q2",
+      "observedValue": -1,
+      "unit": "百分点",
+      "basis": "工业产能利用率同季同比差",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964130.html",
+      "releaseDate": "2026-07-15",
+      "contribution": 0.023333333333,
+      "baselineContribution": 0.023333333333
+    },
+    {
+      "id": "F01",
+      "name": "居民中长期贷款近3月同比多增（亿元）",
+      "pillar": "金融信贷",
+      "group": "信贷结构",
+      "weight": 0.025,
+      "baselineWeight": 0.025,
+      "points": 1.8285333333333333,
+      "period": "2026-08",
+      "observedValue": -2893,
+      "unit": "亿元",
+      "basis": "近3月当月新增额同比多增",
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+      "releaseDate": "2026-09-14",
+      "contribution": 0.045713333333,
+      "baselineContribution": 0.045713333333
+    },
+    {
+      "id": "F02",
+      "name": "企（事）业单位中长期贷款近3月同比多增（亿元）",
+      "pillar": "金融信贷",
+      "group": "信贷结构",
+      "weight": 0.035,
+      "baselineWeight": 0.035,
+      "points": 1.688,
+      "period": "2026-08",
+      "observedValue": -5700,
+      "unit": "亿元",
+      "basis": "近3月当月新增额同比多增",
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+      "releaseDate": "2026-09-14",
+      "contribution": 0.05908,
+      "baselineContribution": 0.05908
+    },
+    {
+      "id": "F07",
+      "name": "剔除政府债后社融存量同比（%）",
+      "pillar": "金融信贷",
+      "group": "社会融资",
+      "weight": 0.035,
+      "baselineWeight": 0.035,
+      "points": 2.6655080000000004,
+      "period": "2026-08",
+      "observedValue": 5.498262,
+      "unit": "%",
+      "basis": "剔除政府债后月末存量同比",
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+      "releaseDate": "2026-09-14",
+      "contribution": 0.09329278,
+      "baselineContribution": 0.09329278
+    },
+    {
+      "id": "F08",
+      "name": "剔除政府债后社融同比近3月变动（百分点）",
+      "pillar": "金融信贷",
+      "group": "社会融资",
+      "weight": 0.02,
+      "baselineWeight": 0.02,
+      "points": 2.199516666666667,
+      "period": "2026-08",
+      "observedValue": -0.240145,
+      "unit": "百分点",
+      "basis": "剔除政府债后存量同比近3月变动",
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+      "releaseDate": "2026-09-14",
+      "contribution": 0.043990333333,
+      "baselineContribution": 0.043990333333
+    },
+    {
+      "id": "F09",
+      "name": "居民部门杠杆约束",
+      "pillar": "金融信贷",
+      "group": "部门杠杆率",
+      "weight": 0.03,
+      "baselineWeight": 0.03,
+      "points": 2.5,
+      "period": "2026-Q2",
+      "observedValue": 2.5,
+      "unit": "1—5分",
+      "basis": "季度杠杆约束研判",
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+      "releaseDate": "2026-07-30",
+      "contribution": 0.075,
+      "baselineContribution": 0.075
+    },
+    {
+      "id": "F10",
+      "name": "非金融企业部门杠杆约束",
+      "pillar": "金融信贷",
+      "group": "部门杠杆率",
+      "weight": 0.03,
+      "baselineWeight": 0.03,
+      "points": 2.5,
+      "period": "2026-Q2",
+      "observedValue": 2.5,
+      "unit": "1—5分",
+      "basis": "季度杠杆约束研判",
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+      "releaseDate": "2026-07-30",
+      "contribution": 0.075,
+      "baselineContribution": 0.075
+    },
+    {
+      "id": "F05",
+      "name": "M1-M2剪刀差",
+      "pillar": "金融信贷",
+      "group": "货币供给",
+      "weight": 0.025,
+      "baselineWeight": 0.025,
+      "points": 3.033333333333333,
+      "period": "2026-08",
+      "observedValue": -3.4,
+      "unit": "百分点",
+      "basis": "新口径同月同比差",
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html",
+      "releaseDate": "2026-09-14",
+      "contribution": 0.075833333333,
+      "baselineContribution": 0.075833333333
+    },
+    {
+      "id": "P01E",
+      "name": "全国一般公共预算支出累计同比（%）",
+      "pillar": "宏观调控",
+      "group": "财政政策",
+      "weight": 0.035,
+      "baselineWeight": 0.04,
+      "points": 2.4,
+      "period": "2026-08",
+      "observedValue": 1.2,
+      "unit": "%",
+      "basis": "全国年初累计支出可比同比",
+      "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+      "releaseDate": "2026-09-18",
+      "contribution": 0.084,
+      "baselineContribution": 0.096
+    },
+    {
+      "id": "P01F",
+      "name": "全国政府性基金预算支出累计同比（%）",
+      "pillar": "宏观调控",
+      "group": "财政政策",
+      "weight": 0.015,
+      "baselineWeight": 0.02,
+      "points": 1.5333333333333332,
+      "period": "2026-08",
+      "observedValue": -17,
+      "unit": "%",
+      "basis": "全国年初累计支出可比同比",
+      "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+      "releaseDate": "2026-09-18",
+      "contribution": 0.023,
+      "baselineContribution": 0.030666666667
+    },
+    {
+      "id": "P02A",
+      "name": "7天逆回购政策利率近6个月变动",
+      "pillar": "宏观调控",
+      "group": "货币政策",
+      "weight": 0.02,
+      "baselineWeight": 0.025,
+      "points": 3,
+      "period": "2026-09",
+      "observedValue": 0,
+      "unit": "基点",
+      "basis": "同口径月末有效利率近6月变动",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026092908461628271/index.html",
+      "releaseDate": "2026-09-29",
+      "contribution": 0.06,
+      "baselineContribution": 0.075
+    },
+    {
+      "id": "P02E",
+      "name": "近12完整月普遍法定人民币存款准备金率调整净累计",
+      "pillar": "宏观调控",
+      "group": "货币政策",
+      "weight": 0.005,
+      "baselineWeight": 0.01,
+      "points": 3,
+      "period": "2026-09",
+      "observedValue": 0,
+      "unit": "基点",
+      "basis": "近12完整月已执行普遍法定人民币存款准备金率调整净累计",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/2026100917050827264/index.html",
+      "releaseDate": "2026-10-09",
+      "contribution": 0.015,
+      "baselineContribution": 0.03
+    },
+    {
+      "id": "P02D",
+      "name": "新发放企业贷款加权平均利率同比变化",
+      "pillar": "宏观调控",
+      "group": "货币政策",
+      "weight": 0.025,
+      "baselineWeight": 0.025,
+      "points": 3.7199999999999998,
+      "period": "2026-06",
+      "observedValue": -18,
+      "unit": "基点",
+      "basis": "季末月新发放企业贷款利率同比变化",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+      "releaseDate": "2026-08-12",
+      "contribution": 0.093,
+      "baselineContribution": 0.093
+    },
+    {
+      "id": "P03A",
+      "name": "供给侧治理方向与实施条件",
+      "pillar": "宏观调控",
+      "group": "产业政策",
+      "weight": 0.0125,
+      "baselineWeight": 0.02,
+      "points": 4,
+      "period": "2026-10",
+      "observedValue": 4,
+      "unit": "1—5分",
+      "basis": "有效政策实施条件及执行研判",
+      "sourceUrl": "https://www.miit.gov.cn/jgsj/ycls/wjfb/art/2025/art_854c86c1f4484bcfa78a6b634a7fb5b1.html",
+      "releaseDate": "2025-09-22",
+      "contribution": 0.05,
+      "baselineContribution": 0.08
+    },
+    {
+      "id": "P03B",
+      "name": "产业支持方向与实施条件",
+      "pillar": "宏观调控",
+      "group": "产业政策",
+      "weight": 0.0125,
+      "baselineWeight": 0.02,
+      "points": 4,
+      "period": "2026-10",
+      "observedValue": 4,
+      "unit": "1—5分",
+      "basis": "有效政策实施条件及执行研判",
+      "sourceUrl": "https://www.ndrc.gov.cn/xwdt/ztzl/tddgmsbgxhxfpyjhx/gzdt/202609/t20260930_1407946.html",
+      "releaseDate": "2026-09-30",
+      "contribution": 0.05,
+      "baselineContribution": 0.08
+    },
+    {
+      "id": "P04A",
+      "name": "产权、市场准入与公平竞争制度",
+      "pillar": "宏观调控",
+      "group": "制度建设",
+      "weight": 0.0125,
+      "baselineWeight": 0.02,
+      "points": 4,
+      "period": "2026-10",
+      "observedValue": 4,
+      "unit": "1—5分",
+      "basis": "有效政策实施条件及执行研判",
+      "sourceUrl": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202505/t20250520_1397832.html",
+      "releaseDate": "2025-05-20",
+      "contribution": 0.05,
+      "baselineContribution": 0.08
+    },
+    {
+      "id": "P04B",
+      "name": "资本市场长期资金与投资者回报制度",
+      "pillar": "宏观调控",
+      "group": "制度建设",
+      "weight": 0.0125,
+      "baselineWeight": 0.02,
+      "points": 4,
+      "period": "2026-10",
+      "observedValue": 4,
+      "unit": "1—5分",
+      "basis": "有效政策实施条件及执行研判",
+      "sourceUrl": "https://www.csrc.gov.cn/csrc/c106311/c7639684/content.shtml",
+      "releaseDate": "2026-06-17",
+      "contribution": 0.05,
+      "baselineContribution": 0.08
+    }
+  ],
+  "effectiveProfitComponentWeights": [
+    {
+      "key": "cumulativeComparableProfitGrowth",
+      "label": "年初累计利润可比同比",
+      "points": 4.046666666666667,
+      "oldEffectiveMacroWeight": 0.016,
+      "newEffectiveMacroWeight": 0.02
+    },
+    {
+      "key": "officialCurrentMonthComparableProfitGrowth",
+      "label": "当月利润可比同比",
+      "points": 2.92,
+      "oldEffectiveMacroWeight": 0.008,
+      "newEffectiveMacroWeight": 0.01
+    },
+    {
+      "key": "reportedProfitMarginYoyChange",
+      "label": "营业收入利润率同比变化",
+      "points": 3.88,
+      "oldEffectiveMacroWeight": 0.004,
+      "newEffectiveMacroWeight": 0.005
+    },
+    {
+      "key": "reportedReceivablesDaysYoyChange",
+      "label": "应收账款回收期同比变化",
+      "points": 2.55,
+      "oldEffectiveMacroWeight": 0.004,
+      "newEffectiveMacroWeight": 0.005
+    },
+    {
+      "key": "industryProfitImprovementBreadth",
+      "label": "行业利润改善广度",
+      "points": 3.1463414634146343,
+      "oldEffectiveMacroWeight": 0.008,
+      "newEffectiveMacroWeight": 0.04
+    }
+  ],
+  "concentration": {
+    "profitWeight": 0.08,
+    "profitShareOfGrowth": 0.2,
+    "industryGroupWeight": 0.14,
+    "industryShareOfGrowth": 0.35,
+    "breadthMacroWeight": 0.04,
+    "breadthShareOfGrowth": 0.1,
+    "oneIndustryDownToUpMacroScoreChange": 0.003902439024,
+    "oneIndustryDownToFlatMacroScoreChange": 0.001951219512
+  },
+  "sensitivityProtocol": {
+    "budgets": [
+      0.06,
+      0.08,
+      0.1
+    ],
+    "breadthShares": [
+      0.3,
+      0.5,
+      0.7
+    ],
+    "growthBudget": 0.4,
+    "realEstateFixedBudget": 0.045,
+    "selectedFundingBudget": 0.275,
+    "fundingIds": [
+      "G01",
+      "G07",
+      "G16",
+      "G13",
+      "G17",
+      "G12",
+      "G10",
+      "G11",
+      "G18"
+    ],
+    "formula": "利润质量权重=B×(1−q)，广度权重=B×q；增长其余非房地产非利润项权重=新版权重×(0.40−0.045−B)/0.275；其它项、原值与评分函数不变。",
+    "criterion": "披露参数依赖，不根据本期总分选最优；用户确认的8%/50%作为试行取向。"
+  },
+  "sensitivityDependence": {
+    "observedGridMinimum": 2.773904079749,
+    "observedGridMaximum": 2.813550254527,
+    "observedGridRange": 0.039646174778,
+    "selectedQualityBreadthScoreDifference": 0.410741869919,
+    "dTotal_dBreadthShareAtSelectedBudget": -0.032859349593,
+    "scoreBoundMaximumEffectVsSelectedAt8BudgetFor30or70Share": 0.064,
+    "scoreBoundMaximumEffect30vs70ShareAt8Budget": 0.128,
+    "interpretation": "0.064/0.128只是1—5评分量尺的代数上限，不是未来预测、概率区间或置信区间；本期范围小不能证明历史稳健。"
+  },
+  "sensitivity": [
+    {
+      "budget": 0.06,
+      "breadthShare": 0.3,
+      "qualityWeight": 0.041999999999999996,
+      "breadthWeight": 0.018,
+      "profitCombinedScore": 3.433860772358,
+      "profitContribution": 0.206031646341,
+      "fundingRule": "增长40%内，房地产4.5%固定；非房地产、非利润项目按新版相对权重等比例增减。",
+      "remainingGrowthBudget": 0.295,
+      "fundingFactor": 1.072727272727,
+      "fundingContribution": 0.79329969983,
+      "total": 2.783761884627,
+      "changeFromSelected": -0.008322315031,
+      "profitContributionChangeFromSelected": -0.062105345528,
+      "fundingContributionChangeFromSelected": 0.053783030497,
+      "selected": false,
+      "adjustedFunding": [
+        {
+          "id": "G01",
+          "name": "规模以上工业增加值增速（%）",
+          "oldWeight": 0.035,
+          "weight": 0.037545454545,
+          "points": 3.1,
+          "contribution": 0.116390909091
+        },
+        {
+          "id": "G07",
+          "name": "制造业投资增速（%）",
+          "oldWeight": 0.025,
+          "weight": 0.026818181818,
+          "points": 1.77,
+          "contribution": 0.047468181818
+        },
+        {
+          "id": "G16",
+          "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.037545454545,
+          "points": 1.8599999999999999,
+          "contribution": 0.069834545455
+        },
+        {
+          "id": "G13",
+          "name": "基础设施投资增速（年初累计同比，%）",
+          "oldWeight": 0.02,
+          "weight": 0.021454545455,
+          "points": 1.75,
+          "contribution": 0.037545454545
+        },
+        {
+          "id": "G17",
+          "name": "商品零售额增速（当月名义同比，%）",
+          "oldWeight": 0.06,
+          "weight": 0.064363636364,
+          "points": 1.7666666666666666,
+          "contribution": 0.113709090909
+        },
+        {
+          "id": "G12",
+          "name": "服务零售额增速（年初累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.037545454545,
+          "points": 3.3000000000000003,
+          "contribution": 0.1239
+        },
+        {
+          "id": "G10",
+          "name": "出口金额增速（美元计，%）",
+          "oldWeight": 0.04,
+          "weight": 0.042909090909,
+          "points": 5,
+          "contribution": 0.214545454545
+        },
+        {
+          "id": "G11",
+          "name": "制造业PMI新订单指数（近3月均值）",
+          "oldWeight": 0.015,
+          "weight": 0.016090909091,
+          "points": 2.7888890666666675,
+          "contribution": 0.044875760436
+        },
+        {
+          "id": "G18",
+          "name": "工业产能利用率季度同比变动（百分点）",
+          "oldWeight": 0.01,
+          "weight": 0.010727272727,
+          "points": 2.3333333333333335,
+          "contribution": 0.02503030303
+        }
+      ]
+    },
+    {
+      "budget": 0.06,
+      "breadthShare": 0.5,
+      "qualityWeight": 0.03,
+      "breadthWeight": 0.03,
+      "profitCombinedScore": 3.351712398374,
+      "profitContribution": 0.201102743902,
+      "fundingRule": "增长40%内，房地产4.5%固定；非房地产、非利润项目按新版相对权重等比例增减。",
+      "remainingGrowthBudget": 0.295,
+      "fundingFactor": 1.072727272727,
+      "fundingContribution": 0.79329969983,
+      "total": 2.778832982188,
+      "changeFromSelected": -0.013251217471,
+      "profitContributionChangeFromSelected": -0.067034247967,
+      "fundingContributionChangeFromSelected": 0.053783030497,
+      "selected": false,
+      "adjustedFunding": [
+        {
+          "id": "G01",
+          "name": "规模以上工业增加值增速（%）",
+          "oldWeight": 0.035,
+          "weight": 0.037545454545,
+          "points": 3.1,
+          "contribution": 0.116390909091
+        },
+        {
+          "id": "G07",
+          "name": "制造业投资增速（%）",
+          "oldWeight": 0.025,
+          "weight": 0.026818181818,
+          "points": 1.77,
+          "contribution": 0.047468181818
+        },
+        {
+          "id": "G16",
+          "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.037545454545,
+          "points": 1.8599999999999999,
+          "contribution": 0.069834545455
+        },
+        {
+          "id": "G13",
+          "name": "基础设施投资增速（年初累计同比，%）",
+          "oldWeight": 0.02,
+          "weight": 0.021454545455,
+          "points": 1.75,
+          "contribution": 0.037545454545
+        },
+        {
+          "id": "G17",
+          "name": "商品零售额增速（当月名义同比，%）",
+          "oldWeight": 0.06,
+          "weight": 0.064363636364,
+          "points": 1.7666666666666666,
+          "contribution": 0.113709090909
+        },
+        {
+          "id": "G12",
+          "name": "服务零售额增速（年初累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.037545454545,
+          "points": 3.3000000000000003,
+          "contribution": 0.1239
+        },
+        {
+          "id": "G10",
+          "name": "出口金额增速（美元计，%）",
+          "oldWeight": 0.04,
+          "weight": 0.042909090909,
+          "points": 5,
+          "contribution": 0.214545454545
+        },
+        {
+          "id": "G11",
+          "name": "制造业PMI新订单指数（近3月均值）",
+          "oldWeight": 0.015,
+          "weight": 0.016090909091,
+          "points": 2.7888890666666675,
+          "contribution": 0.044875760436
+        },
+        {
+          "id": "G18",
+          "name": "工业产能利用率季度同比变动（百分点）",
+          "oldWeight": 0.01,
+          "weight": 0.010727272727,
+          "points": 2.3333333333333335,
+          "contribution": 0.02503030303
+        }
+      ]
+    },
+    {
+      "budget": 0.06,
+      "breadthShare": 0.7,
+      "qualityWeight": 0.018000000000000002,
+      "breadthWeight": 0.041999999999999996,
+      "profitCombinedScore": 3.26956402439,
+      "profitContribution": 0.196173841463,
+      "fundingRule": "增长40%内，房地产4.5%固定；非房地产、非利润项目按新版相对权重等比例增减。",
+      "remainingGrowthBudget": 0.295,
+      "fundingFactor": 1.072727272727,
+      "fundingContribution": 0.79329969983,
+      "total": 2.773904079749,
+      "changeFromSelected": -0.01818011991,
+      "profitContributionChangeFromSelected": -0.071963150407,
+      "fundingContributionChangeFromSelected": 0.053783030497,
+      "selected": false,
+      "adjustedFunding": [
+        {
+          "id": "G01",
+          "name": "规模以上工业增加值增速（%）",
+          "oldWeight": 0.035,
+          "weight": 0.037545454545,
+          "points": 3.1,
+          "contribution": 0.116390909091
+        },
+        {
+          "id": "G07",
+          "name": "制造业投资增速（%）",
+          "oldWeight": 0.025,
+          "weight": 0.026818181818,
+          "points": 1.77,
+          "contribution": 0.047468181818
+        },
+        {
+          "id": "G16",
+          "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.037545454545,
+          "points": 1.8599999999999999,
+          "contribution": 0.069834545455
+        },
+        {
+          "id": "G13",
+          "name": "基础设施投资增速（年初累计同比，%）",
+          "oldWeight": 0.02,
+          "weight": 0.021454545455,
+          "points": 1.75,
+          "contribution": 0.037545454545
+        },
+        {
+          "id": "G17",
+          "name": "商品零售额增速（当月名义同比，%）",
+          "oldWeight": 0.06,
+          "weight": 0.064363636364,
+          "points": 1.7666666666666666,
+          "contribution": 0.113709090909
+        },
+        {
+          "id": "G12",
+          "name": "服务零售额增速（年初累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.037545454545,
+          "points": 3.3000000000000003,
+          "contribution": 0.1239
+        },
+        {
+          "id": "G10",
+          "name": "出口金额增速（美元计，%）",
+          "oldWeight": 0.04,
+          "weight": 0.042909090909,
+          "points": 5,
+          "contribution": 0.214545454545
+        },
+        {
+          "id": "G11",
+          "name": "制造业PMI新订单指数（近3月均值）",
+          "oldWeight": 0.015,
+          "weight": 0.016090909091,
+          "points": 2.7888890666666675,
+          "contribution": 0.044875760436
+        },
+        {
+          "id": "G18",
+          "name": "工业产能利用率季度同比变动（百分点）",
+          "oldWeight": 0.01,
+          "weight": 0.010727272727,
+          "points": 2.3333333333333335,
+          "contribution": 0.02503030303
+        }
+      ]
+    },
+    {
+      "budget": 0.08,
+      "breadthShare": 0.3,
+      "qualityWeight": 0.055999999999999994,
+      "breadthWeight": 0.024,
+      "profitCombinedScore": 3.433860772358,
+      "profitContribution": 0.274708861789,
+      "fundingRule": "增长40%内，房地产4.5%固定；非房地产、非利润项目按新版相对权重等比例增减。",
+      "remainingGrowthBudget": 0.275,
+      "fundingFactor": 1,
+      "fundingContribution": 0.739516669333,
+      "total": 2.798656069577,
+      "changeFromSelected": 0.006571869919,
+      "profitContributionChangeFromSelected": 0.006571869919,
+      "fundingContributionChangeFromSelected": 0,
+      "selected": false,
+      "adjustedFunding": [
+        {
+          "id": "G01",
+          "name": "规模以上工业增加值增速（%）",
+          "oldWeight": 0.035,
+          "weight": 0.035,
+          "points": 3.1,
+          "contribution": 0.1085
+        },
+        {
+          "id": "G07",
+          "name": "制造业投资增速（%）",
+          "oldWeight": 0.025,
+          "weight": 0.025,
+          "points": 1.77,
+          "contribution": 0.04425
+        },
+        {
+          "id": "G16",
+          "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.035,
+          "points": 1.8599999999999999,
+          "contribution": 0.0651
+        },
+        {
+          "id": "G13",
+          "name": "基础设施投资增速（年初累计同比，%）",
+          "oldWeight": 0.02,
+          "weight": 0.02,
+          "points": 1.75,
+          "contribution": 0.035
+        },
+        {
+          "id": "G17",
+          "name": "商品零售额增速（当月名义同比，%）",
+          "oldWeight": 0.06,
+          "weight": 0.06,
+          "points": 1.7666666666666666,
+          "contribution": 0.106
+        },
+        {
+          "id": "G12",
+          "name": "服务零售额增速（年初累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.035,
+          "points": 3.3000000000000003,
+          "contribution": 0.1155
+        },
+        {
+          "id": "G10",
+          "name": "出口金额增速（美元计，%）",
+          "oldWeight": 0.04,
+          "weight": 0.04,
+          "points": 5,
+          "contribution": 0.2
+        },
+        {
+          "id": "G11",
+          "name": "制造业PMI新订单指数（近3月均值）",
+          "oldWeight": 0.015,
+          "weight": 0.015,
+          "points": 2.7888890666666675,
+          "contribution": 0.041833336
+        },
+        {
+          "id": "G18",
+          "name": "工业产能利用率季度同比变动（百分点）",
+          "oldWeight": 0.01,
+          "weight": 0.01,
+          "points": 2.3333333333333335,
+          "contribution": 0.023333333333
+        }
+      ]
+    },
+    {
+      "budget": 0.08,
+      "breadthShare": 0.5,
+      "qualityWeight": 0.04,
+      "breadthWeight": 0.04,
+      "profitCombinedScore": 3.351712398374,
+      "profitContribution": 0.26813699187,
+      "fundingRule": "增长40%内，房地产4.5%固定；非房地产、非利润项目按新版相对权重等比例增减。",
+      "remainingGrowthBudget": 0.275,
+      "fundingFactor": 1,
+      "fundingContribution": 0.739516669333,
+      "total": 2.792084199658,
+      "changeFromSelected": 0,
+      "profitContributionChangeFromSelected": 0,
+      "fundingContributionChangeFromSelected": 0,
+      "selected": true,
+      "adjustedFunding": [
+        {
+          "id": "G01",
+          "name": "规模以上工业增加值增速（%）",
+          "oldWeight": 0.035,
+          "weight": 0.035,
+          "points": 3.1,
+          "contribution": 0.1085
+        },
+        {
+          "id": "G07",
+          "name": "制造业投资增速（%）",
+          "oldWeight": 0.025,
+          "weight": 0.025,
+          "points": 1.77,
+          "contribution": 0.04425
+        },
+        {
+          "id": "G16",
+          "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.035,
+          "points": 1.8599999999999999,
+          "contribution": 0.0651
+        },
+        {
+          "id": "G13",
+          "name": "基础设施投资增速（年初累计同比，%）",
+          "oldWeight": 0.02,
+          "weight": 0.02,
+          "points": 1.75,
+          "contribution": 0.035
+        },
+        {
+          "id": "G17",
+          "name": "商品零售额增速（当月名义同比，%）",
+          "oldWeight": 0.06,
+          "weight": 0.06,
+          "points": 1.7666666666666666,
+          "contribution": 0.106
+        },
+        {
+          "id": "G12",
+          "name": "服务零售额增速（年初累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.035,
+          "points": 3.3000000000000003,
+          "contribution": 0.1155
+        },
+        {
+          "id": "G10",
+          "name": "出口金额增速（美元计，%）",
+          "oldWeight": 0.04,
+          "weight": 0.04,
+          "points": 5,
+          "contribution": 0.2
+        },
+        {
+          "id": "G11",
+          "name": "制造业PMI新订单指数（近3月均值）",
+          "oldWeight": 0.015,
+          "weight": 0.015,
+          "points": 2.7888890666666675,
+          "contribution": 0.041833336
+        },
+        {
+          "id": "G18",
+          "name": "工业产能利用率季度同比变动（百分点）",
+          "oldWeight": 0.01,
+          "weight": 0.01,
+          "points": 2.3333333333333335,
+          "contribution": 0.023333333333
+        }
+      ]
+    },
+    {
+      "budget": 0.08,
+      "breadthShare": 0.7,
+      "qualityWeight": 0.024000000000000004,
+      "breadthWeight": 0.055999999999999994,
+      "profitCombinedScore": 3.26956402439,
+      "profitContribution": 0.261565121951,
+      "fundingRule": "增长40%内，房地产4.5%固定；非房地产、非利润项目按新版相对权重等比例增减。",
+      "remainingGrowthBudget": 0.275,
+      "fundingFactor": 1,
+      "fundingContribution": 0.739516669333,
+      "total": 2.78551232974,
+      "changeFromSelected": -0.006571869919,
+      "profitContributionChangeFromSelected": -0.006571869919,
+      "fundingContributionChangeFromSelected": 0,
+      "selected": false,
+      "adjustedFunding": [
+        {
+          "id": "G01",
+          "name": "规模以上工业增加值增速（%）",
+          "oldWeight": 0.035,
+          "weight": 0.035,
+          "points": 3.1,
+          "contribution": 0.1085
+        },
+        {
+          "id": "G07",
+          "name": "制造业投资增速（%）",
+          "oldWeight": 0.025,
+          "weight": 0.025,
+          "points": 1.77,
+          "contribution": 0.04425
+        },
+        {
+          "id": "G16",
+          "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.035,
+          "points": 1.8599999999999999,
+          "contribution": 0.0651
+        },
+        {
+          "id": "G13",
+          "name": "基础设施投资增速（年初累计同比，%）",
+          "oldWeight": 0.02,
+          "weight": 0.02,
+          "points": 1.75,
+          "contribution": 0.035
+        },
+        {
+          "id": "G17",
+          "name": "商品零售额增速（当月名义同比，%）",
+          "oldWeight": 0.06,
+          "weight": 0.06,
+          "points": 1.7666666666666666,
+          "contribution": 0.106
+        },
+        {
+          "id": "G12",
+          "name": "服务零售额增速（年初累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.035,
+          "points": 3.3000000000000003,
+          "contribution": 0.1155
+        },
+        {
+          "id": "G10",
+          "name": "出口金额增速（美元计，%）",
+          "oldWeight": 0.04,
+          "weight": 0.04,
+          "points": 5,
+          "contribution": 0.2
+        },
+        {
+          "id": "G11",
+          "name": "制造业PMI新订单指数（近3月均值）",
+          "oldWeight": 0.015,
+          "weight": 0.015,
+          "points": 2.7888890666666675,
+          "contribution": 0.041833336
+        },
+        {
+          "id": "G18",
+          "name": "工业产能利用率季度同比变动（百分点）",
+          "oldWeight": 0.01,
+          "weight": 0.01,
+          "points": 2.3333333333333335,
+          "contribution": 0.023333333333
+        }
+      ]
+    },
+    {
+      "budget": 0.1,
+      "breadthShare": 0.3,
+      "qualityWeight": 0.06999999999999999,
+      "breadthWeight": 0.03,
+      "profitCombinedScore": 3.433860772358,
+      "profitContribution": 0.343386077236,
+      "fundingRule": "增长40%内，房地产4.5%固定；非房地产、非利润项目按新版相对权重等比例增减。",
+      "remainingGrowthBudget": 0.255,
+      "fundingFactor": 0.927272727273,
+      "fundingContribution": 0.685733638836,
+      "total": 2.813550254527,
+      "changeFromSelected": 0.021466054869,
+      "profitContributionChangeFromSelected": 0.075249085366,
+      "fundingContributionChangeFromSelected": -0.053783030497,
+      "selected": false,
+      "adjustedFunding": [
+        {
+          "id": "G01",
+          "name": "规模以上工业增加值增速（%）",
+          "oldWeight": 0.035,
+          "weight": 0.032454545455,
+          "points": 3.1,
+          "contribution": 0.100609090909
+        },
+        {
+          "id": "G07",
+          "name": "制造业投资增速（%）",
+          "oldWeight": 0.025,
+          "weight": 0.023181818182,
+          "points": 1.77,
+          "contribution": 0.041031818182
+        },
+        {
+          "id": "G16",
+          "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.032454545455,
+          "points": 1.8599999999999999,
+          "contribution": 0.060365454545
+        },
+        {
+          "id": "G13",
+          "name": "基础设施投资增速（年初累计同比，%）",
+          "oldWeight": 0.02,
+          "weight": 0.018545454545,
+          "points": 1.75,
+          "contribution": 0.032454545455
+        },
+        {
+          "id": "G17",
+          "name": "商品零售额增速（当月名义同比，%）",
+          "oldWeight": 0.06,
+          "weight": 0.055636363636,
+          "points": 1.7666666666666666,
+          "contribution": 0.098290909091
+        },
+        {
+          "id": "G12",
+          "name": "服务零售额增速（年初累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.032454545455,
+          "points": 3.3000000000000003,
+          "contribution": 0.1071
+        },
+        {
+          "id": "G10",
+          "name": "出口金额增速（美元计，%）",
+          "oldWeight": 0.04,
+          "weight": 0.037090909091,
+          "points": 5,
+          "contribution": 0.185454545455
+        },
+        {
+          "id": "G11",
+          "name": "制造业PMI新订单指数（近3月均值）",
+          "oldWeight": 0.015,
+          "weight": 0.013909090909,
+          "points": 2.7888890666666675,
+          "contribution": 0.038790911564
+        },
+        {
+          "id": "G18",
+          "name": "工业产能利用率季度同比变动（百分点）",
+          "oldWeight": 0.01,
+          "weight": 0.009272727273,
+          "points": 2.3333333333333335,
+          "contribution": 0.021636363636
+        }
+      ]
+    },
+    {
+      "budget": 0.1,
+      "breadthShare": 0.5,
+      "qualityWeight": 0.05,
+      "breadthWeight": 0.05,
+      "profitCombinedScore": 3.351712398374,
+      "profitContribution": 0.335171239837,
+      "fundingRule": "增长40%内，房地产4.5%固定；非房地产、非利润项目按新版相对权重等比例增减。",
+      "remainingGrowthBudget": 0.255,
+      "fundingFactor": 0.927272727273,
+      "fundingContribution": 0.685733638836,
+      "total": 2.805335417129,
+      "changeFromSelected": 0.013251217471,
+      "profitContributionChangeFromSelected": 0.067034247967,
+      "fundingContributionChangeFromSelected": -0.053783030497,
+      "selected": false,
+      "adjustedFunding": [
+        {
+          "id": "G01",
+          "name": "规模以上工业增加值增速（%）",
+          "oldWeight": 0.035,
+          "weight": 0.032454545455,
+          "points": 3.1,
+          "contribution": 0.100609090909
+        },
+        {
+          "id": "G07",
+          "name": "制造业投资增速（%）",
+          "oldWeight": 0.025,
+          "weight": 0.023181818182,
+          "points": 1.77,
+          "contribution": 0.041031818182
+        },
+        {
+          "id": "G16",
+          "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.032454545455,
+          "points": 1.8599999999999999,
+          "contribution": 0.060365454545
+        },
+        {
+          "id": "G13",
+          "name": "基础设施投资增速（年初累计同比，%）",
+          "oldWeight": 0.02,
+          "weight": 0.018545454545,
+          "points": 1.75,
+          "contribution": 0.032454545455
+        },
+        {
+          "id": "G17",
+          "name": "商品零售额增速（当月名义同比，%）",
+          "oldWeight": 0.06,
+          "weight": 0.055636363636,
+          "points": 1.7666666666666666,
+          "contribution": 0.098290909091
+        },
+        {
+          "id": "G12",
+          "name": "服务零售额增速（年初累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.032454545455,
+          "points": 3.3000000000000003,
+          "contribution": 0.1071
+        },
+        {
+          "id": "G10",
+          "name": "出口金额增速（美元计，%）",
+          "oldWeight": 0.04,
+          "weight": 0.037090909091,
+          "points": 5,
+          "contribution": 0.185454545455
+        },
+        {
+          "id": "G11",
+          "name": "制造业PMI新订单指数（近3月均值）",
+          "oldWeight": 0.015,
+          "weight": 0.013909090909,
+          "points": 2.7888890666666675,
+          "contribution": 0.038790911564
+        },
+        {
+          "id": "G18",
+          "name": "工业产能利用率季度同比变动（百分点）",
+          "oldWeight": 0.01,
+          "weight": 0.009272727273,
+          "points": 2.3333333333333335,
+          "contribution": 0.021636363636
+        }
+      ]
+    },
+    {
+      "budget": 0.1,
+      "breadthShare": 0.7,
+      "qualityWeight": 0.030000000000000006,
+      "breadthWeight": 0.06999999999999999,
+      "profitCombinedScore": 3.26956402439,
+      "profitContribution": 0.326956402439,
+      "fundingRule": "增长40%内，房地产4.5%固定；非房地产、非利润项目按新版相对权重等比例增减。",
+      "remainingGrowthBudget": 0.255,
+      "fundingFactor": 0.927272727273,
+      "fundingContribution": 0.685733638836,
+      "total": 2.79712057973,
+      "changeFromSelected": 0.005036380072,
+      "profitContributionChangeFromSelected": 0.058819410569,
+      "fundingContributionChangeFromSelected": -0.053783030497,
+      "selected": false,
+      "adjustedFunding": [
+        {
+          "id": "G01",
+          "name": "规模以上工业增加值增速（%）",
+          "oldWeight": 0.035,
+          "weight": 0.032454545455,
+          "points": 3.1,
+          "contribution": 0.100609090909
+        },
+        {
+          "id": "G07",
+          "name": "制造业投资增速（%）",
+          "oldWeight": 0.025,
+          "weight": 0.023181818182,
+          "points": 1.77,
+          "contribution": 0.041031818182
+        },
+        {
+          "id": "G16",
+          "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.032454545455,
+          "points": 1.8599999999999999,
+          "contribution": 0.060365454545
+        },
+        {
+          "id": "G13",
+          "name": "基础设施投资增速（年初累计同比，%）",
+          "oldWeight": 0.02,
+          "weight": 0.018545454545,
+          "points": 1.75,
+          "contribution": 0.032454545455
+        },
+        {
+          "id": "G17",
+          "name": "商品零售额增速（当月名义同比，%）",
+          "oldWeight": 0.06,
+          "weight": 0.055636363636,
+          "points": 1.7666666666666666,
+          "contribution": 0.098290909091
+        },
+        {
+          "id": "G12",
+          "name": "服务零售额增速（年初累计同比，%）",
+          "oldWeight": 0.035,
+          "weight": 0.032454545455,
+          "points": 3.3000000000000003,
+          "contribution": 0.1071
+        },
+        {
+          "id": "G10",
+          "name": "出口金额增速（美元计，%）",
+          "oldWeight": 0.04,
+          "weight": 0.037090909091,
+          "points": 5,
+          "contribution": 0.185454545455
+        },
+        {
+          "id": "G11",
+          "name": "制造业PMI新订单指数（近3月均值）",
+          "oldWeight": 0.015,
+          "weight": 0.013909090909,
+          "points": 2.7888890666666675,
+          "contribution": 0.038790911564
+        },
+        {
+          "id": "G18",
+          "name": "工业产能利用率季度同比变动（百分点）",
+          "oldWeight": 0.01,
+          "weight": 0.009272727273,
+          "points": 2.3333333333333335,
+          "contribution": 0.021636363636
+        }
+      ]
+    }
+  ],
+  "concerns": [
+    "没有算术冲突：四类25/40/20/15合计100%，经济8项、增长14项、金融7项、政策9项，共38项。",
+    "拆分后广度从G02移除，避免G02与G19重复计分；但两个利润指标来自同一统计表且经济含义相关，不能称为新增独立盈利来源。",
+    "利润合计8%占增长类20%；工业生产组含工业增加值、两个利润指标、新订单和利用率，合计14%占增长类35%。这是有意强调工业盈利，但不能代表服务业、全体企业或全部上市公司盈利。",
+    "广度按41行业等计数，小行业与大行业一票相同；它衡量改善覆盖面，不衡量利润份额或总利润规模。50%只表示行业数平衡，不是经济健康阈值。",
+    "原广度有效宏观权重0.8%升至4%（五倍）；这比利润总预算4%变8%的两倍更集中，需要单列披露，不能说只是把旧项拆成两项。",
+    "累计增长、当月增长及利润质量都来自工业统计，与工业产出、PPI和制造业景气有共同暴露；加权表示研究取向，不证明这些信号完全独立。",
+    "经济运行降至25%仍保留PPI5%和失业率2.5%，因此PPI占该类20%；GDP降至7%、平减指数降至2%，弱化总量与广义价格观察，应在四维分数中持续保留解释。",
+    "金融20%及全部七项权重原样保留，居民/企业杠杆各3%未挤压；政策货币5%、财政5%、产业2.5%、制度2.5%合计15%，政策支持仍不等于基本面复苏。",
+    "需求并未完全被利润挤掉：消费9.5%、投资8%、房地产4.5%、出口4%，增长40%仍含需求与投入维度；但名义零售与利润存在价格影响。"
+  ],
+  "limitations": [
+    "只有截至2026-10-11这一期完整五组件利润输入（统计期2026-08），拆后的四组件及广度同样只有这一个完整可验点；不构成多年、分阶段或样本外验证。",
+    "9组固定候选只披露本期对预算和广度比的依赖，不按最高/最低总分挑参，也不声称8%或50%已由历史回测证明最优。",
+    "本期质量分与广度分接近，使广度配比的实际影响较小；不能把本期敏感性较小误说成跨时期稳健。若两分未来拉开，配比影响会明显扩大。",
+    "所有候选保持大类25/40/20/15、房地产4.5%、经济/金融/政策及其它评分方法不变；仅为诊断而明确调整增长内部资金来源，不是已部署的备选版。",
+    "得分及原值沿用被冻结、已核验V1.18输入；本脚本复算来源与输入一致性，未重新下载完整历史，也未增加、插值或伪造原始观测。",
+    "电子行业62%是利润增长贡献率，不是利润份额；没有把它当作广度原值或额外集中扣分。",
+    "本报告未修改共享框架/评分/记录，未发布。正式新版总分与记录须由主流程使用完整评分器独立复算。"
+  ]
+}

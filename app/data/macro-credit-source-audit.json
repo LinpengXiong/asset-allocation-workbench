@@ -1,0 +1,42 @@
+{
+  "basis": "人民银行原始月报社融总存量减政府债券存量；各期单位万亿元。同比=(本期差额/上年同月差额-1)×100；三个月变化为两个同比之差，单位百分点。仅列已逐页核对的四期，不把剩余部分称作民营信用或官方独立指数。",
+  "stockRows": [
+    {
+      "period": "2025-05",
+      "releaseDate": "2025-06-13",
+      "totalStock": 426.16,
+      "governmentBondStock": 87.39,
+      "sourceUrl": "https://www.pbc.gov.cn/en/3688247/3688978/3709140/2025080817514982509/index.html"
+    },
+    {
+      "period": "2025-08",
+      "releaseDate": "2025-09-12",
+      "totalStock": 433.66,
+      "governmentBondStock": 91.36,
+      "sourceUrl": "https://www.pbc.gov.cn/en/3688247/3688978/3709140/5839519/index.html"
+    },
+    {
+      "period": "2026-05",
+      "releaseDate": "2026-06-12",
+      "totalStock": 458.81,
+      "governmentBondStock": 100.6,
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061214273613328/index.html"
+    },
+    {
+      "period": "2026-08",
+      "releaseDate": "2026-09-14",
+      "totalStock": 464.8,
+      "governmentBondStock": 103.69,
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html"
+    }
+  ],
+  "derived": [
+    { "period": "2026-05", "exGovernmentStockYoyPct": 5.7384 },
+    { "period": "2026-08", "exGovernmentStockYoyPct": 5.4952, "threeMonthChangePp": -0.2432 }
+  ],
+  "leverageBasis": "国家资产负债表研究中心／国家金融与发展实验室季度原始序列；杠杆率为部门债务/GDP，非银行贷款增速。2026年二季度报告发表于2026年7月30日；仅为评分证据，不能直接按高低机械计分。",
+  "leverageRows": [
+    { "period": "2025-Q2", "householdPct": 61.1, "corporatePct": 174.0, "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4728" },
+    { "period": "2026-Q2", "householdPct": 57.7, "corporatePct": 179.5, "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976" }
+  ]
+}

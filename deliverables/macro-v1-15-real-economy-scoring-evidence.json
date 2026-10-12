@@ -1,0 +1,599 @@
+{
+  "version": "V1.15-real-economy-additional-scoring-evidence",
+  "asOf": "2026-10-11",
+  "status": "官方原始证据候选；未写入current、未发布",
+  "sourcePriority": "官方原始发布 → Wind → 财新",
+  "observations": {
+    "E08": {
+      "scoringInputs": {
+        "level": {
+          "value": 49.699999999999996,
+          "unit": "指数点",
+          "basis": "近3月季调均值",
+          "period": "2026-09",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "latestAvailablePeriod": "2026-09",
+          "releaseDate": "2026-09-30",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+          "rawEvidence": {
+            "components": [
+              {
+                "period": "2026-07",
+                "value": 49.2,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingPMI",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-08",
+                "value": 49.8,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingPMI",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-09",
+                "value": 50.1,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingPMI",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              }
+            ],
+            "formula": "最新3月季调指数算术平均"
+          }
+        },
+        "nonOverlappingThreeMonthChange": {
+          "value": -0.5,
+          "unit": "指数点",
+          "basis": "近3月季调均值较前3月变动",
+          "period": "2026-09",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "latestAvailablePeriod": "2026-09",
+          "releaseDate": "2026-09-30",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+          "rawEvidence": {
+            "components": [
+              {
+                "period": "2026-04",
+                "value": 50.3,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingPMI",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-05",
+                "value": 50,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingPMI",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-06",
+                "value": 50.3,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingPMI",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-07",
+                "value": 49.2,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingPMI",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-08",
+                "value": 49.8,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingPMI",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-09",
+                "value": 50.1,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingPMI",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              }
+            ],
+            "latestMean": 49.699999999999996,
+            "precedingMean": 50.199999999999996,
+            "formula": "mean(Jul,Aug,Sep)-mean(Apr,May,Jun)",
+            "series": "manufacturingPMI"
+          }
+        }
+      }
+    },
+    "E09": {
+      "scoringInputs": {
+        "level": {
+          "value": 49.4,
+          "unit": "指数点",
+          "basis": "近3月季调均值",
+          "period": "2026-09",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "latestAvailablePeriod": "2026-09",
+          "releaseDate": "2026-09-30",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+          "rawEvidence": {
+            "components": [
+              {
+                "period": "2026-07",
+                "value": 49,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "nonManufacturingActivity",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-08",
+                "value": 49,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "nonManufacturingActivity",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-09",
+                "value": 50.2,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "nonManufacturingActivity",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              }
+            ],
+            "formula": "最新3月季调指数算术平均"
+          }
+        },
+        "nonOverlappingThreeMonthChange": {
+          "value": -0.5,
+          "unit": "指数点",
+          "basis": "近3月季调均值较前3月变动",
+          "period": "2026-09",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "latestAvailablePeriod": "2026-09",
+          "releaseDate": "2026-09-30",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+          "rawEvidence": {
+            "components": [
+              {
+                "period": "2026-04",
+                "value": 49.4,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "nonManufacturingActivity",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-05",
+                "value": 50.1,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "nonManufacturingActivity",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-06",
+                "value": 50.2,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "nonManufacturingActivity",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-07",
+                "value": 49,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "nonManufacturingActivity",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-08",
+                "value": 49,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "nonManufacturingActivity",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-09",
+                "value": 50.2,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "nonManufacturingActivity",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              }
+            ],
+            "latestMean": 49.4,
+            "precedingMean": 49.9,
+            "formula": "mean(Jul,Aug,Sep)-mean(Apr,May,Jun)",
+            "series": "nonManufacturingActivity"
+          }
+        }
+      }
+    },
+    "G11": {
+      "scoringInputs": {
+        "level": {
+          "value": 49.86666666666667,
+          "unit": "指数点",
+          "basis": "近3月季调均值",
+          "period": "2026-09",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "latestAvailablePeriod": "2026-09",
+          "releaseDate": "2026-09-30",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+          "rawEvidence": {
+            "components": [
+              {
+                "period": "2026-07",
+                "value": 48.5,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingNewOrders",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-08",
+                "value": 50.6,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingNewOrders",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-09",
+                "value": 50.5,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingNewOrders",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              }
+            ],
+            "formula": "最新3月季调指数算术平均"
+          }
+        },
+        "nonOverlappingThreeMonthChange": {
+          "value": -0.6999999999999957,
+          "unit": "指数点",
+          "basis": "近3月季调均值较前3月变动",
+          "period": "2026-09",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "latestAvailablePeriod": "2026-09",
+          "releaseDate": "2026-09-30",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+          "rawEvidence": {
+            "components": [
+              {
+                "period": "2026-04",
+                "value": 50.6,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingNewOrders",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-05",
+                "value": 49.9,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingNewOrders",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-06",
+                "value": 51.2,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingNewOrders",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-07",
+                "value": 48.5,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingNewOrders",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-08",
+                "value": 50.6,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingNewOrders",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              },
+              {
+                "period": "2026-09",
+                "value": 50.5,
+                "unit": "指数点",
+                "basis": "季调当月指数",
+                "series": "manufacturingNewOrders",
+                "originalPublisher": "国家统计局",
+                "verified": true,
+                "verifiedAt": "2026-10-11",
+                "releaseDate": "2026-09-30",
+                "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"
+              }
+            ],
+            "latestMean": 49.86666666666667,
+            "precedingMean": 50.56666666666666,
+            "formula": "mean(Jul,Aug,Sep)-mean(Apr,May,Jun)",
+            "series": "manufacturingNewOrders"
+          }
+        }
+      }
+    },
+    "E01": {
+      "scoringInputs": {
+        "level": {
+          "value": 4.3,
+          "unit": "%",
+          "basis": "单季实际同比",
+          "period": "2026-Q2",
+          "latestAvailablePeriod": "2026-Q2",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "releaseDate": "2026-09-15",
+          "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+          "revisionVersion": "2026-09-15-SDDS"
+        },
+        "quarterYoyChange": {
+          "value": -0.7000000000000002,
+          "unit": "百分点",
+          "basis": "单季实际同比较前季变动",
+          "period": "2026-Q2",
+          "latestAvailablePeriod": "2026-Q2",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "releaseDate": "2026-09-15",
+          "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+          "revisionVersion": "2026-09-15-SDDS",
+          "rawEvidence": {
+            "current": {
+              "value": 4.3,
+              "period": "2026-Q2",
+              "unit": "%",
+              "basis": "单季实际同比",
+              "originalPublisher": "国家统计局",
+              "verified": true,
+              "verifiedAt": "2026-10-11",
+              "releaseDate": "2026-09-15",
+              "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+              "revisionVersion": "2026-09-15-SDDS"
+            },
+            "preceding": {
+              "value": 5,
+              "period": "2026-Q1",
+              "unit": "%",
+              "basis": "单季实际同比",
+              "originalPublisher": "国家统计局",
+              "verified": true,
+              "verifiedAt": "2026-10-11",
+              "releaseDate": "2026-09-15",
+              "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+              "revisionVersion": "2026-09-15-SDDS"
+            },
+            "formula": "current.value - preceding.value"
+          }
+        }
+      }
+    },
+    "G02": {
+      "scoringInputs": {
+        "cumulativeComparableProfitGrowth": {
+          "value": 15.7,
+          "unit": "%",
+          "basis": "年初累计可比同比",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "releaseDate": "2026-09-28",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "period": "2026-08",
+          "latestAvailablePeriod": "2026-08",
+          "scope": "全国规模以上工业企业可比范围",
+          "rawEvidence": {
+            "reportedYoyPct": 15.7,
+            "aggregation": "1—8月累计",
+            "notDerivedFromPublishedAmounts": true
+          }
+        },
+        "officialCurrentMonthComparableProfitGrowth": {
+          "value": 4.2,
+          "unit": "%",
+          "basis": "当月可比同比",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "releaseDate": "2026-09-28",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "period": "2026-08",
+          "latestAvailablePeriod": "2026-08",
+          "scope": "全国规模以上工业企业可比范围",
+          "rawEvidence": {
+            "reportedYoyPct": 4.2,
+            "aggregation": "8月单月",
+            "notDerivedFromPublishedAmounts": true
+          }
+        },
+        "reportedProfitMarginYoyChange": {
+          "value": 0.44,
+          "unit": "百分点",
+          "basis": "年初累计营业收入利润率同比变动",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "releaseDate": "2026-09-28",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "period": "2026-08",
+          "latestAvailablePeriod": "2026-08",
+          "scope": "全国规模以上工业企业可比范围",
+          "rawEvidence": {
+            "currentProfitMargin": 5.66,
+            "unit": "%",
+            "reportedYoyChange": 0.44,
+            "reportedChangeUnit": "百分点",
+            "aggregation": "1—8月累计",
+            "comparability": "变化值采用本期原文直接公布的可比同比变化，不从另两次发布金额或利润率相减。"
+          }
+        },
+        "reportedReceivablesDaysYoyChange": {
+          "value": 0.9,
+          "unit": "天",
+          "basis": "月末应收账款平均回收期同比变动",
+          "originalPublisher": "国家统计局",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "releaseDate": "2026-09-28",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "period": "2026-08",
+          "latestAvailablePeriod": "2026-08",
+          "scope": "全国规模以上工业企业可比范围",
+          "rawEvidence": {
+            "currentReceivablesDays": 72.2,
+            "unit": "天",
+            "reportedYoyChange": 0.9,
+            "reportedChangeUnit": "天",
+            "comparability": "采用当期原文直接公布的同比变化，不用去年不同范围报告的天数相减。"
+          }
+        }
+      }
+    }
+  },
+  "requirements": {
+    "all": "每个scoringInputs的value、unit、basis、period、原发布方、原表链接、发布日期、核验日都须独立核对；统计期与该项频率、当前观察期一致。缺任一固定必需分量则该单项完整分数null，不能自动重分权。",
+    "E01": "rawEvidence须含同版当季及前一季全国单季实际同比；相邻季度，无缺口，revisionVersion一致。趋势变化由引擎复算，不直接信差值。若另选官方季调环比，必须同版原表及独立新规则版本，不能同时叠加或按分高低临时切换。",
+    "PMI": "两段各3个连续、互不重叠月份；6个原值必须指定同一series、季调当月指数且单位指数点。均值及两均值差均由引擎复算，不允许只录汇总差值。",
+    "G02": "累计及单月官方可比利润同比均直接录报告值；利润率变化和回款天数变化采用同月官方直接报告的同比变化。四项全部同全国规模以上工业范围；质量权重固定且证据只核验，不再人工另扣同一风险。"
+  }
+}

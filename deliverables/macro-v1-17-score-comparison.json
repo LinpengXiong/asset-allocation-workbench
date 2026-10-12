@@ -1,0 +1,379 @@
+{
+  "previousVersion": "V1.16",
+  "currentVersion": "V1.17",
+  "kind": "同一信息截止日PPI评分规则修订，不是经济变化",
+  "previousScore": 2.935382682,
+  "currentScore": 2.8853826820000004,
+  "rows": [
+    {
+      "id": "E01",
+      "name": "GDP实际单季同比增速（%）",
+      "weight": 0.09,
+      "previousScore": 2.5399999999999996,
+      "currentScore": 2.5399999999999996,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "E02",
+      "name": "CPI同比（%）",
+      "weight": 0.025,
+      "previousScore": 3.3,
+      "currentScore": 3.3,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "E03",
+      "name": "核心CPI同比（%）",
+      "weight": 0.035,
+      "previousScore": 4,
+      "currentScore": 4,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "E04",
+      "name": "PPI同比（%）",
+      "weight": 0.05,
+      "previousScore": 4.6,
+      "currentScore": 3.6,
+      "contributionChange": -0.04999999999999998,
+      "decision": "调整",
+      "reason": "采用候选A，把5分研究峰区由2—3%移至1—2%；0.5%仍为4分，3%为4分、5%为3分、8%为2分、12%为1分，负值侧及0.5%参照不变。全样本超过0.5分的相邻变化由33次变为29次，B为35次；A避免把仅0.5%的低正增长直接封顶。A最大单月变分2分，仍高于原版1.5分，不能称全面更平滑。C过早降低高正值评分，本轮不选。选择基于价格环境含义与固定候选的尺度权衡，未验证1—2%为最优PPI。"
+    },
+    {
+      "id": "E05",
+      "name": "城镇调查失业率（%）",
+      "weight": 0.025,
+      "previousScore": 2.7500000000000004,
+      "currentScore": 2.7500000000000004,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "E07",
+      "name": "GDP平减指数单季同比（%）",
+      "weight": 0.03,
+      "previousScore": 4.6213192,
+      "currentScore": 4.6213192,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "E08",
+      "name": "制造业PMI（近3月均值）",
+      "weight": 0.02,
+      "previousScore": 2.6600000000000024,
+      "currentScore": 2.6600000000000024,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "E09",
+      "name": "非制造业商务活动指数（近3月均值）",
+      "weight": 0.025,
+      "previousScore": 2.419999999999999,
+      "currentScore": 2.419999999999999,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G01",
+      "name": "规模以上工业增加值增速（%）",
+      "weight": 0.03,
+      "previousScore": 3.1,
+      "currentScore": 3.1,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G02",
+      "name": "规模以上工业企业盈利增长与质量（主观察为累计可比同比）",
+      "weight": 0.04,
+      "previousScore": 3.655,
+      "currentScore": 3.655,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G03",
+      "name": "商品房销售面积增速（%）",
+      "weight": 0.02,
+      "previousScore": 2.1933333333333334,
+      "currentScore": 2.1933333333333334,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G14",
+      "name": "房地产开发投资增速（累计同比，%）",
+      "weight": 0.01,
+      "previousScore": 1.6733333333333333,
+      "currentScore": 1.6733333333333333,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G15",
+      "name": "70城二手住宅价格环比中位数（近3月均值，%）",
+      "weight": 0.015,
+      "previousScore": 2.366666,
+      "currentScore": 2.366666,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G07",
+      "name": "制造业投资增速（%）",
+      "weight": 0.02,
+      "previousScore": 1.77,
+      "currentScore": 1.77,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G16",
+      "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+      "weight": 0.025,
+      "previousScore": 1.8599999999999999,
+      "currentScore": 1.8599999999999999,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G13",
+      "name": "基础设施投资增速（年初累计同比，%）",
+      "weight": 0.015,
+      "previousScore": 1.75,
+      "currentScore": 1.75,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G17",
+      "name": "商品零售额增速（当月名义同比，%）",
+      "weight": 0.045,
+      "previousScore": 1.7666666666666666,
+      "currentScore": 1.7666666666666666,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G12",
+      "name": "服务零售额增速（年初累计同比，%）",
+      "weight": 0.025,
+      "previousScore": 3.3000000000000003,
+      "currentScore": 3.3000000000000003,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G10",
+      "name": "出口金额增速（美元计，%）",
+      "weight": 0.03,
+      "previousScore": 5,
+      "currentScore": 5,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G11",
+      "name": "制造业PMI新订单指数（近3月均值）",
+      "weight": 0.015,
+      "previousScore": 2.7888890666666675,
+      "currentScore": 2.7888890666666675,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "G18",
+      "name": "工业产能利用率季度同比变动（百分点）",
+      "weight": 0.01,
+      "previousScore": 2.3333333333333335,
+      "currentScore": 2.3333333333333335,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "F01",
+      "name": "居民中长期贷款近3月同比多增（亿元）",
+      "weight": 0.025,
+      "previousScore": 1.8285333333333333,
+      "currentScore": 1.8285333333333333,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "F02",
+      "name": "企（事）业单位中长期贷款近3月同比多增（亿元）",
+      "weight": 0.035,
+      "previousScore": 1.688,
+      "currentScore": 1.688,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "F07",
+      "name": "剔除政府债后社融存量同比（%）",
+      "weight": 0.035,
+      "previousScore": 2.6655080000000004,
+      "currentScore": 2.6655080000000004,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "F08",
+      "name": "剔除政府债后社融同比近3月变动（百分点）",
+      "weight": 0.02,
+      "previousScore": 2.199516666666667,
+      "currentScore": 2.199516666666667,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "F09",
+      "name": "居民部门杠杆约束",
+      "weight": 0.03,
+      "previousScore": 2.5,
+      "currentScore": 2.5,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "F10",
+      "name": "非金融企业部门杠杆约束",
+      "weight": 0.03,
+      "previousScore": 2.5,
+      "currentScore": 2.5,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "F05",
+      "name": "M1-M2剪刀差",
+      "weight": 0.025,
+      "previousScore": 3.033333333333333,
+      "currentScore": 3.033333333333333,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "P01E",
+      "name": "全国一般公共预算支出累计同比（%）",
+      "weight": 0.04,
+      "previousScore": 2.4,
+      "currentScore": 2.4,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "P01F",
+      "name": "全国政府性基金预算支出累计同比（%）",
+      "weight": 0.02,
+      "previousScore": 1.5333333333333332,
+      "currentScore": 1.5333333333333332,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "P02A",
+      "name": "7天逆回购政策利率近6个月变动",
+      "weight": 0.025,
+      "previousScore": 3,
+      "currentScore": 3,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "P02E",
+      "name": "近12完整月普遍法定人民币存款准备金率调整净累计",
+      "weight": 0.01,
+      "previousScore": 3,
+      "currentScore": 3,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "P02D",
+      "name": "新发放企业贷款加权平均利率同比变化",
+      "weight": 0.025,
+      "previousScore": 3.7199999999999998,
+      "currentScore": 3.7199999999999998,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "P03A",
+      "name": "供给侧治理方向与实施条件",
+      "weight": 0.02,
+      "previousScore": 4,
+      "currentScore": 4,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "P03B",
+      "name": "产业支持方向与实施条件",
+      "weight": 0.02,
+      "previousScore": 4,
+      "currentScore": 4,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "P04A",
+      "name": "产权、市场准入与公平竞争制度",
+      "weight": 0.02,
+      "previousScore": 4,
+      "currentScore": 4,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    },
+    {
+      "id": "P04B",
+      "name": "资本市场长期资金与投资者回报制度",
+      "weight": 0.02,
+      "previousScore": 4,
+      "currentScore": 4,
+      "contributionChange": 0,
+      "decision": "保留",
+      "reason": "本次PPI专项修订不改变此项规则、权重和原始输入。"
+    }
+  ]
+}

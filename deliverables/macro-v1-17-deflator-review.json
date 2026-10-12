@@ -1,0 +1,1552 @@
+{
+  "scope": "E07 GDP 平减指数独立分析；未改公开规则、现值、权重、评分记录，未发布。",
+  "informationCutoff": "2026-10-11",
+  "hypothesis": "全经济价格的高分平台可能过宽，可检验温和正增长峰区与高位降分；不将 PPI 的 1%–2% 偏好直接复制为官方 GDP 平减指数目标。",
+  "baseline": {
+    "version": "V1.17",
+    "ruleId": "E07",
+    "weight": 0.03,
+    "anchors": [
+      [
+        -3,
+        1
+      ],
+      [
+        -1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0.75,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        8,
+        1
+      ]
+    ]
+  },
+  "officialEvidence": [
+    {
+      "title": "什么是 GDP 缩减指数",
+      "sourceUrl": "https://www.stats.gov.cn/zs/tjws/tjzb/202301/t20230101_1903780.html",
+      "publisher": "国家统计局",
+      "date": "2025-02-28",
+      "supportedClaim": "国内所有最终货物和服务产出的总体价格变化，按分行业现价与不变价 GDP 得到；不是直接抽样编制的工业出厂价指数。",
+      "access": "官方搜索抓取返回正文，本次直接打开超时；定义另由可直接打开的官方核算司答复交叉核验。"
+    },
+    {
+      "title": "国家统计局国民经济核算司咨询答复",
+      "sourceUrl": "https://www.stats.gov.cn/hd/lyzx/zxgk/202208/t20220801_1886957.html",
+      "publisher": "国家统计局国民经济核算司",
+      "date": "2022-07-19",
+      "supportedClaim": "GDP 缩减指数并不等于 CPI，受到 PPI、服务价格和工资等因素影响；不能从名义增长中直接扣 CPI 得到实际增长。",
+      "access": "本次直接打开正文成功。"
+    },
+    {
+      "title": "2018 年第二季度中国货币政策执行报告",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/3537682/5dad7896c1c945c5be61518cb4a06605/2018081021363898908.pdf",
+      "publisher": "中国人民银行货币政策分析小组",
+      "date": "2018-08-10",
+      "supportedClaim": "摘要称物价基本稳定；正文第 45—46 页报告上半年 GDP 平减指数上涨 3.0%、第二季度上涨 2.9%。只能支持须结合背景判断，不能将 3% 自动定性为恶性通胀；不是官方 3% 理想目标，也不证明当前满分平台合适。",
+      "access": "本次直接打开 PDF 正文、封面日期和对应段落成功。"
+    },
+    {
+      "title": "国家统计局 SDDS GDP 序列",
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "publisher": "国家统计局",
+      "vintage": "2026-09-15-SDDS",
+      "supportedClaim": "历史诊断复用工作台先前核验并留存的同版现价单季 GDP、上年同季 GDP 和实际同比指数。",
+      "access": "本次直接打开超时，未宣称重新抓取验证成功；本次没有更改原始序列。"
+    }
+  ],
+  "historicalSample": {
+    "n": 46,
+    "first": "2015-Q1",
+    "last": "2026-Q2",
+    "vintage": "2026-09-15-SDDS",
+    "rawPercentiles": [
+      {
+        "probability": 0,
+        "value": -1.23713439
+      },
+      {
+        "probability": 0.1,
+        "value": -0.81083269
+      },
+      {
+        "probability": 0.25,
+        "value": -0.2720107
+      },
+      {
+        "probability": 0.5,
+        "value": 1.00828769
+      },
+      {
+        "probability": 0.75,
+        "value": 3.16030924
+      },
+      {
+        "probability": 0.9,
+        "value": 4.07679082
+      },
+      {
+        "probability": 1,
+        "value": 5.51913517
+      }
+    ],
+    "originalSeries": "app/data/macro-gdp-deflator-history.json",
+    "formula": "(current nominal GDP / previous-year same-quarter nominal GDP / (real GDP index / 100) - 1) × 100"
+  },
+  "candidates": [
+    {
+      "key": "baseline",
+      "name": "现版 2%–3% 满分平台",
+      "anchors": [
+        [
+          -3,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0.75,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "windows": [
+        {
+          "name": "2015-Q1—2026-Q2 全样本",
+          "n": 46,
+          "first": "2015-Q1",
+          "last": "2026-Q2",
+          "meanScore": 3.52757426,
+          "scoreFiveCount": 2,
+          "scoreFourOrHigherCount": 18,
+          "meanAbsoluteScoreChange": 0.62377457,
+          "consecutivePairCount": 45,
+          "changeOverPointFiveCount": 16,
+          "reversalOverPointTwoFiveCount": 13,
+          "localSensitivityPlusPointOneMean": 0.09319054
+        },
+        {
+          "name": "2015—2019 疫情前",
+          "n": 20,
+          "first": "2015-Q1",
+          "last": "2019-Q4",
+          "meanScore": 4.07392586,
+          "scoreFiveCount": 1,
+          "scoreFourOrHigherCount": 12,
+          "meanAbsoluteScoreChange": 0.44544469,
+          "consecutivePairCount": 19,
+          "changeOverPointFiveCount": 4,
+          "reversalOverPointTwoFiveCount": 5,
+          "localSensitivityPlusPointOneMean": 0.09383615
+        },
+        {
+          "name": "2020—2022 疫情与低基数",
+          "n": 12,
+          "first": "2020-Q1",
+          "last": "2022-Q4",
+          "meanScore": 3.7790023,
+          "scoreFiveCount": 1,
+          "scoreFourOrHigherCount": 5,
+          "meanAbsoluteScoreChange": 1.12556156,
+          "consecutivePairCount": 11,
+          "changeOverPointFiveCount": 8,
+          "reversalOverPointTwoFiveCount": 5,
+          "localSensitivityPlusPointOneMean": 0.09388889
+        },
+        {
+          "name": "2023 重启与基数",
+          "n": 4,
+          "first": "2023-Q1",
+          "last": "2023-Q4",
+          "meanScore": 2.63480555,
+          "scoreFiveCount": 0,
+          "scoreFourOrHigherCount": 0,
+          "meanAbsoluteScoreChange": 0.63322876,
+          "consecutivePairCount": 3,
+          "changeOverPointFiveCount": 1,
+          "reversalOverPointTwoFiveCount": 0,
+          "localSensitivityPlusPointOneMean": 0.09549604
+        },
+        {
+          "name": "2024-Q1—2026-Q2 近期",
+          "n": 10,
+          "first": "2024-Q1",
+          "last": "2026-Q2",
+          "meanScore": 2.49026491,
+          "scoreFiveCount": 0,
+          "scoreFourOrHigherCount": 1,
+          "meanAbsoluteScoreChange": 0.4122225,
+          "consecutivePairCount": 9,
+          "changeOverPointFiveCount": 2,
+          "reversalOverPointTwoFiveCount": 0,
+          "localSensitivityPlusPointOneMean": 0.09013909
+        }
+      ],
+      "currentScore": 4.6213192,
+      "referenceTable": [
+        {
+          "value": -3,
+          "points": 1
+        },
+        {
+          "value": -1,
+          "points": 2
+        },
+        {
+          "value": 0,
+          "points": 3
+        },
+        {
+          "value": 0.75,
+          "points": 4
+        },
+        {
+          "value": 1,
+          "points": 4.2
+        },
+        {
+          "value": 1.5,
+          "points": 4.6
+        },
+        {
+          "value": 2,
+          "points": 5
+        },
+        {
+          "value": 2.5,
+          "points": 5
+        },
+        {
+          "value": 3,
+          "points": 5
+        },
+        {
+          "value": 4,
+          "points": 4
+        },
+        {
+          "value": 5,
+          "points": 3
+        },
+        {
+          "value": 6,
+          "points": 2
+        },
+        {
+          "value": 8,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "upper_taper",
+      "name": "保守：不移动 2% 峰值，超过 2% 逐步回落",
+      "anchors": [
+        [
+          -3,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0.75,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4.5
+        ],
+        [
+          4,
+          3.5
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "windows": [
+        {
+          "name": "2015-Q1—2026-Q2 全样本",
+          "n": 46,
+          "first": "2015-Q1",
+          "last": "2026-Q2",
+          "meanScore": 3.39507029,
+          "scoreFiveCount": 0,
+          "scoreFourOrHigherCount": 14,
+          "meanAbsoluteScoreChange": 0.58784965,
+          "consecutivePairCount": 45,
+          "changeOverPointFiveCount": 15,
+          "reversalOverPointTwoFiveCount": 12,
+          "localSensitivityPlusPointOneMean": 0.09210358
+        },
+        {
+          "name": "2015—2019 疫情前",
+          "n": 20,
+          "first": "2015-Q1",
+          "last": "2019-Q4",
+          "meanScore": 3.86105484,
+          "scoreFiveCount": 0,
+          "scoreFourOrHigherCount": 9,
+          "meanAbsoluteScoreChange": 0.39042968,
+          "consecutivePairCount": 19,
+          "changeOverPointFiveCount": 3,
+          "reversalOverPointTwoFiveCount": 3,
+          "localSensitivityPlusPointOneMean": 0.09258615
+        },
+        {
+          "name": "2020—2022 疫情与低基数",
+          "n": 12,
+          "first": "2020-Q1",
+          "last": "2022-Q4",
+          "meanScore": 3.62585543,
+          "scoreFiveCount": 0,
+          "scoreFourOrHigherCount": 4,
+          "meanAbsoluteScoreChange": 1.07362191,
+          "consecutivePairCount": 11,
+          "changeOverPointFiveCount": 8,
+          "reversalOverPointTwoFiveCount": 6,
+          "localSensitivityPlusPointOneMean": 0.09180556
+        },
+        {
+          "name": "2023 重启与基数",
+          "n": 4,
+          "first": "2023-Q1",
+          "last": "2023-Q4",
+          "meanScore": 2.63480555,
+          "scoreFiveCount": 0,
+          "scoreFourOrHigherCount": 0,
+          "meanAbsoluteScoreChange": 0.63322876,
+          "consecutivePairCount": 3,
+          "changeOverPointFiveCount": 1,
+          "reversalOverPointTwoFiveCount": 0,
+          "localSensitivityPlusPointOneMean": 0.09549604
+        },
+        {
+          "name": "2024-Q1—2026-Q2 近期",
+          "n": 10,
+          "first": "2024-Q1",
+          "last": "2026-Q2",
+          "meanScore": 2.49026491,
+          "scoreFiveCount": 0,
+          "scoreFourOrHigherCount": 1,
+          "meanAbsoluteScoreChange": 0.4122225,
+          "consecutivePairCount": 9,
+          "changeOverPointFiveCount": 2,
+          "reversalOverPointTwoFiveCount": 0,
+          "localSensitivityPlusPointOneMean": 0.09013909
+        }
+      ],
+      "currentScore": 4.6213192,
+      "referenceTable": [
+        {
+          "value": -3,
+          "points": 1
+        },
+        {
+          "value": -1,
+          "points": 2
+        },
+        {
+          "value": 0,
+          "points": 3
+        },
+        {
+          "value": 0.75,
+          "points": 4
+        },
+        {
+          "value": 1,
+          "points": 4.2
+        },
+        {
+          "value": 1.5,
+          "points": 4.6
+        },
+        {
+          "value": 2,
+          "points": 5
+        },
+        {
+          "value": 2.5,
+          "points": 4.75
+        },
+        {
+          "value": 3,
+          "points": 4.5
+        },
+        {
+          "value": 4,
+          "points": 3.5
+        },
+        {
+          "value": 5,
+          "points": 2.75
+        },
+        {
+          "value": 6,
+          "points": 2
+        },
+        {
+          "value": 8,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "peak_1_to_2",
+      "name": "较强：1%–2% 峰区，上端加快降分",
+      "anchors": [
+        [
+          -3,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0.75,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "windows": [
+        {
+          "name": "2015-Q1—2026-Q2 全样本",
+          "n": 46,
+          "first": "2015-Q1",
+          "last": "2026-Q2",
+          "meanScore": 3.34940556,
+          "scoreFiveCount": 8,
+          "scoreFourOrHigherCount": 11,
+          "meanAbsoluteScoreChange": 0.62476013,
+          "consecutivePairCount": 45,
+          "changeOverPointFiveCount": 19,
+          "reversalOverPointTwoFiveCount": 9,
+          "localSensitivityPlusPointOneMean": 0.09118525
+        },
+        {
+          "name": "2015—2019 疫情前",
+          "n": 20,
+          "first": "2015-Q1",
+          "last": "2019-Q4",
+          "meanScore": 3.80371452,
+          "scoreFiveCount": 5,
+          "scoreFourOrHigherCount": 7,
+          "meanAbsoluteScoreChange": 0.45632531,
+          "consecutivePairCount": 19,
+          "changeOverPointFiveCount": 7,
+          "reversalOverPointTwoFiveCount": 3,
+          "localSensitivityPlusPointOneMean": 0.08831924
+        },
+        {
+          "name": "2020—2022 疫情与低基数",
+          "n": 12,
+          "first": "2020-Q1",
+          "last": "2022-Q4",
+          "meanScore": 3.51481777,
+          "scoreFiveCount": 2,
+          "scoreFourOrHigherCount": 3,
+          "meanAbsoluteScoreChange": 1.1078038,
+          "consecutivePairCount": 11,
+          "changeOverPointFiveCount": 8,
+          "reversalOverPointTwoFiveCount": 4,
+          "localSensitivityPlusPointOneMean": 0.07638889
+        },
+        {
+          "name": "2023 重启与基数",
+          "n": 4,
+          "first": "2023-Q1",
+          "last": "2023-Q4",
+          "meanScore": 2.63480555,
+          "scoreFiveCount": 0,
+          "scoreFourOrHigherCount": 0,
+          "meanAbsoluteScoreChange": 0.63322876,
+          "consecutivePairCount": 3,
+          "changeOverPointFiveCount": 1,
+          "reversalOverPointTwoFiveCount": 0,
+          "localSensitivityPlusPointOneMean": 0.17251978
+        },
+        {
+          "name": "2024-Q1—2026-Q2 近期",
+          "n": 10,
+          "first": "2024-Q1",
+          "last": "2026-Q2",
+          "meanScore": 2.52813299,
+          "scoreFiveCount": 1,
+          "scoreFourOrHigherCount": 1,
+          "meanAbsoluteScoreChange": 0.45429815,
+          "consecutivePairCount": 9,
+          "changeOverPointFiveCount": 2,
+          "reversalOverPointTwoFiveCount": 0,
+          "localSensitivityPlusPointOneMean": 0.08213909
+        }
+      ],
+      "currentScore": 5,
+      "referenceTable": [
+        {
+          "value": -3,
+          "points": 1
+        },
+        {
+          "value": -1,
+          "points": 2
+        },
+        {
+          "value": 0,
+          "points": 3
+        },
+        {
+          "value": 0.75,
+          "points": 4
+        },
+        {
+          "value": 1,
+          "points": 5
+        },
+        {
+          "value": 1.5,
+          "points": 5
+        },
+        {
+          "value": 2,
+          "points": 5
+        },
+        {
+          "value": 2.5,
+          "points": 4.5
+        },
+        {
+          "value": 3,
+          "points": 4
+        },
+        {
+          "value": 4,
+          "points": 3
+        },
+        {
+          "value": 5,
+          "points": 2.5
+        },
+        {
+          "value": 6,
+          "points": 2
+        },
+        {
+          "value": 8,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "peak_1_5_to_2",
+      "name": "缓坡：1.5%–2% 峰区，上端加快降分",
+      "anchors": [
+        [
+          -3,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0.75,
+          4
+        ],
+        [
+          1.5,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "windows": [
+        {
+          "name": "2015-Q1—2026-Q2 全样本",
+          "n": 46,
+          "first": "2015-Q1",
+          "last": "2026-Q2",
+          "meanScore": 3.30888259,
+          "scoreFiveCount": 4,
+          "scoreFourOrHigherCount": 11,
+          "meanAbsoluteScoreChange": 0.63865282,
+          "consecutivePairCount": 45,
+          "changeOverPointFiveCount": 18,
+          "reversalOverPointTwoFiveCount": 11,
+          "localSensitivityPlusPointOneMean": 0.09104473
+        },
+        {
+          "name": "2015—2019 疫情前",
+          "n": 20,
+          "first": "2015-Q1",
+          "last": "2019-Q4",
+          "meanScore": 3.71051168,
+          "scoreFiveCount": 1,
+          "scoreFourOrHigherCount": 7,
+          "meanAbsoluteScoreChange": 0.46502033,
+          "consecutivePairCount": 19,
+          "changeOverPointFiveCount": 6,
+          "reversalOverPointTwoFiveCount": 4,
+          "localSensitivityPlusPointOneMean": 0.10083333
+        },
+        {
+          "name": "2020—2022 疫情与低基数",
+          "n": 12,
+          "first": "2020-Q1",
+          "last": "2022-Q4",
+          "meanScore": 3.51481777,
+          "scoreFiveCount": 2,
+          "scoreFourOrHigherCount": 3,
+          "meanAbsoluteScoreChange": 1.1078038,
+          "consecutivePairCount": 11,
+          "changeOverPointFiveCount": 8,
+          "reversalOverPointTwoFiveCount": 4,
+          "localSensitivityPlusPointOneMean": 0.07638889
+        },
+        {
+          "name": "2023 重启与基数",
+          "n": 4,
+          "first": "2023-Q1",
+          "last": "2023-Q4",
+          "meanScore": 2.63480555,
+          "scoreFiveCount": 0,
+          "scoreFourOrHigherCount": 0,
+          "meanAbsoluteScoreChange": 0.63322876,
+          "consecutivePairCount": 3,
+          "changeOverPointFiveCount": 1,
+          "reversalOverPointTwoFiveCount": 0,
+          "localSensitivityPlusPointOneMean": 0.10833333
+        },
+        {
+          "name": "2024-Q1—2026-Q2 近期",
+          "n": 10,
+          "first": "2024-Q1",
+          "last": "2026-Q2",
+          "meanScore": 2.52813299,
+          "scoreFiveCount": 1,
+          "scoreFourOrHigherCount": 1,
+          "meanAbsoluteScoreChange": 0.45429815,
+          "consecutivePairCount": 9,
+          "changeOverPointFiveCount": 2,
+          "reversalOverPointTwoFiveCount": 0,
+          "localSensitivityPlusPointOneMean": 0.08213909
+        }
+      ],
+      "currentScore": 5,
+      "referenceTable": [
+        {
+          "value": -3,
+          "points": 1
+        },
+        {
+          "value": -1,
+          "points": 2
+        },
+        {
+          "value": 0,
+          "points": 3
+        },
+        {
+          "value": 0.75,
+          "points": 4
+        },
+        {
+          "value": 1,
+          "points": 4.33333333
+        },
+        {
+          "value": 1.5,
+          "points": 5
+        },
+        {
+          "value": 2,
+          "points": 5
+        },
+        {
+          "value": 2.5,
+          "points": 4.5
+        },
+        {
+          "value": 3,
+          "points": 4
+        },
+        {
+          "value": 4,
+          "points": 3
+        },
+        {
+          "value": 5,
+          "points": 2.5
+        },
+        {
+          "value": 6,
+          "points": 2
+        },
+        {
+          "value": 8,
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "current": {
+    "period": "2026-Q2",
+    "value": 1.526649,
+    "raw": {
+      "period": "2026-Q2",
+      "revisionVersion": "2026-09-15-SDDS",
+      "currentNominal": {
+        "period": "2026-Q2",
+        "value": 361511,
+        "unit": "亿元",
+        "basis": "单季现价GDP",
+        "revisionVersion": "2026-09-15-SDDS",
+        "releaseDate": "2026-09-15",
+        "originalPublisher": "国家统计局",
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+      },
+      "priorNominal": {
+        "period": "2025-Q2",
+        "value": 341395,
+        "unit": "亿元",
+        "basis": "单季现价GDP",
+        "revisionVersion": "2026-09-15-SDDS",
+        "releaseDate": "2026-09-15",
+        "originalPublisher": "国家统计局",
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+      },
+      "realGrowth": {
+        "period": "2026-Q2",
+        "value": 4.3,
+        "unit": "%",
+        "basis": "单季实际同比",
+        "revisionVersion": "2026-09-15-SDDS",
+        "releaseDate": "2026-09-15",
+        "originalPublisher": "国家统计局",
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+      }
+    },
+    "baselineScore": 4.6213192
+  },
+  "conclusions": [
+    "与 PPI 存在相似的研究峰区问题：现版 2%–3% 满分、4% 仍为 4 分，并非官方合理通胀目标，也未经过经济状态或资产表现验证。值得提出修订候选。",
+    "不可直接复制 PPI：GDP 平减指数覆盖全经济最终产出价格，正的名义价格修复可能帮助名义收入和债务承载；但无法仅由同比数值识别需求修复、结构权重变化与成本冲击。",
+    "建议首先把 2%–3% 平台改为超过 2% 缓慢回落的保守上端方案列入待确认，保留 0%=3、-1%=2 等负值分支。此方案针对高分平台，不连带重设中性点。",
+    "保守候选把满分从区间改成单个峰点，本样本无精确 2% 因而无精确 5 分；这不是坏样本或证明修订更优，若需要宽峰应另行设计连续过渡而不是追求更多满分。",
+    "1%–2% 峰区并非已证实最优；保留 0.75%=4 后，1%=5 将造成该段每 0.1 个百分点变 0.4 分，比现版明显更陡。需避免为了缩窄峰区引入新的局部灵敏度悬崖。",
+    "本期约 1.5266% 在保守上端方案中仍是约 4.62 分；在 1%–2% 或 1.5%–2% 峰区方案中为 5 分。分数上升也只是方法改变，不表示经济当天改善。"
+  ],
+  "limitations": [
+    "46 个季度为同一现存修订版本，非每期当时发布值的 point-in-time 回放；2020—2022、2023、2024 起阶段分别完整报告，没有删除疫情或极值。",
+    "相邻评分跳变和反转只反映曲线统计行为，不是经济误报率，未用独立宏观事件标签或资产收益检验。",
+    "GDP 平减指数没有在本次官方材料中找到统一的 1%–2% 理想目标；研究候选数字不得冒称官方红线或良好状态阈值。",
+    "更高分、较低跳变或历史均值均不作为候选优胜的充分依据；诊断并不能确定哪个峰区科学最优。",
+    "同比值受基数和分行业权重影响，不能把某次 3% 或 4% 自动称恶性通胀，也不能由正数直接推出盈利改善。"
+  ],
+  "historicalRows": [
+    {
+      "period": "2015-Q1",
+      "value": 0.2866911005015016,
+      "nominalGdp": 154171,
+      "priorYearNominalGdp": 143539,
+      "realGdpIndex": 107.1,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 3.3822548,
+        "upper_taper": 3.3822548,
+        "peak_1_to_2": 3.3822548,
+        "peak_1_5_to_2": 3.3822548
+      }
+    },
+    {
+      "period": "2015-Q2",
+      "value": 0.6459617288529618,
+      "nominalGdp": 171887,
+      "priorYearNominalGdp": 159462,
+      "realGdpIndex": 107.1,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 3.86128231,
+        "upper_taper": 3.86128231,
+        "peak_1_to_2": 3.86128231,
+        "peak_1_5_to_2": 3.86128231
+      }
+    },
+    {
+      "period": "2015-Q3",
+      "value": -0.1580562397293095,
+      "nominalGdp": 180119,
+      "priorYearNominalGdp": 168602,
+      "realGdpIndex": 107,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.84194376,
+        "upper_taper": 2.84194376,
+        "peak_1_to_2": 2.84194376,
+        "peak_1_5_to_2": 2.84194376
+      }
+    },
+    {
+      "period": "2015-Q4",
+      "value": -0.28104954289318584,
+      "nominalGdp": 196334,
+      "priorYearNominalGdp": 184179,
+      "realGdpIndex": 106.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.71895046,
+        "upper_taper": 2.71895046,
+        "peak_1_to_2": 2.71895046,
+        "peak_1_5_to_2": 2.71895046
+      }
+    },
+    {
+      "period": "2016-Q1",
+      "value": 0.6561443265354017,
+      "nominalGdp": 165735,
+      "priorYearNominalGdp": 154171,
+      "realGdpIndex": 106.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 3.8748591,
+        "upper_taper": 3.8748591,
+        "peak_1_to_2": 3.8748591,
+        "peak_1_5_to_2": 3.8748591
+      }
+    },
+    {
+      "period": "2016-Q2",
+      "value": 0.8716145650690121,
+      "nominalGdp": 185002,
+      "priorYearNominalGdp": 171887,
+      "realGdpIndex": 106.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.09729165,
+        "upper_taper": 4.09729165,
+        "peak_1_to_2": 4.48645826,
+        "peak_1_5_to_2": 4.16215275
+      }
+    },
+    {
+      "period": "2016-Q3",
+      "value": 1.3793999450732786,
+      "nominalGdp": 194838,
+      "priorYearNominalGdp": 180119,
+      "realGdpIndex": 106.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.50351996,
+        "upper_taper": 4.50351996,
+        "peak_1_to_2": 5,
+        "peak_1_5_to_2": 4.83919993
+      }
+    },
+    {
+      "period": "2016-Q4",
+      "value": 2.829623554052918,
+      "nominalGdp": 215618,
+      "priorYearNominalGdp": 196334,
+      "realGdpIndex": 106.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 5,
+        "upper_taper": 4.58518822,
+        "peak_1_to_2": 4.17037645,
+        "peak_1_5_to_2": 4.17037645
+      }
+    },
+    {
+      "period": "2017-Q1",
+      "value": 4.475983363826219,
+      "nominalGdp": 185274,
+      "priorYearNominalGdp": 165735,
+      "realGdpIndex": 107,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 3.52401664,
+        "upper_taper": 3.14301248,
+        "peak_1_to_2": 2.76200832,
+        "peak_1_5_to_2": 2.76200832
+      }
+    },
+    {
+      "period": "2017-Q2",
+      "value": 3.896830819813313,
+      "nominalGdp": 205666,
+      "priorYearNominalGdp": 185002,
+      "realGdpIndex": 107,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.10316918,
+        "upper_taper": 3.60316918,
+        "peak_1_to_2": 3.10316918,
+        "peak_1_5_to_2": 3.10316918
+      }
+    },
+    {
+      "period": "2017-Q3",
+      "value": 4.068131303364542,
+      "nominalGdp": 216755,
+      "priorYearNominalGdp": 194838,
+      "realGdpIndex": 106.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 3.9318687,
+        "upper_taper": 3.44890152,
+        "peak_1_to_2": 2.96593435,
+        "peak_1_5_to_2": 2.96593435
+      }
+    },
+    {
+      "period": "2017-Q4",
+      "value": 4.085450329812357,
+      "nominalGdp": 239688,
+      "priorYearNominalGdp": 215618,
+      "realGdpIndex": 106.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 3.91454967,
+        "upper_taper": 3.43591225,
+        "peak_1_to_2": 2.95727484,
+        "peak_1_5_to_2": 2.95727484
+      }
+    },
+    {
+      "period": "2018-Q1",
+      "value": 3.8761865936318696,
+      "nominalGdp": 205735,
+      "priorYearNominalGdp": 185274,
+      "realGdpIndex": 106.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.12381341,
+        "upper_taper": 3.62381341,
+        "peak_1_to_2": 3.12381341,
+        "peak_1_5_to_2": 3.12381341
+      }
+    },
+    {
+      "period": "2018-Q2",
+      "value": 3.7228961154442297,
+      "nominalGdp": 228042,
+      "priorYearNominalGdp": 205666,
+      "realGdpIndex": 106.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.27710388,
+        "upper_taper": 3.77710388,
+        "peak_1_to_2": 3.27710388,
+        "peak_1_5_to_2": 3.27710388
+      }
+    },
+    {
+      "period": "2018-Q3",
+      "value": 3.2512510885998935,
+      "nominalGdp": 238797,
+      "priorYearNominalGdp": 216755,
+      "realGdpIndex": 106.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.74874891,
+        "upper_taper": 4.24874891,
+        "peak_1_to_2": 3.74874891,
+        "peak_1_5_to_2": 3.74874891
+      }
+    },
+    {
+      "period": "2018-Q4",
+      "value": 3.1998875533498783,
+      "nominalGdp": 263436,
+      "priorYearNominalGdp": 239688,
+      "realGdpIndex": 106.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.80011245,
+        "upper_taper": 4.30011245,
+        "peak_1_to_2": 3.80011245,
+        "peak_1_5_to_2": 3.80011245
+      }
+    },
+    {
+      "period": "2019-Q1",
+      "value": 1.1658000080766673,
+      "nominalGdp": 221454,
+      "priorYearNominalGdp": 205735,
+      "realGdpIndex": 106.4,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.33264001,
+        "upper_taper": 4.33264001,
+        "peak_1_to_2": 5,
+        "peak_1_5_to_2": 4.55440001
+      }
+    },
+    {
+      "period": "2019-Q2",
+      "value": 1.7530039628181449,
+      "nominalGdp": 246194,
+      "priorYearNominalGdp": 228042,
+      "realGdpIndex": 106.1,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.80240317,
+        "upper_taper": 4.80240317,
+        "peak_1_to_2": 5,
+        "peak_1_5_to_2": 5
+      }
+    },
+    {
+      "period": "2019-Q3",
+      "value": 1.1449608141943513,
+      "nominalGdp": 256023,
+      "priorYearNominalGdp": 238797,
+      "realGdpIndex": 106,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.31596865,
+        "upper_taper": 4.31596865,
+        "peak_1_to_2": 5,
+        "peak_1_5_to_2": 4.52661442
+      }
+    },
+    {
+      "period": "2019-Q4",
+      "value": 1.1550257144340215,
+      "nominalGdp": 282201,
+      "priorYearNominalGdp": 263436,
+      "realGdpIndex": 105.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.32402057,
+        "upper_taper": 4.32402057,
+        "peak_1_to_2": 5,
+        "peak_1_5_to_2": 4.54003429
+      }
+    },
+    {
+      "period": "2020-Q1",
+      "value": 1.5871847517640925,
+      "nominalGdp": 209671,
+      "priorYearNominalGdp": 221454,
+      "realGdpIndex": 93.2,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.6697478,
+        "upper_taper": 4.6697478,
+        "peak_1_to_2": 5,
+        "peak_1_5_to_2": 5
+      }
+    },
+    {
+      "period": "2020-Q2",
+      "value": -0.24489416016726384,
+      "nominalGdp": 253450,
+      "priorYearNominalGdp": 246194,
+      "realGdpIndex": 103.2,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.75510584,
+        "upper_taper": 2.75510584,
+        "peak_1_to_2": 2.75510584,
+        "peak_1_5_to_2": 2.75510584
+      }
+    },
+    {
+      "period": "2020-Q3",
+      "value": 0.49963970594320006,
+      "nominalGdp": 269910,
+      "priorYearNominalGdp": 256023,
+      "realGdpIndex": 104.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 3.66618627,
+        "upper_taper": 3.66618627,
+        "peak_1_to_2": 3.66618627,
+        "peak_1_5_to_2": 3.66618627
+      }
+    },
+    {
+      "period": "2020-Q4",
+      "value": 0.42986541757197294,
+      "nominalGdp": 301836,
+      "priorYearNominalGdp": 282201,
+      "realGdpIndex": 106.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 3.57315389,
+        "upper_taper": 3.57315389,
+        "peak_1_to_2": 3.57315389,
+        "peak_1_5_to_2": 3.57315389
+      }
+    },
+    {
+      "period": "2021-Q1",
+      "value": 2.3089483628881524,
+      "nominalGdp": 255055,
+      "priorYearNominalGdp": 209671,
+      "realGdpIndex": 118.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 5,
+        "upper_taper": 4.84552582,
+        "peak_1_to_2": 4.69105164,
+        "peak_1_5_to_2": 4.69105164
+      }
+    },
+    {
+      "period": "2021-Q2",
+      "value": 5.109708045621675,
+      "nominalGdp": 287979,
+      "priorYearNominalGdp": 253450,
+      "realGdpIndex": 108.1,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.89029195,
+        "upper_taper": 2.66771897,
+        "peak_1_to_2": 2.44514598,
+        "peak_1_5_to_2": 2.44514598
+      }
+    },
+    {
+      "period": "2021-Q3",
+      "value": 4.638003786061051,
+      "nominalGdp": 297962,
+      "priorYearNominalGdp": 269910,
+      "realGdpIndex": 105.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 3.36199621,
+        "upper_taper": 3.02149716,
+        "peak_1_to_2": 2.68099811,
+        "peak_1_5_to_2": 2.68099811
+      }
+    },
+    {
+      "period": "2021-Q4",
+      "value": 5.519135173440315,
+      "nominalGdp": 332827,
+      "priorYearNominalGdp": 301836,
+      "realGdpIndex": 104.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.48086483,
+        "upper_taper": 2.36064862,
+        "peak_1_to_2": 2.24043241,
+        "peak_1_5_to_2": 2.24043241
+      }
+    },
+    {
+      "period": "2022-Q1",
+      "value": 3.695640560088753,
+      "nominalGdp": 277176,
+      "priorYearNominalGdp": 255055,
+      "realGdpIndex": 104.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.30435944,
+        "upper_taper": 3.80435944,
+        "peak_1_to_2": 3.30435944,
+        "peak_1_5_to_2": 3.30435944
+      }
+    },
+    {
+      "period": "2022-Q2",
+      "value": 3.0415742946865,
+      "nominalGdp": 299112,
+      "priorYearNominalGdp": 287979,
+      "realGdpIndex": 100.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.95842571,
+        "upper_taper": 4.45842571,
+        "peak_1_to_2": 3.95842571,
+        "peak_1_5_to_2": 3.95842571
+      }
+    },
+    {
+      "period": "2022-Q3",
+      "value": 1.7811770525203663,
+      "nominalGdp": 315400,
+      "priorYearNominalGdp": 297962,
+      "realGdpIndex": 104,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.82494164,
+        "upper_taper": 4.82494164,
+        "peak_1_to_2": 5,
+        "peak_1_5_to_2": 5
+      }
+    },
+    {
+      "period": "2022-Q4",
+      "value": -0.13704603700789297,
+      "nominalGdp": 342342,
+      "priorYearNominalGdp": 332827,
+      "realGdpIndex": 103,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.86295396,
+        "upper_taper": 2.86295396,
+        "peak_1_to_2": 2.86295396,
+        "peak_1_5_to_2": 2.86295396
+      }
+    },
+    {
+      "period": "2023-Q1",
+      "value": 0.7462796628978197,
+      "nominalGdp": 292369,
+      "priorYearNominalGdp": 277176,
+      "realGdpIndex": 104.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 3.99503955,
+        "upper_taper": 3.99503955,
+        "peak_1_to_2": 3.99503955,
+        "peak_1_5_to_2": 3.99503955
+      }
+    },
+    {
+      "period": "2023-Q2",
+      "value": -0.7271225487850863,
+      "nominalGdp": 316238,
+      "priorYearNominalGdp": 299112,
+      "realGdpIndex": 106.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.27287745,
+        "upper_taper": 2.27287745,
+        "peak_1_to_2": 2.27287745,
+        "peak_1_5_to_2": 2.27287745
+      }
+    },
+    {
+      "period": "2023-Q3",
+      "value": -0.8240480719872045,
+      "nominalGdp": 328441,
+      "priorYearNominalGdp": 315400,
+      "realGdpIndex": 105,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.17595193,
+        "upper_taper": 2.17595193,
+        "peak_1_to_2": 2.17595193,
+        "peak_1_5_to_2": 2.17595193
+      }
+    },
+    {
+      "period": "2023-Q4",
+      "value": -0.9046467436031103,
+      "nominalGdp": 357225,
+      "priorYearNominalGdp": 342342,
+      "realGdpIndex": 105.3,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.09535326,
+        "upper_taper": 2.09535326,
+        "peak_1_to_2": 2.09535326,
+        "peak_1_5_to_2": 2.09535326
+      }
+    },
+    {
+      "period": "2024-Q1",
+      "value": -1.0847487715190285,
+      "nominalGdp": 304525,
+      "priorYearNominalGdp": 292369,
+      "realGdpIndex": 105.3,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 1.95762561,
+        "upper_taper": 1.95762561,
+        "peak_1_to_2": 1.95762561,
+        "peak_1_5_to_2": 1.95762561
+      }
+    },
+    {
+      "period": "2024-Q2",
+      "value": -0.7599447257793823,
+      "nominalGdp": 328585,
+      "priorYearNominalGdp": 316238,
+      "realGdpIndex": 104.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.24005527,
+        "upper_taper": 2.24005527,
+        "peak_1_to_2": 2.24005527,
+        "peak_1_5_to_2": 2.24005527
+      }
+    },
+    {
+      "period": "2024-Q3",
+      "value": -0.6130957291525352,
+      "nominalGdp": 341443,
+      "priorYearNominalGdp": 328441,
+      "realGdpIndex": 104.6,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.38690427,
+        "upper_taper": 2.38690427,
+        "peak_1_to_2": 2.38690427,
+        "peak_1_5_to_2": 2.38690427
+      }
+    },
+    {
+      "period": "2024-Q4",
+      "value": -0.797617307032672,
+      "nominalGdp": 373512,
+      "priorYearNominalGdp": 357225,
+      "realGdpIndex": 105.4,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.20238269,
+        "upper_taper": 2.20238269,
+        "peak_1_to_2": 2.20238269,
+        "peak_1_5_to_2": 2.20238269
+      }
+    },
+    {
+      "period": "2025-Q1",
+      "value": -0.7799342834448386,
+      "nominalGdp": 318466,
+      "priorYearNominalGdp": 304525,
+      "realGdpIndex": 105.4,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.22006572,
+        "upper_taper": 2.22006572,
+        "peak_1_to_2": 2.22006572,
+        "peak_1_5_to_2": 2.22006572
+      }
+    },
+    {
+      "period": "2025-Q2",
+      "value": -1.237134386175176,
+      "nominalGdp": 341395,
+      "priorYearNominalGdp": 328585,
+      "realGdpIndex": 105.2,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 1.88143281,
+        "upper_taper": 1.88143281,
+        "peak_1_to_2": 1.88143281,
+        "peak_1_5_to_2": 1.88143281
+      }
+    },
+    {
+      "period": "2025-Q3",
+      "value": -0.931236318030848,
+      "nominalGdp": 354500,
+      "priorYearNominalGdp": 341443,
+      "realGdpIndex": 104.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.06876368,
+        "upper_taper": 2.06876368,
+        "peak_1_to_2": 2.06876368,
+        "peak_1_5_to_2": 2.06876368
+      }
+    },
+    {
+      "period": "2025-Q4",
+      "value": -0.6171960835011148,
+      "nominalGdp": 387911,
+      "priorYearNominalGdp": 373512,
+      "realGdpIndex": 104.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.38280392,
+        "upper_taper": 2.38280392,
+        "peak_1_to_2": 2.38280392,
+        "peak_1_5_to_2": 2.38280392
+      }
+    },
+    {
+      "period": "2026-Q1",
+      "value": -0.05870403149861314,
+      "nominalGdp": 334193,
+      "priorYearNominalGdp": 318466,
+      "realGdpIndex": 105,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 2.94129597,
+        "upper_taper": 2.94129597,
+        "peak_1_to_2": 2.94129597,
+        "peak_1_5_to_2": 2.94129597
+      }
+    },
+    {
+      "period": "2026-Q2",
+      "value": 1.5266489444632159,
+      "nominalGdp": 361511,
+      "priorYearNominalGdp": 341395,
+      "realGdpIndex": 104.3,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS",
+      "scores": {
+        "baseline": 4.62131916,
+        "upper_taper": 4.62131916,
+        "peak_1_to_2": 5,
+        "peak_1_5_to_2": 5
+      }
+    }
+  ]
+}

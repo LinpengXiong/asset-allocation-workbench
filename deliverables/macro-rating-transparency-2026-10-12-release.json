@@ -1,0 +1,72 @@
+{
+  "update": "宏观评分分项透明度与母子项排版",
+  "publishedDate": "2026-10-12",
+  "ruleVersion": "V1.21",
+  "siteUrl": "https://multi-asset-allocation-advisor.xlp2077.workers.dev",
+  "deployedVersionId": "a6e2170b-5049-446b-aada-559349b1b47e",
+  "deployment": {
+    "uploaded": true,
+    "deployed": true,
+    "exitCode": 0,
+    "buildPassed": true,
+    "dryRunPassed": true,
+    "earlierAttempt": "dependency download returned partial transfer; failed before build or upload; successful full-script retry used"
+  },
+  "tests": {
+    "passed": 331,
+    "failed": 0,
+    "skipped": 0
+  },
+  "live": {
+    "authenticatedMainSiteRefreshed": true,
+    "score": 2.77,
+    "historyRecordCount": 4,
+    "parentCompositeCount": 13,
+    "visibleChildCount": 29,
+    "visibleFormulaCount": 13,
+    "groups": [
+      {
+        "pillar": "经济运行",
+        "parentComposites": 4,
+        "children": 9
+      },
+      {
+        "pillar": "增长动力",
+        "parentComposites": 5,
+        "children": 12
+      },
+      {
+        "pillar": "金融信贷",
+        "parentComposites": 2,
+        "children": 4
+      },
+      {
+        "pillar": "宏观调控",
+        "parentComposites": 2,
+        "children": 4
+      }
+    ],
+    "gdpFormula": "2.60 × 80% + 2.30 × 20% = 2.54",
+    "deflatorFormula": "4.62 × 70% + 2.94 × 15% + 2.38 × 15% = 4.03",
+    "displayPrecision": "two decimals displayed; unrounded scores combined",
+    "missingComponents": "no complete numeric formula or reassigned weights"
+  },
+  "layout": [
+    "parent row highlighted",
+    "child rows indented with branch markers",
+    "shared left border connects parent, children and formula",
+    "separate result strip and white gap between groups",
+    "repeated full parent names removed from child text; retained in accessibility labels"
+  ],
+  "protectedFilesUnchanged": true,
+  "protectedFileHashes": {
+    "app/data/macro-rating-v1.json": "7f8cf16ef93bd48e0e1e48e9f33fe6b19e0b66d17cc2b2fb1246f9ba6b52444b",
+    "app/data/macro-rating-current.json": "4da2d81fcc46cdd3a0feacfae2d1f2581e8be4f45ffc4b4989c2cf9590b5eefa",
+    "app/data/macro-rating-history.json": "4880d12a9419d9901b534d934b2d7847fab7f7746281edc3b3b2bd01195f9377",
+    "lib/macro-rating.mjs": "7afe3236495d2c7c85b04f8ca680152806b35037488ab8b61c57a3bec0c4f417",
+    "lib/macro-scoring-continuous.mjs": "1144686a0534c2cdd1617d5032a98cad656e2fc8be68315ce5058ef3215183d5",
+    "lib/macro-loan-dual-basis.mjs": "13575f88aaebe704a18794eef0c129de5ac741cb3cb1dfd70517ca97e4975827"
+  },
+  "scoringRecordAdded": false,
+  "screenshot": "deliverables/macro-rating-transparency-2026-10-12.png"
+}

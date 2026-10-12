@@ -1,0 +1,745 @@
+{
+  "schemaVersion": 1,
+  "candidateVersion": "V1.20-累计加最新单月官方证据",
+  "asOf": "2026-10-11",
+  "verifiedAt": "2026-10-11",
+  "latestObservationPeriod": "2026-08",
+  "status": "证据交付；未改评分代码、共享数据、历史或主站",
+  "sourceOrder": [
+    "官方原始发布",
+    "Wind",
+    "财新数据API"
+  ],
+  "sourceOrderResult": "本轮就绪六项原值均由统计局、海关总署、财政部原始表/正文满足，未使用Wind或财新替代。",
+  "policy": {
+    "noNewRollingThreeMonthLayer": true,
+    "noMacroWeightIncrease": true,
+    "scorePercentagesAreTrialNotBacktestOptimal": true,
+    "missingNewBasisDoesNotEnableRule": true,
+    "primaryObservationAndHistoryPreserved": true
+  },
+  "items": [
+    {
+      "id": "G01",
+      "name": "规模以上工业增加值",
+      "status": "ready",
+      "change": "原当月观察保留，新增同范围年初累计同比分量",
+      "trialScoreAllocation": {
+        "yearToDate": 40,
+        "latestMonth": 60,
+        "unit": "指标内部得分权重%",
+        "macroIndicatorWeightUnchanged": true
+      },
+      "primaryObservation": {
+        "value": 5.2,
+        "basis": "当月实际同比",
+        "period": "2026-08",
+        "unit": "%",
+        "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260915_1965308.html",
+        "releaseDate": "2026-09-15",
+        "originalPublisher": "国家统计局"
+      },
+      "yearToDateGrowth": {
+        "value": 5.3,
+        "unit": "%",
+        "period": "2026-08",
+        "latestAvailablePeriod": "2026-08",
+        "originalPublisher": "国家统计局",
+        "verified": true,
+        "verifiedAt": "2026-10-11",
+        "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260915_1965308.html",
+        "releaseDate": "2026-09-15",
+        "sourceAudit": {
+          "provider": "官方"
+        },
+        "basis": "年初累计实际同比",
+        "series": "industrialValueAdded",
+        "scope": "全国",
+        "scopeDefinition": "全国规模以上工业企业；增加值增速扣除价格因素，采用官方公布可比增长率。",
+        "periodScope": "2026-01—2026-08",
+        "rawEvidence": {
+          "kind": "official-dual-yoy-row",
+          "reportedMonthlyYoyPct": 5.2,
+          "reportedCumulativeYoyPct": 5.3
+        },
+        "comparabilityNote": "直接采用同次官方月报的当月与累计实际同比，不从增加值金额或历次累计增速反推单月。"
+      },
+      "audit": {
+        "retrievalStatus": "本轮已读取官方完整正文或完整原表，非媒体摘要",
+        "verifiedAt": "2026-10-11",
+        "limitations": "直接采用同次官方月报的当月与累计实际同比，不从增加值金额或历次累计增速反推单月。"
+      }
+    },
+    {
+      "id": "G17",
+      "name": "商品零售额",
+      "status": "ready",
+      "change": "原当月观察保留，新增同范围年初累计同比分量",
+      "trialScoreAllocation": {
+        "yearToDate": 40,
+        "latestMonth": 60,
+        "unit": "指标内部得分权重%",
+        "macroIndicatorWeightUnchanged": true
+      },
+      "primaryObservation": {
+        "value": 0.3,
+        "basis": "当月名义同比",
+        "period": "2026-08",
+        "unit": "%",
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
+        "releaseDate": "2026-09-15",
+        "originalPublisher": "国家统计局"
+      },
+      "yearToDateGrowth": {
+        "value": 1,
+        "unit": "%",
+        "period": "2026-08",
+        "latestAvailablePeriod": "2026-08",
+        "originalPublisher": "国家统计局",
+        "verified": true,
+        "verifiedAt": "2026-10-11",
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
+        "releaseDate": "2026-09-15",
+        "sourceAudit": {
+          "provider": "官方"
+        },
+        "basis": "年初累计名义同比",
+        "series": "goodsRetailSales",
+        "scope": "全国",
+        "scopeDefinition": "全国商品零售额，不含餐饮收入；不是社会消费品零售总额，也不是网上商品零售额或限额以上商品分类。",
+        "periodScope": "2026-01—2026-08",
+        "rawEvidence": {
+          "kind": "official-dual-yoy-row",
+          "reportedMonthlyYoyPct": 0.3,
+          "reportedCumulativeYoyPct": 1,
+          "currentMonthAmount": 35280,
+          "currentCumulativeAmount": 290203,
+          "reportedAmountUnit": "亿元"
+        },
+        "comparabilityNote": "直接采用同次官方月报的商品零售行。百分比为未扣除价格因素的名义增速；官方同比基数按可比调查范围处理，不机械用去年刊载金额复算。"
+      },
+      "audit": {
+        "retrievalStatus": "本轮已读取官方完整正文或完整原表，非媒体摘要",
+        "verifiedAt": "2026-10-11",
+        "limitations": "直接采用同次官方月报的商品零售行。百分比为未扣除价格因素的名义增速；官方同比基数按可比调查范围处理，不机械用去年刊载金额复算。"
+      }
+    },
+    {
+      "id": "G10",
+      "name": "美元出口",
+      "status": "ready",
+      "change": "原当月观察保留，新增同范围年初累计同比分量",
+      "trialScoreAllocation": {
+        "yearToDate": 50,
+        "latestMonth": 50,
+        "unit": "指标内部得分权重%",
+        "macroIndicatorWeightUnchanged": true
+      },
+      "primaryObservation": {
+        "value": 25,
+        "basis": "当月美元金额同比",
+        "period": "2026-08",
+        "unit": "%",
+        "sourceUrl": "http://english.customs.gov.cn/Statics/d14f71f5-1ac9-431f-b8d7-b7a7a0b58af7.html",
+        "releaseDate": "2026-09-18",
+        "originalPublisher": "海关总署"
+      },
+      "yearToDateGrowth": {
+        "value": 19.3,
+        "unit": "%",
+        "period": "2026-08",
+        "latestAvailablePeriod": "2026-08",
+        "originalPublisher": "海关总署",
+        "verified": true,
+        "verifiedAt": "2026-10-11",
+        "sourceUrl": "http://english.customs.gov.cn/Statics/d14f71f5-1ac9-431f-b8d7-b7a7a0b58af7.html",
+        "releaseDate": "2026-09-18",
+        "sourceAudit": {
+          "provider": "官方"
+        },
+        "basis": "年初累计美元金额同比",
+        "series": "goodsExportsUsd",
+        "scope": "全国",
+        "scopeDefinition": "全国货物出口、美元计价；不是人民币金额同比，也不是货物进出口总额。",
+        "periodScope": "2026-01—2026-08",
+        "rawEvidence": {
+          "kind": "official-dual-yoy-row",
+          "reportedMonthlyYoyPct": 25,
+          "reportedCumulativeYoyPct": 19.3,
+          "currentMonthExportAmount": 401441,
+          "currentCumulativeExportAmount": 2923839,
+          "reportedAmountUnit": "百万美元"
+        },
+        "comparabilityNote": "采用海关总署2026年9月18日美元月表同一2026.08行的公布同比。原表单位为百万美元，百分比直接来自出口同比列，不以舍入金额相除改写公布增速。官方目录给出HTTP原始公开链接，本次未绕过HTTPS证书校验。",
+        "revisionVersion": "2026-09-18-海关美元月表"
+      },
+      "audit": {
+        "retrievalStatus": "本轮已读取官方完整正文或完整原表，非媒体摘要",
+        "verifiedAt": "2026-10-11",
+        "limitations": "采用海关总署2026年9月18日美元月表同一2026.08行的公布同比。原表单位为百万美元，百分比直接来自出口同比列，不以舍入金额相除改写公布增速。官方目录给出HTTP原始公开链接，本次未绕过HTTPS证书校验。"
+      }
+    },
+    {
+      "id": "P01E",
+      "name": "全国一般公共预算支出",
+      "status": "ready-with-explicit-comparability-limit",
+      "change": "原官方年初累计可比同比保留，新增依据官方累计金额复算的单月同比",
+      "trialScoreAllocation": {
+        "yearToDate": 40,
+        "latestMonth": 60,
+        "unit": "指标内部得分权重%",
+        "macroIndicatorWeightUnchanged": true
+      },
+      "primaryObservation": {
+        "value": 1.2,
+        "basis": "全国年初累计支出可比同比",
+        "period": "2026-08",
+        "unit": "%",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+        "releaseDate": "2026-09-18",
+        "originalPublisher": "财政部"
+      },
+      "latestMonthGrowth": {
+        "value": -0.134503,
+        "unit": "%",
+        "basis": "全国当月支出金额同比",
+        "series": "全国一般公共预算支出",
+        "scope": "全国",
+        "period": "2026-08",
+        "latestAvailablePeriod": "2026-08",
+        "periodScope": "2026-08",
+        "originalPublisher": "财政部",
+        "verified": true,
+        "verifiedAt": "2026-10-11",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+        "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/ysbgjyszx/202609/t20260918_3997709.htm",
+        "releaseDate": "2026-09-18",
+        "sourceAudit": {
+          "provider": "官方"
+        },
+        "derived": true,
+        "formula": "((本年1—8月金额−本年1—7月金额)/(上年1—8月金额−上年1—7月金额)−1)×100",
+        "comparabilityNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。",
+        "rawEvidence": {
+          "kind": "single-month-cumulative-amounts",
+          "currentYear": {
+            "preceding": {
+              "value": 162889,
+              "reportedYoyPct": 1.3,
+              "unit": "亿元",
+              "basis": "年初累计支出金额",
+              "series": "全国一般公共预算支出",
+              "scope": "全国",
+              "period": "2026-07",
+              "latestAvailablePeriod": "2026-07",
+              "periodScope": "2026-01—2026-07",
+              "originalPublisher": "财政部",
+              "publisher": "财政部国库司",
+              "verified": true,
+              "verifiedAt": "2026-10-11",
+              "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202608/t20260814_3995497.htm",
+              "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czszsj/202608/t20260814_3995497.htm",
+              "releaseDate": "2026-08-21",
+              "sourceAudit": {
+                "provider": "官方"
+              },
+              "comparabilityNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。"
+            },
+            "current": {
+              "value": 181451,
+              "reportedYoyPct": 1.2,
+              "unit": "亿元",
+              "basis": "年初累计支出金额",
+              "series": "全国一般公共预算支出",
+              "scope": "全国",
+              "period": "2026-08",
+              "latestAvailablePeriod": "2026-08",
+              "periodScope": "2026-01—2026-08",
+              "originalPublisher": "财政部",
+              "publisher": "财政部国库司",
+              "verified": true,
+              "verifiedAt": "2026-10-11",
+              "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+              "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/ysbgjyszx/202609/t20260918_3997709.htm",
+              "releaseDate": "2026-09-18",
+              "sourceAudit": {
+                "provider": "官方"
+              },
+              "comparabilityNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。"
+            }
+          },
+          "previousYear": {
+            "preceding": {
+              "value": 160737,
+              "reportedYoyPct": 3.4,
+              "unit": "亿元",
+              "basis": "年初累计支出金额",
+              "series": "全国一般公共预算支出",
+              "scope": "全国",
+              "period": "2025-07",
+              "latestAvailablePeriod": "2025-07",
+              "periodScope": "2025-01—2025-07",
+              "originalPublisher": "财政部",
+              "publisher": "财政部国库司",
+              "verified": true,
+              "verifiedAt": "2026-10-11",
+              "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202508/t20250819_3970405.htm",
+              "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czszsj/202508/t20250819_3970405.htm",
+              "releaseDate": "2025-08-19",
+              "sourceAudit": {
+                "provider": "官方"
+              },
+              "comparabilityNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。"
+            },
+            "current": {
+              "value": 179324,
+              "reportedYoyPct": 3.1,
+              "unit": "亿元",
+              "basis": "年初累计支出金额",
+              "series": "全国一般公共预算支出",
+              "scope": "全国",
+              "period": "2025-08",
+              "latestAvailablePeriod": "2025-08",
+              "periodScope": "2025-01—2025-08",
+              "originalPublisher": "财政部",
+              "publisher": "财政部国库司",
+              "verified": true,
+              "verifiedAt": "2026-10-11",
+              "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202509/t20250917_3972555.htm",
+              "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czszsj/202509/t20250917_3972555.htm",
+              "releaseDate": "2025-09-17",
+              "sourceAudit": {
+                "provider": "官方"
+              },
+              "comparabilityNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。"
+            }
+          },
+          "comparability": {
+            "sameScope": true,
+            "revisionNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。"
+          },
+          "currentMonthAmount": 18562,
+          "previousYearMonthAmount": 18587,
+          "computedYoyPctUnrounded": -0.13450260935061742,
+          "reportedMonthlyYoyPct": null,
+          "notDerivedFromCumulativeRates": true
+        }
+      },
+      "audit": {
+        "retrievalStatus": "四期财政部官方完整正文已逐条复核；gks电脑版本轮502，读取财政部bgt同文章官方发布，不是媒体转载",
+        "verifiedAt": "2026-10-11",
+        "cumulativeRatioCrossChecks": [
+          {
+            "period": "2026-07",
+            "computedPct": 1.3388330004914906,
+            "reportedPct": 1.3,
+            "differencePp": 0.03883300049149052,
+            "withinReportedOneDecimalRounding": true
+          },
+          {
+            "period": "2026-08",
+            "computedPct": 1.1861212107693309,
+            "reportedPct": 1.2,
+            "differencePp": -0.013878789230669097,
+            "withinReportedOneDecimalRounding": true
+          }
+        ],
+        "limitations": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。",
+        "interpretation": "单月只是名义支出金额同比，不是环比、季调环比、净财政冲量或项目完工。"
+      }
+    },
+    {
+      "id": "P01F",
+      "name": "全国政府性基金预算支出",
+      "status": "ready-with-explicit-comparability-limit",
+      "change": "原官方年初累计可比同比保留，新增依据官方累计金额复算的单月同比",
+      "trialScoreAllocation": {
+        "yearToDate": 60,
+        "latestMonth": 40,
+        "unit": "指标内部得分权重%",
+        "macroIndicatorWeightUnchanged": true
+      },
+      "primaryObservation": {
+        "value": -17,
+        "basis": "全国年初累计支出可比同比",
+        "period": "2026-08",
+        "unit": "%",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+        "releaseDate": "2026-09-18",
+        "originalPublisher": "财政部"
+      },
+      "latestMonthGrowth": {
+        "value": -21.371016,
+        "unit": "%",
+        "basis": "全国当月支出金额同比",
+        "series": "全国政府性基金预算支出",
+        "scope": "全国",
+        "period": "2026-08",
+        "latestAvailablePeriod": "2026-08",
+        "periodScope": "2026-08",
+        "originalPublisher": "财政部",
+        "verified": true,
+        "verifiedAt": "2026-10-11",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+        "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/ysbgjyszx/202609/t20260918_3997709.htm",
+        "releaseDate": "2026-09-18",
+        "sourceAudit": {
+          "provider": "官方"
+        },
+        "derived": true,
+        "formula": "((本年1—8月金额−本年1—7月金额)/(上年1—8月金额−上年1—7月金额)−1)×100",
+        "comparabilityNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。",
+        "rawEvidence": {
+          "kind": "single-month-cumulative-amounts",
+          "currentYear": {
+            "preceding": {
+              "value": 45410,
+              "reportedYoyPct": -16.4,
+              "unit": "亿元",
+              "basis": "年初累计支出金额",
+              "series": "全国政府性基金预算支出",
+              "scope": "全国",
+              "period": "2026-07",
+              "latestAvailablePeriod": "2026-07",
+              "periodScope": "2026-01—2026-07",
+              "originalPublisher": "财政部",
+              "publisher": "财政部国库司",
+              "verified": true,
+              "verifiedAt": "2026-10-11",
+              "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202608/t20260814_3995497.htm",
+              "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czszsj/202608/t20260814_3995497.htm",
+              "releaseDate": "2026-08-21",
+              "sourceAudit": {
+                "provider": "官方"
+              },
+              "comparabilityNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。"
+            },
+            "current": {
+              "value": 51948,
+              "reportedYoyPct": -17,
+              "unit": "亿元",
+              "basis": "年初累计支出金额",
+              "series": "全国政府性基金预算支出",
+              "scope": "全国",
+              "period": "2026-08",
+              "latestAvailablePeriod": "2026-08",
+              "periodScope": "2026-01—2026-08",
+              "originalPublisher": "财政部",
+              "publisher": "财政部国库司",
+              "verified": true,
+              "verifiedAt": "2026-10-11",
+              "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+              "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/ysbgjyszx/202609/t20260918_3997709.htm",
+              "releaseDate": "2026-09-18",
+              "sourceAudit": {
+                "provider": "官方"
+              },
+              "comparabilityNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。"
+            }
+          },
+          "previousYear": {
+            "preceding": {
+              "value": 54287,
+              "reportedYoyPct": 31.7,
+              "unit": "亿元",
+              "basis": "年初累计支出金额",
+              "series": "全国政府性基金预算支出",
+              "scope": "全国",
+              "period": "2025-07",
+              "latestAvailablePeriod": "2025-07",
+              "periodScope": "2025-01—2025-07",
+              "originalPublisher": "财政部",
+              "publisher": "财政部国库司",
+              "verified": true,
+              "verifiedAt": "2026-10-11",
+              "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202508/t20250819_3970405.htm",
+              "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czszsj/202508/t20250819_3970405.htm",
+              "releaseDate": "2025-08-19",
+              "sourceAudit": {
+                "provider": "官方"
+              },
+              "comparabilityNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。"
+            },
+            "current": {
+              "value": 62602,
+              "reportedYoyPct": 30,
+              "unit": "亿元",
+              "basis": "年初累计支出金额",
+              "series": "全国政府性基金预算支出",
+              "scope": "全国",
+              "period": "2025-08",
+              "latestAvailablePeriod": "2025-08",
+              "periodScope": "2025-01—2025-08",
+              "originalPublisher": "财政部",
+              "publisher": "财政部国库司",
+              "verified": true,
+              "verifiedAt": "2026-10-11",
+              "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202509/t20250917_3972555.htm",
+              "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czszsj/202509/t20250917_3972555.htm",
+              "releaseDate": "2025-09-17",
+              "sourceAudit": {
+                "provider": "官方"
+              },
+              "comparabilityNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。"
+            }
+          },
+          "comparability": {
+            "sameScope": true,
+            "revisionNote": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。"
+          },
+          "currentMonthAmount": 6538,
+          "previousYearMonthAmount": 8315,
+          "computedYoyPctUnrounded": -21.371016235718578,
+          "reportedMonthlyYoyPct": null,
+          "notDerivedFromCumulativeRates": true
+        }
+      },
+      "audit": {
+        "retrievalStatus": "四期财政部官方完整正文已逐条复核；gks电脑版本轮502，读取财政部bgt同文章官方发布，不是媒体转载",
+        "verifiedAt": "2026-10-11",
+        "cumulativeRatioCrossChecks": [
+          {
+            "period": "2026-07",
+            "computedPct": -16.351981137288853,
+            "reportedPct": -16.4,
+            "differencePp": 0.04801886271114597,
+            "withinReportedOneDecimalRounding": true
+          },
+          {
+            "period": "2026-08",
+            "computedPct": -17.01862560301588,
+            "reportedPct": -17,
+            "differencePp": -0.0186256030158809,
+            "withinReportedOneDecimalRounding": true
+          }
+        ],
+        "limitations": "采用财政部各期原始月报刊载的全国预算支出金额；原文未明确声明四期属于统一重修订版本，不能标为同一修订版统一回溯值。2026年7月、8月金额与2025年同期金额的比率均在官方一位小数累计同比的0.05个百分点舍入范围内，支持范围一致的本次差分，但不排除未明示修订及亿元舍入误差。",
+        "interpretation": "单月只是名义支出金额同比，不是环比、季调环比、净财政冲量或项目完工。"
+      }
+    },
+    {
+      "id": "G02",
+      "name": "规模以上工业企业盈利增长与质量",
+      "status": "existing-official-dual-basis-ready",
+      "change": "已有累计与当月口径，不新增原值；仅提高当月得分占比并显式展示四分量",
+      "trialScoreAllocation": {
+        "cumulativeComparableProfitGrowth": 30,
+        "officialCurrentMonthComparableProfitGrowth": 45,
+        "reportedProfitMarginYoyChange": 12.5,
+        "reportedReceivablesDaysYoyChange": 12.5,
+        "unit": "指标内部得分权重%",
+        "macroIndicatorWeightUnchanged": true
+      },
+      "existingComponentObservations": {
+        "cumulativeComparableProfitGrowth": {
+          "value": 15.7,
+          "unit": "%",
+          "basis": "年初累计可比同比",
+          "periodScope": "2026-01—2026-08",
+          "period": "2026-08",
+          "latestAvailablePeriod": "2026-08",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "originalPublisher": "国家统计局",
+          "scope": "全国规模以上工业企业可比范围",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "retrievalUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202609/t20260928_1965425.html",
+          "releaseDate": "2026-09-28"
+        },
+        "officialCurrentMonthComparableProfitGrowth": {
+          "value": 4.2,
+          "unit": "%",
+          "basis": "当月可比同比",
+          "periodScope": "2026-08",
+          "period": "2026-08",
+          "latestAvailablePeriod": "2026-08",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "originalPublisher": "国家统计局",
+          "scope": "全国规模以上工业企业可比范围",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "retrievalUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202609/t20260928_1965425.html",
+          "releaseDate": "2026-09-28"
+        },
+        "reportedProfitMarginYoyChange": {
+          "value": 0.44,
+          "unit": "百分点",
+          "basis": "年初累计营业收入利润率同比变动",
+          "periodScope": "2026-01—2026-08",
+          "currentProfitMargin": 5.66,
+          "period": "2026-08",
+          "latestAvailablePeriod": "2026-08",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "originalPublisher": "国家统计局",
+          "scope": "全国规模以上工业企业可比范围",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "retrievalUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202609/t20260928_1965425.html",
+          "releaseDate": "2026-09-28"
+        },
+        "reportedReceivablesDaysYoyChange": {
+          "value": 0.9,
+          "unit": "天",
+          "basis": "月末应收账款平均回收期同比变动",
+          "periodScope": "2026-08末",
+          "currentReceivablesDays": 72.2,
+          "period": "2026-08",
+          "latestAvailablePeriod": "2026-08",
+          "verified": true,
+          "verifiedAt": "2026-10-11",
+          "originalPublisher": "国家统计局",
+          "scope": "全国规模以上工业企业可比范围",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "retrievalUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202609/t20260928_1965425.html",
+          "releaseDate": "2026-09-28"
+        }
+      },
+      "audit": {
+        "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+        "retrievalUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202609/t20260928_1965425.html",
+        "releaseDate": "2026-09-28",
+        "verifiedAt": "2026-10-11",
+        "originalPublisher": "国家统计局",
+        "retrievalStatus": "读取统计局信息公开同文号完整原表，四分量原值与现记录一致",
+        "scope": "全国规模以上工业企业可比范围",
+        "limitations": "不同发布期企业范围会变，不能从两期已刊金额相除推当月；行业改善广度G19独立计分，本项不重复纳入广度。"
+      }
+    }
+  ],
+  "fiscalDocuments": [
+    {
+      "period": "2025-07",
+      "periodScope": "2025-01—2025-07",
+      "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202508/t20250819_3970405.htm",
+      "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czszsj/202508/t20250819_3970405.htm",
+      "releaseDate": "2025-08-19",
+      "verifiedAt": "2026-10-11",
+      "originalPublisher": "财政部",
+      "publisher": "财政部国库司",
+      "retrievalStatus": "本轮已读取财政部官方完整正文",
+      "note": "原值采用同一文章财政部原文。"
+    },
+    {
+      "period": "2025-08",
+      "periodScope": "2025-01—2025-08",
+      "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202509/t20250917_3972555.htm",
+      "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czszsj/202509/t20250917_3972555.htm",
+      "releaseDate": "2025-09-17",
+      "verifiedAt": "2026-10-11",
+      "originalPublisher": "财政部",
+      "publisher": "财政部国库司",
+      "retrievalStatus": "本轮已读取财政部官方完整正文",
+      "note": "原值采用同一文章财政部原文。"
+    },
+    {
+      "period": "2026-07",
+      "periodScope": "2026-01—2026-07",
+      "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202608/t20260814_3995497.htm",
+      "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czszsj/202608/t20260814_3995497.htm",
+      "releaseDate": "2026-08-21",
+      "verifiedAt": "2026-10-11",
+      "originalPublisher": "财政部",
+      "publisher": "财政部国库司",
+      "retrievalStatus": "本轮已读取财政部官方完整正文",
+      "note": "实际发布日为2026-08-21，不以URL路径日期2026-08-14代替。"
+    },
+    {
+      "period": "2026-08",
+      "periodScope": "2026-01—2026-08",
+      "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+      "retrievalUrl": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/ysbgjyszx/202609/t20260918_3997709.htm",
+      "releaseDate": "2026-09-18",
+      "verifiedAt": "2026-10-11",
+      "originalPublisher": "财政部",
+      "publisher": "财政部国库司",
+      "retrievalStatus": "本轮已读取财政部官方完整正文",
+      "note": "原值采用同一文章财政部原文。"
+    }
+  ],
+  "futureObservationGaps": [
+    {
+      "id": "G03",
+      "name": "商品房销售面积",
+      "status": "not-enabled",
+      "suggestedAllocation": {
+        "yearToDate": 40,
+        "latestMonth": 60
+      },
+      "reason": "官方累计同比已核验，但未获得同一可比修订范围的单月同比或本年与上年四端点。不可用两期累计增速相减、或不一致旧刊金额差分。"
+    },
+    {
+      "id": "G14",
+      "name": "房地产开发投资",
+      "status": "not-enabled",
+      "suggestedAllocation": {
+        "yearToDate": 60,
+        "latestMonth": 40
+      },
+      "reason": "上年比较基数存在修订；尚无可支持单月同比的同版端点，不能机械拆月。"
+    },
+    {
+      "id": "G07",
+      "name": "制造业投资",
+      "status": "not-enabled",
+      "suggestedAllocation": {
+        "yearToDate": 60,
+        "latestMonth": 40
+      },
+      "reason": "可比单月同比/金额缺口未补齐；累计增速相减不是单月同比。"
+    },
+    {
+      "id": "G13",
+      "name": "基础设施投资",
+      "status": "not-enabled",
+      "suggestedAllocation": {
+        "yearToDate": 60,
+        "latestMonth": 40
+      },
+      "reason": "保留含电力、热力、燃气及水生产和供应业的现口径；尚缺同口径可比单月序列，不能以不含电力的旧范围替换。"
+    },
+    {
+      "id": "G16",
+      "name": "扣除房地产开发的民间投资",
+      "status": "not-enabled",
+      "suggestedAllocation": {
+        "yearToDate": 60,
+        "latestMonth": 40
+      },
+      "reason": "尚缺扣除房地产的同范围可比单月数据；不得用总体民间投资或两种增速相减代替。"
+    },
+    {
+      "id": "G12",
+      "name": "服务零售额",
+      "status": "not-enabled",
+      "suggestedAllocation": null,
+      "reason": "官方以年初累计同比发布，未核齐相同总体服务零售范围的单月原值；网上服务零售和服务业生产指数不能替代。"
+    },
+    {
+      "id": "G19",
+      "name": "工业行业利润改善广度",
+      "status": "not-enabled",
+      "suggestedAllocation": null,
+      "reason": "现有41行业累计利润可比同比支持累计改善广度，尚缺全部41行业的可比单月数据；累计行业数量不能差分为月度广度，利润下降不等于亏损。"
+    },
+    {
+      "id": "F01",
+      "name": "居民中长期新增贷款",
+      "status": "not-enabled",
+      "suggestedAllocation": {
+        "yearToDate": 40,
+        "latestMonth": 60
+      },
+      "reason": "双口径适用候选为同比多增/少增金额，不是低或负基数的百分比；本轮未核齐两年同口径累计和单月原值与独立尺度，不改现有已公布评分。"
+    },
+    {
+      "id": "F02",
+      "name": "企事业单位中长期新增贷款",
+      "status": "not-enabled",
+      "suggestedAllocation": {
+        "yearToDate": 40,
+        "latestMonth": 60
+      },
+      "reason": "双口径适用候选为同比多增/少增金额；企事业单位不等同纯企业，尚需核齐累计、单月原值及独立尺度，本轮未启用。"
+    }
+  ]
+}

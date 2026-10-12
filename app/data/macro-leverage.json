@@ -1,0 +1,2284 @@
+{
+  "unit": "%",
+  "chinaSource": "国家金融与发展实验室国家资产负债表研究中心（CNBS）季度杠杆率原始下载及后续 NIFD 季报",
+  "bisSource": "BIS Total Credit Statistics, credit-to-GDP, break-adjusted; 企业和居民为市值口径，政府为名义口径",
+  "note": "中外为不同机构口径，仅作趋势对照；部分中国季度数据以后续报告修订值为准。BIS 对照序列只更新到已发布的 2026-Q1。",
+  "china": [
+    {
+      "period": "2005-Q1",
+      "household": 17.6,
+      "corporate": 104.6,
+      "centralGovernment": 18,
+      "localGovernment": 8.4,
+      "government": 26.4,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2005-Q2",
+      "household": 17.6,
+      "corporate": 101.1,
+      "centralGovernment": 18,
+      "localGovernment": 8.6,
+      "government": 26.6,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2005-Q3",
+      "household": 17.3,
+      "corporate": 100.1,
+      "centralGovernment": 17.9,
+      "localGovernment": 8.8,
+      "government": 26.7,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2005-Q4",
+      "household": 16.6,
+      "corporate": 98.4,
+      "centralGovernment": 17.2,
+      "localGovernment": 9,
+      "government": 26.2,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2006-Q1",
+      "household": 17.2,
+      "corporate": 100.5,
+      "centralGovernment": 16.2,
+      "localGovernment": 9.3,
+      "government": 25.5,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2006-Q2",
+      "household": 17.5,
+      "corporate": 100.9,
+      "centralGovernment": 15.6,
+      "localGovernment": 9.5,
+      "government": 25.1,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2006-Q3",
+      "household": 17.6,
+      "corporate": 99.7,
+      "centralGovernment": 15.6,
+      "localGovernment": 9.7,
+      "government": 25.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2006-Q4",
+      "household": 17.2,
+      "corporate": 97.6,
+      "centralGovernment": 15.7,
+      "localGovernment": 9.9,
+      "government": 25.6,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2007-Q1",
+      "household": 18.1,
+      "corporate": 99.4,
+      "centralGovernment": 14.6,
+      "localGovernment": 10.1,
+      "government": 24.7,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2007-Q2",
+      "household": 18.6,
+      "corporate": 99.7,
+      "centralGovernment": 14.6,
+      "localGovernment": 10.2,
+      "government": 24.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2007-Q3",
+      "household": 19.1,
+      "corporate": 98,
+      "centralGovernment": 16.6,
+      "localGovernment": 10.3,
+      "government": 26.9,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2007-Q4",
+      "household": 18.5,
+      "corporate": 94.6,
+      "centralGovernment": 19,
+      "localGovernment": 10.3,
+      "government": 29.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2008-Q1",
+      "household": 18.5,
+      "corporate": 96.3,
+      "centralGovernment": 18.2,
+      "localGovernment": 10.4,
+      "government": 28.6,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2008-Q2",
+      "household": 18.4,
+      "corporate": 95.9,
+      "centralGovernment": 17.4,
+      "localGovernment": 10.4,
+      "government": 27.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2008-Q3",
+      "household": 18.1,
+      "corporate": 95,
+      "centralGovernment": 16.8,
+      "localGovernment": 10.5,
+      "government": 27.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2008-Q4",
+      "household": 17.6,
+      "corporate": 93.7,
+      "centralGovernment": 16.4,
+      "localGovernment": 10.8,
+      "government": 27.2,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2009-Q1",
+      "household": 18.7,
+      "corporate": 106.1,
+      "centralGovernment": 16.2,
+      "localGovernment": 11.8,
+      "government": 28,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2009-Q2",
+      "household": 20.3,
+      "corporate": 113.5,
+      "centralGovernment": 16.6,
+      "localGovernment": 13.5,
+      "government": 30.1,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2009-Q3",
+      "household": 22.1,
+      "corporate": 114.8,
+      "centralGovernment": 17.2,
+      "localGovernment": 14.8,
+      "government": 32,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2009-Q4",
+      "household": 23.1,
+      "corporate": 113.6,
+      "centralGovernment": 17,
+      "localGovernment": 15.9,
+      "government": 32.9,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2010-Q1",
+      "household": 25.3,
+      "corporate": 115.5,
+      "centralGovernment": 16.3,
+      "localGovernment": 15.9,
+      "government": 32.2,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2010-Q2",
+      "household": 26.4,
+      "corporate": 116.9,
+      "centralGovernment": 16.4,
+      "localGovernment": 15.9,
+      "government": 32.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2010-Q3",
+      "household": 26.8,
+      "corporate": 118,
+      "centralGovernment": 16.4,
+      "localGovernment": 16.1,
+      "government": 32.5,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2010-Q4",
+      "household": 26.9,
+      "corporate": 118.4,
+      "centralGovernment": 16.1,
+      "localGovernment": 16,
+      "government": 32.1,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2011-Q1",
+      "household": 27.4,
+      "corporate": 117.6,
+      "centralGovernment": 15.4,
+      "localGovernment": 16.1,
+      "government": 31.5,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2011-Q2",
+      "household": 27.7,
+      "corporate": 117.7,
+      "centralGovernment": 15.3,
+      "localGovernment": 16,
+      "government": 31.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2011-Q3",
+      "household": 27.7,
+      "corporate": 116.1,
+      "centralGovernment": 15,
+      "localGovernment": 16.3,
+      "government": 31.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2011-Q4",
+      "household": 27.5,
+      "corporate": 116.1,
+      "centralGovernment": 14.5,
+      "localGovernment": 16.5,
+      "government": 31,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2012-Q1",
+      "household": 27.7,
+      "corporate": 119.9,
+      "centralGovernment": 14.1,
+      "localGovernment": 16.7,
+      "government": 30.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2012-Q2",
+      "household": 28.3,
+      "corporate": 122.9,
+      "centralGovernment": 14.1,
+      "localGovernment": 16.7,
+      "government": 30.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2012-Q3",
+      "household": 29.1,
+      "corporate": 125,
+      "centralGovernment": 14.3,
+      "localGovernment": 17.3,
+      "government": 31.6,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2012-Q4",
+      "household": 29.5,
+      "corporate": 126,
+      "centralGovernment": 14.2,
+      "localGovernment": 17.6,
+      "government": 31.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2013-Q1",
+      "household": 30.6,
+      "corporate": 130.2,
+      "centralGovernment": 13.8,
+      "localGovernment": 18.3,
+      "government": 32.1,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2013-Q2",
+      "household": 31.8,
+      "corporate": 132.1,
+      "centralGovernment": 14.2,
+      "localGovernment": 19,
+      "government": 33.2,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2013-Q3",
+      "household": 32.7,
+      "corporate": 133.2,
+      "centralGovernment": 14.3,
+      "localGovernment": 20,
+      "government": 34.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2013-Q4",
+      "household": 32.9,
+      "corporate": 133.5,
+      "centralGovernment": 14.4,
+      "localGovernment": 20.7,
+      "government": 35.1,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2014-Q1",
+      "household": 33.8,
+      "corporate": 138.1,
+      "centralGovernment": 14,
+      "localGovernment": 21.3,
+      "government": 35.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2014-Q2",
+      "household": 34.6,
+      "corporate": 141.1,
+      "centralGovernment": 14.2,
+      "localGovernment": 22,
+      "government": 36.2,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2014-Q3",
+      "household": 35.1,
+      "corporate": 139.4,
+      "centralGovernment": 14.4,
+      "localGovernment": 22.9,
+      "government": 37.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2014-Q4",
+      "household": 35.3,
+      "corporate": 139.8,
+      "centralGovernment": 14.6,
+      "localGovernment": 23.5,
+      "government": 38.1,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2015-Q1",
+      "household": 36.1,
+      "corporate": 137.7,
+      "centralGovernment": 14.3,
+      "localGovernment": 21.3,
+      "government": 35.6,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2015-Q2",
+      "household": 37,
+      "corporate": 146.4,
+      "centralGovernment": 14.6,
+      "localGovernment": 19.2,
+      "government": 33.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2015-Q3",
+      "household": 37.9,
+      "corporate": 147.5,
+      "centralGovernment": 15,
+      "localGovernment": 20.7,
+      "government": 35.7,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2015-Q4",
+      "household": 38.5,
+      "corporate": 148.5,
+      "centralGovernment": 15.2,
+      "localGovernment": 21,
+      "government": 36.2,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2016-Q1",
+      "household": 39.6,
+      "corporate": 154.3,
+      "centralGovernment": 15,
+      "localGovernment": 19.5,
+      "government": 34.5,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2016-Q2",
+      "household": 41.2,
+      "corporate": 153.8,
+      "centralGovernment": 15.4,
+      "localGovernment": 20.7,
+      "government": 36.1,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2016-Q3",
+      "household": 42.8,
+      "corporate": 153.6,
+      "centralGovernment": 15.8,
+      "localGovernment": 20.7,
+      "government": 36.5,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2016-Q4",
+      "household": 43.8,
+      "corporate": 154.4,
+      "centralGovernment": 15.7,
+      "localGovernment": 20.1,
+      "government": 35.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2017-Q1",
+      "household": 45.1,
+      "corporate": 157.7,
+      "centralGovernment": 15.4,
+      "localGovernment": 18.8,
+      "government": 34.2,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2017-Q2",
+      "household": 46.4,
+      "corporate": 156.3,
+      "centralGovernment": 15.5,
+      "localGovernment": 19.2,
+      "government": 34.7,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2017-Q3",
+      "household": 47.5,
+      "corporate": 155.1,
+      "centralGovernment": 15.7,
+      "localGovernment": 19.7,
+      "government": 35.4,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2017-Q4",
+      "household": 47.8,
+      "corporate": 153.8,
+      "centralGovernment": 15.9,
+      "localGovernment": 19.4,
+      "government": 35.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2018-Q1",
+      "household": 48.7,
+      "corporate": 154.1,
+      "centralGovernment": 15.5,
+      "localGovernment": 19.1,
+      "government": 34.6,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2018-Q2",
+      "household": 49.6,
+      "corporate": 152.1,
+      "centralGovernment": 15.5,
+      "localGovernment": 18.9,
+      "government": 34.4,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2018-Q3",
+      "household": 50.7,
+      "corporate": 150,
+      "centralGovernment": 15.8,
+      "localGovernment": 20,
+      "government": 35.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2018-Q4",
+      "household": 51.2,
+      "corporate": 147.9,
+      "centralGovernment": 16,
+      "localGovernment": 19.6,
+      "government": 35.6,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2019-Q1",
+      "household": 52.2,
+      "corporate": 152,
+      "centralGovernment": 15.7,
+      "localGovernment": 20.6,
+      "government": 36.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2019-Q2",
+      "household": 53.3,
+      "corporate": 150.6,
+      "centralGovernment": 15.9,
+      "localGovernment": 21.2,
+      "government": 37.1,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2019-Q3",
+      "household": 54.3,
+      "corporate": 149.7,
+      "centralGovernment": 16.2,
+      "localGovernment": 21.7,
+      "government": 37.9,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2019-Q4",
+      "household": 55,
+      "corporate": 149,
+      "centralGovernment": 16.7,
+      "localGovernment": 21.2,
+      "government": 37.9,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2020-Q1",
+      "household": 56.9,
+      "corporate": 158.9,
+      "centralGovernment": 17,
+      "localGovernment": 23,
+      "government": 40,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2020-Q2",
+      "household": 58.8,
+      "corporate": 162,
+      "centralGovernment": 17.8,
+      "localGovernment": 24.1,
+      "government": 41.9,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2020-Q3",
+      "household": 60.5,
+      "corporate": 161.5,
+      "centralGovernment": 19,
+      "localGovernment": 25.2,
+      "government": 44.2,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2020-Q4",
+      "household": 61.1,
+      "corporate": 159.2,
+      "centralGovernment": 20.2,
+      "localGovernment": 24.8,
+      "government": 45,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2021-Q1",
+      "household": 60.9,
+      "corporate": 158,
+      "centralGovernment": 19.4,
+      "localGovernment": 24.3,
+      "government": 43.7,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2021-Q2",
+      "household": 60.8,
+      "corporate": 155.6,
+      "centralGovernment": 19.3,
+      "localGovernment": 24.7,
+      "government": 44,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2021-Q3",
+      "household": 60.8,
+      "corporate": 154,
+      "centralGovernment": 19.4,
+      "localGovernment": 25.3,
+      "government": 44.7,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2021-Q4",
+      "household": 60.6,
+      "corporate": 150.9,
+      "centralGovernment": 19.8,
+      "localGovernment": 26,
+      "government": 45.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2022-Q1",
+      "household": 60.5,
+      "corporate": 155,
+      "centralGovernment": 19.4,
+      "localGovernment": 26.9,
+      "government": 46.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2022-Q2",
+      "household": 60.7,
+      "corporate": 157,
+      "centralGovernment": 19.8,
+      "localGovernment": 28.8,
+      "government": 48.6,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2022-Q3",
+      "household": 60.9,
+      "corporate": 157.7,
+      "centralGovernment": 20.5,
+      "localGovernment": 28.3,
+      "government": 48.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2022-Q4",
+      "household": 60.7,
+      "corporate": 157.7,
+      "centralGovernment": 21,
+      "localGovernment": 28.4,
+      "government": 49.4,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2023-Q1",
+      "household": 62,
+      "corporate": 163.7,
+      "centralGovernment": 20.9,
+      "localGovernment": 29.5,
+      "government": 50.4,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2023-Q2",
+      "household": 62,
+      "corporate": 164.1,
+      "centralGovernment": 21,
+      "localGovernment": 29.8,
+      "government": 50.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2023-Q3",
+      "household": 62.2,
+      "corporate": 164.9,
+      "centralGovernment": 22.1,
+      "localGovernment": 30.4,
+      "government": 52.5,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2023-Q4",
+      "household": 61.9,
+      "corporate": 163.9,
+      "centralGovernment": 23.2,
+      "localGovernment": 31.5,
+      "government": 54.7,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2024-Q1",
+      "household": 62.3,
+      "corporate": 169.5,
+      "centralGovernment": 23.4,
+      "localGovernment": 31.9,
+      "government": 55.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2024-Q2",
+      "household": 61.8,
+      "corporate": 169.7,
+      "centralGovernment": 24,
+      "localGovernment": 32.3,
+      "government": 56.3,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2024-Q3",
+      "household": 61.6,
+      "corporate": 169.9,
+      "centralGovernment": 25.1,
+      "localGovernment": 33.6,
+      "government": 58.7,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2024-Q4",
+      "household": 61.4,
+      "corporate": 168.4,
+      "centralGovernment": 25.6,
+      "localGovernment": 35.2,
+      "government": 60.8,
+      "sourceUrl": "http://114.115.232.154:8080/"
+    },
+    {
+      "period": "2025-Q1",
+      "household": 61.5,
+      "corporate": 173.7,
+      "centralGovernment": 26.5,
+      "localGovernment": 36.8,
+      "government": 63.3,
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4728"
+    },
+    {
+      "period": "2025-Q2",
+      "household": 61.1,
+      "corporate": 174,
+      "centralGovernment": 27.6,
+      "localGovernment": 37.8,
+      "government": 65.3,
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4728"
+    },
+    {
+      "period": "2025-Q3",
+      "household": 60.4,
+      "corporate": 174.4,
+      "centralGovernment": 28.8,
+      "localGovernment": 38.7,
+      "government": 67.5,
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4788"
+    },
+    {
+      "period": "2025-Q4",
+      "household": 59.4,
+      "corporate": 174.7,
+      "centralGovernment": 29.4,
+      "localGovernment": 39.1,
+      "government": 68.5,
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4896"
+    },
+    {
+      "period": "2026-Q1",
+      "household": 59,
+      "corporate": 180,
+      "centralGovernment": 29.9,
+      "localGovernment": 40.4,
+      "government": 70.3,
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4896"
+    },
+    {
+      "period": "2026-Q2",
+      "household": 57.7,
+      "corporate": 179.5,
+      "centralGovernment": 30.5,
+      "localGovernment": 40.4,
+      "government": 71,
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976"
+    }
+  ],
+  "bis": {
+    "corporateAdvanced": {
+      "key": "Q.5R.N.A.M.770.A",
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q.5R.N.A.M.770.A?format=csv&startPeriod=2011-Q1",
+      "rows": [
+        {
+          "period": "2011-Q1",
+          "value": 93.1
+        },
+        {
+          "period": "2011-Q2",
+          "value": 92.5
+        },
+        {
+          "period": "2011-Q3",
+          "value": 88.5
+        },
+        {
+          "period": "2011-Q4",
+          "value": 87.2
+        },
+        {
+          "period": "2012-Q1",
+          "value": 88.7
+        },
+        {
+          "period": "2012-Q2",
+          "value": 87.6
+        },
+        {
+          "period": "2012-Q3",
+          "value": 90.9
+        },
+        {
+          "period": "2012-Q4",
+          "value": 90.5
+        },
+        {
+          "period": "2013-Q1",
+          "value": 88.1
+        },
+        {
+          "period": "2013-Q2",
+          "value": 88.5
+        },
+        {
+          "period": "2013-Q3",
+          "value": 90.7
+        },
+        {
+          "period": "2013-Q4",
+          "value": 90.4
+        },
+        {
+          "period": "2014-Q1",
+          "value": 90.8
+        },
+        {
+          "period": "2014-Q2",
+          "value": 90.7
+        },
+        {
+          "period": "2014-Q3",
+          "value": 86.4
+        },
+        {
+          "period": "2014-Q4",
+          "value": 85.2
+        },
+        {
+          "period": "2015-Q1",
+          "value": 84.3
+        },
+        {
+          "period": "2015-Q2",
+          "value": 87.7
+        },
+        {
+          "period": "2015-Q3",
+          "value": 89.1
+        },
+        {
+          "period": "2015-Q4",
+          "value": 89.7
+        },
+        {
+          "period": "2016-Q1",
+          "value": 93.2
+        },
+        {
+          "period": "2016-Q2",
+          "value": 93.4
+        },
+        {
+          "period": "2016-Q3",
+          "value": 93.8
+        },
+        {
+          "period": "2016-Q4",
+          "value": 89.5
+        },
+        {
+          "period": "2017-Q1",
+          "value": 91.8
+        },
+        {
+          "period": "2017-Q2",
+          "value": 94.5
+        },
+        {
+          "period": "2017-Q3",
+          "value": 95.5
+        },
+        {
+          "period": "2017-Q4",
+          "value": 95.8
+        },
+        {
+          "period": "2018-Q1",
+          "value": 95.9
+        },
+        {
+          "period": "2018-Q2",
+          "value": 92.6
+        },
+        {
+          "period": "2018-Q3",
+          "value": 92.1
+        },
+        {
+          "period": "2018-Q4",
+          "value": 91.9
+        },
+        {
+          "period": "2019-Q1",
+          "value": 92.7
+        },
+        {
+          "period": "2019-Q2",
+          "value": 94.4
+        },
+        {
+          "period": "2019-Q3",
+          "value": 93.2
+        },
+        {
+          "period": "2019-Q4",
+          "value": 94.9
+        },
+        {
+          "period": "2020-Q1",
+          "value": 95.7
+        },
+        {
+          "period": "2020-Q2",
+          "value": 102.7
+        },
+        {
+          "period": "2020-Q3",
+          "value": 105.4
+        },
+        {
+          "period": "2020-Q4",
+          "value": 108.4
+        },
+        {
+          "period": "2021-Q1",
+          "value": 105.1
+        },
+        {
+          "period": "2021-Q2",
+          "value": 102.3
+        },
+        {
+          "period": "2021-Q3",
+          "value": 99.2
+        },
+        {
+          "period": "2021-Q4",
+          "value": 97.8
+        },
+        {
+          "period": "2022-Q1",
+          "value": 96.5
+        },
+        {
+          "period": "2022-Q2",
+          "value": 92.7
+        },
+        {
+          "period": "2022-Q3",
+          "value": 90.2
+        },
+        {
+          "period": "2022-Q4",
+          "value": 95.4
+        },
+        {
+          "period": "2023-Q1",
+          "value": 95.5
+        },
+        {
+          "period": "2023-Q2",
+          "value": 93.9
+        },
+        {
+          "period": "2023-Q3",
+          "value": 91.2
+        },
+        {
+          "period": "2023-Q4",
+          "value": 92.6
+        },
+        {
+          "period": "2024-Q1",
+          "value": 90.6
+        },
+        {
+          "period": "2024-Q2",
+          "value": 89.8
+        },
+        {
+          "period": "2024-Q3",
+          "value": 92.2
+        },
+        {
+          "period": "2024-Q4",
+          "value": 87.4
+        },
+        {
+          "period": "2025-Q1",
+          "value": 89.1
+        },
+        {
+          "period": "2025-Q2",
+          "value": 91.8
+        },
+        {
+          "period": "2025-Q3",
+          "value": 90.7
+        },
+        {
+          "period": "2025-Q4",
+          "value": 89.7
+        },
+        {
+          "period": "2026-Q1",
+          "value": 87.8
+        }
+      ]
+    },
+    "corporateEmerging": {
+      "key": "Q.4T.N.A.M.770.A",
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q.4T.N.A.M.770.A?format=csv&startPeriod=2011-Q1",
+      "rows": [
+        {
+          "period": "2011-Q1",
+          "value": 69.2
+        },
+        {
+          "period": "2011-Q2",
+          "value": 68.8
+        },
+        {
+          "period": "2011-Q3",
+          "value": 65.8
+        },
+        {
+          "period": "2011-Q4",
+          "value": 67
+        },
+        {
+          "period": "2012-Q1",
+          "value": 69.7
+        },
+        {
+          "period": "2012-Q2",
+          "value": 69.8
+        },
+        {
+          "period": "2012-Q3",
+          "value": 73.5
+        },
+        {
+          "period": "2012-Q4",
+          "value": 75.4
+        },
+        {
+          "period": "2013-Q1",
+          "value": 78
+        },
+        {
+          "period": "2013-Q2",
+          "value": 78.6
+        },
+        {
+          "period": "2013-Q3",
+          "value": 79.8
+        },
+        {
+          "period": "2013-Q4",
+          "value": 81.4
+        },
+        {
+          "period": "2014-Q1",
+          "value": 82.8
+        },
+        {
+          "period": "2014-Q2",
+          "value": 85.8
+        },
+        {
+          "period": "2014-Q3",
+          "value": 85.5
+        },
+        {
+          "period": "2014-Q4",
+          "value": 85.2
+        },
+        {
+          "period": "2015-Q1",
+          "value": 88.1
+        },
+        {
+          "period": "2015-Q2",
+          "value": 91.5
+        },
+        {
+          "period": "2015-Q3",
+          "value": 92.6
+        },
+        {
+          "period": "2015-Q4",
+          "value": 95.5
+        },
+        {
+          "period": "2016-Q1",
+          "value": 100.7
+        },
+        {
+          "period": "2016-Q2",
+          "value": 99.3
+        },
+        {
+          "period": "2016-Q3",
+          "value": 98.4
+        },
+        {
+          "period": "2016-Q4",
+          "value": 95.3
+        },
+        {
+          "period": "2017-Q1",
+          "value": 96.4
+        },
+        {
+          "period": "2017-Q2",
+          "value": 96.4
+        },
+        {
+          "period": "2017-Q3",
+          "value": 96.4
+        },
+        {
+          "period": "2017-Q4",
+          "value": 96.4
+        },
+        {
+          "period": "2018-Q1",
+          "value": 96.8
+        },
+        {
+          "period": "2018-Q2",
+          "value": 89.8
+        },
+        {
+          "period": "2018-Q3",
+          "value": 86.2
+        },
+        {
+          "period": "2018-Q4",
+          "value": 86.7
+        },
+        {
+          "period": "2019-Q1",
+          "value": 91.3
+        },
+        {
+          "period": "2019-Q2",
+          "value": 90.6
+        },
+        {
+          "period": "2019-Q3",
+          "value": 87.3
+        },
+        {
+          "period": "2019-Q4",
+          "value": 89.2
+        },
+        {
+          "period": "2020-Q1",
+          "value": 90.1
+        },
+        {
+          "period": "2020-Q2",
+          "value": 95.9
+        },
+        {
+          "period": "2020-Q3",
+          "value": 99.8
+        },
+        {
+          "period": "2020-Q4",
+          "value": 102.8
+        },
+        {
+          "period": "2021-Q1",
+          "value": 100.5
+        },
+        {
+          "period": "2021-Q2",
+          "value": 97.3
+        },
+        {
+          "period": "2021-Q3",
+          "value": 93.9
+        },
+        {
+          "period": "2021-Q4",
+          "value": 92.1
+        },
+        {
+          "period": "2022-Q1",
+          "value": 93.3
+        },
+        {
+          "period": "2022-Q2",
+          "value": 90.7
+        },
+        {
+          "period": "2022-Q3",
+          "value": 86
+        },
+        {
+          "period": "2022-Q4",
+          "value": 88.1
+        },
+        {
+          "period": "2023-Q1",
+          "value": 91.7
+        },
+        {
+          "period": "2023-Q2",
+          "value": 88.4
+        },
+        {
+          "period": "2023-Q3",
+          "value": 88.6
+        },
+        {
+          "period": "2023-Q4",
+          "value": 91
+        },
+        {
+          "period": "2024-Q1",
+          "value": 92.5
+        },
+        {
+          "period": "2024-Q2",
+          "value": 93
+        },
+        {
+          "period": "2024-Q3",
+          "value": 95.9
+        },
+        {
+          "period": "2024-Q4",
+          "value": 91.9
+        },
+        {
+          "period": "2025-Q1",
+          "value": 95.9
+        },
+        {
+          "period": "2025-Q2",
+          "value": 97.9
+        },
+        {
+          "period": "2025-Q3",
+          "value": 98
+        },
+        {
+          "period": "2025-Q4",
+          "value": 99.2
+        },
+        {
+          "period": "2026-Q1",
+          "value": 100.5
+        }
+      ]
+    },
+    "householdAdvanced": {
+      "key": "Q.5R.H.A.M.770.A",
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q.5R.H.A.M.770.A?format=csv&startPeriod=2011-Q1",
+      "rows": [
+        {
+          "period": "2011-Q1",
+          "value": 80.6
+        },
+        {
+          "period": "2011-Q2",
+          "value": 79.8
+        },
+        {
+          "period": "2011-Q3",
+          "value": 76
+        },
+        {
+          "period": "2011-Q4",
+          "value": 74.9
+        },
+        {
+          "period": "2012-Q1",
+          "value": 75.1
+        },
+        {
+          "period": "2012-Q2",
+          "value": 74.3
+        },
+        {
+          "period": "2012-Q3",
+          "value": 76.3
+        },
+        {
+          "period": "2012-Q4",
+          "value": 76
+        },
+        {
+          "period": "2013-Q1",
+          "value": 74.2
+        },
+        {
+          "period": "2013-Q2",
+          "value": 73.9
+        },
+        {
+          "period": "2013-Q3",
+          "value": 75.3
+        },
+        {
+          "period": "2013-Q4",
+          "value": 75.5
+        },
+        {
+          "period": "2014-Q1",
+          "value": 75.2
+        },
+        {
+          "period": "2014-Q2",
+          "value": 75
+        },
+        {
+          "period": "2014-Q3",
+          "value": 71.5
+        },
+        {
+          "period": "2014-Q4",
+          "value": 70.3
+        },
+        {
+          "period": "2015-Q1",
+          "value": 68.5
+        },
+        {
+          "period": "2015-Q2",
+          "value": 71.4
+        },
+        {
+          "period": "2015-Q3",
+          "value": 72.2
+        },
+        {
+          "period": "2015-Q4",
+          "value": 72.5
+        },
+        {
+          "period": "2016-Q1",
+          "value": 74.3
+        },
+        {
+          "period": "2016-Q2",
+          "value": 74
+        },
+        {
+          "period": "2016-Q3",
+          "value": 74.2
+        },
+        {
+          "period": "2016-Q4",
+          "value": 71.5
+        },
+        {
+          "period": "2017-Q1",
+          "value": 72.6
+        },
+        {
+          "period": "2017-Q2",
+          "value": 74.5
+        },
+        {
+          "period": "2017-Q3",
+          "value": 75.2
+        },
+        {
+          "period": "2017-Q4",
+          "value": 75.1
+        },
+        {
+          "period": "2018-Q1",
+          "value": 74.5
+        },
+        {
+          "period": "2018-Q2",
+          "value": 71.6
+        },
+        {
+          "period": "2018-Q3",
+          "value": 71.4
+        },
+        {
+          "period": "2018-Q4",
+          "value": 71.4
+        },
+        {
+          "period": "2019-Q1",
+          "value": 71.4
+        },
+        {
+          "period": "2019-Q2",
+          "value": 72.4
+        },
+        {
+          "period": "2019-Q3",
+          "value": 71.5
+        },
+        {
+          "period": "2019-Q4",
+          "value": 73
+        },
+        {
+          "period": "2020-Q1",
+          "value": 71.3
+        },
+        {
+          "period": "2020-Q2",
+          "value": 74.5
+        },
+        {
+          "period": "2020-Q3",
+          "value": 76.9
+        },
+        {
+          "period": "2020-Q4",
+          "value": 79.9
+        },
+        {
+          "period": "2021-Q1",
+          "value": 77.5
+        },
+        {
+          "period": "2021-Q2",
+          "value": 76.3
+        },
+        {
+          "period": "2021-Q3",
+          "value": 74.4
+        },
+        {
+          "period": "2021-Q4",
+          "value": 73.6
+        },
+        {
+          "period": "2022-Q1",
+          "value": 72.7
+        },
+        {
+          "period": "2022-Q2",
+          "value": 70.5
+        },
+        {
+          "period": "2022-Q3",
+          "value": 68.8
+        },
+        {
+          "period": "2022-Q4",
+          "value": 72.4
+        },
+        {
+          "period": "2023-Q1",
+          "value": 72
+        },
+        {
+          "period": "2023-Q2",
+          "value": 71.3
+        },
+        {
+          "period": "2023-Q3",
+          "value": 69.6
+        },
+        {
+          "period": "2023-Q4",
+          "value": 70.4
+        },
+        {
+          "period": "2024-Q1",
+          "value": 68.7
+        },
+        {
+          "period": "2024-Q2",
+          "value": 68.3
+        },
+        {
+          "period": "2024-Q3",
+          "value": 69.8
+        },
+        {
+          "period": "2024-Q4",
+          "value": 66.4
+        },
+        {
+          "period": "2025-Q1",
+          "value": 67.3
+        },
+        {
+          "period": "2025-Q2",
+          "value": 69.2
+        },
+        {
+          "period": "2025-Q3",
+          "value": 68.5
+        },
+        {
+          "period": "2025-Q4",
+          "value": 67.7
+        },
+        {
+          "period": "2026-Q1",
+          "value": 66
+        }
+      ]
+    },
+    "householdEmerging": {
+      "key": "Q.4T.H.A.M.770.A",
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q.4T.H.A.M.770.A?format=csv&startPeriod=2011-Q1",
+      "rows": [
+        {
+          "period": "2011-Q1",
+          "value": 25.7
+        },
+        {
+          "period": "2011-Q2",
+          "value": 25.7
+        },
+        {
+          "period": "2011-Q3",
+          "value": 24.1
+        },
+        {
+          "period": "2011-Q4",
+          "value": 24.1
+        },
+        {
+          "period": "2012-Q1",
+          "value": 24.9
+        },
+        {
+          "period": "2012-Q2",
+          "value": 24.6
+        },
+        {
+          "period": "2012-Q3",
+          "value": 26.1
+        },
+        {
+          "period": "2012-Q4",
+          "value": 26.6
+        },
+        {
+          "period": "2013-Q1",
+          "value": 27.3
+        },
+        {
+          "period": "2013-Q2",
+          "value": 27.4
+        },
+        {
+          "period": "2013-Q3",
+          "value": 27.8
+        },
+        {
+          "period": "2013-Q4",
+          "value": 28.2
+        },
+        {
+          "period": "2014-Q1",
+          "value": 28.6
+        },
+        {
+          "period": "2014-Q2",
+          "value": 29.4
+        },
+        {
+          "period": "2014-Q3",
+          "value": 29.1
+        },
+        {
+          "period": "2014-Q4",
+          "value": 28.9
+        },
+        {
+          "period": "2015-Q1",
+          "value": 29.2
+        },
+        {
+          "period": "2015-Q2",
+          "value": 30.3
+        },
+        {
+          "period": "2015-Q3",
+          "value": 30.2
+        },
+        {
+          "period": "2015-Q4",
+          "value": 31
+        },
+        {
+          "period": "2016-Q1",
+          "value": 32.9
+        },
+        {
+          "period": "2016-Q2",
+          "value": 33.9
+        },
+        {
+          "period": "2016-Q3",
+          "value": 34.8
+        },
+        {
+          "period": "2016-Q4",
+          "value": 34.6
+        },
+        {
+          "period": "2017-Q1",
+          "value": 35.5
+        },
+        {
+          "period": "2017-Q2",
+          "value": 36.7
+        },
+        {
+          "period": "2017-Q3",
+          "value": 37.7
+        },
+        {
+          "period": "2017-Q4",
+          "value": 38.5
+        },
+        {
+          "period": "2018-Q1",
+          "value": 39.1
+        },
+        {
+          "period": "2018-Q2",
+          "value": 37.2
+        },
+        {
+          "period": "2018-Q3",
+          "value": 36.9
+        },
+        {
+          "period": "2018-Q4",
+          "value": 38.2
+        },
+        {
+          "period": "2019-Q1",
+          "value": 40.3
+        },
+        {
+          "period": "2019-Q2",
+          "value": 41.1
+        },
+        {
+          "period": "2019-Q3",
+          "value": 40.5
+        },
+        {
+          "period": "2019-Q4",
+          "value": 42.3
+        },
+        {
+          "period": "2020-Q1",
+          "value": 41.4
+        },
+        {
+          "period": "2020-Q2",
+          "value": 44.3
+        },
+        {
+          "period": "2020-Q3",
+          "value": 47.5
+        },
+        {
+          "period": "2020-Q4",
+          "value": 50.5
+        },
+        {
+          "period": "2021-Q1",
+          "value": 49.4
+        },
+        {
+          "period": "2021-Q2",
+          "value": 48.6
+        },
+        {
+          "period": "2021-Q3",
+          "value": 47.4
+        },
+        {
+          "period": "2021-Q4",
+          "value": 47.6
+        },
+        {
+          "period": "2022-Q1",
+          "value": 47.5
+        },
+        {
+          "period": "2022-Q2",
+          "value": 45.4
+        },
+        {
+          "period": "2022-Q3",
+          "value": 43.3
+        },
+        {
+          "period": "2022-Q4",
+          "value": 44.7
+        },
+        {
+          "period": "2023-Q1",
+          "value": 45.7
+        },
+        {
+          "period": "2023-Q2",
+          "value": 44.3
+        },
+        {
+          "period": "2023-Q3",
+          "value": 44.5
+        },
+        {
+          "period": "2023-Q4",
+          "value": 45.8
+        },
+        {
+          "period": "2024-Q1",
+          "value": 45.6
+        },
+        {
+          "period": "2024-Q2",
+          "value": 45.2
+        },
+        {
+          "period": "2024-Q3",
+          "value": 46.4
+        },
+        {
+          "period": "2024-Q4",
+          "value": 44.5
+        },
+        {
+          "period": "2025-Q1",
+          "value": 45.4
+        },
+        {
+          "period": "2025-Q2",
+          "value": 46
+        },
+        {
+          "period": "2025-Q3",
+          "value": 45.6
+        },
+        {
+          "period": "2025-Q4",
+          "value": 45.6
+        },
+        {
+          "period": "2026-Q1",
+          "value": 45
+        }
+      ]
+    },
+    "governmentAdvanced": {
+      "key": "Q.5R.G.A.N.770.A",
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q.5R.G.A.N.770.A?format=csv&startPeriod=2011-Q1",
+      "rows": [
+        {
+          "period": "2011-Q1",
+          "value": 93.9
+        },
+        {
+          "period": "2011-Q2",
+          "value": 94.2
+        },
+        {
+          "period": "2011-Q3",
+          "value": 92.3
+        },
+        {
+          "period": "2011-Q4",
+          "value": 92.1
+        },
+        {
+          "period": "2012-Q1",
+          "value": 93
+        },
+        {
+          "period": "2012-Q2",
+          "value": 93.8
+        },
+        {
+          "period": "2012-Q3",
+          "value": 97.1
+        },
+        {
+          "period": "2012-Q4",
+          "value": 96.4
+        },
+        {
+          "period": "2013-Q1",
+          "value": 94.8
+        },
+        {
+          "period": "2013-Q2",
+          "value": 94.6
+        },
+        {
+          "period": "2013-Q3",
+          "value": 96.4
+        },
+        {
+          "period": "2013-Q4",
+          "value": 96.3
+        },
+        {
+          "period": "2014-Q1",
+          "value": 97.1
+        },
+        {
+          "period": "2014-Q2",
+          "value": 97
+        },
+        {
+          "period": "2014-Q3",
+          "value": 92.4
+        },
+        {
+          "period": "2014-Q4",
+          "value": 91
+        },
+        {
+          "period": "2015-Q1",
+          "value": 89.4
+        },
+        {
+          "period": "2015-Q2",
+          "value": 92.5
+        },
+        {
+          "period": "2015-Q3",
+          "value": 94.2
+        },
+        {
+          "period": "2015-Q4",
+          "value": 95.5
+        },
+        {
+          "period": "2016-Q1",
+          "value": 99.2
+        },
+        {
+          "period": "2016-Q2",
+          "value": 99.9
+        },
+        {
+          "period": "2016-Q3",
+          "value": 99.8
+        },
+        {
+          "period": "2016-Q4",
+          "value": 95
+        },
+        {
+          "period": "2017-Q1",
+          "value": 96.4
+        },
+        {
+          "period": "2017-Q2",
+          "value": 98.1
+        },
+        {
+          "period": "2017-Q3",
+          "value": 98.6
+        },
+        {
+          "period": "2017-Q4",
+          "value": 98
+        },
+        {
+          "period": "2018-Q1",
+          "value": 98.7
+        },
+        {
+          "period": "2018-Q2",
+          "value": 94.5
+        },
+        {
+          "period": "2018-Q3",
+          "value": 93.9
+        },
+        {
+          "period": "2018-Q4",
+          "value": 94.6
+        },
+        {
+          "period": "2019-Q1",
+          "value": 95.2
+        },
+        {
+          "period": "2019-Q2",
+          "value": 96.1
+        },
+        {
+          "period": "2019-Q3",
+          "value": 95.6
+        },
+        {
+          "period": "2019-Q4",
+          "value": 97
+        },
+        {
+          "period": "2020-Q1",
+          "value": 97.3
+        },
+        {
+          "period": "2020-Q2",
+          "value": 109.9
+        },
+        {
+          "period": "2020-Q3",
+          "value": 114.1
+        },
+        {
+          "period": "2020-Q4",
+          "value": 118
+        },
+        {
+          "period": "2021-Q1",
+          "value": 114.4
+        },
+        {
+          "period": "2021-Q2",
+          "value": 110.6
+        },
+        {
+          "period": "2021-Q3",
+          "value": 107.3
+        },
+        {
+          "period": "2021-Q4",
+          "value": 106
+        },
+        {
+          "period": "2022-Q1",
+          "value": 105
+        },
+        {
+          "period": "2022-Q2",
+          "value": 100.7
+        },
+        {
+          "period": "2022-Q3",
+          "value": 98.2
+        },
+        {
+          "period": "2022-Q4",
+          "value": 103.5
+        },
+        {
+          "period": "2023-Q1",
+          "value": 104.2
+        },
+        {
+          "period": "2023-Q2",
+          "value": 103.2
+        },
+        {
+          "period": "2023-Q3",
+          "value": 101.7
+        },
+        {
+          "period": "2023-Q4",
+          "value": 104.1
+        },
+        {
+          "period": "2024-Q1",
+          "value": 102.7
+        },
+        {
+          "period": "2024-Q2",
+          "value": 101.7
+        },
+        {
+          "period": "2024-Q3",
+          "value": 105.3
+        },
+        {
+          "period": "2024-Q4",
+          "value": 101.7
+        },
+        {
+          "period": "2025-Q1",
+          "value": 104
+        },
+        {
+          "period": "2025-Q2",
+          "value": 106.1
+        },
+        {
+          "period": "2025-Q3",
+          "value": 106.3
+        },
+        {
+          "period": "2025-Q4",
+          "value": 105.3
+        },
+        {
+          "period": "2026-Q1",
+          "value": 103.7
+        }
+      ]
+    },
+    "governmentEmerging": {
+      "key": "Q.4T.G.A.N.770.A",
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q.4T.G.A.N.770.A?format=csv&startPeriod=2011-Q1",
+      "rows": [
+        {
+          "period": "2011-Q1",
+          "value": 38.9
+        },
+        {
+          "period": "2011-Q2",
+          "value": 38.5
+        },
+        {
+          "period": "2011-Q3",
+          "value": 35.1
+        },
+        {
+          "period": "2011-Q4",
+          "value": 34.8
+        },
+        {
+          "period": "2012-Q1",
+          "value": 35.8
+        },
+        {
+          "period": "2012-Q2",
+          "value": 34.9
+        },
+        {
+          "period": "2012-Q3",
+          "value": 36
+        },
+        {
+          "period": "2012-Q4",
+          "value": 36.3
+        },
+        {
+          "period": "2013-Q1",
+          "value": 36.6
+        },
+        {
+          "period": "2013-Q2",
+          "value": 35.8
+        },
+        {
+          "period": "2013-Q3",
+          "value": 35.9
+        },
+        {
+          "period": "2013-Q4",
+          "value": 36.7
+        },
+        {
+          "period": "2014-Q1",
+          "value": 37.2
+        },
+        {
+          "period": "2014-Q2",
+          "value": 38.4
+        },
+        {
+          "period": "2014-Q3",
+          "value": 37.6
+        },
+        {
+          "period": "2014-Q4",
+          "value": 37.7
+        },
+        {
+          "period": "2015-Q1",
+          "value": 37.7
+        },
+        {
+          "period": "2015-Q2",
+          "value": 39.3
+        },
+        {
+          "period": "2015-Q3",
+          "value": 38.8
+        },
+        {
+          "period": "2015-Q4",
+          "value": 39.8
+        },
+        {
+          "period": "2016-Q1",
+          "value": 43.4
+        },
+        {
+          "period": "2016-Q2",
+          "value": 45.4
+        },
+        {
+          "period": "2016-Q3",
+          "value": 47.2
+        },
+        {
+          "period": "2016-Q4",
+          "value": 47.4
+        },
+        {
+          "period": "2017-Q1",
+          "value": 49.1
+        },
+        {
+          "period": "2017-Q2",
+          "value": 50.2
+        },
+        {
+          "period": "2017-Q3",
+          "value": 51.3
+        },
+        {
+          "period": "2017-Q4",
+          "value": 52
+        },
+        {
+          "period": "2018-Q1",
+          "value": 52.7
+        },
+        {
+          "period": "2018-Q2",
+          "value": 49.4
+        },
+        {
+          "period": "2018-Q3",
+          "value": 48.6
+        },
+        {
+          "period": "2018-Q4",
+          "value": 50.2
+        },
+        {
+          "period": "2019-Q1",
+          "value": 52.8
+        },
+        {
+          "period": "2019-Q2",
+          "value": 53.9
+        },
+        {
+          "period": "2019-Q3",
+          "value": 52.9
+        },
+        {
+          "period": "2019-Q4",
+          "value": 55
+        },
+        {
+          "period": "2020-Q1",
+          "value": 54.4
+        },
+        {
+          "period": "2020-Q2",
+          "value": 59.2
+        },
+        {
+          "period": "2020-Q3",
+          "value": 63.6
+        },
+        {
+          "period": "2020-Q4",
+          "value": 68.7
+        },
+        {
+          "period": "2021-Q1",
+          "value": 67.3
+        },
+        {
+          "period": "2021-Q2",
+          "value": 66.8
+        },
+        {
+          "period": "2021-Q3",
+          "value": 65.4
+        },
+        {
+          "period": "2021-Q4",
+          "value": 65.5
+        },
+        {
+          "period": "2022-Q1",
+          "value": 66.3
+        },
+        {
+          "period": "2022-Q2",
+          "value": 63.9
+        },
+        {
+          "period": "2022-Q3",
+          "value": 61.3
+        },
+        {
+          "period": "2022-Q4",
+          "value": 64.2
+        },
+        {
+          "period": "2023-Q1",
+          "value": 66.3
+        },
+        {
+          "period": "2023-Q2",
+          "value": 65.8
+        },
+        {
+          "period": "2023-Q3",
+          "value": 66.5
+        },
+        {
+          "period": "2023-Q4",
+          "value": 69.5
+        },
+        {
+          "period": "2024-Q1",
+          "value": 70.1
+        },
+        {
+          "period": "2024-Q2",
+          "value": 70.9
+        },
+        {
+          "period": "2024-Q3",
+          "value": 73.6
+        },
+        {
+          "period": "2024-Q4",
+          "value": 71.3
+        },
+        {
+          "period": "2025-Q1",
+          "value": 74.1
+        },
+        {
+          "period": "2025-Q2",
+          "value": 76.8
+        },
+        {
+          "period": "2025-Q3",
+          "value": 78.2
+        },
+        {
+          "period": "2025-Q4",
+          "value": 79.8
+        },
+        {
+          "period": "2026-Q1",
+          "value": 80.2
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "candidateVersion": "V1.20",
+  "asOf": "2026-10-11",
+  "role": "房地产销售面积G03与开发投资G14近期变化核验候选，非正式评分记录",
+  "status": "DONE_WITH_LIMITS",
+  "implementationDecision": "本次可增加累计增速变化的展示和来源留档；不可将该变化冒充当月或近3月合计同比计分。原累计观察与权重保持。",
+  "sourceOrder": ["国家统计局官方原始发布及国家数据", "万得Wind EDB", "财新数据API"],
+  "skillsUsed": ["china-macro-rating", "wind-find-finance-skill", "wind-mcp-skill"],
+  "sourceChecks": {
+    "officialMonthlyReleases": {
+      "status": "verified",
+      "publisher": "国家统计局",
+      "coverage": ["2026-05", "2026-06", "2026-07", "2026-08"],
+      "result": "逐期原表均直接给年初累计金额/面积和可比口径累计同比，未直接给G03、G14的当月同比或6—8月合计同比；附注明确上年同期数据会修订。"
+    },
+    "officialStatisticalDatabase": {
+      "url": "https://data.stats.gov.cn/easyquery.htm?cn=A01",
+      "treeUrl": "https://data.stats.gov.cn/easyquery.htm?m=getTree&dbcode=hgyd&wdcode=zb&id=zb",
+      "status": "access_blocked",
+      "attempts": ["网页读取失败", "默认网络入口与getTree请求返回HTTP403", "直接网络请求超时"],
+      "interpretation": "这是访问失败，不是证明官方数据库没有所需单月序列或可比原值；没有因此宣称官方未发布。"
+    },
+    "wind": {
+      "status": "available_cumulative_only_in_returned_results",
+      "queryTools": ["search_economic_indicator", "query_economic_indicator_data"],
+      "result": "两次精确单月同比元信息检索仍返回累计同比指标；已取5—8月累计同比并与官方原表四期全部重叠核对。返回结果未提供可认证的直接单月同比、修订版上年累计金额或统一修订说明。",
+      "scopeLimit": "检索结果不是Wind全部数据库不存在单月同比的证明；本次专项路径未取得满足计分条件的序列。",
+      "metrics": [
+        {
+          "code": "S0073300",
+          "name": "中国:商品房销售面积:累计同比",
+          "source": "国家统计局",
+          "unit": "%",
+          "frequency": "月",
+          "updateDate": "2026-09-15",
+          "dates": ["2026-05-31", "2026-06-30", "2026-07-31", "2026-08-31"],
+          "values": [-10.8, -11.6, -11.8, -12.1],
+          "officialOverlapVerified": true
+        },
+        {
+          "code": "S0029657",
+          "name": "中国:房地产开发投资完成额:累计同比",
+          "source": "国家统计局",
+          "unit": "%",
+          "frequency": "月",
+          "updateDate": "2026-09-15",
+          "dates": ["2026-05-31", "2026-06-30", "2026-07-31", "2026-08-31"],
+          "values": [-16.2, -18.0, -19.2, -19.9],
+          "officialOverlapVerified": true
+        }
+      ],
+      "dataSourceStatement": "数据来源于万得 Wind 金融数据服务；本文件正式原值优先采用已核验的国家统计局原表，Wind仅用于交叉核对。"
+    },
+    "caixin": {
+      "status": "not_configured",
+      "attempt": "实跑项目现有财新检索脚本，查询全国商品房销售面积当月同比",
+      "errorCode": "not_configured",
+      "interpretation": "本地财新API未配置，未取得序列ID或数据，不能解释为财新数据库没有该数据；未安装或修改任何新连接。"
+    }
+  },
+  "officialSources": [
+    {
+      "id": "NBS_PROPERTY_2026_05",
+      "title": "2026年1—5月份全国房地产市场基本情况",
+      "publisher": "国家统计局",
+      "period": "2026-05",
+      "releaseDate": "2026-06-16",
+      "url": "https://www.stats.gov.cn/zwfwck/sjfb/202606/t20260616_1963950.html",
+      "verified": true,
+      "table": "表1：2026年1—5月份全国房地产开发和销售情况",
+      "basis": "年初累计名义同比/原表累计量；按可比口径同比，上年同期数据存在修订"
+    },
+    {
+      "id": "NBS_PROPERTY_2026_06",
+      "title": "2026年1—6月份全国房地产市场基本情况",
+      "publisher": "国家统计局",
+      "period": "2026-06",
+      "releaseDate": "2026-07-15",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964126.html",
+      "verified": true,
+      "table": "表1：2026年1—6月份全国房地产开发和销售情况",
+      "basis": "年初累计名义同比/原表累计量；按可比口径同比，上年同期数据存在修订"
+    },
+    {
+      "id": "NBS_PROPERTY_2026_07",
+      "title": "2026年1—7月份全国房地产市场基本情况",
+      "publisher": "国家统计局",
+      "period": "2026-07",
+      "releaseDate": "2026-08-17",
+      "url": "https://www.stats.gov.cn/zwfwck/sjfb/202608/t20260817_1965053.html",
+      "verified": true,
+      "table": "表1：2026年1—7月份全国房地产开发和销售情况",
+      "basis": "年初累计名义同比/原表累计量；按可比口径同比，上年同期数据存在修订"
+    },
+    {
+      "id": "NBS_PROPERTY_2026_08",
+      "title": "2026年1—8月份全国房地产市场基本情况",
+      "publisher": "国家统计局",
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965310.html",
+      "verified": true,
+      "table": "表1：2026年1—8月份全国房地产开发和销售情况",
+      "basis": "年初累计名义同比/原表累计量；按可比口径同比，上年同期数据存在修订"
+    }
+  ],
+  "rules": [
+    {
+      "id": "G03",
+      "name": "新建商品房销售面积",
+      "currentObservedValue": -12.1,
+      "currentPeriod": "2026-08",
+      "currentBasis": "年初累计名义同比",
+      "currentUnit": "%",
+      "currentValuePreserved": true,
+      "weightPreserved": true,
+      "decision": "仅展示累计变化；真正当月/近3月合计同比缺可比原值",
+      "recentYoyScorable": false,
+      "verifiedCumulativeObservations": [
+        {"period": "2026-05", "cumulativeYoy": -10.8, "cumulativeAmount": 31320, "amountUnit": "万平方米", "sourceId": "NBS_PROPERTY_2026_05"},
+        {"period": "2026-06", "cumulativeYoy": -11.6, "cumulativeAmount": 40140, "amountUnit": "万平方米", "sourceId": "NBS_PROPERTY_2026_06"},
+        {"period": "2026-07", "cumulativeYoy": -11.8, "cumulativeAmount": 45021, "amountUnit": "万平方米", "sourceId": "NBS_PROPERTY_2026_07"},
+        {"period": "2026-08", "cumulativeYoy": -12.1, "cumulativeAmount": 49880, "amountUnit": "万平方米", "sourceId": "NBS_PROPERTY_2026_08"}
+      ],
+      "displayOnlyCumulativeChanges": {
+        "changeFromPreviousReleasePp": -0.3,
+        "previousPeriod": "2026-07",
+        "changeOverThreeMonthsPp": -1.3,
+        "referencePeriod": "2026-05",
+        "unit": "百分点",
+        "formula": "本期官方累计同比减对应参照期官方累计同比",
+        "label": "累计增速变化（不是当月同比、环比或近3月合计同比）",
+        "canEnterScore": false,
+        "canBeUsedAsMonthlyYoy": false,
+        "interpretation": "1—8月累计销售面积降幅比1—7月扩大0.3个百分点；比1—5月扩大1.3个百分点。只说明公布的年内累计路径继续转弱，不能据此精确计算8月或6—8月成交同比。"
+      },
+      "missingComparableRecentData": {
+        "directAugustYoy": null,
+        "directJuneAugustAggregateYoy": null,
+        "currentYearMayCumulative": 31320,
+        "currentYearAugustCumulative": 49880,
+        "priorYearMayCumulativeSameRevision": null,
+        "priorYearAugustCumulativeSameRevision": null,
+        "sameRevisionAndScopeVerified": false,
+        "reason": "本年已公布两端累计量齐，但同一次修订版本的上年5月和8月可比累计量未取得；官方累计同比反推的隐含分母不是认证原值。"
+      }
+    },
+    {
+      "id": "G14",
+      "name": "房地产开发投资",
+      "currentObservedValue": -19.9,
+      "currentPeriod": "2026-08",
+      "currentBasis": "年初累计名义同比",
+      "currentUnit": "%",
+      "currentValuePreserved": true,
+      "weightPreserved": true,
+      "decision": "仅展示累计变化；真正当月/近3月合计同比缺可比原值",
+      "recentYoyScorable": false,
+      "verifiedCumulativeObservations": [
+        {"period": "2026-05", "cumulativeYoy": -16.2, "cumulativeAmount": 30356, "amountUnit": "亿元", "sourceId": "NBS_PROPERTY_2026_05"},
+        {"period": "2026-06", "cumulativeYoy": -18.0, "cumulativeAmount": 38074, "amountUnit": "亿元", "sourceId": "NBS_PROPERTY_2026_06"},
+        {"period": "2026-07", "cumulativeYoy": -19.2, "cumulativeAmount": 43009, "amountUnit": "亿元", "sourceId": "NBS_PROPERTY_2026_07"},
+        {"period": "2026-08", "cumulativeYoy": -19.9, "cumulativeAmount": 47979, "amountUnit": "亿元", "sourceId": "NBS_PROPERTY_2026_08"}
+      ],
+      "displayOnlyCumulativeChanges": {
+        "changeFromPreviousReleasePp": -0.7,
+        "previousPeriod": "2026-07",
+        "changeOverThreeMonthsPp": -3.7,
+        "referencePeriod": "2026-05",
+        "unit": "百分点",
+        "formula": "本期官方累计同比减对应参照期官方累计同比",
+        "label": "累计增速变化（不是当月同比、环比或近3月合计同比）",
+        "canEnterScore": false,
+        "canBeUsedAsMonthlyYoy": false,
+        "interpretation": "1—8月累计开发投资降幅比1—7月扩大0.7个百分点；比1—5月扩大3.7个百分点。累计路径明显走弱，但不能用累计同比相减或跨修订公布金额计算近期同比。"
+      },
+      "missingComparableRecentData": {
+        "directAugustYoy": null,
+        "directJuneAugustAggregateYoy": null,
+        "currentYearMayCumulative": 30356,
+        "currentYearAugustCumulative": 47979,
+        "priorYearMayCumulativeSameRevision": null,
+        "priorYearAugustCumulativeSameRevision": null,
+        "sameRevisionAndScopeVerified": false,
+        "reason": "本年已公布两端累计量齐，但同一次修订版本的上年5月和8月可比累计量未取得；官方累计同比反推的隐含分母不是认证原值。"
+      }
+    }
+  ],
+  "futureScoringContract": {
+    "activation": "仅在直接可比当月/近3月同比已核验，或四端累计原值同修订版本与统计范围已核验后启用近期计分分量；本文件未触发。",
+    "preferredRecentMeasure": "6—8月合计同比，8月单月同比为明细；不机械平均三个月同比。",
+    "formula": "((本年8月累计量-本年5月累计量)/(上年8月累计可比量-上年5月累计可比量)-1)*100",
+    "singleMonthFormula": "((本年8月累计量-本年7月累计量)/(上年8月累计可比量-上年7月累计可比量)-1)*100",
+    "requirements": [
+      "四端或单月四端的直接原值都有来源、发布日期、单位、统计范围和修订版本证明",
+      "原值差额分母为正，窗口同频率同口径，1—2月仅保留官方合并期",
+      "不得把累计同比之差认作单月同比；不得把近3月合计同比称为环比",
+      "不得用旧公布的上年金额或从四舍五入累计增速反推的隐含分母拼接",
+      "缺近期分量留空并说明缺口，不赋中性分、不强行重分权重"
+    ],
+    "candidateItemMix": {"cumulativeLevel": 0.6, "recentComparableYoy": 0.4},
+    "itemMixStatus": "研究试行候选，尚未通过历史稳定性或样本外验证；本期未启用",
+    "historicalRecords": "不得覆盖既有记录，正式规则修订后另建版本并追加独立评分快照"
+  },
+  "risks": [
+    "近期敏感度提高也会放大春节、基数、登记节奏和调查范围修订的影响；三个月合计比单月稳健但不能消除这些影响。",
+    "官方每期累计同比基于当期可比修订，跨期公布金额不能未经验证直接当作同一统计样本。",
+    "本期无可认证近期同比，增加累计变化展示改善可读性但不等于解决累计数据的近期计分盲点。",
+    "销售面积是新建商品房合同面积，不等于房价、销售金额、二手房成交面积；开发投资为名义投入，含土地购置费，不等于实际建造工作量。"
+  ]
+}

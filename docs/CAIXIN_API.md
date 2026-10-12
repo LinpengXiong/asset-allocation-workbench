@@ -8,7 +8,7 @@
 - `/api/caixin/search?q=...`：登录后服务端检索序列，不向浏览器暴露 key。
 - `/api/caixin/series/{id}?start=...&end=...`：登录后服务端读取并规范化观测值。
 - `scripts/caixin-fetch.mjs`：本地调试查询，不会自动改写 `collector/latest-payload.json`。
-- `scripts/caixin-sync.mjs`：受控 Mac collector 通过 `SITE_URL + UPDATE_TOKEN` 调用线上财新代理，生成 67 项宏观指标的可审计匹配报告；不保存或接触 `CAIXIN_API_KEY`，不自动覆盖 payload。
+- `scripts/caixin-sync.mjs`：受控 Mac collector 通过 `SITE_URL + UPDATE_TOKEN` 调用线上财新代理，针对当前 62 项宏观指标生成可审计匹配报告；不保存或接触 `CAIXIN_API_KEY`，不自动覆盖 payload。
 - `scripts/caixin-map.mjs`：读取脱敏的序列 metadata/search 导出，生成可审计映射报告；不会改写 payload/D1。
 - `config/caixin-series.example.json`：序列到现有指标的映射模板；未确认口径前默认关闭。
 
@@ -42,7 +42,9 @@ node --experimental-strip-types scripts/caixin-fetch.mjs observations <series_id
 
 ## 映射边界
 
-文档提供了搜索、元数据、观测值和批量接口，但没有指定哪些序列应映射到现有 67 个宏观指标、19 个资产因子或 6 个风格因子。只有在确认 `series_id`、`has_data`、单位、频率、来源和现有指标口径一致后，才应在映射模板中启用，并由采集任务生成带来源的 payload；否则保留当前 payload/D1 数据作为 fallback。
+工作台后续数据的来源顺序为**官方原始发布 → 万得 Wind → 财新数据 API**。只有官方及万得均无法提供所需且可核验的数据时，才考虑用财新补充；接入接口不代表自动将财新数据设为首选来源。
+
+文档提供了搜索、元数据、观测值和批量接口，但没有指定哪些序列应映射到当前 62 个宏观指标、19 个资产因子或 6 个风格因子。只有在确认 `series_id`、`has_data`、单位、频率、来源和现有指标口径一致后，才应在映射模板中启用，并由采集任务生成带来源的 payload；否则保留当前 payload/D1 数据作为 fallback。
 
 ### 保守自动映射
 

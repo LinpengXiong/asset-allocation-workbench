@@ -1,0 +1,735 @@
+{
+  "reviewedAt": "2026-10-01",
+  "sales": {
+    "source": "国家统计局月度数据平台",
+    "indicatorName": "新建商品房销售面积累计值",
+    "catalogId": "0ae633cdb85f4a8397650831b2b27e50",
+    "indicatorId": "d353226cf0434c929b6299f8d4987754",
+    "sourceUrl": "https://data.stats.gov.cn/dg/website/page.html",
+    "unit": "万平方米",
+    "basis": "年初至当期累计值；每年1—2月合并发布，跨年重新起算"
+  },
+  "unsold": {
+    "source": "万得 Wind EDB",
+    "code": "S0029672",
+    "originalAgency": "国家统计局",
+    "unit": "万平方米",
+    "basis": "商品房待售面积月末存量；Wind序列名称为「累计值」，但观测期是各月月末库存，非年初累计流量",
+    "crossCheckedMonths": 18
+  },
+  "rows": [
+    {
+      "period": "2014-02",
+      "salesCumulative": 10465.62,
+      "unsoldEnd": 51397
+    },
+    {
+      "period": "2014-03",
+      "salesCumulative": 20111.18,
+      "unsoldEnd": 52163
+    },
+    {
+      "period": "2014-04",
+      "salesCumulative": 27709.26,
+      "unsoldEnd": 52652
+    },
+    {
+      "period": "2014-05",
+      "salesCumulative": 36069.6,
+      "unsoldEnd": 53402
+    },
+    {
+      "period": "2014-06",
+      "salesCumulative": 48365.23,
+      "unsoldEnd": 54428
+    },
+    {
+      "period": "2014-07",
+      "salesCumulative": 56479.59,
+      "unsoldEnd": 55230
+    },
+    {
+      "period": "2014-08",
+      "salesCumulative": 64987.5,
+      "unsoldEnd": 56160
+    },
+    {
+      "period": "2014-09",
+      "salesCumulative": 77131.82,
+      "unsoldEnd": 57148
+    },
+    {
+      "period": "2014-10",
+      "salesCumulative": 88493.81,
+      "unsoldEnd": 58239
+    },
+    {
+      "period": "2014-11",
+      "salesCumulative": 101716.57,
+      "unsoldEnd": 59795
+    },
+    {
+      "period": "2014-12",
+      "salesCumulative": 120648.54,
+      "unsoldEnd": 62169
+    },
+    {
+      "period": "2015-02",
+      "salesCumulative": 8763.89,
+      "unsoldEnd": 63922
+    },
+    {
+      "period": "2015-03",
+      "salesCumulative": 18254.44,
+      "unsoldEnd": 64998
+    },
+    {
+      "period": "2015-04",
+      "salesCumulative": 26384.57,
+      "unsoldEnd": 65681
+    },
+    {
+      "period": "2015-05",
+      "salesCumulative": 35996.38,
+      "unsoldEnd": 65666
+    },
+    {
+      "period": "2015-06",
+      "salesCumulative": 50263.64,
+      "unsoldEnd": 65738
+    },
+    {
+      "period": "2015-07",
+      "salesCumulative": 59914.42,
+      "unsoldEnd": 66259
+    },
+    {
+      "period": "2015-08",
+      "salesCumulative": 69674.96,
+      "unsoldEnd": 66324
+    },
+    {
+      "period": "2015-09",
+      "salesCumulative": 82908,
+      "unsoldEnd": 66510
+    },
+    {
+      "period": "2015-10",
+      "salesCumulative": 94898.12,
+      "unsoldEnd": 68632
+    },
+    {
+      "period": "2015-11",
+      "salesCumulative": 109252.74,
+      "unsoldEnd": 69637
+    },
+    {
+      "period": "2015-12",
+      "salesCumulative": 128494.97,
+      "unsoldEnd": 71853
+    },
+    {
+      "period": "2016-02",
+      "salesCumulative": 11234.56,
+      "unsoldEnd": 73931
+    },
+    {
+      "period": "2016-03",
+      "salesCumulative": 24299.21,
+      "unsoldEnd": 73516
+    },
+    {
+      "period": "2016-04",
+      "salesCumulative": 36012.24,
+      "unsoldEnd": 72690
+    },
+    {
+      "period": "2016-05",
+      "salesCumulative": 47954.22,
+      "unsoldEnd": 72169
+    },
+    {
+      "period": "2016-06",
+      "salesCumulative": 64302.49,
+      "unsoldEnd": 71416
+    },
+    {
+      "period": "2016-07",
+      "salesCumulative": 75760.19,
+      "unsoldEnd": 71382
+    },
+    {
+      "period": "2016-08",
+      "salesCumulative": 87450.77,
+      "unsoldEnd": 70870
+    },
+    {
+      "period": "2016-09",
+      "salesCumulative": 105184.53,
+      "unsoldEnd": 69612
+    },
+    {
+      "period": "2016-10",
+      "salesCumulative": 120338.28,
+      "unsoldEnd": 69522
+    },
+    {
+      "period": "2016-11",
+      "salesCumulative": 135829.49,
+      "unsoldEnd": 69095
+    },
+    {
+      "period": "2016-12",
+      "salesCumulative": 157349,
+      "unsoldEnd": 69539
+    },
+    {
+      "period": "2017-02",
+      "salesCumulative": 14054.34,
+      "unsoldEnd": 70555
+    },
+    {
+      "period": "2017-03",
+      "salesCumulative": 29034.85,
+      "unsoldEnd": 68810
+    },
+    {
+      "period": "2017-04",
+      "salesCumulative": 41655.15,
+      "unsoldEnd": 67469
+    },
+    {
+      "period": "2017-05",
+      "salesCumulative": 54820.5,
+      "unsoldEnd": 66018
+    },
+    {
+      "period": "2017-06",
+      "salesCumulative": 74661.7,
+      "unsoldEnd": 64577
+    },
+    {
+      "period": "2017-07",
+      "salesCumulative": 86350.89,
+      "unsoldEnd": 63496
+    },
+    {
+      "period": "2017-08",
+      "salesCumulative": 98539.02,
+      "unsoldEnd": 62352
+    },
+    {
+      "period": "2017-09",
+      "salesCumulative": 116006.16,
+      "unsoldEnd": 61140
+    },
+    {
+      "period": "2017-10",
+      "salesCumulative": 130253.9,
+      "unsoldEnd": 60258
+    },
+    {
+      "period": "2017-11",
+      "salesCumulative": 146568.32,
+      "unsoldEnd": 59606
+    },
+    {
+      "period": "2017-12",
+      "salesCumulative": 169407.82,
+      "unsoldEnd": 58923
+    },
+    {
+      "period": "2018-02",
+      "salesCumulative": 14632.64,
+      "unsoldEnd": 58468
+    },
+    {
+      "period": "2018-03",
+      "salesCumulative": 30088.4,
+      "unsoldEnd": 57329
+    },
+    {
+      "period": "2018-04",
+      "salesCumulative": 42192.06,
+      "unsoldEnd": 56687
+    },
+    {
+      "period": "2018-05",
+      "salesCumulative": 56409.09,
+      "unsoldEnd": 56010
+    },
+    {
+      "period": "2018-06",
+      "salesCumulative": 77143.28,
+      "unsoldEnd": 55083
+    },
+    {
+      "period": "2018-07",
+      "salesCumulative": 89989.53,
+      "unsoldEnd": 54428
+    },
+    {
+      "period": "2018-08",
+      "salesCumulative": 102473.53,
+      "unsoldEnd": 53873
+    },
+    {
+      "period": "2018-09",
+      "salesCumulative": 119312.77,
+      "unsoldEnd": 53191
+    },
+    {
+      "period": "2018-10",
+      "salesCumulative": 133116.85,
+      "unsoldEnd": 52789
+    },
+    {
+      "period": "2018-11",
+      "salesCumulative": 148603.93,
+      "unsoldEnd": 52627
+    },
+    {
+      "period": "2018-12",
+      "salesCumulative": 171654.36,
+      "unsoldEnd": 52414
+    },
+    {
+      "period": "2019-02",
+      "salesCumulative": 14102.15,
+      "unsoldEnd": 52251
+    },
+    {
+      "period": "2019-03",
+      "salesCumulative": 29828.94,
+      "unsoldEnd": 51646
+    },
+    {
+      "period": "2019-04",
+      "salesCumulative": 42085.45,
+      "unsoldEnd": 51380
+    },
+    {
+      "period": "2019-05",
+      "salesCumulative": 55518.05,
+      "unsoldEnd": 50928
+    },
+    {
+      "period": "2019-06",
+      "salesCumulative": 75785.59,
+      "unsoldEnd": 50162
+    },
+    {
+      "period": "2019-07",
+      "salesCumulative": 88782.91,
+      "unsoldEnd": 49876
+    },
+    {
+      "period": "2019-08",
+      "salesCumulative": 101848.56,
+      "unsoldEnd": 49784
+    },
+    {
+      "period": "2019-09",
+      "salesCumulative": 119178.53,
+      "unsoldEnd": 49346
+    },
+    {
+      "period": "2019-10",
+      "salesCumulative": 133250.68,
+      "unsoldEnd": 49323
+    },
+    {
+      "period": "2019-11",
+      "salesCumulative": 148905.02,
+      "unsoldEnd": 49221
+    },
+    {
+      "period": "2019-12",
+      "salesCumulative": 171557.87,
+      "unsoldEnd": 49821
+    },
+    {
+      "period": "2020-02",
+      "salesCumulative": 8474.95,
+      "unsoldEnd": 53004
+    },
+    {
+      "period": "2020-03",
+      "salesCumulative": 21978.32,
+      "unsoldEnd": 52727
+    },
+    {
+      "period": "2020-04",
+      "salesCumulative": 33972.58,
+      "unsoldEnd": 52255
+    },
+    {
+      "period": "2020-05",
+      "salesCumulative": 48702.97,
+      "unsoldEnd": 51771
+    },
+    {
+      "period": "2020-06",
+      "salesCumulative": 69403.68,
+      "unsoldEnd": 51081
+    },
+    {
+      "period": "2020-07",
+      "salesCumulative": 83631.36,
+      "unsoldEnd": 50691
+    },
+    {
+      "period": "2020-08",
+      "salesCumulative": 98485.95,
+      "unsoldEnd": 50052
+    },
+    {
+      "period": "2020-09",
+      "salesCumulative": 117072.67,
+      "unsoldEnd": 49581
+    },
+    {
+      "period": "2020-10",
+      "salesCumulative": 133293.8,
+      "unsoldEnd": 49492
+    },
+    {
+      "period": "2020-11",
+      "salesCumulative": 150834.45,
+      "unsoldEnd": 49287
+    },
+    {
+      "period": "2020-12",
+      "salesCumulative": 176086.22,
+      "unsoldEnd": 49850
+    },
+    {
+      "period": "2021-02",
+      "salesCumulative": 17363.14,
+      "unsoldEnd": 52425
+    },
+    {
+      "period": "2021-03",
+      "salesCumulative": 36007.05,
+      "unsoldEnd": 51858
+    },
+    {
+      "period": "2021-04",
+      "salesCumulative": 50305,
+      "unsoldEnd": 51436
+    },
+    {
+      "period": "2021-05",
+      "salesCumulative": 66383.32,
+      "unsoldEnd": 51026
+    },
+    {
+      "period": "2021-06",
+      "salesCumulative": 88635.35,
+      "unsoldEnd": 51079
+    },
+    {
+      "period": "2021-07",
+      "salesCumulative": 101648.18,
+      "unsoldEnd": 50864
+    },
+    {
+      "period": "2021-08",
+      "salesCumulative": 114192.81,
+      "unsoldEnd": 50580
+    },
+    {
+      "period": "2021-09",
+      "salesCumulative": 130331.78,
+      "unsoldEnd": 50285
+    },
+    {
+      "period": "2021-10",
+      "salesCumulative": 143040.71,
+      "unsoldEnd": 50203
+    },
+    {
+      "period": "2021-11",
+      "salesCumulative": 158130.73,
+      "unsoldEnd": 50165
+    },
+    {
+      "period": "2021-12",
+      "salesCumulative": 179433.41,
+      "unsoldEnd": 51023
+    },
+    {
+      "period": "2022-02",
+      "salesCumulative": 15702.61,
+      "unsoldEnd": 57026
+    },
+    {
+      "period": "2022-03",
+      "salesCumulative": 31045.96,
+      "unsoldEnd": 56113
+    },
+    {
+      "period": "2022-04",
+      "salesCumulative": 39768.15,
+      "unsoldEnd": 55735
+    },
+    {
+      "period": "2022-05",
+      "salesCumulative": 50738.38,
+      "unsoldEnd": 55433
+    },
+    {
+      "period": "2022-06",
+      "salesCumulative": 68923.04,
+      "unsoldEnd": 54784
+    },
+    {
+      "period": "2022-07",
+      "salesCumulative": 78177.97,
+      "unsoldEnd": 54655
+    },
+    {
+      "period": "2022-08",
+      "salesCumulative": 87890.4,
+      "unsoldEnd": 54605
+    },
+    {
+      "period": "2022-09",
+      "salesCumulative": 101421.72,
+      "unsoldEnd": 54333
+    },
+    {
+      "period": "2022-10",
+      "salesCumulative": 111179.29,
+      "unsoldEnd": 54734
+    },
+    {
+      "period": "2022-11",
+      "salesCumulative": 121250.08,
+      "unsoldEnd": 55203
+    },
+    {
+      "period": "2022-12",
+      "salesCumulative": 135836.89,
+      "unsoldEnd": 56366
+    },
+    {
+      "period": "2023-02",
+      "salesCumulative": 15132.84,
+      "unsoldEnd": 65528
+    },
+    {
+      "period": "2023-03",
+      "salesCumulative": 29945.74,
+      "unsoldEnd": 64770
+    },
+    {
+      "period": "2023-04",
+      "salesCumulative": 37635.87,
+      "unsoldEnd": 64487
+    },
+    {
+      "period": "2023-05",
+      "salesCumulative": 46440.01,
+      "unsoldEnd": 64120
+    },
+    {
+      "period": "2023-06",
+      "salesCumulative": 59514.72,
+      "unsoldEnd": 64159
+    },
+    {
+      "period": "2023-07",
+      "salesCumulative": 66562.87,
+      "unsoldEnd": 64564
+    },
+    {
+      "period": "2023-08",
+      "salesCumulative": 73948.62,
+      "unsoldEnd": 64795
+    },
+    {
+      "period": "2023-09",
+      "salesCumulative": 84805.71,
+      "unsoldEnd": 64537
+    },
+    {
+      "period": "2023-10",
+      "salesCumulative": 92578.54,
+      "unsoldEnd": 64835
+    },
+    {
+      "period": "2023-11",
+      "salesCumulative": 100508.71,
+      "unsoldEnd": 65385
+    },
+    {
+      "period": "2023-12",
+      "salesCumulative": 111735.14,
+      "unsoldEnd": 67295
+    },
+    {
+      "period": "2024-02",
+      "salesCumulative": 11368.86,
+      "unsoldEnd": 75969
+    },
+    {
+      "period": "2024-03",
+      "salesCumulative": 22667.53,
+      "unsoldEnd": 74833
+    },
+    {
+      "period": "2024-04",
+      "salesCumulative": 29251.84,
+      "unsoldEnd": 74553
+    },
+    {
+      "period": "2024-05",
+      "salesCumulative": 36642.06,
+      "unsoldEnd": 74256
+    },
+    {
+      "period": "2024-06",
+      "salesCumulative": 47916.24,
+      "unsoldEnd": 73894
+    },
+    {
+      "period": "2024-07",
+      "salesCumulative": 54148.94,
+      "unsoldEnd": 73926
+    },
+    {
+      "period": "2024-08",
+      "salesCumulative": 60601.89,
+      "unsoldEnd": 73783
+    },
+    {
+      "period": "2024-09",
+      "salesCumulative": 70284.03,
+      "unsoldEnd": 73177
+    },
+    {
+      "period": "2024-10",
+      "salesCumulative": 77930.16,
+      "unsoldEnd": 73057
+    },
+    {
+      "period": "2024-11",
+      "salesCumulative": 86117.95,
+      "unsoldEnd": 73286
+    },
+    {
+      "period": "2024-12",
+      "salesCumulative": 97385.01,
+      "unsoldEnd": 75327
+    },
+    {
+      "period": "2025-02",
+      "salesCumulative": 10745.92,
+      "unsoldEnd": 79891,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202503/t20250317_1959016.html"
+    },
+    {
+      "period": "2025-03",
+      "salesCumulative": 21869.35,
+      "unsoldEnd": 78664,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202504/t20250416_1959323.html"
+    },
+    {
+      "period": "2025-04",
+      "salesCumulative": 28261.74,
+      "unsoldEnd": 78142,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202505/t20250519_1959865.html"
+    },
+    {
+      "period": "2025-05",
+      "salesCumulative": 35315.19,
+      "unsoldEnd": 77427,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202506/t20250616_1960170.html"
+    },
+    {
+      "period": "2025-06",
+      "salesCumulative": 45850.55,
+      "unsoldEnd": 76948,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202507/t20250715_1960410.html"
+    },
+    {
+      "period": "2025-07",
+      "salesCumulative": 51559.77,
+      "unsoldEnd": 76486,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202508/t20250815_1960787.html"
+    },
+    {
+      "period": "2025-08",
+      "salesCumulative": 57303.92,
+      "unsoldEnd": 76169,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202509/t20250915_1961183.html"
+    },
+    {
+      "period": "2025-09",
+      "salesCumulative": 65834.79,
+      "unsoldEnd": 75928,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202510/t20251020_1961609.html"
+    },
+    {
+      "period": "2025-10",
+      "salesCumulative": 71982,
+      "unsoldEnd": 75606,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202511/t20251114_1961853.html"
+    },
+    {
+      "period": "2025-11",
+      "salesCumulative": 78701.74,
+      "unsoldEnd": 75306,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202512/t20251215_1962072.html"
+    },
+    {
+      "period": "2025-12",
+      "salesCumulative": 88101.37,
+      "unsoldEnd": 76632,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202601/t20260119_1962324.html"
+    },
+    {
+      "period": "2026-02",
+      "salesCumulative": 9293.43,
+      "unsoldEnd": 79998,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202603/t20260316_1962785.html"
+    },
+    {
+      "period": "2026-03",
+      "salesCumulative": 19524.95,
+      "unsoldEnd": 78601,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202604/t20260416_1963327.html"
+    },
+    {
+      "period": "2026-04",
+      "salesCumulative": 25257.98,
+      "unsoldEnd": 77801,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963729.html"
+    },
+    {
+      "period": "2026-05",
+      "salesCumulative": 31319.91,
+      "unsoldEnd": 77182,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963950.html"
+    },
+    {
+      "period": "2026-06",
+      "salesCumulative": 40139.62,
+      "unsoldEnd": 76315,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964126.html"
+    },
+    {
+      "period": "2026-07",
+      "salesCumulative": 45020.81,
+      "unsoldEnd": 75911,
+      "officialPressUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202608/t20260817_1965053.html"
+    },
+    {
+      "period": "2026-08",
+      "salesCumulative": 49879.77,
+      "unsoldEnd": 75349,
+      "officialPressUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965310.html"
+    }
+  ]
+}

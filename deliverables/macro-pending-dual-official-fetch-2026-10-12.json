@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "verifiedDate": "2026-10-12",
+  "scoreInformationCutoffPreserved": "2026-10-11",
+  "ruleVersionPreserved": "V1.21",
+  "purpose": "工作台五项待补双口径的官方公开原表直接采集与口径核对",
+  "outcome": "official_cumulative_obtained_latest_month_unverified",
+  "sourceScope": "只访问允许读取的统计局公开发布页面及附件；未访问被浏览工具保存权限拦截的国家数据域名，未调用其他数据接口。",
+  "releaseIndex": {
+    "url": "https://www.stats.gov.cn/sj/zxfb/",
+    "verifiedDate": "2026-10-12",
+    "result": "页面所列房地产及投资的最新公开月报为2026年1—8月，发布日期2026-09-15。"
+  },
+  "sources": [
+    {
+      "id": "property",
+      "publisher": "国家统计局",
+      "title": "2026年1—8月份全国房地产市场基本情况",
+      "releaseDate": "2026-09-15",
+      "url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260915_1965310.html",
+      "locations": [
+        "表1",
+        "附注1",
+        "附注5"
+      ]
+    },
+    {
+      "id": "investment",
+      "publisher": "国家统计局",
+      "title": "2026年1—8月份全国固定资产投资基本情况",
+      "releaseDate": "2026-09-15",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260915_1965309.html",
+      "locations": [
+        "正文工业投资及基础设施投资",
+        "主要数据表",
+        "附注1",
+        "附注7"
+      ]
+    },
+    {
+      "id": "macro",
+      "publisher": "国家统计局",
+      "title": "8月份国民经济运行平稳、发展向新向优",
+      "releaseDate": "2026-09-15",
+      "url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260915_1965307.html",
+      "locations": [
+        "第四部分",
+        "附表固定资产投资及房地产开发",
+        "附注6"
+      ]
+    },
+    {
+      "id": "comparability",
+      "publisher": "国家统计局固定资产投资统计司",
+      "title": "固定资产投资可比口径咨询答复",
+      "releaseDate": "2023-11-16",
+      "url": "https://www.stats.gov.cn/hd/lyzx/zxgk/202312/t20231206_1945207.html",
+      "locations": [
+        "答复内容"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "G03",
+      "name": "新建商品房销售面积",
+      "period": "2026-08",
+      "periodRange": "2026-01至2026-08",
+      "basis": "年初累计可比名义同比",
+      "value": -12.1,
+      "unit": "%",
+      "cumulativeAmount": 49880,
+      "amountUnit": "万平方米",
+      "sourceId": "property",
+      "presentScoringAlreadyUsesCumulative": true,
+      "latestMonthYoy": null,
+      "latestMonthStatus": "本次公开综合附表的8月单月量及同比为省略号；未取得同修订版本的上年7、8月可比金额。"
+    },
+    {
+      "id": "G14",
+      "name": "房地产开发投资",
+      "period": "2026-08",
+      "periodRange": "2026-01至2026-08",
+      "basis": "年初累计可比名义同比",
+      "value": -19.9,
+      "unit": "%",
+      "cumulativeAmount": 47979,
+      "amountUnit": "亿元",
+      "sourceId": "property",
+      "presentScoringAlreadyUsesCumulative": true,
+      "latestMonthYoy": null,
+      "latestMonthStatus": "本次公开综合附表的8月单月量及同比为省略号；未取得同修订版本的上年7、8月可比金额。"
+    },
+    {
+      "id": "G07",
+      "name": "制造业投资",
+      "period": "2026-08",
+      "periodRange": "2026-01至2026-08",
+      "basis": "年初累计可比名义同比",
+      "value": -2.3,
+      "unit": "%",
+      "cumulativeAmount": null,
+      "amountUnit": "亿元",
+      "sourceId": "investment",
+      "presentScoringAlreadyUsesCumulative": true,
+      "latestMonthYoy": null,
+      "latestMonthStatus": "已读取的原文及附件只有累计增速，未取得分项同口径单月同比或可比金额。"
+    },
+    {
+      "id": "G13",
+      "name": "基础设施投资（含电力、热力、燃气及水）",
+      "period": "2026-08",
+      "periodRange": "2026-01至2026-08",
+      "basis": "现行范围年初累计可比名义同比",
+      "value": -4,
+      "unit": "%",
+      "cumulativeAmount": null,
+      "amountUnit": "亿元",
+      "sourceId": "investment",
+      "presentScoringAlreadyUsesCumulative": true,
+      "latestMonthYoy": null,
+      "latestMonthStatus": "未取得现行范围的单月同比或可比金额；总体固定资产投资环比不得替代。"
+    },
+    {
+      "id": "G16",
+      "name": "扣除房地产开发的民间投资",
+      "period": "2026-08",
+      "periodRange": "2026-01至2026-08",
+      "basis": "扣除房地产开发的年初累计可比名义同比",
+      "value": -6.4,
+      "unit": "%",
+      "cumulativeAmount": null,
+      "amountUnit": "亿元",
+      "sourceId": "macro",
+      "presentScoringAlreadyUsesCumulative": true,
+      "latestMonthYoy": null,
+      "latestMonthStatus": "未取得扣除房地产开发同范围的单月同比或金额；全口径民间投资不得替代。"
+    }
+  ],
+  "limitation": "未取得单月仅限本次可读取公开原表、附件及答记者问；国家数据未能访问，不能断言官方全数据库没有相应序列。旧刊上年金额与本期修订口径不同，未通过简单差分或反推分母补造单月同比。",
+  "mutations": {
+    "scoringRules": false,
+    "currentScore": false,
+    "weights": false,
+    "history": false,
+    "productionDeployment": false
+  },
+  "protectedFileHashes": {
+    "app/data/macro-rating-v1.json": "7f8cf16ef93bd48e0e1e48e9f33fe6b19e0b66d17cc2b2fb1246f9ba6b52444b",
+    "app/data/macro-rating-current.json": "4da2d81fcc46cdd3a0feacfae2d1f2581e8be4f45ffc4b4989c2cf9590b5eefa",
+    "app/data/macro-rating-history.json": "4880d12a9419d9901b534d934b2d7847fab7f7746281edc3b3b2bd01195f9377"
+  }
+}

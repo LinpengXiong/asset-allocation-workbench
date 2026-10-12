@@ -1,6 +1,6 @@
 {
-  "reviewedAt": "2026-09-28",
-  "note": "按指标库二级分类查看逐期走势；消费者信心仅到已核验的7月，指数点位与PMI不共用临界线。GDP 平减指数默认单季同比，可单独切换年初累计同比。",
+  "reviewedAt": "2026-10-05",
+  "note": "按指标库二级分类查看逐期走势；GDP 实际增速可切换单季实际同比与经季节调整的单季实际环比。制造业 PMI 新订单按月度指数观察，服务零售及投资结构按年初累计同比观察；不同频率和口径不拼线。",
   "activitySources": [
     { "period": "2026年1—2月", "url": "https://www.stats.gov.cn/zwfwck/sjfb/202603/t20260316_1962780.html" },
     { "period": "2026年3月", "url": "https://www.stats.gov.cn/sj/zxfb/202604/t20260416_1963330.html" },
@@ -9,6 +9,178 @@
     { "period": "2026年6月", "url": "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202607/t20260715_1964121.html" },
     { "period": "2026年7月", "url": "https://www.stats.gov.cn/sj/zxfb/202608/t20260817_1965056.html" },
     { "period": "2026年8月", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html" }
+  ],
+  "investmentStructureSources": [
+    { "period": "2026年1—2月", "url": "https://www.stats.gov.cn/sj/zxfb/202603/t20260316_1962784.html" },
+    { "period": "2026年1—3月", "url": "https://www.stats.gov.cn/sj/zxfb/202604/t20260416_1963328.html" },
+    { "period": "2026年1—4月", "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963730.html" },
+    { "period": "2026年1—5月", "url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963951.html" },
+    { "period": "2026年1—6月", "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202607/t20260715_1964124.html" },
+    { "period": "2026年1—7月", "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202608/t20260817_1965054.html" },
+    { "period": "2026年1—8月", "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202609/t20260915_1965309.html" }
+  ],
+  "industrialAnnualSources": [
+    { "year": 2015, "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1899027.html" },
+    { "year": 2016, "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1899412.html" },
+    { "year": 2017, "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1899837.html" },
+    { "year": 2018, "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/201901/t20190128_1768279.html" },
+    { "year": 2019, "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202002/t20200205_1767757.html" },
+    { "year": 2020, "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1900985.html" },
+    { "year": 2021, "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202201/t20220127_1827079.html" },
+    { "year": 2022, "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901735.html" },
+    { "year": 2023, "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202401/t20240127_1946916.html" },
+    { "year": 2024, "url": "https://www.stats.gov.cn/sj/zxfb/202501/t20250127_1958485.html" },
+    { "year": 2025, "url": "https://www.stats.gov.cn/sj/zxfb/202601/t20260127_1962382.html" }
+  ],
+  "industrialProfitMargin": {
+    "years": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "unit": "%",
+    "series": [
+      { "name": "私营企业", "color": "#741918", "values": [6.01, 5.94, 5.93, 5.59, 5.25, 5.33, 5.73, 5.00, 4.80, 4.54, 4.51] },
+      { "name": "国有控股企业", "color": "#bc9157", "values": [4.64, 5.03, 6.44, 6.79, 5.67, 5.38, 6.92, 6.52, 6.16, 5.77, 5.50] },
+      { "name": "外商及港澳台投资企业", "color": "#88877c", "values": [6.30, 6.85, 7.24, 7.03, 6.64, 7.54, 7.93, 7.01, 6.60, 6.58, 6.77] }
+    ],
+    "current": { "period": "2026年1—8月", "values": [4.09, 6.51, 6.92], "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html" },
+    "currentYear": {
+      "periods": ["1—2月", "1—3月", "1—4月", "1—5月", "1—6月", "1—7月", "1—8月"],
+      "unit": "%",
+      "series": [
+        { "name": "私营企业", "color": "#741918", "values": [3.86, 3.70, 4.15, 3.93, 4.00, 4.03, 4.09] },
+        { "name": "国有控股企业", "color": "#bc9157", "values": [6.15, 6.62, 6.63, 6.67, 6.82, 6.66, 6.51] },
+        { "name": "外商及港澳台投资企业", "color": "#88877c", "values": [5.69, 6.26, 6.55, 6.69, 6.99, 6.83, 6.92] }
+      ],
+      "sourceUrls": [
+        "https://www.stats.gov.cn/sj/zxfb/202603/t20260327_1962868.html",
+        "https://www.stats.gov.cn/sj/zxfb/202604/t20260427_1963403.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260527_1963808.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260627_1964019.html",
+        "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260727_1964194.html",
+        "https://www.stats.gov.cn/sj/zxfb/202608/t20260827_1965126.html",
+        "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html"
+      ]
+    }
+  },
+  "industrialInventoryDays": {
+    "years": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "unit": "天",
+    "series": [
+      { "name": "私营企业", "color": "#741918", "values": [11.6, 11.3, 12.3, 16.5, 16.2, 18.1, 17.8, 19.8, 23.4, 23.4, 24.9] },
+      { "name": "国有控股企业", "color": "#bc9157", "values": [16.4, 16.4, 15.4, 15.1, 13.7, 13.9, 12.1, 11.4, 11.8, 11.7, 11.8] },
+      { "name": "外商及港澳台投资企业", "color": "#88877c", "values": [14.8, 14.3, 15.1, 17.7, 17.7, 17.8, 17.3, 18.3, 18.6, 18.4, 19.2] }
+    ],
+    "current": { "period": "2026年8月末", "values": [26.8, 12.7, 20.2], "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html" },
+    "currentYear": {
+      "periods": ["2月末", "3月末", "4月末", "5月末", "6月末", "7月末", "8月末"],
+      "unit": "天",
+      "series": [
+        { "name": "私营企业", "color": "#741918", "values": [28.0, 27.0, 26.9, 27.0, 26.6, 26.8, 26.8] },
+        { "name": "国有控股企业", "color": "#bc9157", "values": [13.5, 12.8, 12.9, 12.9, 12.6, 12.6, 12.7] },
+        { "name": "外商及港澳台投资企业", "color": "#88877c", "values": [21.5, 20.1, 20.2, 20.4, 19.9, 20.2, 20.2] }
+      ],
+      "sourceUrls": [
+        "https://www.stats.gov.cn/sj/zxfb/202603/t20260327_1962868.html",
+        "https://www.stats.gov.cn/sj/zxfb/202604/t20260427_1963403.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260527_1963808.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260627_1964019.html",
+        "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260727_1964194.html",
+        "https://www.stats.gov.cn/sj/zxfb/202608/t20260827_1965126.html",
+        "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html"
+      ]
+    }
+  },
+  "industrialCapacityUtilization": {
+    "periods": ["2018 Q4", "2019 Q4", "2020 Q4", "2021 Q4", "2022 Q4", "2023 Q4", "2024 Q4", "2025 Q4", "2026 Q2"],
+    "values": [76.0, 77.5, 78.0, 77.4, 75.7, 75.9, 76.2, 74.9, 73.0],
+    "unit": "%",
+    "sourceUrls": [
+      "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1900206.html",
+      "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202001/t20200117_1767740.html",
+      "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202101/t20210118_1812465.html",
+      "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901343.html",
+      "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202301/t20230117_1892130.html",
+      "https://www.stats.gov.cn/sj/zxfb/202401/t20240116_1946617.html",
+      "https://www.stats.gov.cn/sj/zxfb/202501/t20250117_1958324.html",
+      "https://www.stats.gov.cn/sj/zxfb/202601/t20260119_1962320.html",
+      "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964130.html"
+    ],
+    "recentPeriods": ["2025 Q1", "2025 Q2", "2025 Q3", "2025 Q4", "2026 Q1", "2026 Q2"],
+    "recentValues": [74.1, 74.0, 74.6, 74.9, 73.6, 73.0],
+    "recentSourceUrls": [
+      "https://www.stats.gov.cn/sj/zxfb/202504/t20250416_1959314.html",
+      "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202507/t20250715_1960404.html",
+      "https://www.stats.gov.cn/sj/zxfb/202510/t20251020_1961598.html",
+      "https://www.stats.gov.cn/sj/zxfb/202601/t20260119_1962320.html",
+      "https://www.stats.gov.cn/sj/zxfb/202604/t20260416_1963322.html",
+      "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964130.html"
+    ]
+  },
+  "industrialValueAddedCumulative": {
+    "periods": ["1—2月", "1—3月", "1—4月", "1—5月", "1—6月", "1—7月", "1—8月"],
+    "values": [6.3, 6.1, 5.6, 5.4, 5.4, 5.3, 5.3],
+    "unit": "%",
+    "sourceUrls": [
+      "https://www.stats.gov.cn/zwfwck/sjfb/202603/t20260316_1962782.html",
+      "https://www.stats.gov.cn/zwfwck/sjfb/202604/t20260416_1963329.html",
+      "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202605/t20260518_1963731.html",
+      "https://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963954.html",
+      "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202607/t20260715_1964121.html",
+      "https://www.stats.gov.cn/sj/zxfb/202608/t20260817_1965056.html",
+      "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html"
+    ]
+  },
+  "consumerCategorySources": [
+    { "period": "1—2月", "url": "https://www.stats.gov.cn/sj/zxfb/202603/t20260316_1962786.html" },
+    { "period": "3月", "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202604/t20260416_1963325.html" },
+    { "period": "4月", "url": "https://www.stats.gov.cn/zwfwck/sjfb/202605/t20260518_1963727.html" },
+    { "period": "5月", "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202606/t20260616_1963949.html" },
+    { "period": "6月", "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260715_1964127.html" },
+    { "period": "7月", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202608/t20260817_1965052.html" },
+    { "period": "8月", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html" }
+  ],
+  "consumerCategoryRows": [
+    { "period": "1—2月", "autoAmount": 6252, "autoYoy": -7.3, "autoCumulativeYoy": -7.3, "applianceAmount": 1572, "applianceYoy": 3.3, "applianceCumulativeYoy": 3.3 },
+    { "period": "3月", "autoAmount": 3741, "autoYoy": -11.8, "autoCumulativeYoy": -9.1, "applianceAmount": 938, "applianceYoy": -5.0, "applianceCumulativeYoy": 0.0 },
+    { "period": "4月", "autoAmount": 3029, "autoYoy": -15.3, "autoCumulativeYoy": -10.6, "applianceAmount": 776, "applianceYoy": -15.1, "applianceCumulativeYoy": -4.0 },
+    { "period": "5月", "autoAmount": 3309, "autoYoy": -16.1, "autoCumulativeYoy": -11.8, "applianceAmount": 975, "applianceYoy": -15.6, "applianceCumulativeYoy": -6.9 },
+    { "period": "6月", "autoAmount": 3791, "autoYoy": -16.1, "autoCumulativeYoy": -12.6, "applianceAmount": 1249, "applianceYoy": -8.7, "applianceCumulativeYoy": -7.4 },
+    { "period": "7月", "autoAmount": 3130, "autoYoy": -17.0, "autoCumulativeYoy": -13.2, "applianceAmount": 946, "applianceYoy": -1.9, "applianceCumulativeYoy": -6.6 },
+    { "period": "8月", "autoAmount": 3279, "autoYoy": -18.5, "autoCumulativeYoy": -13.9, "applianceAmount": 858, "applianceYoy": 2.3, "applianceCumulativeYoy": -5.6 }
+  ],
+  "exportStructureSources": [
+    { "year": 2016, "url": "https://www.stats.gov.cn/xxgk/sjfb/tjgb2020/201708/t20170811_1768640.html" },
+    { "year": 2017, "url": "https://www.stats.gov.cn/xxgk/sjfb/tjgb2020/201802/t20180228_1768641.html" },
+    { "year": 2018, "url": "https://www.stats.gov.cn/xxgk/sjfb/tjgb2020/201902/t20190228_1768642.html" },
+    { "year": 2019, "url": "https://www.stats.gov.cn/xxgk/sjfb/tjgb2020/202006/t20200617_1768655.html" },
+    { "year": 2020, "url": "https://www.stats.gov.cn/xxgk/sjfb/tjgb2020/202102/t20210228_1814159.html" },
+    { "year": 2021, "url": "https://www.stats.gov.cn/zt_18555/zthd/lhfw/2022/lh_hgjj/202302/t20230214_1903465.html" },
+    { "year": 2022, "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230228_1919011.html" },
+    { "year": 2023, "url": "https://www.stats.gov.cn/zt_18555/zthd/lhfw/2024/hgjj/202402/t20240229_1947948.html" },
+    { "year": 2024, "url": "https://www.stats.gov.cn/xxgk/sjfb/tjgb2020/202502/t20250228_1958817.html" },
+    { "year": 2025, "url": "https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html" }
+  ],
+  "exportPartnerRows": [
+    { "year": 2016, "markets": [{ "name": "东盟", "share": 12.2, "amount": 16894 }, { "name": "欧盟", "share": 16.2, "amount": 22369 }, { "name": "美国", "share": 18.4, "amount": 25415 }] },
+    { "year": 2017, "markets": [{ "name": "东盟", "share": 12.3, "amount": 18902 }, { "name": "欧盟", "share": 16.4, "amount": 25199 }, { "name": "美国", "share": 19.0, "amount": 29103 }] },
+    { "year": 2018, "markets": [{ "name": "东盟", "share": 12.8, "amount": 21066 }, { "name": "欧盟", "share": 16.4, "amount": 26974 }, { "name": "美国", "share": 19.2, "amount": 31603 }] },
+    { "year": 2019, "markets": [{ "name": "东盟", "share": 14.4, "amount": 24797 }, { "name": "欧盟", "share": 17.2, "amount": 29564 }, { "name": "美国", "share": 16.7, "amount": 28865 }] },
+    { "year": 2020, "markets": [{ "name": "东盟", "share": 14.8, "amount": 26550 }, { "name": "欧盟", "share": 15.1, "amount": 27084 }, { "name": "美国", "share": 17.4, "amount": 31279 }] },
+    { "year": 2021, "markets": [{ "name": "东盟", "share": 14.4, "amount": 31255 }, { "name": "欧盟", "share": 15.4, "amount": 33483 }, { "name": "美国", "share": 17.1, "amount": 37224 }] },
+    { "year": 2022, "markets": [{ "name": "东盟", "share": 15.8, "amount": 37907 }, { "name": "欧盟", "share": 15.6, "amount": 37434 }, { "name": "美国", "share": 16.2, "amount": 38706 }] },
+    { "year": 2023, "markets": [{ "name": "东盟", "share": 15.5, "amount": 36817 }, { "name": "欧盟", "share": 14.8, "amount": 35226 }, { "name": "美国", "share": 14.8, "amount": 35198 }] },
+    { "year": 2024, "markets": [{ "name": "东盟", "share": 16.4, "amount": 41736 }, { "name": "欧盟", "share": 14.4, "amount": 36751 }, { "name": "美国", "share": 14.7, "amount": 37337 }] },
+    { "year": 2025, "markets": [{ "name": "东盟", "share": 17.6, "amount": 47596 }, { "name": "欧盟", "share": 14.8, "amount": 40071 }, { "name": "美国", "share": 11.1, "amount": 30067 }] }
+  ],
+  "exportProductRows": [
+    { "year": 2016, "total": 138455, "mechanical": 79820, "highTech": 34618, "laborIntensive": null },
+    { "year": 2017, "total": 153321, "mechanical": 89465, "highTech": 45150, "laborIntensive": null },
+    { "year": 2018, "total": 164177, "mechanical": 96457, "highTech": 49374, "laborIntensive": 31222 },
+    { "year": 2019, "total": 172342, "mechanical": 100631, "highTech": 50427, "laborIntensive": 33113 },
+    { "year": 2020, "total": 179326, "mechanical": 106608, "highTech": 53692, "laborIntensive": 36356 },
+    { "year": 2021, "total": 217348, "mechanical": 128286, "highTech": 63266, "laborIntensive": 39430 },
+    { "year": 2022, "total": 239654, "mechanical": 136973, "highTech": 63391, "laborIntensive": 42827 },
+    { "year": 2023, "total": 237726, "mechanical": 139196, "highTech": 59279, "laborIntensive": 41107 },
+    { "year": 2024, "total": 254545, "mechanical": 151246, "highTech": 62792, "laborIntensive": 42438 },
+    { "year": 2025, "total": 269890, "mechanical": 164683, "highTech": 67806, "laborIntensive": 40681 }
   ],
   "fiscalSources": [
     { "period": "2026年1—2月", "url": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czyw/202603/t20260319_3985695.htm" },
@@ -28,6 +200,19 @@
     { "period": "2026年6月", "url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202607/t20260709_1964082.html" },
     { "period": "2026年7月", "url": "https://www.stats.gov.cn/sj/sjjd/202608/t20260809_1965009.html" },
     { "period": "2026年8月", "url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202609/t20260909_1965261.html" }
+  ],
+  "priceSources": [
+    { "period": "2026年1月", "cpiUrl": "https://www.stats.gov.cn/sj/zxfb/202602/t20260211_1962588.html", "ppiUrl": "https://www.stats.gov.cn/sj/zxfb/202602/t20260211_1962587.html" },
+    { "period": "2026年2月", "cpiUrl": "https://www.stats.gov.cn/sj/zxfb/202603/t20260309_1962732.html", "ppiUrl": "https://www.stats.gov.cn/sj/zxfb/202603/t20260309_1962729.html" },
+    { "period": "2026年3月", "cpiUrl": "https://www.stats.gov.cn/sj/zxfb/202604/t20260410_1963264.html", "ppiUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202604/t20260410_1963263.html" },
+    { "period": "2026年4月", "cpiUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202605/t20260511_1963659.html", "ppiUrl": "https://www.stats.gov.cn/sj/zxfb/202605/t20260511_1963658.html" },
+    { "period": "2026年5月", "cpiUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202606/t20260610_1963923.html", "ppiUrl": "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963922.html" },
+    { "period": "2026年6月", "cpiUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202607/t20260709_1964084.html", "ppiUrl": "https://www.stats.gov.cn/sj/zxfb/202607/t20260709_1964083.html" },
+    { "period": "2026年7月", "cpiUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202608/t20260809_1965008.html", "ppiUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202608/t20260809_1965007.html" },
+    { "period": "2026年8月", "cpiUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260909_1965263.html", "ppiUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260909_1965262.html" }
+  ],
+  "gdpQuarterlySources": [
+    { "period": "2026年二季度核算（含2025年四季及2026年一季度修订值）", "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260716_1964142.html" }
   ],
   "privateInvestmentSources": [
     { "period": "2026年1—2月", "url": "https://www.stats.gov.cn/zwfwck/sjfb/202603/t20260316_1962784.html" },
@@ -73,6 +258,21 @@
     { "period": "2026年7月末", "url": "https://www.safe.gov.cn/safe/2026/0806/27770.html" },
     { "period": "2026年8月末", "url": "https://www.safe.gov.cn/safe/2026/0907/27859.html" }
   ],
+  "reserveHistory": {
+    "basis": "月末外汇储备余额；亿美元；采用国家外汇管理局官方储备资产月度表中“外汇储备”项，不含黄金、SDR等其他储备资产",
+    "periods": ["2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09"],
+    "values": [32216.32, 32138.27, 31879.94, 31197.20, 31277.80, 30712.72, 31040.71, 30548.81, 30289.55, 30524.27, 31174.88, 31276.91, 31844.62, 31331.53, 31838.72, 32047.66, 31765.08, 31929.98, 32042.70, 31600.98, 31150.70, 31012.24, 31718.07, 32379.77, 32193.20, 32258.17, 32456.57, 32008.31, 32320.39, 32223.58, 32563.72, 32882.15, 33163.67, 32610.50, 32658.60, 32023.57, 32090.36, 32272.24, 32406.65, 32816.62, 32852.55, 33174.22, 32922.35, 33221.54, 33386.58, 33433.43, 33463.72, 33578.69, 33990.78, 34278.07, 33421.23, 34105.47, 34422.38, 34162.62, 34187.76, 34383.25, 34002.51],
+    "sources": [
+      { "year": "2022", "url": "https://www.safe.gov.cn/safe/2022/0207/22233.html" },
+      { "year": "2023", "url": "https://www.safe.gov.cn/safe/2022/0207/20625.html" },
+      { "year": "2024", "url": "https://www.safe.gov.cn/safe/2022/0207/23934.html" },
+      { "year": "2025", "url": "https://www.safe.gov.cn/safe/2025/0206/27115.html" },
+      { "year": "2026", "url": "https://www.safe.gov.cn/safe/2026/0206/27116.html" }
+    ],
+    "source": "国家外汇管理局官方储备资产月度表（各年 HTML 表）",
+    "latestPeriod": "2026-09",
+    "verifiedAt": "2026-10-08"
+  },
   "tradeSources": [
     { "period": "2026年1月", "url": "https://www.safe.gov.cn/safe/2026/0228/27172.html" },
     { "period": "2026年2月", "url": "https://www.safe.gov.cn/safe/2026/0327/27299.html" },
@@ -82,6 +282,27 @@
     { "period": "2026年6月", "url": "https://www.safe.gov.cn/jilin/2026/0814/2968.html" },
     { "period": "2026年7月", "url": "https://www.safe.gov.cn/chongqing/2026/0828/3588.html" }
   ],
+  "tradeTotal": {
+    "metric": "国际收支货物和服务贸易合计差额",
+    "basis": "当月国际收支口径，正值为顺差；直接采用国家外汇管理局公布的合计美元值，各分项独立四舍五入时可能相差1亿美元",
+    "unit": "亿美元",
+    "periods": ["1月", "2月", "3月", "4月", "5月", "6月", "7月"],
+    "values": [828, 519, 434, 593, 679, 995, 912],
+    "source": "国家外汇管理局逐月国际收支货物和服务贸易原表"
+  },
+  "tradeQuarterly": {
+    "metric": "国际收支货物和服务贸易合计差额",
+    "basis": "季度流量；采用国家外汇管理局最新版国际收支平衡表季度序列中的“货物和服务”差额，不与月度图混画",
+    "unit": "亿美元",
+    "periods": ["2018-Q1", "2018-Q2", "2018-Q3", "2018-Q4", "2019-Q1", "2019-Q2", "2019-Q3", "2019-Q4", "2020-Q1", "2020-Q2", "2020-Q3", "2020-Q4", "2021-Q1", "2021-Q2", "2021-Q3", "2021-Q4", "2022-Q1", "2022-Q2", "2022-Q3", "2022-Q4", "2023-Q1", "2023-Q2", "2023-Q3", "2023-Q4", "2024-Q1", "2024-Q2", "2024-Q3", "2024-Q4", "2025-Q1", "2025-Q2", "2025-Q3", "2025-Q4", "2026-Q1", "2026-Q2"],
+    "goodsValues": [486.0, 1006.8, 972.9, 1335.0, 632.6, 908.7, 1088.8, 1080.9, 117.0, 1520.3, 1534.9, 1832.6, 1188.1, 1065.2, 1369.7, 1744.1, 1370.7, 1676.1, 1920.6, 1541.8, 1277.2, 1608.0, 1582.5, 1532.6, 1317.8, 1727.0, 2437.4, 2608.9, 2471.1, 2266.7, 2765.0, 3102.7, 2474.8, 2788.0],
+    "servicesValues": [-735.5, -737.1, -808.6, -640.4, -617.5, -634.7, -699.7, -567.0, -543.7, -371.1, -429.7, -325.7, -356.0, -328.0, -382.6, -240.3, -222.4, -255.4, -337.4, -310.1, -474.2, -506.8, -621.6, -605.6, -656.2, -672.4, -659.9, -561.3, -716.2, -580.9, -598.8, -485.2, -595.5, -554.1],
+    "values": [-249.5, 269.6, 164.3, 694.6, 15.1, 274.0, 389.1, 513.9, -426.7, 1149.2, 1105.1, 1506.9, 832.1, 737.2, 987.1, 1503.8, 1148.3, 1420.7, 1583.1, 1231.6, 803.0, 1101.2, 960.9, 927.1, 661.6, 1054.6, 1777.5, 2047.5, 1754.9, 1685.8, 2166.2, 2617.5, 1879.2, 2233.9],
+    "source": "国家外汇管理局中国国际收支平衡表时间序列（BPM6），季度BOP（美元）表，2026-09-29更新",
+    "sourceUrl": "https://www.safe.gov.cn/safe/2019/0627/13519.html",
+    "dataUrl": "https://www.safe.gov.cn/safe/file/file/20260929/6674650e17de4f20a45c64610118a96f.xlsx",
+    "verifiedAt": "2026-10-08"
+  },
   "series": [
     {
       "metric": "GDP 单季实际增速", "group": "经济运行", "subgroup": "经济增长", "basis": "单季实际同比", "unit": "%",
@@ -89,7 +310,14 @@
       "values": [5.4, 5.2, 4.8, 4.5, 5.0, 4.3],
       "source": "国家统计局季度 GDP 核算与2025年统计公报",
       "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260716_1964142.html",
-      "basisNote": "2025年四个季度来自2025年统计公报；2026年一、二季度来自国家统计局季度核算。"
+      "basisNote": "2025年四个季度来自2025年统计公报；2026年一、二季度来自国家统计局季度核算。",
+      "alternate": {
+        "label": "单季实际环比", "basis": "单季实际环比；经季节调整后与上一季度比较，采用2026年二季度发布的修订序列", "unit": "%",
+        "periods": ["2025 Q1", "2025 Q2", "2025 Q3", "2025 Q4", "2026 Q1", "2026 Q2"],
+        "values": [1.1, 1.2, 1.1, 1.1, 1.3, 0.9],
+        "source": "国家统计局2026年二季度GDP初步核算结果·表3，单位%，季节调整后环比（含修订值）",
+        "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260716_1964142.html"
+      }
     },
     {
       "metric": "GDP 平减指数", "group": "经济运行", "subgroup": "经济增长", "basis": "单季同比约值；用公布的一位小数名义/实际增速反推，历史待扩充", "unit": "%",
@@ -106,25 +334,32 @@
       "metric": "规模以上工业增加值", "group": "增长动力", "subgroup": "工业生产", "basis": "当月实际同比；首点为1—2月合并同比", "unit": "%",
       "periods": ["1—2月", "3月", "4月", "5月", "6月", "7月", "8月"],
       "values": [6.3, 5.7, 4.1, 4.5, 5.3, 4.5, 5.2],
-      "source": "国家统计局逐月经济运行发布", "sourceSet": "activity"
+      "source": "国家统计局逐月经济运行发布", "sourceSet": "activity",
+      "cumulativeLatest": { "period": "2026年1—8月", "value": 5.3, "basis": "累计同比", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965308.html" }
     },
     {
       "metric": "CPI", "group": "经济运行", "subgroup": "物价水平", "basis": "当月同比", "unit": "%",
       "periods": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月"],
       "values": [0.2, 1.3, 1.0, 1.2, 1.2, 1.0, 0.5, 0.8],
-      "source": "国家统计局逐月经济运行发布", "sourceSet": "activity"
+      "source": "国家统计局逐月居民消费价格原始发布", "sourceSet": "activity",
+      "alternate": { "label": "当月环比", "basis": "当月环比，未季节调整；与当月同比不连线", "periods": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月"], "values": [0.2, 1.0, -0.7, 0.3, -0.1, -0.3, -0.1, 0.4], "source": "国家统计局逐月居民消费价格原始发布", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260909_1965263.html" },
+      "cumulativeLatest": { "period": "2026年1—8月", "value": 0.9, "basis": "平均同比", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260909_1965263.html" }
     },
     {
       "metric": "核心 CPI", "group": "经济运行", "subgroup": "物价水平", "basis": "扣除食品和能源，当月同比", "unit": "%",
       "periods": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月"],
       "values": [0.8, 1.8, 1.1, 1.2, 1.1, 1.0, 0.9, 1.0],
-      "source": "国家统计局逐月 CPI/PPI 官方解读", "sourceSet": "coreCpi"
+      "source": "国家统计局逐月居民消费价格原始发布", "sourceSet": "coreCpi",
+      "alternate": { "label": "当月环比", "basis": "扣除食品和能源，当月环比，未季节调整；与当月同比不连线", "periods": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月"], "values": [0.3, 0.7, -0.7, 0.2, -0.1, -0.1, 0.3, 0.1], "source": "国家统计局逐月居民消费价格原始发布", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260909_1965263.html" },
+      "cumulativeLatest": { "period": "2026年1—8月", "value": 1.1, "basis": "平均同比", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260909_1965263.html" }
     },
     {
       "metric": "PPI", "group": "经济运行", "subgroup": "物价水平", "basis": "当月同比", "unit": "%",
       "periods": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月"],
       "values": [-1.4, -0.9, 0.5, 2.8, 3.9, 4.1, 3.5, 3.8],
-      "source": "国家统计局逐月经济运行发布", "sourceSet": "activity"
+      "source": "国家统计局逐月工业生产者价格原始发布", "sourceSet": "activity",
+      "alternate": { "label": "当月环比", "basis": "当月环比，未季节调整；与当月同比不连线", "periods": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月"], "values": [0.4, 0.4, 1.0, 1.7, 0.5, -0.3, -0.7, 0.4], "source": "国家统计局逐月工业生产者价格原始发布", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260909_1965262.html" },
+      "cumulativeLatest": { "period": "2026年1—8月", "value": 2.0, "basis": "平均同比", "url": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260909_1965262.html" }
     },
     {
       "metric": "PPI－CPI 剪刀差", "group": "经济运行", "subgroup": "物价水平", "basis": "同月 PPI 当月同比减 CPI 当月同比", "unit": "个百分点",
@@ -133,16 +368,39 @@
       "derivedFrom": ["PPI", "CPI"], "source": "根据国家统计局逐月公布的 PPI、CPI 当月同比计算", "sourceSet": "activity"
     },
     {
-      "metric": "城镇调查失业率", "group": "经济运行", "subgroup": "就业市场", "basis": "当月水平；1月原值未单列", "unit": "%",
-      "periods": ["2月", "3月", "4月", "5月", "6月", "7月", "8月"],
-      "values": [5.3, 5.4, 5.2, 5.1, 5.0, 5.2, 5.3],
-      "source": "国家统计局逐月经济运行发布", "sourceSet": "activity"
+      "metric": "城镇调查失业率", "group": "经济运行", "subgroup": "就业市场", "basis": "全国城镇调查失业率当月值，单位%；从2025年1月起。2026年1月仅公布1—2月均值，未单列月值，故不以均值替代。", "unit": "%",
+      "periods": ["2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08"],
+      "values": [5.2, 5.4, 5.2, 5.1, 5.0, 5.0, 5.2, 5.3, 5.2, 5.1, 5.1, 5.1, 5.3, 5.4, 5.2, 5.1, 5.0, 5.2, 5.3],
+      "source": "国家统计局月度经济运行发布；2025年值由一季度就业解读和年度就业解读交叉核对；2026年2—8月采用逐月经济运行发布。2026年1月仅有1—2月均值，故不替代单月值。", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html", "sourceSet": "activity",
+      "sourceUrls": [
+        "https://www.stats.gov.cn/sj/sjjd/202504/t20250417_1959344.html", "https://www.stats.gov.cn/sj/sjjd/202504/t20250417_1959344.html", "https://www.stats.gov.cn/sj/sjjd/202504/t20250417_1959344.html",
+        "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202601/t20260119_1962339.html", "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202601/t20260119_1962339.html", "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202601/t20260119_1962339.html",
+        "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202601/t20260119_1962339.html", "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202601/t20260119_1962339.html", "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202601/t20260119_1962339.html",
+        "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202601/t20260119_1962339.html", "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202601/t20260119_1962339.html", "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202601/t20260119_1962339.html",
+        "https://www.stats.gov.cn/zwfwck/sjfb/202603/t20260316_1962780.html", "https://www.stats.gov.cn/sj/zxfb/202604/t20260416_1963330.html", "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963954.html", "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202607/t20260715_1964121.html", "https://www.stats.gov.cn/sj/zxfb/202608/t20260817_1965056.html", "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html"
+      ]
     },
     {
       "metric": "社会消费品零售", "group": "增长动力", "subgroup": "消费", "basis": "当月名义同比；首点为1—2月合并同比", "unit": "%",
       "periods": ["1—2月", "3月", "4月", "5月", "6月", "7月", "8月"],
       "values": [2.8, 1.7, 0.2, -0.6, 1.0, 0.6, 0.4],
       "source": "国家统计局逐月经济运行发布", "sourceSet": "activity"
+    },
+    {
+      "metric": "服务零售额", "group": "增长动力", "subgroup": "消费", "role": "服务需求", "basis": "年初累计同比；服务消费口径，不等于社零中的餐饮收入或网上服务零售", "unit": "%",
+      "periods": ["1—2月", "1—3月", "1—4月", "1—5月", "1—6月", "1—7月", "1—8月"],
+      "values": [5.6, 5.5, 5.6, 5.4, 5.3, 5.0, 4.9],
+      "source": "国家统计局逐期国民经济运行发布；各点为当期披露的累计同比，不由单月社零推算",
+      "sourceUrls": [
+        "https://www.stats.gov.cn/zwfwck/sjfb/202603/t20260316_1962780.html",
+        "https://www.stats.gov.cn/sj/zxfb/202604/t20260416_1963330.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+        "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202606/t20260616_1963954.html",
+        "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202607/t20260715_1964121.html",
+        "https://www.stats.gov.cn/sj/zxfb/202608/t20260817_1965056.html",
+        "https://www.stats.gov.cn/sj/sjjd/202609/t20260915_1965328.html"
+      ]
     },
     {
       "metric": "固定资产投资", "group": "增长动力", "subgroup": "投资", "basis": "年初累计同比", "unit": "%",
@@ -157,6 +415,20 @@
       "source": "国家统计局逐月固定资产投资发布", "sourceSet": "privateInvestment"
     },
     {
+      "metric": "制造业投资", "group": "增长动力", "subgroup": "投资", "role": "投资结构", "basis": "固定资产投资（不含农户）中的制造业投资，年初累计名义同比", "unit": "%",
+      "periods": ["1—2月", "1—3月", "1—4月", "1—5月", "1—6月", "1—7月", "1—8月"],
+      "values": [3.1, 4.1, 1.2, -0.4, -1.2, -1.7, -2.3],
+      "source": "国家统计局逐期固定资产投资原始发布",
+      "sourceSet": "investmentStructure"
+    },
+    {
+      "metric": "基础设施投资", "group": "增长动力", "subgroup": "投资", "role": "投资结构", "basis": "国家统计局现行基础设施投资口径（含电力、热力、燃气及水），年初累计名义同比", "unit": "%",
+      "periods": ["1—2月", "1—3月", "1—4月", "1—5月", "1—6月", "1—7月", "1—8月"],
+      "values": [11.4, 8.9, 4.3, 0.6, -2.4, -3.6, -4.0],
+      "source": "国家统计局逐期固定资产投资原始发布；不与旧版“不含电力”口径拼接",
+      "sourceSet": "investmentStructure"
+    },
+    {
       "metric": "新建商品房销售面积", "group": "增长动力", "subgroup": "房地产", "basis": "年初累计同比", "unit": "%",
       "periods": ["1—2月", "1—3月", "1—4月", "1—5月", "1—6月", "1—7月", "1—8月"],
       "values": [-13.5, -10.4, -10.2, -10.8, -11.6, -11.8, -12.1],
@@ -169,13 +441,13 @@
       "source": "国家统计局逐月经济运行发布", "sourceSet": "activity"
     },
     {
-      "metric": "社融存量增速", "group": "金融信贷", "basis": "月末存量同比", "unit": "%",
+      "metric": "社融存量增速", "group": "金融信贷", "subgroup": "社会融资", "basis": "月末存量同比", "unit": "%",
       "periods": ["1月末", "2月末", "3月末", "4月末", "5月末", "6月末", "7月末", "8月末"],
       "values": [8.2, 8.2, 7.9, 7.8, 7.7, 7.4, 7.4, 7.2],
-      "source": "中国人民银行逐月金融统计数据报告", "sourceSet": "credit"
+      "source": "中国人民银行逐月社会融资规模存量统计数据报告", "sourceSet": "credit"
     },
     {
-      "metric": "一般公共预算支出", "group": "政策制度", "basis": "年初累计同比", "unit": "%",
+      "metric": "一般公共预算支出", "group": "宏观调控", "subgroup": "财政政策", "basis": "年初累计同比", "unit": "%",
       "periods": ["1—2月", "1—3月", "1—4月", "1—5月", "1—6月", "1—7月", "1—8月"],
       "values": [3.6, 2.6, 1.3, 0.8, 1.5, 1.3, 1.2],
       "source": "财政部财政收支情况", "sourceSet": "fiscal"
@@ -184,7 +456,14 @@
       "metric": "制造业 PMI", "group": "经济运行", "subgroup": "景气指数", "role": "领先观察", "basis": "当月指数，50为荣枯线", "unit": "",
       "periods": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月"],
       "values": [49.3, 49.0, 50.4, 50.3, 50.0, 50.3, 49.2, 49.8],
-      "source": "国家统计局采购经理指数月报",
+      "source": "国家统计局采购经理指数月报", "sourceSet": "nonManufacturingPmi",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202608/t20260831_1965154.html"
+    },
+    {
+      "metric": "制造业 PMI 新订单", "group": "增长动力", "subgroup": "工业生产", "role": "前瞻需求", "basis": "当月经季节调整的扩散指数；50为扩张与收缩临界线，不是订单量同比", "unit": "",
+      "periods": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月"],
+      "values": [49.2, 48.6, 51.6, 50.6, 49.9, 51.2, 48.5, 50.6],
+      "source": "国家统计局2026年8月制造业 PMI 月报原表，含1—8月可比列", "sourceSet": "nonManufacturingPmi",
       "url": "https://www.stats.gov.cn/sj/zxfb/202608/t20260831_1965154.html"
     },
     {
@@ -232,9 +511,5 @@
       "url": "https://www.stats.gov.cn/sj/zxfb/202608/t20260827_1965126.html"
     }
   ],
-  "planned": [
-    { "metric": "制造业投资", "group": "增长动力", "indicatorId": "M36", "reason": "待按国家统计局各期累计同比逐点核对。" },
-    { "metric": "M1－M2 差值", "group": "金融信贷", "indicatorId": "M54", "reason": "M1 自 2025 年调整统计口径；仅核验新口径历史，不跨旧口径连线。" },
-    { "metric": "DR007", "group": "政策制度", "indicatorId": "M62", "reason": "待逐日核验官方市场利率，再确定周度或月度展示方式。" }
-  ]
+  "planned": []
 }

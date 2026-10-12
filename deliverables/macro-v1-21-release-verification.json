@@ -1,0 +1,37 @@
+{
+  "version": "V1.21",
+  "informationCutoff": "2026-10-11",
+  "siteUrl": "https://multi-asset-allocation-advisor.xlp2077.workers.dev",
+  "deployedVersionId": "abec64eb-e67b-478b-828c-cd937f7f7460",
+  "deploymentReceipt": {
+    "uploaded": true,
+    "deployed": true,
+    "exitCode": 0,
+    "buildAndDryRunPassed": true
+  },
+  "tests": { "passed": 324, "failed": 0, "skipped": 0 },
+  "liveVerification": {
+    "authenticatedMainSiteRefreshed": true,
+    "summaryVersion": "V1.21",
+    "summaryScore": 2.77,
+    "pillarWeights": [25, 40, 20, 15],
+    "parentIndicatorCount": 38,
+    "loanIdsWithVisibleCumulativeAndMonthlyRows": ["F01", "F02"],
+    "loanChildAllocation": [40, 60],
+    "loanParentScores": [1.53, 1.60],
+    "loanAmounts": {
+      "F01": { "yearToDateMoreIncrease": -10612, "latestMonthMoreIncrease": -1022, "unit": "亿元" },
+      "F02": { "yearToDateMoreIncrease": -17400, "latestMonthMoreIncrease": -1500, "unit": "亿元" }
+    },
+    "standardsShowIndependentAmountScales": true,
+    "standardsShowCumulativeDividedByElapsedMonths": true,
+    "historyVersions": ["V1.18", "V1.19", "V1.20", "V1.21"],
+    "pendingUnenabledPlans": ["G03", "G14", "G07", "G13", "G16"]
+  },
+  "screenshots": ["deliverables/macro-v1-21-live-summary.png", "deliverables/macro-v1-21-live-loans.png"],
+  "limitations": [
+    "两项贷款尺度仍属短样本试行；累计诊断分量触底较多，不声称全部灵敏度问题已解决。",
+    "房地产和三项投资未取得同修订同范围可比单月，本版保留累计评分而不补造月度值。",
+    "评分变化来自双口径方法修订，不是新增当日经济数据。"
+  ]
+}

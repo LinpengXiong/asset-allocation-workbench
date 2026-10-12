@@ -1,0 +1,878 @@
+{
+  "name": "70城二手住宅价格环比中位数近3月均值（工作台计算）",
+  "publisher": "国家统计局",
+  "unit": "%",
+  "frequency": "月度",
+  "method": "逐月读取官方表2的70个城市二手住宅销售价格环比指数（上月=100）；各城指数减100，取70城中位数，再取连续3个月中位数的算术平均。不是国家统计局发布的全国房价指数。",
+  "sourceSearch": "https://api.so-gov.cn/query/s",
+  "monthly": [
+    {
+      "period": "2026-06",
+      "releaseDate": "2026-07-15",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202607/t20260715_1964115.html",
+      "cities": [
+        {
+          "city": "北京",
+          "momIndex": 100.1
+        },
+        {
+          "city": "唐山",
+          "momIndex": 99.4
+        },
+        {
+          "city": "天津",
+          "momIndex": 99.7
+        },
+        {
+          "city": "秦皇岛",
+          "momIndex": 99.7
+        },
+        {
+          "city": "石家庄",
+          "momIndex": 99.5
+        },
+        {
+          "city": "包头",
+          "momIndex": 99.7
+        },
+        {
+          "city": "太原",
+          "momIndex": 99.6
+        },
+        {
+          "city": "丹东",
+          "momIndex": 99.8
+        },
+        {
+          "city": "呼和浩特",
+          "momIndex": 99.6
+        },
+        {
+          "city": "锦州",
+          "momIndex": 99.9
+        },
+        {
+          "city": "沈阳",
+          "momIndex": 100.1
+        },
+        {
+          "city": "吉林",
+          "momIndex": 99.7
+        },
+        {
+          "city": "大连",
+          "momIndex": 99.9
+        },
+        {
+          "city": "牡丹江",
+          "momIndex": 99.8
+        },
+        {
+          "city": "长春",
+          "momIndex": 99.7
+        },
+        {
+          "city": "无锡",
+          "momIndex": 100.2
+        },
+        {
+          "city": "哈尔滨",
+          "momIndex": 99.6
+        },
+        {
+          "city": "徐州",
+          "momIndex": 100.1
+        },
+        {
+          "city": "上海",
+          "momIndex": 100.4
+        },
+        {
+          "city": "扬州",
+          "momIndex": 99.5
+        },
+        {
+          "city": "南京",
+          "momIndex": 99.7
+        },
+        {
+          "city": "温州",
+          "momIndex": 99.6
+        },
+        {
+          "city": "杭州",
+          "momIndex": 99.8
+        },
+        {
+          "city": "金华",
+          "momIndex": 99.7
+        },
+        {
+          "city": "宁波",
+          "momIndex": 100.2
+        },
+        {
+          "city": "蚌埠",
+          "momIndex": 99.8
+        },
+        {
+          "city": "合肥",
+          "momIndex": 100.0
+        },
+        {
+          "city": "安庆",
+          "momIndex": 99.7
+        },
+        {
+          "city": "福州",
+          "momIndex": 99.6
+        },
+        {
+          "city": "泉州",
+          "momIndex": 99.6
+        },
+        {
+          "city": "厦门",
+          "momIndex": 99.8
+        },
+        {
+          "city": "九江",
+          "momIndex": 99.2
+        },
+        {
+          "city": "南昌",
+          "momIndex": 99.5
+        },
+        {
+          "city": "赣州",
+          "momIndex": 99.7
+        },
+        {
+          "city": "济南",
+          "momIndex": 99.5
+        },
+        {
+          "city": "烟台",
+          "momIndex": 99.7
+        },
+        {
+          "city": "青岛",
+          "momIndex": 99.6
+        },
+        {
+          "city": "济宁",
+          "momIndex": 99.6
+        },
+        {
+          "city": "郑州",
+          "momIndex": 99.9
+        },
+        {
+          "city": "洛阳",
+          "momIndex": 99.5
+        },
+        {
+          "city": "武汉",
+          "momIndex": 99.9
+        },
+        {
+          "city": "平顶山",
+          "momIndex": 99.3
+        },
+        {
+          "city": "长沙",
+          "momIndex": 99.8
+        },
+        {
+          "city": "宜昌",
+          "momIndex": 99.7
+        },
+        {
+          "city": "广州",
+          "momIndex": 100.4
+        },
+        {
+          "city": "襄阳",
+          "momIndex": 99.6
+        },
+        {
+          "city": "深圳",
+          "momIndex": 100.3
+        },
+        {
+          "city": "岳阳",
+          "momIndex": 99.7
+        },
+        {
+          "city": "南宁",
+          "momIndex": 99.7
+        },
+        {
+          "city": "常德",
+          "momIndex": 99.3
+        },
+        {
+          "city": "海口",
+          "momIndex": 99.5
+        },
+        {
+          "city": "韶关",
+          "momIndex": 99.3
+        },
+        {
+          "city": "重庆",
+          "momIndex": 100.1
+        },
+        {
+          "city": "湛江",
+          "momIndex": 99.2
+        },
+        {
+          "city": "成都",
+          "momIndex": 99.6
+        },
+        {
+          "city": "惠州",
+          "momIndex": 99.5
+        },
+        {
+          "city": "贵阳",
+          "momIndex": 99.6
+        },
+        {
+          "city": "桂林",
+          "momIndex": 99.6
+        },
+        {
+          "city": "昆明",
+          "momIndex": 99.5
+        },
+        {
+          "city": "北海",
+          "momIndex": 99.4
+        },
+        {
+          "city": "西安",
+          "momIndex": 99.6
+        },
+        {
+          "city": "三亚",
+          "momIndex": 99.7
+        },
+        {
+          "city": "兰州",
+          "momIndex": 99.5
+        },
+        {
+          "city": "泸州",
+          "momIndex": 99.2
+        },
+        {
+          "city": "西宁",
+          "momIndex": 99.7
+        },
+        {
+          "city": "南充",
+          "momIndex": 99.6
+        },
+        {
+          "city": "银川",
+          "momIndex": 99.6
+        },
+        {
+          "city": "遵义",
+          "momIndex": 99.4
+        },
+        {
+          "city": "乌鲁木齐",
+          "momIndex": 99.6
+        },
+        {
+          "city": "大理",
+          "momIndex": 99.3
+        }
+      ],
+      "medianMomPct": -0.35,
+      "threeMonthMeanPct": null
+    },
+    {
+      "period": "2026-07",
+      "releaseDate": "2026-08-17",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202608/t20260817_1965050.html",
+      "cities": [
+        {
+          "city": "北京",
+          "momIndex": 100.0
+        },
+        {
+          "city": "唐山",
+          "momIndex": 99.5
+        },
+        {
+          "city": "天津",
+          "momIndex": 99.8
+        },
+        {
+          "city": "秦皇岛",
+          "momIndex": 99.4
+        },
+        {
+          "city": "石家庄",
+          "momIndex": 99.7
+        },
+        {
+          "city": "包头",
+          "momIndex": 99.5
+        },
+        {
+          "city": "太原",
+          "momIndex": 99.6
+        },
+        {
+          "city": "丹东",
+          "momIndex": 99.7
+        },
+        {
+          "city": "呼和浩特",
+          "momIndex": 99.7
+        },
+        {
+          "city": "锦州",
+          "momIndex": 99.7
+        },
+        {
+          "city": "沈阳",
+          "momIndex": 100.1
+        },
+        {
+          "city": "吉林",
+          "momIndex": 99.9
+        },
+        {
+          "city": "大连",
+          "momIndex": 99.8
+        },
+        {
+          "city": "牡丹江",
+          "momIndex": 99.9
+        },
+        {
+          "city": "长春",
+          "momIndex": 99.7
+        },
+        {
+          "city": "无锡",
+          "momIndex": 99.8
+        },
+        {
+          "city": "哈尔滨",
+          "momIndex": 99.5
+        },
+        {
+          "city": "徐州",
+          "momIndex": 100.2
+        },
+        {
+          "city": "上海",
+          "momIndex": 100.3
+        },
+        {
+          "city": "扬州",
+          "momIndex": 99.6
+        },
+        {
+          "city": "南京",
+          "momIndex": 99.7
+        },
+        {
+          "city": "温州",
+          "momIndex": 99.7
+        },
+        {
+          "city": "杭州",
+          "momIndex": 99.9
+        },
+        {
+          "city": "金华",
+          "momIndex": 99.8
+        },
+        {
+          "city": "宁波",
+          "momIndex": 100.0
+        },
+        {
+          "city": "蚌埠",
+          "momIndex": 99.7
+        },
+        {
+          "city": "合肥",
+          "momIndex": 99.8
+        },
+        {
+          "city": "安庆",
+          "momIndex": 99.6
+        },
+        {
+          "city": "福州",
+          "momIndex": 99.8
+        },
+        {
+          "city": "泉州",
+          "momIndex": 99.5
+        },
+        {
+          "city": "厦门",
+          "momIndex": 99.7
+        },
+        {
+          "city": "九江",
+          "momIndex": 99.8
+        },
+        {
+          "city": "南昌",
+          "momIndex": 99.9
+        },
+        {
+          "city": "赣州",
+          "momIndex": 99.6
+        },
+        {
+          "city": "济南",
+          "momIndex": 99.4
+        },
+        {
+          "city": "烟台",
+          "momIndex": 99.8
+        },
+        {
+          "city": "青岛",
+          "momIndex": 99.4
+        },
+        {
+          "city": "济宁",
+          "momIndex": 99.8
+        },
+        {
+          "city": "郑州",
+          "momIndex": 99.7
+        },
+        {
+          "city": "洛阳",
+          "momIndex": 99.4
+        },
+        {
+          "city": "武汉",
+          "momIndex": 100.0
+        },
+        {
+          "city": "平顶山",
+          "momIndex": 99.5
+        },
+        {
+          "city": "长沙",
+          "momIndex": 99.9
+        },
+        {
+          "city": "宜昌",
+          "momIndex": 99.8
+        },
+        {
+          "city": "广州",
+          "momIndex": 100.4
+        },
+        {
+          "city": "襄阳",
+          "momIndex": 99.4
+        },
+        {
+          "city": "深圳",
+          "momIndex": 100.2
+        },
+        {
+          "city": "岳阳",
+          "momIndex": 99.8
+        },
+        {
+          "city": "南宁",
+          "momIndex": 99.9
+        },
+        {
+          "city": "常德",
+          "momIndex": 99.5
+        },
+        {
+          "city": "海口",
+          "momIndex": 99.1
+        },
+        {
+          "city": "韶关",
+          "momIndex": 99.5
+        },
+        {
+          "city": "重庆",
+          "momIndex": 99.8
+        },
+        {
+          "city": "湛江",
+          "momIndex": 99.4
+        },
+        {
+          "city": "成都",
+          "momIndex": 99.7
+        },
+        {
+          "city": "惠州",
+          "momIndex": 99.7
+        },
+        {
+          "city": "贵阳",
+          "momIndex": 99.6
+        },
+        {
+          "city": "桂林",
+          "momIndex": 99.8
+        },
+        {
+          "city": "昆明",
+          "momIndex": 99.4
+        },
+        {
+          "city": "北海",
+          "momIndex": 99.5
+        },
+        {
+          "city": "西安",
+          "momIndex": 99.6
+        },
+        {
+          "city": "三亚",
+          "momIndex": 99.6
+        },
+        {
+          "city": "兰州",
+          "momIndex": 99.8
+        },
+        {
+          "city": "泸州",
+          "momIndex": 99.3
+        },
+        {
+          "city": "西宁",
+          "momIndex": 99.7
+        },
+        {
+          "city": "南充",
+          "momIndex": 99.8
+        },
+        {
+          "city": "银川",
+          "momIndex": 99.7
+        },
+        {
+          "city": "遵义",
+          "momIndex": 99.7
+        },
+        {
+          "city": "乌鲁木齐",
+          "momIndex": 99.9
+        },
+        {
+          "city": "大理",
+          "momIndex": 99.5
+        }
+      ],
+      "medianMomPct": -0.3,
+      "threeMonthMeanPct": null
+    },
+    {
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965304.html",
+      "cities": [
+        {
+          "city": "北京",
+          "momIndex": 99.9
+        },
+        {
+          "city": "唐山",
+          "momIndex": 99.4
+        },
+        {
+          "city": "天津",
+          "momIndex": 99.5
+        },
+        {
+          "city": "秦皇岛",
+          "momIndex": 99.5
+        },
+        {
+          "city": "石家庄",
+          "momIndex": 99.7
+        },
+        {
+          "city": "包头",
+          "momIndex": 99.4
+        },
+        {
+          "city": "太原",
+          "momIndex": 99.4
+        },
+        {
+          "city": "丹东",
+          "momIndex": 99.6
+        },
+        {
+          "city": "呼和浩特",
+          "momIndex": 99.4
+        },
+        {
+          "city": "锦州",
+          "momIndex": 99.7
+        },
+        {
+          "city": "沈阳",
+          "momIndex": 100.0
+        },
+        {
+          "city": "吉林",
+          "momIndex": 99.7
+        },
+        {
+          "city": "大连",
+          "momIndex": 100.0
+        },
+        {
+          "city": "牡丹江",
+          "momIndex": 99.8
+        },
+        {
+          "city": "长春",
+          "momIndex": 99.6
+        },
+        {
+          "city": "无锡",
+          "momIndex": 99.9
+        },
+        {
+          "city": "哈尔滨",
+          "momIndex": 99.9
+        },
+        {
+          "city": "徐州",
+          "momIndex": 99.8
+        },
+        {
+          "city": "上海",
+          "momIndex": 100.3
+        },
+        {
+          "city": "扬州",
+          "momIndex": 100.2
+        },
+        {
+          "city": "南京",
+          "momIndex": 99.8
+        },
+        {
+          "city": "温州",
+          "momIndex": 99.8
+        },
+        {
+          "city": "杭州",
+          "momIndex": 99.8
+        },
+        {
+          "city": "金华",
+          "momIndex": 99.7
+        },
+        {
+          "city": "宁波",
+          "momIndex": 100.0
+        },
+        {
+          "city": "蚌埠",
+          "momIndex": 99.6
+        },
+        {
+          "city": "合肥",
+          "momIndex": 100.0
+        },
+        {
+          "city": "安庆",
+          "momIndex": 99.7
+        },
+        {
+          "city": "福州",
+          "momIndex": 99.8
+        },
+        {
+          "city": "泉州",
+          "momIndex": 99.5
+        },
+        {
+          "city": "厦门",
+          "momIndex": 99.4
+        },
+        {
+          "city": "九江",
+          "momIndex": 99.8
+        },
+        {
+          "city": "南昌",
+          "momIndex": 99.8
+        },
+        {
+          "city": "赣州",
+          "momIndex": 99.4
+        },
+        {
+          "city": "济南",
+          "momIndex": 99.4
+        },
+        {
+          "city": "烟台",
+          "momIndex": 99.8
+        },
+        {
+          "city": "青岛",
+          "momIndex": 99.8
+        },
+        {
+          "city": "济宁",
+          "momIndex": 99.6
+        },
+        {
+          "city": "郑州",
+          "momIndex": 99.7
+        },
+        {
+          "city": "洛阳",
+          "momIndex": 99.3
+        },
+        {
+          "city": "武汉",
+          "momIndex": 99.8
+        },
+        {
+          "city": "平顶山",
+          "momIndex": 99.7
+        },
+        {
+          "city": "长沙",
+          "momIndex": 99.8
+        },
+        {
+          "city": "宜昌",
+          "momIndex": 99.8
+        },
+        {
+          "city": "广州",
+          "momIndex": 100.0
+        },
+        {
+          "city": "襄阳",
+          "momIndex": 99.6
+        },
+        {
+          "city": "深圳",
+          "momIndex": 100.1
+        },
+        {
+          "city": "岳阳",
+          "momIndex": 99.5
+        },
+        {
+          "city": "南宁",
+          "momIndex": 99.8
+        },
+        {
+          "city": "常德",
+          "momIndex": 99.5
+        },
+        {
+          "city": "海口",
+          "momIndex": 99.0
+        },
+        {
+          "city": "韶关",
+          "momIndex": 99.6
+        },
+        {
+          "city": "重庆",
+          "momIndex": 99.6
+        },
+        {
+          "city": "湛江",
+          "momIndex": 99.3
+        },
+        {
+          "city": "成都",
+          "momIndex": 99.6
+        },
+        {
+          "city": "惠州",
+          "momIndex": 99.9
+        },
+        {
+          "city": "贵阳",
+          "momIndex": 99.5
+        },
+        {
+          "city": "桂林",
+          "momIndex": 99.7
+        },
+        {
+          "city": "昆明",
+          "momIndex": 99.6
+        },
+        {
+          "city": "北海",
+          "momIndex": 99.6
+        },
+        {
+          "city": "西安",
+          "momIndex": 99.7
+        },
+        {
+          "city": "三亚",
+          "momIndex": 99.7
+        },
+        {
+          "city": "兰州",
+          "momIndex": 99.7
+        },
+        {
+          "city": "泸州",
+          "momIndex": 99.4
+        },
+        {
+          "city": "西宁",
+          "momIndex": 99.6
+        },
+        {
+          "city": "南充",
+          "momIndex": 99.6
+        },
+        {
+          "city": "银川",
+          "momIndex": 99.8
+        },
+        {
+          "city": "遵义",
+          "momIndex": 99.7
+        },
+        {
+          "city": "乌鲁木齐",
+          "momIndex": 99.9
+        },
+        {
+          "city": "大理",
+          "momIndex": 99.6
+        }
+      ],
+      "medianMomPct": -0.3,
+      "threeMonthMeanPct": -0.3167
+    }
+  ],
+  "gaps": []
+}

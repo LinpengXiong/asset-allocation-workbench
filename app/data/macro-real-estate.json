@@ -1,0 +1,42 @@
+{
+  "reviewedAt": "2026-10-01",
+  "sourceAgency": "国家统计局",
+  "supply": {
+    "unit": "万平方米",
+    "basis": "新建商品房销售面积为年初至当期累计合同面积，1—2月合并发布、每年重新起算；商品房待售面积为月末已竣工可售未售存量。两者不是同一统计量，分别使用纵轴；仅连同口径待售存量，不把累计销售额当作单月销售额。",
+    "rows": [
+      { "period": "2025年1—2月", "salesCumulative": 10746, "unsoldEnd": 79891, "url": "https://www.stats.gov.cn/sj/zxfb/202503/t20250317_1959016.html" },
+      { "period": "2025年1—3月", "salesCumulative": 21869, "unsoldEnd": 78664, "url": "https://www.stats.gov.cn/sj/zxfb/202504/t20250416_1959323.html" },
+      { "period": "2025年1—4月", "salesCumulative": 28262, "unsoldEnd": 78142, "url": "https://www.stats.gov.cn/sj/zxfb/202505/t20250519_1959865.html" },
+      { "period": "2025年1—5月", "salesCumulative": 35315, "unsoldEnd": 77427, "url": "https://www.stats.gov.cn/sj/zxfb/202506/t20250616_1960170.html" },
+      { "period": "2025年1—6月", "salesCumulative": 45851, "unsoldEnd": 76948, "url": "https://www.stats.gov.cn/sj/zxfb/202507/t20250715_1960410.html" },
+      { "period": "2025年1—7月", "salesCumulative": 51560, "unsoldEnd": 76486, "url": "https://www.stats.gov.cn/sj/zxfbhjd/202508/t20250815_1960787.html" },
+      { "period": "2025年1—8月", "salesCumulative": 57304, "unsoldEnd": 76169, "url": "https://www.stats.gov.cn/sj/zxfbhjd/202509/t20250915_1961183.html" },
+      { "period": "2025年1—9月", "salesCumulative": 65835, "unsoldEnd": 75928, "url": "https://www.stats.gov.cn/sj/zxfb/202510/t20251020_1961609.html" },
+      { "period": "2025年1—10月", "salesCumulative": 71982, "unsoldEnd": 75606, "url": "https://www.stats.gov.cn/sj/zxfb/202511/t20251114_1961853.html" },
+      { "period": "2025年1—11月", "salesCumulative": 78702, "unsoldEnd": 75306, "url": "https://www.stats.gov.cn/sj/zxfbhjd/202512/t20251215_1962072.html" },
+      { "period": "2025年1—12月", "salesCumulative": 88101, "unsoldEnd": 76632, "url": "https://www.stats.gov.cn/sj/zxfbhjd/202601/t20260119_1962324.html" },
+      { "period": "2026年1—2月", "salesCumulative": 9293, "unsoldEnd": 79998, "url": "https://www.stats.gov.cn/sj/zxfb/202603/t20260316_1962785.html" },
+      { "period": "2026年1—3月", "salesCumulative": 19525, "unsoldEnd": 78601, "url": "https://www.stats.gov.cn/sj/zxfb/202604/t20260416_1963327.html" },
+      { "period": "2026年1—4月", "salesCumulative": 25258, "unsoldEnd": 77801, "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963729.html" },
+      { "period": "2026年1—5月", "salesCumulative": 31320, "unsoldEnd": 77182, "url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963950.html" },
+      { "period": "2026年1—6月", "salesCumulative": 40140, "unsoldEnd": 76315, "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964126.html" },
+      { "period": "2026年1—7月", "salesCumulative": 45021, "unsoldEnd": 75911, "url": "https://www.stats.gov.cn/zwfwck/sjfb/202608/t20260817_1965053.html" },
+      { "period": "2026年1—8月", "salesCumulative": 49880, "unsoldEnd": 75349, "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965310.html" }
+    ]
+  },
+  "prices": {
+    "unit": "%",
+    "basis": "新建商品住宅销售价格。70城等权均值由国家统计局每月公布的70个城市指数逐城减100后取简单算术平均，非统计局加权总指数；一线城市为统计局解读中直接公布的合成涨跌幅。同比与环比分开切换，不合为一条线。2026年起使用2025年新基期，本图只展示同一基期的2026年观测。",
+    "rows": [
+      { "period": "2026年1月", "city70Yoy": -3.33, "city70Mom": -0.37, "tier1Yoy": -2.1, "tier1Mom": -0.3, "tableUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202602/t20260213_1962617.html", "tier1Url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202602/t20260213_1962616.html" },
+      { "period": "2026年2月", "city70Yoy": -3.46, "city70Mom": -0.28, "tier1Yoy": -2.2, "tier1Mom": 0, "tableUrl": "https://www.stats.gov.cn/sj/zxfb/202603/t20260316_1962774.html", "tier1Url": "https://www.stats.gov.cn/zwfwck/sjfb/202603/t20260316_1962771.html" },
+      { "period": "2026年3月", "city70Yoy": -3.59, "city70Mom": -0.21, "tier1Yoy": -2.2, "tier1Mom": 0.2, "tableUrl": "https://www.stats.gov.cn/sj/zxfb/202604/t20260416_1963320.html", "tier1Url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202604/t20260416_1963319.html" },
+      { "period": "2026年4月", "city70Yoy": -3.65, "city70Mom": -0.19, "tier1Yoy": -2.1, "tier1Mom": 0.1, "tableUrl": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963715.html", "tier1Url": "https://www.stats.gov.cn/zwfwck/sjfb/202605/t20260518_1963721.html" },
+      { "period": "2026年5月", "city70Yoy": -3.64, "city70Mom": -0.2, "tier1Yoy": -1.7, "tier1Mom": 0.2, "tableUrl": "https://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963946.html", "tier1Url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202606/t20260616_1963945.html" },
+      { "period": "2026年6月", "city70Yoy": -3.54, "city70Mom": -0.15, "tier1Yoy": -1.3, "tier1Mom": 0.1, "tableUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964115.html", "tier1Url": "https://www.stats.gov.cn/sj/sjjd/202607/t20260715_1964114.html" },
+      { "period": "2026年7月", "city70Yoy": -3.41, "city70Mom": -0.18, "tier1Yoy": -1.1, "tier1Mom": 0, "tableUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202608/t20260817_1965050.html", "tier1Url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202608/t20260817_1965046.html" },
+      { "period": "2026年8月", "city70Yoy": -3.29, "city70Mom": -0.17, "tier1Yoy": -0.9, "tier1Mom": 0.1, "tableUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965304.html", "tier1Url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202609/t20260915_1965303.html" }
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "asOf": "2026-10-11",
+  "frameworkVersion": "V1.11",
+  "indicatorId": "P02B",
+  "candidateStatus": "官方月度政策动作证据已补齐；固定机构法定率端点仍未核实。仅候选，不改当前评分、框架或发布。",
+  "observations": {
+    "P02B": null
+  },
+  "strictQuantitativeResult": {
+    "name": "法定存款准备金率近6个月变动",
+    "requestedPeriod": "2026-09",
+    "windowStart": "2026-04-01",
+    "windowEnd": "2026-09-30",
+    "startEndpoint": "2026-03-31",
+    "endEndpoint": "2026-09-30",
+    "basis": "同口径月末有效利率近6月变动",
+    "unit": "基点",
+    "institution": "大型银行；具体适用档位、定向优惠和适用范围未取得两端原始证据",
+    "startRate": null,
+    "endRate": null,
+    "value": null,
+    "score": null,
+    "verified": false,
+    "reason": "现行规则要求同机构、同适用范围的3月末与9月末法定准备金率百分率原值及生效证据。央行月度工具表虽完整覆盖六个月，但单位是亿元且准备金调整行保留原符号'-'，不能直接变成固定机构的0基点变动，也不能用2025年旧档位伪造2026年端点。"
+  },
+  "researchScoreCandidate": {
+    "id": "P02B",
+    "status": "可单列证据型研究研判；不直接兼容现行定量端点评分规则",
+    "period": "2026-09",
+    "latestAvailablePeriod": "2026-09",
+    "reviewDate": "2026-10-11",
+    "verifiedAt": "2026-10-11",
+    "releaseDate": "2026-10-09",
+    "originalPublisher": "中国人民银行",
+    "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/2026100917050827264/index.html",
+    "basis": "近六个月准备金政策动作官方月表证据研判，非同机构法定率端点差",
+    "unit": "分",
+    "points": 3,
+    "quantitativeChangeBp": null,
+    "judgement": "准备金调整动作中性：4—9月六张已发布的央行工具月表均未列示准备金率调整的投放、回笼或净投放金额。作为当前公开动作证据，可研究性给3分；不是以未检索到公告推断没有调整，更不是已核验两端率差为0。",
+    "rationale": "官方月度工具目录最新为9月且六期连续，每期均存在准备金调整这一明确行项，原符号三列均为'-'。2025年5月同栏实际列示投放和净投放各10000亿元，可排除把一个不跟踪准备金工具的空白模板误当证据。9月29日最新工具调整公告涉及PSL利率、支持范围及再贷款额度/比例，不将其偷换成降准。研究评分保持中性，不因适度宽松的会议表态重复奖励，也不把其他工具释放的资金叠算成准备金调整。",
+    "evidenceScope": "官方月度操作披露中是否列示准备金率调整流动性操作；并非逐家银行法定率的完整监管记录。",
+    "counterEvidence": [
+      "六张月表单位为亿元，不是百分率；'-'未在这些页面给出显式数值定义，所以原符号保留，不转换为0亿元或0基点。",
+      "月表没有机构档位、定向优惠、两端有效率；机构级优惠或分类变更是否被汇总表完整反映仍有边界，不能声称已排除一切机构级变化。",
+      "现时货政执行报告目录最新为2026年第二季度，不能拿其半年叙述替代9月末固定机构端点。",
+      "Wind两条近似名称的序列存在数值和更新范围差异，未经适用范围原始核对，不以同名或稳定数值当成端点核验。"
+    ],
+    "implementationBoundary": "若把该3分纳入正式总分，应显式选择并展示独立的证据型研究评分口径及其边界，保留原定量值为null。不得把此候选塞入现行近6月政策利率变动组件、伪造两端、悄悄跳过端点校验或标为官方评级。",
+    "thresholdStatus": "研究试行，非官方评分、非回测最优；本候选未自动计入总分。"
+  },
+  "officialMonthlyLedger": {
+    "indexUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/index.html",
+    "indexTitle": "中央银行各项工具操作情况",
+    "indexVerifiedAt": "2026-10-11",
+    "latestPublishedPeriod": "2026-09",
+    "latestReleaseDate": "2026-10-09",
+    "expectedMonths": ["2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09"],
+    "completeMonthlyCoverage": true,
+    "reportedUnit": "亿元",
+    "columnNames": ["工具类型", "工具名称", "投放", "回笼", "净投放"],
+    "rows": [
+      {
+        "period": "2026-04",
+        "title": "2026年4月中央银行各项工具流动性投放情况",
+        "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/2026050716471136206/index.html",
+        "releaseDate": "2026-05-07",
+        "releaseTime": "17:00:00",
+        "originalPublisher": "中国人民银行",
+        "verifiedAt": "2026-10-11",
+        "httpStatus": 200,
+        "rawCells": ["准备金", "调整法定存款准备金率", "-", "-", "-"],
+        "rawCellsSha256": "9545c9d53ae28cbe83a2e5ba6328745558df38063210c09107eddb2e31f2c364"
+      },
+      {
+        "period": "2026-05",
+        "title": "2026年5月中央银行各项工具流动性投放情况",
+        "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/2026060216561236851/index.html",
+        "releaseDate": "2026-06-02",
+        "releaseTime": "17:00:00",
+        "originalPublisher": "中国人民银行",
+        "verifiedAt": "2026-10-11",
+        "httpStatus": 200,
+        "rawCells": ["准备金", "调整法定存款准备金率", "-", "-", "-"],
+        "rawCellsSha256": "9545c9d53ae28cbe83a2e5ba6328745558df38063210c09107eddb2e31f2c364"
+      },
+      {
+        "period": "2026-06",
+        "title": "2026年6月中央银行各项工具流动性投放情况",
+        "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/2026070216555861498/index.html",
+        "releaseDate": "2026-07-02",
+        "releaseTime": "17:00:00",
+        "originalPublisher": "中国人民银行",
+        "verifiedAt": "2026-10-11",
+        "httpStatus": 200,
+        "rawCells": ["准备金", "调整法定存款准备金率", "-", "-", "-"],
+        "rawCellsSha256": "9545c9d53ae28cbe83a2e5ba6328745558df38063210c09107eddb2e31f2c364"
+      },
+      {
+        "period": "2026-07",
+        "title": "2026年7月中央银行各项工具流动性投放情况",
+        "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/2026080416515912098/index.html",
+        "releaseDate": "2026-08-04",
+        "releaseTime": "17:00:00",
+        "originalPublisher": "中国人民银行",
+        "verifiedAt": "2026-10-11",
+        "httpStatus": 200,
+        "rawCells": ["准备金", "调整法定存款准备金率", "-", "-", "-"],
+        "rawCellsSha256": "9545c9d53ae28cbe83a2e5ba6328745558df38063210c09107eddb2e31f2c364"
+      },
+      {
+        "period": "2026-08",
+        "title": "2026年8月中央银行各项工具流动性投放情况",
+        "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/2026090214213398506/index.html",
+        "releaseDate": "2026-09-02",
+        "releaseTime": "17:00:00",
+        "originalPublisher": "中国人民银行",
+        "verifiedAt": "2026-10-11",
+        "httpStatus": 200,
+        "rawCells": ["准备金", "调整法定存款准备金率", "-", "-", "-"],
+        "rawCellsSha256": "9545c9d53ae28cbe83a2e5ba6328745558df38063210c09107eddb2e31f2c364"
+      },
+      {
+        "period": "2026-09",
+        "title": "2026年9月中央银行各项工具流动性投放情况",
+        "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/2026100917050827264/index.html",
+        "releaseDate": "2026-10-09",
+        "releaseTime": "17:00:00",
+        "originalPublisher": "中国人民银行",
+        "verifiedAt": "2026-10-11",
+        "httpStatus": 200,
+        "rawCells": ["准备金", "调整法定存款准备金率", "-", "-", "-"],
+        "rawCellsSha256": "9545c9d53ae28cbe83a2e5ba6328745558df38063210c09107eddb2e31f2c364"
+      }
+    ],
+    "positiveControl": {
+      "period": "2025-05",
+      "title": "2025年5月中央银行各项工具流动性投放情况",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/5730034/index.html",
+      "releaseDate": "2025-06-05",
+      "releaseTime": "17:00:00",
+      "verifiedAt": "2026-10-11",
+      "reportedUnit": "亿元",
+      "rawCells": ["准备金", "调整法定存款准备金率", "10000", "-", "10000"],
+      "rawCellsSha256": "39850536969c88cc7478d0acef34158f9a2d17326c7e0989b31d4756e2c89c5f",
+      "purpose": "确认这一官方月表会记录准备金调整工具实际操作，不拿该月旧操作当作2026年窗口内事件或端点。"
+    },
+    "hashMethod": "sha256(JSON.stringify(rawCells))，UTF-8；rawCells来自原HTML对应行单元格，剥离标签并规范化空格，保留'-'与数字字符串。"
+  },
+  "crossChecks": [
+    {
+      "title": "中国人民银行调整完善若干货币政策工具",
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092917474922559/index.html",
+      "releaseDate": "2026-09-29",
+      "verifiedAt": "2026-10-11",
+      "finding": "当期正式新增工具调整为PSL利率/支持领域与再贷款额度/支持比例；本公告不能当作降准生效公告。并非据本公告未提降准就证明整个半年无其他调整。"
+    },
+    {
+      "title": "中国人民银行货币政策委员会召开2026年第三季度例会",
+      "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092416074632670/index.html",
+      "releaseDate": "2026-09-24",
+      "verifiedAt": "2026-10-11",
+      "finding": "会议提出综合运用并适时调整政策工具、保持流动性充裕；这是取向和未来思路，不是可复算的准备金率调整生效日或幅度。"
+    },
+    {
+      "title": "中国货币政策执行报告目录及2026年两季度摘要",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/index.html",
+      "verifiedAt": "2026-10-11",
+      "finding": "目录最新为2026-Q2、2026-08-12发布。已读Q1和Q2官方HTML摘要，未从摘要取得固定机构3月末及9月末法定率；最新报告不能覆盖尚未公布的Q3完整执行情况。",
+      "sources": [
+        {"sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026052015172981527/index.html", "releaseDate": "2026-05-11"},
+        {"sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/index.html", "releaseDate": "2026-08-12"}
+      ]
+    },
+    {
+      "title": "人民币存款准备金专栏",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125434/125798/index.html",
+      "verifiedAt": "2026-10-11",
+      "finding": "专栏目前最上条目为2020年；陈旧专栏不是2026完整事件台账，不能用没有新条目当作没有变化。改用持续更新的月度工具操作目录核对窗口完整性。"
+    }
+  ],
+  "sourceOrderAudit": {
+    "order": ["官方原始发布", "万得Wind", "财新数据API"],
+    "official": "本轮直接读取央行目录、六期工具原表、2025年正对照、9月新增公告及Q3例会，保留原始符号及发布日期；固定机构两端数值仍缺，未声称官方没有这项数据。",
+    "wind": {
+      "queriedAt": "2026-10-11",
+      "originalPublisher": "中国人民银行",
+      "accepted": false,
+      "queries": [
+        {
+          "seriesCode": "N7148749",
+          "name": "中国:法定存款准备金率:大型银行",
+          "unit": "%",
+          "frequency": "日",
+          "requestedBeginDate": "2025-05-01",
+          "requestedEndDate": "2026-09-30",
+          "metaUpdateDate": "2025-05-08",
+          "metaEndDate": "2025-05-15",
+          "returnedDates": ["2025-05-15"],
+          "returnedValues": [7.5],
+          "finding": "旧事件式序列没有返回2026两端；不把最后值自动前填为经核验端点。"
+        },
+        {
+          "seriesCode": "M0061518",
+          "name": "中国:人民币存款准备金率:大型存款类金融机构",
+          "unit": "%",
+          "frequency": "月",
+          "requestedBeginDate": "2026-03-01",
+          "requestedEndDate": "2026-09-30",
+          "metaUpdateDate": "2026-09-30",
+          "returnedDates": ["2026-03-31", "2026-04-30", "2026-05-31", "2026-06-30", "2026-07-31", "2026-08-31", "2026-09-30"],
+          "returnedValues": [9, 9, 9, 9, 9, 9, 9],
+          "finding": "返回值稳定，但机构名称与法定档位系列不同且9%未取得相应适用范围原文；不能与7.5%旧事件混拼，也不因序列标为央行来源就声称官方原始端点已核实。"
+        }
+      ],
+      "sourceDeclaration": "以上回执数据来源于万得Wind金融数据服务；未接纳为本期定量评分原值。"
+    },
+    "caixin": {
+      "attemptedAt": "2026-10-11",
+      "query": "法定存款准备金率 大型银行",
+      "status": "not_configured",
+      "finding": "按本地财新只读查询入口实际尝试，返回CAIXIN_API_KEY未配置；未取得序列或原始出处。"
+    }
+  },
+  "sustainableEventLedgerPlan": {
+    "implemented": false,
+    "monthlySource": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/index.html",
+    "process": [
+      "每次按评价期滚动取六张已发布的完整月表，逐月验证标题、发布日期和准备金调整行，不把旧页面或缺表当本期无操作。",
+      "原始符号'-'保留为披露状态；任何投放/回笼非'-'或新增公告出现准备金调整，触发事件复核而不是把亿元换算为基点。",
+      "逐条收录公告eventId、公布日、明确生效日、机构类型、币种、覆盖范围、普遍/定向性质、幅度及排除机构。政策表态和未生效动作另列，按生效日在窗口内纳入。",
+      "为每个固定机构档位另保留经原文核验的起点、调整链和终点；有定向优惠或分档变更时建立独立链，不合并成全行业平均。",
+      "只有起点锚与窗口内完整同口径生效链及终点核验齐全才复算基点；否则保留定量null，并在独立研究研判中显示证据结论与限制。",
+      "用季度执行报告和当期正式新闻/公告作交叉核验，记录版本修订、失效与反证；不把会议承诺、公开市场投放或结构性贷款规模重复奖励为降准。"
+    ]
+  },
+  "validation": {
+    "formalScoreIndicatorExpected": null,
+    "monthlyRowsCount": 6,
+    "monthlyRowsContinuous": true,
+    "allMonthlyRowsFetched": true,
+    "rawDashesPreserved": true,
+    "noFabricatedEndpoints": true,
+    "noUnverifiedZeroBp": true,
+    "currentFrameworkUnchanged": true,
+    "currentObservationsUnchanged": true,
+    "deployed": false
+  }
+}

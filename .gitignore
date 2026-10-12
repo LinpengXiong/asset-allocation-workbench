@@ -47,3 +47,10 @@ next-env.d.ts
 /output/
 /work/
 /.playwright-cli/
+
+# safe configuration template
+!.env.example
+
+# Python caches
+__pycache__/
+*.py[cod]

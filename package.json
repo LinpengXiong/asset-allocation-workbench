@@ -17,6 +17,7 @@
     "caixin:sync": "node --experimental-strip-types scripts/caixin-sync.mjs",
     "test:caixin": "node --experimental-strip-types --test tests/caixin-client.test.mjs tests/caixin-mapping.test.mjs",
     "caixin:map": "node --experimental-strip-types scripts/caixin-map.mjs",
+    "macro:consumer-confidence:refresh": "node --experimental-strip-types scripts/refresh-consumer-confidence.mjs --apply",
     "wind:sync": "node --experimental-strip-types scripts/wind-sync.mjs",
     "wind:index:sync": "node --experimental-strip-types scripts/sync-wind-index.mjs",
     "test:providers": "node --experimental-strip-types --test tests/caixin-client.test.mjs tests/caixin-mapping.test.mjs tests/wind-provider.test.mjs tests/wind-mcp.test.mjs"

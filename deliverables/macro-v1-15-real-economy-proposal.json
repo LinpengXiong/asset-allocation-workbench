@@ -1,0 +1,3217 @@
+{
+  "version": "V1.15-real-economy-research-proposal",
+  "asOf": "2026-10-11",
+  "baseFramework": "V1.14",
+  "status": "独立研究候选，未实施、未部署；不宣称官方评分或回测最优",
+  "scope": [
+    "经济运行",
+    "增长动力"
+  ],
+  "weightsUnchanged": true,
+  "pillarWeights": {
+    "经济运行": 0.3,
+    "增长动力": 0.3
+  },
+  "method": {
+    "name": "连续锚点加固定必要组件",
+    "scoreRange": [
+      1,
+      5
+    ],
+    "linearInterpolation": "在相邻x锚点间线性插值，仅插值得分函数而非缺失统计数据；边界外饱和。",
+    "rounding": "所有组件和汇总使用未取整浮点值，只在展示保留2位；不能先舍入原值跨边界。",
+    "targetCurve": "CPI/核心CPI/PPI/平减指数及房价上端为有峰双侧曲线；可有5分平台但不能越高越好。",
+    "trendRule": "新增趋势组件只用于E01/E08/E09/G11；累计同比的相邻公布差不等于单月趋势。",
+    "proofRule": "继承原严格来源、时效、单位、频率、原值复算要求；新增组件需原表同口径。",
+    "formalAggregate": "保持原覆盖率门槛，缺任一必需组件不计核验覆盖；本研究不生成正式总分。"
+  },
+  "indicators": [
+    {
+      "id": "E01",
+      "name": "GDP实际单季同比增速（%）",
+      "pillar": "经济运行",
+      "weight": 0.09,
+      "unit": "%",
+      "measurementBasis": "单季实际同比",
+      "current": {
+        "period": "2026-Q2",
+        "value": 4.3,
+        "oldScore": 3,
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+        "levelOnlyCandidate": 2.8,
+        "fullCandidate": 2.6999999999999997,
+        "deltaFromOld": -0.30000000000000027
+      },
+      "oldLimits": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            2,
+            1
+          ],
+          [
+            3.5,
+            2
+          ],
+          [
+            4.5,
+            3
+          ],
+          [
+            5.5,
+            4
+          ],
+          [
+            7,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 0.8,
+          "input": "observation.value",
+          "anchors": [
+            [
+              2,
+              1
+            ],
+            [
+              3.5,
+              2
+            ],
+            [
+              4.5,
+              3
+            ],
+            [
+              5.5,
+              4
+            ],
+            [
+              7,
+              5
+            ]
+          ],
+          "unit": "%"
+        },
+        {
+          "key": "quarterYoyChange",
+          "weight": 0.2,
+          "formula": "currentQuarterRealYoyPct - precedingQuarterRealYoyPct",
+          "anchors": [
+            [
+              -2,
+              1
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "unit": "百分点"
+        }
+      ],
+      "scoringBasis": "单季实际增长水平，不把全年GDP目标直接映射为季度目标；低基数会抬高同比，因此另计同版前一季同比变动，官方季调环比仅作交叉核验。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "additionalCurrentEvidence": {
+        "precedingQuarter": {
+          "period": "2026-Q1",
+          "value": 5,
+          "unit": "%",
+          "basis": "单季实际同比",
+          "revisionVersion": "2026-09-15-SDDS",
+          "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+          "releaseDate": "2026-09-15",
+          "originalPublisher": "国家统计局"
+        },
+        "delta": -0.7
+      },
+      "alternativeOnlyIfVerified": {
+        "method": "officialSeasonallyAdjustedQoQ",
+        "anchors": [
+          [
+            -0.5,
+            1
+          ],
+          [
+            0.5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1.5,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "unit": "%",
+        "weight": 0.2,
+        "mutuallyExclusiveWith": "quarterYoyChange",
+        "current": 0.9,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202607/t20260716_1964142.html",
+        "releaseDate": "2026-07-16",
+        "limitation": "季调环比可修订；不和同比变动同时叠加，正式选择后不能按当前总分临时切换。"
+      },
+      "scoring": {
+        "method": "weighted-components",
+        "components": [
+          {
+            "key": "level",
+            "label": "当期水平",
+            "weight": 0.8,
+            "anchors": [
+              [
+                2,
+                1
+              ],
+              [
+                3.5,
+                2
+              ],
+              [
+                4.5,
+                3
+              ],
+              [
+                5.5,
+                4
+              ],
+              [
+                7,
+                5
+              ]
+            ],
+            "unit": "%"
+          },
+          {
+            "key": "quarterYoyChange",
+            "label": "单季同比较前季变化",
+            "weight": 0.2,
+            "anchors": [
+              [
+                -2,
+                1
+              ],
+              [
+                -1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            "unit": "百分点"
+          }
+        ],
+        "description": "单季实际增长水平，不把全年GDP目标直接映射为季度目标；低基数会抬高同比，因此另计同版前一季同比变动，官方季调环比仅作交叉核验。"
+      }
+    },
+    {
+      "id": "E02",
+      "name": "CPI同比（%）",
+      "pillar": "经济运行",
+      "weight": 0.025,
+      "unit": "%",
+      "measurementBasis": "当月同比",
+      "current": {
+        "period": "2026-08",
+        "value": 0.8,
+        "oldScore": 3,
+        "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260909_1965263.html",
+        "levelOnlyCandidate": 3.3,
+        "fullCandidate": 3.3,
+        "deltaFromOld": 0.2999999999999998
+      },
+      "oldLimits": [
+        0,
+        4.5,
+        0.5,
+        3.5,
+        1,
+        3,
+        1.5,
+        2.5
+      ],
+      "oldMode": "目标",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -2,
+            1
+          ],
+          [
+            -0.5,
+            2
+          ],
+          [
+            0.5,
+            3
+          ],
+          [
+            1.5,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2.5,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -2,
+              1
+            ],
+            [
+              -0.5,
+              2
+            ],
+            [
+              0.5,
+              3
+            ],
+            [
+              1.5,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2.5,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "正负两侧都有压力，温和正通胀优于持续通缩或过快通胀；2%附近峰值参考当年物价目标但不是官方评分，目标是全年而非单月硬约束。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -2,
+            1
+          ],
+          [
+            -0.5,
+            2
+          ],
+          [
+            0.5,
+            3
+          ],
+          [
+            1.5,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2.5,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "description": "正负两侧都有压力，温和正通胀优于持续通缩或过快通胀；2%附近峰值参考当年物价目标但不是官方评分，目标是全年而非单月硬约束。"
+      }
+    },
+    {
+      "id": "E03",
+      "name": "核心CPI同比（%）",
+      "pillar": "经济运行",
+      "weight": 0.035,
+      "unit": "%",
+      "measurementBasis": "当月同比",
+      "current": {
+        "period": "2026-08",
+        "value": 1,
+        "oldScore": 4,
+        "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260909_1965263.html",
+        "levelOnlyCandidate": 3.5,
+        "fullCandidate": 3.5,
+        "deltaFromOld": -0.5
+      },
+      "oldLimits": [
+        0,
+        4,
+        0.5,
+        3.5,
+        1,
+        3,
+        1.5,
+        2.5
+      ],
+      "oldMode": "目标",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0.5,
+            3
+          ],
+          [
+            1.5,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2.5,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0.5,
+              3
+            ],
+            [
+              1.5,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2.5,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "剔除食品能源波动后观察内生消费价格；不能与CPI相加为独立需求量。峰值区为研究判断，不存在官方核心CPI目标。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0.5,
+            3
+          ],
+          [
+            1.5,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2.5,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "description": "剔除食品能源波动后观察内生消费价格；不能与CPI相加为独立需求量。峰值区为研究判断，不存在官方核心CPI目标。"
+      }
+    },
+    {
+      "id": "E04",
+      "name": "PPI同比（%）",
+      "pillar": "经济运行",
+      "weight": 0.05,
+      "unit": "%",
+      "measurementBasis": "当月同比",
+      "current": {
+        "period": "2026-08",
+        "value": 3.8,
+        "oldScore": 4,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260909_1965262.html",
+        "levelOnlyCandidate": 4.6,
+        "fullCandidate": 4.6,
+        "deltaFromOld": 0.5999999999999996
+      },
+      "oldLimits": [
+        -3,
+        8,
+        -2,
+        6,
+        -1,
+        4,
+        0,
+        3
+      ],
+      "oldMode": "目标",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -5,
+            1
+          ],
+          [
+            -3,
+            2
+          ],
+          [
+            -1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -5,
+              1
+            ],
+            [
+              -3,
+              2
+            ],
+            [
+              -1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              12,
+              1
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "工业价格温和转正有助名义收入，高涨幅可能传递成本冲击，故双侧有峰而非越高越好。2—3%峰值及上端惩罚须经跨周期长样本检验。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -5,
+            1
+          ],
+          [
+            -3,
+            2
+          ],
+          [
+            -1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "description": "工业价格温和转正有助名义收入，高涨幅可能传递成本冲击，故双侧有峰而非越高越好。2—3%峰值及上端惩罚须经跨周期长样本检验。"
+      }
+    },
+    {
+      "id": "E05",
+      "name": "城镇调查失业率（%）",
+      "pillar": "经济运行",
+      "weight": 0.025,
+      "unit": "%",
+      "measurementBasis": "当月调查失业率",
+      "current": {
+        "period": "2026-08",
+        "value": 5.3,
+        "oldScore": 3,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+        "levelOnlyCandidate": 2.7500000000000004,
+        "fullCandidate": 2.7500000000000004,
+        "deltaFromOld": -0.24999999999999956
+      },
+      "oldLimits": [
+        4.5,
+        5,
+        5.5,
+        6
+      ],
+      "oldMode": "低优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            4.5,
+            5
+          ],
+          [
+            4.8,
+            4
+          ],
+          [
+            5.2,
+            3
+          ],
+          [
+            5.6,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              4.5,
+              5
+            ],
+            [
+              4.8,
+              4
+            ],
+            [
+              5.2,
+              3
+            ],
+            [
+              5.6,
+              2
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "保留2.5%权重，只给劳动力参与条件下调查失业率的水平信号；不把灵活就业直接判成失业，不估算未公开隐性失业。季节性及退出劳动力市场不能凭分数排除。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            4.5,
+            5
+          ],
+          [
+            4.8,
+            4
+          ],
+          [
+            5.2,
+            3
+          ],
+          [
+            5.6,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "description": "保留2.5%权重，只给劳动力参与条件下调查失业率的水平信号；不把灵活就业直接判成失业，不估算未公开隐性失业。季节性及退出劳动力市场不能凭分数排除。"
+      }
+    },
+    {
+      "id": "E07",
+      "name": "GDP平减指数单季同比（%）",
+      "pillar": "经济运行",
+      "weight": 0.03,
+      "unit": "%",
+      "measurementBasis": "GDP平减指数单季同比派生",
+      "current": {
+        "period": "2026-Q2",
+        "value": 1.526649,
+        "oldScore": 5,
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+        "levelOnlyCandidate": 4.526649,
+        "fullCandidate": 4.526649,
+        "deltaFromOld": -0.4733510000000001
+      },
+      "oldLimits": [
+        -2,
+        6,
+        -1,
+        5,
+        0,
+        4,
+        1,
+        3
+      ],
+      "oldMode": "目标",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -3,
+            1
+          ],
+          [
+            -1.5,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -3,
+              1
+            ],
+            [
+              -1.5,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              8,
+              1
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "由同版现价GDP、上年同季现价GDP与单季实际同比计算；温和正的全经济价格条件较有利，负值和过快上涨均承压。不得把名义减实际增长率的简单差代替除法公式。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -3,
+            1
+          ],
+          [
+            -1.5,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "description": "由同版现价GDP、上年同季现价GDP与单季实际同比计算；温和正的全经济价格条件较有利，负值和过快上涨均承压。不得把名义减实际增长率的简单差代替除法公式。"
+      }
+    },
+    {
+      "id": "E08",
+      "name": "制造业PMI（近3月均值）",
+      "pillar": "经济运行",
+      "weight": 0.02,
+      "unit": "指数点",
+      "measurementBasis": "近3月季调均值",
+      "current": {
+        "period": "2026-09",
+        "value": 49.7,
+        "oldScore": 2,
+        "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+        "levelOnlyCandidate": 2.800000000000002,
+        "fullCandidate": 2.740000000000003,
+        "deltaFromOld": 0.7400000000000029
+      },
+      "oldLimits": [
+        48,
+        50,
+        51,
+        52
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            47,
+            1
+          ],
+          [
+            48.5,
+            2
+          ],
+          [
+            50,
+            3
+          ],
+          [
+            51.5,
+            4
+          ],
+          [
+            53,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "指数点"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 0.8,
+          "input": "observation.value",
+          "anchors": [
+            [
+              47,
+              1
+            ],
+            [
+              48.5,
+              2
+            ],
+            [
+              50,
+              3
+            ],
+            [
+              51.5,
+              4
+            ],
+            [
+              53,
+              5
+            ]
+          ],
+          "unit": "指数点"
+        },
+        {
+          "key": "nonOverlappingThreeMonthChange",
+          "weight": 0.2,
+          "formula": "mean(latest 3 official monthly indices) - mean(preceding 3 official monthly indices)",
+          "anchors": [
+            [
+              -2,
+              1
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "unit": "指数点",
+          "requiredMonths": 6
+        }
+      ],
+      "scoringBasis": "50对应扩张和收缩分界，而不是增长率为零；制造业PMI含30%新订单分项。三月平滑会滞后，另用不重叠前后三月均值差，趋势只占20%。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "additionalCurrentEvidence": {
+        "priorMonthly": [
+          {
+            "period": "2026-04",
+            "value": 50.3,
+            "unit": "指数点",
+            "basis": "季调当月指数",
+            "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+            "releaseDate": "2026-09-30",
+            "originalPublisher": "国家统计局"
+          },
+          {
+            "period": "2026-05",
+            "value": 50,
+            "unit": "指数点",
+            "basis": "季调当月指数",
+            "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+            "releaseDate": "2026-09-30",
+            "originalPublisher": "国家统计局"
+          },
+          {
+            "period": "2026-06",
+            "value": 50.3,
+            "unit": "指数点",
+            "basis": "季调当月指数",
+            "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+            "releaseDate": "2026-09-30",
+            "originalPublisher": "国家统计局"
+          }
+        ],
+        "priorThreeMonthMean": 50.199999999999996,
+        "delta": -0.4999999999999929
+      },
+      "scoring": {
+        "method": "weighted-components",
+        "components": [
+          {
+            "key": "level",
+            "label": "当期水平",
+            "weight": 0.8,
+            "anchors": [
+              [
+                47,
+                1
+              ],
+              [
+                48.5,
+                2
+              ],
+              [
+                50,
+                3
+              ],
+              [
+                51.5,
+                4
+              ],
+              [
+                53,
+                5
+              ]
+            ],
+            "unit": "指数点"
+          },
+          {
+            "key": "nonOverlappingThreeMonthChange",
+            "label": "前后不重叠三月均值变化",
+            "weight": 0.2,
+            "anchors": [
+              [
+                -2,
+                1
+              ],
+              [
+                -1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            "unit": "指数点"
+          }
+        ],
+        "description": "50对应扩张和收缩分界，而不是增长率为零；制造业PMI含30%新订单分项。三月平滑会滞后，另用不重叠前后三月均值差，趋势只占20%。"
+      }
+    },
+    {
+      "id": "E09",
+      "name": "非制造业商务活动指数（近3月均值）",
+      "pillar": "经济运行",
+      "weight": 0.025,
+      "unit": "指数点",
+      "measurementBasis": "近3月季调均值",
+      "current": {
+        "period": "2026-09",
+        "value": 49.4,
+        "oldScore": 2,
+        "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+        "levelOnlyCandidate": 2.599999999999999,
+        "fullCandidate": 2.5799999999999996,
+        "deltaFromOld": 0.5799999999999996
+      },
+      "oldLimits": [
+        49,
+        50,
+        52,
+        54
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            47,
+            1
+          ],
+          [
+            48.5,
+            2
+          ],
+          [
+            50,
+            3
+          ],
+          [
+            52,
+            4
+          ],
+          [
+            54,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "指数点"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 0.8,
+          "input": "observation.value",
+          "anchors": [
+            [
+              47,
+              1
+            ],
+            [
+              48.5,
+              2
+            ],
+            [
+              50,
+              3
+            ],
+            [
+              52,
+              4
+            ],
+            [
+              54,
+              5
+            ]
+          ],
+          "unit": "指数点"
+        },
+        {
+          "key": "nonOverlappingThreeMonthChange",
+          "weight": 0.2,
+          "formula": "mean(latest 3 official monthly indices) - mean(preceding 3 official monthly indices)",
+          "anchors": [
+            [
+              -2,
+              1
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "unit": "指数点",
+          "requiredMonths": 6
+        }
+      ],
+      "scoringBasis": "全国非制造业商务活动包括服务业和建筑业，不是只看服务业，也不是综合PMI。50为水平中性，单独曲线较制造业上端略宽；趋势只占20%。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "additionalCurrentEvidence": {
+        "priorMonthly": [
+          {
+            "period": "2026-04",
+            "value": 49.4,
+            "unit": "指数点",
+            "basis": "季调当月指数",
+            "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+            "releaseDate": "2026-09-30",
+            "originalPublisher": "国家统计局"
+          },
+          {
+            "period": "2026-05",
+            "value": 50.1,
+            "unit": "指数点",
+            "basis": "季调当月指数",
+            "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+            "releaseDate": "2026-09-30",
+            "originalPublisher": "国家统计局"
+          },
+          {
+            "period": "2026-06",
+            "value": 50.2,
+            "unit": "指数点",
+            "basis": "季调当月指数",
+            "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+            "releaseDate": "2026-09-30",
+            "originalPublisher": "国家统计局"
+          }
+        ],
+        "priorThreeMonthMean": 49.9,
+        "delta": -0.5
+      },
+      "scoring": {
+        "method": "weighted-components",
+        "components": [
+          {
+            "key": "level",
+            "label": "当期水平",
+            "weight": 0.8,
+            "anchors": [
+              [
+                47,
+                1
+              ],
+              [
+                48.5,
+                2
+              ],
+              [
+                50,
+                3
+              ],
+              [
+                52,
+                4
+              ],
+              [
+                54,
+                5
+              ]
+            ],
+            "unit": "指数点"
+          },
+          {
+            "key": "nonOverlappingThreeMonthChange",
+            "label": "前后不重叠三月均值变化",
+            "weight": 0.2,
+            "anchors": [
+              [
+                -2,
+                1
+              ],
+              [
+                -1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            "unit": "指数点"
+          }
+        ],
+        "description": "全国非制造业商务活动包括服务业和建筑业，不是只看服务业，也不是综合PMI。50为水平中性，单独曲线较制造业上端略宽；趋势只占20%。"
+      }
+    },
+    {
+      "id": "G01",
+      "name": "规模以上工业增加值增速（%）",
+      "pillar": "增长动力",
+      "weight": 0.03,
+      "unit": "%",
+      "measurementBasis": "当月实际同比",
+      "current": {
+        "period": "2026-08",
+        "value": 5.2,
+        "oldScore": 3,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+        "levelOnlyCandidate": 3.1,
+        "fullCandidate": 3.1,
+        "deltaFromOld": 0.10000000000000009
+      },
+      "oldLimits": [
+        3,
+        5,
+        6,
+        8
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            9,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              9,
+              5
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "当月工业实际产出水平，5%左右为研究中性锚，不把半年累计替代当月；官方季调环比可作交叉证据，不用未经季调金额环比扣分。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            9,
+            5
+          ]
+        ],
+        "description": "当月工业实际产出水平，5%左右为研究中性锚，不把半年累计替代当月；官方季调环比可作交叉证据，不用未经季调金额环比扣分。"
+      }
+    },
+    {
+      "id": "G02",
+      "name": "规模以上工业企业利润总额增速（累计同比，%）",
+      "pillar": "增长动力",
+      "weight": 0.04,
+      "unit": "%",
+      "measurementBasis": "年初累计可比同比",
+      "current": {
+        "period": "2026-08",
+        "value": 15.7,
+        "oldScore": 5,
+        "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+        "levelOnlyCandidate": 4.046666666666667,
+        "fullCandidate": 3.655,
+        "deltaFromOld": -1.3450000000000002
+      },
+      "oldLimits": [
+        -10,
+        0,
+        8,
+        15
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -20,
+            1
+          ],
+          [
+            -5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            15,
+            4
+          ],
+          [
+            30,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "cumulativeComparableProfitGrowth",
+          "weight": 0.6,
+          "input": "observation.value",
+          "unit": "%",
+          "anchors": [
+            [
+              -20,
+              1
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              30,
+              5
+            ]
+          ]
+        },
+        {
+          "key": "officialCurrentMonthComparableProfitGrowth",
+          "weight": 0.2,
+          "input": "observation.profitGrowthCurrentMonth.value",
+          "unit": "%",
+          "anchors": [
+            [
+              -20,
+              1
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              30,
+              5
+            ]
+          ]
+        },
+        {
+          "key": "reportedProfitMarginYoyChange",
+          "weight": 0.1,
+          "input": "observation.profitQuality.profitMarginYoyChange.value",
+          "unit": "百分点",
+          "anchors": [
+            [
+              -1,
+              1
+            ],
+            [
+              -0.5,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0.5,
+              4
+            ],
+            [
+              1,
+              5
+            ]
+          ]
+        },
+        {
+          "key": "reportedReceivablesDaysYoyChange",
+          "weight": 0.1,
+          "input": "observation.profitQuality.receivablesDaysYoyChange.value",
+          "unit": "天",
+          "anchors": [
+            [
+              -4,
+              5
+            ],
+            [
+              -2,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        }
+      ],
+      "scoringBasis": "利润必须由规模以上工业企业可比范围官方同比输入，不能机械用两次发布金额相除。新增明示固定质量/最新月份组件，不再主观质量扣分；四组件的数值权重非回测最优。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "additionalCurrentEvidence": {
+        "profitGrowthCurrentMonth": {
+          "value": 4.2,
+          "unit": "%",
+          "basis": "当月可比同比",
+          "period": "2026-08",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "releaseDate": "2026-09-28",
+          "originalPublisher": "国家统计局"
+        },
+        "profitMarginYoyChange": {
+          "value": 0.44,
+          "unit": "百分点",
+          "basis": "年初累计营业收入利润率同比变动",
+          "period": "2026-08",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "releaseDate": "2026-09-28",
+          "originalPublisher": "国家统计局"
+        },
+        "receivablesDaysYoyChange": {
+          "value": 0.9,
+          "unit": "天",
+          "basis": "月末应收账款平均回收期同比变动",
+          "period": "2026-08",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "releaseDate": "2026-09-28",
+          "originalPublisher": "国家统计局"
+        },
+        "notice": "原文直接披露各同比/变化，不能由刊载金额差分代替；当前源JSON质量字段须另补结构化变化值后方可严格复算。"
+      },
+      "scoring": {
+        "method": "weighted-components",
+        "components": [
+          {
+            "key": "cumulativeComparableProfitGrowth",
+            "label": "年初累计利润可比同比",
+            "weight": 0.6,
+            "anchors": [
+              [
+                -20,
+                1
+              ],
+              [
+                -5,
+                2
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                15,
+                4
+              ],
+              [
+                30,
+                5
+              ]
+            ],
+            "unit": "%"
+          },
+          {
+            "key": "officialCurrentMonthComparableProfitGrowth",
+            "label": "当月利润可比同比",
+            "weight": 0.2,
+            "anchors": [
+              [
+                -20,
+                1
+              ],
+              [
+                -5,
+                2
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                15,
+                4
+              ],
+              [
+                30,
+                5
+              ]
+            ],
+            "unit": "%"
+          },
+          {
+            "key": "reportedProfitMarginYoyChange",
+            "label": "营业收入利润率同比变化",
+            "weight": 0.1,
+            "anchors": [
+              [
+                -1,
+                1
+              ],
+              [
+                -0.5,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                0.5,
+                4
+              ],
+              [
+                1,
+                5
+              ]
+            ],
+            "unit": "百分点"
+          },
+          {
+            "key": "reportedReceivablesDaysYoyChange",
+            "label": "应收账款回收期同比变化",
+            "weight": 0.1,
+            "anchors": [
+              [
+                -4,
+                5
+              ],
+              [
+                -2,
+                4
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "unit": "天"
+          }
+        ],
+        "description": "利润必须由规模以上工业企业可比范围官方同比输入，不能机械用两次发布金额相除。新增明示固定质量/最新月份组件，不再主观质量扣分；四组件的数值权重非回测最优。"
+      }
+    },
+    {
+      "id": "G03",
+      "name": "商品房销售面积增速（%）",
+      "pillar": "增长动力",
+      "weight": 0.02,
+      "unit": "%",
+      "measurementBasis": "年初累计名义同比",
+      "current": {
+        "period": "2026-08",
+        "value": -12.1,
+        "oldScore": 2,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+        "levelOnlyCandidate": 2.1933333333333334,
+        "fullCandidate": 2.1933333333333334,
+        "deltaFromOld": 0.19333333333333336
+      },
+      "oldLimits": [
+        -20,
+        -10,
+        0,
+        5
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -30,
+            1
+          ],
+          [
+            -15,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            25,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -30,
+              1
+            ],
+            [
+              -15,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              25,
+              5
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "量的同比零为不再收缩的中性基准，深度收缩区仍分连续分数；面积不是金额，不能用房地产销售额代替。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -30,
+            1
+          ],
+          [
+            -15,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            25,
+            5
+          ]
+        ],
+        "description": "量的同比零为不再收缩的中性基准，深度收缩区仍分连续分数；面积不是金额，不能用房地产销售额代替。"
+      }
+    },
+    {
+      "id": "G14",
+      "name": "房地产开发投资增速（累计同比，%）",
+      "pillar": "增长动力",
+      "weight": 0.01,
+      "unit": "%",
+      "measurementBasis": "年初累计名义同比",
+      "current": {
+        "period": "2026-08",
+        "value": -19.9,
+        "oldScore": 1,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+        "levelOnlyCandidate": 1.6733333333333333,
+        "fullCandidate": 1.6733333333333333,
+        "deltaFromOld": 0.6733333333333333
+      },
+      "oldLimits": [
+        -10,
+        -3,
+        0,
+        5
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -30,
+            1
+          ],
+          [
+            -15,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            20,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -30,
+              1
+            ],
+            [
+              -15,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              20,
+              5
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "开发投入零同比为中性，收缩-10%到-30%不再全部挤在1分；扩张并非必然盈利改善，库存/竣工问题保留解释。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -30,
+            1
+          ],
+          [
+            -15,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            20,
+            5
+          ]
+        ],
+        "description": "开发投入零同比为中性，收缩-10%到-30%不再全部挤在1分；扩张并非必然盈利改善，库存/竣工问题保留解释。"
+      }
+    },
+    {
+      "id": "G15",
+      "name": "70城二手住宅价格环比中位数（近3月均值，%）",
+      "pillar": "增长动力",
+      "weight": 0.015,
+      "unit": "%",
+      "measurementBasis": "70城二手住宅环比中位数近3月均值",
+      "current": {
+        "period": "2026-08",
+        "value": -0.316667,
+        "oldScore": 2,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965304.html",
+        "levelOnlyCandidate": 2.366666,
+        "fullCandidate": 2.366666,
+        "deltaFromOld": 0.36666599999999994
+      },
+      "oldLimits": [
+        -0.5,
+        -0.2,
+        0,
+        0.2
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -1,
+            1
+          ],
+          [
+            -0.5,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0.2,
+            4
+          ],
+          [
+            0.4,
+            5
+          ],
+          [
+            0.6,
+            5
+          ],
+          [
+            0.8,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1.5,
+            1
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -1,
+              1
+            ],
+            [
+              -0.5,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0.2,
+              4
+            ],
+            [
+              0.4,
+              5
+            ],
+            [
+              0.6,
+              5
+            ],
+            [
+              0.8,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1.5,
+              1
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "每月70城分城环比幅度中位数，再三月均值，非官方全国指数、非人口加权、也不等于多数城市上涨。零为量价企稳中性；过热上端转折为未验证风险设定。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -1,
+            1
+          ],
+          [
+            -0.5,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0.2,
+            4
+          ],
+          [
+            0.4,
+            5
+          ],
+          [
+            0.6,
+            5
+          ],
+          [
+            0.8,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1.5,
+            1
+          ]
+        ],
+        "description": "每月70城分城环比幅度中位数，再三月均值，非官方全国指数、非人口加权、也不等于多数城市上涨。零为量价企稳中性；过热上端转折为未验证风险设定。"
+      }
+    },
+    {
+      "id": "G07",
+      "name": "制造业投资增速（%）",
+      "pillar": "增长动力",
+      "weight": 0.02,
+      "unit": "%",
+      "measurementBasis": "年初累计名义同比",
+      "current": {
+        "period": "2026-08",
+        "value": -2.3,
+        "oldScore": 1,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965309.html",
+        "levelOnlyCandidate": 1.77,
+        "fullCandidate": 1.77,
+        "deltaFromOld": 0.77
+      },
+      "oldLimits": [
+        4,
+        7,
+        10,
+        14
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -10,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            20,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -10,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              20,
+              5
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "名义制造业投资连续曲线兼顾负增长与正常正增长，5%中性是研究而非官方要求；与扣地产民间投资仍分类交叉，不可加总为投资份额。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -10,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            20,
+            5
+          ]
+        ],
+        "description": "名义制造业投资连续曲线兼顾负增长与正常正增长，5%中性是研究而非官方要求；与扣地产民间投资仍分类交叉，不可加总为投资份额。"
+      }
+    },
+    {
+      "id": "G16",
+      "name": "扣除房地产开发的民间投资增速（累计同比，%）",
+      "pillar": "增长动力",
+      "weight": 0.025,
+      "unit": "%",
+      "measurementBasis": "年初累计名义同比",
+      "current": {
+        "period": "2026-08",
+        "value": -6.4,
+        "oldScore": 1,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+        "levelOnlyCandidate": 1.8599999999999999,
+        "fullCandidate": 1.8599999999999999,
+        "deltaFromOld": 0.8599999999999999
+      },
+      "oldLimits": [
+        -5,
+        0,
+        3,
+        6
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -15,
+            1
+          ],
+          [
+            -5,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -15,
+              1
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "仅扣除房地产开发的民间投资，零同比为企稳中性；不套全口径旧民间投资历史，也不从旧分类机械推算。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -15,
+            1
+          ],
+          [
+            -5,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        "description": "仅扣除房地产开发的民间投资，零同比为企稳中性；不套全口径旧民间投资历史，也不从旧分类机械推算。"
+      }
+    },
+    {
+      "id": "G13",
+      "name": "基础设施投资增速（年初累计同比，%）",
+      "pillar": "增长动力",
+      "weight": 0.015,
+      "unit": "%",
+      "measurementBasis": "年初累计名义同比",
+      "current": {
+        "period": "2026-08",
+        "value": -4,
+        "oldScore": 2,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965309.html",
+        "levelOnlyCandidate": 1.75,
+        "fullCandidate": 1.75,
+        "deltaFromOld": -0.25
+      },
+      "oldLimits": [
+        -5,
+        0,
+        3,
+        7
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -10,
+            1
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            15,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -10,
+              1
+            ],
+            [
+              -2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              15,
+              5
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "2026口径含电力、热力、燃气及水生产和供应业。名义累计增速观察公共投入执行，不等于社会回报；不能直接连旧排除该行业的历史阈值分布。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -10,
+            1
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            15,
+            5
+          ]
+        ],
+        "description": "2026口径含电力、热力、燃气及水生产和供应业。名义累计增速观察公共投入执行，不等于社会回报；不能直接连旧排除该行业的历史阈值分布。"
+      }
+    },
+    {
+      "id": "G17",
+      "name": "商品零售额增速（当月名义同比，%）",
+      "pillar": "增长动力",
+      "weight": 0.045,
+      "unit": "%",
+      "measurementBasis": "当月名义同比",
+      "current": {
+        "period": "2026-08",
+        "value": 0.3,
+        "oldScore": 1,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
+        "levelOnlyCandidate": 1.7666666666666666,
+        "fullCandidate": 1.7666666666666666,
+        "deltaFromOld": 0.7666666666666666
+      },
+      "oldLimits": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -2,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "商品零售当月名义同比，非社零总额，不包括服务零售的餐饮重复。4%中性锚是研究设定，名义增长还受商品价格/补贴错位/春节影响。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -2,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        "description": "商品零售当月名义同比，非社零总额，不包括服务零售的餐饮重复。4%中性锚是研究设定，名义增长还受商品价格/补贴错位/春节影响。"
+      }
+    },
+    {
+      "id": "G12",
+      "name": "服务零售额增速（年初累计同比，%）",
+      "pillar": "增长动力",
+      "weight": 0.025,
+      "unit": "%",
+      "measurementBasis": "年初累计名义同比",
+      "current": {
+        "period": "2026-08",
+        "value": 4.9,
+        "oldScore": 3,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+        "levelOnlyCandidate": 3.3000000000000003,
+        "fullCandidate": 3.3000000000000003,
+        "deltaFromOld": 0.30000000000000027
+      },
+      "oldLimits": [
+        0,
+        3,
+        5,
+        8
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -2,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "服务零售累计同比与商品当月同比频率不同，只是分块条件信号，不能拼为同步总消费。4%中性锚是研究设定，不是官方目标。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -2,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        "description": "服务零售累计同比与商品当月同比频率不同，只是分块条件信号，不能拼为同步总消费。4%中性锚是研究设定，不是官方目标。"
+      }
+    },
+    {
+      "id": "G10",
+      "name": "出口金额增速（美元计，%）",
+      "pillar": "增长动力",
+      "weight": 0.03,
+      "unit": "%",
+      "measurementBasis": "当月美元金额同比",
+      "current": {
+        "period": "2026-08",
+        "value": 25,
+        "oldScore": 5,
+        "sourceUrl": "http://english.customs.gov.cn/Statics/d14f71f5-1ac9-431f-b8d7-b7a7a0b58af7.html",
+        "levelOnlyCandidate": 5,
+        "fullCandidate": 5,
+        "deltaFromOld": 0
+      },
+      "oldLimits": [
+        -5,
+        0,
+        5,
+        10
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -10,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            20,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "%"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -10,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              20,
+              5
+            ]
+          ],
+          "unit": "%"
+        }
+      ],
+      "scoringBasis": "只用海关报告当月美元金额可比同比，不用人民币增速替代；正外需贡献仍给高分，不为降低总分任意扣分。低基数、抢出口及数量/价格分解作解释，缺两年金额不造复合增速。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -10,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            20,
+            5
+          ]
+        ],
+        "description": "只用海关报告当月美元金额可比同比，不用人民币增速替代；正外需贡献仍给高分，不为降低总分任意扣分。低基数、抢出口及数量/价格分解作解释，缺两年金额不造复合增速。"
+      }
+    },
+    {
+      "id": "G11",
+      "name": "制造业PMI新订单指数（近3月均值）",
+      "pillar": "增长动力",
+      "weight": 0.015,
+      "unit": "指数点",
+      "measurementBasis": "近3月季调均值",
+      "current": {
+        "period": "2026-09",
+        "value": 49.866667,
+        "oldScore": 2,
+        "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+        "levelOnlyCandidate": 2.911111333333333,
+        "fullCandidate": 2.788889133333334,
+        "deltaFromOld": 0.7888891333333339
+      },
+      "oldLimits": [
+        48,
+        50,
+        51,
+        52
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            47,
+            1
+          ],
+          [
+            48.5,
+            2
+          ],
+          [
+            50,
+            3
+          ],
+          [
+            51.5,
+            4
+          ],
+          [
+            53,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "指数点"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 0.8,
+          "input": "observation.value",
+          "anchors": [
+            [
+              47,
+              1
+            ],
+            [
+              48.5,
+              2
+            ],
+            [
+              50,
+              3
+            ],
+            [
+              51.5,
+              4
+            ],
+            [
+              53,
+              5
+            ]
+          ],
+          "unit": "指数点"
+        },
+        {
+          "key": "nonOverlappingThreeMonthChange",
+          "weight": 0.2,
+          "formula": "mean(latest 3 official monthly indices) - mean(preceding 3 official monthly indices)",
+          "anchors": [
+            [
+              -2,
+              1
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "unit": "指数点",
+          "requiredMonths": 6
+        }
+      ],
+      "scoringBasis": "新订单是制造业PMI组成项，有重复暴露，故已固定较低1.5%权重不再扩权。50中性，趋势占20%，未获完整六个月原值则不能生成完整趋势版。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "additionalCurrentEvidence": {
+        "priorMonthly": [
+          {
+            "period": "2026-04",
+            "value": 50.6,
+            "unit": "指数点",
+            "basis": "季调当月指数",
+            "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+            "releaseDate": "2026-09-30",
+            "originalPublisher": "国家统计局"
+          },
+          {
+            "period": "2026-05",
+            "value": 49.9,
+            "unit": "指数点",
+            "basis": "季调当月指数",
+            "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+            "releaseDate": "2026-09-30",
+            "originalPublisher": "国家统计局"
+          },
+          {
+            "period": "2026-06",
+            "value": 51.2,
+            "unit": "指数点",
+            "basis": "季调当月指数",
+            "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+            "releaseDate": "2026-09-30",
+            "originalPublisher": "国家统计局"
+          }
+        ],
+        "priorThreeMonthMean": 50.56666666666666,
+        "delta": -0.6999996666666632
+      },
+      "scoring": {
+        "method": "weighted-components",
+        "components": [
+          {
+            "key": "level",
+            "label": "当期水平",
+            "weight": 0.8,
+            "anchors": [
+              [
+                47,
+                1
+              ],
+              [
+                48.5,
+                2
+              ],
+              [
+                50,
+                3
+              ],
+              [
+                51.5,
+                4
+              ],
+              [
+                53,
+                5
+              ]
+            ],
+            "unit": "指数点"
+          },
+          {
+            "key": "nonOverlappingThreeMonthChange",
+            "label": "前后不重叠三月均值变化",
+            "weight": 0.2,
+            "anchors": [
+              [
+                -2,
+                1
+              ],
+              [
+                -1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            "unit": "指数点"
+          }
+        ],
+        "description": "新订单是制造业PMI组成项，有重复暴露，故已固定较低1.5%权重不再扩权。50中性，趋势占20%，未获完整六个月原值则不能生成完整趋势版。"
+      }
+    },
+    {
+      "id": "G18",
+      "name": "工业产能利用率季度同比变动（百分点）",
+      "pillar": "增长动力",
+      "weight": 0.01,
+      "unit": "百分点",
+      "measurementBasis": "工业产能利用率同季同比差",
+      "current": {
+        "period": "2026-Q2",
+        "value": -1,
+        "oldScore": 2,
+        "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964130.html",
+        "levelOnlyCandidate": 2.3333333333333335,
+        "fullCandidate": 2.3333333333333335,
+        "deltaFromOld": 0.3333333333333335
+      },
+      "oldLimits": [
+        -2,
+        -0.5,
+        0.5,
+        2
+      ],
+      "oldMode": "高优",
+      "level": {
+        "method": "piecewiseLinear",
+        "anchors": [
+          [
+            -3,
+            1
+          ],
+          [
+            -1.5,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1.5,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "outside": "saturate",
+        "unit": "百分点"
+      },
+      "components": [
+        {
+          "key": "level",
+          "weight": 1,
+          "input": "observation.value",
+          "anchors": [
+            [
+              -3,
+              1
+            ],
+            [
+              -1.5,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1.5,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "unit": "百分点"
+        }
+      ],
+      "scoringBasis": "同季度工业产能利用率同比百分点差，零为中性，不套PMI50；绝对水平仅在同季长样本齐全时作解释，不能把Q2与各年Q4混为历史分位。",
+      "thresholdStatus": "研究试行，未完成样本外验证",
+      "missingBehavior": "任何必需原值缺失、未核验、来源或口径不符时完整单项分数为null；不得原值插值、补零、组件自动重分权。原始观察值与得分分开保存。",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -3,
+            1
+          ],
+          [
+            -1.5,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1.5,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "description": "同季度工业产能利用率同比百分点差，零为中性，不套PMI50；绝对水平仅在同季长样本齐全时作解释，不能把Q2与各年Q4混为历史分位。"
+      }
+    }
+  ]
+}

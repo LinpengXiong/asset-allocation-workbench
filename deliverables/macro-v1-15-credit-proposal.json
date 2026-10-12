@@ -1,0 +1,918 @@
+{
+  "versionCandidate": "V1.15",
+  "asOf": "2026-10-11",
+  "researchOnly": true,
+  "implementationAuthorizedSeparatelyByRoot": false,
+  "latestScope": "37项评分标准审查清单；候选仅供研究比较，不实施、不发布。",
+  "weightChange": false,
+  "financialCreditWeight": 0.2,
+  "purpose": "中国中长期资产配置的信用趋势及资产负债表约束，不将评级直接等同股/债/商品买卖信号",
+  "evidenceFile": "deliverables/macro-v1-15-credit-evidence.json",
+  "numericalMethod": {
+    "method": "piecewise-linear",
+    "domain": [
+      1,
+      5
+    ],
+    "clamp": true,
+    "interpolation": "节点间线性插值，按派生原值统一6位复算后计算；只展示分数可取2位，最终加权使用内部值",
+    "calibrationStatus": "试行解释性节点，未做跨资产样本外回测，不声称最优"
+  },
+  "indicators": [
+    {
+      "id": "F01",
+      "weight": 0.025,
+      "currentValue": -2893,
+      "currentPeriod": "2026-08",
+      "currentScore": 2,
+      "proposedScore": 2.0356666666666667,
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -6000,
+            1
+          ],
+          [
+            -3000,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3000,
+            4
+          ],
+          [
+            6000,
+            5
+          ]
+        ],
+        "description": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。"
+      },
+      "name": "居民中长期贷款近3月同比多增（亿元）",
+      "unit": "亿元",
+      "requires": [
+        "原始组件/单位/统计期/口径一致",
+        "当期已发布最新核验元数据",
+        "派生重算与输入一致，不得评分误差改变阈值"
+      ],
+      "evidenceMatrix": null
+    },
+    {
+      "id": "F02",
+      "weight": 0.035,
+      "currentValue": -5700,
+      "currentPeriod": "2026-08",
+      "currentScore": 1,
+      "proposedScore": 1.8599999999999999,
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -10000,
+            1
+          ],
+          [
+            -5000,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            5000,
+            4
+          ],
+          [
+            10000,
+            5
+          ]
+        ],
+        "description": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。"
+      },
+      "name": "企（事）业单位中长期贷款近3月同比多增（亿元）",
+      "unit": "亿元",
+      "requires": [
+        "原始组件/单位/统计期/口径一致",
+        "当期已发布最新核验元数据",
+        "派生重算与输入一致，不得评分误差改变阈值"
+      ],
+      "evidenceMatrix": null
+    },
+    {
+      "id": "F07",
+      "weight": 0.035,
+      "currentValue": 5.498262,
+      "currentPeriod": "2026-08",
+      "currentScore": 3,
+      "proposedScore": 2.749131,
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        "description": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。"
+      },
+      "name": "剔除政府债后社融存量同比（%）",
+      "unit": "%",
+      "requires": [
+        "原始组件/单位/统计期/口径一致",
+        "当期已发布最新核验元数据",
+        "派生重算与输入一致，不得评分误差改变阈值"
+      ],
+      "evidenceMatrix": null
+    },
+    {
+      "id": "F08",
+      "weight": 0.02,
+      "currentValue": -0.240145,
+      "currentPeriod": "2026-08",
+      "currentScore": 3,
+      "proposedScore": 2.199516666666667,
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -1,
+            1
+          ],
+          [
+            -0.3,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0.3,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "description": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。"
+      },
+      "name": "剔除政府债后社融同比近3月变动（百分点）",
+      "unit": "百分点",
+      "requires": [
+        "原始组件/单位/统计期/口径一致",
+        "当期已发布最新核验元数据",
+        "派生重算与输入一致，不得评分误差改变阈值"
+      ],
+      "evidenceMatrix": null
+    },
+    {
+      "id": "F09",
+      "weight": 0.03,
+      "currentValue": 3,
+      "currentPeriod": "2026-Q2",
+      "currentScore": 3,
+      "proposedScore": 2.5,
+      "scoring": {
+        "method": "evidence-matrix",
+        "step": 0.5
+      },
+      "name": "居民部门杠杆约束",
+      "unit": "1—5分",
+      "requires": [
+        "国内当季/同比杠杆原值",
+        "BIS同表同季国际背景与主要对照原值",
+        "收入/盈利当前证据",
+        "直接偿债或明确标注的当期代理",
+        "正反证据及季度复核"
+      ],
+      "evidenceMatrix": {
+        "method": "evidence-matrix",
+        "schemaVersion": 1,
+        "step": 0.5,
+        "reviewDate": "2026-10-11",
+        "sector": "households",
+        "objective": "居民资产负债表对中长期信用传导/资产配置的约束；不是单独违约风险或宏观繁荣分",
+        "primaryReference": "BIS-emerging-ex-China",
+        "domestic": {
+          "period": "2026-Q2",
+          "basis": "CNBS同部门债务/TTM名义GDP",
+          "leverageRatio": 57.7,
+          "yearAgoLeverageRatio": 61.1,
+          "yearOnYearChangePp": -3.4,
+          "quarterOnQuarterChangePp": -1.3,
+          "debtGrowthPct": -1.3,
+          "sourceKey": "cnbsCurrent",
+          "debtGrowthPdfPage": 5
+        },
+        "international": {
+          "period": "2026-Q1",
+          "basis": "BIS Q.H.A.M.770.A",
+          "country": "CN",
+          "value": 57.5,
+          "sourceKey": "bisCredit",
+          "benchmark": {
+            "sector": "H",
+            "group": "emergingExChina",
+            "n": 15,
+            "countries": [
+              "AR",
+              "BR",
+              "CL",
+              "CO",
+              "HU",
+              "ID",
+              "IN",
+              "MX",
+              "MY",
+              "PL",
+              "RU",
+              "SA",
+              "TH",
+              "TR",
+              "ZA"
+            ],
+            "china": 57.5,
+            "median": 25.715,
+            "q25": 18.049999999999997,
+            "q75": 40.7,
+            "q90": 61.33999999999999,
+            "chinaOutOfSamplePercentile": 86.66666666666667,
+            "observations": [
+              {
+                "country": "AR",
+                "sector": "H",
+                "value": 5.6,
+                "title": "Argentina - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "TR",
+                "sector": "H",
+                "value": 10.1,
+                "title": "Türkiye - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "ID",
+                "sector": "H",
+                "value": 15.2,
+                "title": "Indonesia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "MX",
+                "sector": "H",
+                "value": 17.4,
+                "title": "Mexico - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "HU",
+                "sector": "H",
+                "value": 18.7,
+                "title": "Hungary - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "RU",
+                "sector": "H",
+                "value": 21,
+                "title": "Russia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "PL",
+                "sector": "H",
+                "value": 22.1,
+                "title": "Poland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "CO",
+                "sector": "H",
+                "value": 25.715,
+                "title": "Colombia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "SA",
+                "sector": "H",
+                "value": 31.6,
+                "title": "Saudi Arabia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "ZA",
+                "sector": "H",
+                "value": 33.7,
+                "title": "South Africa - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "BR",
+                "sector": "H",
+                "value": 38,
+                "title": "Brazil - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "CL",
+                "sector": "H",
+                "value": 43.4,
+                "title": "Chile - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "IN",
+                "sector": "H",
+                "value": 49.1,
+                "title": "India - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "MY",
+                "sector": "H",
+                "value": 69.5,
+                "title": "Malaysia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "TH",
+                "sector": "H",
+                "value": 86.7,
+                "title": "Thailand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              }
+            ]
+          },
+          "notSafetyThreshold": true,
+          "role": "相对負担背景，须与本国约束及收入/反证联合；不能用CNBS57.7或59.0排行"
+        },
+        "incomeOrProfit": {
+          "sourceKey": "nbsIncome",
+          "period": "2026-H1",
+          "nominalIncomeGrowthPct": 5.2,
+          "realIncomeGrowthPct": 4.2,
+          "medianNominalIncomeGrowthPct": 4.7,
+          "wageGrowthPct": 5.3,
+          "consumptionExpenditureGrowthPct": 3.7,
+          "limitation": "非债务人加权收入，不能用人均收入增速与总量GDP增速直接作同口径减法"
+        },
+        "servicing": {
+          "sectorDsr": null,
+          "sectorDsrStatus": "BIS官方当前查询只有PNFS合计，无居民DSR；无其他当期同口径全国直接DSR",
+          "directSectorData": false,
+          "proxyOnly": true,
+          "newMortgageLoanRatePct": 3.05,
+          "newMortgageRateYoYChangePp": -0.01,
+          "sourceKey": "pbcRates",
+          "limitation": "新贷利率不是存量贷款利率/实际还本付息负担；不足独自触发改善高分"
+        },
+        "assetDemandPressure": {
+          "sourceKeys": [
+            "cnbsCurrent",
+            "pbcLoanAllocation"
+          ],
+          "period": "2026-Q2",
+          "nonMortgageConsumerLoanGrowthPct": -1.7,
+          "nonMortgageConsumerLoanBalanceTrillion": 20.83,
+          "mortgageLoanGrowthPct": -3.8,
+          "assetPressureEvidence": "CNBS原文住房财富承压、负债缩减不等同积极修复（PDF第7—9页/印刷第3—5页）",
+          "mortgageBalanceChangeH1HundredMillion": -7163
+        },
+        "counterEvidence": {
+          "sourceKeys": [
+            "nbsIncome",
+            "cnbsCurrent"
+          ],
+          "positive": [
+            "收入与中位收入均增长",
+            "同比杠杆下降，债务未继续堆积",
+            "按揭新贷利率略低"
+          ],
+          "negative": [
+            "消费信贷缩减与住房财富承压",
+            "消费支出增速低于收入，反映支出倾向偏弱而非直接偿债违约"
+          ]
+        },
+        "facts": {
+          "relativeBurdenElevatedInPrimaryPeers": true,
+          "domesticLeverageIncreasing": false,
+          "deleveragingWithAssetDemandPressure": true,
+          "currentIncomeSupport": true,
+          "currentRepaymentStressDirectlyObserved": false,
+          "directSectorDebtServiceAvailable": false,
+          "scopeVerified": true
+        },
+        "matchedState": "constraints-partly-mitigated",
+        "computedScore": 2.5,
+        "confidence": "limited-proxy",
+        "scoreReason": "新兴主参照中相对负担偏高，与本国住房财富/消费信贷缩表共同构成约束；收入正增与减债提供缓冲，因此为2.5而非2或更低。缺DSR不加扣分，只限制高分结论。",
+        "sensitivityAlternative": {
+          "reference": "all43/advanced27",
+          "score": 3,
+          "rationale": "若仅衡量偿付安全或以全部/发达经济体作主参照，不能由国际比较认定普遍极高负担；收入正增、降杠杆与弱资产/需求形成混合中性。"
+        },
+        "sourceConflicts": [
+          {
+            "metric": "不含住房贷款消费贷款同比",
+            "nifdValue": -1.8,
+            "originalPbcValue": -1.7,
+            "chosen": -1.7,
+            "unit": "%",
+            "reason": "官方原始贷款投向表优先于研究报告转述"
+          }
+        ]
+      }
+    },
+    {
+      "id": "F10",
+      "weight": 0.03,
+      "currentValue": 3,
+      "currentPeriod": "2026-Q2",
+      "currentScore": 3,
+      "proposedScore": 2.5,
+      "scoring": {
+        "method": "evidence-matrix",
+        "step": 0.5
+      },
+      "name": "非金融企业部门杠杆约束",
+      "unit": "1—5分",
+      "requires": [
+        "国内当季/同比杠杆原值",
+        "BIS同表同季国际背景与主要对照原值",
+        "收入/盈利当前证据",
+        "直接偿债或明确标注的当期代理",
+        "正反证据及季度复核"
+      ],
+      "evidenceMatrix": {
+        "method": "evidence-matrix",
+        "schemaVersion": 1,
+        "step": 0.5,
+        "reviewDate": "2026-10-11",
+        "sector": "nonFinancialCorporations",
+        "objective": "企业资产负债表对中长期信用传导/资产配置的约束，不把企事业单位或工业企业当全部企业",
+        "primaryReference": "BIS-emerging-ex-China",
+        "domestic": {
+          "period": "2026-Q2",
+          "basis": "CNBS同部门债务/TTM名义GDP",
+          "leverageRatio": 179.5,
+          "yearAgoLeverageRatio": 174,
+          "yearOnYearChangePp": 5.5,
+          "quarterOnQuarterChangePp": -0.5,
+          "debtGrowthPct": 7.8,
+          "sourceKey": "cnbsCurrent"
+        },
+        "international": {
+          "period": "2026-Q1",
+          "basis": "BIS Q.N.A.M.770.A",
+          "country": "CN",
+          "value": 146.6,
+          "sourceKey": "bisCredit",
+          "benchmark": {
+            "sector": "N",
+            "group": "emergingExChina",
+            "n": 15,
+            "countries": [
+              "AR",
+              "BR",
+              "CL",
+              "CO",
+              "HU",
+              "ID",
+              "IN",
+              "MX",
+              "MY",
+              "PL",
+              "RU",
+              "SA",
+              "TH",
+              "TR",
+              "ZA"
+            ],
+            "china": 146.6,
+            "median": 46.5,
+            "q25": 31.3975,
+            "q75": 70,
+            "q90": 85.62,
+            "chinaOutOfSamplePercentile": 100,
+            "observations": [
+              {
+                "country": "AR",
+                "sector": "N",
+                "value": 21.1,
+                "title": "Argentina - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "MX",
+                "sector": "N",
+                "value": 21.2,
+                "title": "Mexico - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "ID",
+                "sector": "N",
+                "value": 24.6,
+                "title": "Indonesia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "CO",
+                "sector": "N",
+                "value": 29.195,
+                "title": "Colombia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "ZA",
+                "sector": "N",
+                "value": 33.6,
+                "title": "South Africa - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "PL",
+                "sector": "N",
+                "value": 35,
+                "title": "Poland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "TR",
+                "sector": "N",
+                "value": 39,
+                "title": "Türkiye - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "SA",
+                "sector": "N",
+                "value": 46.5,
+                "title": "Saudi Arabia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "BR",
+                "sector": "N",
+                "value": 54.6,
+                "title": "Brazil - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "IN",
+                "sector": "N",
+                "value": 56,
+                "title": "India - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "TH",
+                "sector": "N",
+                "value": 69.2,
+                "title": "Thailand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "HU",
+                "sector": "N",
+                "value": 70.8,
+                "title": "Hungary - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "RU",
+                "sector": "N",
+                "value": 83.7,
+                "title": "Russia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "CL",
+                "sector": "N",
+                "value": 86.9,
+                "title": "Chile - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              },
+              {
+                "country": "MY",
+                "sector": "N",
+                "value": 89.4,
+                "title": "Malaysia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+                "status": "A"
+              }
+            ]
+          },
+          "notSafetyThreshold": true,
+          "role": "企业相对负担高；需与本国杠杆/回款压力共同判断，不能以100分位直接判危机"
+        },
+        "incomeOrProfit": {
+          "sourceKey": "nbsIndustrialProfit",
+          "period": "2026-08",
+          "industrialProfitGrowthPct": 15.7,
+          "industrialRevenueGrowthPct": 6.6,
+          "industrialProfitMarginPct": 5.66,
+          "industrialProfitMarginYoYChangePp": 0.44,
+          "privateIndustrialProfitGrowthPct": 10.4,
+          "limitation": "规模以上工业是全部非金融企业子集，利润并非现金流；不能直接作全企业债务/利润比"
+        },
+        "servicing": {
+          "sectorDsr": null,
+          "sectorDsrStatus": "BIS中国只有PNFS合计，无企业分部门DSR",
+          "directSectorData": false,
+          "proxyOnly": true,
+          "enterpriseNewLoanRatePct": 3.04,
+          "enterpriseNewLoanRateYoYChangePp": -0.18,
+          "rateSourceKey": "pbcRates",
+          "receivablesCollectionDays": 72.2,
+          "receivablesCollectionDaysYoYChange": 0.9,
+          "inventoryTurnoverDaysYoYChange": 0.6,
+          "cashSourceKey": "nbsIndustrialProfit",
+          "limitation": "新贷成本和工业回款均为代理；不伪称全企业存量负债成本或实际债务服务率"
+        },
+        "counterEvidence": {
+          "sourceKeys": [
+            "cnbsCurrent",
+            "nbsIndustrialProfit",
+            "pbcRates"
+          ],
+          "positive": [
+            "本季杠杆环比下降0.5pp",
+            "利润及利润率改善",
+            "企业新贷成本下降"
+          ],
+          "negative": [
+            "杠杆同比仍上升5.5pp",
+            "回款与库存周转天数增加",
+            "规模以上工业资产负债率同比增加0.3pp，非CNBS债务/GDP，不能混用"
+          ]
+        },
+        "facts": {
+          "relativeBurdenElevatedInPrimaryPeers": true,
+          "domesticLeverageIncreasing": true,
+          "deleveragingWithAssetDemandPressure": false,
+          "risingLeverageWithCashPressure": true,
+          "currentEarningsSupport": true,
+          "currentRateCostSupport": true,
+          "currentRepaymentStressDirectlyObserved": false,
+          "directSectorDebtServiceAvailable": false,
+          "scopeVerified": true
+        },
+        "matchedState": "constraints-partly-mitigated",
+        "computedScore": 2.5,
+        "confidence": "limited-proxy",
+        "scoreReason": "同口径国际负担高、本国同比杠杆上升和现金回收偏弱联合支持较中性略低；利润/定价改善提供实证缓冲，不能因高比率直接判1或因利润好转直接判4。",
+        "perimeterWarning": "CNBS179.5与BIS146.6不得相除或混排行；BIS分配部分LGFV至政府、排除核销/股权等，CNBS企业更广。33.4pp差异不能直接全称LGFV。"
+      }
+    },
+    {
+      "id": "F05",
+      "weight": 0.025,
+      "currentValue": -3.4,
+      "currentPeriod": "2026-08",
+      "currentScore": 3,
+      "proposedScore": 3.033333333333333,
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -15,
+            1
+          ],
+          [
+            -10,
+            1.5
+          ],
+          [
+            -5,
+            2.5
+          ],
+          [
+            -2,
+            3.5
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            3.5
+          ],
+          [
+            8,
+            2.5
+          ],
+          [
+            12,
+            1.5
+          ],
+          [
+            16,
+            1
+          ]
+        ],
+        "description": "按既有目标型区间试行连续化，0—3为平台但并非经回测最优带；新口径样本不足，不把旧M1长历史强接。"
+      },
+      "name": "M1-M2剪刀差",
+      "unit": "百分点",
+      "requires": [
+        "原始组件/单位/统计期/口径一致",
+        "当期已发布最新核验元数据",
+        "派生重算与输入一致，不得评分误差改变阈值"
+      ],
+      "evidenceMatrix": null
+    }
+  ],
+  "leverageMethod": {
+    "method": "evidence-matrix",
+    "step": 0.5,
+    "requiredDimensions": [
+      "domestic",
+      "international",
+      "incomeOrProfit",
+      "servicing",
+      "counterEvidence"
+    ],
+    "levels": [
+      {
+        "score": 1,
+        "code": "severe-systemic-stress",
+        "conditions": [
+          "当期、广覆盖的违约/逾期或被迫重组恶化",
+          "收入/现金流与实际偿债指标显著恶化",
+          "具直接证据和统计范围，不用单项高杠杆或排名判断"
+        ]
+      },
+      {
+        "score": 1.5,
+        "code": "broad-unmitigated-stress",
+        "conditions": [
+          "多部门或广覆盖现金流/偿债压力明显",
+          "杠杆约束增加或缩表伴随实质财务压力",
+          "有局部支持但不足抵消；不要求已经发生系统危机"
+        ]
+      },
+      {
+        "score": 2,
+        "code": "material-constraints",
+        "conditions": [
+          "同部门债务负担增加或在主要参照中相对高负担",
+          "收入/现金流偏弱，且当前偿债或至少两组独立现金回收/抵押资产证据偏弱",
+          "正向收入/现金流反证不足，非仅缺失DSR"
+        ]
+      },
+      {
+        "score": 2.5,
+        "code": "constraints-partly-mitigated",
+        "conditions": [
+          "相对负担背景和本国资产负债表约束联合存在",
+          "居民：债务缩表+消费性贷款收缩+住房资产承压；企业：同比杠杆上升+回款/周转恶化",
+          "同时有收入/盈利增长或成本减轻等反证，因此不判为2或更低",
+          "同一代理不重复扣分；国际百分位单独不能触发"
+        ]
+      },
+      {
+        "score": 3,
+        "code": "evidenced-mixed-neutral",
+        "conditions": [
+          "有完整证据组；正负信号均有实质出处",
+          "不存在上列明显约束的联合条件",
+          "稳定或减少的负担与收入/现金流改善，受到资产/需求或局部回款压力抵消",
+          "不能由缺DSR/缺信息直接触发"
+        ]
+      },
+      {
+        "score": 3.5,
+        "code": "mild-constraint-relief",
+        "conditions": [
+          "部门负担稳定或下降",
+          "部门收入/现金流及实际债务服务指标均改善",
+          "无新鲜、明显的资产/逾期反证；具当前可比部门偿债数据"
+        ]
+      },
+      {
+        "score": 4,
+        "code": "broad-constraint-relief",
+        "conditions": [
+          "连续两个可比季度部门负担/收入关系改善",
+          "同范围DSR或利息保障/逾期等实证改善",
+          "收入/盈利改善并传至现金回收",
+          "资产、债务集中分布及反证已审核"
+        ]
+      },
+      {
+        "score": 4.5,
+        "code": "durable-constraint-relief",
+        "conditions": [
+          "满足4分",
+          "风险集中尾部亦有当期证据改善",
+          "改善覆盖多组/多行业，不是个别行业利润或新贷利率下降"
+        ]
+      },
+      {
+        "score": 5,
+        "code": "strong-sustainable-capacity",
+        "conditions": [
+          "满足4.5分且至少两季度持续",
+          "收入、负担、实际偿债与资产风险多维一致",
+          "无重要相反实证；不以债务/GDP低或国际排名低直接授予"
+        ]
+      }
+    ],
+    "proxyOnlyMaxScore": 3,
+    "missingRequiredDimensionReturns": null,
+    "priority": "从低分压力状态到高分改善状态核验，每次只能匹配一个有完整证据的状态；状态冲突或必要事实不明返回null，不能任意选中性。",
+    "primaryReference": "15个BIS新兴经济体排除中国；所有事实仍须本国收入/现金流/资产约束共同确认",
+    "percentileNotSafetyLine": true,
+    "dsrNoSectorAllocation": true
+  },
+  "currentComparison": {
+    "oldFinancialScore": 2.5249999999999995,
+    "newFinancialScore": 2.4101745916666664,
+    "oldContribution": 0.5049999999999999,
+    "newContribution": 0.48203491833333334,
+    "totalScoreChange": -0.022965081666666554
+  },
+  "issues": [
+    {
+      "priority": "P1",
+      "item": "F09原文居民债务增速校正−1.3",
+      "status": "已确认；主代理已同步当前文件"
+    },
+    {
+      "priority": "P1",
+      "item": "不把DSR19.1标成居民/企业，2019微观DSR不填2026"
+    },
+    {
+      "priority": "P1",
+      "item": "剔除政府债社融不是纯私人信用；债务置换会机械降低剩余融资，须附口径事件提示"
+    },
+    {
+      "priority": "P1",
+      "item": "0多增=3、负流量/累计差分允许，拒绝同比比值除以0/负基期"
+    },
+    {
+      "priority": "P2",
+      "item": "F01/F02固定亿元节点只适合当前研究窗口；后续可用同部门余额或名义GDP标准化，未核齐前不改定义"
+    },
+    {
+      "priority": "P2",
+      "item": "F05最佳0—3区间未回测，新M1短样本；当前只连续化试行，不增权"
+    },
+    {
+      "priority": "P2",
+      "item": "F07和F08同源，F01/F02是部分工具增量，风险重叠仍在；约束证据不把工业利润/房价再加成新权重"
+    }
+  ],
+  "validationPlan": {
+    "numerical": [
+      "所有节点左/等于/右一微量连续，边界截断1—5",
+      "F01/F02零为3",
+      "正负流量及舍入误差范围复核",
+      "F05左右尾部均下降并保留明确目标平台"
+    ],
+    "leverage": [
+      "混CNBS与BIS排名拒绝",
+      "国际样本不同季度拒绝",
+      "缺新兴任一成员/重复代码/带XM地区重复拒绝",
+      "DSR P错误标H/N拒绝",
+      "过期2019尾部分布不得当current",
+      "无收入/偿债/反证组返回null",
+      "仅高百分位/只低利率/只杠杆下降不能自动判档",
+      "同组原值与事实状态冲突拒绝"
+    ]
+  },
+  "unvalidatedClaims": [
+    "七项节点/门槛没有跨资产历史回测最优性证据",
+    "国家对照并不能代替中国负债人收入分布",
+    "企业工业子集盈利不能证明全部非金融企业偿债健康"
+  ]
+}

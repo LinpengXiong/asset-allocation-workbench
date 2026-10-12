@@ -1,0 +1,928 @@
+{
+  "metric": "GDP 平减指数",
+  "basis": "单季同比，按同版现价GDP单季值和实际GDP单季同比指数计算",
+  "unit": "%",
+  "formula": "((本季现价GDP / 上年同季现价GDP) / (本季实际GDP同比指数/100) - 1) × 100",
+  "vintageBreakAfter": "2011-Q4",
+  "vintageNote": "2001—2011采用2015年季度修订表；2012年以来采用2026-09-15更新的国家统计局SDDS同版现价与实际序列；两段不跨版计算，图上标注断点。",
+  "rows": [
+    {
+      "period": "2001-Q1",
+      "value": 3.19,
+      "nominalGdp": 23950.0,
+      "priorYearNominalGdp": 21215.0,
+      "realGdpIndex": 109.4,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2001-Q2",
+      "value": 2.35,
+      "nominalGdp": 26796.0,
+      "priorYearNominalGdp": 24129.0,
+      "realGdpIndex": 108.5,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2001-Q3",
+      "value": 2.01,
+      "nominalGdp": 28086.0,
+      "priorYearNominalGdp": 25492.0,
+      "realGdpIndex": 108.0,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2001-Q4",
+      "value": 0.96,
+      "nominalGdp": 31438.0,
+      "priorYearNominalGdp": 28940.0,
+      "realGdpIndex": 107.6,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2002-Q1",
+      "value": 0.29,
+      "nominalGdp": 26133.0,
+      "priorYearNominalGdp": 23950.0,
+      "realGdpIndex": 108.8,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2002-Q2",
+      "value": 0.41,
+      "nominalGdp": 29246.0,
+      "priorYearNominalGdp": 26796.0,
+      "realGdpIndex": 108.7,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2002-Q3",
+      "value": 0.61,
+      "nominalGdp": 30971.0,
+      "priorYearNominalGdp": 28086.0,
+      "realGdpIndex": 109.6,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2002-Q4",
+      "value": 1.03,
+      "nominalGdp": 34652.0,
+      "priorYearNominalGdp": 31438.0,
+      "realGdpIndex": 109.1,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2003-Q1",
+      "value": 2.15,
+      "nominalGdp": 29631.0,
+      "priorYearNominalGdp": 26133.0,
+      "realGdpIndex": 111.0,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2003-Q2",
+      "value": 2.05,
+      "nominalGdp": 32563.0,
+      "priorYearNominalGdp": 29246.0,
+      "realGdpIndex": 109.1,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2003-Q3",
+      "value": 2.64,
+      "nominalGdp": 34968.0,
+      "priorYearNominalGdp": 30971.0,
+      "realGdpIndex": 110.0,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2003-Q4",
+      "value": 3.37,
+      "nominalGdp": 39402.0,
+      "priorYearNominalGdp": 34652.0,
+      "realGdpIndex": 110.0,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2004-Q1",
+      "value": 4.73,
+      "nominalGdp": 34291.0,
+      "priorYearNominalGdp": 29631.0,
+      "realGdpIndex": 110.5,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2004-Q2",
+      "value": 6.62,
+      "nominalGdp": 38713.0,
+      "priorYearNominalGdp": 32563.0,
+      "realGdpIndex": 111.5,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2004-Q3",
+      "value": 7.92,
+      "nominalGdp": 41436.0,
+      "priorYearNominalGdp": 34968.0,
+      "realGdpIndex": 109.8,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2004-Q4",
+      "value": 7.94,
+      "nominalGdp": 46275.0,
+      "priorYearNominalGdp": 39402.0,
+      "realGdpIndex": 108.8,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2005-Q1",
+      "value": 5.43,
+      "nominalGdp": 40131.0,
+      "priorYearNominalGdp": 34291.0,
+      "realGdpIndex": 111.0,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2005-Q2",
+      "value": 4.13,
+      "nominalGdp": 44748.0,
+      "priorYearNominalGdp": 38713.0,
+      "realGdpIndex": 111.0,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2005-Q3",
+      "value": 3.57,
+      "nominalGdp": 47550.0,
+      "priorYearNominalGdp": 41436.0,
+      "realGdpIndex": 110.8,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2005-Q4",
+      "value": 2.79,
+      "nominalGdp": 53466.0,
+      "priorYearNominalGdp": 46275.0,
+      "realGdpIndex": 112.4,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2006-Q1",
+      "value": 3.39,
+      "nominalGdp": 46678.0,
+      "priorYearNominalGdp": 40131.0,
+      "realGdpIndex": 112.5,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2006-Q2",
+      "value": 3.4,
+      "nominalGdp": 52560.0,
+      "priorYearNominalGdp": 44748.0,
+      "realGdpIndex": 113.6,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2006-Q3",
+      "value": 3.97,
+      "nominalGdp": 55468.0,
+      "priorYearNominalGdp": 47550.0,
+      "realGdpIndex": 112.2,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2006-Q4",
+      "value": 4.66,
+      "nominalGdp": 62950.0,
+      "priorYearNominalGdp": 53466.0,
+      "realGdpIndex": 112.5,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2007-Q1",
+      "value": 6.72,
+      "nominalGdp": 56687.0,
+      "priorYearNominalGdp": 46678.0,
+      "realGdpIndex": 113.8,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2007-Q2",
+      "value": 7.05,
+      "nominalGdp": 64649.0,
+      "priorYearNominalGdp": 52560.0,
+      "realGdpIndex": 114.9,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2007-Q3",
+      "value": 8.6,
+      "nominalGdp": 68790.0,
+      "priorYearNominalGdp": 55468.0,
+      "realGdpIndex": 114.2,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2007-Q4",
+      "value": 8.64,
+      "nominalGdp": 77894.0,
+      "priorYearNominalGdp": 62950.0,
+      "realGdpIndex": 113.9,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2008-Q1",
+      "value": 8.82,
+      "nominalGdp": 68778.0,
+      "priorYearNominalGdp": 56687.0,
+      "realGdpIndex": 111.5,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2008-Q2",
+      "value": 9.54,
+      "nominalGdp": 78538.0,
+      "priorYearNominalGdp": 64649.0,
+      "realGdpIndex": 110.9,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2008-Q3",
+      "value": 8.26,
+      "nominalGdp": 81619.0,
+      "priorYearNominalGdp": 68790.0,
+      "realGdpIndex": 109.6,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2008-Q4",
+      "value": 5.26,
+      "nominalGdp": 87816.0,
+      "priorYearNominalGdp": 77894.0,
+      "realGdpIndex": 107.1,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2009-Q1",
+      "value": 0.33,
+      "nominalGdp": 73284.0,
+      "priorYearNominalGdp": 68778.0,
+      "realGdpIndex": 106.2,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2009-Q2",
+      "value": -1.42,
+      "nominalGdp": 83614.0,
+      "priorYearNominalGdp": 78538.0,
+      "realGdpIndex": 108.0,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2009-Q3",
+      "value": -1.31,
+      "nominalGdp": 88923.0,
+      "priorYearNominalGdp": 81619.0,
+      "realGdpIndex": 110.4,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2009-Q4",
+      "value": 1.75,
+      "nominalGdp": 99808.0,
+      "priorYearNominalGdp": 87816.0,
+      "realGdpIndex": 111.7,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2010-Q1",
+      "value": 5.42,
+      "nominalGdp": 86684.0,
+      "priorYearNominalGdp": 73284.0,
+      "realGdpIndex": 112.2,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2010-Q2",
+      "value": 7.02,
+      "nominalGdp": 99060.0,
+      "priorYearNominalGdp": 83614.0,
+      "realGdpIndex": 110.7,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2010-Q3",
+      "value": 7.39,
+      "nominalGdp": 104951.0,
+      "priorYearNominalGdp": 88923.0,
+      "realGdpIndex": 109.9,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2010-Q4",
+      "value": 7.67,
+      "nominalGdp": 118208.0,
+      "priorYearNominalGdp": 99808.0,
+      "realGdpIndex": 110.0,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2011-Q1",
+      "value": 8.3,
+      "nominalGdp": 103457.0,
+      "priorYearNominalGdp": 86684.0,
+      "realGdpIndex": 110.2,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2011-Q2",
+      "value": 8.82,
+      "nominalGdp": 118465.0,
+      "priorYearNominalGdp": 99060.0,
+      "realGdpIndex": 109.9,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2011-Q3",
+      "value": 9.11,
+      "nominalGdp": 125279.0,
+      "priorYearNominalGdp": 104951.0,
+      "realGdpIndex": 109.4,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2011-Q4",
+      "value": 6.56,
+      "nominalGdp": 136922.0,
+      "priorYearNominalGdp": 118208.0,
+      "realGdpIndex": 108.7,
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1898897.html",
+      "vintage": "2015-quarterly-revision"
+    },
+    {
+      "period": "2012-Q1",
+      "value": 3.97,
+      "nominalGdp": 119377.0,
+      "priorYearNominalGdp": 106219.0,
+      "realGdpIndex": 108.1,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2012-Q2",
+      "value": 2.62,
+      "nominalGdp": 133491.0,
+      "priorYearNominalGdp": 120777.0,
+      "realGdpIndex": 107.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2012-Q3",
+      "value": 1.58,
+      "nominalGdp": 140384.0,
+      "priorYearNominalGdp": 128562.0,
+      "realGdpIndex": 107.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2012-Q4",
+      "value": 1.82,
+      "nominalGdp": 154258.0,
+      "priorYearNominalGdp": 140150.0,
+      "realGdpIndex": 108.1,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2013-Q1",
+      "value": 2.39,
+      "nominalGdp": 131880.0,
+      "priorYearNominalGdp": 119377.0,
+      "realGdpIndex": 107.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2013-Q2",
+      "value": 1.72,
+      "nominalGdp": 146114.0,
+      "priorYearNominalGdp": 133491.0,
+      "realGdpIndex": 107.6,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2013-Q3",
+      "value": 2.31,
+      "nominalGdp": 154972.0,
+      "priorYearNominalGdp": 140384.0,
+      "realGdpIndex": 107.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2013-Q4",
+      "value": 2.74,
+      "nominalGdp": 170695.0,
+      "priorYearNominalGdp": 154258.0,
+      "realGdpIndex": 107.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2014-Q1",
+      "value": 1.15,
+      "nominalGdp": 143539.0,
+      "priorYearNominalGdp": 131880.0,
+      "realGdpIndex": 107.6,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2014-Q2",
+      "value": 1.33,
+      "nominalGdp": 159462.0,
+      "priorYearNominalGdp": 146114.0,
+      "realGdpIndex": 107.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2014-Q3",
+      "value": 1.39,
+      "nominalGdp": 168602.0,
+      "priorYearNominalGdp": 154972.0,
+      "realGdpIndex": 107.3,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2014-Q4",
+      "value": 0.47,
+      "nominalGdp": 184179.0,
+      "priorYearNominalGdp": 170695.0,
+      "realGdpIndex": 107.4,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2015-Q1",
+      "value": 0.29,
+      "nominalGdp": 154171.0,
+      "priorYearNominalGdp": 143539.0,
+      "realGdpIndex": 107.1,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2015-Q2",
+      "value": 0.65,
+      "nominalGdp": 171887.0,
+      "priorYearNominalGdp": 159462.0,
+      "realGdpIndex": 107.1,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2015-Q3",
+      "value": -0.16,
+      "nominalGdp": 180119.0,
+      "priorYearNominalGdp": 168602.0,
+      "realGdpIndex": 107.0,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2015-Q4",
+      "value": -0.28,
+      "nominalGdp": 196334.0,
+      "priorYearNominalGdp": 184179.0,
+      "realGdpIndex": 106.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2016-Q1",
+      "value": 0.66,
+      "nominalGdp": 165735.0,
+      "priorYearNominalGdp": 154171.0,
+      "realGdpIndex": 106.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2016-Q2",
+      "value": 0.87,
+      "nominalGdp": 185002.0,
+      "priorYearNominalGdp": 171887.0,
+      "realGdpIndex": 106.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2016-Q3",
+      "value": 1.38,
+      "nominalGdp": 194838.0,
+      "priorYearNominalGdp": 180119.0,
+      "realGdpIndex": 106.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2016-Q4",
+      "value": 2.83,
+      "nominalGdp": 215618.0,
+      "priorYearNominalGdp": 196334.0,
+      "realGdpIndex": 106.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2017-Q1",
+      "value": 4.48,
+      "nominalGdp": 185274.0,
+      "priorYearNominalGdp": 165735.0,
+      "realGdpIndex": 107.0,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2017-Q2",
+      "value": 3.9,
+      "nominalGdp": 205666.0,
+      "priorYearNominalGdp": 185002.0,
+      "realGdpIndex": 107.0,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2017-Q3",
+      "value": 4.07,
+      "nominalGdp": 216755.0,
+      "priorYearNominalGdp": 194838.0,
+      "realGdpIndex": 106.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2017-Q4",
+      "value": 4.09,
+      "nominalGdp": 239688.0,
+      "priorYearNominalGdp": 215618.0,
+      "realGdpIndex": 106.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2018-Q1",
+      "value": 3.88,
+      "nominalGdp": 205735.0,
+      "priorYearNominalGdp": 185274.0,
+      "realGdpIndex": 106.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2018-Q2",
+      "value": 3.72,
+      "nominalGdp": 228042.0,
+      "priorYearNominalGdp": 205666.0,
+      "realGdpIndex": 106.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2018-Q3",
+      "value": 3.25,
+      "nominalGdp": 238797.0,
+      "priorYearNominalGdp": 216755.0,
+      "realGdpIndex": 106.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2018-Q4",
+      "value": 3.2,
+      "nominalGdp": 263436.0,
+      "priorYearNominalGdp": 239688.0,
+      "realGdpIndex": 106.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2019-Q1",
+      "value": 1.17,
+      "nominalGdp": 221454.0,
+      "priorYearNominalGdp": 205735.0,
+      "realGdpIndex": 106.4,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2019-Q2",
+      "value": 1.75,
+      "nominalGdp": 246194.0,
+      "priorYearNominalGdp": 228042.0,
+      "realGdpIndex": 106.1,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2019-Q3",
+      "value": 1.14,
+      "nominalGdp": 256023.0,
+      "priorYearNominalGdp": 238797.0,
+      "realGdpIndex": 106.0,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2019-Q4",
+      "value": 1.16,
+      "nominalGdp": 282201.0,
+      "priorYearNominalGdp": 263436.0,
+      "realGdpIndex": 105.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2020-Q1",
+      "value": 1.59,
+      "nominalGdp": 209671.0,
+      "priorYearNominalGdp": 221454.0,
+      "realGdpIndex": 93.2,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2020-Q2",
+      "value": -0.24,
+      "nominalGdp": 253450.0,
+      "priorYearNominalGdp": 246194.0,
+      "realGdpIndex": 103.2,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2020-Q3",
+      "value": 0.5,
+      "nominalGdp": 269910.0,
+      "priorYearNominalGdp": 256023.0,
+      "realGdpIndex": 104.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2020-Q4",
+      "value": 0.43,
+      "nominalGdp": 301836.0,
+      "priorYearNominalGdp": 282201.0,
+      "realGdpIndex": 106.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2021-Q1",
+      "value": 2.31,
+      "nominalGdp": 255055.0,
+      "priorYearNominalGdp": 209671.0,
+      "realGdpIndex": 118.9,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2021-Q2",
+      "value": 5.11,
+      "nominalGdp": 287979.0,
+      "priorYearNominalGdp": 253450.0,
+      "realGdpIndex": 108.1,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2021-Q3",
+      "value": 4.64,
+      "nominalGdp": 297962.0,
+      "priorYearNominalGdp": 269910.0,
+      "realGdpIndex": 105.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2021-Q4",
+      "value": 5.52,
+      "nominalGdp": 332827.0,
+      "priorYearNominalGdp": 301836.0,
+      "realGdpIndex": 104.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2022-Q1",
+      "value": 3.7,
+      "nominalGdp": 277176.0,
+      "priorYearNominalGdp": 255055.0,
+      "realGdpIndex": 104.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2022-Q2",
+      "value": 3.04,
+      "nominalGdp": 299112.0,
+      "priorYearNominalGdp": 287979.0,
+      "realGdpIndex": 100.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2022-Q3",
+      "value": 1.78,
+      "nominalGdp": 315400.0,
+      "priorYearNominalGdp": 297962.0,
+      "realGdpIndex": 104.0,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2022-Q4",
+      "value": -0.14,
+      "nominalGdp": 342342.0,
+      "priorYearNominalGdp": 332827.0,
+      "realGdpIndex": 103.0,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2023-Q1",
+      "value": 0.75,
+      "nominalGdp": 292369.0,
+      "priorYearNominalGdp": 277176.0,
+      "realGdpIndex": 104.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2023-Q2",
+      "value": -0.73,
+      "nominalGdp": 316238.0,
+      "priorYearNominalGdp": 299112.0,
+      "realGdpIndex": 106.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2023-Q3",
+      "value": -0.82,
+      "nominalGdp": 328441.0,
+      "priorYearNominalGdp": 315400.0,
+      "realGdpIndex": 105.0,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2023-Q4",
+      "value": -0.9,
+      "nominalGdp": 357225.0,
+      "priorYearNominalGdp": 342342.0,
+      "realGdpIndex": 105.3,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2024-Q1",
+      "value": -1.08,
+      "nominalGdp": 304525.0,
+      "priorYearNominalGdp": 292369.0,
+      "realGdpIndex": 105.3,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2024-Q2",
+      "value": -0.76,
+      "nominalGdp": 328585.0,
+      "priorYearNominalGdp": 316238.0,
+      "realGdpIndex": 104.7,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2024-Q3",
+      "value": -0.61,
+      "nominalGdp": 341443.0,
+      "priorYearNominalGdp": 328441.0,
+      "realGdpIndex": 104.6,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2024-Q4",
+      "value": -0.8,
+      "nominalGdp": 373512.0,
+      "priorYearNominalGdp": 357225.0,
+      "realGdpIndex": 105.4,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2025-Q1",
+      "value": -0.78,
+      "nominalGdp": 318466.0,
+      "priorYearNominalGdp": 304525.0,
+      "realGdpIndex": 105.4,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2025-Q2",
+      "value": -1.24,
+      "nominalGdp": 341395.0,
+      "priorYearNominalGdp": 328585.0,
+      "realGdpIndex": 105.2,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2025-Q3",
+      "value": -0.93,
+      "nominalGdp": 354500.0,
+      "priorYearNominalGdp": 341443.0,
+      "realGdpIndex": 104.8,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2025-Q4",
+      "value": -0.62,
+      "nominalGdp": 387911.0,
+      "priorYearNominalGdp": 373512.0,
+      "realGdpIndex": 104.5,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2026-Q1",
+      "value": -0.06,
+      "nominalGdp": 334193.0,
+      "priorYearNominalGdp": 318466.0,
+      "realGdpIndex": 105.0,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    },
+    {
+      "period": "2026-Q2",
+      "value": 1.53,
+      "nominalGdp": 361511.0,
+      "priorYearNominalGdp": 341395.0,
+      "realGdpIndex": 104.3,
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "vintage": "2026-09-15-SDDS"
+    }
+  ]
+}

@@ -4,6 +4,9 @@ const path = require("node:path");
 
 const PASSWORD_HASH = process.env.PASSWORD_HASH || "";
 const SESSION_SECRET = process.env.SESSION_SECRET || "";
+if (!PASSWORD_HASH || !SESSION_SECRET) {
+  throw new Error("Configure PASSWORD_HASH and SESSION_SECRET in CloudBase environment variables");
+}
 const SESSION_SECONDS = 12 * 60 * 60;
 const SESSION_COOKIE = "asset_allocation_session";
 const PUBLIC_ROOT = path.join(__dirname, "public");

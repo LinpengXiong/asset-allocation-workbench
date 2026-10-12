@@ -1,0 +1,1166 @@
+{
+  "asOf": "2026-10-11",
+  "version": "V1.11",
+  "latestReleaseCheck": "https://www.stats.gov.cn/sj/zxfb/ ; http://english.customs.gov.cn/statics/report/monthly.html",
+  "note": "本文件是经官方原表核验的增长动力候选，不修改正式本期或历史评分。活动、消费、投资和利润采用截至评价日已公布的8月统计期；PMI采用9月及连续三月原值；产能利用率采用二季度及上年同季原值。不存在9月未发布经济活动值的推估。",
+  "observations": {
+    "G01": {
+      "value": 5.2,
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "当月实际同比",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "rationale": "8月全国规模以上工业增加值当月实际同比5.2%，不是1—8月累计5.3%；工业生产仍增长但不等于全经济或所有行业盈利改善。"
+    },
+    "G02": {
+      "value": 15.7,
+      "period": "2026-08",
+      "releaseDate": "2026-09-28",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "年初累计可比同比",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+      "profitQuality": {
+        "period": "2026-08",
+        "sameScope": true,
+        "comparabilityNote": "原发布按规模以上工业企业可比范围计算累计同比；每年企业范围及上年基数会调整，不以两期已刊登利润总额机械相除复算。利润率与回款指标均采用同一全国规模以上工业企业报告。",
+        "limitations": "规模以上工业企业不是全部企业或上市公司样本。总体利润增长不能消除行业分化、低基数及回款变慢风险；质量证据用于解释而不任意另加扣分。",
+        "profitMargin": {
+          "value": 5.66,
+          "unit": "%",
+          "period": "2026-08",
+          "scope": "规模以上工业企业",
+          "basis": "年初累计营业收入利润率",
+          "originalPublisher": "国家统计局",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "releaseDate": "2026-09-28"
+        },
+        "receivables": {
+          "value": 72.2,
+          "unit": "天",
+          "period": "2026-08",
+          "scope": "规模以上工业企业",
+          "basis": "月末应收账款平均回收期",
+          "originalPublisher": "国家统计局",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+          "releaseDate": "2026-09-28"
+        },
+        "counterEvidence": {
+          "summary": "总体利润增长伴随回款周期延长和部分行业利润下降；不把累计利润高增速视为全行业盈利质量同步改善。",
+          "evidence": [
+            {
+              "metric": "应收账款平均回收期同比变动",
+              "period": "2026-08",
+              "value": 0.9,
+              "unit": "天",
+              "originalPublisher": "国家统计局",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28"
+            },
+            {
+              "metric": "汽车制造业利润总额累计同比",
+              "period": "2026-08",
+              "value": -16,
+              "unit": "%",
+              "originalPublisher": "国家统计局",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28"
+            }
+          ]
+        }
+      },
+      "rationale": "1—8月规模以上工业企业利润总额可比同比15.7%，不是8月单月4.2%。同口径营业收入利润率5.66%，应收账款平均回收期72.2天、同比增加0.9天；保留反向证据，不由质量证据另行主观调档。"
+    },
+    "G03": {
+      "value": -12.1,
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "rationale": "1—8月新建商品房销售面积49880万平方米、累计同比下降12.1%，采用面积不是销售金额，也不是8月单月增速。"
+    },
+    "G14": {
+      "value": -19.9,
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "rationale": "1—8月房地产开发投资47979亿元、累计名义同比下降19.9%，不是房地产到位资金，保留独立指标定义。"
+    },
+    "G15": {
+      "value": -0.316667,
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "70城二手住宅环比中位数近3月均值",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965304.html",
+      "components": [
+        {
+          "period": "2026-06",
+          "value": -0.35,
+          "unit": "%",
+          "basis": "70城二手住宅环比中位数",
+          "originalPublisher": "国家统计局",
+          "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202607/t20260715_1964115.html",
+          "releaseDate": "2026-07-15",
+          "cities": [
+            {
+              "city": "北京",
+              "momIndex": 100.1
+            },
+            {
+              "city": "唐山",
+              "momIndex": 99.4
+            },
+            {
+              "city": "天津",
+              "momIndex": 99.7
+            },
+            {
+              "city": "秦皇岛",
+              "momIndex": 99.7
+            },
+            {
+              "city": "石家庄",
+              "momIndex": 99.5
+            },
+            {
+              "city": "包头",
+              "momIndex": 99.7
+            },
+            {
+              "city": "太原",
+              "momIndex": 99.6
+            },
+            {
+              "city": "丹东",
+              "momIndex": 99.8
+            },
+            {
+              "city": "呼和浩特",
+              "momIndex": 99.6
+            },
+            {
+              "city": "锦州",
+              "momIndex": 99.9
+            },
+            {
+              "city": "沈阳",
+              "momIndex": 100.1
+            },
+            {
+              "city": "吉林",
+              "momIndex": 99.7
+            },
+            {
+              "city": "大连",
+              "momIndex": 99.9
+            },
+            {
+              "city": "牡丹江",
+              "momIndex": 99.8
+            },
+            {
+              "city": "长春",
+              "momIndex": 99.7
+            },
+            {
+              "city": "无锡",
+              "momIndex": 100.2
+            },
+            {
+              "city": "哈尔滨",
+              "momIndex": 99.6
+            },
+            {
+              "city": "徐州",
+              "momIndex": 100.1
+            },
+            {
+              "city": "上海",
+              "momIndex": 100.4
+            },
+            {
+              "city": "扬州",
+              "momIndex": 99.5
+            },
+            {
+              "city": "南京",
+              "momIndex": 99.7
+            },
+            {
+              "city": "温州",
+              "momIndex": 99.6
+            },
+            {
+              "city": "杭州",
+              "momIndex": 99.8
+            },
+            {
+              "city": "金华",
+              "momIndex": 99.7
+            },
+            {
+              "city": "宁波",
+              "momIndex": 100.2
+            },
+            {
+              "city": "蚌埠",
+              "momIndex": 99.8
+            },
+            {
+              "city": "合肥",
+              "momIndex": 100
+            },
+            {
+              "city": "安庆",
+              "momIndex": 99.7
+            },
+            {
+              "city": "福州",
+              "momIndex": 99.6
+            },
+            {
+              "city": "泉州",
+              "momIndex": 99.6
+            },
+            {
+              "city": "厦门",
+              "momIndex": 99.8
+            },
+            {
+              "city": "九江",
+              "momIndex": 99.2
+            },
+            {
+              "city": "南昌",
+              "momIndex": 99.5
+            },
+            {
+              "city": "赣州",
+              "momIndex": 99.7
+            },
+            {
+              "city": "济南",
+              "momIndex": 99.5
+            },
+            {
+              "city": "烟台",
+              "momIndex": 99.7
+            },
+            {
+              "city": "青岛",
+              "momIndex": 99.6
+            },
+            {
+              "city": "济宁",
+              "momIndex": 99.6
+            },
+            {
+              "city": "郑州",
+              "momIndex": 99.9
+            },
+            {
+              "city": "洛阳",
+              "momIndex": 99.5
+            },
+            {
+              "city": "武汉",
+              "momIndex": 99.9
+            },
+            {
+              "city": "平顶山",
+              "momIndex": 99.3
+            },
+            {
+              "city": "长沙",
+              "momIndex": 99.8
+            },
+            {
+              "city": "宜昌",
+              "momIndex": 99.7
+            },
+            {
+              "city": "广州",
+              "momIndex": 100.4
+            },
+            {
+              "city": "襄阳",
+              "momIndex": 99.6
+            },
+            {
+              "city": "深圳",
+              "momIndex": 100.3
+            },
+            {
+              "city": "岳阳",
+              "momIndex": 99.7
+            },
+            {
+              "city": "南宁",
+              "momIndex": 99.7
+            },
+            {
+              "city": "常德",
+              "momIndex": 99.3
+            },
+            {
+              "city": "海口",
+              "momIndex": 99.5
+            },
+            {
+              "city": "韶关",
+              "momIndex": 99.3
+            },
+            {
+              "city": "重庆",
+              "momIndex": 100.1
+            },
+            {
+              "city": "湛江",
+              "momIndex": 99.2
+            },
+            {
+              "city": "成都",
+              "momIndex": 99.6
+            },
+            {
+              "city": "惠州",
+              "momIndex": 99.5
+            },
+            {
+              "city": "贵阳",
+              "momIndex": 99.6
+            },
+            {
+              "city": "桂林",
+              "momIndex": 99.6
+            },
+            {
+              "city": "昆明",
+              "momIndex": 99.5
+            },
+            {
+              "city": "北海",
+              "momIndex": 99.4
+            },
+            {
+              "city": "西安",
+              "momIndex": 99.6
+            },
+            {
+              "city": "三亚",
+              "momIndex": 99.7
+            },
+            {
+              "city": "兰州",
+              "momIndex": 99.5
+            },
+            {
+              "city": "泸州",
+              "momIndex": 99.2
+            },
+            {
+              "city": "西宁",
+              "momIndex": 99.7
+            },
+            {
+              "city": "南充",
+              "momIndex": 99.6
+            },
+            {
+              "city": "银川",
+              "momIndex": 99.6
+            },
+            {
+              "city": "遵义",
+              "momIndex": 99.4
+            },
+            {
+              "city": "乌鲁木齐",
+              "momIndex": 99.6
+            },
+            {
+              "city": "大理",
+              "momIndex": 99.3
+            }
+          ],
+          "verificationNote": "本次从官方原始HTML表2完整解析70城环比指数，城市集合及每城数值逐值核对，未用一二三线汇总或新闻解读代替。"
+        },
+        {
+          "period": "2026-07",
+          "value": -0.3,
+          "unit": "%",
+          "basis": "70城二手住宅环比中位数",
+          "originalPublisher": "国家统计局",
+          "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202608/t20260817_1965050.html",
+          "releaseDate": "2026-08-17",
+          "cities": [
+            {
+              "city": "北京",
+              "momIndex": 100
+            },
+            {
+              "city": "唐山",
+              "momIndex": 99.5
+            },
+            {
+              "city": "天津",
+              "momIndex": 99.8
+            },
+            {
+              "city": "秦皇岛",
+              "momIndex": 99.4
+            },
+            {
+              "city": "石家庄",
+              "momIndex": 99.7
+            },
+            {
+              "city": "包头",
+              "momIndex": 99.5
+            },
+            {
+              "city": "太原",
+              "momIndex": 99.6
+            },
+            {
+              "city": "丹东",
+              "momIndex": 99.7
+            },
+            {
+              "city": "呼和浩特",
+              "momIndex": 99.7
+            },
+            {
+              "city": "锦州",
+              "momIndex": 99.7
+            },
+            {
+              "city": "沈阳",
+              "momIndex": 100.1
+            },
+            {
+              "city": "吉林",
+              "momIndex": 99.9
+            },
+            {
+              "city": "大连",
+              "momIndex": 99.8
+            },
+            {
+              "city": "牡丹江",
+              "momIndex": 99.9
+            },
+            {
+              "city": "长春",
+              "momIndex": 99.7
+            },
+            {
+              "city": "无锡",
+              "momIndex": 99.8
+            },
+            {
+              "city": "哈尔滨",
+              "momIndex": 99.5
+            },
+            {
+              "city": "徐州",
+              "momIndex": 100.2
+            },
+            {
+              "city": "上海",
+              "momIndex": 100.3
+            },
+            {
+              "city": "扬州",
+              "momIndex": 99.6
+            },
+            {
+              "city": "南京",
+              "momIndex": 99.7
+            },
+            {
+              "city": "温州",
+              "momIndex": 99.7
+            },
+            {
+              "city": "杭州",
+              "momIndex": 99.9
+            },
+            {
+              "city": "金华",
+              "momIndex": 99.8
+            },
+            {
+              "city": "宁波",
+              "momIndex": 100
+            },
+            {
+              "city": "蚌埠",
+              "momIndex": 99.7
+            },
+            {
+              "city": "合肥",
+              "momIndex": 99.8
+            },
+            {
+              "city": "安庆",
+              "momIndex": 99.6
+            },
+            {
+              "city": "福州",
+              "momIndex": 99.8
+            },
+            {
+              "city": "泉州",
+              "momIndex": 99.5
+            },
+            {
+              "city": "厦门",
+              "momIndex": 99.7
+            },
+            {
+              "city": "九江",
+              "momIndex": 99.8
+            },
+            {
+              "city": "南昌",
+              "momIndex": 99.9
+            },
+            {
+              "city": "赣州",
+              "momIndex": 99.6
+            },
+            {
+              "city": "济南",
+              "momIndex": 99.4
+            },
+            {
+              "city": "烟台",
+              "momIndex": 99.8
+            },
+            {
+              "city": "青岛",
+              "momIndex": 99.4
+            },
+            {
+              "city": "济宁",
+              "momIndex": 99.8
+            },
+            {
+              "city": "郑州",
+              "momIndex": 99.7
+            },
+            {
+              "city": "洛阳",
+              "momIndex": 99.4
+            },
+            {
+              "city": "武汉",
+              "momIndex": 100
+            },
+            {
+              "city": "平顶山",
+              "momIndex": 99.5
+            },
+            {
+              "city": "长沙",
+              "momIndex": 99.9
+            },
+            {
+              "city": "宜昌",
+              "momIndex": 99.8
+            },
+            {
+              "city": "广州",
+              "momIndex": 100.4
+            },
+            {
+              "city": "襄阳",
+              "momIndex": 99.4
+            },
+            {
+              "city": "深圳",
+              "momIndex": 100.2
+            },
+            {
+              "city": "岳阳",
+              "momIndex": 99.8
+            },
+            {
+              "city": "南宁",
+              "momIndex": 99.9
+            },
+            {
+              "city": "常德",
+              "momIndex": 99.5
+            },
+            {
+              "city": "海口",
+              "momIndex": 99.1
+            },
+            {
+              "city": "韶关",
+              "momIndex": 99.5
+            },
+            {
+              "city": "重庆",
+              "momIndex": 99.8
+            },
+            {
+              "city": "湛江",
+              "momIndex": 99.4
+            },
+            {
+              "city": "成都",
+              "momIndex": 99.7
+            },
+            {
+              "city": "惠州",
+              "momIndex": 99.7
+            },
+            {
+              "city": "贵阳",
+              "momIndex": 99.6
+            },
+            {
+              "city": "桂林",
+              "momIndex": 99.8
+            },
+            {
+              "city": "昆明",
+              "momIndex": 99.4
+            },
+            {
+              "city": "北海",
+              "momIndex": 99.5
+            },
+            {
+              "city": "西安",
+              "momIndex": 99.6
+            },
+            {
+              "city": "三亚",
+              "momIndex": 99.6
+            },
+            {
+              "city": "兰州",
+              "momIndex": 99.8
+            },
+            {
+              "city": "泸州",
+              "momIndex": 99.3
+            },
+            {
+              "city": "西宁",
+              "momIndex": 99.7
+            },
+            {
+              "city": "南充",
+              "momIndex": 99.8
+            },
+            {
+              "city": "银川",
+              "momIndex": 99.7
+            },
+            {
+              "city": "遵义",
+              "momIndex": 99.7
+            },
+            {
+              "city": "乌鲁木齐",
+              "momIndex": 99.9
+            },
+            {
+              "city": "大理",
+              "momIndex": 99.5
+            }
+          ],
+          "verificationNote": "本次从官方原始HTML表2完整解析70城环比指数，城市集合及每城数值逐值核对，未用一二三线汇总或新闻解读代替。"
+        },
+        {
+          "period": "2026-08",
+          "value": -0.3,
+          "unit": "%",
+          "basis": "70城二手住宅环比中位数",
+          "originalPublisher": "国家统计局",
+          "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965304.html",
+          "releaseDate": "2026-09-15",
+          "cities": [
+            {
+              "city": "北京",
+              "momIndex": 99.9
+            },
+            {
+              "city": "唐山",
+              "momIndex": 99.4
+            },
+            {
+              "city": "天津",
+              "momIndex": 99.5
+            },
+            {
+              "city": "秦皇岛",
+              "momIndex": 99.5
+            },
+            {
+              "city": "石家庄",
+              "momIndex": 99.7
+            },
+            {
+              "city": "包头",
+              "momIndex": 99.4
+            },
+            {
+              "city": "太原",
+              "momIndex": 99.4
+            },
+            {
+              "city": "丹东",
+              "momIndex": 99.6
+            },
+            {
+              "city": "呼和浩特",
+              "momIndex": 99.4
+            },
+            {
+              "city": "锦州",
+              "momIndex": 99.7
+            },
+            {
+              "city": "沈阳",
+              "momIndex": 100
+            },
+            {
+              "city": "吉林",
+              "momIndex": 99.7
+            },
+            {
+              "city": "大连",
+              "momIndex": 100
+            },
+            {
+              "city": "牡丹江",
+              "momIndex": 99.8
+            },
+            {
+              "city": "长春",
+              "momIndex": 99.6
+            },
+            {
+              "city": "无锡",
+              "momIndex": 99.9
+            },
+            {
+              "city": "哈尔滨",
+              "momIndex": 99.9
+            },
+            {
+              "city": "徐州",
+              "momIndex": 99.8
+            },
+            {
+              "city": "上海",
+              "momIndex": 100.3
+            },
+            {
+              "city": "扬州",
+              "momIndex": 100.2
+            },
+            {
+              "city": "南京",
+              "momIndex": 99.8
+            },
+            {
+              "city": "温州",
+              "momIndex": 99.8
+            },
+            {
+              "city": "杭州",
+              "momIndex": 99.8
+            },
+            {
+              "city": "金华",
+              "momIndex": 99.7
+            },
+            {
+              "city": "宁波",
+              "momIndex": 100
+            },
+            {
+              "city": "蚌埠",
+              "momIndex": 99.6
+            },
+            {
+              "city": "合肥",
+              "momIndex": 100
+            },
+            {
+              "city": "安庆",
+              "momIndex": 99.7
+            },
+            {
+              "city": "福州",
+              "momIndex": 99.8
+            },
+            {
+              "city": "泉州",
+              "momIndex": 99.5
+            },
+            {
+              "city": "厦门",
+              "momIndex": 99.4
+            },
+            {
+              "city": "九江",
+              "momIndex": 99.8
+            },
+            {
+              "city": "南昌",
+              "momIndex": 99.8
+            },
+            {
+              "city": "赣州",
+              "momIndex": 99.4
+            },
+            {
+              "city": "济南",
+              "momIndex": 99.4
+            },
+            {
+              "city": "烟台",
+              "momIndex": 99.8
+            },
+            {
+              "city": "青岛",
+              "momIndex": 99.8
+            },
+            {
+              "city": "济宁",
+              "momIndex": 99.6
+            },
+            {
+              "city": "郑州",
+              "momIndex": 99.7
+            },
+            {
+              "city": "洛阳",
+              "momIndex": 99.3
+            },
+            {
+              "city": "武汉",
+              "momIndex": 99.8
+            },
+            {
+              "city": "平顶山",
+              "momIndex": 99.7
+            },
+            {
+              "city": "长沙",
+              "momIndex": 99.8
+            },
+            {
+              "city": "宜昌",
+              "momIndex": 99.8
+            },
+            {
+              "city": "广州",
+              "momIndex": 100
+            },
+            {
+              "city": "襄阳",
+              "momIndex": 99.6
+            },
+            {
+              "city": "深圳",
+              "momIndex": 100.1
+            },
+            {
+              "city": "岳阳",
+              "momIndex": 99.5
+            },
+            {
+              "city": "南宁",
+              "momIndex": 99.8
+            },
+            {
+              "city": "常德",
+              "momIndex": 99.5
+            },
+            {
+              "city": "海口",
+              "momIndex": 99
+            },
+            {
+              "city": "韶关",
+              "momIndex": 99.6
+            },
+            {
+              "city": "重庆",
+              "momIndex": 99.6
+            },
+            {
+              "city": "湛江",
+              "momIndex": 99.3
+            },
+            {
+              "city": "成都",
+              "momIndex": 99.6
+            },
+            {
+              "city": "惠州",
+              "momIndex": 99.9
+            },
+            {
+              "city": "贵阳",
+              "momIndex": 99.5
+            },
+            {
+              "city": "桂林",
+              "momIndex": 99.7
+            },
+            {
+              "city": "昆明",
+              "momIndex": 99.6
+            },
+            {
+              "city": "北海",
+              "momIndex": 99.6
+            },
+            {
+              "city": "西安",
+              "momIndex": 99.7
+            },
+            {
+              "city": "三亚",
+              "momIndex": 99.7
+            },
+            {
+              "city": "兰州",
+              "momIndex": 99.7
+            },
+            {
+              "city": "泸州",
+              "momIndex": 99.4
+            },
+            {
+              "city": "西宁",
+              "momIndex": 99.6
+            },
+            {
+              "city": "南充",
+              "momIndex": 99.6
+            },
+            {
+              "city": "银川",
+              "momIndex": 99.8
+            },
+            {
+              "city": "遵义",
+              "momIndex": 99.7
+            },
+            {
+              "city": "乌鲁木齐",
+              "momIndex": 99.9
+            },
+            {
+              "city": "大理",
+              "momIndex": 99.6
+            }
+          ],
+          "verificationNote": "本次从官方原始HTML表2完整解析70城环比指数，城市集合及每城数值逐值核对，未用一二三线汇总或新闻解读代替。"
+        }
+      ],
+      "rationale": "6—8月逐月70城二手住宅环比指数减100后取中位数，分别为-0.35%、-0.30%、-0.30%，连续三月均值-0.316667%。这是工作台依据分城原表计算的中位数指标，不是官方全国房价指数，也不等同多数城市涨跌占比。"
+    },
+    "G07": {
+      "value": -2.3,
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965309.html",
+      "rationale": "1—8月制造业固定资产投资累计名义同比下降2.3%，不是制造业PMI、工业增加值或单月环比；与民间投资存在分类交叉，不加总为投资总量。"
+    },
+    "G16": {
+      "value": -6.4,
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "series": "privateInvestmentExRealEstate",
+      "rationale": "国家统计局原发布直接给出扣除房地产开发投资后的民间投资累计同比下降6.4%；不是全口径民间投资下降10.1%，不自行用不可比金额扣减推算。"
+    },
+    "G13": {
+      "value": -4,
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965309.html",
+      "investmentScope": "含电力、热力、燃气及水生产和供应业",
+      "rationale": "1—8月基础设施投资累计同比下降4.0%；2026年原发布注明含电力、热力、燃气及水生产和供应业。不能与此前不含公用事业序列无提示拼接。"
+    },
+    "G17": {
+      "value": 0.3,
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "当月名义同比",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
+      "series": "goodsRetailSales",
+      "rationale": "8月商品零售额35280亿元、当月名义同比增长0.3%，不是全社零0.6%或商品累计1.0%；与服务零售的计分口径分开。"
+    },
+    "G12": {
+      "value": 4.9,
+      "period": "2026-08",
+      "releaseDate": "2026-09-15",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "年初累计名义同比",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "rationale": "1—8月服务零售额累计名义同比增长4.9%，服务零售按官方累计发布，不能标作8月当月同比或拿商品零售金额拼补。"
+    },
+    "G10": {
+      "value": 25.0,
+      "period": "2026-08",
+      "releaseDate": "2026-09-18",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "%",
+      "basis": "当月美元金额同比",
+      "originalPublisher": "海关总署",
+      "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "http://english.customs.gov.cn/Statics/d14f71f5-1ac9-431f-b8d7-b7a7a0b58af7.html",
+      "revisionVersion": "2026-09-18-海关美元月表",
+      "reportedAmount": {"period": "2026-08", "value": 401441, "unit": "百万美元"},
+      "yearAgoReportedAmount": {"period": "2025-08", "value": 321281, "unit": "百万美元"},
+      "accessNote": "通过海关官方2026年月报目录自身给出的HTTP原始公开链接读取完整原表；同路径HTTPS证书链异常且网页工具不能读取，未绕过TLS验证、未虚标HTTPS核验。采用9月18日月报修订版，不以两期舍入金额复算覆写表中公布同比。",
+      "rationale": "海关9月18日发布的美元月表列8月出口401441百万美元、2025年8月321281百万美元，表中8月出口当月同比25.0%。保留官方公布同比，不用累计19.3%或人民币18.6%替代。"
+    },
+    "G11": {
+      "value": 49.866667,
+      "period": "2026-09",
+      "releaseDate": "2026-09-30",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "指数点",
+      "basis": "近3月季调均值",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-09",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+      "components": [
+        {
+          "period": "2026-07",
+          "value": 48.5,
+          "series": "manufacturingNewOrders",
+          "unit": "指数点",
+          "basis": "季调当月指数",
+          "originalPublisher": "国家统计局",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+          "releaseDate": "2026-09-30"
+        },
+        {
+          "period": "2026-08",
+          "value": 50.6,
+          "series": "manufacturingNewOrders",
+          "unit": "指数点",
+          "basis": "季调当月指数",
+          "originalPublisher": "国家统计局",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+          "releaseDate": "2026-09-30"
+        },
+        {
+          "period": "2026-09",
+          "value": 50.5,
+          "series": "manufacturingNewOrders",
+          "unit": "指数点",
+          "basis": "季调当月指数",
+          "originalPublisher": "国家统计局",
+          "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+          "releaseDate": "2026-09-30"
+        }
+      ],
+      "rationale": "9月统计局原表同时列示7、8、9月季调制造业新订单指数48.5、50.6、50.5，三月均值49.866667。9月单月超过50不代替三月均值，非制造业新订单不混入。"
+    },
+    "G18": {
+      "value": -1,
+      "period": "2026-Q2",
+      "releaseDate": "2026-07-15",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "unit": "百分点",
+      "basis": "工业产能利用率同季同比差",
+      "originalPublisher": "国家统计局",
+      "latestAvailablePeriod": "2026-Q2",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964130.html",
+      "components": [
+        {
+          "period": "2025-Q2",
+          "value": 74,
+          "unit": "%",
+          "basis": "季度工业产能利用率",
+          "series": "industrialCapacityUtilization",
+          "originalPublisher": "国家统计局",
+          "sourceUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202507/t20250715_1960404.html",
+          "releaseDate": "2025-07-15"
+        },
+        {
+          "period": "2026-Q2",
+          "value": 73,
+          "unit": "%",
+          "basis": "季度工业产能利用率",
+          "series": "industrialCapacityUtilization",
+          "originalPublisher": "国家统计局",
+          "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964130.html",
+          "releaseDate": "2026-07-15"
+        }
+      ],
+      "rationale": "全国规模以上工业2026年二季度产能利用率73.0%，2025年同季度74.0%，同比下降1.0个百分点。采用未经季调季度值，不用上半年73.3%或制造业子项73.5%替代；季度三尚未公布。"
+    }
+  },
+  "gaps": []
+}

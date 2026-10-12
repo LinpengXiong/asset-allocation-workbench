@@ -1,0 +1,1935 @@
+{
+  "diagnosticType": "score sensitivity/current-vintage distribution; not PIT or investment backtest",
+  "rounding": "display 3 decimals only",
+  "local": [
+    {
+      "id": "E02",
+      "n": 140,
+      "first": "2015-01",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -0.8,
+        0.5,
+        1.5,
+        2.1,
+        5.4
+      ],
+      "oldCounts": [
+        16,
+        23,
+        19,
+        26,
+        56
+      ],
+      "newUniqueAt2Decimals": 29,
+      "newStd": 0.986,
+      "oldZeroResponsePlus0_1": 117,
+      "newZeroResponsePlus0_1": 20,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.333,
+          "maxAbsScoreChange": 1
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.205,
+          "maxAbsScoreChange": 0.833
+        }
+      ],
+      "window": "2015-01 onward"
+    },
+    {
+      "id": "E02",
+      "n": 80,
+      "first": "2020-01",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -0.8,
+        0.1,
+        0.7,
+        1.525,
+        5.4
+      ],
+      "oldCounts": [
+        16,
+        20,
+        16,
+        12,
+        16
+      ],
+      "newUniqueAt2Decimals": 27,
+      "newStd": 0.947,
+      "oldZeroResponsePlus0_1": 69,
+      "newZeroResponsePlus0_1": 7,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.247,
+          "maxAbsScoreChange": 1
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.144,
+          "maxAbsScoreChange": 0.817
+        }
+      ],
+      "window": "2020-01 onward"
+    },
+    {
+      "id": "E02",
+      "n": 56,
+      "first": "2022-01",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -0.8,
+        0.075,
+        0.45,
+        1.05,
+        2.8
+      ],
+      "oldCounts": [
+        11,
+        17,
+        11,
+        8,
+        9
+      ],
+      "newUniqueAt2Decimals": 25,
+      "newStd": 0.896,
+      "oldZeroResponsePlus0_1": 48,
+      "newZeroResponsePlus0_1": 4,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.178,
+          "maxAbsScoreChange": 1
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.117,
+          "maxAbsScoreChange": 0.6
+        }
+      ],
+      "window": "2022-01 onward"
+    },
+    {
+      "id": "E03",
+      "n": 80,
+      "first": "2020-01",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -0.3,
+        0.575,
+        0.8,
+        1.1,
+        1.8
+      ],
+      "oldCounts": [
+        2,
+        11,
+        40,
+        25,
+        2
+      ],
+      "newUniqueAt2Decimals": 18,
+      "newStd": 0.463,
+      "oldZeroResponsePlus0_1": 67,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.101,
+          "maxAbsScoreChange": 0.5
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.069,
+          "maxAbsScoreChange": 0.433
+        }
+      ],
+      "window": "2020-01 onward"
+    },
+    {
+      "id": "E03",
+      "n": 56,
+      "first": "2022-01",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -0.1,
+        0.6,
+        0.7,
+        1,
+        1.8
+      ],
+      "oldCounts": [
+        1,
+        8,
+        31,
+        15,
+        1
+      ],
+      "newUniqueAt2Decimals": 14,
+      "newStd": 0.415,
+      "oldZeroResponsePlus0_1": 47,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.091,
+          "maxAbsScoreChange": 0.4
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.063,
+          "maxAbsScoreChange": 0.433
+        }
+      ],
+      "window": "2022-01 onward"
+    },
+    {
+      "id": "E04",
+      "n": 140,
+      "first": "2015-01",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -5.9,
+        -2.7,
+        -0.8,
+        4.1,
+        13.5
+      ],
+      "oldCounts": [
+        36,
+        39,
+        28,
+        20,
+        17
+      ],
+      "newUniqueAt2Decimals": 73,
+      "newStd": 1.13,
+      "oldZeroResponsePlus0_1": 135,
+      "newZeroResponsePlus0_1": 13,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.346,
+          "maxAbsScoreChange": 1.183
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.269,
+          "maxAbsScoreChange": 1
+        }
+      ],
+      "window": "2015-01 onward"
+    },
+    {
+      "id": "E04",
+      "n": 80,
+      "first": "2020-01",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -5.4,
+        -2.525,
+        -1.45,
+        3.575,
+        13.5
+      ],
+      "oldCounts": [
+        20,
+        30,
+        13,
+        10,
+        7
+      ],
+      "newUniqueAt2Decimals": 48,
+      "newStd": 0.964,
+      "oldZeroResponsePlus0_1": 75,
+      "newZeroResponsePlus0_1": 5,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.287,
+          "maxAbsScoreChange": 1.183
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.244,
+          "maxAbsScoreChange": 1
+        }
+      ],
+      "window": "2020-01 onward"
+    },
+    {
+      "id": "E04",
+      "n": 56,
+      "first": "2022-01",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -5.4,
+        -2.7,
+        -2.15,
+        0.6,
+        9.1
+      ],
+      "oldCounts": [
+        10,
+        25,
+        9,
+        8,
+        4
+      ],
+      "newUniqueAt2Decimals": 34,
+      "newStd": 0.953,
+      "oldZeroResponsePlus0_1": 54,
+      "newZeroResponsePlus0_1": 3,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.279,
+          "maxAbsScoreChange": 1.183
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.218,
+          "maxAbsScoreChange": 1
+        }
+      ],
+      "window": "2022-01 onward"
+    },
+    {
+      "id": "E01",
+      "n": 46,
+      "first": "2015-Q1",
+      "last": "2026-Q2",
+      "rawPercentiles": [
+        -6.8,
+        4.8,
+        5.95,
+        6.8,
+        18.9
+      ],
+      "oldCounts": [
+        2,
+        2,
+        10,
+        9,
+        23
+      ],
+      "newUniqueAt2Decimals": 24,
+      "newStd": 1.09,
+      "oldZeroResponsePlus0_1": 44,
+      "newZeroResponsePlus0_1": 9,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.124,
+          "maxAbsScoreChange": 0.333
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.15,
+          "maxAbsScoreChange": 0.278
+        }
+      ],
+      "window": "2015-Q1 onward"
+    },
+    {
+      "id": "E07",
+      "n": 46,
+      "first": "2015-Q1",
+      "last": "2026-Q2",
+      "rawPercentiles": [
+        -1.237,
+        -0.272,
+        1.008,
+        3.16,
+        5.519
+      ],
+      "oldCounts": [
+        0,
+        4,
+        18,
+        14,
+        10
+      ],
+      "newUniqueAt2Decimals": 41,
+      "newStd": 0.883,
+      "oldZeroResponsePlus0_1": 44,
+      "newZeroResponsePlus0_1": 2,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.396,
+          "maxAbsScoreChange": 1.16
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.25,
+          "maxAbsScoreChange": 0.92
+        }
+      ],
+      "window": "2015-Q1 onward"
+    },
+    {
+      "id": "E01",
+      "n": 26,
+      "first": "2020-Q1",
+      "last": "2026-Q2",
+      "rawPercentiles": [
+        -6.8,
+        4.5,
+        4.85,
+        5.375,
+        18.9
+      ],
+      "oldCounts": [
+        2,
+        2,
+        10,
+        8,
+        4
+      ],
+      "newUniqueAt2Decimals": 17,
+      "newStd": 1.04,
+      "oldZeroResponsePlus0_1": 25,
+      "newZeroResponsePlus0_1": 4,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.117,
+          "maxAbsScoreChange": 0.333
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.082,
+          "maxAbsScoreChange": 0.222
+        }
+      ],
+      "window": "2020-Q1 onward"
+    },
+    {
+      "id": "E07",
+      "n": 26,
+      "first": "2020-Q1",
+      "last": "2026-Q2",
+      "rawPercentiles": [
+        -1.237,
+        -0.775,
+        -0.098,
+        1.733,
+        5.519
+      ],
+      "oldCounts": [
+        0,
+        4,
+        13,
+        5,
+        4
+      ],
+      "newUniqueAt2Decimals": 24,
+      "newStd": 0.912,
+      "oldZeroResponsePlus0_1": 24,
+      "newZeroResponsePlus0_1": 1,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.304,
+          "maxAbsScoreChange": 1.16
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.21,
+          "maxAbsScoreChange": 0.92
+        }
+      ],
+      "window": "2020-Q1 onward"
+    },
+    {
+      "id": "E01",
+      "n": 18,
+      "first": "2022-Q1",
+      "last": "2026-Q2",
+      "rawPercentiles": [
+        0.8,
+        4.525,
+        4.8,
+        5.275,
+        6.5
+      ],
+      "oldCounts": [
+        1,
+        1,
+        8,
+        7,
+        1
+      ],
+      "newUniqueAt2Decimals": 13,
+      "newStd": 0.823,
+      "oldZeroResponsePlus0_1": 18,
+      "newZeroResponsePlus0_1": 1,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.124,
+          "maxAbsScoreChange": 0.333
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.085,
+          "maxAbsScoreChange": 0.222
+        }
+      ],
+      "window": "2022-Q1 onward"
+    },
+    {
+      "id": "E07",
+      "n": 18,
+      "first": "2022-Q1",
+      "last": "2026-Q2",
+      "rawPercentiles": [
+        -1.237,
+        -0.817,
+        -0.672,
+        0.545,
+        3.696
+      ],
+      "oldCounts": [
+        0,
+        2,
+        11,
+        3,
+        2
+      ],
+      "newUniqueAt2Decimals": 17,
+      "newStd": 0.919,
+      "oldZeroResponsePlus0_1": 16,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.225,
+          "maxAbsScoreChange": 0.924
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.133,
+          "maxAbsScoreChange": 0.616
+        }
+      ],
+      "window": "2022-Q1 onward"
+    },
+    {
+      "id": "E05",
+      "n": 19,
+      "first": "2025-01",
+      "last": "2026-08",
+      "rawPercentiles": [
+        5,
+        5.1,
+        5.2,
+        5.25,
+        5.4
+      ],
+      "oldCounts": [
+        0,
+        0,
+        19,
+        0,
+        0
+      ],
+      "newUniqueAt2Decimals": 5,
+      "newStd": 0.299,
+      "oldZeroResponsePlus0_1": 17,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.059,
+          "maxAbsScoreChange": 0.125
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.039,
+          "maxAbsScoreChange": 0.083
+        }
+      ],
+      "window": "bounded local current-year/recent series, not long-sample validation"
+    },
+    {
+      "id": "G01",
+      "n": 7,
+      "first": "2026-02",
+      "last": "2026-08",
+      "rawPercentiles": [
+        4.1,
+        4.5,
+        5.2,
+        5.5,
+        6.3
+      ],
+      "oldCounts": [
+        0,
+        3,
+        3,
+        1,
+        0
+      ],
+      "newUniqueAt2Decimals": 6,
+      "newStd": 0.357,
+      "oldZeroResponsePlus0_1": 7,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.079,
+          "maxAbsScoreChange": 0.163
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.052,
+          "maxAbsScoreChange": 0.108
+        }
+      ],
+      "window": "2026 bounded local series; combined Jan-Feb is one observation"
+    },
+    {
+      "id": "G02",
+      "n": 7,
+      "first": "2026-02",
+      "last": "2026-08",
+      "rawPercentiles": [
+        15.2,
+        15.6,
+        17.6,
+        18.45,
+        18.8
+      ],
+      "oldCounts": [
+        0,
+        0,
+        0,
+        0,
+        7
+      ],
+      "newUniqueAt2Decimals": 6,
+      "newStd": 0.098,
+      "oldZeroResponsePlus0_1": 7,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.202,
+          "maxAbsScoreChange": 0.23
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.153,
+          "maxAbsScoreChange": 0.163
+        }
+      ],
+      "window": "2026 bounded local series; combined Jan-Feb is one observation"
+    },
+    {
+      "id": "G03",
+      "n": 7,
+      "first": "2026-02",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -13.5,
+        -11.95,
+        -11.6,
+        -10.6,
+        -10.2
+      ],
+      "oldCounts": [
+        0,
+        7,
+        0,
+        0,
+        0
+      ],
+      "newUniqueAt2Decimals": 7,
+      "newStd": 0.071,
+      "oldZeroResponsePlus0_1": 7,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.191,
+          "maxAbsScoreChange": 0.225
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.128,
+          "maxAbsScoreChange": 0.15
+        }
+      ],
+      "window": "2026 bounded local series; combined Jan-Feb is one observation"
+    },
+    {
+      "id": "G14",
+      "n": 7,
+      "first": "2026-02",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -19.9,
+        -18.6,
+        -16.2,
+        -12.45,
+        -11.1
+      ],
+      "oldCounts": [
+        7,
+        0,
+        0,
+        0,
+        0
+      ],
+      "newUniqueAt2Decimals": 7,
+      "newStd": 0.226,
+      "oldZeroResponsePlus0_1": 7,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.26,
+          "maxAbsScoreChange": 0.332
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.173,
+          "maxAbsScoreChange": 0.221
+        }
+      ],
+      "window": "2026 bounded local series; combined Jan-Feb is one observation"
+    },
+    {
+      "id": "G07",
+      "n": 7,
+      "first": "2026-02",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -2.3,
+        -1.45,
+        -0.4,
+        2.15,
+        4.1
+      ],
+      "oldCounts": [
+        6,
+        1,
+        0,
+        0,
+        0
+      ],
+      "newUniqueAt2Decimals": 7,
+      "newStd": 0.384,
+      "oldZeroResponsePlus0_1": 7,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.139,
+          "maxAbsScoreChange": 0.19
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.1,
+          "maxAbsScoreChange": 0.14
+        }
+      ],
+      "window": "2026 bounded local series; combined Jan-Feb is one observation"
+    },
+    {
+      "id": "G13",
+      "n": 7,
+      "first": "2026-02",
+      "last": "2026-08",
+      "rawPercentiles": [
+        -4,
+        -3,
+        0.6,
+        6.6,
+        11.4
+      ],
+      "oldCounts": [
+        0,
+        3,
+        1,
+        1,
+        2
+      ],
+      "newUniqueAt2Decimals": 7,
+      "newStd": 1.049,
+      "oldZeroResponsePlus0_1": 7,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.184,
+          "maxAbsScoreChange": 0.3
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.129,
+          "maxAbsScoreChange": 0.2
+        }
+      ],
+      "window": "2026 bounded local series; combined Jan-Feb is one observation"
+    },
+    {
+      "id": "G12",
+      "n": 7,
+      "first": "2026-02",
+      "last": "2026-08",
+      "rawPercentiles": [
+        4.9,
+        5.15,
+        5.4,
+        5.55,
+        5.6
+      ],
+      "oldCounts": [
+        0,
+        0,
+        1,
+        6,
+        0
+      ],
+      "newUniqueAt2Decimals": 6,
+      "newStd": 0.087,
+      "oldZeroResponsePlus0_1": 6,
+      "newZeroResponsePlus0_1": 0,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.111,
+          "maxAbsScoreChange": 0.133
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.074,
+          "maxAbsScoreChange": 0.089
+        }
+      ],
+      "window": "2026 bounded local series; combined Jan-Feb is one observation"
+    }
+  ],
+  "currentPillarCandidates": [
+    {
+      "pillar": "经济运行",
+      "weight": 0.30000000000000004,
+      "oldScore": 3.333,
+      "levelOnlyCandidate": 3.375,
+      "fullCandidate": 3.339,
+      "deltaMacroContribution": 0.002
+    },
+    {
+      "pillar": "增长动力",
+      "weight": 0.3,
+      "oldScore": 2.55,
+      "levelOnlyCandidate": 2.794,
+      "fullCandidate": 2.735,
+      "deltaMacroContribution": 0.056
+    }
+  ],
+  "officialFreshQuery": {
+    "E08": {
+      "sourceUrl": "https://data.stats.gov.cn/dg/website/publicrelease/web/external/stream/esData",
+      "verifiedAt": "2026-10-11",
+      "monthlyCount": 81,
+      "id": "E08",
+      "n": 79,
+      "first": "2020-03",
+      "last": "2026-09",
+      "rawPercentiles": [
+        45.9,
+        49.45,
+        49.767,
+        50.217,
+        51.8
+      ],
+      "oldCounts": [
+        2,
+        50,
+        13,
+        14,
+        0
+      ],
+      "newUniqueAt2Decimals": 49,
+      "newStd": 0.609,
+      "oldZeroResponsePlus0_1": 73,
+      "newZeroResponsePlus0_1": 2,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.103,
+          "maxAbsScoreChange": 0.322
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.069,
+          "maxAbsScoreChange": 0.215
+        }
+      ],
+      "fullCandidateCount": 76,
+      "fullCandidateUniqueAt2Decimals": 64,
+      "fullCandidateRange": [
+        1.682,
+        4.218
+      ],
+      "originalMonthlyValues": [
+        {
+          "period": "2020-01",
+          "value": 50
+        },
+        {
+          "period": "2020-02",
+          "value": 35.7
+        },
+        {
+          "period": "2020-03",
+          "value": 52
+        },
+        {
+          "period": "2020-04",
+          "value": 50.8
+        },
+        {
+          "period": "2020-05",
+          "value": 50.6
+        },
+        {
+          "period": "2020-06",
+          "value": 50.9
+        },
+        {
+          "period": "2020-07",
+          "value": 51.1
+        },
+        {
+          "period": "2020-08",
+          "value": 51
+        },
+        {
+          "period": "2020-09",
+          "value": 51.5
+        },
+        {
+          "period": "2020-10",
+          "value": 51.4
+        },
+        {
+          "period": "2020-11",
+          "value": 52.1
+        },
+        {
+          "period": "2020-12",
+          "value": 51.9
+        },
+        {
+          "period": "2021-01",
+          "value": 51.3
+        },
+        {
+          "period": "2021-02",
+          "value": 50.6
+        },
+        {
+          "period": "2021-03",
+          "value": 51.9
+        },
+        {
+          "period": "2021-04",
+          "value": 51.1
+        },
+        {
+          "period": "2021-05",
+          "value": 51
+        },
+        {
+          "period": "2021-06",
+          "value": 50.9
+        },
+        {
+          "period": "2021-07",
+          "value": 50.4
+        },
+        {
+          "period": "2021-08",
+          "value": 50.1
+        },
+        {
+          "period": "2021-09",
+          "value": 49.6
+        },
+        {
+          "period": "2021-10",
+          "value": 49.2
+        },
+        {
+          "period": "2021-11",
+          "value": 50.1
+        },
+        {
+          "period": "2021-12",
+          "value": 50.3
+        },
+        {
+          "period": "2022-01",
+          "value": 50.1
+        },
+        {
+          "period": "2022-02",
+          "value": 50.2
+        },
+        {
+          "period": "2022-03",
+          "value": 49.5
+        },
+        {
+          "period": "2022-04",
+          "value": 47.4
+        },
+        {
+          "period": "2022-05",
+          "value": 49.6
+        },
+        {
+          "period": "2022-06",
+          "value": 50.2
+        },
+        {
+          "period": "2022-07",
+          "value": 49
+        },
+        {
+          "period": "2022-08",
+          "value": 49.4
+        },
+        {
+          "period": "2022-09",
+          "value": 50.1
+        },
+        {
+          "period": "2022-10",
+          "value": 49.2
+        },
+        {
+          "period": "2022-11",
+          "value": 48
+        },
+        {
+          "period": "2022-12",
+          "value": 47
+        },
+        {
+          "period": "2023-01",
+          "value": 50.1
+        },
+        {
+          "period": "2023-02",
+          "value": 52.6
+        },
+        {
+          "period": "2023-03",
+          "value": 51.9
+        },
+        {
+          "period": "2023-04",
+          "value": 49.2
+        },
+        {
+          "period": "2023-05",
+          "value": 48.8
+        },
+        {
+          "period": "2023-06",
+          "value": 49
+        },
+        {
+          "period": "2023-07",
+          "value": 49.3
+        },
+        {
+          "period": "2023-08",
+          "value": 49.7
+        },
+        {
+          "period": "2023-09",
+          "value": 50.2
+        },
+        {
+          "period": "2023-10",
+          "value": 49.5
+        },
+        {
+          "period": "2023-11",
+          "value": 49.4
+        },
+        {
+          "period": "2023-12",
+          "value": 49
+        },
+        {
+          "period": "2024-01",
+          "value": 49.2
+        },
+        {
+          "period": "2024-02",
+          "value": 49.1
+        },
+        {
+          "period": "2024-03",
+          "value": 50.8
+        },
+        {
+          "period": "2024-04",
+          "value": 50.4
+        },
+        {
+          "period": "2024-05",
+          "value": 49.5
+        },
+        {
+          "period": "2024-06",
+          "value": 49.5
+        },
+        {
+          "period": "2024-07",
+          "value": 49.4
+        },
+        {
+          "period": "2024-08",
+          "value": 49.1
+        },
+        {
+          "period": "2024-09",
+          "value": 49.8
+        },
+        {
+          "period": "2024-10",
+          "value": 50.1
+        },
+        {
+          "period": "2024-11",
+          "value": 50.3
+        },
+        {
+          "period": "2024-12",
+          "value": 50.1
+        },
+        {
+          "period": "2025-01",
+          "value": 49.1
+        },
+        {
+          "period": "2025-02",
+          "value": 50.2
+        },
+        {
+          "period": "2025-03",
+          "value": 50.5
+        },
+        {
+          "period": "2025-04",
+          "value": 49
+        },
+        {
+          "period": "2025-05",
+          "value": 49.5
+        },
+        {
+          "period": "2025-06",
+          "value": 49.7
+        },
+        {
+          "period": "2025-07",
+          "value": 49.3
+        },
+        {
+          "period": "2025-08",
+          "value": 49.4
+        },
+        {
+          "period": "2025-09",
+          "value": 49.8
+        },
+        {
+          "period": "2025-10",
+          "value": 49
+        },
+        {
+          "period": "2025-11",
+          "value": 49.2
+        },
+        {
+          "period": "2025-12",
+          "value": 50.1
+        },
+        {
+          "period": "2026-01",
+          "value": 49.3
+        },
+        {
+          "period": "2026-02",
+          "value": 49
+        },
+        {
+          "period": "2026-03",
+          "value": 50.4
+        },
+        {
+          "period": "2026-04",
+          "value": 50.3
+        },
+        {
+          "period": "2026-05",
+          "value": 50
+        },
+        {
+          "period": "2026-06",
+          "value": 50.3
+        },
+        {
+          "period": "2026-07",
+          "value": 49.2
+        },
+        {
+          "period": "2026-08",
+          "value": 49.8
+        },
+        {
+          "period": "2026-09",
+          "value": 50.1
+        }
+      ]
+    },
+    "E09": {
+      "sourceUrl": "https://data.stats.gov.cn/dg/website/publicrelease/web/external/stream/esData",
+      "verifiedAt": "2026-10-11",
+      "monthlyCount": 81,
+      "n": 79,
+      "first": "2020-03",
+      "last": "2026-09",
+      "rawPercentiles": [
+        45.033,
+        50.1,
+        50.833,
+        53.05,
+        56.967
+      ],
+      "oldCounts": [
+        8,
+        11,
+        34,
+        11,
+        15
+      ],
+      "newUniqueAt2Decimals": 51,
+      "newStd": 1.08,
+      "oldZeroResponsePlus0_1": 76,
+      "newZeroResponsePlus0_1": 19,
+      "fullCandidateCount": 76,
+      "fullCandidateUniqueAt2Decimals": 62,
+      "fullCandidateRange": [
+        1,
+        5
+      ],
+      "originalMonthlyValues": [
+        {
+          "period": "2020-01",
+          "value": 54.1
+        },
+        {
+          "period": "2020-02",
+          "value": 29.6
+        },
+        {
+          "period": "2020-03",
+          "value": 52.3
+        },
+        {
+          "period": "2020-04",
+          "value": 53.2
+        },
+        {
+          "period": "2020-05",
+          "value": 53.6
+        },
+        {
+          "period": "2020-06",
+          "value": 54.4
+        },
+        {
+          "period": "2020-07",
+          "value": 54.2
+        },
+        {
+          "period": "2020-08",
+          "value": 55.2
+        },
+        {
+          "period": "2020-09",
+          "value": 55.9
+        },
+        {
+          "period": "2020-10",
+          "value": 56.2
+        },
+        {
+          "period": "2020-11",
+          "value": 56.4
+        },
+        {
+          "period": "2020-12",
+          "value": 55.7
+        },
+        {
+          "period": "2021-01",
+          "value": 52.4
+        },
+        {
+          "period": "2021-02",
+          "value": 51.4
+        },
+        {
+          "period": "2021-03",
+          "value": 56.3
+        },
+        {
+          "period": "2021-04",
+          "value": 54.9
+        },
+        {
+          "period": "2021-05",
+          "value": 55.2
+        },
+        {
+          "period": "2021-06",
+          "value": 53.5
+        },
+        {
+          "period": "2021-07",
+          "value": 53.3
+        },
+        {
+          "period": "2021-08",
+          "value": 47.5
+        },
+        {
+          "period": "2021-09",
+          "value": 53.2
+        },
+        {
+          "period": "2021-10",
+          "value": 52.4
+        },
+        {
+          "period": "2021-11",
+          "value": 52.3
+        },
+        {
+          "period": "2021-12",
+          "value": 52.7
+        },
+        {
+          "period": "2022-01",
+          "value": 51.1
+        },
+        {
+          "period": "2022-02",
+          "value": 51.6
+        },
+        {
+          "period": "2022-03",
+          "value": 48.4
+        },
+        {
+          "period": "2022-04",
+          "value": 41.9
+        },
+        {
+          "period": "2022-05",
+          "value": 47.8
+        },
+        {
+          "period": "2022-06",
+          "value": 54.7
+        },
+        {
+          "period": "2022-07",
+          "value": 53.8
+        },
+        {
+          "period": "2022-08",
+          "value": 52.6
+        },
+        {
+          "period": "2022-09",
+          "value": 50.6
+        },
+        {
+          "period": "2022-10",
+          "value": 48.7
+        },
+        {
+          "period": "2022-11",
+          "value": 46.7
+        },
+        {
+          "period": "2022-12",
+          "value": 41.6
+        },
+        {
+          "period": "2023-01",
+          "value": 54.4
+        },
+        {
+          "period": "2023-02",
+          "value": 56.3
+        },
+        {
+          "period": "2023-03",
+          "value": 58.2
+        },
+        {
+          "period": "2023-04",
+          "value": 56.4
+        },
+        {
+          "period": "2023-05",
+          "value": 54.5
+        },
+        {
+          "period": "2023-06",
+          "value": 53.2
+        },
+        {
+          "period": "2023-07",
+          "value": 51.5
+        },
+        {
+          "period": "2023-08",
+          "value": 51
+        },
+        {
+          "period": "2023-09",
+          "value": 51.7
+        },
+        {
+          "period": "2023-10",
+          "value": 50.6
+        },
+        {
+          "period": "2023-11",
+          "value": 50.2
+        },
+        {
+          "period": "2023-12",
+          "value": 50.4
+        },
+        {
+          "period": "2024-01",
+          "value": 50.7
+        },
+        {
+          "period": "2024-02",
+          "value": 51.4
+        },
+        {
+          "period": "2024-03",
+          "value": 53
+        },
+        {
+          "period": "2024-04",
+          "value": 51.2
+        },
+        {
+          "period": "2024-05",
+          "value": 51.1
+        },
+        {
+          "period": "2024-06",
+          "value": 50.5
+        },
+        {
+          "period": "2024-07",
+          "value": 50.2
+        },
+        {
+          "period": "2024-08",
+          "value": 50.3
+        },
+        {
+          "period": "2024-09",
+          "value": 50
+        },
+        {
+          "period": "2024-10",
+          "value": 50.2
+        },
+        {
+          "period": "2024-11",
+          "value": 50
+        },
+        {
+          "period": "2024-12",
+          "value": 52.2
+        },
+        {
+          "period": "2025-01",
+          "value": 50.2
+        },
+        {
+          "period": "2025-02",
+          "value": 50.4
+        },
+        {
+          "period": "2025-03",
+          "value": 50.8
+        },
+        {
+          "period": "2025-04",
+          "value": 50.4
+        },
+        {
+          "period": "2025-05",
+          "value": 50.3
+        },
+        {
+          "period": "2025-06",
+          "value": 50.5
+        },
+        {
+          "period": "2025-07",
+          "value": 50.1
+        },
+        {
+          "period": "2025-08",
+          "value": 50.3
+        },
+        {
+          "period": "2025-09",
+          "value": 50
+        },
+        {
+          "period": "2025-10",
+          "value": 50.1
+        },
+        {
+          "period": "2025-11",
+          "value": 49.5
+        },
+        {
+          "period": "2025-12",
+          "value": 50.2
+        },
+        {
+          "period": "2026-01",
+          "value": 49.4
+        },
+        {
+          "period": "2026-02",
+          "value": 49.5
+        },
+        {
+          "period": "2026-03",
+          "value": 50.1
+        },
+        {
+          "period": "2026-04",
+          "value": 49.4
+        },
+        {
+          "period": "2026-05",
+          "value": 50.1
+        },
+        {
+          "period": "2026-06",
+          "value": 50.2
+        },
+        {
+          "period": "2026-07",
+          "value": 49
+        },
+        {
+          "period": "2026-08",
+          "value": 49
+        },
+        {
+          "period": "2026-09",
+          "value": 50.2
+        }
+      ]
+    },
+    "E05": {
+      "sourceUrl": "https://data.stats.gov.cn/dg/website/publicrelease/web/external/stream/esData",
+      "verifiedAt": "2026-10-11",
+      "id": "E05",
+      "n": 80,
+      "first": "2020-01",
+      "last": "2026-08",
+      "rawPercentiles": [
+        4.9,
+        5.1,
+        5.2,
+        5.4,
+        6.2
+      ],
+      "oldCounts": [
+        3,
+        16,
+        59,
+        2,
+        0
+      ],
+      "newUniqueAt2Decimals": 12,
+      "newStd": 0.685,
+      "oldZeroResponsePlus0_1": 70,
+      "newZeroResponsePlus0_1": 3,
+      "horizontalAnchorWidthSensitivity": [
+        {
+          "widthScale": 0.8,
+          "meanAbsScoreChange": 0.102,
+          "maxAbsScoreChange": 0.375
+        },
+        {
+          "widthScale": 1.2,
+          "meanAbsScoreChange": 0.078,
+          "maxAbsScoreChange": 0.333
+        }
+      ],
+      "originalMonthlyValues": [
+        {
+          "period": "2020-01",
+          "value": 5.3
+        },
+        {
+          "period": "2020-02",
+          "value": 6.2
+        },
+        {
+          "period": "2020-03",
+          "value": 5.9
+        },
+        {
+          "period": "2020-04",
+          "value": 6
+        },
+        {
+          "period": "2020-05",
+          "value": 5.9
+        },
+        {
+          "period": "2020-06",
+          "value": 5.7
+        },
+        {
+          "period": "2020-07",
+          "value": 5.7
+        },
+        {
+          "period": "2020-08",
+          "value": 5.6
+        },
+        {
+          "period": "2020-09",
+          "value": 5.4
+        },
+        {
+          "period": "2020-10",
+          "value": 5.3
+        },
+        {
+          "period": "2020-11",
+          "value": 5.2
+        },
+        {
+          "period": "2020-12",
+          "value": 5.2
+        },
+        {
+          "period": "2021-01",
+          "value": 5.4
+        },
+        {
+          "period": "2021-02",
+          "value": 5.5
+        },
+        {
+          "period": "2021-03",
+          "value": 5.3
+        },
+        {
+          "period": "2021-04",
+          "value": 5.1
+        },
+        {
+          "period": "2021-05",
+          "value": 5
+        },
+        {
+          "period": "2021-06",
+          "value": 5
+        },
+        {
+          "period": "2021-07",
+          "value": 5.1
+        },
+        {
+          "period": "2021-08",
+          "value": 5.1
+        },
+        {
+          "period": "2021-09",
+          "value": 4.9
+        },
+        {
+          "period": "2021-10",
+          "value": 4.9
+        },
+        {
+          "period": "2021-11",
+          "value": 5
+        },
+        {
+          "period": "2021-12",
+          "value": 5.1
+        },
+        {
+          "period": "2022-01",
+          "value": 5.3
+        },
+        {
+          "period": "2022-02",
+          "value": 5.5
+        },
+        {
+          "period": "2022-03",
+          "value": 5.8
+        },
+        {
+          "period": "2022-04",
+          "value": 6.1
+        },
+        {
+          "period": "2022-05",
+          "value": 5.9
+        },
+        {
+          "period": "2022-06",
+          "value": 5.5
+        },
+        {
+          "period": "2022-07",
+          "value": 5.4
+        },
+        {
+          "period": "2022-08",
+          "value": 5.3
+        },
+        {
+          "period": "2022-09",
+          "value": 5.5
+        },
+        {
+          "period": "2022-10",
+          "value": 5.5
+        },
+        {
+          "period": "2022-11",
+          "value": 5.7
+        },
+        {
+          "period": "2022-12",
+          "value": 5.5
+        },
+        {
+          "period": "2023-01",
+          "value": 5.5
+        },
+        {
+          "period": "2023-02",
+          "value": 5.6
+        },
+        {
+          "period": "2023-03",
+          "value": 5.3
+        },
+        {
+          "period": "2023-04",
+          "value": 5.2
+        },
+        {
+          "period": "2023-05",
+          "value": 5.2
+        },
+        {
+          "period": "2023-06",
+          "value": 5.2
+        },
+        {
+          "period": "2023-07",
+          "value": 5.3
+        },
+        {
+          "period": "2023-08",
+          "value": 5.2
+        },
+        {
+          "period": "2023-09",
+          "value": 5
+        },
+        {
+          "period": "2023-10",
+          "value": 5
+        },
+        {
+          "period": "2023-11",
+          "value": 5
+        },
+        {
+          "period": "2023-12",
+          "value": 5.1
+        },
+        {
+          "period": "2024-01",
+          "value": 5.2
+        },
+        {
+          "period": "2024-02",
+          "value": 5.3
+        },
+        {
+          "period": "2024-03",
+          "value": 5.2
+        },
+        {
+          "period": "2024-04",
+          "value": 5
+        },
+        {
+          "period": "2024-05",
+          "value": 5
+        },
+        {
+          "period": "2024-06",
+          "value": 5
+        },
+        {
+          "period": "2024-07",
+          "value": 5.2
+        },
+        {
+          "period": "2024-08",
+          "value": 5.3
+        },
+        {
+          "period": "2024-09",
+          "value": 5.1
+        },
+        {
+          "period": "2024-10",
+          "value": 5
+        },
+        {
+          "period": "2024-11",
+          "value": 5
+        },
+        {
+          "period": "2024-12",
+          "value": 5.1
+        },
+        {
+          "period": "2025-01",
+          "value": 5.2
+        },
+        {
+          "period": "2025-02",
+          "value": 5.4
+        },
+        {
+          "period": "2025-03",
+          "value": 5.2
+        },
+        {
+          "period": "2025-04",
+          "value": 5.1
+        },
+        {
+          "period": "2025-05",
+          "value": 5
+        },
+        {
+          "period": "2025-06",
+          "value": 5
+        },
+        {
+          "period": "2025-07",
+          "value": 5.2
+        },
+        {
+          "period": "2025-08",
+          "value": 5.3
+        },
+        {
+          "period": "2025-09",
+          "value": 5.2
+        },
+        {
+          "period": "2025-10",
+          "value": 5.1
+        },
+        {
+          "period": "2025-11",
+          "value": 5.1
+        },
+        {
+          "period": "2025-12",
+          "value": 5.1
+        },
+        {
+          "period": "2026-01",
+          "value": 5.2
+        },
+        {
+          "period": "2026-02",
+          "value": 5.3
+        },
+        {
+          "period": "2026-03",
+          "value": 5.4
+        },
+        {
+          "period": "2026-04",
+          "value": 5.2
+        },
+        {
+          "period": "2026-05",
+          "value": 5.1
+        },
+        {
+          "period": "2026-06",
+          "value": 5
+        },
+        {
+          "period": "2026-07",
+          "value": 5.2
+        },
+        {
+          "period": "2026-08",
+          "value": 5.3
+        }
+      ]
+    }
+  },
+  "importantLimitations": [
+    "本地历史重新评分不是逐期信息集回测；本地GDP2015起同2026-09-15修订段，价格历史原页未逐月重新抓取。",
+    "核心CPI本地可得仅2020起；增长13项多数只有2026年短样本，房价仅3月原表，不称完整历史验证。",
+    "相邻累计同比不是月度同比或边际实际投入，未据此添加趋势分。",
+    "水平分布及横向锚点宽度±20%只检验函数敏感性，未使用资产未来收益挑选参数。"
+  ]
+}

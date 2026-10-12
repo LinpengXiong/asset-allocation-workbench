@@ -1,0 +1,74 @@
+{
+  "asOf": "2026-10-11",
+  "version": "V1.11",
+  "latestReleaseCheck": "https://www.stats.gov.cn/sj/zxfb/",
+  "note": "仅收录截至信息截止日已公布的原值；不同统计频率保留各自最新期，季度GDP不虚构三季度值，价格和失业不虚构九月值。",
+  "observations": {
+    "E01": {
+      "value": 4.3, "period": "2026-Q2", "releaseDate": "2026-09-15", "verifiedAt": "2026-10-11", "verified": true,
+      "unit": "%", "basis": "单季实际同比", "originalPublisher": "国家统计局", "latestAvailablePeriod": "2026-Q2",
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "revisionVersion": "2026-09-15-SDDS",
+      "rationale": "SDDS同版季度实际GDP指数104.3，转为单季实际同比4.3%；三季度结果截至评价日尚未公布。按[4,5)%为3分，反映增长放缓而不是资产收益预测。"
+    },
+    "E02": {
+      "value": 0.8, "period": "2026-08", "releaseDate": "2026-09-09", "verifiedAt": "2026-10-11", "verified": true,
+      "unit": "%", "basis": "当月同比", "originalPublisher": "国家统计局", "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260909_1965263.html",
+      "rationale": "国家统计局8月居民消费价格原表同比0.8%，不是1—8月平均0.9%；位于[0.5,1)%的3分区间。食品与能源价格扰动不单独认定总需求改善。"
+    },
+    "E03": {
+      "value": 1.0, "period": "2026-08", "releaseDate": "2026-09-09", "verifiedAt": "2026-10-11", "verified": true,
+      "unit": "%", "basis": "当月同比", "originalPublisher": "国家统计局", "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260909_1965263.html",
+      "rationale": "原表不包括食品和能源同比1.0%，不是累计1.1%；等于1%进入4分区间。核心价格相对稳定，不把单月读数当全面内需复苏。"
+    },
+    "E04": {
+      "value": 3.8, "period": "2026-08", "releaseDate": "2026-09-09", "verifiedAt": "2026-10-11", "verified": true,
+      "unit": "%", "basis": "当月同比", "originalPublisher": "国家统计局", "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260909_1965262.html",
+      "rationale": "原始工业生产者价格报告的出厂价格同比3.8%；在(3,4]%的4分区间。生产资料与生活资料方向分化，上游涨价并非全部企业盈利改善。"
+    },
+    "E05": {
+      "value": 5.3, "period": "2026-08", "releaseDate": "2026-09-15", "verifiedAt": "2026-10-11", "verified": true,
+      "unit": "%", "basis": "当月调查失业率", "originalPublisher": "国家统计局", "latestAvailablePeriod": "2026-08",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html",
+      "rationale": "8月全国城镇调查失业率5.3%，不是1—8月平均5.2%或31城指标；[5,5.5)%为3分。该指标不测就业充分程度，不据此否定工时、收入或就业质量压力。"
+    },
+    "E07": {
+      "value": 1.526649, "period": "2026-Q2", "releaseDate": "2026-09-15", "verifiedAt": "2026-10-11", "verified": true,
+      "unit": "%", "basis": "GDP平减指数单季同比派生", "originalPublisher": "国家统计局", "latestAvailablePeriod": "2026-Q2",
+      "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+      "gdpDeflatorEvidence": {
+        "period": "2026-Q2", "revisionVersion": "2026-09-15-SDDS",
+        "currentNominal": {"period": "2026-Q2", "value": 361511, "unit": "亿元", "basis": "单季现价GDP", "revisionVersion": "2026-09-15-SDDS", "releaseDate": "2026-09-15", "originalPublisher": "国家统计局", "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"},
+        "priorNominal": {"period": "2025-Q2", "value": 341395, "unit": "亿元", "basis": "单季现价GDP", "revisionVersion": "2026-09-15-SDDS", "releaseDate": "2026-09-15", "originalPublisher": "国家统计局", "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"},
+        "realGrowth": {"period": "2026-Q2", "value": 4.3, "unit": "%", "basis": "单季实际同比", "revisionVersion": "2026-09-15-SDDS", "releaseDate": "2026-09-15", "originalPublisher": "国家统计局", "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"}
+      },
+      "rationale": "根据同一SDDS发布版本的361511亿元、341395亿元和单季实际同比4.3%复算，派生值落在[1,3]%的5分区间。不是统计局独立公布的全国价格评级，也没有混用两版现价GDP。"
+    },
+    "E08": {
+      "value": 49.7, "period": "2026-09", "releaseDate": "2026-09-30", "verifiedAt": "2026-10-11", "verified": true,
+      "unit": "指数点", "basis": "近3月季调均值", "originalPublisher": "国家统计局", "latestAvailablePeriod": "2026-09",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+      "components": [
+{"period": "2026-07", "series": "manufacturingPMI", "value": 49.2, "unit": "指数点", "basis": "季调当月指数", "releaseDate": "2026-09-30", "originalPublisher": "国家统计局", "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"},
+        {"period": "2026-08", "series": "manufacturingPMI", "value": 49.8, "unit": "指数点", "basis": "季调当月指数", "releaseDate": "2026-09-30", "originalPublisher": "国家统计局", "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"},
+        {"period": "2026-09", "series": "manufacturingPMI", "value": 50.1, "unit": "指数点", "basis": "季调当月指数", "releaseDate": "2026-09-30", "originalPublisher": "国家统计局", "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"}
+      ],
+      "rationale": "9月原表含7—9月完整季调制造业PMI，均值49.7；单月50.1虽回到扩张，三月均值仍在[48,50)的2分区间，不误用最新单月值代替评分均值。"
+    },
+    "E09": {
+      "value": 49.4, "period": "2026-09", "releaseDate": "2026-09-30", "verifiedAt": "2026-10-11", "verified": true,
+      "unit": "指数点", "basis": "近3月季调均值", "originalPublisher": "国家统计局", "latestAvailablePeriod": "2026-09",
+      "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+      "components": [
+        {"period": "2026-07", "series": "nonManufacturingActivity", "value": 49.0, "unit": "指数点", "basis": "季调当月指数", "releaseDate": "2026-09-30", "originalPublisher": "国家统计局", "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"},
+        {"period": "2026-08", "series": "nonManufacturingActivity", "value": 49.0, "unit": "指数点", "basis": "季调当月指数", "releaseDate": "2026-09-30", "originalPublisher": "国家统计局", "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"},
+        {"period": "2026-09", "series": "nonManufacturingActivity", "value": 50.2, "unit": "指数点", "basis": "季调当月指数", "releaseDate": "2026-09-30", "originalPublisher": "国家统计局", "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html"}
+      ],
+      "rationale": "7—9月非制造业商务活动均值49.4，位于[49,50)的2分区间；不是综合PMI，也没有把服务业子项替代全国非制造业指数。"
+    }
+  },
+  "gaps": []
+}

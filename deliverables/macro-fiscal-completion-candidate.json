@@ -1,0 +1,470 @@
+{
+  "asOf": "2026-10-11",
+  "indicatorId": "P01A",
+  "frameworkVersion": "V1.11",
+  "status": "原始批准预算及计算已核验；同年初审批阶段2分候选，最新追加范围与GDP版本解释需显式确认后采纳",
+  "noMainFileChanges": true,
+  "strictRuleAssessment": {
+    "arithmeticComplete": true,
+    "sourceEvidenceRead": true,
+    "budgetAnnualApprovalStageComparable": true,
+    "denominatorStageComparable": true,
+    "denominatorLatestVintageForBothYears": false,
+    "engineSchemaPass": true,
+    "allDefinitionConditionsUnambiguouslySatisfied": false,
+    "explanation": "两年初步核算同核算阶段与体系可比较，但不是评价日最新GDP修订值；现行同版revisionVersion不能只靠相同字符串冒充同一发布批次。现行定义同时要求同审批阶段及截至评价日批准追加，年初新增额度与结存限额盘活是否纳入需明确。应先确认该研究口径，再导入候选，不能以校验通过取代方法确认。"
+  },
+  "candidateForInitialApprovedBudget": {
+    "period": "2026",
+    "latestAvailablePeriod": "2026",
+    "value": -0.28734405993601886,
+    "unit": "百分点",
+    "basis": "年度批准财政融资资源/GDP比重同比差",
+    "originalPublisher": "财政部",
+    "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260316_3985331.htm",
+    "releaseDate": "2026-03-16",
+    "verifiedAt": "2026-10-11",
+    "reviewDate": "2026-10-11",
+    "verified": true,
+    "sourceAudit": {
+      "provider": "官方",
+      "originalPublisher": "财政部",
+      "availableDate": "2026-03-16"
+    },
+    "components": [
+      {
+        "period": "2025",
+        "year": 2025,
+        "series": "fiscalFinancingResources",
+        "basis": "正式批准财政融资资源占上年GDP",
+        "unit": "百分点",
+        "value": 8.198155192708533,
+        "budgetStage": "全国人大年初批准预算",
+        "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202503/t20250314_3959885.htm",
+        "releaseDate": "2025-03-14",
+        "originalPublisher": "财政部",
+        "verifiedAt": "2026-10-11",
+        "approvalSourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202503/t20250312_3959686.htm",
+        "noDoubleCounting": "全国赤字已含地方一般债8000亿元，不再追加一般债；新增专项债44000亿元扣除既定年度化债8000亿元后计36000亿元；额外2万亿元隐债债务额度及到期本金滚续不计；超长期与银行补资本特别国债并入同一工具项、不与赤字重复；结存限额盘活另列范围评估，不冒充年初新增额度或已执行需求。",
+        "items": [
+          {
+            "component": "赤字融资",
+            "purpose": "全国一般公共预算赤字融资，含中央赤字及地方一般债",
+            "amount": 56600,
+            "unit": "亿元",
+            "approvalDate": "2025-03-11",
+            "releaseDate": "2025-03-14",
+            "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202503/t20250314_3959885.htm",
+            "originalPublisher": "财政部",
+            "verifiedAt": "2026-10-11",
+            "breakdown": [
+              {
+                "name": "中央赤字",
+                "amount": 48600
+              },
+              {
+                "name": "地方赤字",
+                "amount": 8000
+              }
+            ]
+          },
+          {
+            "component": "新增地方专项债",
+            "purpose": "新增专项债扣除明确年度化债安排后的其余预算资源，包括项目建设及清理拖欠账款等，非净刺激",
+            "amount": 36000,
+            "unit": "亿元",
+            "approvalDate": "2025-03-11",
+            "releaseDate": "2025-03-14",
+            "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202503/t20250314_3959885.htm",
+            "originalPublisher": "财政部",
+            "verifiedAt": "2026-10-11",
+            "grossAmount": 44000,
+            "deductionAmount": 8000,
+            "deductionEvidence": {
+              "purpose": "从2024年起连续五年每年8000亿元专项债额度用于化债",
+              "amount": 8000,
+              "unit": "亿元",
+              "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202411/t20241109_3947230.htm",
+              "releaseDate": "2024-11-09",
+              "originalPublisher": "财政部",
+              "verifiedAt": "2026-10-11"
+            },
+            "crossCheck": {
+              "finding": "财政部2025-09-12确认当年新增专项债中安排8000亿元专门化债",
+              "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202509/t20250912_3972196.htm",
+              "releaseDate": "2025-09-12",
+              "originalPublisher": "财政部",
+              "verifiedAt": "2026-10-11"
+            }
+          },
+          {
+            "component": "特别国债",
+            "purpose": "超长期特别国债用于两重两新，与大型商业银行核心一级资本注资分别记录，后者非直接实物需求",
+            "amount": 18000,
+            "unit": "亿元",
+            "approvalDate": "2025-03-11",
+            "releaseDate": "2025-03-14",
+            "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202503/t20250314_3959885.htm",
+            "originalPublisher": "财政部",
+            "verifiedAt": "2026-10-11",
+            "breakdown": [
+              {
+                "name": "超长期特别国债",
+                "amount": 13000,
+                "purpose": "两重建设及两新政策"
+              },
+              {
+                "name": "中央金融机构注资特别国债",
+                "amount": 5000,
+                "purpose": "支持国有大型商业银行补充核心一级资本"
+              }
+            ]
+          }
+        ],
+        "totalResources": 110600,
+        "gdp": {
+          "year": 2024,
+          "value": 1349084,
+          "unit": "亿元",
+          "revisionVersion": "年度初步核算/现价GDP/中国国民经济核算体系2016",
+          "sourceUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202501/t20250118_1958363.html",
+          "releaseDate": "2025-01-18",
+          "originalPublisher": "国家统计局",
+          "verifiedAt": "2026-10-11",
+          "accountingStage": "年度初步核算",
+          "vintageSelection": "保留各年年初预算审批时可得的上一年度初步核算值，不称截至2026-10-11两年同一日的最新修订版本"
+        }
+      },
+      {
+        "period": "2026",
+        "year": 2026,
+        "series": "fiscalFinancingResources",
+        "basis": "正式批准财政融资资源占上年GDP",
+        "unit": "百分点",
+        "value": 7.910811132772515,
+        "budgetStage": "全国人大年初批准预算",
+        "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260316_3985331.htm",
+        "releaseDate": "2026-03-16",
+        "originalPublisher": "财政部",
+        "verifiedAt": "2026-10-11",
+        "approvalSourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260313_3985217.htm",
+        "noDoubleCounting": "全国赤字已含地方一般债8000亿元，不再追加一般债；新增专项债44000亿元扣除既定年度化债8000亿元后计36000亿元；额外2万亿元隐债债务额度及到期本金滚续不计；超长期与银行补资本特别国债并入同一工具项、不与赤字重复；结存限额盘活另列范围评估，不冒充年初新增额度或已执行需求。",
+        "items": [
+          {
+            "component": "赤字融资",
+            "purpose": "全国一般公共预算赤字融资，含中央赤字及地方一般债",
+            "amount": 58900,
+            "unit": "亿元",
+            "approvalDate": "2026-03-12",
+            "releaseDate": "2026-03-16",
+            "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260316_3985331.htm",
+            "originalPublisher": "财政部",
+            "verifiedAt": "2026-10-11",
+            "breakdown": [
+              {
+                "name": "中央赤字",
+                "amount": 50900
+              },
+              {
+                "name": "地方赤字",
+                "amount": 8000
+              }
+            ]
+          },
+          {
+            "component": "新增地方专项债",
+            "purpose": "新增专项债扣除明确年度化债安排后的其余预算资源，包括项目建设及清理拖欠账款等，非净刺激",
+            "amount": 36000,
+            "unit": "亿元",
+            "approvalDate": "2026-03-12",
+            "releaseDate": "2026-03-16",
+            "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260316_3985331.htm",
+            "originalPublisher": "财政部",
+            "verifiedAt": "2026-10-11",
+            "grossAmount": 44000,
+            "deductionAmount": 8000,
+            "deductionEvidence": {
+              "purpose": "从2024年起连续五年每年8000亿元专项债额度用于化债",
+              "amount": 8000,
+              "unit": "亿元",
+              "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202411/t20241109_3947230.htm",
+              "releaseDate": "2024-11-09",
+              "originalPublisher": "财政部",
+              "verifiedAt": "2026-10-11"
+            }
+          },
+          {
+            "component": "特别国债",
+            "purpose": "超长期特别国债用于两重两新，与大型商业银行核心一级资本注资分别记录，后者非直接实物需求",
+            "amount": 16000,
+            "unit": "亿元",
+            "approvalDate": "2026-03-12",
+            "releaseDate": "2026-03-16",
+            "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260316_3985331.htm",
+            "originalPublisher": "财政部",
+            "verifiedAt": "2026-10-11",
+            "breakdown": [
+              {
+                "name": "超长期特别国债",
+                "amount": 13000,
+                "purpose": "两重建设及两新政策"
+              },
+              {
+                "name": "中央金融机构注资特别国债",
+                "amount": 3000,
+                "purpose": "支持国有大型商业银行补充核心一级资本"
+              }
+            ]
+          }
+        ],
+        "totalResources": 110900,
+        "gdp": {
+          "year": 2025,
+          "value": 1401879,
+          "unit": "亿元",
+          "revisionVersion": "年度初步核算/现价GDP/中国国民经济核算体系2016",
+          "sourceUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202601/t20260120_1962349.html",
+          "releaseDate": "2026-01-20",
+          "originalPublisher": "国家统计局",
+          "verifiedAt": "2026-10-11",
+          "accountingStage": "年度初步核算",
+          "vintageSelection": "保留各年年初预算审批时可得的上一年度初步核算值，不称截至2026-10-11两年同一日的最新修订版本"
+        }
+      }
+    ],
+    "rationale": "同年初正式批准新增债务预算资源口径：2025年110600亿元/2024年初步核算GDP，2026年110900亿元/2025年初步核算GDP；比重下降约0.287344个百分点，落在现行[-1,-0.25)区间，候选2分。此值不代表截至评价日所有可用财政资源或净财政刺激；结存限额与GDP版本解释需显式确认。"
+  },
+  "calculation": {
+    "resources2025": 110600,
+    "resources2026": 110900,
+    "unit": "亿元",
+    "formula2025": "56600 + (44000 - 8000) + 13000 + 5000 = 110600",
+    "formula2026": "58900 + (44000 - 8000) + 13000 + 3000 = 110900",
+    "share2025Percent": 8.198155192708533,
+    "share2026Percent": 7.910811132772515,
+    "yoyDifferencePercentagePoints": -0.28734405993601886,
+    "formula": "(110900/1401879 - 110600/1349084)*100",
+    "existingLimits": [
+      -1,
+      -0.25,
+      0.25,
+      1
+    ],
+    "gradeInterval": "[-1,-0.25) 百分点",
+    "candidatePoints": 2,
+    "weight": 0.025,
+    "weightedContributionOn100PointTotal": 1.0000000000000002,
+    "nominalResourceChange": 300,
+    "nominalResourceGrowthPercent": 0.2712477396021651,
+    "interpretation": "新增债务预算资源绝对额略增，但增长慢于上年GDP基数，因此比重回落。2分仅是该资源变化项的既有分档，不等于财政收缩、总政策2分或资产看空。银行注资变化、化债排除和GDP分母均会影响结果。"
+  },
+  "latestResourceReview": {
+    "releaseDate": "2026-10-09",
+    "verifiedAt": "2026-10-11",
+    "sourceUrl": "https://zwgls.mof.gov.cn/gzdt/202610/t20261009_4002433.htm",
+    "originalPublisher": "财政部",
+    "measure": "安排使用地方政府债务结存限额",
+    "amount": 5500,
+    "unit": "亿元",
+    "breakdown": [
+      {
+        "name": "一般债务结存限额",
+        "amount": 3000,
+        "purpose": "提高县区一般公共预算保障能力"
+      },
+      {
+        "name": "专项债务结存限额",
+        "amount": 2500,
+        "purpose": "第四季度实际项目资金需求，优先在建项目及六张网等重点领域"
+      }
+    ],
+    "evidenceScope": "原文说明实际盘活安排及用途，不给具体国务院批准日期。结存限额是既有法定上限与余额之差，不是增加全国年初批准的新增债务上限。",
+    "treatmentInCandidate": "不计入同年初正式新增额度基准，单独记录，不标为零或未知政策缺失；若评分定义扩展至所有追加可用资源，应建立另一计算口径并重做两年可比清单。",
+    "priorYearReservedLimit": {
+      "amount": 5000,
+      "unit": "亿元",
+      "period": "2025",
+      "originalPublisher": "财政部",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202510/t20251017_3974415.htm",
+      "releaseDate": "2025-10-17",
+      "verifiedAt": "2026-10-11",
+      "finding": "原文确认2025下达5000亿元结存限额，混含存量投资项目债务、拖欠企业账款与符合条件的项目建设，未给全国用途金额拆分。2025-10-17虽晚于该年10-11，但在本次2026-10-11回顾核验截止日前；同日可得回测不能提前使用。",
+      "eligibilityAmountUnderNonSwapScope": null,
+      "unknownAmountNotAssumedZero": true
+    },
+    "broaderResourceSensitivity": {
+      "notValidatedObservation": true,
+      "explanation": "仅做方法边界敏感性：若2026已知5500全计，而2025结存5000中合格额在0到5000之间，其差值可能跨2/3分门槛；这不是对2025未知合格额的估算或录入。",
+      "using2025EligibleReserved0Delta": 0.10498651923664809,
+      "using2025EligibleReserved5000Delta": -0.26563532491834935,
+      "possibleGrades": [
+        2,
+        3
+      ]
+    }
+  },
+  "gdpRevisionSensitivity": {
+    "knownLaterRevision": {
+      "year": 2024,
+      "value": 1348066,
+      "unit": "亿元",
+      "accountingStage": "最终核实",
+      "releaseDate": "2025-12-26",
+      "verifiedAt": "2026-10-11",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202512/t20251226_1962144.html",
+      "originalPublisher": "国家统计局"
+    },
+    "observation2025UsesInitial": true,
+    "latestAvailable2025GdpStage": "初步核算",
+    "latestKnownVintageDelta": -0.2935349452385022,
+    "latestKnownVintageCandidatePoints": 2,
+    "latestVintageComparisonNotStrictSameStage": true,
+    "note": "最新已核实2024最终值与2025初步值重新计算仍为2分；仅作稳健性核对，不能把两种核算阶段写成同版。"
+  },
+  "exclusions": [
+    {
+      "name": "额外6万亿元隐债安排中2025/2026各2万亿元",
+      "amountEachYear": 20000,
+      "unit": "亿元",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202411/t20241109_3947230.htm",
+      "releaseDate": "2024-11-09",
+      "originalPublisher": "财政部",
+      "reason": "置换存量隐债，既不当新增需求，也不再次纳入常规44,000亿元工具清单；不能从44,000中再扣20,000。"
+    },
+    {
+      "name": "常规新增专项债中每年8000亿元化债",
+      "amountEachYear": 8000,
+      "unit": "亿元",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202411/t20241109_3947230.htm",
+      "releaseDate": "2024-11-09",
+      "originalPublisher": "财政部",
+      "reason": "连续五年明确年度安排；从每年44,000内扣除一次。2025另有当年执行原文交叉核验。"
+    },
+    {
+      "name": "地方一般债8000亿元",
+      "reason": "已经包含在全国赤字融资中，不再次相加。"
+    },
+    {
+      "name": "结转结余、调入资金、中央预算内投资及预算内贴息支出",
+      "reason": "不是这条新增债务额度资源口径；如再加会与融资用途或既有预算资金重复。"
+    },
+    {
+      "name": "政策性金融工具",
+      "reason": "不因工具宣布就当国家财政正式新批准债务额度；无财政拨款/债务批准对应原文，不列入计分清单。未把未知额度当零。"
+    }
+  ],
+  "sustainableDefinitionRecommendation": {
+    "preferred": "年初全国人大批准的新增财政债务额度（剔除明确债务置换用途）占上年GDP比重变化",
+    "approvalStage": "固定全国人大年初批准预算；修订/追加作为独立版本，只有同阶段可比时才替换主版本。",
+    "gdpVersion": "明确采用两预算审批时可得的上一年年度初步核算现价GDP，保留原值及后续修订敏感性；若坚持最新核算版本，则需明确允许同核算体系不同阶段并逐年存真实阶段。",
+    "additionalResources": "结存限额单列可用融资资源，不与年初新增限额机械相加；若要计入主指标，正式修改名称和边界，记录两年盘活与不合格用途，而非把未知用途默认为零。",
+    "unchangedThresholds": true
+  },
+  "remainingLimitations": [
+    "当前候选只覆盖同年初批准新增财政债务额度，不声称完成所有月度追加可用融资资源清单。",
+    "2026年专项债8000亿元扣除依赖2024起连续五年有效正式安排，2025执行确认；本次未读取2026单年分用途8000完整全国表，若政策正式改变需更新，不能假设已执行。",
+    "最新结存限额盘活不改变已知年度新增上限，但会影响广义可用资源，应向用户说明，并决定是否另改方法；本候选未静默忽略。",
+    "正式预算融资资源不等于净财政刺激、当月实际支出或实物工作量；不能代替P01E/P01F执行指标。",
+    "五档边界为研究试行，2分不是财政部或统计局评级；未完成跨资产样本外回测。"
+  ],
+  "sourceEvidence": [
+    {
+      "title": "2025年中央和地方预算报告",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202503/t20250314_3959885.htm",
+      "releaseDate": "2025-03-14",
+      "originalPublisher": "财政部",
+      "verifiedAt": "2026-10-11",
+      "finding": "全国赤字56600；新增专项债44000；超长期特别国债13000；银行注资特别国债5000，工具与用途分别公布。"
+    },
+    {
+      "title": "2025年全国人大预算决议",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202503/t20250312_3959686.htm",
+      "releaseDate": "2025-03-12",
+      "approvalDate": "2025-03-11",
+      "originalPublisher": "全国人民代表大会",
+      "verifiedAt": "2026-10-11",
+      "finding": "全国人大批准预算报告及中央预算，不再使用3月5日提交草案日冒充批准日。"
+    },
+    {
+      "title": "2026年中央和地方预算报告",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260316_3985331.htm",
+      "releaseDate": "2026-03-16",
+      "originalPublisher": "财政部",
+      "verifiedAt": "2026-10-11",
+      "finding": "全国赤字58900=中央50900+地方8000；地方专项债44000；超长期特别国债13000；银行注资特别国债3000。"
+    },
+    {
+      "title": "2026年全国人大预算决议",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260313_3985217.htm",
+      "releaseDate": "2026-03-13",
+      "approvalDate": "2026-03-12",
+      "originalPublisher": "全国人民代表大会",
+      "verifiedAt": "2026-10-11",
+      "finding": "全国人大批准预算报告及中央预算。"
+    },
+    {
+      "title": "2024年化债政策正式发布",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202411/t20241109_3947230.htm",
+      "releaseDate": "2024-11-09",
+      "originalPublisher": "财政部",
+      "verifiedAt": "2026-10-11",
+      "finding": "每年2万亿元安排与连续五年每年新增专项债内8000亿元为两条不同渠道，不能重复相加或扣除。"
+    },
+    {
+      "title": "2025年化债执行确认",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202509/t20250912_3972196.htm",
+      "releaseDate": "2025-09-12",
+      "originalPublisher": "财政部",
+      "verifiedAt": "2026-10-11",
+      "finding": "2025当年新增专项债中8000亿元用于化债，与独立6万亿元额度分开。"
+    },
+    {
+      "title": "2024年全年GDP初步核算",
+      "sourceUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202501/t20250118_1958363.html",
+      "releaseDate": "2025-01-18",
+      "originalPublisher": "国家统计局",
+      "verifiedAt": "2026-10-11",
+      "finding": "全年GDP现价1349084亿元；不是第四季度373726亿元。"
+    },
+    {
+      "title": "2025年全年GDP初步核算",
+      "sourceUrl": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202601/t20260120_1962349.html",
+      "releaseDate": "2026-01-20",
+      "originalPublisher": "国家统计局",
+      "verifiedAt": "2026-10-11",
+      "finding": "全年GDP现价1401879亿元；不是第四季度387911亿元。"
+    },
+    {
+      "title": "2024年GDP最终核实",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfb/202512/t20251226_1962144.html",
+      "releaseDate": "2025-12-26",
+      "originalPublisher": "国家统计局",
+      "verifiedAt": "2026-10-11",
+      "finding": "现价GDP1348066亿元，比初步核算少1018亿元，主候选不伪装未修订。"
+    },
+    {
+      "title": "2026年结存限额盘活正式公告",
+      "sourceUrl": "https://zwgls.mof.gov.cn/gzdt/202610/t20261009_4002433.htm",
+      "releaseDate": "2026-10-09",
+      "originalPublisher": "财政部",
+      "verifiedAt": "2026-10-11",
+      "finding": "盘活5500亿元=一般3000+专项2500，有真实用途但不是年初新增限额。"
+    },
+    {
+      "title": "2025年结存限额盘活确认",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202510/t20251017_3974415.htm",
+      "releaseDate": "2025-10-17",
+      "originalPublisher": "财政部",
+      "verifiedAt": "2026-10-11",
+      "finding": "确认5000亿元，在既有法定限额内，有混合用途而没有全国合格金额拆分。"
+    },
+    {
+      "title": "截至本期最新财政政策执行报告",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202610/t20261009_4002434.htm",
+      "releaseDate": "2026-10-09",
+      "originalPublisher": "财政部",
+      "verifiedAt": "2026-10-11",
+      "finding": "仍确认2026新增专项债4.4万亿元，并明确新增专项债多用途，不把执行数据误当批准额度变化。"
+    }
+  ]
+}

@@ -1,0 +1,1929 @@
+{
+  "updated": "2026-10-05",
+  "lpr": {
+    "basis": "贷款市场报价利率，月度公布；2019年8月新机制起独立展示",
+    "source": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis",
+    "rows": [
+      {
+        "period": "2019-08",
+        "date": "2019-08-20",
+        "oneYear": 4.25,
+        "fiveYear": 4.85,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2019-01-01&strEndDate=2019-12-31"
+      },
+      {
+        "period": "2019-09",
+        "date": "2019-09-20",
+        "oneYear": 4.2,
+        "fiveYear": 4.85,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2019-01-01&strEndDate=2019-12-31"
+      },
+      {
+        "period": "2019-10",
+        "date": "2019-10-21",
+        "oneYear": 4.2,
+        "fiveYear": 4.85,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2019-01-01&strEndDate=2019-12-31"
+      },
+      {
+        "period": "2019-11",
+        "date": "2019-11-20",
+        "oneYear": 4.15,
+        "fiveYear": 4.8,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2019-01-01&strEndDate=2019-12-31"
+      },
+      {
+        "period": "2019-12",
+        "date": "2019-12-20",
+        "oneYear": 4.15,
+        "fiveYear": 4.8,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2019-01-01&strEndDate=2019-12-31"
+      },
+      {
+        "period": "2020-01",
+        "date": "2020-01-20",
+        "oneYear": 4.15,
+        "fiveYear": 4.8,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-02",
+        "date": "2020-02-20",
+        "oneYear": 4.05,
+        "fiveYear": 4.75,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-03",
+        "date": "2020-03-20",
+        "oneYear": 4.05,
+        "fiveYear": 4.75,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-04",
+        "date": "2020-04-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-05",
+        "date": "2020-05-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-06",
+        "date": "2020-06-22",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-07",
+        "date": "2020-07-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-08",
+        "date": "2020-08-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-09",
+        "date": "2020-09-21",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-10",
+        "date": "2020-10-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-11",
+        "date": "2020-11-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2020-12",
+        "date": "2020-12-21",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2020-01-01&strEndDate=2020-12-31"
+      },
+      {
+        "period": "2021-01",
+        "date": "2021-01-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-02",
+        "date": "2021-02-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-03",
+        "date": "2021-03-22",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-04",
+        "date": "2021-04-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-05",
+        "date": "2021-05-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-06",
+        "date": "2021-06-21",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-07",
+        "date": "2021-07-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-08",
+        "date": "2021-08-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-09",
+        "date": "2021-09-22",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-10",
+        "date": "2021-10-20",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-11",
+        "date": "2021-11-22",
+        "oneYear": 3.85,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2021-12",
+        "date": "2021-12-20",
+        "oneYear": 3.8,
+        "fiveYear": 4.65,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2021-01-01&strEndDate=2021-12-31"
+      },
+      {
+        "period": "2022-01",
+        "date": "2022-01-20",
+        "oneYear": 3.7,
+        "fiveYear": 4.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-02",
+        "date": "2022-02-21",
+        "oneYear": 3.7,
+        "fiveYear": 4.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-03",
+        "date": "2022-03-21",
+        "oneYear": 3.7,
+        "fiveYear": 4.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-04",
+        "date": "2022-04-20",
+        "oneYear": 3.7,
+        "fiveYear": 4.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-05",
+        "date": "2022-05-20",
+        "oneYear": 3.7,
+        "fiveYear": 4.45,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-06",
+        "date": "2022-06-20",
+        "oneYear": 3.7,
+        "fiveYear": 4.45,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-07",
+        "date": "2022-07-20",
+        "oneYear": 3.7,
+        "fiveYear": 4.45,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-08",
+        "date": "2022-08-22",
+        "oneYear": 3.65,
+        "fiveYear": 4.3,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-09",
+        "date": "2022-09-20",
+        "oneYear": 3.65,
+        "fiveYear": 4.3,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-10",
+        "date": "2022-10-20",
+        "oneYear": 3.65,
+        "fiveYear": 4.3,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-11",
+        "date": "2022-11-21",
+        "oneYear": 3.65,
+        "fiveYear": 4.3,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2022-12",
+        "date": "2022-12-20",
+        "oneYear": 3.65,
+        "fiveYear": 4.3,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2022-01-01&strEndDate=2022-12-31"
+      },
+      {
+        "period": "2023-01",
+        "date": "2023-01-20",
+        "oneYear": 3.65,
+        "fiveYear": 4.3,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-02",
+        "date": "2023-02-20",
+        "oneYear": 3.65,
+        "fiveYear": 4.3,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-03",
+        "date": "2023-03-20",
+        "oneYear": 3.65,
+        "fiveYear": 4.3,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-04",
+        "date": "2023-04-20",
+        "oneYear": 3.65,
+        "fiveYear": 4.3,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-05",
+        "date": "2023-05-22",
+        "oneYear": 3.65,
+        "fiveYear": 4.3,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-06",
+        "date": "2023-06-20",
+        "oneYear": 3.55,
+        "fiveYear": 4.2,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-07",
+        "date": "2023-07-20",
+        "oneYear": 3.55,
+        "fiveYear": 4.2,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-08",
+        "date": "2023-08-21",
+        "oneYear": 3.45,
+        "fiveYear": 4.2,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-09",
+        "date": "2023-09-20",
+        "oneYear": 3.45,
+        "fiveYear": 4.2,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-10",
+        "date": "2023-10-20",
+        "oneYear": 3.45,
+        "fiveYear": 4.2,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-11",
+        "date": "2023-11-20",
+        "oneYear": 3.45,
+        "fiveYear": 4.2,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2023-12",
+        "date": "2023-12-20",
+        "oneYear": 3.45,
+        "fiveYear": 4.2,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2023-01-01&strEndDate=2023-12-31"
+      },
+      {
+        "period": "2024-01",
+        "date": "2024-01-22",
+        "oneYear": 3.45,
+        "fiveYear": 4.2,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-02",
+        "date": "2024-02-20",
+        "oneYear": 3.45,
+        "fiveYear": 3.95,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-03",
+        "date": "2024-03-20",
+        "oneYear": 3.45,
+        "fiveYear": 3.95,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-04",
+        "date": "2024-04-22",
+        "oneYear": 3.45,
+        "fiveYear": 3.95,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-05",
+        "date": "2024-05-20",
+        "oneYear": 3.45,
+        "fiveYear": 3.95,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-06",
+        "date": "2024-06-20",
+        "oneYear": 3.45,
+        "fiveYear": 3.95,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-07",
+        "date": "2024-07-22",
+        "oneYear": 3.35,
+        "fiveYear": 3.85,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-08",
+        "date": "2024-08-20",
+        "oneYear": 3.35,
+        "fiveYear": 3.85,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-09",
+        "date": "2024-09-20",
+        "oneYear": 3.35,
+        "fiveYear": 3.85,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-10",
+        "date": "2024-10-21",
+        "oneYear": 3.1,
+        "fiveYear": 3.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-11",
+        "date": "2024-11-20",
+        "oneYear": 3.1,
+        "fiveYear": 3.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2024-12",
+        "date": "2024-12-20",
+        "oneYear": 3.1,
+        "fiveYear": 3.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2024-01-01&strEndDate=2024-12-31"
+      },
+      {
+        "period": "2025-01",
+        "date": "2025-01-20",
+        "oneYear": 3.1,
+        "fiveYear": 3.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-02",
+        "date": "2025-02-20",
+        "oneYear": 3.1,
+        "fiveYear": 3.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-03",
+        "date": "2025-03-20",
+        "oneYear": 3.1,
+        "fiveYear": 3.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-04",
+        "date": "2025-04-21",
+        "oneYear": 3.1,
+        "fiveYear": 3.6,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-05",
+        "date": "2025-05-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-06",
+        "date": "2025-06-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-07",
+        "date": "2025-07-21",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-08",
+        "date": "2025-08-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-09",
+        "date": "2025-09-22",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-10",
+        "date": "2025-10-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-11",
+        "date": "2025-11-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2025-12",
+        "date": "2025-12-22",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2025-01-01&strEndDate=2025-12-31"
+      },
+      {
+        "period": "2026-01",
+        "date": "2026-01-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2026-01-01&strEndDate=2026-12-31"
+      },
+      {
+        "period": "2026-02",
+        "date": "2026-02-24",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2026-01-01&strEndDate=2026-12-31"
+      },
+      {
+        "period": "2026-03",
+        "date": "2026-03-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2026-01-01&strEndDate=2026-12-31"
+      },
+      {
+        "period": "2026-04",
+        "date": "2026-04-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2026-01-01&strEndDate=2026-12-31"
+      },
+      {
+        "period": "2026-05",
+        "date": "2026-05-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2026-01-01&strEndDate=2026-12-31"
+      },
+      {
+        "period": "2026-06",
+        "date": "2026-06-22",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2026-01-01&strEndDate=2026-12-31"
+      },
+      {
+        "period": "2026-07",
+        "date": "2026-07-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2026-01-01&strEndDate=2026-12-31"
+      },
+      {
+        "period": "2026-08",
+        "date": "2026-08-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2026-01-01&strEndDate=2026-12-31"
+      },
+      {
+        "period": "2026-09",
+        "date": "2026-09-20",
+        "oneYear": 3.0,
+        "fiveYear": 3.5,
+        "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis?lang=CN&strStartDate=2026-01-01&strEndDate=2026-12-31"
+      }
+    ]
+  },
+  "bond": {
+    "basis": "中债国债到期收益率曲线，每月最后可得交易日观测，单位%",
+    "source": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery",
+    "rows": [
+      {
+        "period": "2016-01",
+        "date": "2016-01-29",
+        "oneYear": 2.3214,
+        "tenYear": 2.8419,
+        "thirtyYear": 3.5391,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-01-01&endDate=2016-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-02",
+        "date": "2016-02-29",
+        "oneYear": 2.2576,
+        "tenYear": 2.8502,
+        "thirtyYear": 3.5088,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-02-01&endDate=2016-02-29&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-03",
+        "date": "2016-03-31",
+        "oneYear": 2.0861,
+        "tenYear": 2.8419,
+        "thirtyYear": 3.3175,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-03-01&endDate=2016-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-04",
+        "date": "2016-04-29",
+        "oneYear": 2.307,
+        "tenYear": 2.8913,
+        "thirtyYear": 3.4737,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-04-01&endDate=2016-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-05",
+        "date": "2016-05-31",
+        "oneYear": 2.3201,
+        "tenYear": 2.9851,
+        "thirtyYear": 3.5411,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-05-01&endDate=2016-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-06",
+        "date": "2016-06-30",
+        "oneYear": 2.3901,
+        "tenYear": 2.8411,
+        "thirtyYear": 3.5348,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-06-01&endDate=2016-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-07",
+        "date": "2016-07-29",
+        "oneYear": 2.2394,
+        "tenYear": 2.7768,
+        "thirtyYear": 3.3486,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-07-01&endDate=2016-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-08",
+        "date": "2016-08-31",
+        "oneYear": 2.116,
+        "tenYear": 2.7425,
+        "thirtyYear": 3.3102,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-08-01&endDate=2016-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-09",
+        "date": "2016-09-30",
+        "oneYear": 2.1584,
+        "tenYear": 2.7258,
+        "thirtyYear": 3.1901,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-09-01&endDate=2016-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-10",
+        "date": "2016-10-31",
+        "oneYear": 2.1712,
+        "tenYear": 2.7425,
+        "thirtyYear": 3.1343,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-10-01&endDate=2016-10-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-11",
+        "date": "2016-11-30",
+        "oneYear": 2.301,
+        "tenYear": 2.9502,
+        "thirtyYear": 3.2998,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-11-01&endDate=2016-11-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2016-12",
+        "date": "2016-12-31",
+        "oneYear": 2.6503,
+        "tenYear": 3.0115,
+        "thirtyYear": 3.5831,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2016-12-01&endDate=2016-12-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-01",
+        "date": "2017-01-26",
+        "oneYear": 2.6757,
+        "tenYear": 3.3465,
+        "thirtyYear": 3.7287,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-01-01&endDate=2017-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-02",
+        "date": "2017-02-28",
+        "oneYear": 2.7121,
+        "tenYear": 3.292,
+        "thirtyYear": 3.7971,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-02-01&endDate=2017-02-28&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-03",
+        "date": "2017-03-31",
+        "oneYear": 2.8632,
+        "tenYear": 3.2828,
+        "thirtyYear": 3.7604,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-03-01&endDate=2017-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-04",
+        "date": "2017-04-28",
+        "oneYear": 3.1672,
+        "tenYear": 3.4668,
+        "thirtyYear": 3.8902,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-04-01&endDate=2017-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-05",
+        "date": "2017-05-31",
+        "oneYear": 3.4542,
+        "tenYear": 3.6102,
+        "thirtyYear": 3.9997,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-05-01&endDate=2017-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-06",
+        "date": "2017-06-30",
+        "oneYear": 3.46,
+        "tenYear": 3.5683,
+        "thirtyYear": 3.9765,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-06-01&endDate=2017-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-07",
+        "date": "2017-07-31",
+        "oneYear": 3.3974,
+        "tenYear": 3.626,
+        "thirtyYear": 4.1001,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-07-01&endDate=2017-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-08",
+        "date": "2017-08-31",
+        "oneYear": 3.3883,
+        "tenYear": 3.6265,
+        "thirtyYear": 4.2208,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-08-01&endDate=2017-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-09",
+        "date": "2017-09-30",
+        "oneYear": 3.466,
+        "tenYear": 3.6136,
+        "thirtyYear": 4.2274,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-09-01&endDate=2017-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-10",
+        "date": "2017-10-31",
+        "oneYear": 3.5683,
+        "tenYear": 3.8917,
+        "thirtyYear": 4.3603,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-10-01&endDate=2017-10-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-11",
+        "date": "2017-11-30",
+        "oneYear": 3.6404,
+        "tenYear": 3.8901,
+        "thirtyYear": 4.3341,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-11-01&endDate=2017-11-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2017-12",
+        "date": "2017-12-31",
+        "oneYear": 3.7909,
+        "tenYear": 3.8807,
+        "thirtyYear": 4.3671,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2017-12-01&endDate=2017-12-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-01",
+        "date": "2018-01-31",
+        "oneYear": 3.4701,
+        "tenYear": 3.914,
+        "thirtyYear": 4.3647,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-01-01&endDate=2018-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-02",
+        "date": "2018-02-28",
+        "oneYear": 3.2314,
+        "tenYear": 3.8202,
+        "thirtyYear": 4.2615,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-02-01&endDate=2018-02-28&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-03",
+        "date": "2018-03-30",
+        "oneYear": 3.3221,
+        "tenYear": 3.7407,
+        "thirtyYear": 4.1749,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-03-01&endDate=2018-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-04",
+        "date": "2018-04-28",
+        "oneYear": 2.9965,
+        "tenYear": 3.6217,
+        "thirtyYear": 4.0912,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-04-01&endDate=2018-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-05",
+        "date": "2018-05-31",
+        "oneYear": 3.1488,
+        "tenYear": 3.6129,
+        "thirtyYear": 4.066,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-05-01&endDate=2018-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-06",
+        "date": "2018-06-29",
+        "oneYear": 3.159,
+        "tenYear": 3.4756,
+        "thirtyYear": 3.9708,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-06-01&endDate=2018-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-07",
+        "date": "2018-07-31",
+        "oneYear": 2.841,
+        "tenYear": 3.4812,
+        "thirtyYear": 3.985,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-07-01&endDate=2018-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-08",
+        "date": "2018-08-31",
+        "oneYear": 2.8451,
+        "tenYear": 3.5751,
+        "thirtyYear": 4.175,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-08-01&endDate=2018-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-09",
+        "date": "2018-09-30",
+        "oneYear": 2.9657,
+        "tenYear": 3.6103,
+        "thirtyYear": 4.175,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-09-01&endDate=2018-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-10",
+        "date": "2018-10-31",
+        "oneYear": 2.8054,
+        "tenYear": 3.5086,
+        "thirtyYear": 4.0552,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-10-01&endDate=2018-10-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-11",
+        "date": "2018-11-30",
+        "oneYear": 2.4826,
+        "tenYear": 3.355,
+        "thirtyYear": 3.8857,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-11-01&endDate=2018-11-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2018-12",
+        "date": "2018-12-31",
+        "oneYear": 2.6,
+        "tenYear": 3.2265,
+        "thirtyYear": 3.7056,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2018-12-01&endDate=2018-12-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-01",
+        "date": "2019-01-31",
+        "oneYear": 2.3873,
+        "tenYear": 3.1037,
+        "thirtyYear": 3.7231,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-01-01&endDate=2019-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-02",
+        "date": "2019-02-28",
+        "oneYear": 2.4053,
+        "tenYear": 3.1731,
+        "thirtyYear": 3.7517,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-02-01&endDate=2019-02-28&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-03",
+        "date": "2019-03-29",
+        "oneYear": 2.4377,
+        "tenYear": 3.0683,
+        "thirtyYear": 3.6631,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-03-01&endDate=2019-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-04",
+        "date": "2019-04-30",
+        "oneYear": 2.6902,
+        "tenYear": 3.3869,
+        "thirtyYear": 3.9593,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-04-01&endDate=2019-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-05",
+        "date": "2019-05-31",
+        "oneYear": 2.679,
+        "tenYear": 3.2751,
+        "thirtyYear": 3.9403,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-05-01&endDate=2019-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-06",
+        "date": "2019-06-28",
+        "oneYear": 2.6429,
+        "tenYear": 3.2254,
+        "thirtyYear": 3.8664,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-06-01&endDate=2019-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-07",
+        "date": "2019-07-31",
+        "oneYear": 2.6183,
+        "tenYear": 3.1552,
+        "thirtyYear": 3.8279,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-07-01&endDate=2019-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-08",
+        "date": "2019-08-30",
+        "oneYear": 2.618,
+        "tenYear": 3.0573,
+        "thirtyYear": 3.6823,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-08-01&endDate=2019-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-09",
+        "date": "2019-09-30",
+        "oneYear": 2.5628,
+        "tenYear": 3.1411,
+        "thirtyYear": 3.7501,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-09-01&endDate=2019-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-10",
+        "date": "2019-10-31",
+        "oneYear": 2.6648,
+        "tenYear": 3.288,
+        "thirtyYear": 3.8962,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-10-01&endDate=2019-10-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-11",
+        "date": "2019-11-29",
+        "oneYear": 2.6431,
+        "tenYear": 3.165,
+        "thirtyYear": 3.7718,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-11-01&endDate=2019-11-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2019-12",
+        "date": "2019-12-31",
+        "oneYear": 2.3631,
+        "tenYear": 3.1365,
+        "thirtyYear": 3.7149,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2019-12-01&endDate=2019-12-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-01",
+        "date": "2020-01-23",
+        "oneYear": 2.181,
+        "tenYear": 2.9932,
+        "thirtyYear": 3.5746,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-01-01&endDate=2020-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-02",
+        "date": "2020-02-28",
+        "oneYear": 1.9291,
+        "tenYear": 2.7376,
+        "thirtyYear": 3.3726,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-02-01&endDate=2020-02-29&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-03",
+        "date": "2020-03-31",
+        "oneYear": 1.687,
+        "tenYear": 2.5899,
+        "thirtyYear": 3.2107,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-03-01&endDate=2020-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-04",
+        "date": "2020-04-30",
+        "oneYear": 1.1465,
+        "tenYear": 2.538,
+        "thirtyYear": 3.3242,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-04-01&endDate=2020-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-05",
+        "date": "2020-05-29",
+        "oneYear": 1.601,
+        "tenYear": 2.7053,
+        "thirtyYear": 3.4934,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-05-01&endDate=2020-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-06",
+        "date": "2020-06-30",
+        "oneYear": 2.1764,
+        "tenYear": 2.823,
+        "thirtyYear": 3.5591,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-06-01&endDate=2020-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-07",
+        "date": "2020-07-31",
+        "oneYear": 2.2428,
+        "tenYear": 2.9664,
+        "thirtyYear": 3.7031,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-07-01&endDate=2020-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-08",
+        "date": "2020-08-31",
+        "oneYear": 2.5123,
+        "tenYear": 3.0177,
+        "thirtyYear": 3.7343,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-08-01&endDate=2020-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-09",
+        "date": "2020-09-30",
+        "oneYear": 2.6462,
+        "tenYear": 3.1482,
+        "thirtyYear": 3.8481,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-09-01&endDate=2020-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-10",
+        "date": "2020-10-30",
+        "oneYear": 2.7273,
+        "tenYear": 3.181,
+        "thirtyYear": 3.8615,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-10-01&endDate=2020-10-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-11",
+        "date": "2020-11-30",
+        "oneYear": 2.831,
+        "tenYear": 3.25,
+        "thirtyYear": 3.8668,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-11-01&endDate=2020-11-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2020-12",
+        "date": "2020-12-31",
+        "oneYear": 2.4739,
+        "tenYear": 3.1429,
+        "thirtyYear": 3.7268,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2020-12-01&endDate=2020-12-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-01",
+        "date": "2021-01-29",
+        "oneYear": 2.6799,
+        "tenYear": 3.1786,
+        "thirtyYear": 3.7391,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-01-01&endDate=2021-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-02",
+        "date": "2021-02-26",
+        "oneYear": 2.6036,
+        "tenYear": 3.2798,
+        "thirtyYear": 3.8111,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-02-01&endDate=2021-02-28&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-03",
+        "date": "2021-03-31",
+        "oneYear": 2.577,
+        "tenYear": 3.1887,
+        "thirtyYear": 3.7085,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-03-01&endDate=2021-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-04",
+        "date": "2021-04-30",
+        "oneYear": 2.3591,
+        "tenYear": 3.164,
+        "thirtyYear": 3.6701,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-04-01&endDate=2021-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-05",
+        "date": "2021-05-31",
+        "oneYear": 2.4113,
+        "tenYear": 3.045,
+        "thirtyYear": 3.5652,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-05-01&endDate=2021-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-06",
+        "date": "2021-06-30",
+        "oneYear": 2.4293,
+        "tenYear": 3.0778,
+        "thirtyYear": 3.6582,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-06-01&endDate=2021-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-07",
+        "date": "2021-07-30",
+        "oneYear": 2.1346,
+        "tenYear": 2.8363,
+        "thirtyYear": 3.4444,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-07-01&endDate=2021-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-08",
+        "date": "2021-08-31",
+        "oneYear": 2.3105,
+        "tenYear": 2.845,
+        "thirtyYear": 3.4027,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-08-01&endDate=2021-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-09",
+        "date": "2021-09-30",
+        "oneYear": 2.3327,
+        "tenYear": 2.8776,
+        "thirtyYear": 3.4237,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-09-01&endDate=2021-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-10",
+        "date": "2021-10-29",
+        "oneYear": 2.31,
+        "tenYear": 2.9732,
+        "thirtyYear": 3.498,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-10-01&endDate=2021-10-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-11",
+        "date": "2021-11-30",
+        "oneYear": 2.2463,
+        "tenYear": 2.825,
+        "thirtyYear": 3.3727,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-11-01&endDate=2021-11-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2021-12",
+        "date": "2021-12-31",
+        "oneYear": 2.2429,
+        "tenYear": 2.7754,
+        "thirtyYear": 3.3283,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2021-12-01&endDate=2021-12-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-01",
+        "date": "2022-01-30",
+        "oneYear": 1.9514,
+        "tenYear": 2.6997,
+        "thirtyYear": 3.2718,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-01-01&endDate=2022-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-02",
+        "date": "2022-02-28",
+        "oneYear": 2.0442,
+        "tenYear": 2.775,
+        "thirtyYear": 3.3539,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-02-01&endDate=2022-02-28&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-03",
+        "date": "2022-03-31",
+        "oneYear": 2.1299,
+        "tenYear": 2.7878,
+        "thirtyYear": 3.366,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-03-01&endDate=2022-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-04",
+        "date": "2022-04-29",
+        "oneYear": 2.032,
+        "tenYear": 2.8386,
+        "thirtyYear": 3.308,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-04-01&endDate=2022-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-05",
+        "date": "2022-05-31",
+        "oneYear": 1.916,
+        "tenYear": 2.7426,
+        "thirtyYear": 3.2594,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-05-01&endDate=2022-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-06",
+        "date": "2022-06-30",
+        "oneYear": 1.9504,
+        "tenYear": 2.8205,
+        "thirtyYear": 3.29,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-06-01&endDate=2022-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-07",
+        "date": "2022-07-29",
+        "oneYear": 1.8623,
+        "tenYear": 2.756,
+        "thirtyYear": 3.2449,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-07-01&endDate=2022-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-08",
+        "date": "2022-08-31",
+        "oneYear": 1.7378,
+        "tenYear": 2.6225,
+        "thirtyYear": 3.1162,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-08-01&endDate=2022-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-09",
+        "date": "2022-09-30",
+        "oneYear": 1.8535,
+        "tenYear": 2.7601,
+        "thirtyYear": 3.179,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-09-01&endDate=2022-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-10",
+        "date": "2022-10-31",
+        "oneYear": 1.7305,
+        "tenYear": 2.6433,
+        "thirtyYear": 3.0653,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-10-01&endDate=2022-10-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-11",
+        "date": "2022-11-30",
+        "oneYear": 2.1341,
+        "tenYear": 2.885,
+        "thirtyYear": 3.2763,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-11-01&endDate=2022-11-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2022-12",
+        "date": "2022-12-31",
+        "oneYear": 2.0969,
+        "tenYear": 2.8353,
+        "thirtyYear": 3.1952,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2022-12-01&endDate=2022-12-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-01",
+        "date": "2023-01-31",
+        "oneYear": 2.1535,
+        "tenYear": 2.8977,
+        "thirtyYear": 3.2793,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-01-01&endDate=2023-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-02",
+        "date": "2023-02-28",
+        "oneYear": 2.3291,
+        "tenYear": 2.9017,
+        "thirtyYear": 3.3029,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-02-01&endDate=2023-02-28&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-03",
+        "date": "2023-03-31",
+        "oneYear": 2.2328,
+        "tenYear": 2.8528,
+        "thirtyYear": 3.2332,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-03-01&endDate=2023-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-04",
+        "date": "2023-04-28",
+        "oneYear": 2.1464,
+        "tenYear": 2.7788,
+        "thirtyYear": 3.1355,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-04-01&endDate=2023-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-05",
+        "date": "2023-05-31",
+        "oneYear": 1.9829,
+        "tenYear": 2.685,
+        "thirtyYear": 3.0733,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-05-01&endDate=2023-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-06",
+        "date": "2023-06-30",
+        "oneYear": 1.8723,
+        "tenYear": 2.6351,
+        "thirtyYear": 3.0072,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-06-01&endDate=2023-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-07",
+        "date": "2023-07-31",
+        "oneYear": 1.8102,
+        "tenYear": 2.6597,
+        "thirtyYear": 3.0103,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-07-01&endDate=2023-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-08",
+        "date": "2023-08-31",
+        "oneYear": 1.9051,
+        "tenYear": 2.5575,
+        "thirtyYear": 2.9027,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-08-01&endDate=2023-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-09",
+        "date": "2023-09-28",
+        "oneYear": 2.1677,
+        "tenYear": 2.6751,
+        "thirtyYear": 3.0022,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-09-01&endDate=2023-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-10",
+        "date": "2023-10-31",
+        "oneYear": 2.2051,
+        "tenYear": 2.6938,
+        "thirtyYear": 2.9956,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-10-01&endDate=2023-10-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-11",
+        "date": "2023-11-30",
+        "oneYear": 2.3367,
+        "tenYear": 2.668,
+        "thirtyYear": 2.9405,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-11-01&endDate=2023-11-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2023-12",
+        "date": "2023-12-31",
+        "oneYear": 2.0796,
+        "tenYear": 2.5553,
+        "thirtyYear": 2.8269,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2023-12-01&endDate=2023-12-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-01",
+        "date": "2024-01-31",
+        "oneYear": 1.8802,
+        "tenYear": 2.433,
+        "thirtyYear": 2.6482,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-01-01&endDate=2024-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-02",
+        "date": "2024-02-29",
+        "oneYear": 1.7871,
+        "tenYear": 2.3375,
+        "thirtyYear": 2.4616,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-02-01&endDate=2024-02-29&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-03",
+        "date": "2024-03-29",
+        "oneYear": 1.7225,
+        "tenYear": 2.2901,
+        "thirtyYear": 2.4594,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-03-01&endDate=2024-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-04",
+        "date": "2024-04-30",
+        "oneYear": 1.6928,
+        "tenYear": 2.3028,
+        "thirtyYear": 2.5382,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-04-01&endDate=2024-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-05",
+        "date": "2024-05-31",
+        "oneYear": 1.6444,
+        "tenYear": 2.2926,
+        "thirtyYear": 2.5552,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-05-01&endDate=2024-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-06",
+        "date": "2024-06-28",
+        "oneYear": 1.539,
+        "tenYear": 2.2058,
+        "thirtyYear": 2.4282,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-06-01&endDate=2024-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-07",
+        "date": "2024-07-31",
+        "oneYear": 1.4201,
+        "tenYear": 2.1494,
+        "thirtyYear": 2.3825,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-07-01&endDate=2024-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-08",
+        "date": "2024-08-30",
+        "oneYear": 1.49,
+        "tenYear": 2.1704,
+        "thirtyYear": 2.3651,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-08-01&endDate=2024-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-09",
+        "date": "2024-09-30",
+        "oneYear": 1.3679,
+        "tenYear": 2.1518,
+        "thirtyYear": 2.355,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-09-01&endDate=2024-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-10",
+        "date": "2024-10-31",
+        "oneYear": 1.426,
+        "tenYear": 2.1476,
+        "thirtyYear": 2.335,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-10-01&endDate=2024-10-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-11",
+        "date": "2024-11-29",
+        "oneYear": 1.3698,
+        "tenYear": 2.0206,
+        "thirtyYear": 2.2025,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-11-01&endDate=2024-11-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2024-12",
+        "date": "2024-12-31",
+        "oneYear": 1.0843,
+        "tenYear": 1.6752,
+        "thirtyYear": 1.9121,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2024-12-01&endDate=2024-12-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-01",
+        "date": "2025-01-27",
+        "oneYear": 1.3036,
+        "tenYear": 1.6299,
+        "thirtyYear": 1.8675,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-01-01&endDate=2025-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-02",
+        "date": "2025-02-28",
+        "oneYear": 1.4597,
+        "tenYear": 1.7152,
+        "thirtyYear": 1.905,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-02-01&endDate=2025-02-28&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-03",
+        "date": "2025-03-31",
+        "oneYear": 1.5379,
+        "tenYear": 1.8129,
+        "thirtyYear": 2.0226,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-03-01&endDate=2025-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-04",
+        "date": "2025-04-30",
+        "oneYear": 1.4599,
+        "tenYear": 1.6243,
+        "thirtyYear": 1.824,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-04-01&endDate=2025-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-05",
+        "date": "2025-05-30",
+        "oneYear": 1.4552,
+        "tenYear": 1.6712,
+        "thirtyYear": 1.896,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-05-01&endDate=2025-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-06",
+        "date": "2025-06-30",
+        "oneYear": 1.3402,
+        "tenYear": 1.6469,
+        "thirtyYear": 1.8611,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-06-01&endDate=2025-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-07",
+        "date": "2025-07-31",
+        "oneYear": 1.3807,
+        "tenYear": 1.7044,
+        "thirtyYear": 1.945,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-07-01&endDate=2025-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-08",
+        "date": "2025-08-29",
+        "oneYear": 1.3698,
+        "tenYear": 1.8379,
+        "thirtyYear": 2.1375,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-08-01&endDate=2025-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-09",
+        "date": "2025-09-30",
+        "oneYear": 1.3653,
+        "tenYear": 1.8605,
+        "thirtyYear": 2.2461,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-09-01&endDate=2025-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-10",
+        "date": "2025-10-31",
+        "oneYear": 1.3826,
+        "tenYear": 1.7954,
+        "thirtyYear": 2.1431,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-10-01&endDate=2025-10-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-11",
+        "date": "2025-11-28",
+        "oneYear": 1.4017,
+        "tenYear": 1.8412,
+        "thirtyYear": 2.1851,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-11-01&endDate=2025-11-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2025-12",
+        "date": "2025-12-31",
+        "oneYear": 1.3372,
+        "tenYear": 1.8473,
+        "thirtyYear": 2.2674,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2025-12-01&endDate=2025-12-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2026-01",
+        "date": "2026-01-30",
+        "oneYear": 1.2999,
+        "tenYear": 1.8112,
+        "thirtyYear": 2.289,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-01-01&endDate=2026-01-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2026-02",
+        "date": "2026-02-28",
+        "oneYear": 1.3168,
+        "tenYear": 1.7753,
+        "thirtyYear": 2.2726,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-02-01&endDate=2026-02-28&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2026-03",
+        "date": "2026-03-31",
+        "oneYear": 1.2212,
+        "tenYear": 1.8171,
+        "thirtyYear": 2.3521,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-03-01&endDate=2026-03-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2026-04",
+        "date": "2026-04-30",
+        "oneYear": 1.162,
+        "tenYear": 1.7473,
+        "thirtyYear": 2.218,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-04-01&endDate=2026-04-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2026-05",
+        "date": "2026-05-29",
+        "oneYear": 1.1578,
+        "tenYear": 1.709,
+        "thirtyYear": 2.205,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-05-01&endDate=2026-05-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2026-06",
+        "date": "2026-06-30",
+        "oneYear": 1.1217,
+        "tenYear": 1.733,
+        "thirtyYear": 2.236,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-06-01&endDate=2026-06-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2026-07",
+        "date": "2026-07-31",
+        "oneYear": 1.146,
+        "tenYear": 1.7141,
+        "thirtyYear": 2.1876,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-07-01&endDate=2026-07-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2026-08",
+        "date": "2026-08-31",
+        "oneYear": 1.2232,
+        "tenYear": 1.6883,
+        "thirtyYear": 2.1485,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-08-01&endDate=2026-08-31&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      },
+      {
+        "period": "2026-09",
+        "date": "2026-09-30",
+        "oneYear": 1.2197,
+        "tenYear": 1.6822,
+        "thirtyYear": 2.1,
+        "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-09-01&endDate=2026-09-30&gjqx=0&qxId=hzsylqx&locale=cn_ZH"
+      }
+    ]
+  },
+  "fiscal": {
+    "basis": "全国一般公共预算收入和支出，年初累计同比；1—2月合并，单位%",
+    "source": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+    "rows": [
+      {
+        "period": "2025-02",
+        "income": -1.6,
+        "expense": 3.4,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202503/t20250324_3960418.htm"
+      },
+      {
+        "period": "2025-03",
+        "income": -1.1,
+        "expense": 4.2,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202504/t20250418_3962244.htm"
+      },
+      {
+        "period": "2025-04",
+        "income": -0.4,
+        "expense": 4.6,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202505/t20250520_3964136.htm"
+      },
+      {
+        "period": "2025-05",
+        "income": -0.3,
+        "expense": 4.2,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202506/t20250620_3966204.htm"
+      },
+      {
+        "period": "2025-06",
+        "income": -0.3,
+        "expense": 3.4,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202507/t20250725_3968635.htm"
+      },
+      {
+        "period": "2025-07",
+        "income": 0.1,
+        "expense": 3.4,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202508/t20250819_3970405.htm"
+      },
+      {
+        "period": "2025-08",
+        "income": 0.3,
+        "expense": 3.1,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202509/t20250917_3972555.htm"
+      },
+      {
+        "period": "2025-09",
+        "income": 0.5,
+        "expense": 3.1,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202510/t20251017_3974400.htm"
+      },
+      {
+        "period": "2025-10",
+        "income": 0.8,
+        "expense": 2.0,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202511/t20251117_3976517.htm"
+      },
+      {
+        "period": "2025-11",
+        "income": 0.8,
+        "expense": 1.4,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202512/t20251217_3979392.htm"
+      },
+      {
+        "period": "2025-12",
+        "income": -1.7,
+        "expense": 1.0,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202601/t20260130_3982923.htm"
+      },
+      {
+        "period": "2026-02",
+        "income": 0.7,
+        "expense": 3.6,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202603/t20260319_3985695.htm"
+      },
+      {
+        "period": "2026-03",
+        "income": 2.4,
+        "expense": 2.6,
+        "url": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czszsj/202604/t20260424_3988324.htm"
+      },
+      {
+        "period": "2026-04",
+        "income": 3.5,
+        "expense": 1.3,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202605/t20260515_3989956.htm"
+      },
+      {
+        "period": "2026-05",
+        "income": 4.0,
+        "expense": 0.8,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202606/t20260622_3992033.htm"
+      },
+      {
+        "period": "2026-06",
+        "income": 4.7,
+        "expense": 1.5,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202607/t20260722_3993943.htm"
+      },
+      {
+        "period": "2026-07",
+        "income": 5.8,
+        "expense": 1.3,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202608/t20260814_3995497.htm"
+      },
+      {
+        "period": "2026-08",
+        "income": 5.7,
+        "expense": 1.2,
+        "url": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm"
+      }
+    ]
+  },
+  "fundingRate": {
+    "basis": "DR007为银行间存款类机构以利率债为质押的7天回购月加权平均利率；政策利率为当月最后一次可得的央行7天逆回购操作利率。二者同月比较，均为年化百分比；不把DR007当成政策利率。",
+    "provider": "Wind EDB",
+    "originalPublisher": "中国人民银行",
+    "dr007Code": "R0633988",
+    "policyRateCode": "M0041371",
+    "dr007WindUpdatedAt": "2026-09-22",
+    "policyRateWindUpdatedAt": "2026-09-29",
+    "unit": "%",
+    "officialOverlap": [
+      { "period": "2026-06", "dr007": 1.45, "url": "https://www.cnafc.org/cnafc/front/detail.action?id=AA5CABD5E856472CA719DCDBFCC205B2" },
+      { "period": "2026-08", "dr007": 1.40, "url": "https://dfjrjgj.hlj.gov.cn/hljjrjd/c113262/202609/c00_31978297.shtml" }
+    ],
+    "policyRateOfficialReference": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2025111413260240402/index.html",
+    "rows": [
+      { "period": "2026-01", "dr007": 1.51, "policyRate": 1.40 },
+      { "period": "2026-02", "dr007": 1.49, "policyRate": 1.40 },
+      { "period": "2026-03", "dr007": 1.44, "policyRate": 1.40 },
+      { "period": "2026-04", "dr007": 1.35, "policyRate": 1.40 },
+      { "period": "2026-05", "dr007": 1.35, "policyRate": 1.40 },
+      { "period": "2026-06", "dr007": 1.45, "policyRate": 1.40 },
+      { "period": "2026-07", "dr007": 1.43, "policyRate": 1.40 },
+      { "period": "2026-08", "dr007": 1.40, "policyRate": 1.40 }
+    ]
+  },
+  "specialBondIssuance": {
+    "basis": "2026年新增地方政府专项债券发行额，年初累计，单位亿元；仅含新增专项债，不含再融资专项债。债券发行不等于资金已支出或形成实物工作量。",
+    "source": "财政部债务管理司地方政府债券发行和债务余额月报",
+    "rows": [
+      { "period": "2026-02", "amount": 8242, "url": "https://zwgls.mof.gov.cn/tjsj/202604/t20260410_3987362.htm" },
+      { "period": "2026-03", "amount": 11599, "url": "https://zwgls.mof.gov.cn/tjsj/202605/t20260508_3989284.htm" },
+      { "period": "2026-04", "amount": 13343, "url": "https://zwgls.mof.gov.cn/tjsj/202606/t20260611_3991502.htm" },
+      { "period": "2026-05", "amount": 14951, "url": "https://zwgls.mof.gov.cn/tjsj/202606/t20260624_3992154.htm" },
+      { "period": "2026-06", "amount": 20667, "url": "https://zwgls.mof.gov.cn/tjsj/202607/t20260727_3994357.htm" },
+      { "period": "2026-07", "amount": 24080, "url": "https://zwgls.mof.gov.cn/tjsj/202609/t20260909_3997013.htm" },
+      { "period": "2026-08", "amount": 29293, "url": "https://zwgls.mof.gov.cn/tjsj/202609/t20260924_3998108.htm" }
+    ]
+  },
+  "deficitTarget": {
+    "basis": "当年全国一般公共预算赤字率预算目标，非实际执行值，单位%",
+    "rows": [
+      {
+        "year": 2022,
+        "target": 2.8,
+        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202203/t20220314_3794760.htm"
+      },
+      {
+        "year": 2023,
+        "target": 3.0,
+        "url": "https://www.mof.gov.cn/gkml/caizhengshuju/202303/t20230316_3872867.htm"
+      },
+      {
+        "year": 2024,
+        "target": 3.0,
+        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202403/t20240314_3930581.htm"
+      },
+      {
+        "year": 2025,
+        "target": 4.0,
+        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202503/t20250314_3959885.htm"
+      },
+      {
+        "year": 2026,
+        "target": 4.0,
+        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260316_3985331.htm"
+      }
+    ]
+  },
+  "imfDeficit": {
+    "basis": "IMF WEO 2026年4月版广义政府净借入占GDP比重取正值；与中国预算赤字率目标口径不同，不可直接相减；原表最新实际年度为2024年，2025年及以后为估计或预测，单位%",
+    "source": "https://data.imf.org/-/media/iData/External-Storage/Documents/2F78EE59F79143A7921E5E203D3AAA80/en/WEOApr2026all.xlsx",
+    "rows": [
+      {
+        "year": 2010,
+        "deficit": 0.356
+      },
+      {
+        "year": 2011,
+        "deficit": 0.096
+      },
+      {
+        "year": 2012,
+        "deficit": 0.297
+      },
+      {
+        "year": 2013,
+        "deficit": 0.823
+      },
+      {
+        "year": 2014,
+        "deficit": 0.672
+      },
+      {
+        "year": 2015,
+        "deficit": 2.5
+      },
+      {
+        "year": 2016,
+        "deficit": 3.326
+      },
+      {
+        "year": 2017,
+        "deficit": 3.339
+      },
+      {
+        "year": 2018,
+        "deficit": 4.202
+      },
+      {
+        "year": 2019,
+        "deficit": 6.005
+      },
+      {
+        "year": 2020,
+        "deficit": 9.563
+      },
+      {
+        "year": 2021,
+        "deficit": 5.902
+      },
+      {
+        "year": 2022,
+        "deficit": 7.319
+      },
+      {
+        "year": 2023,
+        "deficit": 6.708
+      },
+      {
+        "year": 2024,
+        "deficit": 7.108
+      },
+      {
+        "year": 2025,
+        "deficit": 7.868
+      },
+      {
+        "year": 2026,
+        "deficit": 8.153
+      },
+      {
+        "year": 2027,
+        "deficit": 8.358
+      },
+      {
+        "year": 2028,
+        "deficit": 8.208
+      },
+      {
+        "year": 2029,
+        "deficit": 8.031
+      },
+      {
+        "year": 2030,
+        "deficit": 7.976
+      },
+      {
+        "year": 2031,
+        "deficit": 8.014
+      }
+    ]
+  },
+  "mlfNote": {
+    "text": "2025年3月起中期借贷便利改为多重价位中标，不再有统一中标利率；不把MLF价格与LPR续成一条可比曲线。",
+    "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/f5c4690f2cbd40918bf24c2d39ac58af/2025091218344076234/2025081517321679368.pdf"
+  }
+}

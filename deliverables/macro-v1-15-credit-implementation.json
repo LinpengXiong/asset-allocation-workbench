@@ -1,0 +1,2519 @@
+{
+  "versionCandidate": "V1.15",
+  "status": "用户授权实施；节点/证据矩阵仍为研究试行，不声称回测最优",
+  "rules": [
+    {
+      "id": "F01",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -6000,
+            1
+          ],
+          [
+            -3000,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3000,
+            4
+          ],
+          [
+            6000,
+            5
+          ]
+        ],
+        "description": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。 原单位/口径/权重不变；节点间连续、外侧截断1—5，加权不先取整。"
+      },
+      "scoringBasis": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。 节点：-6000→1分；-3000→2分；0→3分；3000→4分；6000→5分。固定亿元节点仅为当前研究窗口的解释性尺度；累计差分保留原始舍入误差，不以零/负新增额作同比比率分母。",
+      "methods": [
+        "既有数据核验及派生复算不变；仅将数值节点之间按直线连接，区间外截断1—5。",
+        "使用六位统一复算精度，先算单项内部得分再加权；展示小数不代表原始数据更精确。",
+        "固定亿元节点仅为当前研究窗口的解释性尺度；累计差分保留原始舍入误差，不以零/负新增额作同比比率分母。"
+      ],
+      "requirements": [
+        "录入period及经核验的latestAvailablePeriod，两者一致；不以核验日冒充统计期，不把时效上限内的数据自动当最新。",
+        "记录原发布方originalPublisher、原表sourceUrl与releaseDate，verifiedAt不早于发布日期且不晚于评价截止日；缺证据留空。",
+        "主观察unit=亿元，basis=近3月当月新增额同比多增，按月度核验；月度3个月、季度6个月仅为拒绝明显过期的上限，特殊预算及有效政策另按复核门槛。",
+        "来源依次官方原始发布、Wind、财新；后两级另存sourceAudit中的原发布方、seriesCode、officialFallbackReason、crossCheckNote及可得日；财新另存windFallbackReason，证明未跳过Wind，不混口径或补估值。",
+        "components保存上年对应3个月与本期连续3个月共6个householdLong原值；unit=亿元、basis=当月新增。",
+        "本期3月合计减上年3月合计，复算值须与录入一致；不得写成同比增长率。",
+        "累计转单月仅限同年同口径差分，留舍入差异，不跨年相减。",
+        "连续评分按scoring.anchors及复算原值，不用输入舍入值改变得分；节点前/等于/后须连续，外部截断1—5。",
+        "三个月同比多增0亿元对应3分；绝对金额节点非永久安全线，记录原始舍入误差及规模局限。"
+      ]
+    },
+    {
+      "id": "F02",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -10000,
+            1
+          ],
+          [
+            -5000,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            5000,
+            4
+          ],
+          [
+            10000,
+            5
+          ]
+        ],
+        "description": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。 原单位/口径/权重不变；节点间连续、外侧截断1—5，加权不先取整。"
+      },
+      "scoringBasis": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。 节点：-10000→1分；-5000→2分；0→3分；5000→4分；10000→5分。固定亿元节点仅为当前研究窗口的解释性尺度；累计差分保留原始舍入误差，不以零/负新增额作同比比率分母。",
+      "methods": [
+        "既有数据核验及派生复算不变；仅将数值节点之间按直线连接，区间外截断1—5。",
+        "使用六位统一复算精度，先算单项内部得分再加权；展示小数不代表原始数据更精确。",
+        "固定亿元节点仅为当前研究窗口的解释性尺度；累计差分保留原始舍入误差，不以零/负新增额作同比比率分母。"
+      ],
+      "requirements": [
+        "录入period及经核验的latestAvailablePeriod，两者一致；不以核验日冒充统计期，不把时效上限内的数据自动当最新。",
+        "记录原发布方originalPublisher、原表sourceUrl与releaseDate，verifiedAt不早于发布日期且不晚于评价截止日；缺证据留空。",
+        "主观察unit=亿元，basis=近3月当月新增额同比多增，按月度核验；月度3个月、季度6个月仅为拒绝明显过期的上限，特殊预算及有效政策另按复核门槛。",
+        "来源依次官方原始发布、Wind、财新；后两级另存sourceAudit中的原发布方、seriesCode、officialFallbackReason、crossCheckNote及可得日；财新另存windFallbackReason，证明未跳过Wind，不混口径或补估值。",
+        "components保存上年对应3个月与本期连续3个月共6个enterpriseLong原值；unit=亿元、basis=当月新增。",
+        "复算两组当月新增额合计差；企（事）业单位包括机关团体，不能写成纯私人企业或资本开支。",
+        "累计转单月仅限同年同口径差分，留舍入差异，不跨年相减。",
+        "连续评分按scoring.anchors及复算原值，不用输入舍入值改变得分；节点前/等于/后须连续，外部截断1—5。",
+        "三个月同比多增0亿元对应3分；绝对金额节点非永久安全线，记录原始舍入误差及规模局限。"
+      ]
+    },
+    {
+      "id": "F07",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        "description": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。 原单位/口径/权重不变；节点间连续、外侧截断1—5，加权不先取整。"
+      },
+      "scoringBasis": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。 节点：2→1分；4→2分；6→3分；8→4分；10→5分。剔除政府债仍含国企/平台及股权等，并非纯私人信用；债务置换可机械改变剩余量，需核对口径事件。",
+      "methods": [
+        "既有数据核验及派生复算不变；仅将数值节点之间按直线连接，区间外截断1—5。",
+        "使用六位统一复算精度，先算单项内部得分再加权；展示小数不代表原始数据更精确。",
+        "剔除政府债仍含国企/平台及股权等，并非纯私人信用；债务置换可机械改变剩余量，需核对口径事件。"
+      ],
+      "requirements": [
+        "录入period及经核验的latestAvailablePeriod，两者一致；不以核验日冒充统计期，不把时效上限内的数据自动当最新。",
+        "记录原发布方originalPublisher、原表sourceUrl与releaseDate，verifiedAt不早于发布日期且不晚于评价截止日；缺证据留空。",
+        "主观察unit=%，basis=剔除政府债后月末存量同比，按月度核验；月度3个月、季度6个月仅为拒绝明显过期的上限，特殊预算及有效政策另按复核门槛。",
+        "来源依次官方原始发布、Wind、财新；后两级另存sourceAudit中的原发布方、seriesCode、officialFallbackReason、crossCheckNote及可得日；财新另存windFallbackReason，证明未跳过Wind，不混口径或补估值。",
+        "components保存上年同月、本月两期同口径社融总存量totalStock及政府债governmentBondStock，共4个原始金额。",
+        "每期unit=万亿元、basis=同口径月末存量，value=总存量减政府债；派生当前净存量/上年净存量减1的百分比。",
+        "核验口径修订和两期出处；剔除政府债不等于剔除国企，不冒称纯私人融资。",
+        "连续评分按scoring.anchors及复算原值，不用输入舍入值改变得分；节点前/等于/后须连续，外部截断1—5。"
+      ]
+    },
+    {
+      "id": "F08",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -1,
+            1
+          ],
+          [
+            -0.3,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0.3,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "description": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。 原单位/口径/权重不变；节点间连续、外侧截断1—5，加权不先取整。"
+      },
+      "scoringBasis": "原始复算值按节点线性插值，外侧截断1—5；当前资产配置试行锚点，非回测最优。 节点：-1→1分；-0.3→2分；0→3分；0.3→4分；1→5分。剔除政府债仍含国企/平台及股权等，并非纯私人信用；债务置换可机械改变剩余量，需核对口径事件。",
+      "methods": [
+        "既有数据核验及派生复算不变；仅将数值节点之间按直线连接，区间外截断1—5。",
+        "使用六位统一复算精度，先算单项内部得分再加权；展示小数不代表原始数据更精确。",
+        "剔除政府债仍含国企/平台及股权等，并非纯私人信用；债务置换可机械改变剩余量，需核对口径事件。"
+      ],
+      "requirements": [
+        "录入period及经核验的latestAvailablePeriod，两者一致；不以核验日冒充统计期，不把时效上限内的数据自动当最新。",
+        "记录原发布方originalPublisher、原表sourceUrl与releaseDate，verifiedAt不早于发布日期且不晚于评价截止日；缺证据留空。",
+        "主观察unit=百分点，basis=剔除政府债后存量同比近3月变动，按月度核验；月度3个月、季度6个月仅为拒绝明显过期的上限，特殊预算及有效政策另按复核门槛。",
+        "来源依次官方原始发布、Wind、财新；后两级另存sourceAudit中的原发布方、seriesCode、officialFallbackReason、crossCheckNote及可得日；财新另存windFallbackReason，证明未跳过Wind，不混口径或补估值。",
+        "components按较早基期、对应同比期、较晚基期、对应同比期保存4期总存量和政府债存量，共8个原始金额。",
+        "各期unit=万亿元、basis=同口径月末存量，value=总存量减政府债；分别复算当前及3个月前同比再作差，单位百分点。",
+        "复核月份相隔3个月、同比比较各相隔12个月；不是流量/GDP信用脉冲，与F07共源不算独立证据。",
+        "连续评分按scoring.anchors及复算原值，不用输入舍入值改变得分；节点前/等于/后须连续，外部截断1—5。"
+      ]
+    },
+    {
+      "id": "F09",
+      "scoring": {
+        "method": "evidence-matrix",
+        "step": 0.5,
+        "schemaVersion": 1,
+        "primaryReference": "BIS-emerging-ex-China",
+        "description": "0.5步长证据矩阵：2分=本国明显资产/现金回收约束且收入盈利承接不足，非必须危机；2.5分=新兴相对负担与本国压力联合、被正收入/盈利/成本反证部分缓冲；3分=完整混合信号且不满足明显约束。国际百分位不单独打分，缺必要证据留空。",
+        "proxyOnlyMaxScore": 3,
+        "states": [
+          {
+            "score": 1,
+            "code": "severe-distress",
+            "label": "严重偿付失衡",
+            "description": "当前全国部门广覆盖实际偿付压力为广泛严重，收入与中位收入/盈利利润率均下降，且资产/回款两项不利。"
+          },
+          {
+            "score": 1.5,
+            "code": "broad-unmitigated-pressure",
+            "label": "明显未缓冲压力",
+            "description": "当前广覆盖直接偿付压力明显但非危机，收入/盈利两项下降、资产/回款两项不利，且新贷成本上升，缓冲不足。"
+          },
+          {
+            "score": 2,
+            "code": "material-constraints",
+            "label": "明显约束",
+            "description": "居民缩表伴消费贷款与住房压力，或企业同比杠杆增加且回款/库存变差；收入及中位收入/盈利利润率均下降。2分不以危机已发生为前提。"
+          },
+          {
+            "score": 2.5,
+            "code": "constraints-partly-mitigated",
+            "label": "约束被部分缓冲",
+            "description": "BIS新兴相对负担高与本国缩表/资产压力（居民）或加杠杆/回款压力（企业）联合；收入/盈利增速正且中位收入/利润率不降，反证部分缓冲。百分位单独不触发。"
+          },
+          {
+            "score": 3,
+            "code": "mixed-evidence",
+            "label": "证据完整的混合中性",
+            "description": "必要组完整但不满足明显约束组合或改善门槛，正负/零信号形成混合；绝不以证据缺口自动中性。"
+          },
+          {
+            "score": 3.5,
+            "code": "capacity-improving",
+            "label": "直接偿债改善",
+            "description": "负担同比不升，收入/盈利支持，资产/回款无显著不利，同部门当前实际DSR较上年改善，不能用新贷利率代替。"
+          },
+          {
+            "score": 4,
+            "code": "verified-capacity-improvement",
+            "label": "连续两季改善",
+            "description": "满足3.5且至少连续两季同部门直接偿债数据改善，保留原值/范围/日期，并复核资产与分布反证。"
+          },
+          {
+            "score": 4.5,
+            "code": "durable-constraint-relief",
+            "label": "尾部与广度改善",
+            "description": "满足4且当期尾部及多群体/多行业改善有独立原始证据。"
+          },
+          {
+            "score": 5,
+            "code": "strong-sustainable-capacity",
+            "label": "持续健康承接",
+            "description": "满足4.5并由至少四个连续可比季度直接偿债原值证明持续承接，不因低杠杆/排名单独高分。"
+          }
+        ],
+        "evidenceRequirements": [
+          "必要国内/国际/收入/偿债代理/压力/反证组有原始资料，缺一项不计分。",
+          "国际同表同季15新兴排中国；百分位仅定义相对负担背景，不直接决定分数。",
+          "代理only最高3分；3.5以上须同部门实际偿债、4以上另须连续期与尾部广度证据。"
+        ]
+      },
+      "grades": [
+        "1分：广覆盖严重偿付/现金流失衡且有直接当期实证；1.5分：多维明显压力、缓冲不足，非必须系统危机。",
+        "2分：本国杠杆/资产/回款约束且收入盈利承接不足；2.5分：联合约束被正收入/盈利/成本反证部分缓冲。",
+        "3分：完整正反证的混合中性，不因资料缺失默认产生。",
+        "3.5分：负担趋稳/下降、收入与同部门实际偿债改善；4分：连续两季度且直接偿债/回款实证支持。",
+        "4.5分：当期尾部及多群体改善；5分：持续多维承接，非低比率或国际排名单独给高分。"
+      ],
+      "scoringBasis": "0.5步长证据矩阵：2分=本国明显资产/现金回收约束且收入盈利承接不足，非必须危机；2.5分=新兴相对负担与本国压力联合、被正收入/盈利/成本反证部分缓冲；3分=完整混合信号且不满足明显约束。国际百分位不单独打分，缺必要证据留空。 1/1.5须广覆盖实际压力；3.5以上须同部门实际偿债，不是新贷定价。最高档还须持续性和分布证据。",
+      "methods": [
+        "0.5步长证据矩阵：2分=本国明显资产/现金回收约束且收入盈利承接不足，非必须危机；2.5分=新兴相对负担与本国压力联合、被正收入/盈利/成本反证部分缓冲；3分=完整混合信号且不满足明显约束。国际百分位不单独打分，缺必要证据留空。",
+        "国内本季/上年同季/前季/债务增速及同版TTM现价GDP背景分别核验；国际15新兴排中国同表同季名单和原值可复算。",
+        "收入/盈利、偿债代理、资产/回款压力及正反证均留原值单位/统计期/原机构/原链接/发布日/核验日。",
+        "本国CNBS与国际BIS不得混排行；不得将BIS合计DSR分配居民或企业。代理-only最高3分，缺必要组不计分。"
+      ],
+      "requirements": [
+        "录入period及经核验的latestAvailablePeriod，两者一致；不以核验日冒充统计期，不把时效上限内的数据自动当最新。",
+        "记录原发布方originalPublisher、原表sourceUrl与releaseDate，verifiedAt不早于发布日期且不晚于评价截止日；缺证据留空。",
+        "主观察unit=1—5分，basis=季度杠杆约束研判，按季度核验；月度3个月、季度6个月仅为拒绝明显过期的上限，特殊预算及有效政策另按复核门槛。",
+        "来源依次官方原始发布、Wind、财新；后两级另存sourceAudit中的原发布方、seriesCode、officialFallbackReason、crossCheckNote及可得日；财新另存windFallbackReason，证明未跳过Wind，不混口径或补估值。",
+        "leverageComponents保存上年同季、本季householdLeverage原值，unit=%、basis=部门债务/过去四季名义GDP；主观察leverageRatio与yearAgoLeverageRatio须一致。",
+        "leverageReview须有reviewDate、scoreReason及nominalGdpEffect、incomeOrProfit、debtService、counterEvidence四组结构化证据。",
+        "nominalGdpEffect留debtGrowthPct、nominalGdpGrowthPct和revisionVersion；每组须summary及非空evidence，逐条留指标、期别、数值单位或明确事实、原发布方、链接、发布日期。",
+        "居民收入承接、偿债负担、分母效应与反向证据共同支持1—5分、允许0.5步长；不以杠杆越低越好机械评分。",
+        "必须有scoringMatrix：schemaVersion=1、reviewDate、domestic、international、incomeOrProfit、servicing、pressure、counterEvidence及匹配状态；computedScore与事实门槛复算一致。",
+        "主参照BIS新兴15经济体排除中国，H/N同表同季同单位同版；全部/发达仅敏感性，百分位不是安全线。",
+        "正反证引用原始记录，不能泛泛文字过关；代理-only不支持3.5—5，必要证据缺口不计分。"
+      ]
+    },
+    {
+      "id": "F10",
+      "scoring": {
+        "method": "evidence-matrix",
+        "step": 0.5,
+        "schemaVersion": 1,
+        "primaryReference": "BIS-emerging-ex-China",
+        "description": "0.5步长证据矩阵：2分=本国明显资产/现金回收约束且收入盈利承接不足，非必须危机；2.5分=新兴相对负担与本国压力联合、被正收入/盈利/成本反证部分缓冲；3分=完整混合信号且不满足明显约束。国际百分位不单独打分，缺必要证据留空。",
+        "proxyOnlyMaxScore": 3,
+        "states": [
+          {
+            "score": 1,
+            "code": "severe-distress",
+            "label": "严重偿付失衡",
+            "description": "当前全国部门广覆盖实际偿付压力为广泛严重，收入与中位收入/盈利利润率均下降，且资产/回款两项不利。"
+          },
+          {
+            "score": 1.5,
+            "code": "broad-unmitigated-pressure",
+            "label": "明显未缓冲压力",
+            "description": "当前广覆盖直接偿付压力明显但非危机，收入/盈利两项下降、资产/回款两项不利，且新贷成本上升，缓冲不足。"
+          },
+          {
+            "score": 2,
+            "code": "material-constraints",
+            "label": "明显约束",
+            "description": "居民缩表伴消费贷款与住房压力，或企业同比杠杆增加且回款/库存变差；收入及中位收入/盈利利润率均下降。2分不以危机已发生为前提。"
+          },
+          {
+            "score": 2.5,
+            "code": "constraints-partly-mitigated",
+            "label": "约束被部分缓冲",
+            "description": "BIS新兴相对负担高与本国缩表/资产压力（居民）或加杠杆/回款压力（企业）联合；收入/盈利增速正且中位收入/利润率不降，反证部分缓冲。百分位单独不触发。"
+          },
+          {
+            "score": 3,
+            "code": "mixed-evidence",
+            "label": "证据完整的混合中性",
+            "description": "必要组完整但不满足明显约束组合或改善门槛，正负/零信号形成混合；绝不以证据缺口自动中性。"
+          },
+          {
+            "score": 3.5,
+            "code": "capacity-improving",
+            "label": "直接偿债改善",
+            "description": "负担同比不升，收入/盈利支持，资产/回款无显著不利，同部门当前实际DSR较上年改善，不能用新贷利率代替。"
+          },
+          {
+            "score": 4,
+            "code": "verified-capacity-improvement",
+            "label": "连续两季改善",
+            "description": "满足3.5且至少连续两季同部门直接偿债数据改善，保留原值/范围/日期，并复核资产与分布反证。"
+          },
+          {
+            "score": 4.5,
+            "code": "durable-constraint-relief",
+            "label": "尾部与广度改善",
+            "description": "满足4且当期尾部及多群体/多行业改善有独立原始证据。"
+          },
+          {
+            "score": 5,
+            "code": "strong-sustainable-capacity",
+            "label": "持续健康承接",
+            "description": "满足4.5并由至少四个连续可比季度直接偿债原值证明持续承接，不因低杠杆/排名单独高分。"
+          }
+        ],
+        "evidenceRequirements": [
+          "必要国内/国际/收入/偿债代理/压力/反证组有原始资料，缺一项不计分。",
+          "国际同表同季15新兴排中国；百分位仅定义相对负担背景，不直接决定分数。",
+          "代理only最高3分；3.5以上须同部门实际偿债、4以上另须连续期与尾部广度证据。"
+        ]
+      },
+      "grades": [
+        "1分：广覆盖严重偿付/现金流失衡且有直接当期实证；1.5分：多维明显压力、缓冲不足，非必须系统危机。",
+        "2分：本国杠杆/资产/回款约束且收入盈利承接不足；2.5分：联合约束被正收入/盈利/成本反证部分缓冲。",
+        "3分：完整正反证的混合中性，不因资料缺失默认产生。",
+        "3.5分：负担趋稳/下降、收入与同部门实际偿债改善；4分：连续两季度且直接偿债/回款实证支持。",
+        "4.5分：当期尾部及多群体改善；5分：持续多维承接，非低比率或国际排名单独给高分。"
+      ],
+      "scoringBasis": "0.5步长证据矩阵：2分=本国明显资产/现金回收约束且收入盈利承接不足，非必须危机；2.5分=新兴相对负担与本国压力联合、被正收入/盈利/成本反证部分缓冲；3分=完整混合信号且不满足明显约束。国际百分位不单独打分，缺必要证据留空。 1/1.5须广覆盖实际压力；3.5以上须同部门实际偿债，不是新贷定价。最高档还须持续性和分布证据。",
+      "methods": [
+        "0.5步长证据矩阵：2分=本国明显资产/现金回收约束且收入盈利承接不足，非必须危机；2.5分=新兴相对负担与本国压力联合、被正收入/盈利/成本反证部分缓冲；3分=完整混合信号且不满足明显约束。国际百分位不单独打分，缺必要证据留空。",
+        "国内本季/上年同季/前季/债务增速及同版TTM现价GDP背景分别核验；国际15新兴排中国同表同季名单和原值可复算。",
+        "收入/盈利、偿债代理、资产/回款压力及正反证均留原值单位/统计期/原机构/原链接/发布日/核验日。",
+        "本国CNBS与国际BIS不得混排行；不得将BIS合计DSR分配居民或企业。代理-only最高3分，缺必要组不计分。"
+      ],
+      "requirements": [
+        "录入period及经核验的latestAvailablePeriod，两者一致；不以核验日冒充统计期，不把时效上限内的数据自动当最新。",
+        "记录原发布方originalPublisher、原表sourceUrl与releaseDate，verifiedAt不早于发布日期且不晚于评价截止日；缺证据留空。",
+        "主观察unit=1—5分，basis=季度杠杆约束研判，按季度核验；月度3个月、季度6个月仅为拒绝明显过期的上限，特殊预算及有效政策另按复核门槛。",
+        "来源依次官方原始发布、Wind、财新；后两级另存sourceAudit中的原发布方、seriesCode、officialFallbackReason、crossCheckNote及可得日；财新另存windFallbackReason，证明未跳过Wind，不混口径或补估值。",
+        "leverageComponents保存上年同季、本季corporateLeverage原值，unit=%、basis=部门债务/过去四季名义GDP；主观察leverageRatio与yearAgoLeverageRatio须一致。",
+        "leverageReview须有reviewDate、scoreReason及nominalGdpEffect、incomeOrProfit、debtService、counterEvidence四组结构化证据。",
+        "nominalGdpEffect留debtGrowthPct、nominalGdpGrowthPct和revisionVersion；每组须summary及非空evidence，逐条留指标、期别、数值单位或明确事实、原发布方、链接、发布日期。",
+        "核验非金融企业含国企的范围；工业利润不能替代全部企业现金流，偿债、盈利与反向证据共同支持1—5分、允许0.5步长。",
+        "必须有scoringMatrix：schemaVersion=1、reviewDate、domestic、international、incomeOrProfit、servicing、pressure、counterEvidence及匹配状态；computedScore与事实门槛复算一致。",
+        "主参照BIS新兴15经济体排除中国，H/N同表同季同单位同版；全部/发达仅敏感性，百分位不是安全线。",
+        "正反证引用原始记录，不能泛泛文字过关；代理-only不支持3.5—5，必要证据缺口不计分。"
+      ]
+    },
+    {
+      "id": "F05",
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -15,
+            1
+          ],
+          [
+            -10,
+            1.5
+          ],
+          [
+            -5,
+            2.5
+          ],
+          [
+            -2,
+            3.5
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            3.5
+          ],
+          [
+            8,
+            2.5
+          ],
+          [
+            12,
+            1.5
+          ],
+          [
+            16,
+            1
+          ]
+        ],
+        "description": "按既有目标型区间试行连续化，0—3为平台但并非经回测最优带；新口径样本不足，不把旧M1长历史强接。 原单位/口径/权重不变；节点间连续、外侧截断1—5，加权不先取整。"
+      },
+      "scoringBasis": "按既有目标型区间试行连续化，0—3为平台但并非经回测最优带；新口径样本不足，不把旧M1长历史强接。 节点：-15→1分；-10→1.5分；-5→2.5分；-2→3.5分；0→5分；3→5分；5→3.5分；8→2.5分；12→1.5分；16→1分。新M1含个人活期及支付备付金，不把剪刀差单独叫企业资金活化；目标带为研究试行。",
+      "methods": [
+        "既有数据核验及派生复算不变；仅将数值节点之间按直线连接，区间外截断1—5。",
+        "使用六位统一复算精度，先算单项内部得分再加权；展示小数不代表原始数据更精确。",
+        "新M1含个人活期及支付备付金，不把剪刀差单独叫企业资金活化；目标带为研究试行。"
+      ],
+      "requirements": [
+        "录入period及经核验的latestAvailablePeriod，两者一致；不以核验日冒充统计期，不把时效上限内的数据自动当最新。",
+        "记录原发布方originalPublisher、原表sourceUrl与releaseDate，verifiedAt不早于发布日期且不晚于评价截止日；缺证据留空。",
+        "主观察unit=百分点，basis=新口径同月同比差，按月度核验；月度3个月、季度6个月仅为拒绝明显过期的上限，特殊预算及有效政策另按复核门槛。",
+        "来源依次官方原始发布、Wind、财新；后两级另存sourceAudit中的原发布方、seriesCode、officialFallbackReason、crossCheckNote及可得日；财新另存windFallbackReason，证明未跳过Wind，不混口径或补估值。",
+        "components按m1New、m2顺序保存同月原值，unit=%、basis=月末余额同比，派生值为M1减M2、单位百分点。",
+        "仅用2024年1月起新口径M1的官方回溯或正式发布；新口径来源应为2025年起发布，不连接旧M1。",
+        "不只解释为企业活期变化；个人活期及客户备付金的范围变化须在说明中保留。",
+        "连续评分按scoring.anchors及复算原值，不用输入舍入值改变得分；节点前/等于/后须连续，外部截断1—5。"
+      ]
+    }
+  ],
+  "observations": {
+    "F09": {
+      "value": 2.5,
+      "period": "2026-Q2",
+      "unit": "1—5分",
+      "basis": "季度杠杆约束研判",
+      "originalPublisher": "国家资产负债表研究中心",
+      "latestAvailablePeriod": "2026-Q2",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+      "sourceDocumentUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+      "releaseDate": "2026-07-30",
+      "rationale": "新兴主参照中相对负担偏高，与本国住房财富/消费信贷缩表共同构成约束；收入正增与减债提供缓冲，因此为2.5而非2或更低。缺DSR不加扣分，只限制高分结论。",
+      "leverageRatio": 57.7,
+      "yearAgoLeverageRatio": 61.1,
+      "leverageComponents": [
+        {
+          "period": "2025-Q2",
+          "value": 61.1,
+          "unit": "%",
+          "series": "householdLeverage",
+          "basis": "部门债务/过去四季名义GDP",
+          "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4728",
+          "releaseDate": "2025-07-30",
+          "originalPublisher": "国家资产负债表研究中心"
+        },
+        {
+          "period": "2026-Q2",
+          "value": 57.7,
+          "unit": "%",
+          "series": "householdLeverage",
+          "basis": "部门债务/过去四季名义GDP",
+          "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+          "releaseDate": "2026-07-30",
+          "originalPublisher": "国家资产负债表研究中心"
+        }
+      ],
+      "leverageReview": {
+        "reviewDate": "2026-10-11",
+        "scoreReason": "新兴主参照中相对负担偏高，与本国住房财富/消费信贷缩表共同构成约束；收入正增与减债提供缓冲，因此为2.5而非2或更低。缺DSR不加扣分，只限制高分结论。",
+        "nominalGdpEffect": {
+          "debtGrowthPct": -1.3,
+          "nominalGdpGrowthPct": 4.60418,
+          "revisionVersion": "杠杆/债务：NIFD-2026-Q2-2026-07-30；分母背景：2026-09-15-SDDS（GDP两期同版）",
+          "summary": "居民债务同比下降而过去四季名义GDP增长，比率下降不全等于借债空间改善；名义分母扩大也促降比率。",
+          "denominatorEvidence": {
+            "priorTtm": 1374816,
+            "currentTtm": 1438115,
+            "unit": "亿元",
+            "nominalGdpGrowthPct": 4.60418,
+            "formula": "[(2025Q3+2025Q4+2026Q1+2026Q2)/(2024Q3+2024Q4+2025Q1+2025Q2)−1]×100",
+            "components": [
+              {
+                "metric": "季度现价GDP",
+                "period": "2024-Q3",
+                "value": 341443,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2024-Q4",
+                "value": 373512,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q1",
+                "value": 318466,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q2",
+                "value": 341395,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q3",
+                "value": 354500,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q4",
+                "value": 387911,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2026-Q1",
+                "value": 334193,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2026-Q2",
+                "value": 361511,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              }
+            ],
+            "revisionVersion": "2026-09-15-SDDS同表修订版",
+            "limitation": "GDP两组均取同一现价表；NIFD杠杆与债务增速是7月30日发布的Q2版本，四舍五入及后续GDP修订会使精确恒等式出现小差，不能用更新分母冒称重算了原报告杠杆。这里只说明分母支持方向。"
+          },
+          "evidence": [
+            {
+              "metric": "居民债务同比",
+              "period": "2026-Q2",
+              "value": -1.3,
+              "unit": "%",
+              "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+              "releaseDate": "2026-07-30",
+              "originalPublisher": "国家资产负债表研究中心",
+              "basis": "报告原值"
+            },
+            {
+              "metric": "过去四季现价GDP同比（复算）",
+              "period": "2026-Q2",
+              "value": 4.60418,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+              "releaseDate": "2026-09-15",
+              "originalPublisher": "国家统计局",
+              "basis": "同版TTM现价GDP，同比，不用单季5.9%"
+            }
+          ]
+        },
+        "incomeOrProfit": {
+          "summary": "上半年收入平均增速为正，但这是累计人均数据，不是负债家庭或本季新增贷款人群收入；不据此断言偿债能力普遍改善。",
+          "evidence": [
+            {
+              "metric": "全国居民人均可支配收入名义累计同比",
+              "period": "2026-Q2",
+              "value": 5.2,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "originalPublisher": "国家统计局",
+              "basis": "上半年累计"
+            },
+            {
+              "metric": "全国居民人均可支配收入实际累计同比",
+              "period": "2026-Q2",
+              "value": 4.2,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "originalPublisher": "国家统计局",
+              "basis": "上半年累计"
+            }
+          ]
+        },
+        "debtService": {
+          "summary": "6月个人住房新发放利率是增量贷款定价代理，不代表存量家庭实际偿债负担。房贷余额继续收缩支持资产负债表承压；未获取全体居民债务服务/收入比，不能把降息直接判为已修复。",
+          "evidence": [
+            {
+              "metric": "6月新发放个人住房贷款加权平均利率",
+              "period": "2026-06",
+              "value": 3.05,
+              "unit": "%",
+              "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+              "releaseDate": "2026-08-12",
+              "originalPublisher": "中国人民银行",
+              "basis": "新发放，非存量贷款；表4，PDF第14页/印刷第7页"
+            },
+            {
+              "metric": "人民币个人住房贷款余额同比",
+              "period": "2026-Q2",
+              "value": -3.8,
+              "unit": "%",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026072719364116939/index.html",
+              "releaseDate": "2026-07-28",
+              "originalPublisher": "中国人民银行",
+              "basis": "季度末余额同比"
+            },
+            {
+              "metric": "人民币个人住房贷款上半年减少",
+              "period": "2026-Q2",
+              "value": 7163,
+              "unit": "亿元",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026072719364116939/index.html",
+              "releaseDate": "2026-07-28",
+              "originalPublisher": "中国人民银行",
+              "basis": "累计减少量；不是当季月度值"
+            }
+          ]
+        },
+        "counterEvidence": {
+          "summary": "正向反证为收入与工资增长，不宜仅凭缩表判极差；负向反证为消费支出增速低于收入、信用需求收缩。不把这些代理机械加分，也不把它们与其他评分项二次加权。",
+          "evidence": [
+            {
+              "metric": "全国居民人均工资性收入累计同比",
+              "period": "2026-Q2",
+              "value": 5.3,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "originalPublisher": "国家统计局",
+              "basis": "上半年累计"
+            },
+            {
+              "metric": "全国居民人均消费支出名义累计同比",
+              "period": "2026-Q2",
+              "value": 3.7,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "originalPublisher": "国家统计局",
+              "basis": "上半年累计"
+            },
+            {
+              "metric": "本外币住户贷款余额同比",
+              "period": "2026-Q2",
+              "value": -1.3,
+              "unit": "%",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026072719364116939/index.html",
+              "releaseDate": "2026-07-28",
+              "originalPublisher": "中国人民银行",
+              "basis": "本外币，不混作F01人民币流量"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "本季杠杆比率为2026-Q2；10月11日复核使用已发布最新辅证，不伪造Q3杠杆。",
+        "试行质性评分，不是算法推导的最优评级或买卖信号。",
+        "公开数据缺少全部门债务服务率与负债分布，融资成本和回款只作为代理；不把信息缺口等同事实恶化。"
+      ],
+      "evidenceConflicts": [
+        "NIFD叙述房贷增速-3.7%、房贷利率3.06%；央行原始贷款投向/利率表分别-3.8%、3.05%，本候选采用央行原值并保留差异。"
+      ],
+      "scoringMatrix": {
+        "schemaVersion": 1,
+        "method": "evidence-matrix",
+        "step": 0.5,
+        "sector": "households",
+        "reviewDate": "2026-10-11",
+        "objective": "居民资产负债表对中长期信用传导/资产配置的约束；不是单独违约风险或宏观繁荣分",
+        "primaryReference": "BIS-emerging-ex-China",
+        "scoreReason": "新兴主参照中相对负担偏高，与本国住房财富/消费信贷缩表共同构成约束；收入正增与减债提供缓冲，因此为2.5而非2或更低。缺DSR不加扣分，只限制高分结论。",
+        "computedScore": 2.5,
+        "matchedState": "constraints-partly-mitigated",
+        "domestic": {
+          "period": "2026-Q2",
+          "basis": "部门债务/过去四季名义GDP",
+          "vintageLimitation": "本国同部门使用CNBS两期原值；分母9月修订同表TTM仅作方向背景，不冒称精确重算7月公布杠杆。",
+          "current": {
+            "id": "currentLeverage",
+            "metric": "当季部门杠杆率",
+            "value": 57.7,
+            "unit": "%",
+            "period": "2026-Q2",
+            "basis": "部门债务/过去四季名义GDP",
+            "sourceUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+            "releaseDate": "2026-07-30",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "国家资产负债表研究中心",
+            "series": "householdLeverage",
+            "pdfPage": 5,
+            "printedPage": 1,
+            "latestAvailablePeriod": "2026-Q2"
+          },
+          "yearAgo": {
+            "id": "yearAgoLeverage",
+            "metric": "上年同季部门杠杆率",
+            "value": 61.1,
+            "unit": "%",
+            "period": "2025-Q2",
+            "basis": "部门债务/过去四季名义GDP",
+            "sourceUrl": "http://www.nifd.cn/Uploads/SeriesReport/e39bb5f0-0074-4e76-8eed-b0fe068d19c8.pdf",
+            "releaseDate": "2025-07-30",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "国家资产负债表研究中心",
+            "series": "householdLeverage",
+            "pdfPage": 5,
+            "printedPage": 1
+          },
+          "quarterAgo": {
+            "id": "quarterAgoLeverage",
+            "metric": "前季部门杠杆率",
+            "value": 59,
+            "unit": "%",
+            "period": "2026-Q1",
+            "basis": "部门债务/过去四季名义GDP",
+            "sourceUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+            "releaseDate": "2026-07-30",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "国家资产负债表研究中心",
+            "series": "householdLeverage",
+            "pdfPage": 5,
+            "printedPage": 1
+          },
+          "debtGrowth": {
+            "id": "departmentDebtGrowth",
+            "metric": "部门债务余额同比",
+            "value": -1.3,
+            "unit": "%",
+            "period": "2026-Q2",
+            "basis": "同部门债务余额同比，报告原值",
+            "sourceUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+            "releaseDate": "2026-07-30",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "国家资产负债表研究中心",
+            "series": "householdDebtGrowth",
+            "pdfPage": 5,
+            "printedPage": 1
+          },
+          "yearOnYearChangePp": -3.4,
+          "quarterOnQuarterChangePp": -1.3,
+          "nominalGdpEffect": {
+            "debtGrowthPct": -1.3,
+            "nominalGdpGrowthPct": 4.60418,
+            "revisionVersion": "杠杆/债务：NIFD-2026-Q2-2026-07-30；分母背景：2026-09-15-SDDS（GDP两期同版）",
+            "summary": "居民债务同比下降而过去四季名义GDP增长，比率下降不全等于借债空间改善；名义分母扩大也促降比率。",
+            "denominatorEvidence": {
+              "priorTtm": 1374816,
+              "currentTtm": 1438115,
+              "unit": "亿元",
+              "nominalGdpGrowthPct": 4.60418,
+              "formula": "[(2025Q3+2025Q4+2026Q1+2026Q2)/(2024Q3+2024Q4+2025Q1+2025Q2)−1]×100",
+              "components": [
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2024-Q3",
+                  "value": 341443,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2024-Q3",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2024-Q4",
+                  "value": 373512,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2024-Q4",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2025-Q1",
+                  "value": 318466,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2025-Q1",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2025-Q2",
+                  "value": 341395,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2025-Q2",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2025-Q3",
+                  "value": 354500,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2025-Q3",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2025-Q4",
+                  "value": 387911,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2025-Q4",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2026-Q1",
+                  "value": 334193,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2026-Q1",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2026-Q2",
+                  "value": 361511,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2026-Q2",
+                  "verifiedAt": "2026-10-11"
+                }
+              ],
+              "revisionVersion": "2026-09-15-SDDS同表修订版",
+              "limitation": "GDP两组均取同一现价表；NIFD杠杆与债务增速是7月30日发布的Q2版本，四舍五入及后续GDP修订会使精确恒等式出现小差，不能用更新分母冒称重算了原报告杠杆。这里只说明分母支持方向。"
+            },
+            "evidence": [
+              {
+                "metric": "居民债务同比",
+                "period": "2026-Q2",
+                "value": -1.3,
+                "unit": "%",
+                "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+                "releaseDate": "2026-07-30",
+                "originalPublisher": "国家资产负债表研究中心",
+                "basis": "报告原值"
+              },
+              {
+                "metric": "过去四季现价GDP同比（复算）",
+                "period": "2026-Q2",
+                "value": 4.60418,
+                "unit": "%",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "同版TTM现价GDP，同比，不用单季5.9%"
+              }
+            ]
+          }
+        },
+        "international": {
+          "period": "2026-Q1",
+          "latestAvailablePeriod": "2026-Q1",
+          "sector": "H",
+          "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+          "china": {
+            "id": "bis-CN-H",
+            "metric": "部门总信用/过去四季名义GDP",
+            "value": 57.5,
+            "unit": "%",
+            "period": "2026-Q1",
+            "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+            "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+            "releaseDate": "2026-09-14",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "Bank for International Settlements",
+            "country": "CN",
+            "sector": "H",
+            "queryKey": "Q..H+N.A.M.770.A",
+            "flow": "WS_TC",
+            "version": "2.0"
+          },
+          "peers": [
+            {
+              "id": "bis-AR-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 5.6,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "AR",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-TR-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 10.1,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "TR",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-ID-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 15.2,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "ID",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-MX-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 17.4,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "MX",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-HU-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 18.7,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "HU",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-RU-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 21,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "RU",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-PL-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 22.1,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "PL",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-CO-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 25.715,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "CO",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-SA-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 31.6,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "SA",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-ZA-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 33.7,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "ZA",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-BR-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 38,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "BR",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-CL-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 43.4,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "CL",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-IN-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 49.1,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "IN",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-MY-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 69.5,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "MY",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-TH-H",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 86.7,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "TH",
+              "sector": "H",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            }
+          ],
+          "classification": {
+            "countries": [
+              "AR",
+              "BR",
+              "CL",
+              "CO",
+              "HU",
+              "ID",
+              "IN",
+              "MX",
+              "MY",
+              "PL",
+              "RU",
+              "SA",
+              "TH",
+              "TR",
+              "ZA"
+            ],
+            "sourceUrl": "https://data.bis.org/topics/TOTAL_CREDIT",
+            "releaseDate": "2026-09-14",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "Bank for International Settlements"
+          },
+          "benchmark": {
+            "n": 15,
+            "median": 25.715,
+            "percentile": 86.66666666666667
+          },
+          "notSafetyThreshold": true,
+          "limitations": "仅新兴15个经济体等权且排除中国；全部43及发达27只作敏感性。国际共同期Q1滞后于国内Q2，BIS/CNBS部门和GDP版本不混排行，百分位不是危机线。",
+          "rawEvidenceFile": "deliverables/macro-v1-15-credit-evidence.json",
+          "rawCsvSha256": "7f5ce1471f9c64e8d3b5106bd1236d865672a0336430fa5893c5c6bdac33b90d"
+        },
+        "incomeOrProfit": {
+          "evidence": [
+            {
+              "id": "nominalIncomeGrowth",
+              "metric": "全国居民人均可支配收入名义累计同比",
+              "value": 5.2,
+              "unit": "%",
+              "period": "2026-Q2",
+              "basis": "上半年累计",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "全国居民",
+              "frequency": "季度"
+            },
+            {
+              "id": "medianIncomeGrowth",
+              "metric": "全国居民人均可支配收入中位数名义累计同比",
+              "value": 4.7,
+              "unit": "%",
+              "period": "2026-Q2",
+              "basis": "上半年累计",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "全国居民",
+              "frequency": "季度"
+            },
+            {
+              "id": "wageIncomeGrowth",
+              "metric": "全国居民人均工资性收入累计同比",
+              "value": 5.3,
+              "unit": "%",
+              "period": "2026-Q2",
+              "basis": "上半年累计",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "全国居民",
+              "frequency": "季度"
+            },
+            {
+              "id": "consumptionExpenditureGrowth",
+              "metric": "全国居民人均消费支出名义累计同比",
+              "value": 3.7,
+              "unit": "%",
+              "period": "2026-Q2",
+              "basis": "上半年累计",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "全国居民",
+              "frequency": "季度"
+            }
+          ],
+          "limitations": "全国人均收入非债务人加权收入；分布不修正公布债务/GDP，不能据均值消除尾部风险。"
+        },
+        "servicing": {
+          "evidence": [
+            {
+              "id": "newMortgageRate",
+              "metric": "新发放个人住房贷款加权平均利率",
+              "value": 3.05,
+              "unit": "%",
+              "period": "2026-06",
+              "basis": "6月新发放，非存量偿债",
+              "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+              "releaseDate": "2026-08-12",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "中国人民银行",
+              "scope": "个人住房贷款",
+              "frequency": "季度",
+              "pdfPage": 14,
+              "printedPage": 7
+            },
+            {
+              "id": "newMortgageRateChange",
+              "metric": "新发放个人住房贷款利率同比变化",
+              "value": -0.01,
+              "unit": "百分点",
+              "period": "2026-06",
+              "basis": "官方表4同比，非存量偿债",
+              "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+              "releaseDate": "2026-08-12",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "中国人民银行",
+              "scope": "个人住房贷款",
+              "frequency": "季度",
+              "pdfPage": 14,
+              "printedPage": 7
+            }
+          ],
+          "limitations": "新贷定价为代理，不是居民实际还本付息/收入；BIS合计19.1不分配居民/企业。",
+          "sectorDsr": null,
+          "directSectorData": false,
+          "proxyOnly": true,
+          "unavailabilityReason": "BIS中国原始DSR只有合计P，无H/N；2019调查不作2026现值，代理路径最高3分。"
+        },
+        "pressure": {
+          "evidence": [
+            {
+              "id": "nonMortgageConsumerCreditGrowth",
+              "metric": "不含个人住房贷款的消费贷款余额同比",
+              "value": -1.7,
+              "unit": "%",
+              "period": "2026-Q2",
+              "basis": "本外币，不含个人住房贷款",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026072719364116939/index.html",
+              "releaseDate": "2026-07-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "中国人民银行",
+              "scope": "居民部门",
+              "frequency": "季度"
+            },
+            {
+              "id": "mortgageCreditGrowth",
+              "metric": "个人住房贷款余额同比",
+              "value": -3.8,
+              "unit": "%",
+              "period": "2026-Q2",
+              "basis": "住房贷款余额，非新增流量",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026072719364116939/index.html",
+              "releaseDate": "2026-07-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "中国人民银行",
+              "scope": "居民部门",
+              "frequency": "季度"
+            },
+            {
+              "id": "housingWealthPressure",
+              "metric": "住房财富及缩表压力",
+              "value": null,
+              "unit": "事实",
+              "period": "2026-Q2",
+              "basis": "原报告资产价格/需求叙述",
+              "sourceUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+              "releaseDate": "2026-07-30",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家资产负债表研究中心",
+              "scope": "居民部门",
+              "frequency": "季度",
+              "pdfPages": [
+                7,
+                8,
+                9
+              ],
+              "direction": "不利",
+              "finding": "CNBS描述住房财富承压和消费信贷缩减；负债缩减不等同健康修复，未推断全国居民违约。"
+            }
+          ],
+          "limitations": "消费信贷与住房财富压力联合说明传导约束，不把需求下降单独等同偿债危机，不虚构分布调整比率。"
+        },
+        "counterEvidence": {
+          "positive": [
+            {
+              "id": "nominalIncomeGrowth",
+              "metric": "全国居民人均可支配收入名义累计同比",
+              "value": 5.2,
+              "unit": "%",
+              "period": "2026-Q2",
+              "basis": "上半年累计",
+              "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+              "releaseDate": "2026-07-15",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "全国居民",
+              "frequency": "季度"
+            },
+            {
+              "id": "newMortgageRateChange",
+              "metric": "新发放个人住房贷款利率同比变化",
+              "value": -0.01,
+              "unit": "百分点",
+              "period": "2026-06",
+              "basis": "官方表4同比，非存量偿债",
+              "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+              "releaseDate": "2026-08-12",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "中国人民银行",
+              "scope": "个人住房贷款",
+              "frequency": "季度",
+              "pdfPage": 14,
+              "printedPage": 7
+            }
+          ],
+          "negative": [
+            {
+              "id": "housingWealthPressure",
+              "metric": "住房财富及缩表压力",
+              "value": null,
+              "unit": "事实",
+              "period": "2026-Q2",
+              "basis": "原报告资产价格/需求叙述",
+              "sourceUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+              "releaseDate": "2026-07-30",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家资产负债表研究中心",
+              "scope": "居民部门",
+              "frequency": "季度",
+              "pdfPages": [
+                7,
+                8,
+                9
+              ],
+              "direction": "不利",
+              "finding": "CNBS描述住房财富承压和消费信贷缩减；负债缩减不等同健康修复，未推断全国居民违约。"
+            },
+            {
+              "id": "nonMortgageConsumerCreditGrowth",
+              "metric": "不含个人住房贷款的消费贷款余额同比",
+              "value": -1.7,
+              "unit": "%",
+              "period": "2026-Q2",
+              "basis": "本外币，不含个人住房贷款",
+              "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026072719364116939/index.html",
+              "releaseDate": "2026-07-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "中国人民银行",
+              "scope": "居民部门",
+              "frequency": "季度"
+            }
+          ],
+          "limitations": "反证引用相同原始记录，不另二次加权；正收入/盈利和低新贷成本部分缓冲，不足消除资产/回款约束。"
+        }
+      }
+    },
+    "F10": {
+      "value": 2.5,
+      "period": "2026-Q2",
+      "unit": "1—5分",
+      "basis": "季度杠杆约束研判",
+      "originalPublisher": "国家资产负债表研究中心",
+      "latestAvailablePeriod": "2026-Q2",
+      "verifiedAt": "2026-10-11",
+      "verified": true,
+      "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+      "sourceDocumentUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+      "releaseDate": "2026-07-30",
+      "rationale": "同口径国际负担高、本国同比杠杆上升和现金回收偏弱联合支持较中性略低；利润/定价改善提供实证缓冲，不能因高比率直接判1或因利润好转直接判4。",
+      "leverageRatio": 179.5,
+      "yearAgoLeverageRatio": 174,
+      "leverageComponents": [
+        {
+          "period": "2025-Q2",
+          "value": 174,
+          "unit": "%",
+          "series": "corporateLeverage",
+          "basis": "部门债务/过去四季名义GDP",
+          "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4728",
+          "releaseDate": "2025-07-30",
+          "originalPublisher": "国家资产负债表研究中心"
+        },
+        {
+          "period": "2026-Q2",
+          "value": 179.5,
+          "unit": "%",
+          "series": "corporateLeverage",
+          "basis": "部门债务/过去四季名义GDP",
+          "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+          "releaseDate": "2026-07-30",
+          "originalPublisher": "国家资产负债表研究中心"
+        }
+      ],
+      "leverageReview": {
+        "reviewDate": "2026-10-11",
+        "scoreReason": "同口径国际负担高、本国同比杠杆上升和现金回收偏弱联合支持较中性略低；利润/定价改善提供实证缓冲，不能因高比率直接判1或因利润好转直接判4。",
+        "nominalGdpEffect": {
+          "debtGrowthPct": 7.8,
+          "nominalGdpGrowthPct": 4.60418,
+          "revisionVersion": "杠杆/债务：NIFD-2026-Q2-2026-07-30；分母背景：2026-09-15-SDDS（GDP两期同版）",
+          "summary": "企业债务同比增速高于同版TTM名义GDP增速，支持同比杠杆上行；本季环比下降不等于全年减债。",
+          "denominatorEvidence": {
+            "priorTtm": 1374816,
+            "currentTtm": 1438115,
+            "unit": "亿元",
+            "nominalGdpGrowthPct": 4.60418,
+            "formula": "[(2025Q3+2025Q4+2026Q1+2026Q2)/(2024Q3+2024Q4+2025Q1+2025Q2)−1]×100",
+            "components": [
+              {
+                "metric": "季度现价GDP",
+                "period": "2024-Q3",
+                "value": 341443,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2024-Q4",
+                "value": 373512,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q1",
+                "value": 318466,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q2",
+                "value": 341395,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q3",
+                "value": 354500,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2025-Q4",
+                "value": 387911,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2026-Q1",
+                "value": 334193,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              },
+              {
+                "metric": "季度现价GDP",
+                "period": "2026-Q2",
+                "value": 361511,
+                "unit": "亿元",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "单季现价，非不变价GDP",
+                "revisionVersion": "2026-09-15-SDDS"
+              }
+            ],
+            "revisionVersion": "2026-09-15-SDDS同表修订版",
+            "limitation": "GDP两组均取同一现价表；NIFD杠杆与债务增速是7月30日发布的Q2版本，四舍五入及后续GDP修订会使精确恒等式出现小差，不能用更新分母冒称重算了原报告杠杆。这里只说明分母支持方向。"
+          },
+          "evidence": [
+            {
+              "metric": "企业债务同比",
+              "period": "2026-Q2",
+              "value": 7.8,
+              "unit": "%",
+              "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+              "releaseDate": "2026-07-30",
+              "originalPublisher": "国家资产负债表研究中心",
+              "basis": "报告原值"
+            },
+            {
+              "metric": "过去四季现价GDP同比（复算）",
+              "period": "2026-Q2",
+              "value": 4.60418,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+              "releaseDate": "2026-09-15",
+              "originalPublisher": "国家统计局",
+              "basis": "同版TTM现价GDP，同比，不用单季5.9%"
+            }
+          ]
+        },
+        "incomeOrProfit": {
+          "summary": "8月前工业利润和利润率改善构成支撑，但规模以上工业只代表企业子集；电子与上游贡献集中，不能把工业利润当全部非金融企业现金流。",
+          "evidence": [
+            {
+              "metric": "规模以上工业企业利润累计同比",
+              "period": "2026-08",
+              "value": 15.7,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "1—8月可比口径"
+            },
+            {
+              "metric": "规模以上工业企业营业收入利润率",
+              "period": "2026-08",
+              "value": 5.66,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "1—8月累计"
+            }
+          ]
+        },
+        "debtService": {
+          "summary": "新发放企业贷款定价降低缓解融资成本；工业应收账款回收期延长与存货周转放缓提示现金回收压力。两者均为代理证据，未冒称有全企业利息保障倍数或实际违约率。",
+          "evidence": [
+            {
+              "metric": "6月新发放企业贷款加权平均利率",
+              "period": "2026-06",
+              "value": 3.04,
+              "unit": "%",
+              "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+              "releaseDate": "2026-08-12",
+              "originalPublisher": "中国人民银行",
+              "basis": "新发放企业贷款；表4，PDF第14页/印刷第7页"
+            },
+            {
+              "metric": "工业企业应收账款平均回收期",
+              "period": "2026-08",
+              "value": 72.2,
+              "unit": "天",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "月末，规模以上工业企业"
+            },
+            {
+              "metric": "工业企业应收账款回收期同比延长",
+              "period": "2026-08",
+              "value": 0.9,
+              "unit": "天",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "官方可比同比差；不机械相减去年的初值"
+            },
+            {
+              "metric": "工业产成品存货周转天数同比增加",
+              "period": "2026-08",
+              "value": 0.6,
+              "unit": "天",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "官方可比同比差"
+            }
+          ]
+        },
+        "counterEvidence": {
+          "summary": "利润改善反对一刀切看空；应收回款偏弱和利润贡献集中反对直接升级。宏观杠杆含国企而工业利润是子集，保留中性而非把同比债务增加一律看成健康扩张。",
+          "evidence": [
+            {
+              "metric": "工业利润增长的电子行业贡献率",
+              "period": "2026-08",
+              "value": 62,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965426.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "1—8月增长贡献率，非利润占比"
+            },
+            {
+              "metric": "工业企业资产负债率同比提高",
+              "period": "2026-08",
+              "value": 0.3,
+              "unit": "百分点",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "月末，非CNBS全企业债务/GDP"
+            },
+            {
+              "metric": "工业私营企业利润累计同比",
+              "period": "2026-08",
+              "value": 10.4,
+              "unit": "%",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "originalPublisher": "国家统计局",
+              "basis": "1—8月可比口径，非全部私营企业"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "本季杠杆比率为2026-Q2；10月11日复核使用已发布最新辅证，不伪造Q3杠杆。",
+        "试行质性评分，不是算法推导的最优评级或买卖信号。",
+        "公开数据缺少全部门债务服务率与负债分布，融资成本和回款只作为代理；不把信息缺口等同事实恶化。"
+      ],
+      "evidenceConflicts": [
+        "NIFD叙述企业贷款利率3.05%；央行执行报告原表为企业3.04%、总新发放3.05%，本候选采用企业3.04%。"
+      ],
+      "scoringMatrix": {
+        "schemaVersion": 1,
+        "method": "evidence-matrix",
+        "step": 0.5,
+        "sector": "nonFinancialCorporations",
+        "reviewDate": "2026-10-11",
+        "objective": "企业资产负债表对中长期信用传导/资产配置的约束，不把企事业单位或工业企业当全部企业",
+        "primaryReference": "BIS-emerging-ex-China",
+        "scoreReason": "同口径国际负担高、本国同比杠杆上升和现金回收偏弱联合支持较中性略低；利润/定价改善提供实证缓冲，不能因高比率直接判1或因利润好转直接判4。",
+        "computedScore": 2.5,
+        "matchedState": "constraints-partly-mitigated",
+        "domestic": {
+          "period": "2026-Q2",
+          "basis": "部门债务/过去四季名义GDP",
+          "vintageLimitation": "本国同部门使用CNBS两期原值；分母9月修订同表TTM仅作方向背景，不冒称精确重算7月公布杠杆。",
+          "current": {
+            "id": "currentLeverage",
+            "metric": "当季部门杠杆率",
+            "value": 179.5,
+            "unit": "%",
+            "period": "2026-Q2",
+            "basis": "部门债务/过去四季名义GDP",
+            "sourceUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+            "releaseDate": "2026-07-30",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "国家资产负债表研究中心",
+            "series": "corporateLeverage",
+            "pdfPage": 5,
+            "printedPage": 1,
+            "latestAvailablePeriod": "2026-Q2"
+          },
+          "yearAgo": {
+            "id": "yearAgoLeverage",
+            "metric": "上年同季部门杠杆率",
+            "value": 174,
+            "unit": "%",
+            "period": "2025-Q2",
+            "basis": "部门债务/过去四季名义GDP",
+            "sourceUrl": "http://www.nifd.cn/Uploads/SeriesReport/e39bb5f0-0074-4e76-8eed-b0fe068d19c8.pdf",
+            "releaseDate": "2025-07-30",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "国家资产负债表研究中心",
+            "series": "corporateLeverage",
+            "pdfPage": 5,
+            "printedPage": 1
+          },
+          "quarterAgo": {
+            "id": "quarterAgoLeverage",
+            "metric": "前季部门杠杆率",
+            "value": 180,
+            "unit": "%",
+            "period": "2026-Q1",
+            "basis": "部门债务/过去四季名义GDP",
+            "sourceUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+            "releaseDate": "2026-07-30",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "国家资产负债表研究中心",
+            "series": "corporateLeverage",
+            "pdfPage": 5,
+            "printedPage": 1
+          },
+          "debtGrowth": {
+            "id": "departmentDebtGrowth",
+            "metric": "部门债务余额同比",
+            "value": 7.8,
+            "unit": "%",
+            "period": "2026-Q2",
+            "basis": "同部门债务余额同比，报告原值",
+            "sourceUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+            "releaseDate": "2026-07-30",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "国家资产负债表研究中心",
+            "series": "corporateDebtGrowth",
+            "pdfPage": 5,
+            "printedPage": 1
+          },
+          "yearOnYearChangePp": 5.5,
+          "quarterOnQuarterChangePp": -0.5,
+          "nominalGdpEffect": {
+            "debtGrowthPct": 7.8,
+            "nominalGdpGrowthPct": 4.60418,
+            "revisionVersion": "杠杆/债务：NIFD-2026-Q2-2026-07-30；分母背景：2026-09-15-SDDS（GDP两期同版）",
+            "summary": "企业债务同比增速高于同版TTM名义GDP增速，支持同比杠杆上行；本季环比下降不等于全年减债。",
+            "denominatorEvidence": {
+              "priorTtm": 1374816,
+              "currentTtm": 1438115,
+              "unit": "亿元",
+              "nominalGdpGrowthPct": 4.60418,
+              "formula": "[(2025Q3+2025Q4+2026Q1+2026Q2)/(2024Q3+2024Q4+2025Q1+2025Q2)−1]×100",
+              "components": [
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2024-Q3",
+                  "value": 341443,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2024-Q3",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2024-Q4",
+                  "value": 373512,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2024-Q4",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2025-Q1",
+                  "value": 318466,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2025-Q1",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2025-Q2",
+                  "value": 341395,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2025-Q2",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2025-Q3",
+                  "value": 354500,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2025-Q3",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2025-Q4",
+                  "value": 387911,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2025-Q4",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2026-Q1",
+                  "value": 334193,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2026-Q1",
+                  "verifiedAt": "2026-10-11"
+                },
+                {
+                  "metric": "季度现价GDP",
+                  "period": "2026-Q2",
+                  "value": 361511,
+                  "unit": "亿元",
+                  "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                  "releaseDate": "2026-09-15",
+                  "originalPublisher": "国家统计局",
+                  "basis": "单季现价，非不变价GDP",
+                  "revisionVersion": "2026-09-15-SDDS",
+                  "id": "gdp-2026-Q2",
+                  "verifiedAt": "2026-10-11"
+                }
+              ],
+              "revisionVersion": "2026-09-15-SDDS同表修订版",
+              "limitation": "GDP两组均取同一现价表；NIFD杠杆与债务增速是7月30日发布的Q2版本，四舍五入及后续GDP修订会使精确恒等式出现小差，不能用更新分母冒称重算了原报告杠杆。这里只说明分母支持方向。"
+            },
+            "evidence": [
+              {
+                "metric": "企业债务同比",
+                "period": "2026-Q2",
+                "value": 7.8,
+                "unit": "%",
+                "sourceUrl": "http://www.nifd.cn/SeriesReport/Details/4976",
+                "releaseDate": "2026-07-30",
+                "originalPublisher": "国家资产负债表研究中心",
+                "basis": "报告原值"
+              },
+              {
+                "metric": "过去四季现价GDP同比（复算）",
+                "period": "2026-Q2",
+                "value": 4.60418,
+                "unit": "%",
+                "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+                "releaseDate": "2026-09-15",
+                "originalPublisher": "国家统计局",
+                "basis": "同版TTM现价GDP，同比，不用单季5.9%"
+              }
+            ]
+          }
+        },
+        "international": {
+          "period": "2026-Q1",
+          "latestAvailablePeriod": "2026-Q1",
+          "sector": "N",
+          "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+          "china": {
+            "id": "bis-CN-N",
+            "metric": "部门总信用/过去四季名义GDP",
+            "value": 146.6,
+            "unit": "%",
+            "period": "2026-Q1",
+            "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+            "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+            "releaseDate": "2026-09-14",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "Bank for International Settlements",
+            "country": "CN",
+            "sector": "N",
+            "queryKey": "Q..H+N.A.M.770.A",
+            "flow": "WS_TC",
+            "version": "2.0"
+          },
+          "peers": [
+            {
+              "id": "bis-AR-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 21.1,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "AR",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-MX-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 21.2,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "MX",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-ID-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 24.6,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "ID",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-CO-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 29.195,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "CO",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-ZA-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 33.6,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "ZA",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-PL-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 35,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "PL",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-TR-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 39,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "TR",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-SA-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 46.5,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "SA",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-BR-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 54.6,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "BR",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-IN-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 56,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "IN",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-TH-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 69.2,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "TH",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-HU-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 70.8,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "HU",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-RU-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 83.7,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "RU",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-CL-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 86.9,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "CL",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            },
+            {
+              "id": "bis-MY-N",
+              "metric": "部门总信用/过去四季名义GDP",
+              "value": 89.4,
+              "unit": "%",
+              "period": "2026-Q1",
+              "basis": "BIS同表总信用/过去四季名义GDP，市场价值，断点调整",
+              "sourceUrl": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+              "releaseDate": "2026-09-14",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "Bank for International Settlements",
+              "country": "MY",
+              "sector": "N",
+              "queryKey": "Q..H+N.A.M.770.A",
+              "flow": "WS_TC",
+              "version": "2.0"
+            }
+          ],
+          "classification": {
+            "countries": [
+              "AR",
+              "BR",
+              "CL",
+              "CO",
+              "HU",
+              "ID",
+              "IN",
+              "MX",
+              "MY",
+              "PL",
+              "RU",
+              "SA",
+              "TH",
+              "TR",
+              "ZA"
+            ],
+            "sourceUrl": "https://data.bis.org/topics/TOTAL_CREDIT",
+            "releaseDate": "2026-09-14",
+            "verifiedAt": "2026-10-11",
+            "originalPublisher": "Bank for International Settlements"
+          },
+          "benchmark": {
+            "n": 15,
+            "median": 46.5,
+            "percentile": 100
+          },
+          "notSafetyThreshold": true,
+          "limitations": "仅新兴15个经济体等权且排除中国；全部43及发达27只作敏感性。国际共同期Q1滞后于国内Q2，BIS/CNBS部门和GDP版本不混排行，百分位不是危机线。",
+          "rawEvidenceFile": "deliverables/macro-v1-15-credit-evidence.json",
+          "rawCsvSha256": "7f5ce1471f9c64e8d3b5106bd1236d865672a0336430fa5893c5c6bdac33b90d"
+        },
+        "incomeOrProfit": {
+          "evidence": [
+            {
+              "id": "industrialProfitGrowth",
+              "metric": "规模以上工业企业利润累计同比",
+              "value": 15.7,
+              "unit": "%",
+              "period": "2026-08",
+              "basis": "1—8月可比口径",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "规模以上工业企业",
+              "frequency": "月度"
+            },
+            {
+              "id": "profitMarginChange",
+              "metric": "工业企业利润率同比变化",
+              "value": 0.44,
+              "unit": "百分点",
+              "period": "2026-08",
+              "basis": "1—8月可比口径",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "规模以上工业企业",
+              "frequency": "月度"
+            },
+            {
+              "id": "profitMargin",
+              "metric": "工业企业营业收入利润率",
+              "value": 5.66,
+              "unit": "%",
+              "period": "2026-08",
+              "basis": "1—8月可比口径",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "规模以上工业企业",
+              "frequency": "月度"
+            },
+            {
+              "id": "privateIndustrialProfitGrowth",
+              "metric": "工业私营企业利润累计同比",
+              "value": 10.4,
+              "unit": "%",
+              "period": "2026-08",
+              "basis": "1—8月可比口径",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "规模以上工业企业",
+              "frequency": "月度"
+            }
+          ],
+          "limitations": "工业仅全部非金融公司子集，利润不等于经营现金流，不替代全企业偿债比。"
+        },
+        "servicing": {
+          "evidence": [
+            {
+              "id": "newEnterpriseRate",
+              "metric": "新发放企业贷款加权平均利率",
+              "value": 3.04,
+              "unit": "%",
+              "period": "2026-06",
+              "basis": "6月企业新贷，非存量成本",
+              "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+              "releaseDate": "2026-08-12",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "中国人民银行",
+              "scope": "新发放企业贷款",
+              "frequency": "季度",
+              "pdfPage": 14,
+              "printedPage": 7
+            },
+            {
+              "id": "newEnterpriseRateChange",
+              "metric": "新发放企业贷款利率同比变化",
+              "value": -0.18,
+              "unit": "百分点",
+              "period": "2026-06",
+              "basis": "企业新贷官方同比，非总新贷利率",
+              "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+              "releaseDate": "2026-08-12",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "中国人民银行",
+              "scope": "新发放企业贷款",
+              "frequency": "季度",
+              "pdfPage": 14,
+              "printedPage": 7
+            }
+          ],
+          "limitations": "仅定价代理；没有同部门直接DSR/利息保障倍数，不把工业利润/新贷利率当全部企业存量偿债。",
+          "sectorDsr": null,
+          "directSectorData": false,
+          "proxyOnly": true,
+          "unavailabilityReason": "BIS中国原始DSR只有合计P，无H/N；2019调查不作2026现值，代理路径最高3分。"
+        },
+        "pressure": {
+          "evidence": [
+            {
+              "id": "collectionDaysChange",
+              "metric": "应收账款平均回收期同比延长",
+              "value": 0.9,
+              "unit": "天",
+              "period": "2026-08",
+              "basis": "官方可比同比差",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "规模以上工业企业",
+              "frequency": "月度"
+            },
+            {
+              "id": "inventoryDaysChange",
+              "metric": "产成品存货周转天数同比增加",
+              "value": 0.6,
+              "unit": "天",
+              "period": "2026-08",
+              "basis": "官方可比同比差",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "规模以上工业企业",
+              "frequency": "月度"
+            },
+            {
+              "id": "collectionDays",
+              "metric": "工业应收账款平均回收期",
+              "value": 72.2,
+              "unit": "天",
+              "period": "2026-08",
+              "basis": "官方可比同比差",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "规模以上工业企业",
+              "frequency": "月度"
+            }
+          ],
+          "limitations": "工业回款/库存为代理，不是全部公司现金流；CNBS含国企/平台，不称纯私人部门；BIS部分LGFV转政府，不混排行。"
+        },
+        "counterEvidence": {
+          "positive": [
+            {
+              "id": "industrialProfitGrowth",
+              "metric": "规模以上工业企业利润累计同比",
+              "value": 15.7,
+              "unit": "%",
+              "period": "2026-08",
+              "basis": "1—8月可比口径",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "规模以上工业企业",
+              "frequency": "月度"
+            },
+            {
+              "id": "newEnterpriseRateChange",
+              "metric": "新发放企业贷款利率同比变化",
+              "value": -0.18,
+              "unit": "百分点",
+              "period": "2026-06",
+              "basis": "企业新贷官方同比，非总新贷利率",
+              "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+              "releaseDate": "2026-08-12",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "中国人民银行",
+              "scope": "新发放企业贷款",
+              "frequency": "季度",
+              "pdfPage": 14,
+              "printedPage": 7
+            }
+          ],
+          "negative": [
+            {
+              "id": "collectionDaysChange",
+              "metric": "应收账款平均回收期同比延长",
+              "value": 0.9,
+              "unit": "天",
+              "period": "2026-08",
+              "basis": "官方可比同比差",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "规模以上工业企业",
+              "frequency": "月度"
+            },
+            {
+              "id": "inventoryDaysChange",
+              "metric": "产成品存货周转天数同比增加",
+              "value": 0.6,
+              "unit": "天",
+              "period": "2026-08",
+              "basis": "官方可比同比差",
+              "sourceUrl": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+              "releaseDate": "2026-09-28",
+              "verifiedAt": "2026-10-11",
+              "originalPublisher": "国家统计局",
+              "scope": "规模以上工业企业",
+              "frequency": "月度"
+            }
+          ],
+          "limitations": "反证引用相同原始记录，不另二次加权；正收入/盈利和低新贷成本部分缓冲，不足消除资产/回款约束。"
+        }
+      }
+    }
+  }
+}

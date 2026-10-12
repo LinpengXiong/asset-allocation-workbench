@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "targetVersion": "V1.18",
+  "asOf": "2026-10-11",
+  "scope": "E07持续性组件输入；不改现行水平曲线、3%总分权重或原始本季值。此文件自身不修改主站。",
+  "sourceAudit": {
+    "originalPublisher": "国家统计局",
+    "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+    "revisionVersion": "2026-09-15-SDDS",
+    "tableUpdateDate": "2026-09-15",
+    "verifiedAt": "2026-10-11",
+    "access": "本次直接打开SDDS原表成功，核对三期现价GDP、各自上年同季现价GDP及实际GDP同比指数。",
+    "dateNote": "releaseDate记录本次同版原表更新/可得日期，不冒称各季度GDP首次发布日期。",
+    "formula": "(本季现价GDP / 上年同季现价GDP / (实际GDP同比指数/100) - 1) × 100"
+  },
+  "currentObservation": {
+    "value": 1.526649,
+    "period": "2026-Q2",
+    "releaseDate": "2026-09-15",
+    "verifiedAt": "2026-10-11",
+    "verified": true,
+    "unit": "%",
+    "basis": "GDP平减指数单季同比派生",
+    "revisionVersion": "2026-09-15-SDDS",
+    "originalPublisher": "国家统计局",
+    "latestAvailablePeriod": "2026-Q2",
+    "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+    "gdpDeflatorEvidence": {
+      "period": "2026-Q2",
+      "revisionVersion": "2026-09-15-SDDS",
+      "currentNominal": {
+        "period": "2026-Q2",
+        "value": 361511,
+        "unit": "亿元",
+        "basis": "单季现价GDP",
+        "revisionVersion": "2026-09-15-SDDS",
+        "releaseDate": "2026-09-15",
+        "originalPublisher": "国家统计局",
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+      },
+      "priorNominal": {
+        "period": "2025-Q2",
+        "value": 341395,
+        "unit": "亿元",
+        "basis": "单季现价GDP",
+        "revisionVersion": "2026-09-15-SDDS",
+        "releaseDate": "2026-09-15",
+        "originalPublisher": "国家统计局",
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+      },
+      "realGrowth": {
+        "period": "2026-Q2",
+        "value": 4.3,
+        "unit": "%",
+        "basis": "单季实际同比",
+        "revisionVersion": "2026-09-15-SDDS",
+        "releaseDate": "2026-09-15",
+        "originalPublisher": "国家统计局",
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+      },
+      "realYoyIndex": {
+        "period": "2026-Q2",
+        "value": 104.3,
+        "unit": "指数点",
+        "basis": "单季实际GDP同比指数，上年同季=100",
+        "revisionVersion": "2026-09-15-SDDS",
+        "releaseDate": "2026-09-15",
+        "verifiedAt": "2026-10-11",
+        "verified": true,
+        "originalPublisher": "国家统计局",
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+      }
+    },
+    "scoringInputs": {
+      "previousQuarterPriceLevel": {
+        "value": -0.05870403149861314,
+        "period": "2026-Q1",
+        "releaseDate": "2026-09-15",
+        "verifiedAt": "2026-10-11",
+        "verified": true,
+        "unit": "%",
+        "basis": "GDP平减指数单季同比派生",
+        "revisionVersion": "2026-09-15-SDDS",
+        "originalPublisher": "国家统计局",
+        "latestAvailablePeriod": "2026-Q1",
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+        "gdpDeflatorEvidence": {
+          "period": "2026-Q1",
+          "revisionVersion": "2026-09-15-SDDS",
+          "currentNominal": {
+            "period": "2026-Q1",
+            "value": 334193,
+            "unit": "亿元",
+            "basis": "单季现价GDP",
+            "revisionVersion": "2026-09-15-SDDS",
+            "releaseDate": "2026-09-15",
+            "originalPublisher": "国家统计局",
+            "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+          },
+          "priorNominal": {
+            "period": "2025-Q1",
+            "value": 318466,
+            "unit": "亿元",
+            "basis": "单季现价GDP",
+            "revisionVersion": "2026-09-15-SDDS",
+            "releaseDate": "2026-09-15",
+            "originalPublisher": "国家统计局",
+            "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+          },
+          "realGrowth": {
+            "period": "2026-Q1",
+            "value": 5,
+            "unit": "%",
+            "basis": "单季实际同比",
+            "revisionVersion": "2026-09-15-SDDS",
+            "releaseDate": "2026-09-15",
+            "originalPublisher": "国家统计局",
+            "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+          },
+          "realYoyIndex": {
+            "period": "2026-Q1",
+            "value": 105,
+            "unit": "指数点",
+            "basis": "单季实际GDP同比指数，上年同季=100",
+            "revisionVersion": "2026-09-15-SDDS",
+            "releaseDate": "2026-09-15",
+            "verifiedAt": "2026-10-11",
+            "verified": true,
+            "originalPublisher": "国家统计局",
+            "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+          }
+        }
+      },
+      "twoQuartersAgoPriceLevel": {
+        "value": -0.6171960835011148,
+        "period": "2025-Q4",
+        "releaseDate": "2026-09-15",
+        "verifiedAt": "2026-10-11",
+        "verified": true,
+        "unit": "%",
+        "basis": "GDP平减指数单季同比派生",
+        "revisionVersion": "2026-09-15-SDDS",
+        "originalPublisher": "国家统计局",
+        "latestAvailablePeriod": "2025-Q4",
+        "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html",
+        "gdpDeflatorEvidence": {
+          "period": "2025-Q4",
+          "revisionVersion": "2026-09-15-SDDS",
+          "currentNominal": {
+            "period": "2025-Q4",
+            "value": 387911,
+            "unit": "亿元",
+            "basis": "单季现价GDP",
+            "revisionVersion": "2026-09-15-SDDS",
+            "releaseDate": "2026-09-15",
+            "originalPublisher": "国家统计局",
+            "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+          },
+          "priorNominal": {
+            "period": "2024-Q4",
+            "value": 373512,
+            "unit": "亿元",
+            "basis": "单季现价GDP",
+            "revisionVersion": "2026-09-15-SDDS",
+            "releaseDate": "2026-09-15",
+            "originalPublisher": "国家统计局",
+            "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+          },
+          "realGrowth": {
+            "period": "2025-Q4",
+            "value": 4.5,
+            "unit": "%",
+            "basis": "单季实际同比",
+            "revisionVersion": "2026-09-15-SDDS",
+            "releaseDate": "2026-09-15",
+            "originalPublisher": "国家统计局",
+            "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+          },
+          "realYoyIndex": {
+            "period": "2025-Q4",
+            "value": 104.5,
+            "unit": "指数点",
+            "basis": "单季实际GDP同比指数，上年同季=100",
+            "revisionVersion": "2026-09-15-SDDS",
+            "releaseDate": "2026-09-15",
+            "verifiedAt": "2026-10-11",
+            "verified": true,
+            "originalPublisher": "国家统计局",
+            "sourceUrl": "https://www.stats.gov.cn/english/Statisticaldata/nsdp/201508/t20150831_1238096.html"
+          }
+        }
+      }
+    }
+  },
+  "expectedScores": {
+    "anchors": [[-3,1],[-1,2],[0,3],[0.75,4],[2,5],[3,5],[4,4],[6,2],[8,1]],
+    "componentWeights": [0.7,0.15,0.15],
+    "componentOrder": ["current","previousQuarterPriceLevel","twoQuartersAgoPriceLevel"],
+    "currentLevel": 4.6213192,
+    "previousQuarterPriceLevel": 2.941295968501387,
+    "twoQuartersAgoPriceLevel": 2.3828039164988852,
+    "weightedPoints": 4.033538422750041,
+    "displayPoints": 4.03,
+    "savedCurrentValue": 1.526649,
+    "recomputedCurrentValue": 1.5266489444632159,
+    "preservationNote": "本季value仍为原来的1.526649%；加权作用于三个单季水平分，不生成冒充官方的新移动平均原值。"
+  },
+  "historicalDiagnostics": {
+    "sourceSeries": "app/data/macro-gdp-deflator-history.json",
+    "revisionVersion": "2026-09-15-SDDS",
+    "rawSample": {"n":46,"first":"2015-Q1","last":"2026-Q2"},
+    "commonScoreSample": {"n":44,"first":"2015-Q3","last":"2026-Q2"},
+    "method": "所有历史原值由留存同版现价GDP及实际GDP同比指数复算。三套本季权重60%、70%、80%事先固定，余权等分到前两季；与原单季法在同样44季比较。",
+    "baseline44": {
+      "meanScore":3.5232927044271434,
+      "averageAbsoluteScoreChange":0.6179416176249102,
+      "changesAboveHalfPoint":15,
+      "scoresAtLeast4Point5":10
+    },
+    "sensitivity": [
+      {
+        "currentWeight":0.6,"lagWeights":[0.2,0.2],"n":44,
+        "currentPointsFromUnroundedRaw":3.8376114703423982,
+        "meanScore":3.5183876368421463,
+        "averageAbsoluteScoreChange":0.3910863370914612,
+        "changesAboveHalfPoint":11,"scoresAtLeast4Point5":7,
+        "recent2024On":{"n":10,"averageAbsoluteScoreChange":0.259064934335307,"changesAboveHalfPoint":1}
+      },
+      {
+        "currentWeight":0.7,"lagWeights":[0.15,0.15],"n":44,
+        "currentPointsFromUnroundedRaw":4.033538391649442,
+        "meanScore":3.5196139037383958,
+        "averageAbsoluteScoreChange":0.44604663292546276,
+        "changesAboveHalfPoint":11,"scoresAtLeast4Point5":7,
+        "recent2024On":{"n":10,"averageAbsoluteScoreChange":0.2973543262063652,"changesAboveHalfPoint":1}
+      },
+      {
+        "currentWeight":0.8,"lagWeights":[0.1,0.1],"n":44,
+        "currentPointsFromUnroundedRaw":4.229465312956486,
+        "meanScore":3.5208401706346453,
+        "averageAbsoluteScoreChange":0.5010069287594644,
+        "changesAboveHalfPoint":13,"scoresAtLeast4Point5":8,
+        "recent2024On":{"n":10,"averageAbsoluteScoreChange":0.33564371807742355,"changesAboveHalfPoint":1}
+      }
+    ],
+    "limitations": [
+      "此为现存同版修订序列的尺度诊断，不是按当时发布值进行的信息时点回测。",
+      "变分和反转次数不是经济误报率；未检验独立宏观事件、未来经济结果或资产收益。",
+      "同比序列相关、有效独立样本少；70/15/15为事先提出并获用户授权的研究配置，非回测最优权重。",
+      "0.75%=4、2%—3%=5等原有水平参照点仍为试行，新增持续性不构成它们已经合理的证明。",
+      "广度与价格成因仅作证据解释，不在本项重复叠加CPI、PPI或工业利润的权重。"
+    ]
+  }
+}

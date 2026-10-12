@@ -1,0 +1,548 @@
+{
+  "asOf": "2026-10-11",
+  "frameworkVersion": "V1.11",
+  "scope": "宏观调控10项候选；仅完成核验的8项可录入。来源无法支撑定义的2项保持null，禁止用未核实的沿用值补分。",
+  "verifiedAt": "2026-10-11",
+  "sourcePriority": [
+    "官方原始发布",
+    "Wind",
+    "财新数据 API"
+  ],
+  "observations": {
+    "P01A": null,
+    "P02B": null,
+    "P01E": {
+      "period": "2026-08",
+      "value": 1.2,
+      "unit": "%",
+      "basis": "全国年初累计支出可比同比",
+      "originalPublisher": "财政部",
+      "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+      "source": "财政部国库司《2026年1—8月财政收支情况》",
+      "releaseDate": "2026-09-18",
+      "verifiedAt": "2026-10-11",
+      "latestAvailablePeriod": "2026-08",
+      "verified": true,
+      "sourceAudit": {
+        "provider": "官方"
+      },
+      "reason": "全国一般公共预算累计支出增长1.2%，按0%—3%的试行区间为3分；不把预算执行比例当同比。",
+      "fiscalExpenditure": {
+        "period": "2026-08",
+        "series": "generalBudgetExpenditure",
+        "scope": "全国",
+        "basis": "年初累计可比同比",
+        "unit": "亿元",
+        "cumulativeExpenditure": 181451,
+        "reportedYoyPct": 1.2,
+        "comparabilityNote": "直接采用财政部原发布同比，未以两年已公布累计金额机械相除。全国累计支出及增长率按该期发布口径保留；增长率评价名义支出变动，不证明净财政刺激或项目完工。",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+        "releaseDate": "2026-09-18",
+        "originalPublisher": "财政部",
+        "sourceAudit": {
+          "provider": "官方"
+        }
+      }
+    },
+    "P01F": {
+      "period": "2026-08",
+      "value": -17,
+      "unit": "%",
+      "basis": "全国年初累计支出可比同比",
+      "originalPublisher": "财政部",
+      "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+      "source": "财政部国库司《2026年1—8月财政收支情况》",
+      "releaseDate": "2026-09-18",
+      "verifiedAt": "2026-10-11",
+      "latestAvailablePeriod": "2026-08",
+      "verified": true,
+      "sourceAudit": {
+        "provider": "官方"
+      },
+      "reason": "全国政府性基金预算累计支出下降17%，按低于-5%的试行区间为1分；不将土地收入相关支出或专项债发行单项冒称基金支出总额。",
+      "fiscalExpenditure": {
+        "period": "2026-08",
+        "series": "governmentFundExpenditure",
+        "scope": "全国",
+        "basis": "年初累计可比同比",
+        "unit": "亿元",
+        "cumulativeExpenditure": 51948,
+        "reportedYoyPct": -17,
+        "comparabilityNote": "直接采用财政部原发布同比，未以两年已公布累计金额机械相除。全国累计支出及增长率按该期发布口径保留；增长率评价名义支出变动，不证明净财政刺激或项目完工。",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+        "releaseDate": "2026-09-18",
+        "originalPublisher": "财政部",
+        "sourceAudit": {
+          "provider": "官方"
+        }
+      }
+    },
+    "P02A": {
+      "period": "2026-09",
+      "value": 0,
+      "unit": "基点",
+      "basis": "同口径月末有效利率近6月变动",
+      "originalPublisher": "中国人民银行",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026092908461628271/index.html",
+      "source": "中国人民银行公开市场业务交易公告[2026]第61号及第191号",
+      "releaseDate": "2026-09-29",
+      "verifiedAt": "2026-10-11",
+      "latestAvailablePeriod": "2026-09",
+      "verified": true,
+      "sourceAudit": {
+        "provider": "官方"
+      },
+      "reason": "2026年3月31日及9月29日正式7天逆回购操作公告均列利率1.40%；9月30日公告为零操作未列利率，不将零操作量当零利率。9月末有效利率1.40%，较3月末变化0基点，按半年支持方向规则为3分，不把存量宽松环境误写成新增降息。",
+      "components": [
+        {
+          "period": "2026-03",
+          "value": 1.4,
+          "unit": "%",
+          "series": "policyRate7d",
+          "basis": "同口径月末有效政策利率",
+          "effectiveDate": "2026-03-31",
+          "effectiveDateInterpretation": "该日正式操作适用日，不表示该日发生政策利率调整。",
+          "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026033108444917716/index.html",
+          "releaseDate": "2026-03-31",
+          "originalPublisher": "中国人民银行",
+          "sourceAudit": {
+            "provider": "官方"
+          }
+        },
+        {
+          "period": "2026-09",
+          "value": 1.4,
+          "unit": "%",
+          "series": "policyRate7d",
+          "basis": "同口径月末有效政策利率",
+          "effectiveDate": "2026-09-29",
+          "effectiveDateInterpretation": "该日正式操作适用日，不表示该日发生政策利率调整；次日零操作未公布变更。",
+          "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026092908461628271/index.html",
+          "releaseDate": "2026-09-29",
+          "originalPublisher": "中国人民银行",
+          "sourceAudit": {
+            "provider": "官方"
+          }
+        }
+      ],
+      "verificationNote": "已读取3月31原页；9月24、28、29原页均列1.40%，9月30原页零操作，10月10原页零操作。月末观察采用政策有效水平，不用投放量/隔夜操作替代。",
+      "reviewDate": "2026-10-11"
+    },
+    "P02D": {
+      "period": "2026-06",
+      "value": -18,
+      "unit": "基点",
+      "basis": "季末月新发放企业贷款利率同比变化",
+      "originalPublisher": "中国人民银行",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+      "source": "中国人民银行2026年第二季度货币政策执行报告表4与2025年第二季度表3",
+      "releaseDate": "2026-08-12",
+      "verifiedAt": "2026-10-11",
+      "latestAvailablePeriod": "2026-06",
+      "verified": true,
+      "sourceAudit": {
+        "provider": "官方"
+      },
+      "reason": "季末月企业新发放贷款加权平均利率2026年6月3.04%、上年同月3.22%，100×差值=-18基点，落在[-20,20)中性3分。用精确企业子项，不使用约3%的摘要、一般贷款/全部新贷款利率或LPR。名义借款利率下降不等于通缩调整后的实际成本下降。",
+      "components": [
+        {
+          "period": "2025-06",
+          "value": 3.22,
+          "unit": "%",
+          "series": "newEnterpriseLoanRate",
+          "basis": "当月新发放企业贷款加权平均利率",
+          "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/f5c4690f2cbd40918bf24c2d39ac58af/b3e8c1a2b07d4facb38f4a7426415252/2025081819132397368.pdf",
+          "releaseDate": "2025-08-15",
+          "originalPublisher": "中国人民银行",
+          "sourceAudit": {
+            "provider": "官方"
+          },
+          "table": "表3，PDF第9页"
+        },
+        {
+          "period": "2026-06",
+          "value": 3.04,
+          "unit": "%",
+          "series": "newEnterpriseLoanRate",
+          "basis": "当月新发放企业贷款加权平均利率",
+          "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+          "releaseDate": "2026-08-12",
+          "originalPublisher": "中国人民银行",
+          "sourceAudit": {
+            "provider": "官方"
+          },
+          "table": "表4，PDF第14页"
+        }
+      ],
+      "latestPeriodEvidenceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/index.html",
+      "latestPeriodNote": "已核验货币政策执行报告官方目录截至评价日最新为2026年第二季度；不以尚未发布的9月季末月替代。"
+    },
+    "P03A": {
+      "period": "2026-10",
+      "value": 4,
+      "unit": "1—5分",
+      "basis": "有效政策实施条件及执行研判",
+      "originalPublisher": "工业和信息化部",
+      "sourceUrl": "https://www.miit.gov.cn/jgsj/ycls/wjfb/art/2025/art_854c86c1f4484bcfa78a6b634a7fb5b1.html",
+      "source": "工业和信息化部等五部门《钢铁行业稳增长工作方案（2025—2026年）》",
+      "releaseDate": "2025-09-22",
+      "verifiedAt": "2026-10-11",
+      "latestAvailablePeriod": "2026-10",
+      "verified": true,
+      "sourceAudit": {
+        "provider": "官方"
+      },
+      "reviewDate": "2026-10-11",
+      "reason": "有效正式全国钢铁工作方案列明治理工具、责任部门及2025—2026实施窗口，有质量、竞争和规范管理的改善依据，亦明确上下游与竞争副作用，按4分实施条件档；缺少覆盖范围的实际退出核验不升5。",
+      "rationale": "有效正式全国钢铁工作方案列明治理工具、责任部门及2025—2026实施窗口，有质量、竞争和规范管理的改善依据，亦明确上下游与竞争副作用，按4分实施条件档；缺少覆盖范围的实际退出核验不升5。",
+      "policyReview": {
+        "scope": "全国钢铁行业供给侧治理实施条件；属于明确行业范围，不外推所有产业或全部企业已经受益。",
+        "instruments": "严禁新增产能、年度产量调控、减量产能置换、规范企业分类管理，许可/环评/能评联动与原燃料保供；只评供给治理工具。",
+        "responsibleAgency": "工业和信息化部会同自然资源部、生态环境部、商务部、市场监管总局，各地主管部门按通知落实，行业协会参与运行监测。",
+        "timetable": "方案窗口为2025—2026年，要求落实年度产量调控并常态化运行监测；2025年底超低排放任务仅作为原计划，不宣称已完成。发布日作为通知进入实施的保守起点，评价日仍处方案窗口。",
+        "beneficiaries": "合规高效、先进低碳及高端钢材企业可能获资源向优势企业集聚支持；质量与标准提升亦有利于稳定下游供给。",
+        "risks": "供给压减可能影响低效产能就业、原料需求及下游采购成本；减量治理若失当可能削弱竞争。钢铁治理不能代表全经济供给效率已改善。",
+        "counterEvidence": "正式方案自身确认供给总量过大、有效需求不足；发布退出/压减要求不是实际产能退出。尚未核到覆盖全国钢铁治理主要范围的退出或标准执行原始证据，因此不给5分，未公开证据不等于认定没执行。",
+        "noDoubleCounting": "本项只取产能准入、退出、规范分类与监管协同机制；方案中的财政金融支持及设备改造补助不在本项重复加分，资金由财政/货币项评价，工业订单/产出/利润由增长动力项评价。",
+        "scoreReason": "有效正式全国钢铁工作方案列明治理工具、责任部门及2025—2026实施窗口，有质量、竞争和规范管理的改善依据，亦明确上下游与竞争副作用，按4分实施条件档；缺少覆盖范围的实际退出核验不升5。",
+        "evidence": [
+          {
+            "theme": "supplyGovernance",
+            "title": "钢铁行业稳增长工作方案（2025—2026年）",
+            "eventId": "MIIT-2025-171-supply",
+            "mechanism": "产能准入退出、分级规范及联合监管",
+            "summary": "原文明确供给过剩与需求不足矛盾；用年度产量任务、产能减量置换与分类管理治理，含地方实施和常态监测要求；未记作完成退出。",
+            "stage": "正式文件",
+            "status": "有效",
+            "sourceUrl": "https://www.miit.gov.cn/jgsj/ycls/wjfb/art/2025/art_854c86c1f4484bcfa78a6b634a7fb5b1.html",
+            "releaseDate": "2025-09-22",
+            "effectiveDate": "2025-09-22",
+            "documentNumber": "工信部联原〔2025〕171号",
+            "attachmentUrl": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20259/2ea297747baf43c19c0872ee3255d351.pdf"
+          }
+        ],
+        "reviewDate": "2026-10-11",
+        "direction": "改善"
+      }
+    },
+    "P03B": {
+      "period": "2026-10",
+      "value": 4,
+      "unit": "1—5分",
+      "basis": "有效政策实施条件及执行研判",
+      "originalPublisher": "国家发展和改革委员会",
+      "sourceUrl": "https://www.ndrc.gov.cn/xwdt/ztzl/tddgmsbgxhxfpyjhx/gzdt/202609/t20260930_1407946.html",
+      "source": "国家发展改革委、财政部2026年“两新”正式通知及国家发展改革委9月30日执行原文",
+      "releaseDate": "2026-09-30",
+      "verifiedAt": "2026-10-11",
+      "latestAvailablePeriod": "2026-10",
+      "verified": true,
+      "sourceAudit": {
+        "provider": "官方"
+      },
+      "reviewDate": "2026-10-11",
+      "reason": "正式有效通知具备范围、工具、资源渠道、责任与年度时间安排，后续原文有消费品相关执行进展；由于完整评价还包括设备更新，未把消费子范围执行外推整个范围，审慎给4分。",
+      "rationale": "正式有效通知具备范围、工具、资源渠道、责任与年度时间安排，后续原文有消费品相关执行进展；由于完整评价还包括设备更新，未把消费子范围执行外推整个范围，审慎给4分。",
+      "policyReview": {
+        "scope": "全国2026年设备更新与消费品以旧换新政策的实施条件，不外推所有产业支持政策。",
+        "instruments": "设备项目申报、最低使用年限及技术条件，消费品统一资格与补贴标准、资金预拨/审核兑付、中央地方配套及全链条监督；不以额度本身计支持强弱。",
+        "responsibleAgency": "国家发展改革委牵头部际联席会议，与财政部安排资源；商务、交通、农业农村等按领域制定细则，各省级政府承担项目和资金管理第一责任。",
+        "timetable": "2026年实施，消费资金按季度分批下达，截至2026年12月31日未用完中央额度收回；正式政策2026年1月进入年度实施。",
+        "beneficiaries": "符合申报门槛及能效要求的设备更新经营主体、符合汽车/家电/数码资格的消费者与参与经营主体，政策降低中小企业投资门槛并要求平等参与。",
+        "risks": "配套财力、审核兑付和企业垫资可能约束可得性；先涨后补、骗补、资金沉淀及需求提前释放风险，未补贴行业相对竞争条件可能改变。",
+        "counterEvidence": "9月30原文确认2500亿元已向地方下达并报告1—8月补贴惠及量，但下达不等于全部兑付，正式通知明确防范以拨代支和虚列支出；该执行原文主要覆盖消费品，不能替代设备更新所有领域的实际投放/项目启动，因此主要广义评价范围尚未达到5分。",
+        "noDoubleCounting": "只评“两新”资格、审核兑付、责任和监管可执行性；超长期特别国债额度不另作为本项加分幅度，支出增速分别在P01E/P01F、投资/零售实际结果在增长动力计分，钢铁产能治理在P03A另按治理机制评。",
+        "scoreReason": "正式有效通知具备范围、工具、资源渠道、责任与年度时间安排，后续原文有消费品相关执行进展；由于完整评价还包括设备更新，未把消费子范围执行外推整个范围，审慎给4分。",
+        "evidence": [
+          {
+            "theme": "industrySupport",
+            "title": "关于2026年实施大规模设备更新和消费品以旧换新政策的通知",
+            "eventId": "NDRC-2025-1745-support",
+            "mechanism": "资格标准、补贴执行与监督",
+            "summary": "2026年度通知明确支持项目、补贴对象、全国统一标准、央地共担、分批下达及年底收回，并禁止以拨代支。",
+            "stage": "正式文件",
+            "status": "有效",
+            "sourceUrl": "https://www.ndrc.gov.cn/xwdt/tzgg/202512/t20251230_1402852.html",
+            "releaseDate": "2025-12-30",
+            "effectiveDate": "2026-01-01",
+            "documentNumber": "发改环资〔2025〕1745号"
+          },
+          {
+            "theme": "industrySupport",
+            "title": "2026年2500亿元超长期特别国债支持消费品以旧换新资金已全部下达",
+            "eventId": "NDRC-20260930-tradein-execution",
+            "mechanism": "消费品以旧换新资金下达及已公布补贴实施量",
+            "summary": "第四批625亿元下达后全年2500亿元全部下达，原文报告1—8月补贴惠及量；只作消费品子范围执行，既不视为全国全部项目资金兑付，也不重复取相关商品销售增速加分。",
+            "stage": "执行进展",
+            "scope": "全国消费品以旧换新资金安排与已公布实施量；不含设备更新全部领域",
+            "sourceUrl": "https://www.ndrc.gov.cn/xwdt/ztzl/tddgmsbgxhxfpyjhx/gzdt/202609/t20260930_1407946.html",
+            "releaseDate": "2026-09-30"
+          }
+        ],
+        "reviewDate": "2026-10-11",
+        "direction": "改善"
+      }
+    },
+    "P04A": {
+      "period": "2026-10",
+      "value": 4,
+      "unit": "1—5分",
+      "basis": "有效政策实施条件及执行研判",
+      "originalPublisher": "全国人大及有关实施机关",
+      "sourceUrl": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202505/t20250520_1397832.html",
+      "source": "国家发展改革委原始贯彻实施通知（发改办民营〔2025〕486号），法律由全国人大常委会通过",
+      "releaseDate": "2025-05-20",
+      "verifiedAt": "2026-10-11",
+      "latestAvailablePeriod": "2026-10",
+      "verified": true,
+      "sourceAudit": {
+        "provider": "官方"
+      },
+      "reviewDate": "2026-10-11",
+      "reason": "已施行法律及国家发展改革委原始实施通知明确权利、覆盖对象、责任机构和实施要求，具备制度改善条件；不把法案通过等同全国执行见效，按4分，缺全国范围执行证据不升5。",
+      "rationale": "已施行法律及国家发展改革委原始实施通知明确权利、覆盖对象、责任机构和实施要求，具备制度改善条件；不把法案通过等同全国执行见效，按4分，缺全国范围执行证据不升5。",
+      "policyReview": {
+        "scope": "全国民营经济产权、平等准入与公平竞争法律及发展改革系统贯彻实施条件；不以单一地区试点推断全国实际执法。",
+        "instruments": "法律平等对待、市场机会及权利保护要求；建立协调机制、配套制度立改废释，清理与法律不一致的法规规章政策文件、履行法定职责。",
+        "responsibleAgency": "全国人大常委会立法，各省级发展改革委及有关法定职责机关依法贯彻；国家发展改革委民营经济发展局汇总反馈协调。",
+        "timetable": "民营经济促进法2025年4月30日通过、2025年5月20日起施行；贯彻通知要求当下及今后一段时期落实、及时修改废止不一致文件，不伪造具体全国清理完毕期限。",
+        "beneficiaries": "民营企业、经营者在生产要素使用、竞争和权利保护中有正式法律依据，所有制平等原则亦影响各类企业营商条件。",
+        "risks": "地方配套及实际执法存在差异、立改废释与救济需逐项执行，法律支持不意味着融资壁垒或拖欠已完全消除。",
+        "counterEvidence": "正式实施通知仍明确要求清理不一致文件、完善制度、建立机制，说明从施行到执行尚有具体任务；本次没有与全国评价范围匹配的壁垒清理完成/权利救济原始执行证据，不以宣传培训当完成执行，亦不因没有新文件降至中性。",
+        "noDoubleCounting": "只评产权、准入、公平竞争和法定实施机制；不重复计入产业补助、信贷实际投放或资本市场长周期资金规则，企业实际投资结果在增长动力另评。",
+        "scoreReason": "已施行法律及国家发展改革委原始实施通知明确权利、覆盖对象、责任机构和实施要求，具备制度改善条件；不把法案通过等同全国执行见效，按4分，缺全国范围执行证据不升5。",
+        "evidence": [
+          {
+            "theme": "propertyCompetition",
+            "title": "关于学习宣传和贯彻实施《中华人民共和国民营经济促进法》的通知",
+            "eventId": "NDRC-2025-486-private-law",
+            "mechanism": "平等准入产权保护及配套制度清理",
+            "summary": "通知核实法律通过及生效日，并要求协调机制、立改废释、清理不一致政策和依法平等保护；评价施行条件而非宣传活动数量。",
+            "stage": "正式文件",
+            "status": "有效",
+            "sourceUrl": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202505/t20250520_1397832.html",
+            "releaseDate": "2025-05-20",
+            "effectiveDate": "2025-05-20",
+            "documentNumber": "发改办民营〔2025〕486号",
+            "actualPublisher": "国家发展和改革委员会"
+          }
+        ],
+        "reviewDate": "2026-10-11",
+        "direction": "改善"
+      }
+    },
+    "P04B": {
+      "period": "2026-10",
+      "value": 4,
+      "unit": "1—5分",
+      "basis": "有效政策实施条件及执行研判",
+      "originalPublisher": "中国证监会及有关实施机关",
+      "sourceUrl": "https://www.csrc.gov.cn/csrc/c106311/c7639684/content.shtml",
+      "source": "中国证监会等六部门中长期资金实施方案原始发布及吴清2026陆家嘴论坛官方演讲",
+      "releaseDate": "2026-06-17",
+      "verifiedAt": "2026-10-11",
+      "latestAvailablePeriod": "2026-10",
+      "verified": true,
+      "sourceAudit": {
+        "provider": "官方"
+      },
+      "reviewDate": "2026-10-11",
+      "reason": "正式实施方案已明确主要长期资金制度及责任，并有2026年官方进展；但广义评价涵盖各类机构考核和上市回报，不把部分总量持有或净买入扩大为全部制度实施，审慎按4分而非根据市场涨幅给5。",
+      "rationale": "正式实施方案已明确主要长期资金制度及责任，并有2026年官方进展；但广义评价涵盖各类机构考核和上市回报，不把部分总量持有或净买入扩大为全部制度实施，审慎按4分而非根据市场涨幅给5。",
+      "policyReview": {
+        "scope": "全国保险、社保、养老金、年金、公募长期资金制度与上市公司投资者回报条件；不以净买入量替代每类机构考核制度执行。",
+        "instruments": "保险三年以上、社保五年以上、基本养老保险及年金三年以上长周期考核，基金利益绑定与分类监管、分红回购及长期投资规则。",
+        "responsibleAgency": "中央金融办、中国证监会、财政部、人力资源社会保障部、中国人民银行、金融监管总局及各机构按职责共同实施。",
+        "timetable": "2025年1月22已联合印发；按文件给出的三年以上或五年以上考核周期推进，2026年6月官方演讲报告部分制度与执行进展；无统一截止的部分不造短期完成时间表。",
+        "beneficiaries": "长期机构投资者、基金投资者和上市公司股东可能受益于考核期限及回报治理改善；上市融资者需承接治理及合规约束。",
+        "risks": "长周期考核不能消除权益风险，入市目标并非实际配置保证；资金市值增幅含估值影响，净买入不能直接代表全部新增长期储蓄，对分红能力及治理仍需逐公司检验。",
+        "counterEvidence": "6月17原始演讲同时提出仍需健全投融资协调、深化规则改革等任务；持有市值增长85%含价格作用，净买入A股约1.3万亿元是近两年多累计而非当月增量。执行覆盖与完整考核/投资者回报制度一一对应尚未全部核验，不以股价上涨或近70项文件数量给5分。",
+        "noDoubleCounting": "只评考核期限、基金利益绑定和股东回报治理机制；股票回购增持再贷款工具额度或实际贷款不重复视为本项独立额外支持，净买入仅是执行线索而非资产收益评分，产权准入在P04A另评。",
+        "scoreReason": "正式实施方案已明确主要长期资金制度及责任，并有2026年官方进展；但广义评价涵盖各类机构考核和上市回报，不把部分总量持有或净买入扩大为全部制度实施，审慎按4分而非根据市场涨幅给5。",
+        "evidence": [
+          {
+            "theme": "capitalMarketInstitution",
+            "title": "六部门联合印发《关于推动中长期资金入市工作的实施方案》",
+            "eventId": "CSRC-20250122-longcapital",
+            "mechanism": "长周期考核、长期资金投资及股东回报治理",
+            "summary": "正式原始发布明确保险、社保、基本养老金、年金和公募长期考核及投资制度，要求分红回购与基金利益绑定；不是仅报目标入市金额。",
+            "stage": "正式文件",
+            "status": "有效",
+            "sourceUrl": "https://www.csrc.gov.cn/csrc/c100028/c7535174/content.shtml",
+            "releaseDate": "2025-01-22",
+            "effectiveDate": "2025-01-22"
+          },
+          {
+            "theme": "capitalMarketInstitution",
+            "title": "吴清主席在2026陆家嘴论坛上的主题演讲",
+            "eventId": "CSRC-20260617-capitalinstitution-execution",
+            "mechanism": "长期投资制度及投资者回报治理执行线索",
+            "summary": "原始官方演讲说明長周期考核及保险试点机制，报告两年多长期资金净买入约1.3万亿元和分红回购大于融资等进展；未用市值涨幅或文件数量直接计分。",
+            "stage": "执行进展",
+            "scope": "已公布长期资金及上市回报总量执行线索；非逐类机构完整制度落实核验",
+            "sourceUrl": "https://www.csrc.gov.cn/csrc/c106311/c7639684/content.shtml",
+            "releaseDate": "2026-06-17"
+          }
+        ],
+        "reviewDate": "2026-10-11",
+        "direction": "改善"
+      }
+    }
+  },
+  "gaps": {
+    "P01A": {
+      "status": "definition_components_unresolved",
+      "reason": "已读取2026预算报告和财政部专项债原始说明。正式新增专项债限额4.4万亿元的用途含置换存量隐性债务，不能将总额度完整放入本指标要求排除置换、再融资后的资源清单。尚未对连续两年同审批阶段的可纳入用途额度和同版GDP完成逐项核验，本期留空；不是官方未公布预算。",
+      "sourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260316_3985331.htm",
+      "releaseDate": "2026-03-16",
+      "supportingSourceUrl": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202607/t20260722_3994019.htm",
+      "supportingReleaseDate": "2026-07-22",
+      "unit": "百分点",
+      "basis": "年度批准财政融资资源/GDP比重同比差",
+      "originalPublisher": "财政部",
+      "latestAvailablePeriod": "2026",
+      "verifiedAt": "2026-10-11",
+      "verified": false
+    },
+    "P02B": {
+      "status": "fixed_institution_endpoint_unresolved",
+      "reason": "已核验央行2025降准原文/货政执行报告，但尚未取得与规则一致、固定机构类型和适用范围的2026年3月末及9月末有效法定准备金率原值及生效证据。全行业加权平均准备金率不可替代固定机构档位；未发现新公告不等于已核验半年变化为0。本期不机械沿用旧值。",
+      "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/index.html",
+      "basis": "同口径月末有效利率近6月变动",
+      "unit": "基点",
+      "originalPublisher": "中国人民银行",
+      "requestedLatestPeriod": "2026-09",
+      "verifiedAt": "2026-10-11",
+      "officialChecks": [
+        {
+          "sourceUrl": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5896228/index.html",
+          "releaseDate": "2025-11-11",
+          "finding": "央行大事记原文确认2025年5月15日普遍下调0.5个百分点，排除已执行5%的机构，并对汽车金融/金融租赁另降5个百分点。该调整幅度和分类不能直接当2026年两端固定机构档位。"
+        },
+        {
+          "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125434/125798/index.html",
+          "finding": "已读取人民币存款准备金官方栏目当前索引，最上记录是2020年定向降准；栏目陈旧不证明2026没有政策变化，不以索引无新条目给0分。"
+        },
+        {
+          "sourceUrl": "https://www.pbc.gov.cn/diaochatongjisi/116219/116319/index.html",
+          "finding": "已读取央行统计数据库目录，2026分社融、货币概览、机构资产负债、信贷收支及金融市场等栏目，未从该目录取得固定机构准备金率两端原表。"
+        },
+        {
+          "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+          "releaseDate": "2026-08-12",
+          "finding": "最新可得第二季度执行报告已读取，不将其中对政策组合的说明或没有新降准记载当作9月末固定机构法定率的正式原值。"
+        }
+      ],
+      "fallbackAudit": {
+        "provider": "Wind",
+        "queriedPeriod": "2026-03-01至2026-09-30",
+        "queriedAt": "2026-10-11",
+        "finding": "N7148749大型银行法定率日序列在目标区间没有数据，序列终止2025-05-15。另返回M0061518大型存款类金融机构月序列2026年3—9月均9%，但无法与大型银行法定率最新档位及生效口径一致核对；未用不同序列混拼，不据此给分。",
+        "conflictingSeriesCode": "M0061518",
+        "preferredButIncompleteSeriesCode": "N7148749",
+        "originalPublisher": "中国人民银行",
+        "unit": "%",
+        "accepted": false
+      },
+      "verified": false
+    }
+  },
+  "notes": [
+    "信息截止2026-10-11；统计期与官方发布日期、核验日分列。政策观察以完整已结束月份/最新已发布季末月取数，不把10月未结束月份当月末值。",
+    "本候选四项质性评分为研究员原文研判，非官方评级。4分评价有效政策及实施条件；未以文件数量、股价或盈利结果加分，未把局部/部分范围执行扩大为整个评价范围。",
+    "阈值及权重为研究试行，未完成跨资产样本外验证。宏观只作背景，不能据该分数直接推导任何资产买卖或仓位。",
+    "央行2026年第二季度PDF的搜索元数据标题偶显示第一季度，但已读取PDF封面（2026年第二季度/2026年8月12日）及表4，按文件实际封面和表题记录。"
+  ],
+  "verificationEvidence": [
+    {
+      "id": "fiscal-202608",
+      "url": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+      "title": "2026年1—8月财政收支情况",
+      "releaseDate": "2026-09-18",
+      "readMethod": "官方原页全文读取",
+      "values": {
+        "generalBudgetExpenditureYoyPct": 1.2,
+        "generalBudgetExpenditureYiYuan": 181451,
+        "governmentFundExpenditureYoyPct": -17,
+        "governmentFundExpenditureYiYuan": 51948
+      }
+    },
+    {
+      "id": "policy-rate-20260331",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026033108444917716/index.html",
+      "releaseDate": "2026-03-31",
+      "readMethod": "央行历史分页发现链接后读取原页正文，网络传输失败时正常重试",
+      "value": 1.4,
+      "unit": "%"
+    },
+    {
+      "id": "policy-rate-20260929",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026092908461628271/index.html",
+      "releaseDate": "2026-09-29",
+      "readMethod": "官方原页正文读取",
+      "value": 1.4,
+      "unit": "%"
+    },
+    {
+      "id": "policy-rate-20260930",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026093008493852899/index.html",
+      "releaseDate": "2026-09-30",
+      "readMethod": "官方原页正文读取",
+      "finding": "7天逆回购操作量0，未列利率，故没有将零操作误作零利率。"
+    },
+    {
+      "id": "enterprise-rate-2026Q2",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+      "releaseDate": "2026-08-12",
+      "readMethod": "PDF封面、表4与政策操作段读取",
+      "value": 3.04,
+      "unit": "%",
+      "period": "2026-06"
+    },
+    {
+      "id": "enterprise-rate-2025Q2",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/f5c4690f2cbd40918bf24c2d39ac58af/b3e8c1a2b07d4facb38f4a7426415252/2025081819132397368.pdf",
+      "releaseDate": "2025-08-15",
+      "readMethod": "PDF表3读取",
+      "value": 3.22,
+      "unit": "%",
+      "period": "2025-06"
+    },
+    {
+      "id": "steel-plan",
+      "url": "https://www.miit.gov.cn/jgsj/ycls/wjfb/art/2025/art_854c86c1f4484bcfa78a6b634a7fb5b1.html",
+      "releaseDate": "2025-09-22",
+      "readMethod": "原发布页及官方附录六页全文读取"
+    },
+    {
+      "id": "two-new-2026",
+      "url": "https://www.ndrc.gov.cn/xwdt/tzgg/202512/t20251230_1402852.html",
+      "releaseDate": "2025-12-30",
+      "readMethod": "正式通知原文全文读取"
+    },
+    {
+      "id": "two-new-execution",
+      "url": "https://www.ndrc.gov.cn/xwdt/ztzl/tddgmsbgxhxfpyjhx/gzdt/202609/t20260930_1407946.html",
+      "releaseDate": "2026-09-30",
+      "readMethod": "原发布全文读取"
+    },
+    {
+      "id": "private-law-implementation",
+      "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202505/t20250520_1397832.html",
+      "releaseDate": "2025-05-20",
+      "readMethod": "国家发展改革委原始通知全文读取，法案效力依据原文明确日期"
+    },
+    {
+      "id": "longcapital-formal",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7535174/content.shtml",
+      "releaseDate": "2025-01-22",
+      "readMethod": "证监会原始页正文完整读取；网页摘要不可作核验，原页传输成功才纳入"
+    },
+    {
+      "id": "longcapital-review",
+      "url": "https://www.csrc.gov.cn/csrc/c106311/c7639684/content.shtml",
+      "releaseDate": "2026-06-17",
+      "readMethod": "证监会原始演讲全文读取，区分报告的实际执行与后续计划"
+    }
+  ]
+}

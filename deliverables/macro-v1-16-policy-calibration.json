@@ -1,0 +1,3145 @@
+{
+  "version": "V1.16",
+  "role": "宏观调控尺度校准",
+  "asOf": "2026-10-11",
+  "originalVersion": "V1.15",
+  "baseline": {
+    "frameworkInput": "deliverables/macro-rating-framework-before-v1-16-2026-10-11.json",
+    "currentInput": "deliverables/macro-rating-current-before-v1-16-2026-10-11.json",
+    "version": "V1.15",
+    "asOf": "2026-10-11"
+  },
+  "sourceOrder": [
+    "官方原始发布",
+    "Wind",
+    "财新数据 API"
+  ],
+  "officialHistoricalCollection": {
+    "indexUrls": [
+      "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+      "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+      "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+      "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_3.html"
+    ],
+    "attempted": 69,
+    "parsed": 18,
+    "missingOrFailed": [
+      {
+        "period": "2026-08",
+        "title": "2026年1-8月财政收支情况",
+        "releaseDate": "2026-09-18",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202609/t20260918_3997709.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2026-05",
+        "title": "2026年1-5月财政收支情况",
+        "releaseDate": "2026-06-22",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202606/t20260622_3992033.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202606/t20260622_3992033.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2026-07",
+        "title": "2026年1-7月财政收支情况",
+        "releaseDate": "2026-08-21",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202608/t20260814_3995497.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202608/t20260814_3995497.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2026-02",
+        "title": "2026年1-2月财政收支情况",
+        "releaseDate": "2026-03-19",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202603/t20260319_3985695.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202603/t20260319_3985695.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2025-12",
+        "title": "2025年财政收支情况",
+        "releaseDate": "2026-01-30",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202601/t20260130_3982923.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202601/t20260130_3982923.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2025-11",
+        "title": "2025年1-11月财政收支情况",
+        "releaseDate": "2025-12-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202512/t20251217_3979392.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202512/t20251217_3979392.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2025-10",
+        "title": "2025年1-10月财政收支情况",
+        "releaseDate": "2025-11-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202511/t20251117_3976517.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202511/t20251117_3976517.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2025-08",
+        "title": "2025年1-8月财政收支情况",
+        "releaseDate": "2025-09-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202509/t20250917_3972555.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202509/t20250917_3972555.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2025-09",
+        "title": "2025年前三季度财政收支情况",
+        "releaseDate": "2025-10-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202510/t20251017_3974400.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202510/t20251017_3974400.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2025-07",
+        "title": "2025年1-7月财政收支情况",
+        "releaseDate": "2025-08-19",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202508/t20250819_3970405.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202508/t20250819_3970405.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2025-03",
+        "title": "2025年一季度财政收支情况",
+        "releaseDate": "2025-04-18",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202504/t20250418_3962244.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202504/t20250418_3962244.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2025-05",
+        "title": "2025年1-5月财政收支情况",
+        "releaseDate": "2025-06-20",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202506/t20250620_3966204.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202506/t20250620_3966204.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2025-02",
+        "title": "2025年1-2月财政收支情况",
+        "releaseDate": "2025-03-24",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202503/t20250324_3960418.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202503/t20250324_3960418.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2024-11",
+        "title": "2024年11月财政收支情况",
+        "releaseDate": "2024-12-16",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202412/t20241216_3949757.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202412/t20241216_3949757.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2024-12",
+        "title": "2024年财政收支情况",
+        "releaseDate": "2025-01-24",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202501/t20250124_3955083.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202501/t20250124_3955083.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2024-07",
+        "title": "2024年7月财政收支情况",
+        "releaseDate": "2024-09-09",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202408/t20240826_3942479.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202408/t20240826_3942479.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2024-10",
+        "title": "2024年10月财政收支情况",
+        "releaseDate": "2024-11-18",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202411/t20241118_3947753.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202411/t20241118_3947753.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2024-09",
+        "title": "2024年前三季度财政收支情况",
+        "releaseDate": "2024-10-25",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202410/t20241025_3946291.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202410/t20241025_3946291.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2024-03",
+        "title": "2024年一季度财政收支情况",
+        "releaseDate": "2024-04-22",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202404/t20240422_3933193.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202404/t20240422_3933193.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2024-02",
+        "title": "2024年1-2月财政收支情况",
+        "releaseDate": "2024-03-21",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202403/t20240321_3931078.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202403/t20240321_3931078.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2023-11",
+        "title": "2023年11月财政收支情况",
+        "releaseDate": "2023-12-15",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202312/t20231215_3922522.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202312/t20231215_3922522.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2023-08",
+        "title": "2023年8月财政收支情况",
+        "releaseDate": "2023-09-15",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202309/t20230915_3907507.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202309/t20230915_3907507.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2023-10",
+        "title": "2023年10月财政收支情况",
+        "releaseDate": "2023-11-15",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202311/t20231115_3916710.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202311/t20231115_3916710.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2023-07",
+        "title": "2023年7月财政收支情况",
+        "releaseDate": "2023-08-21",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202308/t20230821_3903162.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202308/t20230821_3903162.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2023-05",
+        "title": "2023年5月财政收支情况",
+        "releaseDate": "2023-06-16",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202306/t20230616_3891062.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202306/t20230616_3891062.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2023-04",
+        "title": "2023年4月财政收支情况",
+        "releaseDate": "2023-05-18",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202305/t20230518_3885232.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202305/t20230518_3885232.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2023-03",
+        "title": "2023年一季度财政收支情况",
+        "releaseDate": "2023-04-18",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202304/t20230417_3879297.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202304/t20230417_3879297.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2023-02",
+        "title": "2023年1-2月财政收支情况",
+        "releaseDate": "2023-03-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202303/t20230317_3873328.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202303/t20230317_3873328.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2022-12",
+        "title": "2022年财政收支情况",
+        "releaseDate": "2023-01-30",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202301/t20230130_3864368.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202301/t20230130_3864368.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2022-10",
+        "title": "2022年10月财政收支情况",
+        "releaseDate": "2022-11-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202211/t20221116_3851724.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202211/t20221116_3851724.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2022-09",
+        "title": "2022年前三季度财政收支情况",
+        "releaseDate": "2022-10-25",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202210/t20221025_3847842.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202210/t20221025_3847842.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2022-08",
+        "title": "2022年8月财政收支情况",
+        "releaseDate": "2022-09-16",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202209/t20220916_3840932.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202209/t20220916_3840932.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2022-05",
+        "title": "2022年5月财政收支情况",
+        "releaseDate": "2022-06-16",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202206/t20220616_3818568.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202206/t20220616_3818568.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2022-06",
+        "title": "2022年上半年财政收支情况",
+        "releaseDate": "2022-07-14",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202207/t20220714_3827010.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202207/t20220714_3827010.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2022-03",
+        "title": "2022年一季度财政收支情况",
+        "releaseDate": "2022-04-20",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202204/t20220420_3804357.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202204/t20220420_3804357.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2021-10",
+        "title": "2021年10月财政收支情况",
+        "releaseDate": "2021-11-19",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202111/t20211119_3767219.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202111/t20211119_3767219.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2021-08",
+        "title": "2021年8月财政收支情况",
+        "releaseDate": "2021-09-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202109/t20210917_3753521.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202109/t20210917_3753521.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2021-06",
+        "title": "2021年上半年财政收支情况",
+        "releaseDate": "2021-07-20",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202107/t20210720_3739108.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202107/t20210720_3739108.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2021-04",
+        "title": "2021年4月财政收支情况",
+        "releaseDate": "2021-05-21",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202105/t20210521_3706159.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202105/t20210521_3706159.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2021-05",
+        "title": "2021年5月财政收支情况",
+        "releaseDate": "2021-06-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202106/t20210617_3720863.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202106/t20210617_3720863.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2021-03",
+        "title": "2021年一季度财政收支情况",
+        "releaseDate": "2021-04-21",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202104/t20210421_3689433.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202104/t20210421_3689433.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2020-12",
+        "title": "2020年财政收支情况",
+        "releaseDate": "2021-01-28",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202101/t20210128_3650522.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202101/t20210128_3650522.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2020-11",
+        "title": "2020年11月财政收支情况",
+        "releaseDate": "2020-12-15",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202012/t20201215_3634732.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202012/t20201215_3634732.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2021-02",
+        "title": "2021年1-2月财政收支情况",
+        "releaseDate": "2021-03-18",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202103/t20210318_3672268.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202103/t20210318_3672268.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2020-10",
+        "title": "2020年10月财政收支情况",
+        "releaseDate": "2020-11-18",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202011/t20201118_3625212.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202011/t20201118_3625212.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2020-08",
+        "title": "2020年8月财政收支情况",
+        "releaseDate": "2020-09-19",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202009/t20200918_3591124.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202009/t20200918_3591124.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2020-09",
+        "title": "2020年前三季度财政收支情况",
+        "releaseDate": "2020-10-21",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202010/t20201021_3608237.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202010/t20201021_3608237.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2020-06",
+        "title": "2020年上半年财政收支情况",
+        "releaseDate": "2020-07-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202007/t20200717_3551313.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_3.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202007/t20200717_3551313.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2020-07",
+        "title": "2020年7月财政收支情况",
+        "releaseDate": "2020-08-19",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202008/t20200819_3571405.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_3.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202008/t20200819_3571405.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2020-04",
+        "title": "2020年4月财政收支情况",
+        "releaseDate": "2020-05-18",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202005/t20200518_3515422.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_3.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202005/t20200518_3515422.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      },
+      {
+        "period": "2020-02",
+        "title": "2020年1-2月财政收支情况",
+        "releaseDate": "2020-03-24",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202003/t20200324_3487618.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_3.html",
+        "stage": "official-release-access",
+        "error": "Command failed: curl -fLsS --max-time 18 --retry 1 https://gks.mof.gov.cn/tongjishuju/202003/t20200324_3487618.htm\ncurl: (22) The requested URL returned error: 502\ncurl: (22) The requested URL returned error: 502\n"
+      }
+    ],
+    "providerFallback": "本轮采用可访问的官方原表；失败点保留缺口，未使用Wind/Caixin或金额推算补值。"
+  },
+  "rules": [
+    {
+      "id": "P01E",
+      "name": "全国一般公共预算支出累计同比（%）",
+      "weight": 0.04,
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -5,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            12,
+            5
+          ]
+        ],
+        "description": "相邻锚点之间线性计算得分，端点外封顶/保底；内部不先取整。仅插值得分，不插值统计数据。"
+      },
+      "decision": "保留",
+      "reason": "一般公共预算有多年度官方累计同比可作尺度诊断，但年度支出结构、基数、预算及累计自相关影响明显。保留3%中心及既有尺度，先报告候选收窄使同年短期分数变动放大的程度，不把名义支出映射为净财政冲量。",
+      "definition": "财政部公布的全国一般公共预算支出年初累计可比口径同比，单位%；不是累计支出/全年预算的执行进度，也不用两年已公布金额机械相除替代官方可比增速。结构化fiscalExpenditure须记录全国范围、series=generalBudgetExpenditure、basis=年初累计可比同比、reportedYoyPct、累计支出亿元金额、可比性说明、原始链接和发布日期；1—2月按合并发布、不造1月值。使用独立编号P01E替换旧执行节奏P01B，旧数据保留而不自动计分。评价实际财政支出变动，不等于财政净刺激、项目完工或经济已经改善；权重4%，现行连续锚点为-5%、0%、3%、7%、12%对应1—5分，属于研究试行，长样本诊断不等于最优或样本外验证。",
+      "sampleSummary": {
+        "source": "财政部历史原始月报",
+        "observedChangeCount": 18,
+        "period": [
+          "2020-03",
+          "2026-06"
+        ],
+        "officialOnly": true,
+        "sufficientForOptimalSelection": false
+      },
+      "candidates": [
+        {
+          "name": "现版",
+          "anchors": [
+            [
+              -5,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              12,
+              5
+            ]
+          ],
+          "currentScore": 2.4,
+          "diagnostics": {
+            "n": 18,
+            "first": "2020-03",
+            "last": "2026-06",
+            "minimumValue": -5.7,
+            "maximumValue": 6.4,
+            "meanScore": 2.8974074074074077,
+            "floorCount": 1,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 3,
+            "medianAbsoluteWithinYearScoreChange": 0.4333333333333331,
+            "meanAbsoluteWithinYearScoreChange": 0.2972222222222222,
+            "halfPointWithinYearJumpCount": 0,
+            "yearMeans": [
+              {
+                "year": "2020",
+                "n": 2,
+                "mean": 1.21
+              },
+              {
+                "year": "2021",
+                "n": 2,
+                "mean": 2.9208333333333334
+              },
+              {
+                "year": "2022",
+                "n": 3,
+                "mean": 3.7916666666666665
+              },
+              {
+                "year": "2023",
+                "n": 2,
+                "mean": 3.4125
+              },
+              {
+                "year": "2024",
+                "n": 4,
+                "mean": 2.8479166666666664
+              },
+              {
+                "year": "2025",
+                "n": 2,
+                "mean": 3.25
+              },
+              {
+                "year": "2026",
+                "n": 3,
+                "mean": 2.6
+              }
+            ],
+            "scores": [
+              {
+                "period": "2020-03",
+                "value": -5.7,
+                "score": 1
+              },
+              {
+                "period": "2020-05",
+                "value": -2.9,
+                "score": 1.42
+              },
+              {
+                "period": "2021-07",
+                "value": 3.3,
+                "score": 3.075
+              },
+              {
+                "period": "2021-09",
+                "value": 2.3,
+                "score": 2.7666666666666666
+              },
+              {
+                "period": "2022-04",
+                "value": 5.9,
+                "score": 3.725
+              },
+              {
+                "period": "2022-07",
+                "value": 6.4,
+                "score": 3.85
+              },
+              {
+                "period": "2022-11",
+                "value": 6.2,
+                "score": 3.8
+              },
+              {
+                "period": "2023-06",
+                "value": 3.9,
+                "score": 3.225
+              },
+              {
+                "period": "2023-12",
+                "value": 5.4,
+                "score": 3.6
+              },
+              {
+                "period": "2024-04",
+                "value": 3.5,
+                "score": 3.125
+              },
+              {
+                "period": "2024-05",
+                "value": 3.4,
+                "score": 3.1
+              },
+              {
+                "period": "2024-06",
+                "value": 2,
+                "score": 2.6666666666666665
+              },
+              {
+                "period": "2024-08",
+                "value": 1.5,
+                "score": 2.5
+              },
+              {
+                "period": "2025-04",
+                "value": 4.6,
+                "score": 3.4
+              },
+              {
+                "period": "2025-06",
+                "value": 3.4,
+                "score": 3.1
+              },
+              {
+                "period": "2026-03",
+                "value": 2.6,
+                "score": 2.8666666666666667
+              },
+              {
+                "period": "2026-04",
+                "value": 1.3,
+                "score": 2.4333333333333336
+              },
+              {
+                "period": "2026-06",
+                "value": 1.5,
+                "score": 2.5
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        },
+        {
+          "name": "适度收窄",
+          "anchors": [
+            [
+              -5,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              12,
+              5
+            ]
+          ],
+          "currentScore": 2.1,
+          "diagnostics": {
+            "n": 18,
+            "first": "2020-03",
+            "last": "2026-06",
+            "minimumValue": -5.7,
+            "maximumValue": 6.4,
+            "meanScore": 2.8990740740740737,
+            "floorCount": 1,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 3,
+            "medianAbsoluteWithinYearScoreChange": 0.6333333333333333,
+            "meanAbsoluteWithinYearScoreChange": 0.43888888888888883,
+            "halfPointWithinYearJumpCount": 2,
+            "yearMeans": [
+              {
+                "year": "2020",
+                "n": 2,
+                "mean": 1.175
+              },
+              {
+                "year": "2021",
+                "n": 2,
+                "mean": 2.875
+              },
+              {
+                "year": "2022",
+                "n": 3,
+                "mean": 4.022222222222222
+              },
+              {
+                "year": "2023",
+                "n": 2,
+                "mean": 3.55
+              },
+              {
+                "year": "2024",
+                "n": 4,
+                "mean": 2.7625
+              },
+              {
+                "year": "2025",
+                "n": 2,
+                "mean": 3.333333333333333
+              },
+              {
+                "year": "2026",
+                "n": 3,
+                "mean": 2.4
+              }
+            ],
+            "scores": [
+              {
+                "period": "2020-03",
+                "value": -5.7,
+                "score": 1
+              },
+              {
+                "period": "2020-05",
+                "value": -2.9,
+                "score": 1.35
+              },
+              {
+                "period": "2021-07",
+                "value": 3.3,
+                "score": 3.1
+              },
+              {
+                "period": "2021-09",
+                "value": 2.3,
+                "score": 2.65
+              },
+              {
+                "period": "2022-04",
+                "value": 5.9,
+                "score": 3.966666666666667
+              },
+              {
+                "period": "2022-07",
+                "value": 6.4,
+                "score": 4.066666666666666
+              },
+              {
+                "period": "2022-11",
+                "value": 6.2,
+                "score": 4.033333333333333
+              },
+              {
+                "period": "2023-06",
+                "value": 3.9,
+                "score": 3.3
+              },
+              {
+                "period": "2023-12",
+                "value": 5.4,
+                "score": 3.8000000000000003
+              },
+              {
+                "period": "2024-04",
+                "value": 3.5,
+                "score": 3.1666666666666665
+              },
+              {
+                "period": "2024-05",
+                "value": 3.4,
+                "score": 3.1333333333333333
+              },
+              {
+                "period": "2024-06",
+                "value": 2,
+                "score": 2.5
+              },
+              {
+                "period": "2024-08",
+                "value": 1.5,
+                "score": 2.25
+              },
+              {
+                "period": "2025-04",
+                "value": 4.6,
+                "score": 3.533333333333333
+              },
+              {
+                "period": "2025-06",
+                "value": 3.4,
+                "score": 3.1333333333333333
+              },
+              {
+                "period": "2026-03",
+                "value": 2.6,
+                "score": 2.8
+              },
+              {
+                "period": "2026-04",
+                "value": 1.3,
+                "score": 2.15
+              },
+              {
+                "period": "2026-06",
+                "value": 1.5,
+                "score": 2.25
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        },
+        {
+          "name": "明显收窄",
+          "anchors": [
+            [
+              -5,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              12,
+              5
+            ]
+          ],
+          "currentScore": 1.8857142857142857,
+          "diagnostics": {
+            "n": 18,
+            "first": "2020-03",
+            "last": "2026-06",
+            "minimumValue": -5.7,
+            "maximumValue": 6.4,
+            "meanScore": 2.973313492063492,
+            "floorCount": 1,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 3,
+            "medianAbsoluteWithinYearScoreChange": 0.7000000000000002,
+            "meanAbsoluteWithinYearScoreChange": 0.7333333333333334,
+            "halfPointWithinYearJumpCount": 2,
+            "yearMeans": [
+              {
+                "year": "2020",
+                "n": 2,
+                "mean": 1.15
+              },
+              {
+                "year": "2021",
+                "n": 2,
+                "mean": 2.8
+              },
+              {
+                "year": "2022",
+                "n": 3,
+                "mean": 4.270833333333333
+              },
+              {
+                "year": "2023",
+                "n": 2,
+                "mean": 4.0375
+              },
+              {
+                "year": "2024",
+                "n": 4,
+                "mean": 2.7071428571428573
+              },
+              {
+                "year": "2025",
+                "n": 2,
+                "mean": 3.7375
+              },
+              {
+                "year": "2026",
+                "n": 3,
+                "mean": 2.142857142857143
+              }
+            ],
+            "scores": [
+              {
+                "period": "2020-03",
+                "value": -5.7,
+                "score": 1
+              },
+              {
+                "period": "2020-05",
+                "value": -2.9,
+                "score": 1.3
+              },
+              {
+                "period": "2021-07",
+                "value": 3.3,
+                "score": 3.3
+              },
+              {
+                "period": "2021-09",
+                "value": 2.3,
+                "score": 2.3
+              },
+              {
+                "period": "2022-04",
+                "value": 5.9,
+                "score": 4.2375
+              },
+              {
+                "period": "2022-07",
+                "value": 6.4,
+                "score": 4.3
+              },
+              {
+                "period": "2022-11",
+                "value": 6.2,
+                "score": 4.275
+              },
+              {
+                "period": "2023-06",
+                "value": 3.9,
+                "score": 3.9
+              },
+              {
+                "period": "2023-12",
+                "value": 5.4,
+                "score": 4.175
+              },
+              {
+                "period": "2024-04",
+                "value": 3.5,
+                "score": 3.5
+              },
+              {
+                "period": "2024-05",
+                "value": 3.4,
+                "score": 3.4
+              },
+              {
+                "period": "2024-06",
+                "value": 2,
+                "score": 2
+              },
+              {
+                "period": "2024-08",
+                "value": 1.5,
+                "score": 1.9285714285714286
+              },
+              {
+                "period": "2025-04",
+                "value": 4.6,
+                "score": 4.075
+              },
+              {
+                "period": "2025-06",
+                "value": 3.4,
+                "score": 3.4
+              },
+              {
+                "period": "2026-03",
+                "value": 2.6,
+                "score": 2.6
+              },
+              {
+                "period": "2026-04",
+                "value": 1.3,
+                "score": 1.9
+              },
+              {
+                "period": "2026-06",
+                "value": 1.5,
+                "score": 1.9285714285714286
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        }
+      ],
+      "currentScore": 2.4,
+      "sampleEvidence": [
+        {
+          "period": "2020-03",
+          "value": -5.7,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202004/t20200420_3501077.htm",
+          "releaseDate": "2020-04-20"
+        },
+        {
+          "period": "2020-05",
+          "value": -2.9,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202006/t20200618_3534764.htm",
+          "releaseDate": "2020-06-18"
+        },
+        {
+          "period": "2021-07",
+          "value": 3.3,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202108/t20210819_3746445.htm",
+          "releaseDate": "2021-08-20"
+        },
+        {
+          "period": "2021-09",
+          "value": 2.3,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202110/t20211022_3760014.htm",
+          "releaseDate": "2021-10-22"
+        },
+        {
+          "period": "2022-04",
+          "value": 5.9,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202205/t20220517_3810958.htm",
+          "releaseDate": "2022-05-17"
+        },
+        {
+          "period": "2022-07",
+          "value": 6.4,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202208/t20220817_3834300.htm",
+          "releaseDate": "2022-08-17"
+        },
+        {
+          "period": "2022-11",
+          "value": 6.2,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202212/t20221220_3858837.htm",
+          "releaseDate": "2022-12-20"
+        },
+        {
+          "period": "2023-06",
+          "value": 3.9,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202307/t20230719_3897130.htm",
+          "releaseDate": "2023-07-19"
+        },
+        {
+          "period": "2023-12",
+          "value": 5.4,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202402/t20240201_3928009.htm",
+          "releaseDate": "2024-02-01"
+        },
+        {
+          "period": "2024-04",
+          "value": 3.5,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202405/t20240517_3935136.htm",
+          "releaseDate": "2024-05-20"
+        },
+        {
+          "period": "2024-05",
+          "value": 3.4,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202406/t20240624_3937803.htm",
+          "releaseDate": "2024-06-24"
+        },
+        {
+          "period": "2024-06",
+          "value": 2,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202407/t20240722_3939942.htm",
+          "releaseDate": "2024-07-22"
+        },
+        {
+          "period": "2024-08",
+          "value": 1.5,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202409/t20240920_3944086.htm",
+          "releaseDate": "2024-09-20"
+        },
+        {
+          "period": "2025-04",
+          "value": 4.6,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202505/t20250520_3964136.htm",
+          "releaseDate": "2025-05-20"
+        },
+        {
+          "period": "2025-06",
+          "value": 3.4,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202507/t20250725_3968635.htm",
+          "releaseDate": "2025-07-25"
+        },
+        {
+          "period": "2026-03",
+          "value": 2.6,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202604/t20260424_3988324.htm",
+          "releaseDate": "2026-04-24"
+        },
+        {
+          "period": "2026-04",
+          "value": 1.3,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202605/t20260515_3989956.htm",
+          "releaseDate": "2026-05-20"
+        },
+        {
+          "period": "2026-06",
+          "value": 1.5,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202607/t20260722_3993943.htm",
+          "releaseDate": "2026-07-22"
+        }
+      ],
+      "limitations": [
+        "本轮不改变指标、权重、统计口径、信息截止日或原始观察。",
+        "未建立逐期实时版本和独立经济事件真值标签，不能报告误报率、预测最优参数或因果政策效果。",
+        "历史累计期不独立，疫情/低基数、2015之后预算构成及跨预算转移会改变名义同比含义；本次原始月报抓取值为当前存档网页版本，不冒充当年未修订实时快照。"
+      ]
+    },
+    {
+      "id": "P01F",
+      "name": "全国政府性基金预算支出累计同比（%）",
+      "weight": 0.02,
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -25,
+            1
+          ],
+          [
+            -10,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            10,
+            4
+          ],
+          [
+            25,
+            5
+          ]
+        ],
+        "description": "相邻锚点之间线性计算得分，端点外封顶/保底；内部不先取整。仅插值得分，不插值统计数据。"
+      },
+      "decision": "保留",
+      "reason": "政府性基金预算受土地、特别国债及专项债用途变化影响，历史波动较大；零锚点应保留方向意义。收窄常态区间不能改变预算组成及原发布可比说明，须防负增长时期相对改善被误当强刺激。",
+      "definition": "财政部公布的全国政府性基金预算支出年初累计可比口径同比，单位%；不是预算执行进度、地方专项债发行额或项目资金拨付，不能机械以两年公布金额相除替代可比增速。结构化fiscalExpenditure须记录全国范围、series=governmentFundExpenditure、basis=年初累计可比同比、reportedYoyPct、累计支出亿元金额、可比性说明、原始链接和发布日期；1—2月保留合并期。独立编号P01F替换旧执行节奏P01D，不继承旧值。基金预算与一般预算分开计分，不相加冒称去重广义财政；其支出不全部等于新增基建需求。权重2%，现行连续锚点为-25%、-10%、0%、10%、25%对应1—5分，属于研究试行，长样本诊断不等于最优或样本外验证。",
+      "sampleSummary": {
+        "source": "财政部历史原始月报",
+        "observedChangeCount": 18,
+        "period": [
+          "2020-03",
+          "2026-06"
+        ],
+        "officialOnly": true,
+        "sufficientForOptimalSelection": false
+      },
+      "candidates": [
+        {
+          "name": "现版",
+          "anchors": [
+            [
+              -25,
+              1
+            ],
+            [
+              -10,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              25,
+              5
+            ]
+          ],
+          "currentScore": 1.5333333333333332,
+          "diagnostics": {
+            "n": 18,
+            "first": "2020-03",
+            "last": "2026-06",
+            "minimumValue": -21.2,
+            "maximumValue": 35.2,
+            "meanScore": 2.8927777777777774,
+            "floorCount": 0,
+            "ceilingCount": 3,
+            "adjacentWithinYearCount": 3,
+            "medianAbsoluteWithinYearScoreChange": 0.11333333333333329,
+            "meanAbsoluteWithinYearScoreChange": 0.2577777777777777,
+            "halfPointWithinYearJumpCount": 1,
+            "yearMeans": [
+              {
+                "year": "2020",
+                "n": 2,
+                "mean": 3.8766666666666665
+              },
+              {
+                "year": "2021",
+                "n": 2,
+                "mean": 2.2199999999999998
+              },
+              {
+                "year": "2022",
+                "n": 3,
+                "mean": 4.516666666666667
+              },
+              {
+                "year": "2023",
+                "n": 2,
+                "mean": 1.7066666666666668
+              },
+              {
+                "year": "2024",
+                "n": 4,
+                "mean": 1.4466666666666665
+              },
+              {
+                "year": "2025",
+                "n": 2,
+                "mean": 4.756666666666667
+              },
+              {
+                "year": "2026",
+                "n": 3,
+                "mean": 2.537777777777778
+              }
+            ],
+            "scores": [
+              {
+                "period": "2020-03",
+                "value": 4.6,
+                "score": 3.46
+              },
+              {
+                "period": "2020-05",
+                "value": 14.4,
+                "score": 4.293333333333333
+              },
+              {
+                "period": "2021-07",
+                "value": -6.8,
+                "score": 2.32
+              },
+              {
+                "period": "2021-09",
+                "value": -8.8,
+                "score": 2.12
+              },
+              {
+                "period": "2022-04",
+                "value": 35.2,
+                "score": 5
+              },
+              {
+                "period": "2022-07",
+                "value": 29.8,
+                "score": 5
+              },
+              {
+                "period": "2022-11",
+                "value": 5.5,
+                "score": 3.55
+              },
+              {
+                "period": "2023-06",
+                "value": -21.2,
+                "score": 1.2533333333333334
+              },
+              {
+                "period": "2023-12",
+                "value": -8.4,
+                "score": 2.16
+              },
+              {
+                "period": "2024-04",
+                "value": -20.5,
+                "score": 1.3
+              },
+              {
+                "period": "2024-05",
+                "value": -19.3,
+                "score": 1.38
+              },
+              {
+                "period": "2024-06",
+                "value": -17.6,
+                "score": 1.4933333333333332
+              },
+              {
+                "period": "2024-08",
+                "value": -15.8,
+                "score": 1.6133333333333333
+              },
+              {
+                "period": "2025-04",
+                "value": 17.7,
+                "score": 4.513333333333334
+              },
+              {
+                "period": "2025-06",
+                "value": 30,
+                "score": 5
+              },
+              {
+                "period": "2026-03",
+                "value": 3.1,
+                "score": 3.31
+              },
+              {
+                "period": "2026-04",
+                "value": -2.7,
+                "score": 2.73
+              },
+              {
+                "period": "2026-06",
+                "value": -16.4,
+                "score": 1.5733333333333335
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        },
+        {
+          "name": "适度收窄",
+          "anchors": [
+            [
+              -25,
+              1
+            ],
+            [
+              -7.5,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              7.5,
+              4
+            ],
+            [
+              25,
+              5
+            ]
+          ],
+          "currentScore": 1.457142857142857,
+          "diagnostics": {
+            "n": 18,
+            "first": "2020-03",
+            "last": "2026-06",
+            "minimumValue": -21.2,
+            "maximumValue": 35.2,
+            "meanScore": 2.865820105820106,
+            "floorCount": 0,
+            "ceilingCount": 3,
+            "adjacentWithinYearCount": 3,
+            "medianAbsoluteWithinYearScoreChange": 0.0971428571428572,
+            "meanAbsoluteWithinYearScoreChange": 0.3130158730158729,
+            "halfPointWithinYearJumpCount": 1,
+            "yearMeans": [
+              {
+                "year": "2020",
+                "n": 2,
+                "mean": 4.003809523809524
+              },
+              {
+                "year": "2021",
+                "n": 2,
+                "mean": 2.0095238095238095
+              },
+              {
+                "year": "2022",
+                "n": 3,
+                "mean": 4.577777777777778
+              },
+              {
+                "year": "2023",
+                "n": 2,
+                "mean": 1.5828571428571427
+              },
+              {
+                "year": "2024",
+                "n": 4,
+                "mean": 1.3828571428571428
+              },
+              {
+                "year": "2025",
+                "n": 2,
+                "mean": 4.791428571428572
+              },
+              {
+                "year": "2026",
+                "n": 3,
+                "mean": 2.514920634920635
+              }
+            ],
+            "scores": [
+              {
+                "period": "2020-03",
+                "value": 4.6,
+                "score": 3.6133333333333333
+              },
+              {
+                "period": "2020-05",
+                "value": 14.4,
+                "score": 4.394285714285714
+              },
+              {
+                "period": "2021-07",
+                "value": -6.8,
+                "score": 2.0933333333333333
+              },
+              {
+                "period": "2021-09",
+                "value": -8.8,
+                "score": 1.9257142857142857
+              },
+              {
+                "period": "2022-04",
+                "value": 35.2,
+                "score": 5
+              },
+              {
+                "period": "2022-07",
+                "value": 29.8,
+                "score": 5
+              },
+              {
+                "period": "2022-11",
+                "value": 5.5,
+                "score": 3.7333333333333334
+              },
+              {
+                "period": "2023-06",
+                "value": -21.2,
+                "score": 1.217142857142857
+              },
+              {
+                "period": "2023-12",
+                "value": -8.4,
+                "score": 1.9485714285714286
+              },
+              {
+                "period": "2024-04",
+                "value": -20.5,
+                "score": 1.2571428571428571
+              },
+              {
+                "period": "2024-05",
+                "value": -19.3,
+                "score": 1.3257142857142856
+              },
+              {
+                "period": "2024-06",
+                "value": -17.6,
+                "score": 1.4228571428571428
+              },
+              {
+                "period": "2024-08",
+                "value": -15.8,
+                "score": 1.5257142857142858
+              },
+              {
+                "period": "2025-04",
+                "value": 17.7,
+                "score": 4.582857142857143
+              },
+              {
+                "period": "2025-06",
+                "value": 30,
+                "score": 5
+              },
+              {
+                "period": "2026-03",
+                "value": 3.1,
+                "score": 3.413333333333333
+              },
+              {
+                "period": "2026-04",
+                "value": -2.7,
+                "score": 2.64
+              },
+              {
+                "period": "2026-06",
+                "value": -16.4,
+                "score": 1.4914285714285715
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        },
+        {
+          "name": "明显收窄",
+          "anchors": [
+            [
+              -25,
+              1
+            ],
+            [
+              -5,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              25,
+              5
+            ]
+          ],
+          "currentScore": 1.4,
+          "diagnostics": {
+            "n": 18,
+            "first": "2020-03",
+            "last": "2026-06",
+            "minimumValue": -21.2,
+            "maximumValue": 35.2,
+            "meanScore": 2.868888888888889,
+            "floorCount": 0,
+            "ceilingCount": 3,
+            "adjacentWithinYearCount": 3,
+            "medianAbsoluteWithinYearScoreChange": 0.08499999999999996,
+            "meanAbsoluteWithinYearScoreChange": 0.435,
+            "halfPointWithinYearJumpCount": 1,
+            "yearMeans": [
+              {
+                "year": "2020",
+                "n": 2,
+                "mean": 4.195
+              },
+              {
+                "year": "2021",
+                "n": 2,
+                "mean": 1.8599999999999999
+              },
+              {
+                "year": "2022",
+                "n": 3,
+                "mean": 4.675
+              },
+              {
+                "year": "2023",
+                "n": 2,
+                "mean": 1.51
+              },
+              {
+                "year": "2024",
+                "n": 4,
+                "mean": 1.335
+              },
+              {
+                "year": "2025",
+                "n": 2,
+                "mean": 4.8175
+              },
+              {
+                "year": "2026",
+                "n": 3,
+                "mean": 2.5033333333333334
+              }
+            ],
+            "scores": [
+              {
+                "period": "2020-03",
+                "value": 4.6,
+                "score": 3.92
+              },
+              {
+                "period": "2020-05",
+                "value": 14.4,
+                "score": 4.47
+              },
+              {
+                "period": "2021-07",
+                "value": -6.8,
+                "score": 1.91
+              },
+              {
+                "period": "2021-09",
+                "value": -8.8,
+                "score": 1.81
+              },
+              {
+                "period": "2022-04",
+                "value": 35.2,
+                "score": 5
+              },
+              {
+                "period": "2022-07",
+                "value": 29.8,
+                "score": 5
+              },
+              {
+                "period": "2022-11",
+                "value": 5.5,
+                "score": 4.025
+              },
+              {
+                "period": "2023-06",
+                "value": -21.2,
+                "score": 1.19
+              },
+              {
+                "period": "2023-12",
+                "value": -8.4,
+                "score": 1.83
+              },
+              {
+                "period": "2024-04",
+                "value": -20.5,
+                "score": 1.225
+              },
+              {
+                "period": "2024-05",
+                "value": -19.3,
+                "score": 1.285
+              },
+              {
+                "period": "2024-06",
+                "value": -17.6,
+                "score": 1.3699999999999999
+              },
+              {
+                "period": "2024-08",
+                "value": -15.8,
+                "score": 1.46
+              },
+              {
+                "period": "2025-04",
+                "value": 17.7,
+                "score": 4.635
+              },
+              {
+                "period": "2025-06",
+                "value": 30,
+                "score": 5
+              },
+              {
+                "period": "2026-03",
+                "value": 3.1,
+                "score": 3.62
+              },
+              {
+                "period": "2026-04",
+                "value": -2.7,
+                "score": 2.46
+              },
+              {
+                "period": "2026-06",
+                "value": -16.4,
+                "score": 1.4300000000000002
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        }
+      ],
+      "currentScore": 1.5333333333333332,
+      "sampleEvidence": [
+        {
+          "period": "2020-03",
+          "value": 4.6,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202004/t20200420_3501077.htm",
+          "releaseDate": "2020-04-20"
+        },
+        {
+          "period": "2020-05",
+          "value": 14.4,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202006/t20200618_3534764.htm",
+          "releaseDate": "2020-06-18"
+        },
+        {
+          "period": "2021-07",
+          "value": -6.8,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202108/t20210819_3746445.htm",
+          "releaseDate": "2021-08-20"
+        },
+        {
+          "period": "2021-09",
+          "value": -8.8,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202110/t20211022_3760014.htm",
+          "releaseDate": "2021-10-22"
+        },
+        {
+          "period": "2022-04",
+          "value": 35.2,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202205/t20220517_3810958.htm",
+          "releaseDate": "2022-05-17"
+        },
+        {
+          "period": "2022-07",
+          "value": 29.8,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202208/t20220817_3834300.htm",
+          "releaseDate": "2022-08-17"
+        },
+        {
+          "period": "2022-11",
+          "value": 5.5,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202212/t20221220_3858837.htm",
+          "releaseDate": "2022-12-20"
+        },
+        {
+          "period": "2023-06",
+          "value": -21.2,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202307/t20230719_3897130.htm",
+          "releaseDate": "2023-07-19"
+        },
+        {
+          "period": "2023-12",
+          "value": -8.4,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202402/t20240201_3928009.htm",
+          "releaseDate": "2024-02-01"
+        },
+        {
+          "period": "2024-04",
+          "value": -20.5,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202405/t20240517_3935136.htm",
+          "releaseDate": "2024-05-20"
+        },
+        {
+          "period": "2024-05",
+          "value": -19.3,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202406/t20240624_3937803.htm",
+          "releaseDate": "2024-06-24"
+        },
+        {
+          "period": "2024-06",
+          "value": -17.6,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202407/t20240722_3939942.htm",
+          "releaseDate": "2024-07-22"
+        },
+        {
+          "period": "2024-08",
+          "value": -15.8,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202409/t20240920_3944086.htm",
+          "releaseDate": "2024-09-20"
+        },
+        {
+          "period": "2025-04",
+          "value": 17.7,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202505/t20250520_3964136.htm",
+          "releaseDate": "2025-05-20"
+        },
+        {
+          "period": "2025-06",
+          "value": 30,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202507/t20250725_3968635.htm",
+          "releaseDate": "2025-07-25"
+        },
+        {
+          "period": "2026-03",
+          "value": 3.1,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202604/t20260424_3988324.htm",
+          "releaseDate": "2026-04-24"
+        },
+        {
+          "period": "2026-04",
+          "value": -2.7,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202605/t20260515_3989956.htm",
+          "releaseDate": "2026-05-20"
+        },
+        {
+          "period": "2026-06",
+          "value": -16.4,
+          "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202607/t20260722_3993943.htm",
+          "releaseDate": "2026-07-22"
+        }
+      ],
+      "limitations": [
+        "本轮不改变指标、权重、统计口径、信息截止日或原始观察。",
+        "未建立逐期实时版本和独立经济事件真值标签，不能报告误报率、预测最优参数或因果政策效果。",
+        "历史累计期不独立，疫情/低基数、2015之后预算构成及跨预算转移会改变名义同比含义；本次原始月报抓取值为当前存档网页版本，不冒充当年未修订实时快照。"
+      ]
+    },
+    {
+      "id": "P02A",
+      "name": "7天逆回购政策利率近6个月变动",
+      "weight": 0.025,
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -50,
+            5
+          ],
+          [
+            -25,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            25,
+            2
+          ],
+          [
+            50,
+            1
+          ]
+        ],
+        "description": "相邻锚点之间线性计算得分，端点外封顶/保底；内部不先取整。仅插值得分，不插值统计数据。"
+      },
+      "decision": "保留",
+      "reason": "公开样本只支持当前0基点；历史LPR和DR007不可充当7天逆回购政策利率。稀疏动作的时间退出属于6个月窗口定义，不通过收窄或延长窗口重复奖励旧降息。",
+      "definition": "100×（本月末有效的央行7天逆回购政策利率－6个月前月末同政策利率），原值为%、变动为基点。逐期留存正式公告和生效日，不用LPR、DR007、投放金额替代；未调整也须核实两端有效利率。看半年政策方向，降息表示支持条件而非经济已改善；权重2.5%，连续锚点为-50、-25、0、25、50基点对应5、4、3、2、1分，属于研究试行尺度：0处于中性，小幅降息与更大幅降息分层，不冒称官方评分或历史最优阈值；无需恢复每日资金面图。",
+      "sampleSummary": {
+        "source": "本期结构化原始证据",
+        "observedChangeCount": 1,
+        "period": [
+          "2026-09",
+          "2026-09"
+        ],
+        "officialOnly": true,
+        "sufficientForOptimalSelection": false
+      },
+      "candidates": [
+        {
+          "name": "现版",
+          "anchors": [
+            [
+              -50,
+              5
+            ],
+            [
+              -25,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              25,
+              2
+            ],
+            [
+              50,
+              1
+            ]
+          ],
+          "currentScore": 3,
+          "diagnostics": {
+            "n": 1,
+            "first": "2026-09",
+            "last": "2026-09",
+            "minimumValue": 0,
+            "maximumValue": 0,
+            "meanScore": 3,
+            "floorCount": 0,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 0,
+            "medianAbsoluteWithinYearScoreChange": null,
+            "meanAbsoluteWithinYearScoreChange": null,
+            "halfPointWithinYearJumpCount": 0,
+            "yearMeans": [
+              {
+                "year": "2026",
+                "n": 1,
+                "mean": 3
+              }
+            ],
+            "scores": [
+              {
+                "period": "2026-09",
+                "value": 0,
+                "score": 3
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        },
+        {
+          "name": "适度收窄",
+          "anchors": [
+            [
+              -50,
+              5
+            ],
+            [
+              -20,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              20,
+              2
+            ],
+            [
+              50,
+              1
+            ]
+          ],
+          "currentScore": 3,
+          "diagnostics": {
+            "n": 1,
+            "first": "2026-09",
+            "last": "2026-09",
+            "minimumValue": 0,
+            "maximumValue": 0,
+            "meanScore": 3,
+            "floorCount": 0,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 0,
+            "medianAbsoluteWithinYearScoreChange": null,
+            "meanAbsoluteWithinYearScoreChange": null,
+            "halfPointWithinYearJumpCount": 0,
+            "yearMeans": [
+              {
+                "year": "2026",
+                "n": 1,
+                "mean": 3
+              }
+            ],
+            "scores": [
+              {
+                "period": "2026-09",
+                "value": 0,
+                "score": 3
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        },
+        {
+          "name": "明显收窄",
+          "anchors": [
+            [
+              -50,
+              5
+            ],
+            [
+              -10,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              50,
+              1
+            ]
+          ],
+          "currentScore": 3,
+          "diagnostics": {
+            "n": 1,
+            "first": "2026-09",
+            "last": "2026-09",
+            "minimumValue": 0,
+            "maximumValue": 0,
+            "meanScore": 3,
+            "floorCount": 0,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 0,
+            "medianAbsoluteWithinYearScoreChange": null,
+            "meanAbsoluteWithinYearScoreChange": null,
+            "halfPointWithinYearJumpCount": 0,
+            "yearMeans": [
+              {
+                "year": "2026",
+                "n": 1,
+                "mean": 3
+              }
+            ],
+            "scores": [
+              {
+                "period": "2026-09",
+                "value": 0,
+                "score": 3
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        }
+      ],
+      "currentScore": 3,
+      "sampleEvidence": [
+        {
+          "period": "2026-09",
+          "value": 0,
+          "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026092908461628271/index.html",
+          "releaseDate": "2026-09-29"
+        }
+      ],
+      "limitations": [
+        "本轮不改变指标、权重、统计口径、信息截止日或原始观察。",
+        "未建立逐期实时版本和独立经济事件真值标签，不能报告误报率、预测最优参数或因果政策效果。",
+        "当前事实核验充足不等于尺度校准样本充足，本轮未构造或替代缺失的同口径长历史。"
+      ]
+    },
+    {
+      "id": "P02E",
+      "name": "近12完整月普遍法定人民币存款准备金率调整净累计",
+      "weight": 0.01,
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -100,
+            5
+          ],
+          [
+            -50,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            50,
+            2
+          ],
+          [
+            100,
+            1
+          ]
+        ],
+        "description": "相邻锚点之间线性计算得分，端点外封顶/保底；内部不先取整。仅插值得分，不插值统计数据。"
+      },
+      "decision": "保留",
+      "reason": "12期原表账本核验的是当前窗口无普遍动作，不是12个独立RRR变动样本。维持0基点3分，保持定向、外币、机构个别调整排除及公告去重；不延长窗口或把亿元工具金额当基点。",
+      "definition": "以经核验的最新已完整结束且工具原表已公开月份为期末，汇总截至该月末向前12个完整月内已经生效执行的普遍法定人民币存款准备金率调整，降准记负、升准记正，按官方公告幅度累加为基点；主观察period为期末月。若普遍调整公告注明已处于最低档的机构除外，保留官方例外说明，不能改用机构加权平均率。定向、行业专属、外币和机构个别调整单独记录但不计入普遍动作；窗口外旧政策、尚未执行的公告及结构性工具利率变化仅作背景。12期月度工具表的投放、回笼和净投放单位是亿元，只用于核对披露覆盖和发现政策动作，‘—’或‘-’不能转换为0基点；还须有跨期执行报告、大事记和政策公告复核证据。只有完整证据支持窗口内无普遍调整时才能给0基点及3分，缺月、漏公告或适用范围不明则留空。窗口期末随月度更新，既有政策仍有效不因改看24个月而反复奖励旧降准；降准不保证信用需求、实际贷款或某类资产收益改善。权重仍为总分1%，连续锚点为-100、-50、0、50、100基点对应5、4、3、2、1分，属于研究试行尺度，不冒称官方评分或回测最优。",
+      "sampleSummary": {
+        "source": "本期结构化原始证据",
+        "observedChangeCount": 1,
+        "period": [
+          "2026-09",
+          "2026-09"
+        ],
+        "officialOnly": true,
+        "sufficientForOptimalSelection": false
+      },
+      "candidates": [
+        {
+          "name": "现版",
+          "anchors": [
+            [
+              -100,
+              5
+            ],
+            [
+              -50,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              50,
+              2
+            ],
+            [
+              100,
+              1
+            ]
+          ],
+          "currentScore": 3,
+          "diagnostics": {
+            "n": 1,
+            "first": "2026-09",
+            "last": "2026-09",
+            "minimumValue": 0,
+            "maximumValue": 0,
+            "meanScore": 3,
+            "floorCount": 0,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 0,
+            "medianAbsoluteWithinYearScoreChange": null,
+            "meanAbsoluteWithinYearScoreChange": null,
+            "halfPointWithinYearJumpCount": 0,
+            "yearMeans": [
+              {
+                "year": "2026",
+                "n": 1,
+                "mean": 3
+              }
+            ],
+            "scores": [
+              {
+                "period": "2026-09",
+                "value": 0,
+                "score": 3
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        },
+        {
+          "name": "适度收窄",
+          "anchors": [
+            [
+              -100,
+              5
+            ],
+            [
+              -40,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              40,
+              2
+            ],
+            [
+              100,
+              1
+            ]
+          ],
+          "currentScore": 3,
+          "diagnostics": {
+            "n": 1,
+            "first": "2026-09",
+            "last": "2026-09",
+            "minimumValue": 0,
+            "maximumValue": 0,
+            "meanScore": 3,
+            "floorCount": 0,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 0,
+            "medianAbsoluteWithinYearScoreChange": null,
+            "meanAbsoluteWithinYearScoreChange": null,
+            "halfPointWithinYearJumpCount": 0,
+            "yearMeans": [
+              {
+                "year": "2026",
+                "n": 1,
+                "mean": 3
+              }
+            ],
+            "scores": [
+              {
+                "period": "2026-09",
+                "value": 0,
+                "score": 3
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        },
+        {
+          "name": "明显收窄",
+          "anchors": [
+            [
+              -100,
+              5
+            ],
+            [
+              -25,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              25,
+              2
+            ],
+            [
+              100,
+              1
+            ]
+          ],
+          "currentScore": 3,
+          "diagnostics": {
+            "n": 1,
+            "first": "2026-09",
+            "last": "2026-09",
+            "minimumValue": 0,
+            "maximumValue": 0,
+            "meanScore": 3,
+            "floorCount": 0,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 0,
+            "medianAbsoluteWithinYearScoreChange": null,
+            "meanAbsoluteWithinYearScoreChange": null,
+            "halfPointWithinYearJumpCount": 0,
+            "yearMeans": [
+              {
+                "year": "2026",
+                "n": 1,
+                "mean": 3
+              }
+            ],
+            "scores": [
+              {
+                "period": "2026-09",
+                "value": 0,
+                "score": 3
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        }
+      ],
+      "currentScore": 3,
+      "sampleEvidence": [
+        {
+          "period": "2026-09",
+          "value": 0,
+          "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/5727710/2026100917050827264/index.html",
+          "releaseDate": "2026-10-09"
+        }
+      ],
+      "limitations": [
+        "本轮不改变指标、权重、统计口径、信息截止日或原始观察。",
+        "未建立逐期实时版本和独立经济事件真值标签，不能报告误报率、预测最优参数或因果政策效果。",
+        "当前事实核验充足不等于尺度校准样本充足，本轮未构造或替代缺失的同口径长历史。"
+      ]
+    },
+    {
+      "id": "P02D",
+      "name": "新发放企业贷款加权平均利率同比变化",
+      "weight": 0.025,
+      "scoring": {
+        "method": "piecewise-linear",
+        "anchors": [
+          [
+            -50,
+            5
+          ],
+          [
+            -25,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            25,
+            2
+          ],
+          [
+            50,
+            1
+          ]
+        ],
+        "description": "相邻锚点之间线性计算得分，端点外封顶/保底；内部不先取整。仅插值得分，不插值统计数据。"
+      },
+      "decision": "保留",
+      "reason": "企业贷款利率仅有两期同口径季末月原值用于当前同比，没有可核验长历史变化序列；不得以LPR、一般贷款或平均全部贷款替换。保留当前尺度，不因-18基点这一点收窄到高分。",
+      "definition": "100×（本季末月新发放企业贷款加权平均利率－上年同月同口径利率），原值为%、变动为基点。仅选3、6、9、12月当月观测，不用季内累计平均、一般贷款利率、全部贷款利率、LPR或住房贷款利率替代；留存两期原值、观测月、发布日期和官方原文。首选人民银行货币政策执行报告或原始发布；未公布或口径不一致留空。评价名义借款利率传导，不代表包含担保费等的综合融资成本、实际利率或融资可得性；客户结构变化须说明。V1.11从2%提高至2.5%，在货币组内更重新发放企业名义借款利率传导；连续锚点为-50、-25、0、25、50基点对应5、4、3、2、1分，属于研究试行尺度，下降并不保证盈利改善。",
+      "sampleSummary": {
+        "source": "本期结构化原始证据",
+        "observedChangeCount": 1,
+        "period": [
+          "2026-06",
+          "2026-06"
+        ],
+        "officialOnly": true,
+        "sufficientForOptimalSelection": false
+      },
+      "candidates": [
+        {
+          "name": "现版",
+          "anchors": [
+            [
+              -50,
+              5
+            ],
+            [
+              -25,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              25,
+              2
+            ],
+            [
+              50,
+              1
+            ]
+          ],
+          "currentScore": 3.7199999999999998,
+          "diagnostics": {
+            "n": 1,
+            "first": "2026-06",
+            "last": "2026-06",
+            "minimumValue": -18,
+            "maximumValue": -18,
+            "meanScore": 3.7199999999999998,
+            "floorCount": 0,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 0,
+            "medianAbsoluteWithinYearScoreChange": null,
+            "meanAbsoluteWithinYearScoreChange": null,
+            "halfPointWithinYearJumpCount": 0,
+            "yearMeans": [
+              {
+                "year": "2026",
+                "n": 1,
+                "mean": 3.7199999999999998
+              }
+            ],
+            "scores": [
+              {
+                "period": "2026-06",
+                "value": -18,
+                "score": 3.7199999999999998
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        },
+        {
+          "name": "适度收窄",
+          "anchors": [
+            [
+              -50,
+              5
+            ],
+            [
+              -20,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              20,
+              2
+            ],
+            [
+              50,
+              1
+            ]
+          ],
+          "currentScore": 3.9,
+          "diagnostics": {
+            "n": 1,
+            "first": "2026-06",
+            "last": "2026-06",
+            "minimumValue": -18,
+            "maximumValue": -18,
+            "meanScore": 3.9,
+            "floorCount": 0,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 0,
+            "medianAbsoluteWithinYearScoreChange": null,
+            "meanAbsoluteWithinYearScoreChange": null,
+            "halfPointWithinYearJumpCount": 0,
+            "yearMeans": [
+              {
+                "year": "2026",
+                "n": 1,
+                "mean": 3.9
+              }
+            ],
+            "scores": [
+              {
+                "period": "2026-06",
+                "value": -18,
+                "score": 3.9
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        },
+        {
+          "name": "明显收窄",
+          "anchors": [
+            [
+              -50,
+              5
+            ],
+            [
+              -10,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              50,
+              1
+            ]
+          ],
+          "currentScore": 4.2,
+          "diagnostics": {
+            "n": 1,
+            "first": "2026-06",
+            "last": "2026-06",
+            "minimumValue": -18,
+            "maximumValue": -18,
+            "meanScore": 4.2,
+            "floorCount": 0,
+            "ceilingCount": 0,
+            "adjacentWithinYearCount": 0,
+            "medianAbsoluteWithinYearScoreChange": null,
+            "meanAbsoluteWithinYearScoreChange": null,
+            "halfPointWithinYearJumpCount": 0,
+            "yearMeans": [
+              {
+                "year": "2026",
+                "n": 1,
+                "mean": 4.2
+              }
+            ],
+            "scores": [
+              {
+                "period": "2026-06",
+                "value": -18,
+                "score": 4.2
+              }
+            ],
+            "interpretation": "均值、端点饱和及同年连续累计期的分数变化只是尺度诊断；不是经济误报率、政策效果因果识别或资产收益回测。累计月份相互相关，不能把n视为n个独立样本。"
+          }
+        }
+      ],
+      "currentScore": 3.7199999999999998,
+      "sampleEvidence": [
+        {
+          "period": "2026-06",
+          "value": -18,
+          "sourceUrl": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+          "releaseDate": "2026-08-12"
+        }
+      ],
+      "limitations": [
+        "本轮不改变指标、权重、统计口径、信息截止日或原始观察。",
+        "未建立逐期实时版本和独立经济事件真值标签，不能报告误报率、预测最优参数或因果政策效果。",
+        "当前事实核验充足不等于尺度校准样本充足，本轮未构造或替代缺失的同口径长历史。"
+      ]
+    },
+    {
+      "id": "P03A",
+      "name": "供给侧治理方向与实施条件",
+      "weight": 0.02,
+      "scoring": {
+        "method": "evidence-rubric",
+        "step": 1,
+        "description": "保留五档整数研判；有正式文件与实施条件才可4分，5分还须与完整评价范围匹配的执行证据，不按文件数量或市场涨幅计分。"
+      },
+      "decision": "保留",
+      "reason": "供给治理是有效规则与实施证据，不可用小数评分伪装更高精度。现证据范围是钢铁，不能外推全经济；支持条件4分不等于价格上涨或产能退出已经兑现。",
+      "definition": "评价产能准入与退出、能效标准、行业竞争治理等有效政策及其实施条件。发布压减要求不等于已经退出产能，供给收缩也不自动加分；结合竞争效率、上下游受益与受损范围研判。4分需要有效正式原文及明确实施条件，5分另需与评价范围相符的执行原文，如实际退出核验、标准执行或监管行动；不等待商品涨价、订单或利润兑现。每季及重大事件复核，政策持续有效不因无新文件自动回到3分；缺证据不补分。与P03B按不同机制评价，同一措施不得重复加分；权重2%，质性五档为试行。",
+      "sampleSummary": {
+        "historicalIndependentReviewCount": 1,
+        "period": "2026-10",
+        "officialOnly": true,
+        "sufficientForNumericInterpolation": false
+      },
+      "candidates": [],
+      "currentScore": 4,
+      "sampleEvidence": [
+        {
+          "theme": "supplyGovernance",
+          "title": "钢铁行业稳增长工作方案（2025—2026年）",
+          "eventId": "MIIT-2025-171-supply",
+          "mechanism": "产能准入退出、分级规范及联合监管",
+          "summary": "原文明确供给过剩与需求不足矛盾；用年度产量任务、产能减量置换与分类管理治理，含地方实施和常态监测要求；未记作完成退出。",
+          "stage": "正式文件",
+          "status": "有效",
+          "sourceUrl": "https://www.miit.gov.cn/jgsj/ycls/wjfb/art/2025/art_854c86c1f4484bcfa78a6b634a7fb5b1.html",
+          "releaseDate": "2025-09-22",
+          "effectiveDate": "2025-09-22",
+          "documentNumber": "工信部联原〔2025〕171号",
+          "attachmentUrl": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20259/2ea297747baf43c19c0872ee3255d351.pdf"
+        }
+      ],
+      "evidenceAudit": {
+        "reviewedAt": "2026-10-11",
+        "coverageAssessment": {
+          "level": "全国行业",
+          "coveredAreas": [
+            "钢铁产能准入退出和联合监管实施条件"
+          ],
+          "unverifiedAreas": [
+            "其他产业覆盖",
+            "全国钢铁实际退出及执行成效"
+          ],
+          "wholeEconomyClaim": false,
+          "executionMatchesScope": false,
+          "representativeness": "全国钢铁行业供给侧治理实施条件；属于明确行业范围，不外推所有产业或全部企业已经受益。 本项分数不宣称所有行业或全部对象已经受益；未公开执行证据不等于未执行。"
+        },
+        "completeImplementationDimensions": [
+          "instruments",
+          "responsibleAgency",
+          "timetable",
+          "beneficiaries"
+        ],
+        "evidenceIds": [
+          "MIIT-2025-171-supply"
+        ],
+        "declaredWholeEconomyClaim": false,
+        "executionMatchesScope": false,
+        "currentFiveScoreEligible": false,
+        "recommendation": "保留整数五档及现4分；5分继续拒绝范围未核齐，负面反证和撤销也需记录，不因资料缺失默认3分。"
+      },
+      "limitations": [
+        "本轮不改变指标、权重、统计口径、信息截止日或原始观察。",
+        "未建立逐期实时版本和独立经济事件真值标签，不能报告误报率、预测最优参数或因果政策效果。",
+        "定性证据没有可靠同一标注者长历史，不能编造五档误报率或置信区间。"
+      ]
+    },
+    {
+      "id": "P03B",
+      "name": "产业支持方向与实施条件",
+      "weight": 0.02,
+      "scoring": {
+        "method": "evidence-rubric",
+        "step": 1,
+        "description": "保留五档整数研判；有正式文件与实施条件才可4分，5分还须与完整评价范围匹配的执行证据，不按文件数量或市场涨幅计分。"
+      },
+      "decision": "保留",
+      "reason": "产业支持以工具、责任、资源渠道、时间和受益范围为依据。消费品执行不能替代设备更新全部范围，拨付、预算记支、兑付、开工分开记录；未公开不是未执行。",
+      "definition": "核对产业支持的有效正式文件、适用范围、财政或金融资源、标准、责任机构与时间表，评价政策可执行性和已知影响。计划额度、签约金额、项目名单不得写成实际拨付或开工；5分须有对应执行证据，但不等待企业盈利兑现。产业订单、产出和利润在增长动力验证，不在此处再次计分；财政额度与货币降息本身不重复作为本项的独立高分理由。每季或重大事件复核，持续有效且条件未变可维持对应分档，未公开执行数据标待核验；权重2%，五档为试行。",
+      "sampleSummary": {
+        "historicalIndependentReviewCount": 1,
+        "period": "2026-10",
+        "officialOnly": true,
+        "sufficientForNumericInterpolation": false
+      },
+      "candidates": [],
+      "currentScore": 4,
+      "sampleEvidence": [
+        {
+          "theme": "industrySupport",
+          "title": "关于2026年实施大规模设备更新和消费品以旧换新政策的通知",
+          "eventId": "NDRC-2025-1745-support",
+          "mechanism": "资格标准、补贴执行与监督",
+          "summary": "2026年度通知明确支持项目、补贴对象、全国统一标准、央地共担、分批下达及年底收回，并禁止以拨代支。",
+          "stage": "正式文件",
+          "status": "有效",
+          "sourceUrl": "https://www.ndrc.gov.cn/xwdt/tzgg/202512/t20251230_1402852.html",
+          "releaseDate": "2025-12-30",
+          "effectiveDate": "2026-01-01",
+          "documentNumber": "发改环资〔2025〕1745号"
+        },
+        {
+          "theme": "industrySupport",
+          "title": "2026年2500亿元超长期特别国债支持消费品以旧换新资金已全部下达",
+          "eventId": "NDRC-20260930-tradein-execution",
+          "mechanism": "消费品以旧换新资金下达及已公布补贴实施量",
+          "summary": "第四批625亿元下达后全年2500亿元全部下达，原文报告1—8月补贴惠及量；只作消费品子范围执行，既不视为全国全部项目资金兑付，也不重复取相关商品销售增速加分。",
+          "stage": "执行进展",
+          "scope": "全国消费品以旧换新资金安排与已公布实施量；不含设备更新全部领域",
+          "sourceUrl": "https://www.ndrc.gov.cn/xwdt/ztzl/tddgmsbgxhxfpyjhx/gzdt/202609/t20260930_1407946.html",
+          "releaseDate": "2026-09-30"
+        }
+      ],
+      "evidenceAudit": {
+        "reviewedAt": "2026-10-11",
+        "coverageAssessment": {
+          "level": "全国专项",
+          "coveredAreas": [
+            "设备更新和消费品以旧换新资格、责任和实施条件"
+          ],
+          "unverifiedAreas": [
+            "设备更新全部领域执行",
+            "资金完整兑付"
+          ],
+          "wholeEconomyClaim": false,
+          "executionMatchesScope": false,
+          "representativeness": "全国2026年设备更新与消费品以旧换新政策的实施条件，不外推所有产业支持政策。 本项分数不宣称所有行业或全部对象已经受益；未公开执行证据不等于未执行。"
+        },
+        "completeImplementationDimensions": [
+          "instruments",
+          "responsibleAgency",
+          "timetable",
+          "beneficiaries"
+        ],
+        "evidenceIds": [
+          "NDRC-2025-1745-support",
+          "NDRC-20260930-tradein-execution"
+        ],
+        "declaredWholeEconomyClaim": false,
+        "executionMatchesScope": false,
+        "currentFiveScoreEligible": false,
+        "recommendation": "保留整数五档及现4分；5分继续拒绝范围未核齐，负面反证和撤销也需记录，不因资料缺失默认3分。"
+      },
+      "limitations": [
+        "本轮不改变指标、权重、统计口径、信息截止日或原始观察。",
+        "未建立逐期实时版本和独立经济事件真值标签，不能报告误报率、预测最优参数或因果政策效果。",
+        "定性证据没有可靠同一标注者长历史，不能编造五档误报率或置信区间。"
+      ]
+    },
+    {
+      "id": "P04A",
+      "name": "产权、市场准入与公平竞争制度",
+      "weight": 0.02,
+      "scoring": {
+        "method": "evidence-rubric",
+        "step": 1,
+        "description": "保留五档整数研判；有正式文件与实施条件才可4分，5分还须与完整评价范围匹配的执行证据，不按文件数量或市场涨幅计分。"
+      },
+      "decision": "保留",
+      "reason": "法律持续有效且实施责任明确可保持4分，不因本月无新文件自动回3。5分须与预先固定主要范围匹配的救济、配套执行或壁垒清理，不用宣传培训代替。",
+      "definition": "跟踪产权保护、民营经济、市场准入、统一大市场、公平竞争和涉企执法的有效法律与正式规则。评价当前制度条件及可核验执行，区分立法、施行和具体执行，不能以文件数量、一般宣传或单一试点推断全国效果。4分须完整正式依据和实施条件，5分补充与范围相符的官方执行证据；无新文件时重新核实有效性和条件，可延续原档而非自动回3分。记录受益主体、执行约束与反向证据，不重复计入P04B；权重2%，质性五档为试行。",
+      "sampleSummary": {
+        "historicalIndependentReviewCount": 1,
+        "period": "2026-10",
+        "officialOnly": true,
+        "sufficientForNumericInterpolation": false
+      },
+      "candidates": [],
+      "currentScore": 4,
+      "sampleEvidence": [
+        {
+          "theme": "propertyCompetition",
+          "title": "关于学习宣传和贯彻实施《中华人民共和国民营经济促进法》的通知",
+          "eventId": "NDRC-2025-486-private-law",
+          "mechanism": "平等准入产权保护及配套制度清理",
+          "summary": "通知核实法律通过及生效日，并要求协调机制、立改废释、清理不一致政策和依法平等保护；评价施行条件而非宣传活动数量。",
+          "stage": "正式文件",
+          "status": "有效",
+          "sourceUrl": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202505/t20250520_1397832.html",
+          "releaseDate": "2025-05-20",
+          "effectiveDate": "2025-05-20",
+          "documentNumber": "发改办民营〔2025〕486号",
+          "actualPublisher": "国家发展和改革委员会"
+        }
+      ],
+      "evidenceAudit": {
+        "reviewedAt": "2026-10-11",
+        "coverageAssessment": {
+          "level": "全国制度",
+          "coveredAreas": [
+            "产权、准入、公平竞争法律及贯彻要求"
+          ],
+          "unverifiedAreas": [
+            "全国壁垒清理完成",
+            "跨地区实际执法和权利救济一致性"
+          ],
+          "wholeEconomyClaim": false,
+          "executionMatchesScope": false,
+          "representativeness": "全国民营经济产权、平等准入与公平竞争法律及发展改革系统贯彻实施条件；不以单一地区试点推断全国实际执法。 本项分数不宣称所有行业或全部对象已经受益；未公开执行证据不等于未执行。"
+        },
+        "completeImplementationDimensions": [
+          "instruments",
+          "responsibleAgency",
+          "timetable",
+          "beneficiaries"
+        ],
+        "evidenceIds": [
+          "NDRC-2025-486-private-law"
+        ],
+        "declaredWholeEconomyClaim": false,
+        "executionMatchesScope": false,
+        "currentFiveScoreEligible": false,
+        "recommendation": "保留整数五档及现4分；5分继续拒绝范围未核齐，负面反证和撤销也需记录，不因资料缺失默认3分。"
+      },
+      "limitations": [
+        "本轮不改变指标、权重、统计口径、信息截止日或原始观察。",
+        "未建立逐期实时版本和独立经济事件真值标签，不能报告误报率、预测最优参数或因果政策效果。",
+        "定性证据没有可靠同一标注者长历史，不能编造五档误报率或置信区间。"
+      ]
+    },
+    {
+      "id": "P04B",
+      "name": "资本市场长期资金与投资者回报制度",
+      "weight": 0.02,
+      "scoring": {
+        "method": "evidence-rubric",
+        "step": 1,
+        "description": "保留五档整数研判；有正式文件与实施条件才可4分，5分还须与完整评价范围匹配的执行证据，不按文件数量或市场涨幅计分。"
+      },
+      "decision": "保留",
+      "reason": "长期资金与回报制度继续整数档。股票市值增长、文件数量或累计净买入不能替代各类机构考核和回报治理的完整执行；持续有效制度按季度复核而非机械衰减。",
+      "definition": "核对保险、养老金、年金、公募等长期资金的考核和投资制度，以及分红、回购、治理、退市和投资者保护规则；政策目标比例不等于实际入市资金。评价制度条件，不能根据股价上涨给分，也不把低收益率视为政策宽松。5分须有对应实施依据，且说明覆盖范围和可能副作用；不等待上市公司利润兑现。每季与重大正式规则变化时复核，持续有效的制度可保持对应分档；与产权准入、财政及信贷指标区分机制。首选证监会等原文，权重2%，五档为试行。",
+      "sampleSummary": {
+        "historicalIndependentReviewCount": 1,
+        "period": "2026-10",
+        "officialOnly": true,
+        "sufficientForNumericInterpolation": false
+      },
+      "candidates": [],
+      "currentScore": 4,
+      "sampleEvidence": [
+        {
+          "theme": "capitalMarketInstitution",
+          "title": "六部门联合印发《关于推动中长期资金入市工作的实施方案》",
+          "eventId": "CSRC-20250122-longcapital",
+          "mechanism": "长周期考核、长期资金投资及股东回报治理",
+          "summary": "正式原始发布明确保险、社保、基本养老金、年金和公募长期考核及投资制度，要求分红回购与基金利益绑定；不是仅报目标入市金额。",
+          "stage": "正式文件",
+          "status": "有效",
+          "sourceUrl": "https://www.csrc.gov.cn/csrc/c100028/c7535174/content.shtml",
+          "releaseDate": "2025-01-22",
+          "effectiveDate": "2025-01-22"
+        },
+        {
+          "theme": "capitalMarketInstitution",
+          "title": "吴清主席在2026陆家嘴论坛上的主题演讲",
+          "eventId": "CSRC-20260617-capitalinstitution-execution",
+          "mechanism": "长期投资制度及投资者回报治理执行线索",
+          "summary": "原始官方演讲说明長周期考核及保险试点机制，报告两年多长期资金净买入约1.3万亿元和分红回购大于融资等进展；未用市值涨幅或文件数量直接计分。",
+          "stage": "执行进展",
+          "scope": "已公布长期资金及上市回报总量执行线索；非逐类机构完整制度落实核验",
+          "sourceUrl": "https://www.csrc.gov.cn/csrc/c106311/c7639684/content.shtml",
+          "releaseDate": "2026-06-17"
+        }
+      ],
+      "evidenceAudit": {
+        "reviewedAt": "2026-10-11",
+        "coverageAssessment": {
+          "level": "全国制度",
+          "coveredAreas": [
+            "主要长期资金考核与上市股东回报制度条件"
+          ],
+          "unverifiedAreas": [
+            "逐类机构完整执行",
+            "全部回报治理制度落实"
+          ],
+          "wholeEconomyClaim": false,
+          "executionMatchesScope": false,
+          "representativeness": "全国保险、社保、养老金、年金、公募长期资金制度与上市公司投资者回报条件；不以净买入量替代每类机构考核制度执行。 本项分数不宣称所有行业或全部对象已经受益；未公开执行证据不等于未执行。"
+        },
+        "completeImplementationDimensions": [
+          "instruments",
+          "responsibleAgency",
+          "timetable",
+          "beneficiaries"
+        ],
+        "evidenceIds": [
+          "CSRC-20250122-longcapital",
+          "CSRC-20260617-capitalinstitution-execution"
+        ],
+        "declaredWholeEconomyClaim": false,
+        "executionMatchesScope": false,
+        "currentFiveScoreEligible": false,
+        "recommendation": "保留整数五档及现4分；5分继续拒绝范围未核齐，负面反证和撤销也需记录，不因资料缺失默认3分。"
+      },
+      "limitations": [
+        "本轮不改变指标、权重、统计口径、信息截止日或原始观察。",
+        "未建立逐期实时版本和独立经济事件真值标签，不能报告误报率、预测最优参数或因果政策效果。",
+        "定性证据没有可靠同一标注者长历史，不能编造五档误报率或置信区间。"
+      ]
+    }
+  ],
+  "rawdata": {
+    "fiscal": [
+      {
+        "period": "2020-03",
+        "title": "2020年一季度财政收支情况",
+        "releaseDate": "2020-04-20",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202004/t20200420_3501077.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_3.html",
+        "general": {
+          "amount": 55284,
+          "value": -5.7
+        },
+        "fund": {
+          "amount": 19749,
+          "value": 4.6
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2020-05",
+        "title": "2020年5月财政收支情况",
+        "releaseDate": "2020-06-18",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202006/t20200618_3534764.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_3.html",
+        "general": {
+          "amount": 90281,
+          "value": -2.9
+        },
+        "fund": {
+          "amount": 31856,
+          "value": 14.4
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2021-07",
+        "title": "2021年7月财政收支情况",
+        "releaseDate": "2021-08-20",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202108/t20210819_3746445.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "general": {
+          "amount": 137928,
+          "value": 3.3
+        },
+        "fund": {
+          "amount": 49366,
+          "value": -6.8
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2021-09",
+        "title": "2021年前三季度财政收支情况",
+        "releaseDate": "2021-10-22",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202110/t20211022_3760014.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "general": {
+          "amount": 179293,
+          "value": 2.3
+        },
+        "fund": {
+          "amount": 71373,
+          "value": -8.8
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2022-04",
+        "title": "2022年4月财政收支情况",
+        "releaseDate": "2022-05-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202205/t20220517_3810958.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "general": {
+          "amount": 80933,
+          "value": 5.9
+        },
+        "fund": {
+          "amount": 31488,
+          "value": 35.2
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2022-07",
+        "title": "2022年7月财政收支情况",
+        "releaseDate": "2022-08-17",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202208/t20220817_3834300.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_2.html",
+        "general": {
+          "amount": 146751,
+          "value": 6.4
+        },
+        "fund": {
+          "amount": 64062,
+          "value": 29.8
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2022-11",
+        "title": "2022年11月财政收支情况",
+        "releaseDate": "2022-12-20",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202212/t20221220_3858837.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "general": {
+          "amount": 227255,
+          "value": 6.2
+        },
+        "fund": {
+          "amount": 95961,
+          "value": 5.5
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2023-06",
+        "title": "2023年上半年财政收支情况",
+        "releaseDate": "2023-07-19",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202307/t20230719_3897130.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "general": {
+          "amount": 133893,
+          "value": 3.9
+        },
+        "fund": {
+          "amount": 43222,
+          "value": -21.2
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2023-12",
+        "title": "2023年财政收支情况",
+        "releaseDate": "2024-02-01",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202402/t20240201_3928009.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "general": {
+          "amount": 274574,
+          "value": 5.4
+        },
+        "fund": {
+          "amount": 101339,
+          "value": -8.4
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2024-04",
+        "title": "2024年4月财政收支情况",
+        "releaseDate": "2024-05-20",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202405/t20240517_3935136.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "general": {
+          "amount": 89483,
+          "value": 3.5
+        },
+        "fund": {
+          "amount": 22198,
+          "value": -20.5
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2024-05",
+        "title": "2024年5月财政收支情况",
+        "releaseDate": "2024-06-24",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202406/t20240624_3937803.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "general": {
+          "amount": 108359,
+          "value": 3.4
+        },
+        "fund": {
+          "amount": 27704,
+          "value": -19.3
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2024-06",
+        "title": "2024年上半年财政收支情况",
+        "releaseDate": "2024-07-22",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202407/t20240722_3939942.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "general": {
+          "amount": 136571,
+          "value": 2
+        },
+        "fund": {
+          "amount": 35599,
+          "value": -17.6
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2024-08",
+        "title": "2024年8月财政收支情况",
+        "releaseDate": "2024-09-20",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202409/t20240920_3944086.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/index_1.html",
+        "general": {
+          "amount": 173898,
+          "value": 1.5
+        },
+        "fund": {
+          "amount": 48171,
+          "value": -15.8
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2025-04",
+        "title": "2025年1-4月财政收支情况",
+        "releaseDate": "2025-05-20",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202505/t20250520_3964136.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "general": {
+          "amount": 93581,
+          "value": 4.6
+        },
+        "fund": {
+          "amount": 26136,
+          "value": 17.7
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2025-06",
+        "title": "2025年上半年财政收支情况",
+        "releaseDate": "2025-07-25",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202507/t20250725_3968635.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "general": {
+          "amount": 141271,
+          "value": 3.4
+        },
+        "fund": {
+          "amount": 46273,
+          "value": 30
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2026-03",
+        "title": "2026年一季度财政收支情况",
+        "releaseDate": "2026-04-24",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202604/t20260424_3988324.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "general": {
+          "amount": 74706,
+          "value": 2.6
+        },
+        "fund": {
+          "amount": 20387,
+          "value": 3.1
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2026-04",
+        "title": "2026年1-4月财政收支情况",
+        "releaseDate": "2026-05-20",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202605/t20260515_3989956.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "general": {
+          "amount": 94809,
+          "value": 1.3
+        },
+        "fund": {
+          "amount": 25431,
+          "value": -2.7
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      },
+      {
+        "period": "2026-06",
+        "title": "2026年上半年财政收支情况",
+        "releaseDate": "2026-07-22",
+        "sourceUrl": "https://gks.mof.gov.cn/tongjishuju/202607/t20260722_3993943.htm",
+        "indexUrl": "https://www.mof.gov.cn/zhengwuxinxi/redianzhuanti/quanguocaizhengshouzhiqingkuang/",
+        "general": {
+          "amount": 143329,
+          "value": 1.5
+        },
+        "fund": {
+          "amount": 38705,
+          "value": -16.4
+        },
+        "basis": "全国年初累计支出官方可比同比",
+        "unit": "%",
+        "originalPublisher": "财政部"
+      }
+    ]
+  },
+  "diagnosticsDefinition": "历史分布、端点饱和及同年连续累计期变化是尺度诊断，不是有独立真值的误报率或预测回测；未用本期总分决定候选。",
+  "recommendation": "九项评分方法和权重保持；清理五处definition旧档位残留。财政多年度诊断与三组候选保留作审查，不以更敏感就必然更准确；货币长历史不足保持现版；四项证据整数框架保留。"
+}

@@ -4,6 +4,17 @@
   "regime": "温和增长 · 结构分化",
   "macroState": "状态 III｜中性平稳（暂定）",
   "coreConflict": "外需与制造韧性，对冲内需、地产与信用传导偏弱",
+  "macroBrief": {
+    "asOf": "2026-09-30",
+    "summary": "9月制造业PMI回升至50.1%，生产和新订单均处扩张区间；8月规上工业增加值同比增长5.2%，生产端仍有韧性。但8月社零仅增长0.4%，前8个月房地产开发投资下降19.9%，内需与地产仍是主要拖累。8月末社融存量同比增长7.2%，M1增速低于M2，提示资金活化仍待观察。下一阶段重点看新订单能否持续、居民信贷和地产销售是否改善，以及政策能否带动消费与民间投资回升。",
+    "sources": [
+      { "label": "9月制造业PMI", "url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html" },
+      { "label": "8月工业生产", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965308.html" },
+      { "label": "8月社会消费品零售", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html" },
+      { "label": "1—8月房地产", "url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965310.html" },
+      { "label": "8月金融统计", "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026091414593871200/index.html" }
+    ]
+  },
   "macroNote": "现行 62 项指标均已有已核验观测值；各项采用各自的观测周期，并非都更新至 9 月。宏观观点、情景和资产评级仍为 7 月研究快照，暂不发布加权总分。",
   "macroPillars": [
     {
@@ -37,7 +48,7 @@
       "coverage": "10/10"
     },
     {
-      "name": "政策制度",
+      "name": "宏观调控",
       "weight": "20%",
       "signal": "积极但待传导",
       "direction": "稳增长与稳市场并行",
@@ -678,7 +689,7 @@
         "coreQuestion": "货币与信用是否进入实体并支持盈利？"
       },
       {
-        "name": "政策制度",
+        "name": "宏观调控",
         "weight": "20%",
         "coreQuestion": "产业、财政、货币政策如何改变尾部风险与结构机会？"
       }
@@ -717,7 +728,7 @@
       "3、经济运行分析",
       "4、增长动力分析",
       "5、金融信贷分析",
-      "6、政策制度分析",
+      "6、宏观调控分析",
       "7、宏观评分与评级原因",
       "8、当前宏观核心矛盾",
       "9、宏观约束条件",
@@ -1530,7 +1541,7 @@
       "name": "基建投资增速（%）",
       "frequency": "月度",
       "purpose": "观察基建、制造业和地产投资分化",
-      "expectedSource": "国家统计局 / 不含电力",
+      "expectedSource": "国家统计局 / 2026年现行口径含电力、热力、燃气及水生产和供应业；不拼接旧不含公用事业口径",
       "currentValue": "-4.0%",
       "prior": "—",
       "period": "2026年1—8月累计",
@@ -1882,7 +1893,7 @@
     {
       "id": "M49",
       "primary": "金融信贷",
-      "secondary": "信贷结构",
+      "secondary": "社会融资",
       "name": "社融规模存量增速（%）",
       "frequency": "月度",
       "purpose": "观察信用周期和融资总量",
@@ -1908,7 +1919,7 @@
     {
       "id": "M50",
       "primary": "金融信贷",
-      "secondary": "信贷结构",
+      "secondary": "社会融资",
       "name": "人民币贷款存量增速（%）",
       "frequency": "月度",
       "purpose": "观察信用周期和融资总量",
@@ -1934,7 +1945,7 @@
     {
       "id": "M51",
       "primary": "金融信贷",
-      "secondary": "信贷结构",
+      "secondary": "货币供给",
       "name": "M0增速（%）",
       "frequency": "月度",
       "purpose": "判断资金活化和风险偏好",
@@ -1960,7 +1971,7 @@
     {
       "id": "M52",
       "primary": "金融信贷",
-      "secondary": "信贷结构",
+      "secondary": "货币供给",
       "name": "M1增速（%）",
       "frequency": "月度",
       "purpose": "判断资金活化和风险偏好",
@@ -1986,7 +1997,7 @@
     {
       "id": "M53",
       "primary": "金融信贷",
-      "secondary": "信贷结构",
+      "secondary": "货币供给",
       "name": "M2增速（%）",
       "frequency": "月度",
       "purpose": "判断资金活化和风险偏好",
@@ -2012,7 +2023,7 @@
     {
       "id": "M54",
       "primary": "金融信贷",
-      "secondary": "信贷结构",
+      "secondary": "货币供给",
       "name": "M1-M2剪刀差",
       "frequency": "月度",
       "purpose": "判断资金活化和风险偏好",
@@ -2037,7 +2048,7 @@
     },
     {
       "id": "M55",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "产业政策",
       "name": "资本市场核心会议跟踪",
       "frequency": "事件驱动",
@@ -2055,7 +2066,7 @@
     },
     {
       "id": "M56",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "财政政策",
       "name": "财政赤字率（%）",
       "frequency": "年度",
@@ -2081,7 +2092,7 @@
     },
     {
       "id": "M57",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "财政政策",
       "name": "全国公共财政收入增速（%）",
       "frequency": "月度",
@@ -2107,7 +2118,7 @@
     },
     {
       "id": "M58",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "财政政策",
       "name": "全国公共财政支出增速（%）",
       "frequency": "月度",
@@ -2133,7 +2144,7 @@
     },
     {
       "id": "M60",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "货币政策",
       "name": "1年期LPR（%）",
       "frequency": "月度",
@@ -2159,7 +2170,7 @@
     },
     {
       "id": "M61",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "货币政策",
       "name": "5年期以上LPR（%）",
       "frequency": "月度",
@@ -2185,7 +2196,7 @@
     },
     {
       "id": "M62",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "货币政策",
       "name": "DR007（%）",
       "frequency": "日度",
@@ -2211,7 +2222,7 @@
     },
     {
       "id": "M63",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "货币政策",
       "name": "R007（%）",
       "frequency": "日度",
@@ -2237,7 +2248,7 @@
     },
     {
       "id": "M64",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "货币政策",
       "name": "10年期国债收益率（%）",
       "frequency": "日度",
@@ -2263,7 +2274,7 @@
     },
     {
       "id": "M65",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "货币政策",
       "name": "1年期国债收益率（%）",
       "frequency": "日度",
@@ -2289,7 +2300,7 @@
     },
     {
       "id": "M66",
-      "primary": "政策制度",
+      "primary": "宏观调控",
       "secondary": "货币政策",
       "name": "期限利差（10Y-1Y，bp）",
       "frequency": "日度",
@@ -2421,7 +2432,7 @@
       },
       {
         "metric": "一般公共预算支出增速",
-        "group": "政策制度",
+        "group": "宏观调控",
         "unit": "%",
         "basis": "全年累计同比",
         "values": [6.1, 5.4, 3.6, 1],

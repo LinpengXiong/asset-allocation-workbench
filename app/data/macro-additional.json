@@ -1,7 +1,7 @@
 {
-  "reviewedAt": "2026-09-28",
+  "reviewedAt": "2026-10-08",
   "population": {
-    "basis": "年末全国人口，0—14岁、15—64岁、65岁及以上占总人口比重；2025年占比按公报三组人数和总人口计算，其他年度为年鉴披露的一位小数",
+    "basis": "图表展示2015—2025年年末全国人口年龄结构，底层保留1990年以来历史年度备查；0—14岁、15—64岁、65岁及以上占总人口比重。2025年占比按公报三组人数和总人口计算，其他年度为年鉴披露的一位小数",
     "unit": "%",
     "yearbookUrl": "https://www.stats.gov.cn/sj/ndsj/2025/html/C02-04.jpg",
     "latestUrl": "https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html",
@@ -19,6 +19,53 @@
       [2025,15.1442,68.9364,15.9194]
     ]
   },
+  "demographics": {
+    "basis": "人口总量、自然增长率和常住人口城镇化率的图表均展示2015—2025年，底层保留更早年度备查。自然增长率为出生率减死亡率，并非总人口同比增速。人口总量和自然增长率2015—2020年采用国家统计局普查后历史表（自然增长率保留原表一位小数），2021—2025年采用当年国家统计局发布。城镇化率2015—2019年采用当年公报，2020年起采用第七次人口普查及后续年度公报；2019—2020年以虚线标记口径衔接，不将两点差额全视为单年跃升。",
+    "populationUnit": "万人",
+    "naturalRateUnit": "‰",
+    "urbanizationUnit": "%",
+    "sourceAgency": "国家统计局",
+    "naturalHistory": [
+      { "year": 2006, "populationWan": 131448, "rate": 5.28, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztfx/kxfzcjhh/202303/t20230301_1920337.html", "url": "https://www.stats.gov.cn/sj/ndsj/2012/html/D0302C.HTM" },
+      { "year": 2007, "populationWan": 132129, "rate": 5.17, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztfx/kxfzcjhh/202303/t20230301_1920337.html", "url": "https://www.stats.gov.cn/sj/ndsj/2012/html/D0302C.HTM" },
+      { "year": 2008, "populationWan": 132802, "rate": 5.08, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztfx/kxfzcjhh/202303/t20230301_1920337.html", "url": "https://www.stats.gov.cn/sj/ndsj/2012/html/D0302C.HTM" },
+      { "year": 2009, "populationWan": 133450, "rate": 4.87, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztfx/kxfzcjhh/202303/t20230301_1920337.html", "url": "https://www.stats.gov.cn/sj/ndsj/2012/html/D0302C.HTM" },
+      { "year": 2010, "populationWan": 134091, "rate": 4.79, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztfx/kxfzcjhh/202303/t20230301_1920337.html", "url": "https://www.stats.gov.cn/sj/ndsj/2012/html/D0302C.HTM" },
+      { "year": 2011, "populationWan": 134916, "rate": 6.1, "url": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jz2022/202302/P020230530399618754570.pdf" },
+      { "year": 2012, "populationWan": 135922, "rate": 7.4, "url": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jz2022/202302/P020230530399618754570.pdf" },
+      { "year": 2013, "populationWan": 136726, "rate": 5.9, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jzsc2023/202404/P020240417553133577139.pdf", "url": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jz2022/202302/P020230530399618754570.pdf" },
+      { "year": 2014, "populationWan": 137646, "rate": 6.7, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jzsc2023/202404/P020240417553133577139.pdf", "url": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jz2022/202302/P020230530399618754570.pdf" },
+      { "year": 2015, "populationWan": 138326, "rate": 4.9, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jzsc2023/202404/P020240417553133577139.pdf", "url": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jz2022/202302/P020230530399618754570.pdf" },
+      { "year": 2016, "populationWan": 139232, "rate": 6.5, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jzsc2023/202404/P020240417553133577139.pdf", "url": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jz2022/202302/P020230530399618754570.pdf" },
+      { "year": 2017, "populationWan": 140011, "rate": 5.6, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jzsc2023/202404/P020240417553133577139.pdf", "url": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jz2022/202302/P020230530399618754570.pdf" },
+      { "year": 2018, "populationWan": 140541, "rate": 3.8, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jzsc2023/202404/P020240417553133577139.pdf", "url": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jz2022/202302/P020230530399618754570.pdf" },
+      { "year": 2019, "populationWan": 141008, "rate": 3.3, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jzsc2023/202404/P020240417553133577139.pdf", "url": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jz2022/202302/P020230530399618754570.pdf" },
+      { "year": 2020, "populationWan": 141212, "rate": 1.5, "populationUrl": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jzsc2023/202404/P020240417553133577139.pdf", "url": "https://www.stats.gov.cn/zt_18555/ztsj/jzgj/jz2022/202302/P020230530399618754570.pdf" },
+      { "year": 2021, "populationWan": 141260, "rate": 0.34, "url": "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202302/t20230203_1901336.html" },
+      { "year": 2022, "populationWan": 141175, "rate": -0.60, "url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202301/t20230118_1892285.html" },
+      { "year": 2023, "populationWan": 140967, "rate": -1.48, "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202401/t20240117_1946639.html" },
+      { "year": 2024, "populationWan": 140828, "rate": -0.99, "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202501/t20250117_1958332.html" },
+      { "year": 2025, "populationWan": 140489, "rate": -2.41, "url": "https://www.stats.gov.cn/sj/zxfb/202601/t20260119_1962330.html" }
+    ],
+    "rows": [
+      { "year": 2010, "urbanizationRate": 49.95, "url": "https://www.stats.gov.cn/zt_18555/ztfx/kxfzcjhh/202303/t20230301_1920337.html" },
+      { "year": 2011, "urbanizationRate": 51.27, "url": "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202303/t20230301_1919326.html" },
+      { "year": 2012, "urbanizationRate": 52.57, "url": "https://www.stats.gov.cn/zt_18555/ztfx/18fzcj/202302/P020230209581173008615.pdf" },
+      { "year": 2013, "urbanizationRate": 53.73, "url": "https://www.stats.gov.cn/zt_18555/ztfx/18fzcj/202302/P020230209581173008615.pdf" },
+      { "year": 2014, "urbanizationRate": 54.77, "url": "https://www.stats.gov.cn/zt_18555/ztfx/18fzcj/202302/P020230209581173008615.pdf" },
+      { "year": 2015, "urbanizationRate": 56.10, "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1899041.html" },
+      { "year": 2016, "urbanizationRate": 57.35, "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1899676.html" },
+      { "year": 2017, "urbanizationRate": 58.52, "url": "https://www.stats.gov.cn/zt_18555/ztfx/ggkf40n/202302/t20230209_1902581.html" },
+      { "year": 2018, "urbanizationRate": 59.58, "url": "https://www.stats.gov.cn/xxgk/sjfb/tjgb2020/201902/t20190228_1768642.html" },
+      { "year": 2019, "urbanizationRate": 60.60, "url": "https://www.stats.gov.cn/sj/sjjd/202302/t20230202_1896282.html" },
+      { "year": 2020, "urbanizationRate": 63.89, "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202105/t20210511_1817202.html" },
+      { "year": 2021, "populationWan": 141260, "naturalRatePermille": 0.34, "urbanizationRate": 64.72, "url": "https://www.stats.gov.cn/sj/xwfbh/fbhwd/202302/t20230203_1901336.html" },
+      { "year": 2022, "populationWan": 141175, "naturalRatePermille": -0.60, "urbanizationRate": 65.22, "url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202301/t20230118_1892285.html" },
+      { "year": 2023, "populationWan": 140967, "naturalRatePermille": -1.48, "urbanizationRate": 66.16, "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202401/t20240117_1946639.html" },
+      { "year": 2024, "populationWan": 140828, "naturalRatePermille": -0.99, "urbanizationRate": 67.00, "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202501/t20250117_1958332.html" },
+      { "year": 2025, "populationWan": 140489, "naturalRatePermille": -2.41, "urbanizationRate": 67.89, "url": "https://www.stats.gov.cn/sj/zxfb/202601/t20260119_1962330.html" }
+    ]
+  },
   "inwardFdi": {
     "basis": "全国实际使用外资金额，人民币亿元，年初累计；同比为同期累计同比。并非中国对外直接投资。",
     "rows": [
@@ -30,6 +77,17 @@
       { "period": "1—6月", "amount": 4021.4, "yoy": -5.0, "url": "https://www.mofcom.gov.cn/xwfb/rcxwfb/art/2026/art_ea6d68fe5ee74367a2be1ca271765033.html" },
       { "period": "1—7月", "amount": 4383.3, "yoy": -6.2, "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_03f09f72e2d843e8bc004f9a11e3ecd0.html" },
       { "period": "1—8月", "amount": 4799.5, "yoy": -5.3, "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_a2d8ba8791a943fba8234fde09b443f4.html" }
+    ],
+    "annualBasis": "全国实际使用外资金额年度同比，人民币口径；采用商务部各年度原始发布的同比值，不与月度累计同比混用。各年同比为当年发布值，统计修订或可比口径调整可能影响跨年可比性。并非中国对外直接投资。",
+    "annualRows": [
+      { "year": 2018, "amount": 8856.1, "yoy": 0.9, "url": "https://m.mofcom.gov.cn/article/i/jyjl/e/201901/20190102826875.shtml" },
+      { "year": 2019, "amount": 9415.2, "yoy": 5.8, "url": "https://wzs.mofcom.gov.cn/cms_files/oldfile/wzs/202101/20210106142113814.pdf" },
+      { "year": 2020, "amount": 9999.8, "yoy": 6.2, "url": "https://data.mofcom.gov.cn/article/zxtj/202101/55593.html" },
+      { "year": 2021, "amount": 11493.6, "yoy": 14.9, "url": "https://data.mofcom.gov.cn/article/zxtj/202201/57576.html" },
+      { "year": 2022, "amount": 12326.8, "yoy": 6.3, "url": "https://www.mofcom.gov.cn/syxwfb/art/2023/art_083e241e45c14215a153b7111b6bd60f.html" },
+      { "year": 2023, "amount": 11339.1, "yoy": -8.0, "url": "https://dcj.mofcom.gov.cn/article/xwfb/xwrcxw/202401/20240103467642.shtml" },
+      { "year": 2024, "amount": 8262.5, "yoy": -27.1, "url": "https://data.mofcom.gov.cn/article/zxtj/202502/62673.html" },
+      { "year": 2025, "amount": 7476.9, "yoy": -9.5, "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_efd32699d7ea4fa2845d5a4263040b4b.html" }
     ]
   },
   "goodsTrade": {

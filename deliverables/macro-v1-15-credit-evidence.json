@@ -1,0 +1,2932 @@
+{
+  "research": "macro-v1-15-finance-credit",
+  "asOf": "2026-10-11",
+  "status": "研究候选；未修改线上规则",
+  "sourcePriority": "官方原始发布 → Wind → 财新；本次官方/BIS/NIFD来源满足，不调用二级数据",
+  "sources": {
+    "bisCredit": {
+      "publisher": "Bank for International Settlements",
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+      "queryKey": "Q..H+N.A.M.770.A",
+      "flow": "WS_TC",
+      "version": "2.0",
+      "releaseDate": "2026-09-14",
+      "latestAvailablePeriod": "2026-Q1",
+      "fetchedAt": "Sun, 11 Oct 2026 01:39:58 GMT",
+      "sha256": "7f5ce1471f9c64e8d3b5106bd1236d865672a0336430fa5893c5c6bdac33b90d"
+    },
+    "bisMetadata": {
+      "publisher": "Bank for International Settlements",
+      "url": "https://www.bis.org/statistics/totcredit/credpriv_doc.pdf",
+      "releaseDate": "2026-09-14",
+      "pdfPages": [
+        11,
+        12
+      ]
+    },
+    "bisDsr": {
+      "publisher": "Bank for International Settlements",
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_DSR/1.0/Q.CN.?format=csv&startPeriod=2010-Q1",
+      "queryKey": "Q.CN.",
+      "flow": "WS_DSR",
+      "version": "1.0",
+      "releaseDate": "2026-09-14",
+      "latestAvailablePeriod": "2026-Q1",
+      "fetchedAt": "Sun, 11 Oct 2026 01:39:57 GMT",
+      "sha256": "13c3c07bc1d8c20243d46f74261346dbca94c331880b57cf0fd46b3eff0a9934",
+      "sectorCoverage": [
+        "P"
+      ],
+      "householdAndCorporateSeparatelyUnavailable": true
+    },
+    "bisDsrMethod": {
+      "publisher": "Bank for International Settlements",
+      "url": "https://www.bis.org/pages/statistics/dsr-documentation.pdf",
+      "releaseDate": "2023-06-01",
+      "pdfPages": [
+        8
+      ]
+    },
+    "cnbsCurrent": {
+      "publisher": "国家资产负债表研究中心/NIFD",
+      "url": "http://www.nifd.cn/SeriesReport/Details/4976",
+      "pdfUrl": "http://www.nifd.cn/Uploads/SeriesReport/b31b0f42-9b10-42dc-8732-98141ae419c4.pdf",
+      "releaseDate": "2026-07-30",
+      "period": "2026-Q2",
+      "sha256": "5cde8d94f36ceb2f3a67e808c4b83006ba564524ea646fa90a1ebe5d911a0960",
+      "verifiedAt": "2026-10-11",
+      "verifiedBy": "直接读取原始19页PDF；正文PDF第5页/印刷第1页债务增速与杠杆"
+    },
+    "cnbsPrior": {
+      "publisher": "国家资产负债表研究中心/NIFD",
+      "url": "http://www.nifd.cn/SeriesReport/Details/4728",
+      "pdfUrl": "http://www.nifd.cn/Uploads/SeriesReport/e39bb5f0-0074-4e76-8eed-b0fe068d19c8.pdf",
+      "releaseDate": "2025-07-30",
+      "period": "2025-Q2",
+      "sha256": "2bd24f92be449452becee544e7532c403f0282b3499df43aa8b70efcdd45364f",
+      "verifiedAt": "2026-10-11",
+      "verifiedBy": "直接读取原始16页PDF；PDF第5页/印刷第1页，居民61.1%、非金融企业174.0%",
+      "pdfPage": 5,
+      "printedPage": 1
+    },
+    "pbcLoanAllocation": {
+      "publisher": "中国人民银行",
+      "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026072719364116939/index.html",
+      "releaseDate": "2026-07-28",
+      "period": "2026-Q2",
+      "verifiedAt": "2026-10-11",
+      "httpStatus": 200
+    },
+    "pbcRates": {
+      "publisher": "中国人民银行",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+      "releaseDate": "2026-08-12",
+      "period": "2026-06",
+      "pdfPage": 14,
+      "printedPage": 7,
+      "sha256": "82c3f62136439902d9d8c464748afd9913503e53487257b61e1b31cc3d1e8ad9"
+    },
+    "nbsIncome": {
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+      "releaseDate": "2026-07-15",
+      "period": "2026-H1",
+      "verifiedAt": "2026-10-11",
+      "httpStatus": 200
+    },
+    "nbsIndustrialProfit": {
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+      "releaseDate": "2026-09-28",
+      "period": "2026-08",
+      "verifiedAt": "2026-10-11",
+      "httpStatus": 200
+    },
+    "imfFsap": {
+      "publisher": "International Monetary Fund",
+      "url": "https://www.imf.org/-/media/files/publications/cr/2025/english/1chnea2025001-print-pdf.pdf",
+      "publicationYear": 2025,
+      "pdfPage": 35,
+      "printedPage": 32,
+      "householdDistributionDataYear": 2019,
+      "currentQuarterScoringEligible": false
+    },
+    "imfArticleIv": {
+      "publisher": "International Monetary Fund",
+      "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1chnea2026001-source-pdf.pdf",
+      "releaseDate": "2026-02-18",
+      "staffReportCompleted": "2026-01-28",
+      "pdfPages": [
+        40,
+        41,
+        101,
+        102
+      ],
+      "use": "LGFV经济/法律口径差异及债务置换解释，不用2026预测填实际数"
+    },
+    "m1Definition": {
+      "publisher": "中国人民银行",
+      "url": "https://www.pbc.gov.cn/chubanwu/fileDir/resource/cms/2025/06/2025062416082199683.pdf",
+      "originalDocument": "〔2024〕第17号",
+      "announcementDate": "2024-12-01",
+      "effectivePeriod": "2025-01",
+      "printedPage": 7
+    },
+    "m1Backcast": {
+      "publisher": "中国人民银行",
+      "url": "https://www.pbc.gov.cn/diaochatongjisi/attachDir/2025/11/2025111913535682666.pdf",
+      "backcastPeriods": "2024-01至2024-12"
+    }
+  },
+  "internationalComparison": {
+    "referencePeriod": "2026-Q1",
+    "latestAvailablePeriod": "2026-Q1",
+    "releaseDate": "2026-09-14",
+    "definition": {
+      "frequency": "Q",
+      "borrowers": [
+        "H",
+        "N"
+      ],
+      "lenders": "A",
+      "valuation": "M",
+      "unit": "770",
+      "adjustment": "A",
+      "unitLabel": "债务/过去4季名义GDP（%）",
+      "hIncludesNpish": true,
+      "nIncludesPublicCorporations": true,
+      "gross": true,
+      "unconsolidated": true
+    },
+    "primaryBenchmark": "emergingExChina",
+    "sampleSelection": {
+      "individualEconomies": 43,
+      "excludedAggregateCodes": [
+        "5A",
+        "5R",
+        "4T",
+        "G2",
+        "XM"
+      ],
+      "primaryPeers": [
+        "AR",
+        "BR",
+        "CL",
+        "CO",
+        "HU",
+        "ID",
+        "IN",
+        "MX",
+        "MY",
+        "PL",
+        "RU",
+        "SA",
+        "TH",
+        "TR",
+        "ZA"
+      ],
+      "secondaryComparators": "全部43经济体（含中国）及27发达经济体，均仅敏感性；不声称全球完整样本",
+      "classificationSource": "https://data.bis.org/topics/TOTAL_CREDIT",
+      "classificationBasis": "BIS公布的新兴名单排除中国；发达欧元区拆开为该表有同季数据的单个经济体，不重复加Euro area"
+    },
+    "algorithms": {
+      "median": "等权排序中位数；偶数样本取中间两项均值",
+      "quantile": "Type7：h=(n−1)p，相邻顺序统计量线性插值",
+      "percentile": "100×(小于中国的个数+0.5×等于中国的个数)/样本数；主对照排除中国",
+      "weightedAggregate": "直接引用BIS5A/5R/4T，基于GDP/汇率换算；并非国家等权中位数"
+    },
+    "countries": [
+      {
+        "country": "AR",
+        "economy": "Argentina",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 5.6,
+        "corporateDebtToGdpPct": 21.1,
+        "emergingReference": true
+      },
+      {
+        "country": "AT",
+        "economy": "Austria",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 41.3,
+        "corporateDebtToGdpPct": 85.2,
+        "emergingReference": false
+      },
+      {
+        "country": "AU",
+        "economy": "Australia",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 114.1,
+        "corporateDebtToGdpPct": 61.7,
+        "emergingReference": false
+      },
+      {
+        "country": "BE",
+        "economy": "Belgium",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 56.8,
+        "corporateDebtToGdpPct": 116.6,
+        "emergingReference": false
+      },
+      {
+        "country": "BR",
+        "economy": "Brazil",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 38,
+        "corporateDebtToGdpPct": 54.6,
+        "emergingReference": true
+      },
+      {
+        "country": "CA",
+        "economy": "Canada",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 100,
+        "corporateDebtToGdpPct": 118.8,
+        "emergingReference": false
+      },
+      {
+        "country": "CH",
+        "economy": "Switzerland",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 127,
+        "corporateDebtToGdpPct": 130.3,
+        "emergingReference": false
+      },
+      {
+        "country": "CL",
+        "economy": "Chile",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 43.4,
+        "corporateDebtToGdpPct": 86.9,
+        "emergingReference": true
+      },
+      {
+        "country": "CN",
+        "economy": "China",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 57.5,
+        "corporateDebtToGdpPct": 146.6,
+        "emergingReference": false
+      },
+      {
+        "country": "CO",
+        "economy": "Colombia",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 25.715,
+        "corporateDebtToGdpPct": 29.195,
+        "emergingReference": true
+      },
+      {
+        "country": "CZ",
+        "economy": "Czechia",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 31.6,
+        "corporateDebtToGdpPct": 54.6,
+        "emergingReference": false
+      },
+      {
+        "country": "DE",
+        "economy": "Germany",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 47.9,
+        "corporateDebtToGdpPct": 86.9,
+        "emergingReference": false
+      },
+      {
+        "country": "DK",
+        "economy": "Denmark",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 82.5,
+        "corporateDebtToGdpPct": 136.7,
+        "emergingReference": false
+      },
+      {
+        "country": "ES",
+        "economy": "Spain",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 42.5,
+        "corporateDebtToGdpPct": 76.9,
+        "emergingReference": false
+      },
+      {
+        "country": "FI",
+        "economy": "Finland",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 61.7,
+        "corporateDebtToGdpPct": 111.6,
+        "emergingReference": false
+      },
+      {
+        "country": "FR",
+        "economy": "France",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 59.1,
+        "corporateDebtToGdpPct": 155.2,
+        "emergingReference": false
+      },
+      {
+        "country": "GB",
+        "economy": "United Kingdom",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 72.6,
+        "corporateDebtToGdpPct": 55.8,
+        "emergingReference": false
+      },
+      {
+        "country": "GR",
+        "economy": "Greece",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 37.5,
+        "corporateDebtToGdpPct": 59.2,
+        "emergingReference": false
+      },
+      {
+        "country": "HK",
+        "economy": "Hong Kong SAR",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 88.9,
+        "corporateDebtToGdpPct": 249.6,
+        "emergingReference": false
+      },
+      {
+        "country": "HU",
+        "economy": "Hungary",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 18.7,
+        "corporateDebtToGdpPct": 70.8,
+        "emergingReference": true
+      },
+      {
+        "country": "ID",
+        "economy": "Indonesia",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 15.2,
+        "corporateDebtToGdpPct": 24.6,
+        "emergingReference": true
+      },
+      {
+        "country": "IE",
+        "economy": "Ireland",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 26.3,
+        "corporateDebtToGdpPct": 103,
+        "emergingReference": false
+      },
+      {
+        "country": "IL",
+        "economy": "Israel",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 42.5,
+        "corporateDebtToGdpPct": 73.9,
+        "emergingReference": false
+      },
+      {
+        "country": "IN",
+        "economy": "India",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 49.1,
+        "corporateDebtToGdpPct": 56,
+        "emergingReference": true
+      },
+      {
+        "country": "IT",
+        "economy": "Italy",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 35.9,
+        "corporateDebtToGdpPct": 58.3,
+        "emergingReference": false
+      },
+      {
+        "country": "JP",
+        "economy": "Japan",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 60.8,
+        "corporateDebtToGdpPct": 112.9,
+        "emergingReference": false
+      },
+      {
+        "country": "KR",
+        "economy": "Korea",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 85.1,
+        "corporateDebtToGdpPct": 106.4,
+        "emergingReference": false
+      },
+      {
+        "country": "LU",
+        "economy": "Luxembourg",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 58.2,
+        "corporateDebtToGdpPct": 395.9,
+        "emergingReference": false
+      },
+      {
+        "country": "MX",
+        "economy": "Mexico",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 17.4,
+        "corporateDebtToGdpPct": 21.2,
+        "emergingReference": true
+      },
+      {
+        "country": "MY",
+        "economy": "Malaysia",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 69.5,
+        "corporateDebtToGdpPct": 89.4,
+        "emergingReference": true
+      },
+      {
+        "country": "NL",
+        "economy": "Netherlands",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 94.6,
+        "corporateDebtToGdpPct": 168.8,
+        "emergingReference": false
+      },
+      {
+        "country": "NO",
+        "economy": "Norway",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 87.8,
+        "corporateDebtToGdpPct": 136.4,
+        "emergingReference": false
+      },
+      {
+        "country": "NZ",
+        "economy": "New Zealand",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 91,
+        "corporateDebtToGdpPct": 69.5,
+        "emergingReference": false
+      },
+      {
+        "country": "PL",
+        "economy": "Poland",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 22.1,
+        "corporateDebtToGdpPct": 35,
+        "emergingReference": true
+      },
+      {
+        "country": "PT",
+        "economy": "Portugal",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 54.2,
+        "corporateDebtToGdpPct": 74.3,
+        "emergingReference": false
+      },
+      {
+        "country": "RU",
+        "economy": "Russia",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 21,
+        "corporateDebtToGdpPct": 83.7,
+        "emergingReference": true
+      },
+      {
+        "country": "SA",
+        "economy": "Saudi Arabia",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 31.6,
+        "corporateDebtToGdpPct": 46.5,
+        "emergingReference": true
+      },
+      {
+        "country": "SE",
+        "economy": "Sweden",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 82.1,
+        "corporateDebtToGdpPct": 154.1,
+        "emergingReference": false
+      },
+      {
+        "country": "SG",
+        "economy": "Singapore",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 44.1,
+        "corporateDebtToGdpPct": 123.7,
+        "emergingReference": false
+      },
+      {
+        "country": "TH",
+        "economy": "Thailand",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 86.7,
+        "corporateDebtToGdpPct": 69.2,
+        "emergingReference": true
+      },
+      {
+        "country": "TR",
+        "economy": "Türkiye",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 10.1,
+        "corporateDebtToGdpPct": 39,
+        "emergingReference": true
+      },
+      {
+        "country": "US",
+        "economy": "United States",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 67.2,
+        "corporateDebtToGdpPct": 72.5,
+        "emergingReference": false
+      },
+      {
+        "country": "ZA",
+        "economy": "South Africa",
+        "period": "2026-Q1",
+        "householdDebtToGdpPct": 33.7,
+        "corporateDebtToGdpPct": 33.6,
+        "emergingReference": true
+      }
+    ],
+    "emergingExChina": [
+      {
+        "sector": "H",
+        "group": "emergingExChina",
+        "n": 15,
+        "countries": [
+          "AR",
+          "BR",
+          "CL",
+          "CO",
+          "HU",
+          "ID",
+          "IN",
+          "MX",
+          "MY",
+          "PL",
+          "RU",
+          "SA",
+          "TH",
+          "TR",
+          "ZA"
+        ],
+        "china": 57.5,
+        "median": 25.715,
+        "q25": 18.049999999999997,
+        "q75": 40.7,
+        "q90": 61.33999999999999,
+        "chinaOutOfSamplePercentile": 86.66666666666667,
+        "observations": [
+          {
+            "country": "AR",
+            "sector": "H",
+            "value": 5.6,
+            "title": "Argentina - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "TR",
+            "sector": "H",
+            "value": 10.1,
+            "title": "Türkiye - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "ID",
+            "sector": "H",
+            "value": 15.2,
+            "title": "Indonesia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "MX",
+            "sector": "H",
+            "value": 17.4,
+            "title": "Mexico - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "HU",
+            "sector": "H",
+            "value": 18.7,
+            "title": "Hungary - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "RU",
+            "sector": "H",
+            "value": 21,
+            "title": "Russia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "PL",
+            "sector": "H",
+            "value": 22.1,
+            "title": "Poland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "CO",
+            "sector": "H",
+            "value": 25.715,
+            "title": "Colombia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "SA",
+            "sector": "H",
+            "value": 31.6,
+            "title": "Saudi Arabia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "ZA",
+            "sector": "H",
+            "value": 33.7,
+            "title": "South Africa - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "BR",
+            "sector": "H",
+            "value": 38,
+            "title": "Brazil - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "CL",
+            "sector": "H",
+            "value": 43.4,
+            "title": "Chile - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "IN",
+            "sector": "H",
+            "value": 49.1,
+            "title": "India - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "MY",
+            "sector": "H",
+            "value": 69.5,
+            "title": "Malaysia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "TH",
+            "sector": "H",
+            "value": 86.7,
+            "title": "Thailand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          }
+        ]
+      },
+      {
+        "sector": "N",
+        "group": "emergingExChina",
+        "n": 15,
+        "countries": [
+          "AR",
+          "BR",
+          "CL",
+          "CO",
+          "HU",
+          "ID",
+          "IN",
+          "MX",
+          "MY",
+          "PL",
+          "RU",
+          "SA",
+          "TH",
+          "TR",
+          "ZA"
+        ],
+        "china": 146.6,
+        "median": 46.5,
+        "q25": 31.3975,
+        "q75": 70,
+        "q90": 85.62,
+        "chinaOutOfSamplePercentile": 100,
+        "observations": [
+          {
+            "country": "AR",
+            "sector": "N",
+            "value": 21.1,
+            "title": "Argentina - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "MX",
+            "sector": "N",
+            "value": 21.2,
+            "title": "Mexico - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "ID",
+            "sector": "N",
+            "value": 24.6,
+            "title": "Indonesia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "CO",
+            "sector": "N",
+            "value": 29.195,
+            "title": "Colombia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "ZA",
+            "sector": "N",
+            "value": 33.6,
+            "title": "South Africa - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "PL",
+            "sector": "N",
+            "value": 35,
+            "title": "Poland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "TR",
+            "sector": "N",
+            "value": 39,
+            "title": "Türkiye - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "SA",
+            "sector": "N",
+            "value": 46.5,
+            "title": "Saudi Arabia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "BR",
+            "sector": "N",
+            "value": 54.6,
+            "title": "Brazil - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "IN",
+            "sector": "N",
+            "value": 56,
+            "title": "India - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "TH",
+            "sector": "N",
+            "value": 69.2,
+            "title": "Thailand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "HU",
+            "sector": "N",
+            "value": 70.8,
+            "title": "Hungary - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "RU",
+            "sector": "N",
+            "value": 83.7,
+            "title": "Russia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "CL",
+            "sector": "N",
+            "value": 86.9,
+            "title": "Chile - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          },
+          {
+            "country": "MY",
+            "sector": "N",
+            "value": 89.4,
+            "title": "Malaysia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+            "status": "A"
+          }
+        ]
+      }
+    ],
+    "sensitivityComparisons": [
+      {
+        "sector": "H",
+        "group": "allIndividuals",
+        "n": 43,
+        "china": 57.5,
+        "median": 49.1,
+        "q25": 32.650000000000006,
+        "q75": 77.35,
+        "q90": 90.58000000000001,
+        "chinaMidRankPercentile": 56.97674418604651,
+        "aboveChina": [
+          {
+            "country": "JP",
+            "value": 60.8
+          },
+          {
+            "country": "NZ",
+            "value": 91
+          },
+          {
+            "country": "TH",
+            "value": 86.7
+          },
+          {
+            "country": "KR",
+            "value": 85.1
+          },
+          {
+            "country": "US",
+            "value": 67.2
+          },
+          {
+            "country": "NO",
+            "value": 87.8
+          },
+          {
+            "country": "AU",
+            "value": 114.1
+          },
+          {
+            "country": "DK",
+            "value": 82.5
+          },
+          {
+            "country": "CA",
+            "value": 100
+          },
+          {
+            "country": "HK",
+            "value": 88.9
+          },
+          {
+            "country": "FR",
+            "value": 59.1
+          },
+          {
+            "country": "MY",
+            "value": 69.5
+          },
+          {
+            "country": "CH",
+            "value": 127
+          },
+          {
+            "country": "GB",
+            "value": 72.6
+          },
+          {
+            "country": "LU",
+            "value": 58.2
+          },
+          {
+            "country": "SE",
+            "value": 82.1
+          },
+          {
+            "country": "FI",
+            "value": 61.7
+          },
+          {
+            "country": "NL",
+            "value": 94.6
+          }
+        ],
+        "countries": [
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CN",
+          "CO",
+          "CZ",
+          "DE",
+          "DK",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HK",
+          "HU",
+          "ID",
+          "IE",
+          "IL",
+          "IN",
+          "IT",
+          "JP",
+          "KR",
+          "LU",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RU",
+          "SA",
+          "SE",
+          "SG",
+          "TH",
+          "TR",
+          "US",
+          "ZA"
+        ]
+      },
+      {
+        "sector": "H",
+        "group": "emerging",
+        "n": 16,
+        "china": 57.5,
+        "median": 28.6575,
+        "q25": 18.375,
+        "q75": 44.825,
+        "q90": 63.5,
+        "chinaMidRankPercentile": 84.375,
+        "aboveChina": [
+          {
+            "country": "TH",
+            "value": 86.7
+          },
+          {
+            "country": "MY",
+            "value": 69.5
+          }
+        ],
+        "countries": [
+          "AR",
+          "BR",
+          "CL",
+          "CN",
+          "CO",
+          "HU",
+          "ID",
+          "IN",
+          "MX",
+          "MY",
+          "PL",
+          "RU",
+          "SA",
+          "TH",
+          "TR",
+          "ZA"
+        ]
+      },
+      {
+        "sector": "H",
+        "group": "advanced",
+        "n": 27,
+        "china": 57.5,
+        "median": 60.8,
+        "q25": 43.3,
+        "q75": 86.44999999999999,
+        "q90": 96.76,
+        "chinaMidRankPercentile": 40.74074074074074,
+        "aboveChina": [
+          {
+            "country": "JP",
+            "value": 60.8
+          },
+          {
+            "country": "NZ",
+            "value": 91
+          },
+          {
+            "country": "KR",
+            "value": 85.1
+          },
+          {
+            "country": "US",
+            "value": 67.2
+          },
+          {
+            "country": "NO",
+            "value": 87.8
+          },
+          {
+            "country": "AU",
+            "value": 114.1
+          },
+          {
+            "country": "DK",
+            "value": 82.5
+          },
+          {
+            "country": "CA",
+            "value": 100
+          },
+          {
+            "country": "HK",
+            "value": 88.9
+          },
+          {
+            "country": "FR",
+            "value": 59.1
+          },
+          {
+            "country": "CH",
+            "value": 127
+          },
+          {
+            "country": "GB",
+            "value": 72.6
+          },
+          {
+            "country": "LU",
+            "value": 58.2
+          },
+          {
+            "country": "SE",
+            "value": 82.1
+          },
+          {
+            "country": "FI",
+            "value": 61.7
+          },
+          {
+            "country": "NL",
+            "value": 94.6
+          }
+        ],
+        "countries": [
+          "AT",
+          "AU",
+          "BE",
+          "CA",
+          "CH",
+          "CZ",
+          "DE",
+          "DK",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HK",
+          "IE",
+          "IL",
+          "IT",
+          "JP",
+          "KR",
+          "LU",
+          "NL",
+          "NO",
+          "NZ",
+          "PT",
+          "SE",
+          "SG",
+          "US"
+        ]
+      },
+      {
+        "sector": "N",
+        "group": "allIndividuals",
+        "n": 43,
+        "china": 146.6,
+        "median": 76.9,
+        "q25": 55.9,
+        "q75": 117.69999999999999,
+        "q90": 152.60000000000002,
+        "chinaMidRankPercentile": 87.20930232558139,
+        "aboveChina": [
+          {
+            "country": "HK",
+            "value": 249.6
+          },
+          {
+            "country": "FR",
+            "value": 155.2
+          },
+          {
+            "country": "SE",
+            "value": 154.1
+          },
+          {
+            "country": "LU",
+            "value": 395.9
+          },
+          {
+            "country": "NL",
+            "value": 168.8
+          }
+        ],
+        "countries": [
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CN",
+          "CO",
+          "CZ",
+          "DE",
+          "DK",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HK",
+          "HU",
+          "ID",
+          "IE",
+          "IL",
+          "IN",
+          "IT",
+          "JP",
+          "KR",
+          "LU",
+          "MX",
+          "MY",
+          "NL",
+          "NO",
+          "NZ",
+          "PL",
+          "PT",
+          "RU",
+          "SA",
+          "SE",
+          "SG",
+          "TH",
+          "TR",
+          "US",
+          "ZA"
+        ]
+      },
+      {
+        "sector": "N",
+        "group": "emerging",
+        "n": 16,
+        "china": 146.6,
+        "median": 50.55,
+        "q25": 32.49875,
+        "q75": 74.025,
+        "q90": 88.15,
+        "chinaMidRankPercentile": 96.875,
+        "aboveChina": [],
+        "countries": [
+          "AR",
+          "BR",
+          "CL",
+          "CN",
+          "CO",
+          "HU",
+          "ID",
+          "IN",
+          "MX",
+          "MY",
+          "PL",
+          "RU",
+          "SA",
+          "TH",
+          "TR",
+          "ZA"
+        ]
+      },
+      {
+        "sector": "N",
+        "group": "advanced",
+        "n": 27,
+        "china": 146.6,
+        "median": 106.4,
+        "q25": 73.2,
+        "q75": 133.35000000000002,
+        "q90": 160.64000000000001,
+        "chinaMidRankPercentile": 81.48148148148148,
+        "aboveChina": [
+          {
+            "country": "HK",
+            "value": 249.6
+          },
+          {
+            "country": "FR",
+            "value": 155.2
+          },
+          {
+            "country": "SE",
+            "value": 154.1
+          },
+          {
+            "country": "LU",
+            "value": 395.9
+          },
+          {
+            "country": "NL",
+            "value": 168.8
+          }
+        ],
+        "countries": [
+          "AT",
+          "AU",
+          "BE",
+          "CA",
+          "CH",
+          "CZ",
+          "DE",
+          "DK",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HK",
+          "IE",
+          "IL",
+          "IT",
+          "JP",
+          "KR",
+          "LU",
+          "NL",
+          "NO",
+          "NZ",
+          "PT",
+          "SE",
+          "SG",
+          "US"
+        ]
+      }
+    ],
+    "weightedAggregates": [
+      {
+        "country": "5A",
+        "sector": "N",
+        "value": 92.4,
+        "title": "All reporting countries (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+        "status": "A"
+      },
+      {
+        "country": "5R",
+        "sector": "N",
+        "value": 87.8,
+        "title": "Advanced economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+        "status": "A"
+      },
+      {
+        "country": "5A",
+        "sector": "H",
+        "value": 58.4,
+        "title": "All reporting countries (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+        "status": "A"
+      },
+      {
+        "country": "4T",
+        "sector": "N",
+        "value": 100.5,
+        "title": "Emerging market economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+        "status": "A"
+      },
+      {
+        "country": "4T",
+        "sector": "H",
+        "value": 45,
+        "title": "Emerging market economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+        "status": "A"
+      },
+      {
+        "country": "5R",
+        "sector": "H",
+        "value": 66,
+        "title": "Advanced economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+        "status": "A"
+      }
+    ],
+    "chinaHistorySameBisDefinition": [
+      {
+        "period": "2025-Q1",
+        "sector": "N",
+        "value": 141.7
+      },
+      {
+        "period": "2025-Q2",
+        "sector": "N",
+        "value": 142.2
+      },
+      {
+        "period": "2025-Q3",
+        "sector": "N",
+        "value": 142.4
+      },
+      {
+        "period": "2025-Q4",
+        "sector": "N",
+        "value": 142.8
+      },
+      {
+        "period": "2026-Q1",
+        "sector": "N",
+        "value": 146.6
+      },
+      {
+        "period": "2025-Q1",
+        "sector": "H",
+        "value": 60.2
+      },
+      {
+        "period": "2025-Q2",
+        "sector": "H",
+        "value": 59.7
+      },
+      {
+        "period": "2025-Q3",
+        "sector": "H",
+        "value": 59
+      },
+      {
+        "period": "2025-Q4",
+        "sector": "H",
+        "value": 58
+      },
+      {
+        "period": "2026-Q1",
+        "sector": "H",
+        "value": 57.5
+      }
+    ],
+    "rawCsv": {
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q..H+N.A.M.770.A?format=csv&startPeriod=2025-Q1",
+      "httpStatus": 200,
+      "sha256": "7f5ce1471f9c64e8d3b5106bd1236d865672a0336430fa5893c5c6bdac33b90d",
+      "responseHeaders": {
+        "date": "Sun, 11 Oct 2026 01:39:58 GMT",
+        "lastModified": null
+      },
+      "csv": "FREQ,BORROWERS_CTY,TC_BORROWERS,TC_LENDERS,VALUATION,UNIT_TYPE,TC_ADJUST,COLLECTION,DECIMALS,UNIT_MULT,UNIT_MEASURE,TITLE_TS,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_PRE_BREAK,OBS_CONF\nQ,JP,H,A,M,770,A,E,1,0,367,Japan - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,61.5,A,,F\nQ,JP,H,A,M,770,A,E,1,0,367,Japan - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,61,A,,F\nQ,JP,H,A,M,770,A,E,1,0,367,Japan - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,60.8,A,,F\nQ,JP,H,A,M,770,A,E,1,0,367,Japan - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,60.8,A,,F\nQ,JP,H,A,M,770,A,E,1,0,367,Japan - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,60.8,A,,F\nQ,BR,H,A,M,770,A,E,1,0,367,Brazil - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,36.5,A,,F\nQ,BR,H,A,M,770,A,E,1,0,367,Brazil - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,36.3,A,,F\nQ,BR,H,A,M,770,A,E,1,0,367,Brazil - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,36.7,A,,F\nQ,BR,H,A,M,770,A,E,1,0,367,Brazil - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,37.6,A,,F\nQ,BR,H,A,M,770,A,E,1,0,367,Brazil - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,38,A,,F\nQ,TR,N,A,M,770,A,E,1,0,367,Türkiye - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,38.6,A,,F\nQ,TR,N,A,M,770,A,E,1,0,367,Türkiye - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,39.2,A,,F\nQ,TR,N,A,M,770,A,E,1,0,367,Türkiye - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,39,A,,F\nQ,TR,N,A,M,770,A,E,1,0,367,Türkiye - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,39.1,A,,F\nQ,TR,N,A,M,770,A,E,1,0,367,Türkiye - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,39,A,,F\nQ,DE,H,A,M,770,A,E,1,0,367,Germany - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,48.7,A,,F\nQ,DE,H,A,M,770,A,E,1,0,367,Germany - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,48.5,A,,F\nQ,DE,H,A,M,770,A,E,1,0,367,Germany - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,48.5,A,,F\nQ,DE,H,A,M,770,A,E,1,0,367,Germany - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,48.2,A,,F\nQ,DE,H,A,M,770,A,E,1,0,367,Germany - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,47.9,A,,F\nQ,HK,N,A,M,770,A,E,1,0,367,Hong Kong SAR - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,242.9,A,,F\nQ,HK,N,A,M,770,A,E,1,0,367,Hong Kong SAR - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,247.6,A,,F\nQ,HK,N,A,M,770,A,E,1,0,367,Hong Kong SAR - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,244.7,A,,F\nQ,HK,N,A,M,770,A,E,1,0,367,Hong Kong SAR - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,240.7,A,,F\nQ,HK,N,A,M,770,A,E,1,0,367,Hong Kong SAR - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,249.6,A,,F\nQ,PL,N,A,M,770,A,E,1,0,367,Poland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,34.8,A,,F\nQ,PL,N,A,M,770,A,E,1,0,367,Poland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,34.9,A,,F\nQ,PL,N,A,M,770,A,E,1,0,367,Poland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,35.1,A,,F\nQ,PL,N,A,M,770,A,E,1,0,367,Poland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,34.7,A,,F\nQ,PL,N,A,M,770,A,E,1,0,367,Poland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,35,A,,F\nQ,JP,N,A,M,770,A,E,1,0,367,Japan - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,109.5,A,,F\nQ,JP,N,A,M,770,A,E,1,0,367,Japan - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,109.1,A,,F\nQ,JP,N,A,M,770,A,E,1,0,367,Japan - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,110.5,A,,F\nQ,JP,N,A,M,770,A,E,1,0,367,Japan - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,112.6,A,,F\nQ,JP,N,A,M,770,A,E,1,0,367,Japan - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,112.9,A,,F\nQ,KR,N,A,M,770,A,E,1,0,367,Korea - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,110.9,A,,F\nQ,KR,N,A,M,770,A,E,1,0,367,Korea - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,110.3,A,,F\nQ,KR,N,A,M,770,A,E,1,0,367,Korea - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,110.5,A,,F\nQ,KR,N,A,M,770,A,E,1,0,367,Korea - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,109.9,A,,F\nQ,KR,N,A,M,770,A,E,1,0,367,Korea - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,106.4,A,,F\nQ,NZ,H,A,M,770,A,E,1,0,367,New Zealand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,90,A,,F\nQ,NZ,H,A,M,770,A,E,1,0,367,New Zealand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,90.4,A,,F\nQ,NZ,H,A,M,770,A,E,1,0,367,New Zealand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,90.6,A,,F\nQ,NZ,H,A,M,770,A,E,1,0,367,New Zealand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,91,A,,F\nQ,NZ,H,A,M,770,A,E,1,0,367,New Zealand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,91,A,,F\nQ,TR,H,A,M,770,A,E,1,0,367,Türkiye - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,9.4,A,,F\nQ,TR,H,A,M,770,A,E,1,0,367,Türkiye - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,9.6,A,,F\nQ,TR,H,A,M,770,A,E,1,0,367,Türkiye - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,9.8,A,,F\nQ,TR,H,A,M,770,A,E,1,0,367,Türkiye - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,10.1,A,,F\nQ,TR,H,A,M,770,A,E,1,0,367,Türkiye - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,10.1,A,,F\nQ,TH,H,A,M,770,A,E,1,0,367,Thailand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,87.5,A,,F\nQ,TH,H,A,M,770,A,E,1,0,367,Thailand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,87.2,A,,F\nQ,TH,H,A,M,770,A,E,1,0,367,Thailand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,87.3,A,,F\nQ,TH,H,A,M,770,A,E,1,0,367,Thailand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,87.5,A,,F\nQ,TH,H,A,M,770,A,E,1,0,367,Thailand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,86.7,A,,F\nQ,5A,N,A,M,770,A,E,1,0,367,All reporting countries (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,91.6,A,,F\nQ,5A,N,A,M,770,A,E,1,0,367,All reporting countries (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,94,A,,F\nQ,5A,N,A,M,770,A,E,1,0,367,All reporting countries (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,93.3,A,,F\nQ,5A,N,A,M,770,A,E,1,0,367,All reporting countries (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,93.1,A,,F\nQ,5A,N,A,M,770,A,E,1,0,367,All reporting countries (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,92.4,A,,F\nQ,PL,H,A,M,770,A,E,1,0,367,Poland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,22.3,A,,F\nQ,PL,H,A,M,770,A,E,1,0,367,Poland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,22.2,A,,F\nQ,PL,H,A,M,770,A,E,1,0,367,Poland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,22.2,A,,F\nQ,PL,H,A,M,770,A,E,1,0,367,Poland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,22.1,A,,F\nQ,PL,H,A,M,770,A,E,1,0,367,Poland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,22.1,A,,F\nQ,NZ,N,A,M,770,A,E,1,0,367,New Zealand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,70.3,A,,F\nQ,NZ,N,A,M,770,A,E,1,0,367,New Zealand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,70.6,A,,F\nQ,NZ,N,A,M,770,A,E,1,0,367,New Zealand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,71.5,A,,F\nQ,NZ,N,A,M,770,A,E,1,0,367,New Zealand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,70.6,A,,F\nQ,NZ,N,A,M,770,A,E,1,0,367,New Zealand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,69.5,A,,F\nQ,HU,N,A,M,770,A,E,1,0,367,Hungary - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,74.9,A,,F\nQ,HU,N,A,M,770,A,E,1,0,367,Hungary - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,74.8,A,,F\nQ,HU,N,A,M,770,A,E,1,0,367,Hungary - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,73.4,A,,F\nQ,HU,N,A,M,770,A,E,1,0,367,Hungary - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,72.6,A,,F\nQ,HU,N,A,M,770,A,E,1,0,367,Hungary - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,70.8,A,,F\nQ,BE,H,A,M,770,A,E,1,0,367,Belgium - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,56.7,A,,F\nQ,BE,H,A,M,770,A,E,1,0,367,Belgium - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,56.8,A,,F\nQ,BE,H,A,M,770,A,E,1,0,367,Belgium - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,56.8,A,,F\nQ,BE,H,A,M,770,A,E,1,0,367,Belgium - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,56.8,A,,F\nQ,BE,H,A,M,770,A,E,1,0,367,Belgium - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,56.8,A,,F\nQ,KR,H,A,M,770,A,E,1,0,367,Korea - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,89.1,A,,F\nQ,KR,H,A,M,770,A,E,1,0,367,Korea - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,89.4,A,,F\nQ,KR,H,A,M,770,A,E,1,0,367,Korea - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,88.9,A,,F\nQ,KR,H,A,M,770,A,E,1,0,367,Korea - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,88.1,A,,F\nQ,KR,H,A,M,770,A,E,1,0,367,Korea - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,85.1,A,,F\nQ,5R,N,A,M,770,A,E,1,0,367,Advanced economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,89.1,A,,F\nQ,5R,N,A,M,770,A,E,1,0,367,Advanced economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,91.8,A,,F\nQ,5R,N,A,M,770,A,E,1,0,367,Advanced economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,90.7,A,,F\nQ,5R,N,A,M,770,A,E,1,0,367,Advanced economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,89.7,A,,F\nQ,5R,N,A,M,770,A,E,1,0,367,Advanced economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,87.8,A,,F\nQ,PT,N,A,M,770,A,E,1,0,367,Portugal - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,77.6,A,,F\nQ,PT,N,A,M,770,A,E,1,0,367,Portugal - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,76.8,A,,F\nQ,PT,N,A,M,770,A,E,1,0,367,Portugal - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,75.7,A,,F\nQ,PT,N,A,M,770,A,E,1,0,367,Portugal - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,74.2,A,,F\nQ,PT,N,A,M,770,A,E,1,0,367,Portugal - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,74.3,A,,F\nQ,TH,N,A,M,770,A,E,1,0,367,Thailand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,81.2,A,,F\nQ,TH,N,A,M,770,A,E,1,0,367,Thailand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,75.3,A,,F\nQ,TH,N,A,M,770,A,E,1,0,367,Thailand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,78.8,A,,F\nQ,TH,N,A,M,770,A,E,1,0,367,Thailand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,68.8,A,,F\nQ,TH,N,A,M,770,A,E,1,0,367,Thailand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,69.2,A,,F\nQ,US,H,A,M,770,A,E,1,0,367,United States - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,68.6,A,,F\nQ,US,H,A,M,770,A,E,1,0,367,United States - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,68.3,A,,F\nQ,US,H,A,M,770,A,E,1,0,367,United States - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,68.2,A,,F\nQ,US,H,A,M,770,A,E,1,0,367,United States - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,68.1,A,,F\nQ,US,H,A,M,770,A,E,1,0,367,United States - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,67.2,A,,F\nQ,ES,N,A,M,770,A,E,1,0,367,Spain - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,80.2,A,,F\nQ,ES,N,A,M,770,A,E,1,0,367,Spain - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,79.8,A,,F\nQ,ES,N,A,M,770,A,E,1,0,367,Spain - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,78.2,A,,F\nQ,ES,N,A,M,770,A,E,1,0,367,Spain - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,76.6,A,,F\nQ,ES,N,A,M,770,A,E,1,0,367,Spain - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,76.9,A,,F\nQ,5A,H,A,M,770,A,E,1,0,367,All reporting countries (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,59.4,A,,F\nQ,5A,H,A,M,770,A,E,1,0,367,All reporting countries (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,60.8,A,,F\nQ,5A,H,A,M,770,A,E,1,0,367,All reporting countries (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,60.2,A,,F\nQ,5A,H,A,M,770,A,E,1,0,367,All reporting countries (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,59.7,A,,F\nQ,5A,H,A,M,770,A,E,1,0,367,All reporting countries (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,58.4,A,,F\nQ,HU,H,A,M,770,A,E,1,0,367,Hungary - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,17.3,A,,F\nQ,HU,H,A,M,770,A,E,1,0,367,Hungary - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,17.6,A,,F\nQ,HU,H,A,M,770,A,E,1,0,367,Hungary - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,17.8,A,,F\nQ,HU,H,A,M,770,A,E,1,0,367,Hungary - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,18.3,A,,F\nQ,HU,H,A,M,770,A,E,1,0,367,Hungary - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,18.7,A,,F\nQ,NO,H,A,M,770,A,E,1,0,367,Norway - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,84.4,A,,F\nQ,NO,H,A,M,770,A,E,1,0,367,Norway - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,85.4,A,,F\nQ,NO,H,A,M,770,A,E,1,0,367,Norway - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,86.1,A,,F\nQ,NO,H,A,M,770,A,E,1,0,367,Norway - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,87.3,A,,F\nQ,NO,H,A,M,770,A,E,1,0,367,Norway - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,87.8,A,,F\nQ,BR,N,A,M,770,A,E,1,0,367,Brazil - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,54.8,A,,F\nQ,BR,N,A,M,770,A,E,1,0,367,Brazil - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,54.2,A,,F\nQ,BR,N,A,M,770,A,E,1,0,367,Brazil - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,53.9,A,,F\nQ,BR,N,A,M,770,A,E,1,0,367,Brazil - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,55.5,A,,F\nQ,BR,N,A,M,770,A,E,1,0,367,Brazil - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,54.6,A,,F\nQ,GR,H,A,M,770,A,E,1,0,367,Greece - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,38.9,A,,F\nQ,GR,H,A,M,770,A,E,1,0,367,Greece - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,38.7,A,,F\nQ,GR,H,A,M,770,A,E,1,0,367,Greece - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,38.4,A,,F\nQ,GR,H,A,M,770,A,E,1,0,367,Greece - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,38,A,,F\nQ,GR,H,A,M,770,A,E,1,0,367,Greece - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,37.5,A,,F\nQ,GR,N,A,M,770,A,E,1,0,367,Greece - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,57.1,A,,F\nQ,GR,N,A,M,770,A,E,1,0,367,Greece - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,57.6,A,,F\nQ,GR,N,A,M,770,A,E,1,0,367,Greece - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,57.5,A,,F\nQ,GR,N,A,M,770,A,E,1,0,367,Greece - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,59.3,A,,F\nQ,GR,N,A,M,770,A,E,1,0,367,Greece - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,59.2,A,,F\nQ,DE,N,A,M,770,A,E,1,0,367,Germany - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,87.8,A,,F\nQ,DE,N,A,M,770,A,E,1,0,367,Germany - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,87.8,A,,F\nQ,DE,N,A,M,770,A,E,1,0,367,Germany - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,87.4,A,,F\nQ,DE,N,A,M,770,A,E,1,0,367,Germany - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,86.7,A,,F\nQ,DE,N,A,M,770,A,E,1,0,367,Germany - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,86.9,A,,F\nQ,US,N,A,M,770,A,E,1,0,367,United States - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,73,A,,F\nQ,US,N,A,M,770,A,E,1,0,367,United States - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,72.7,A,,F\nQ,US,N,A,M,770,A,E,1,0,367,United States - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,72.4,A,,F\nQ,US,N,A,M,770,A,E,1,0,367,United States - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,72.2,A,,F\nQ,US,N,A,M,770,A,E,1,0,367,United States - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,72.5,A,,F\nQ,IT,H,A,M,770,A,E,1,0,367,Italy - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,35.9,A,,F\nQ,IT,H,A,M,770,A,E,1,0,367,Italy - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,35.9,A,,F\nQ,IT,H,A,M,770,A,E,1,0,367,Italy - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,35.8,A,,F\nQ,IT,H,A,M,770,A,E,1,0,367,Italy - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,35.9,A,,F\nQ,IT,H,A,M,770,A,E,1,0,367,Italy - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,35.9,A,,F\nQ,NO,N,A,M,770,A,E,1,0,367,Norway - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,134.7,A,,F\nQ,NO,N,A,M,770,A,E,1,0,367,Norway - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,134.9,A,,F\nQ,NO,N,A,M,770,A,E,1,0,367,Norway - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,134.4,A,,F\nQ,NO,N,A,M,770,A,E,1,0,367,Norway - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,135.8,A,,F\nQ,NO,N,A,M,770,A,E,1,0,367,Norway - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,136.4,A,,F\nQ,XM,N,A,M,770,A,E,1,0,367,Euro area - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,104.7,A,,F\nQ,XM,N,A,M,770,A,E,1,0,367,Euro area - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,103.8,A,,F\nQ,XM,N,A,M,770,A,E,1,0,367,Euro area - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,103.3,A,,F\nQ,XM,N,A,M,770,A,E,1,0,367,Euro area - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,103,A,,F\nQ,XM,N,A,M,770,A,E,1,0,367,Euro area - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,103.3,A,,F\nQ,SG,H,A,M,770,A,E,1,0,367,Singapore - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,42.2,A,,F\nQ,SG,H,A,M,770,A,E,1,0,367,Singapore - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,42.6,A,,F\nQ,SG,H,A,M,770,A,E,1,0,367,Singapore - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,43.4,A,,F\nQ,SG,H,A,M,770,A,E,1,0,367,Singapore - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,44,A,,F\nQ,SG,H,A,M,770,A,E,1,0,367,Singapore - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,44.1,A,,F\nQ,AR,N,A,M,770,A,E,1,0,367,Argentina - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,18.6,A,,F\nQ,AR,N,A,M,770,A,E,1,0,367,Argentina - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,19.9,A,,F\nQ,AR,N,A,M,770,A,E,1,0,367,Argentina - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,21.2,A,,F\nQ,AR,N,A,M,770,A,E,1,0,367,Argentina - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,22.9,A,,F\nQ,AR,N,A,M,770,A,E,1,0,367,Argentina - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,21.1,A,,F\nQ,IT,N,A,M,770,A,E,1,0,367,Italy - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,58.8,A,,F\nQ,IT,N,A,M,770,A,E,1,0,367,Italy - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,59,A,,F\nQ,IT,N,A,M,770,A,E,1,0,367,Italy - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,58.4,A,,F\nQ,IT,N,A,M,770,A,E,1,0,367,Italy - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,58.4,A,,F\nQ,IT,N,A,M,770,A,E,1,0,367,Italy - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,58.3,A,,F\nQ,AU,H,A,M,770,A,E,1,0,367,Australia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,112.6,A,,F\nQ,AU,H,A,M,770,A,E,1,0,367,Australia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,113.8,A,,F\nQ,AU,H,A,M,770,A,E,1,0,367,Australia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,113.4,A,,F\nQ,AU,H,A,M,770,A,E,1,0,367,Australia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,114,A,,F\nQ,AU,H,A,M,770,A,E,1,0,367,Australia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,114.1,A,,F\nQ,CO,H,A,M,770,A,E,3,0,367,Colombia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,25.268,A,,F\nQ,CO,H,A,M,770,A,E,3,0,367,Colombia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,25.285,A,,F\nQ,CO,H,A,M,770,A,E,3,0,367,Colombia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,25.105,A,,F\nQ,CO,H,A,M,770,A,E,3,0,367,Colombia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,25.461,A,,F\nQ,CO,H,A,M,770,A,E,3,0,367,Colombia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,25.715,A,,F\nQ,G2,H,A,M,770,A,E,1,0,367,G20 (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,58.8,A,,F\nQ,G2,H,A,M,770,A,E,1,0,367,G20 (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,60.1,A,,F\nQ,G2,H,A,M,770,A,E,1,0,367,G20 (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,59.5,A,,F\nQ,G2,H,A,M,770,A,E,1,0,367,G20 (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,59,A,,F\nQ,G2,H,A,M,770,A,E,1,0,367,G20 (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,57.8,A,,F\nQ,AR,H,A,M,770,A,E,1,0,367,Argentina - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,5,A,,F\nQ,AR,H,A,M,770,A,E,1,0,367,Argentina - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,5.4,A,,F\nQ,AR,H,A,M,770,A,E,1,0,367,Argentina - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,5.6,A,,F\nQ,AR,H,A,M,770,A,E,1,0,367,Argentina - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,5.7,A,,F\nQ,AR,H,A,M,770,A,E,1,0,367,Argentina - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,5.6,A,,F\nQ,AU,N,A,M,770,A,E,1,0,367,Australia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,61.8,A,,F\nQ,AU,N,A,M,770,A,E,1,0,367,Australia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,61.9,A,,F\nQ,AU,N,A,M,770,A,E,1,0,367,Australia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,62.1,A,,F\nQ,AU,N,A,M,770,A,E,1,0,367,Australia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,62.1,A,,F\nQ,AU,N,A,M,770,A,E,1,0,367,Australia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,61.7,A,,F\nQ,SG,N,A,M,770,A,E,1,0,367,Singapore - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,120.8,A,,F\nQ,SG,N,A,M,770,A,E,1,0,367,Singapore - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,120.1,A,,F\nQ,SG,N,A,M,770,A,E,1,0,367,Singapore - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,121.8,A,,F\nQ,SG,N,A,M,770,A,E,1,0,367,Singapore - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,127.2,A,,F\nQ,SG,N,A,M,770,A,E,1,0,367,Singapore - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,123.7,A,,F\nQ,RU,H,A,M,770,A,E,1,0,367,Russia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,20.9,A,,F\nQ,RU,H,A,M,770,A,E,1,0,367,Russia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,20.8,A,,F\nQ,RU,H,A,M,770,A,E,1,0,367,Russia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,20.9,A,,F\nQ,RU,H,A,M,770,A,E,1,0,367,Russia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,21.1,A,,F\nQ,RU,H,A,M,770,A,E,1,0,367,Russia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,21,A,,F\nQ,DK,H,A,M,770,A,E,1,0,367,Denmark - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,82.8,A,,F\nQ,DK,H,A,M,770,A,E,1,0,367,Denmark - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,82.5,A,,F\nQ,DK,H,A,M,770,A,E,1,0,367,Denmark - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,82.6,A,,F\nQ,DK,H,A,M,770,A,E,1,0,367,Denmark - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,82.6,A,,F\nQ,DK,H,A,M,770,A,E,1,0,367,Denmark - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,82.5,A,,F\nQ,MX,H,A,M,770,A,E,1,0,367,Mexico - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,16.9,A,,F\nQ,MX,H,A,M,770,A,E,1,0,367,Mexico - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,17,A,,F\nQ,MX,H,A,M,770,A,E,1,0,367,Mexico - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,17.2,A,,F\nQ,MX,H,A,M,770,A,E,1,0,367,Mexico - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,17.4,A,,F\nQ,MX,H,A,M,770,A,E,1,0,367,Mexico - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,17.4,A,,F\nQ,IE,N,A,M,770,A,E,1,0,367,Ireland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,114.5,A,,F\nQ,IE,N,A,M,770,A,E,1,0,367,Ireland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,102.8,A,,F\nQ,IE,N,A,M,770,A,E,1,0,367,Ireland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,98.9,A,,F\nQ,IE,N,A,M,770,A,E,1,0,367,Ireland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,98.1,A,,F\nQ,IE,N,A,M,770,A,E,1,0,367,Ireland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,103,A,,F\nQ,CA,H,A,M,770,A,E,1,0,367,Canada - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,99.3,A,,F\nQ,CA,H,A,M,770,A,E,1,0,367,Canada - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,99.9,A,,F\nQ,CA,H,A,M,770,A,E,1,0,367,Canada - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,100.3,A,,F\nQ,CA,H,A,M,770,A,E,1,0,367,Canada - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,100.4,A,,F\nQ,CA,H,A,M,770,A,E,1,0,367,Canada - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,100,A,,F\nQ,XM,H,A,M,770,A,E,1,0,367,Euro area - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,50.5,A,,F\nQ,XM,H,A,M,770,A,E,1,0,367,Euro area - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,50.6,A,,F\nQ,XM,H,A,M,770,A,E,1,0,367,Euro area - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,50.5,A,,F\nQ,XM,H,A,M,770,A,E,1,0,367,Euro area - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,50.4,A,,F\nQ,XM,H,A,M,770,A,E,1,0,367,Euro area - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,50.2,A,,F\nQ,DK,N,A,M,770,A,E,1,0,367,Denmark - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,133,A,,F\nQ,DK,N,A,M,770,A,E,1,0,367,Denmark - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,131.6,A,,F\nQ,DK,N,A,M,770,A,E,1,0,367,Denmark - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,133.5,A,,F\nQ,DK,N,A,M,770,A,E,1,0,367,Denmark - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,137.8,A,,F\nQ,DK,N,A,M,770,A,E,1,0,367,Denmark - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,136.7,A,,F\nQ,MX,N,A,M,770,A,E,1,0,367,Mexico - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,22.3,A,,F\nQ,MX,N,A,M,770,A,E,1,0,367,Mexico - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,21.8,A,,F\nQ,MX,N,A,M,770,A,E,1,0,367,Mexico - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,21.5,A,,F\nQ,MX,N,A,M,770,A,E,1,0,367,Mexico - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,21.3,A,,F\nQ,MX,N,A,M,770,A,E,1,0,367,Mexico - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,21.2,A,,F\nQ,RU,N,A,M,770,A,E,1,0,367,Russia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,77.9,A,,F\nQ,RU,N,A,M,770,A,E,1,0,367,Russia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,80.4,A,,F\nQ,RU,N,A,M,770,A,E,1,0,367,Russia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,82.6,A,,F\nQ,RU,N,A,M,770,A,E,1,0,367,Russia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,83.7,A,,F\nQ,RU,N,A,M,770,A,E,1,0,367,Russia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,83.7,A,,F\nQ,HK,H,A,M,770,A,E,1,0,367,Hong Kong SAR - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,87.5,A,,F\nQ,HK,H,A,M,770,A,E,1,0,367,Hong Kong SAR - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,87.6,A,,F\nQ,HK,H,A,M,770,A,E,1,0,367,Hong Kong SAR - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,87.7,A,,F\nQ,HK,H,A,M,770,A,E,1,0,367,Hong Kong SAR - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,87.8,A,,F\nQ,HK,H,A,M,770,A,E,1,0,367,Hong Kong SAR - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,88.9,A,,F\nQ,CA,N,A,M,770,A,E,1,0,367,Canada - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,118.6,A,,F\nQ,CA,N,A,M,770,A,E,1,0,367,Canada - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,117.9,A,,F\nQ,CA,N,A,M,770,A,E,1,0,367,Canada - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,118.2,A,,F\nQ,CA,N,A,M,770,A,E,1,0,367,Canada - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,118.5,A,,F\nQ,CA,N,A,M,770,A,E,1,0,367,Canada - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,118.8,A,,F\nQ,CN,N,A,M,770,A,E,1,0,367,China - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,141.7,A,,F\nQ,CN,N,A,M,770,A,E,1,0,367,China - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,142.2,A,,F\nQ,CN,N,A,M,770,A,E,1,0,367,China - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,142.4,A,,F\nQ,CN,N,A,M,770,A,E,1,0,367,China - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,142.8,A,,F\nQ,CN,N,A,M,770,A,E,1,0,367,China - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,146.6,A,,F\nQ,FR,H,A,M,770,A,E,1,0,367,France - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,59.8,A,,F\nQ,FR,H,A,M,770,A,E,1,0,367,France - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,59.7,A,,F\nQ,FR,H,A,M,770,A,E,1,0,367,France - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,59.6,A,,F\nQ,FR,H,A,M,770,A,E,1,0,367,France - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,59.4,A,,F\nQ,FR,H,A,M,770,A,E,1,0,367,France - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,59.1,A,,F\nQ,AT,N,A,M,770,A,E,1,0,367,Austria - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,87.3,A,,F\nQ,AT,N,A,M,770,A,E,1,0,367,Austria - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,86.3,A,,F\nQ,AT,N,A,M,770,A,E,1,0,367,Austria - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,85.6,A,,F\nQ,AT,N,A,M,770,A,E,1,0,367,Austria - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,83.7,A,,F\nQ,AT,N,A,M,770,A,E,1,0,367,Austria - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,85.2,A,,F\nQ,FR,N,A,M,770,A,E,1,0,367,France - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,154,A,,F\nQ,FR,N,A,M,770,A,E,1,0,367,France - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,154.4,A,,F\nQ,FR,N,A,M,770,A,E,1,0,367,France - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,154.5,A,,F\nQ,FR,N,A,M,770,A,E,1,0,367,France - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,155.2,A,,F\nQ,FR,N,A,M,770,A,E,1,0,367,France - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,155.2,A,,F\nQ,SE,N,A,M,770,A,E,1,0,367,Sweden - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,152.9,A,,F\nQ,SE,N,A,M,770,A,E,1,0,367,Sweden - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,153.1,A,,F\nQ,SE,N,A,M,770,A,E,1,0,367,Sweden - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,150.4,A,,F\nQ,SE,N,A,M,770,A,E,1,0,367,Sweden - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,146.6,A,,F\nQ,SE,N,A,M,770,A,E,1,0,367,Sweden - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,154.1,A,,F\nQ,IE,H,A,M,770,A,E,1,0,367,Ireland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,22.7,A,,F\nQ,IE,H,A,M,770,A,E,1,0,367,Ireland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,25.1,A,,F\nQ,IE,H,A,M,770,A,E,1,0,367,Ireland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,25.1,A,,F\nQ,IE,H,A,M,770,A,E,1,0,367,Ireland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,25.3,A,,F\nQ,IE,H,A,M,770,A,E,1,0,367,Ireland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,26.3,A,,F\nQ,ZA,N,A,M,770,A,E,1,0,367,South Africa - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,33.4,A,,F\nQ,ZA,N,A,M,770,A,E,1,0,367,South Africa - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,33.4,A,,F\nQ,ZA,N,A,M,770,A,E,1,0,367,South Africa - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,33.6,A,,F\nQ,ZA,N,A,M,770,A,E,1,0,367,South Africa - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,33,A,,F\nQ,ZA,N,A,M,770,A,E,1,0,367,South Africa - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,33.6,A,,F\nQ,AT,H,A,M,770,A,E,1,0,367,Austria - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,42.4,A,,F\nQ,AT,H,A,M,770,A,E,1,0,367,Austria - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,42.1,A,,F\nQ,AT,H,A,M,770,A,E,1,0,367,Austria - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,41.9,A,,F\nQ,AT,H,A,M,770,A,E,1,0,367,Austria - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,41.5,A,,F\nQ,AT,H,A,M,770,A,E,1,0,367,Austria - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,41.3,A,,F\nQ,CO,N,A,M,770,A,E,3,0,367,Colombia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,28.687,A,,F\nQ,CO,N,A,M,770,A,E,3,0,367,Colombia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,28.706,A,,F\nQ,CO,N,A,M,770,A,E,3,0,367,Colombia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,28.502,A,,F\nQ,CO,N,A,M,770,A,E,3,0,367,Colombia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,28.907,A,,F\nQ,CO,N,A,M,770,A,E,3,0,367,Colombia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,29.195,A,,F\nQ,IL,H,A,M,770,A,E,1,0,367,Israel - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,42.1,A,,F\nQ,IL,H,A,M,770,A,E,1,0,367,Israel - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,41.9,A,,F\nQ,IL,H,A,M,770,A,E,1,0,367,Israel - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,42.4,A,,F\nQ,IL,H,A,M,770,A,E,1,0,367,Israel - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,42.5,A,,F\nQ,IL,H,A,M,770,A,E,1,0,367,Israel - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,42.5,A,,F\nQ,G2,N,A,M,770,A,E,1,0,367,G20 (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,90.7,A,,F\nQ,G2,N,A,M,770,A,E,1,0,367,G20 (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,93,A,,F\nQ,G2,N,A,M,770,A,E,1,0,367,G20 (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,92.4,A,,F\nQ,G2,N,A,M,770,A,E,1,0,367,G20 (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,92.2,A,,F\nQ,G2,N,A,M,770,A,E,1,0,367,G20 (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,91.7,A,,F\nQ,SA,N,A,M,770,A,E,1,0,367,Saudi Arabia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,43,A,,F\nQ,SA,N,A,M,770,A,E,1,0,367,Saudi Arabia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,45.2,A,,F\nQ,SA,N,A,M,770,A,E,1,0,367,Saudi Arabia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,45.9,A,,F\nQ,SA,N,A,M,770,A,E,1,0,367,Saudi Arabia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,46.1,A,,F\nQ,SA,N,A,M,770,A,E,1,0,367,Saudi Arabia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,46.5,A,,F\nQ,CN,H,A,M,770,A,E,1,0,367,China - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,60.2,A,,F\nQ,CN,H,A,M,770,A,E,1,0,367,China - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,59.7,A,,F\nQ,CN,H,A,M,770,A,E,1,0,367,China - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,59,A,,F\nQ,CN,H,A,M,770,A,E,1,0,367,China - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,58,A,,F\nQ,CN,H,A,M,770,A,E,1,0,367,China - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,57.5,A,,F\nQ,4T,N,A,M,770,A,E,1,0,367,Emerging market economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,95.9,A,,F\nQ,4T,N,A,M,770,A,E,1,0,367,Emerging market economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,97.9,A,,F\nQ,4T,N,A,M,770,A,E,1,0,367,Emerging market economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,98,A,,F\nQ,4T,N,A,M,770,A,E,1,0,367,Emerging market economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,99.2,A,,F\nQ,4T,N,A,M,770,A,E,1,0,367,Emerging market economies (aggregate) - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,100.5,A,,F\nQ,MY,H,A,M,770,A,E,1,0,367,Malaysia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,69.5,A,,F\nQ,MY,H,A,M,770,A,E,1,0,367,Malaysia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,69.8,A,,F\nQ,MY,H,A,M,770,A,E,1,0,367,Malaysia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,69.9,A,,F\nQ,MY,H,A,M,770,A,E,1,0,367,Malaysia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,69.8,A,,F\nQ,MY,H,A,M,770,A,E,1,0,367,Malaysia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,69.5,A,,F\nQ,ZA,H,A,M,770,A,E,1,0,367,South Africa - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,33.7,A,,F\nQ,ZA,H,A,M,770,A,E,1,0,367,South Africa - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,33.7,A,,F\nQ,ZA,H,A,M,770,A,E,1,0,367,South Africa - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,33.6,A,,F\nQ,ZA,H,A,M,770,A,E,1,0,367,South Africa - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,33.7,A,,F\nQ,ZA,H,A,M,770,A,E,1,0,367,South Africa - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,33.7,A,,F\nQ,IL,N,A,M,770,A,E,1,0,367,Israel - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,69.5,A,,F\nQ,IL,N,A,M,770,A,E,1,0,367,Israel - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,70.4,A,,F\nQ,IL,N,A,M,770,A,E,1,0,367,Israel - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,70.9,A,,F\nQ,IL,N,A,M,770,A,E,1,0,367,Israel - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,72.5,A,,F\nQ,IL,N,A,M,770,A,E,1,0,367,Israel - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,73.9,A,,F\nQ,CH,H,A,M,770,A,E,1,0,367,Switzerland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,120.9,A,,F\nQ,CH,H,A,M,770,A,E,1,0,367,Switzerland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,121.2,A,,F\nQ,CH,H,A,M,770,A,E,1,0,367,Switzerland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,122,A,,F\nQ,CH,H,A,M,770,A,E,1,0,367,Switzerland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,122.9,A,,F\nQ,CH,H,A,M,770,A,E,1,0,367,Switzerland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,127,A,,F\nQ,MY,N,A,M,770,A,E,1,0,367,Malaysia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,87.3,A,,F\nQ,MY,N,A,M,770,A,E,1,0,367,Malaysia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,88,A,,F\nQ,MY,N,A,M,770,A,E,1,0,367,Malaysia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,88.4,A,,F\nQ,MY,N,A,M,770,A,E,1,0,367,Malaysia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,88.6,A,,F\nQ,MY,N,A,M,770,A,E,1,0,367,Malaysia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,89.4,A,,F\nQ,4T,H,A,M,770,A,E,1,0,367,Emerging market economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,45.4,A,,F\nQ,4T,H,A,M,770,A,E,1,0,367,Emerging market economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,46,A,,F\nQ,4T,H,A,M,770,A,E,1,0,367,Emerging market economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,45.6,A,,F\nQ,4T,H,A,M,770,A,E,1,0,367,Emerging market economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,45.6,A,,F\nQ,4T,H,A,M,770,A,E,1,0,367,Emerging market economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,45,A,,F\nQ,SA,H,A,M,770,A,E,1,0,367,Saudi Arabia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,30.9,A,,F\nQ,SA,H,A,M,770,A,E,1,0,367,Saudi Arabia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,31.2,A,,F\nQ,SA,H,A,M,770,A,E,1,0,367,Saudi Arabia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,31.6,A,,F\nQ,SA,H,A,M,770,A,E,1,0,367,Saudi Arabia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,31.7,A,,F\nQ,SA,H,A,M,770,A,E,1,0,367,Saudi Arabia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,31.6,A,,F\nQ,ID,N,A,M,770,A,E,1,0,367,Indonesia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,23.7,A,,F\nQ,ID,N,A,M,770,A,E,1,0,367,Indonesia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,23.6,A,,F\nQ,ID,N,A,M,770,A,E,1,0,367,Indonesia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,24.1,A,,F\nQ,ID,N,A,M,770,A,E,1,0,367,Indonesia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,25.1,A,,F\nQ,ID,N,A,M,770,A,E,1,0,367,Indonesia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,24.6,A,,F\nQ,ES,H,A,M,770,A,E,1,0,367,Spain - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,43.3,A,,F\nQ,ES,H,A,M,770,A,E,1,0,367,Spain - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,43.9,A,,F\nQ,ES,H,A,M,770,A,E,1,0,367,Spain - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,43,A,,F\nQ,ES,H,A,M,770,A,E,1,0,367,Spain - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,42.9,A,,F\nQ,ES,H,A,M,770,A,E,1,0,367,Spain - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,42.5,A,,F\nQ,IN,H,A,M,770,A,E,1,0,367,India - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,44.8,A,,F\nQ,IN,H,A,M,770,A,E,1,0,367,India - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,45.5,A,,F\nQ,IN,H,A,M,770,A,E,1,0,367,India - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,45.5,A,,F\nQ,IN,H,A,M,770,A,E,1,0,367,India - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,47.7,A,,F\nQ,IN,H,A,M,770,A,E,1,0,367,India - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,49.1,A,,F\nQ,GB,H,A,M,770,A,E,1,0,367,United Kingdom - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,74.3,A,,F\nQ,GB,H,A,M,770,A,E,1,0,367,United Kingdom - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,73.7,A,,F\nQ,GB,H,A,M,770,A,E,1,0,367,United Kingdom - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,73.6,A,,F\nQ,GB,H,A,M,770,A,E,1,0,367,United Kingdom - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,73.5,A,,F\nQ,GB,H,A,M,770,A,E,1,0,367,United Kingdom - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,72.6,A,,F\nQ,CH,N,A,M,770,A,E,1,0,367,Switzerland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,132.4,A,,F\nQ,CH,N,A,M,770,A,E,1,0,367,Switzerland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,128.3,A,,F\nQ,CH,N,A,M,770,A,E,1,0,367,Switzerland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,129,A,,F\nQ,CH,N,A,M,770,A,E,1,0,367,Switzerland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,129,A,,F\nQ,CH,N,A,M,770,A,E,1,0,367,Switzerland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,130.3,A,,F\nQ,PT,H,A,M,770,A,E,1,0,367,Portugal - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,52.8,A,,F\nQ,PT,H,A,M,770,A,E,1,0,367,Portugal - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,53.2,A,,F\nQ,PT,H,A,M,770,A,E,1,0,367,Portugal - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,53.5,A,,F\nQ,PT,H,A,M,770,A,E,1,0,367,Portugal - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,53.9,A,,F\nQ,PT,H,A,M,770,A,E,1,0,367,Portugal - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,54.2,A,,F\nQ,LU,N,A,M,770,A,E,1,0,367,Luxembourg - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,385.9,A,,F\nQ,LU,N,A,M,770,A,E,1,0,367,Luxembourg - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,384.7,A,,F\nQ,LU,N,A,M,770,A,E,1,0,367,Luxembourg - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,362.3,A,,F\nQ,LU,N,A,M,770,A,E,1,0,367,Luxembourg - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,401.1,A,,F\nQ,LU,N,A,M,770,A,E,1,0,367,Luxembourg - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,395.9,A,,F\nQ,CZ,N,A,M,770,A,E,1,0,367,Czechia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,55.3,A,,F\nQ,CZ,N,A,M,770,A,E,1,0,367,Czechia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,55.7,A,,F\nQ,CZ,N,A,M,770,A,E,1,0,367,Czechia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,54.1,A,,F\nQ,CZ,N,A,M,770,A,E,1,0,367,Czechia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,53.7,A,,F\nQ,CZ,N,A,M,770,A,E,1,0,367,Czechia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,54.6,A,,F\nQ,BE,N,A,M,770,A,E,1,0,367,Belgium - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,120.5,A,,F\nQ,BE,N,A,M,770,A,E,1,0,367,Belgium - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,120.5,A,,F\nQ,BE,N,A,M,770,A,E,1,0,367,Belgium - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,119.1,A,,F\nQ,BE,N,A,M,770,A,E,1,0,367,Belgium - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,117.8,A,,F\nQ,BE,N,A,M,770,A,E,1,0,367,Belgium - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,116.6,A,,F\nQ,FI,N,A,M,770,A,E,1,0,367,Finland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,114.9,A,,F\nQ,FI,N,A,M,770,A,E,1,0,367,Finland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,114.8,A,,F\nQ,FI,N,A,M,770,A,E,1,0,367,Finland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,114.2,A,,F\nQ,FI,N,A,M,770,A,E,1,0,367,Finland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,113.6,A,,F\nQ,FI,N,A,M,770,A,E,1,0,367,Finland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,111.6,A,,F\nQ,ID,H,A,M,770,A,E,1,0,367,Indonesia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,16,A,,F\nQ,ID,H,A,M,770,A,E,1,0,367,Indonesia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,15.8,A,,F\nQ,ID,H,A,M,770,A,E,1,0,367,Indonesia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,15.7,A,,F\nQ,ID,H,A,M,770,A,E,1,0,367,Indonesia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,15.5,A,,F\nQ,ID,H,A,M,770,A,E,1,0,367,Indonesia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,15.2,A,,F\nQ,5R,H,A,M,770,A,E,1,0,367,Advanced economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,67.3,A,,F\nQ,5R,H,A,M,770,A,E,1,0,367,Advanced economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,69.2,A,,F\nQ,5R,H,A,M,770,A,E,1,0,367,Advanced economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,68.5,A,,F\nQ,5R,H,A,M,770,A,E,1,0,367,Advanced economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,67.7,A,,F\nQ,5R,H,A,M,770,A,E,1,0,367,Advanced economies (aggregate) - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,66,A,,F\nQ,CZ,H,A,M,770,A,E,1,0,367,Czechia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,30.7,A,,F\nQ,CZ,H,A,M,770,A,E,1,0,367,Czechia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,30.9,A,,F\nQ,CZ,H,A,M,770,A,E,1,0,367,Czechia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,31.1,A,,F\nQ,CZ,H,A,M,770,A,E,1,0,367,Czechia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,31.3,A,,F\nQ,CZ,H,A,M,770,A,E,1,0,367,Czechia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,31.6,A,,F\nQ,LU,H,A,M,770,A,E,1,0,367,Luxembourg - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,62.2,A,,F\nQ,LU,H,A,M,770,A,E,1,0,367,Luxembourg - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,62.4,A,,F\nQ,LU,H,A,M,770,A,E,1,0,367,Luxembourg - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,61.4,A,,F\nQ,LU,H,A,M,770,A,E,1,0,367,Luxembourg - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,61.3,A,,F\nQ,LU,H,A,M,770,A,E,1,0,367,Luxembourg - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,58.2,A,,F\nQ,SE,H,A,M,770,A,E,1,0,367,Sweden - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,82.7,A,,F\nQ,SE,H,A,M,770,A,E,1,0,367,Sweden - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,82.6,A,,F\nQ,SE,H,A,M,770,A,E,1,0,367,Sweden - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,82.5,A,,F\nQ,SE,H,A,M,770,A,E,1,0,367,Sweden - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,82.2,A,,F\nQ,SE,H,A,M,770,A,E,1,0,367,Sweden - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,82.1,A,,F\nQ,FI,H,A,M,770,A,E,1,0,367,Finland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,63.6,A,,F\nQ,FI,H,A,M,770,A,E,1,0,367,Finland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,63.2,A,,F\nQ,FI,H,A,M,770,A,E,1,0,367,Finland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,63.1,A,,F\nQ,FI,H,A,M,770,A,E,1,0,367,Finland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,62.5,A,,F\nQ,FI,H,A,M,770,A,E,1,0,367,Finland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,61.7,A,,F\nQ,CL,N,A,M,770,A,E,1,0,367,Chile - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,91.4,A,,F\nQ,CL,N,A,M,770,A,E,1,0,367,Chile - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,89.5,A,,F\nQ,CL,N,A,M,770,A,E,1,0,367,Chile - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,90.2,A,,F\nQ,CL,N,A,M,770,A,E,1,0,367,Chile - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,86.8,A,,F\nQ,CL,N,A,M,770,A,E,1,0,367,Chile - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,86.9,A,,F\nQ,NL,N,A,M,770,A,E,1,0,367,Netherlands - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,175.2,A,,F\nQ,NL,N,A,M,770,A,E,1,0,367,Netherlands - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,172.1,A,,F\nQ,NL,N,A,M,770,A,E,1,0,367,Netherlands - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,170.4,A,,F\nQ,NL,N,A,M,770,A,E,1,0,367,Netherlands - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,169.4,A,,F\nQ,NL,N,A,M,770,A,E,1,0,367,Netherlands - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,168.8,A,,F\nQ,CL,H,A,M,770,A,E,1,0,367,Chile - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,45.2,A,,F\nQ,CL,H,A,M,770,A,E,1,0,367,Chile - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,44.7,A,,F\nQ,CL,H,A,M,770,A,E,1,0,367,Chile - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,44.1,A,,F\nQ,CL,H,A,M,770,A,E,1,0,367,Chile - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,43.8,A,,F\nQ,CL,H,A,M,770,A,E,1,0,367,Chile - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,43.4,A,,F\nQ,IN,N,A,M,770,A,E,1,0,367,India - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,51.2,A,,F\nQ,IN,N,A,M,770,A,E,1,0,367,India - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,51.9,A,,F\nQ,IN,N,A,M,770,A,E,1,0,367,India - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,51.9,A,,F\nQ,IN,N,A,M,770,A,E,1,0,367,India - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,54.5,A,,F\nQ,IN,N,A,M,770,A,E,1,0,367,India - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,56,A,,F\nQ,GB,N,A,M,770,A,E,1,0,367,United Kingdom - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,58.3,A,,F\nQ,GB,N,A,M,770,A,E,1,0,367,United Kingdom - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,57.1,A,,F\nQ,GB,N,A,M,770,A,E,1,0,367,United Kingdom - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,58,A,,F\nQ,GB,N,A,M,770,A,E,1,0,367,United Kingdom - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,57.8,A,,F\nQ,GB,N,A,M,770,A,E,1,0,367,United Kingdom - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,55.8,A,,F\nQ,NL,H,A,M,770,A,E,1,0,367,Netherlands - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q1,94.5,A,,F\nQ,NL,H,A,M,770,A,E,1,0,367,Netherlands - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q2,94.4,A,,F\nQ,NL,H,A,M,770,A,E,1,0,367,Netherlands - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q3,94.5,A,,F\nQ,NL,H,A,M,770,A,E,1,0,367,Netherlands - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2025-Q4,94.4,A,,F\nQ,NL,H,A,M,770,A,E,1,0,367,Netherlands - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks,2026-Q1,94.6,A,,F\n"
+    },
+    "caveats": [
+      "主样本不能代表每个新兴经济体，借贷普及程度/金融深度/福利制度/收入分布存在差异",
+      "国际百分位是相对位置而非安全、危机或偿债能力阈值",
+      "不得把高福利或富国样本等同中国承受能力，但也不得编造贫富差距校正后的债务比率",
+      "BIS与CNBS不同版本/部门口径，只用BIS对BIS国际比较",
+      "个体经济体比率直接以本币债务/本币GDP求得，不需美元再换算；外币债务估值及加权组汇率仍会影响数据",
+      "Q1国际背景与Q2本国趋势分栏，不能假装国际已到Q2"
+    ]
+  },
+  "debtService": {
+    "source": {
+      "publisher": "Bank for International Settlements",
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_DSR/1.0/Q.CN.?format=csv&startPeriod=2010-Q1",
+      "queryKey": "Q.CN.",
+      "flow": "WS_DSR",
+      "version": "1.0",
+      "releaseDate": "2026-09-14",
+      "latestAvailablePeriod": "2026-Q1",
+      "fetchedAt": "Sun, 11 Oct 2026 01:39:57 GMT",
+      "sha256": "13c3c07bc1d8c20243d46f74261346dbca94c331880b57cf0fd46b3eff0a9934",
+      "sectorCoverage": [
+        "P"
+      ],
+      "householdAndCorporateSeparatelyUnavailable": true
+    },
+    "parsed": {
+      "rows": [
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2010-Q1",
+          "OBS_VALUE": "13.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2010-Q2",
+          "OBS_VALUE": "14.1",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2010-Q3",
+          "OBS_VALUE": "14.1",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2010-Q4",
+          "OBS_VALUE": "14.4",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2011-Q1",
+          "OBS_VALUE": "14.7",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2011-Q2",
+          "OBS_VALUE": "14.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2011-Q3",
+          "OBS_VALUE": "15",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2011-Q4",
+          "OBS_VALUE": "15.1",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2012-Q1",
+          "OBS_VALUE": "15.5",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2012-Q2",
+          "OBS_VALUE": "15.5",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2012-Q3",
+          "OBS_VALUE": "15.6",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2012-Q4",
+          "OBS_VALUE": "15.8",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2013-Q1",
+          "OBS_VALUE": "16.5",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2013-Q2",
+          "OBS_VALUE": "16.8",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2013-Q3",
+          "OBS_VALUE": "17.1",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2013-Q4",
+          "OBS_VALUE": "17.1",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2014-Q1",
+          "OBS_VALUE": "17.6",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2014-Q2",
+          "OBS_VALUE": "18",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2014-Q3",
+          "OBS_VALUE": "18",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2014-Q4",
+          "OBS_VALUE": "17.7",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2015-Q1",
+          "OBS_VALUE": "17.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2015-Q2",
+          "OBS_VALUE": "17.7",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2015-Q3",
+          "OBS_VALUE": "17.7",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2015-Q4",
+          "OBS_VALUE": "17.8",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2016-Q1",
+          "OBS_VALUE": "18.3",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2016-Q2",
+          "OBS_VALUE": "18.1",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2016-Q3",
+          "OBS_VALUE": "18",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2016-Q4",
+          "OBS_VALUE": "17.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2017-Q1",
+          "OBS_VALUE": "17.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2017-Q2",
+          "OBS_VALUE": "17.7",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2017-Q3",
+          "OBS_VALUE": "17.5",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2017-Q4",
+          "OBS_VALUE": "17.2",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2018-Q1",
+          "OBS_VALUE": "17.2",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2018-Q2",
+          "OBS_VALUE": "17",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2018-Q3",
+          "OBS_VALUE": "16.8",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2018-Q4",
+          "OBS_VALUE": "16.6",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2019-Q1",
+          "OBS_VALUE": "16.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2019-Q2",
+          "OBS_VALUE": "16.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2019-Q3",
+          "OBS_VALUE": "16.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2019-Q4",
+          "OBS_VALUE": "16.8",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2020-Q1",
+          "OBS_VALUE": "17.7",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2020-Q2",
+          "OBS_VALUE": "18.1",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2020-Q3",
+          "OBS_VALUE": "18.1",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2020-Q4",
+          "OBS_VALUE": "17.8",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2021-Q1",
+          "OBS_VALUE": "17.7",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2021-Q2",
+          "OBS_VALUE": "17.4",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2021-Q3",
+          "OBS_VALUE": "17.2",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2021-Q4",
+          "OBS_VALUE": "16.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2022-Q1",
+          "OBS_VALUE": "17.2",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2022-Q2",
+          "OBS_VALUE": "17.4",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2022-Q3",
+          "OBS_VALUE": "17.4",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2022-Q4",
+          "OBS_VALUE": "17.4",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2023-Q1",
+          "OBS_VALUE": "18",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2023-Q2",
+          "OBS_VALUE": "18",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2023-Q3",
+          "OBS_VALUE": "18.1",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2023-Q4",
+          "OBS_VALUE": "18",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2024-Q1",
+          "OBS_VALUE": "18.5",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2024-Q2",
+          "OBS_VALUE": "18.5",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2024-Q3",
+          "OBS_VALUE": "18.6",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2024-Q4",
+          "OBS_VALUE": "18.5",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2025-Q1",
+          "OBS_VALUE": "18.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2025-Q2",
+          "OBS_VALUE": "18.9",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2025-Q3",
+          "OBS_VALUE": "18.8",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2025-Q4",
+          "OBS_VALUE": "18.8",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        },
+        {
+          "FREQ": "Q",
+          "BORROWERS_CTY": "CN",
+          "DSR_BORROWERS": "P",
+          "COLLECTION": "",
+          "UNIT_MEASURE": "367",
+          "UNIT_MULT": "0",
+          "DECIMALS": "1",
+          "TITLE_TS": "China - Private non-financial sector",
+          "TIME_PERIOD": "2026-Q1",
+          "OBS_VALUE": "19.1",
+          "OBS_CONF": "F",
+          "OBS_PRE_BREAK": "",
+          "OBS_STATUS": "A"
+        }
+      ],
+      "current": {
+        "FREQ": "Q",
+        "BORROWERS_CTY": "CN",
+        "DSR_BORROWERS": "P",
+        "COLLECTION": "",
+        "UNIT_MEASURE": "367",
+        "UNIT_MULT": "0",
+        "DECIMALS": "1",
+        "TITLE_TS": "China - Private non-financial sector",
+        "TIME_PERIOD": "2026-Q1",
+        "OBS_VALUE": "19.1",
+        "OBS_CONF": "F",
+        "OBS_PRE_BREAK": "",
+        "OBS_STATUS": "A"
+      },
+      "baseline": {
+        "start": "2016-Q1",
+        "end": "2025-Q4",
+        "n": 40,
+        "mean": 17.74,
+        "excess": 1.360000000000003
+      },
+      "source": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_DSR/1.0/Q.CN.?format=csv&startPeriod=2010-Q1",
+      "sectorCoverage": [
+        "P"
+      ]
+    },
+    "rawCsv": {
+      "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_DSR/1.0/Q.CN.?format=csv&startPeriod=2010-Q1",
+      "httpStatus": 200,
+      "sha256": "13c3c07bc1d8c20243d46f74261346dbca94c331880b57cf0fd46b3eff0a9934",
+      "responseHeaders": {
+        "date": "Sun, 11 Oct 2026 01:39:57 GMT",
+        "lastModified": null
+      },
+      "csv": "FREQ,BORROWERS_CTY,DSR_BORROWERS,COLLECTION,UNIT_MEASURE,UNIT_MULT,DECIMALS,TITLE_TS,TIME_PERIOD,OBS_VALUE,OBS_CONF,OBS_PRE_BREAK,OBS_STATUS\nQ,CN,P,,367,0,1,China - Private non-financial sector,2010-Q1,13.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2010-Q2,14.1,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2010-Q3,14.1,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2010-Q4,14.4,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2011-Q1,14.7,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2011-Q2,14.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2011-Q3,15,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2011-Q4,15.1,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2012-Q1,15.5,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2012-Q2,15.5,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2012-Q3,15.6,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2012-Q4,15.8,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2013-Q1,16.5,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2013-Q2,16.8,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2013-Q3,17.1,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2013-Q4,17.1,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2014-Q1,17.6,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2014-Q2,18,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2014-Q3,18,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2014-Q4,17.7,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2015-Q1,17.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2015-Q2,17.7,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2015-Q3,17.7,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2015-Q4,17.8,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2016-Q1,18.3,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2016-Q2,18.1,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2016-Q3,18,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2016-Q4,17.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2017-Q1,17.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2017-Q2,17.7,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2017-Q3,17.5,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2017-Q4,17.2,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2018-Q1,17.2,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2018-Q2,17,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2018-Q3,16.8,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2018-Q4,16.6,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2019-Q1,16.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2019-Q2,16.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2019-Q3,16.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2019-Q4,16.8,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2020-Q1,17.7,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2020-Q2,18.1,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2020-Q3,18.1,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2020-Q4,17.8,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2021-Q1,17.7,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2021-Q2,17.4,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2021-Q3,17.2,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2021-Q4,16.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2022-Q1,17.2,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2022-Q2,17.4,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2022-Q3,17.4,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2022-Q4,17.4,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2023-Q1,18,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2023-Q2,18,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2023-Q3,18.1,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2023-Q4,18,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2024-Q1,18.5,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2024-Q2,18.5,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2024-Q3,18.6,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2024-Q4,18.5,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2025-Q1,18.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2025-Q2,18.9,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2025-Q3,18.8,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2025-Q4,18.8,F,,A\nQ,CN,P,,367,0,1,China - Private non-financial sector,2026-Q1,19.1,F,,A\n"
+    },
+    "interpretation": "中国只发布P合计，且中国DSR的收入代理为名义GDP；只作合计宏观背景，不移植为居民或企业DSR，也不作跨国绝对安全线。Q1较早，非Q2/8月新鲜分部门偿债证据。",
+    "baselineChoice": "40个已完成季度2016Q1–2025Q4；仅演示本国偏离，不声称最优窗口或危机线；当期修订版不是历史实时回测",
+    "sectorDsr": {
+      "households": null,
+      "nonFinancialCorporations": null
+    },
+    "imfOlderDistribution": {
+      "surveyYear": 2019,
+      "sourceKey": "imfFsap",
+      "averageHouseholdDsrPct": 18.4,
+      "debtShareHeldByDsrAbove40Pct": 35,
+      "debtShareHeldByDsrAbove60Pct": 12.8,
+      "eligibleAsCurrent": false
+    },
+    "noDefaultNeutral": true
+  },
+  "sourceCorrections": [
+    {
+      "indicator": "F09",
+      "field": "leverageReview.nominalGdpEffect.debtGrowthPct",
+      "oldValue": -1.2,
+      "correctValue": -1.3,
+      "sourceKey": "cnbsCurrent",
+      "pdfPage": 5,
+      "printedPage": 1,
+      "summary": "原文居民债务同比为−1.3%，企业+7.8%；原文不是−1.2。"
+    },
+    {
+      "metric": "房贷余额同比",
+      "nifdValue": -3.7,
+      "pbcOriginalValue": -3.8,
+      "chosen": -3.8,
+      "sourceKey": "pbcLoanAllocation"
+    },
+    {
+      "metric": "不含房贷消费性贷款同比",
+      "nifdValue": -1.8,
+      "pbcOriginalValue": -1.7,
+      "chosen": -1.7,
+      "sourceKey": "pbcLoanAllocation"
+    },
+    {
+      "metric": "新发放企业贷款利率",
+      "nifdValue": 3.05,
+      "pbcOriginalValue": 3.04,
+      "chosen": 3.04,
+      "sourceKey": "pbcRates"
+    },
+    {
+      "metric": "新发放住房贷款利率",
+      "nifdValue": 3.06,
+      "pbcOriginalValue": 3.05,
+      "chosen": 3.05,
+      "sourceKey": "pbcRates"
+    }
+  ],
+  "matrices": {
+    "F09": {
+      "method": "evidence-matrix",
+      "schemaVersion": 1,
+      "step": 0.5,
+      "reviewDate": "2026-10-11",
+      "sector": "households",
+      "objective": "居民资产负债表对中长期信用传导/资产配置的约束；不是单独违约风险或宏观繁荣分",
+      "primaryReference": "BIS-emerging-ex-China",
+      "domestic": {
+        "period": "2026-Q2",
+        "basis": "CNBS同部门债务/TTM名义GDP",
+        "leverageRatio": 57.7,
+        "yearAgoLeverageRatio": 61.1,
+        "yearOnYearChangePp": -3.4,
+        "quarterOnQuarterChangePp": -1.3,
+        "debtGrowthPct": -1.3,
+        "sourceKey": "cnbsCurrent",
+        "debtGrowthPdfPage": 5
+      },
+      "international": {
+        "period": "2026-Q1",
+        "basis": "BIS Q.H.A.M.770.A",
+        "country": "CN",
+        "value": 57.5,
+        "sourceKey": "bisCredit",
+        "benchmark": {
+          "sector": "H",
+          "group": "emergingExChina",
+          "n": 15,
+          "countries": [
+            "AR",
+            "BR",
+            "CL",
+            "CO",
+            "HU",
+            "ID",
+            "IN",
+            "MX",
+            "MY",
+            "PL",
+            "RU",
+            "SA",
+            "TH",
+            "TR",
+            "ZA"
+          ],
+          "china": 57.5,
+          "median": 25.715,
+          "q25": 18.049999999999997,
+          "q75": 40.7,
+          "q90": 61.33999999999999,
+          "chinaOutOfSamplePercentile": 86.66666666666667,
+          "observations": [
+            {
+              "country": "AR",
+              "sector": "H",
+              "value": 5.6,
+              "title": "Argentina - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "TR",
+              "sector": "H",
+              "value": 10.1,
+              "title": "Türkiye - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "ID",
+              "sector": "H",
+              "value": 15.2,
+              "title": "Indonesia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "MX",
+              "sector": "H",
+              "value": 17.4,
+              "title": "Mexico - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "HU",
+              "sector": "H",
+              "value": 18.7,
+              "title": "Hungary - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "RU",
+              "sector": "H",
+              "value": 21,
+              "title": "Russia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "PL",
+              "sector": "H",
+              "value": 22.1,
+              "title": "Poland - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "CO",
+              "sector": "H",
+              "value": 25.715,
+              "title": "Colombia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "SA",
+              "sector": "H",
+              "value": 31.6,
+              "title": "Saudi Arabia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "ZA",
+              "sector": "H",
+              "value": 33.7,
+              "title": "South Africa - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "BR",
+              "sector": "H",
+              "value": 38,
+              "title": "Brazil - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "CL",
+              "sector": "H",
+              "value": 43.4,
+              "title": "Chile - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "IN",
+              "sector": "H",
+              "value": 49.1,
+              "title": "India - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "MY",
+              "sector": "H",
+              "value": 69.5,
+              "title": "Malaysia - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "TH",
+              "sector": "H",
+              "value": 86.7,
+              "title": "Thailand - Credit to Households and NPISHs from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            }
+          ]
+        },
+        "notSafetyThreshold": true,
+        "role": "相对負担背景，须与本国约束及收入/反证联合；不能用CNBS57.7或59.0排行"
+      },
+      "incomeOrProfit": {
+        "sourceKey": "nbsIncome",
+        "period": "2026-H1",
+        "nominalIncomeGrowthPct": 5.2,
+        "realIncomeGrowthPct": 4.2,
+        "medianNominalIncomeGrowthPct": 4.7,
+        "wageGrowthPct": 5.3,
+        "consumptionExpenditureGrowthPct": 3.7,
+        "limitation": "非债务人加权收入，不能用人均收入增速与总量GDP增速直接作同口径减法"
+      },
+      "servicing": {
+        "sectorDsr": null,
+        "sectorDsrStatus": "BIS官方当前查询只有PNFS合计，无居民DSR；无其他当期同口径全国直接DSR",
+        "directSectorData": false,
+        "proxyOnly": true,
+        "newMortgageLoanRatePct": 3.05,
+        "newMortgageRateYoYChangePp": -0.01,
+        "sourceKey": "pbcRates",
+        "limitation": "新贷利率不是存量贷款利率/实际还本付息负担；不足独自触发改善高分"
+      },
+      "assetDemandPressure": {
+        "sourceKeys": [
+          "cnbsCurrent",
+          "pbcLoanAllocation"
+        ],
+        "period": "2026-Q2",
+        "nonMortgageConsumerLoanGrowthPct": -1.7,
+        "nonMortgageConsumerLoanBalanceTrillion": 20.83,
+        "mortgageLoanGrowthPct": -3.8,
+        "assetPressureEvidence": "CNBS原文住房财富承压、负债缩减不等同积极修复（PDF第7—9页/印刷第3—5页）",
+        "mortgageBalanceChangeH1HundredMillion": -7163
+      },
+      "counterEvidence": {
+        "sourceKeys": [
+          "nbsIncome",
+          "cnbsCurrent"
+        ],
+        "positive": [
+          "收入与中位收入均增长",
+          "同比杠杆下降，债务未继续堆积",
+          "按揭新贷利率略低"
+        ],
+        "negative": [
+          "消费信贷缩减与住房财富承压",
+          "消费支出增速低于收入，反映支出倾向偏弱而非直接偿债违约"
+        ]
+      },
+      "facts": {
+        "relativeBurdenElevatedInPrimaryPeers": true,
+        "domesticLeverageIncreasing": false,
+        "deleveragingWithAssetDemandPressure": true,
+        "currentIncomeSupport": true,
+        "currentRepaymentStressDirectlyObserved": false,
+        "directSectorDebtServiceAvailable": false,
+        "scopeVerified": true
+      },
+      "matchedState": "constraints-partly-mitigated",
+      "computedScore": 2.5,
+      "confidence": "limited-proxy",
+      "scoreReason": "新兴主参照中相对负担偏高，与本国住房财富/消费信贷缩表共同构成约束；收入正增与减债提供缓冲，因此为2.5而非2或更低。缺DSR不加扣分，只限制高分结论。",
+      "sensitivityAlternative": {
+        "reference": "all43/advanced27",
+        "score": 3,
+        "rationale": "若仅衡量偿付安全或以全部/发达经济体作主参照，不能由国际比较认定普遍极高负担；收入正增、降杠杆与弱资产/需求形成混合中性。"
+      },
+      "sourceConflicts": [
+        {
+          "metric": "不含住房贷款消费贷款同比",
+          "nifdValue": -1.8,
+          "originalPbcValue": -1.7,
+          "chosen": -1.7,
+          "unit": "%",
+          "reason": "官方原始贷款投向表优先于研究报告转述"
+        }
+      ]
+    },
+    "F10": {
+      "method": "evidence-matrix",
+      "schemaVersion": 1,
+      "step": 0.5,
+      "reviewDate": "2026-10-11",
+      "sector": "nonFinancialCorporations",
+      "objective": "企业资产负债表对中长期信用传导/资产配置的约束，不把企事业单位或工业企业当全部企业",
+      "primaryReference": "BIS-emerging-ex-China",
+      "domestic": {
+        "period": "2026-Q2",
+        "basis": "CNBS同部门债务/TTM名义GDP",
+        "leverageRatio": 179.5,
+        "yearAgoLeverageRatio": 174,
+        "yearOnYearChangePp": 5.5,
+        "quarterOnQuarterChangePp": -0.5,
+        "debtGrowthPct": 7.8,
+        "sourceKey": "cnbsCurrent"
+      },
+      "international": {
+        "period": "2026-Q1",
+        "basis": "BIS Q.N.A.M.770.A",
+        "country": "CN",
+        "value": 146.6,
+        "sourceKey": "bisCredit",
+        "benchmark": {
+          "sector": "N",
+          "group": "emergingExChina",
+          "n": 15,
+          "countries": [
+            "AR",
+            "BR",
+            "CL",
+            "CO",
+            "HU",
+            "ID",
+            "IN",
+            "MX",
+            "MY",
+            "PL",
+            "RU",
+            "SA",
+            "TH",
+            "TR",
+            "ZA"
+          ],
+          "china": 146.6,
+          "median": 46.5,
+          "q25": 31.3975,
+          "q75": 70,
+          "q90": 85.62,
+          "chinaOutOfSamplePercentile": 100,
+          "observations": [
+            {
+              "country": "AR",
+              "sector": "N",
+              "value": 21.1,
+              "title": "Argentina - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "MX",
+              "sector": "N",
+              "value": 21.2,
+              "title": "Mexico - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "ID",
+              "sector": "N",
+              "value": 24.6,
+              "title": "Indonesia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "CO",
+              "sector": "N",
+              "value": 29.195,
+              "title": "Colombia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "ZA",
+              "sector": "N",
+              "value": 33.6,
+              "title": "South Africa - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "PL",
+              "sector": "N",
+              "value": 35,
+              "title": "Poland - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "TR",
+              "sector": "N",
+              "value": 39,
+              "title": "Türkiye - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "SA",
+              "sector": "N",
+              "value": 46.5,
+              "title": "Saudi Arabia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "BR",
+              "sector": "N",
+              "value": 54.6,
+              "title": "Brazil - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "IN",
+              "sector": "N",
+              "value": 56,
+              "title": "India - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "TH",
+              "sector": "N",
+              "value": 69.2,
+              "title": "Thailand - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "HU",
+              "sector": "N",
+              "value": 70.8,
+              "title": "Hungary - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "RU",
+              "sector": "N",
+              "value": 83.7,
+              "title": "Russia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "CL",
+              "sector": "N",
+              "value": 86.9,
+              "title": "Chile - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            },
+            {
+              "country": "MY",
+              "sector": "N",
+              "value": 89.4,
+              "title": "Malaysia - Credit to Non-financial corporations from All sectors at Market value - Percentage of GDP - Adjusted for breaks",
+              "status": "A"
+            }
+          ]
+        },
+        "notSafetyThreshold": true,
+        "role": "企业相对负担高；需与本国杠杆/回款压力共同判断，不能以100分位直接判危机"
+      },
+      "incomeOrProfit": {
+        "sourceKey": "nbsIndustrialProfit",
+        "period": "2026-08",
+        "industrialProfitGrowthPct": 15.7,
+        "industrialRevenueGrowthPct": 6.6,
+        "industrialProfitMarginPct": 5.66,
+        "industrialProfitMarginYoYChangePp": 0.44,
+        "privateIndustrialProfitGrowthPct": 10.4,
+        "limitation": "规模以上工业是全部非金融企业子集，利润并非现金流；不能直接作全企业债务/利润比"
+      },
+      "servicing": {
+        "sectorDsr": null,
+        "sectorDsrStatus": "BIS中国只有PNFS合计，无企业分部门DSR",
+        "directSectorData": false,
+        "proxyOnly": true,
+        "enterpriseNewLoanRatePct": 3.04,
+        "enterpriseNewLoanRateYoYChangePp": -0.18,
+        "rateSourceKey": "pbcRates",
+        "receivablesCollectionDays": 72.2,
+        "receivablesCollectionDaysYoYChange": 0.9,
+        "inventoryTurnoverDaysYoYChange": 0.6,
+        "cashSourceKey": "nbsIndustrialProfit",
+        "limitation": "新贷成本和工业回款均为代理；不伪称全企业存量负债成本或实际债务服务率"
+      },
+      "counterEvidence": {
+        "sourceKeys": [
+          "cnbsCurrent",
+          "nbsIndustrialProfit",
+          "pbcRates"
+        ],
+        "positive": [
+          "本季杠杆环比下降0.5pp",
+          "利润及利润率改善",
+          "企业新贷成本下降"
+        ],
+        "negative": [
+          "杠杆同比仍上升5.5pp",
+          "回款与库存周转天数增加",
+          "规模以上工业资产负债率同比增加0.3pp，非CNBS债务/GDP，不能混用"
+        ]
+      },
+      "facts": {
+        "relativeBurdenElevatedInPrimaryPeers": true,
+        "domesticLeverageIncreasing": true,
+        "deleveragingWithAssetDemandPressure": false,
+        "risingLeverageWithCashPressure": true,
+        "currentEarningsSupport": true,
+        "currentRateCostSupport": true,
+        "currentRepaymentStressDirectlyObserved": false,
+        "directSectorDebtServiceAvailable": false,
+        "scopeVerified": true
+      },
+      "matchedState": "constraints-partly-mitigated",
+      "computedScore": 2.5,
+      "confidence": "limited-proxy",
+      "scoreReason": "同口径国际负担高、本国同比杠杆上升和现金回收偏弱联合支持较中性略低；利润/定价改善提供实证缓冲，不能因高比率直接判1或因利润好转直接判4。",
+      "perimeterWarning": "CNBS179.5与BIS146.6不得相除或混排行；BIS分配部分LGFV至政府、排除核销/股权等，CNBS企业更广。33.4pp差异不能直接全称LGFV。"
+    }
+  },
+  "rawRateTable": {
+    "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+    "sha256": "82c3f62136439902d9d8c464748afd9913503e53487257b61e1b31cc3d1e8ad9",
+    "page": 14,
+    "text": "7\n存款增加较快。6 月末，金融机构本外币各项存款余额为 354.3\n万亿元，同比增长 8.2%，比年初增加 18.2 万亿元。人民币各项存款\n余额为 346.4 万亿元，同比增长 8.2%，比年初增加 17.8 万亿元。外\n币存款余额为 1.2 万亿美元，比年初增加 980 亿美元。\n表 3 2026 年上半年人民币存款结构情况\n单位：亿元\n6 月末余额 同比增速 当年新增额\n人民币各项存款 3464408 8.2% 177595\n住户存款 1734840 7.1% 75758\n非金融企业存款 836214 4.5% 32003\n机关团体存款 404498 4.7% 11726\n财政性存款 72933 6.0% 9715\n非银行业金融机构存款 395395 28.6% 46540\n境外存款 20529 10.2% 1853\n数据来源：中国人民银行。\n新发放贷款利率继续处于低位。中国人民银行不断深化利率市场\n化改革，健全市场化的利率调控框架，强化利率政策执行和监督，促\n进社会综合融资成本低位运行。6 月，1 年期和 5 年期以上 LPR 分别\n为 3.0%和 3.5%，均同比持平；新发放贷款加权平均利率为 3.1%，同\n比下降 0.2 个百分点；活期存款利率为 0.08%，新发生定期存款利率\n为 1.28%。\n表 4 2026 年 6 月新发放贷款加权平均利率情况\n单位：%\n6 月 比 3 月变化 同比变化\n新发放贷款加权平均利率 3.05 -0.18 -0.24\n一般贷款加权平均利率 3.51 -0.03 -0.18\n其中：企业贷款加权平均利率 3.04 -0.02 -0.18\n票据融资加权平均利率 0.94 -0.52 -0.33\n个人住房贷款加权平均利率 3.05 -0.01 -0.01\n数据来源：中国人民银行。"
+  }
+}

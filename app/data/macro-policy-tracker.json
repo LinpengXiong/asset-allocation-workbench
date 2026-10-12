@@ -1,0 +1,506 @@
+{
+  "updated": "2026-10-01",
+  "basis": "以投资决策为目的建立核心全景跟踪池，而不是把所有政策文件无差别堆叠。仅收录已核验的中央和国家部委公开会议、规划、正式文件与实施通知；规划方向、会议部署、项目申报和正式实施分别标记。观察指标和投资传导只用于后续验证，不代表政策已兑现、企业已受益或形成投资建议。",
+  "taxonomy": {
+    "产业政策": ["增量成长", "供给侧改革", "传统升级", "基础供给与内需"],
+    "制度建设": ["市场基础制度", "要素与创新制度", "财税金融制度", "企业治理制度", "生态与民生制度", "开放与监管"]
+  },
+  "topics": [
+    {
+      "id": "core-technology",
+      "category": "产业政策",
+      "track": "增量成长",
+      "title": "关键技术与产业链补短板",
+      "summary": "关注集成电路、工业母机、高端仪器、基础及工业软件、先进材料等关键环节。",
+      "phase": "规划部署",
+      "focus": "技术攻关、中试验证、供应链配套与实际采用",
+      "marketImpact": ["国产替代", "研发资本开支", "供应链重估"],
+      "observation": "跟踪专项文件、测试验证、应用场景和企业订单；技术突破不直接等于商业化收入。",
+      "metrics": ["集成电路产量", "软件业务收入", "高技术制造业增加值"],
+      "events": [
+        {"date":"2026-08-26","publishedAt":"2026-08-26","kind":"政策发布会","title":"工信部介绍关键核心技术与产业链攻关方向","agency":"工业和信息化部","summary":"明确集成电路、工业母机、高端仪器、基础软件、先进材料等重点方向；具体项目仍需另行核验。","url":"https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_934ddb14d33e4cd5b787d88a15c5c0eb.html"},
+        {"date":"2026-03-05","publishedAt":"2026-03-14","kind":"政府工作报告","title":"部署重点产业链与产业创新工程","agency":"国务院","summary":"提出建设现代化产业体系、推进重点产业链和产业创新工程，属于年度总体部署。","url":"https://www.miit.gov.cn/xwfb/szyw/art/2026/art_a0f73af7d13b44b080ae9b71903939af.html"}
+      ]
+    },
+    {
+      "id": "ai-plus-software",
+      "category": "产业政策",
+      "track": "增量成长",
+      "title": "人工智能、算力与数字产业",
+      "summary": "跟踪人工智能应用、算力基础设施、基础及工业软件、行业数据集和产业数字化。",
+      "phase": "实施推进",
+      "focus": "可验证的应用场景、算力利用率、软件服务及软硬件协同",
+      "marketImpact": ["算力投资", "软件渗透", "生产率提升"],
+      "observation": "观察场景清单、采购合同、软件业务收入和算力利用率，不能仅凭模型发布推断产业收入。",
+      "metrics": ["软件业务收入", "算力利用率", "应用场景与采购项目"],
+      "events": [
+        {"date":"2025-08-26","publishedAt":"2025-08-26","kind":"正式文件","title":"国务院发布深入实施“人工智能+”行动的意见","agency":"国务院","summary":"提出人工智能与科技、产业、消费等领域融合的总体部署。","url":"https://big5.www.gov.cn/gate/big5/www.gov.cn/zhengce/content/202508/content_7037861.htm"},
+        {"date":"2026-09-11","publishedAt":"2026-09-11","kind":"政策发布会","title":"工信部介绍“人工智能+软件”专项行动","agency":"工业和信息化部","summary":"说明专项行动实施方向；会议解读与已经发布的正式文件分开记录。","url":"https://www.miit.gov.cn/xwfb/xwfbh/bxwfbh/art/2026/art_95c0b992336a4cb1b87ec3ccc576a669.html"}
+      ]
+    },
+    {
+      "id": "new-power-system",
+      "category": "产业政策",
+      "track": "增量成长",
+      "title": "新型电力系统与储能",
+      "summary": "跟踪电网建设、新型储能、可再生能源消纳和电力市场机制。",
+      "phase": "规划实施",
+      "focus": "电网投资、储能并网、消纳能力与收益机制",
+      "marketImpact": ["电网资本开支", "储能需求", "电价机制"],
+      "observation": "区分装机规模与利用效率，后续观察电网项目、储能调用和电力市场收入。",
+      "metrics": ["电网工程投资", "新型储能装机", "储能调用与市场交易"],
+      "events": [
+        {"date":"2026-06-13","publishedAt":"2026-06-25","kind":"正式规划","title":"两部门印发新型能源体系建设“十五五”规划","agency":"国家发展改革委、国家能源局","summary":"提出建设新型电力系统，完善能源基础设施及市场价格机制。","url":"https://www.nea.gov.cn/20260625/0ccfdc1674e84868b49480edf584eb5f/c.html"},
+        {"date":"2026-06-26","publishedAt":"2026-07-20","kind":"实施进展","title":"国家能源局说明新型储能试点及市场机制安排","agency":"国家能源局","summary":"说明储能试点、容量电价和电力市场参与方向，不把规划目标当作已经实现。","url":"https://www.nea.gov.cn/20260720/5829ec81daff4b8aaf852164fe2bb1a6/c.html"}
+      ]
+    },
+    {
+      "id": "biomedicine",
+      "category": "产业政策",
+      "track": "增量成长",
+      "title": "生物医药与高端医疗装备",
+      "summary": "把创新药研发、支付准入和高端医疗装备推广放在一条链上观察。",
+      "phase": "申报与实施",
+      "focus": "临床价值、审评注册、医保及商保准入、医院应用",
+      "marketImpact": ["研发回报", "支付准入", "设备国产化"],
+      "observation": "药械获批不等于放量，后续分开核对目录准入、医院使用和企业销售。",
+      "metrics": ["创新药获批与目录准入", "高端医疗装备项目名单", "医药制造业增加值"],
+      "events": [
+        {"date":"2025-07-01","publishedAt":"2025-07-01","kind":"正式文件","title":"两部门印发支持创新药高质量发展的措施","agency":"国家医保局、国家卫生健康委","summary":"提出创新药支持措施，后续以实际准入和临床使用核验进度。","url":"https://www.nhsa.gov.cn/art/2025/7/1/art_104_17058.html"},
+        {"date":"2026-09-08","publishedAt":"2026-09-10","kind":"项目申报通知","title":"三部门启动高端医疗装备推广应用项目申报","agency":"工业和信息化部、国家卫生健康委、国家药监局","summary":"组织年度项目申报，项目遴选结果和推广收入需后续核对。","url":"https://www.miit.gov.cn/jgsj/zbys/wjfb/art/2026/art_5b0bba662ba34729bbeab93363b75609.html"}
+      ]
+    },
+    {
+      "id": "aerospace-low-altitude",
+      "category": "产业政策",
+      "track": "增量成长",
+      "title": "航空航天与低空经济",
+      "summary": "区分航空航天长期制造投入与低空经济所需的空域、设施和运营条件。",
+      "phase": "制度与设施建设",
+      "focus": "适航、空域、低空通信、航空装备和可运营场景",
+      "marketImpact": ["航空装备", "低空基建", "运营服务"],
+      "observation": "跟踪实际适航许可、基础设施项目和商业运营，不把政策提及等同订单。",
+      "metrics": ["适航认证", "低空设施项目", "航空装备交付"],
+      "events": [
+        {"date":"2026-02-03","publishedAt":"2026-02-12","kind":"实施意见","title":"五部门部署低空信息基础设施建设","agency":"工业和信息化部等五部门","summary":"围绕通信、监视、导航、智能网联系统及标准化提出任务。","url":"https://www.cac.gov.cn/2026-02/12/c_1772636107182872.htm"},
+        {"date":"2026-07-01","publishedAt":"2025-12-27","kind":"法律施行","title":"修订后的民用航空法施行","agency":"全国人大常委会（民航局转载）","summary":"法律规定优化低空空域配置、完善适航审定和飞行管理制度。","url":"https://www.caac.gov.cn/XXGK/XXGK/FLFG/202512/t20251227_229597.html"}
+      ]
+    },
+    {
+      "id": "raw-material-supply-reform",
+      "category": "产业政策",
+      "track": "供给侧改革",
+      "title": "钢铁、有色与建材供给治理",
+      "summary": "跟踪产能置换、能效约束、落后产能退出、行业整合和高端材料升级。",
+      "phase": "规则实施",
+      "focus": "新增产能约束、能效门槛、兼并重组与产品结构",
+      "marketImpact": ["供给收缩", "价格修复", "集中度提升"],
+      "observation": "用产量、产能利用率、库存、价差和企业资本开支验证，不能仅凭会议表述判断供给已经出清。",
+      "metrics": ["粗钢与水泥产量", "产能利用率", "行业利润与库存"],
+      "events": [
+        {"date":"2026-05-18","publishedAt":"2026-05-18","kind":"正式规则","title":"钢铁行业产能置换实施办法发布","agency":"工业和信息化部","summary":"通过产能置换、减量和结构优化推进供给侧改革与行业高质量发展。","url":"https://www.miit.gov.cn/jgsj/ycls/gt/art/2026/art_3b0a7b6ef82a43259a544f27945e5ae4.html"},
+        {"date":"2026-04-11","publishedAt":"2026-04-11","kind":"行动方案","title":"重点行业节能降碳改造覆盖钢铁、有色和建材","agency":"工业和信息化部等部门","summary":"以能效和碳排放约束推动传统原材料行业改造升级。","url":"https://www.miit.gov.cn/xwfb/szyw/art/2026/art_a3b52f0a8c1c4bcc92efb30ee412a47f.html"}
+      ]
+    },
+    {
+      "id": "petrochemical-upgrade",
+      "category": "产业政策",
+      "track": "供给侧改革",
+      "title": "石化化工结构调整",
+      "summary": "关注炼化、乙烯、合成氨、甲醇等高耗能环节的能效改造、老旧装置退出和高端化工材料。",
+      "phase": "改造实施",
+      "focus": "装置能效、开工率、产品价差与高端化转型",
+      "marketImpact": ["低效产能退出", "化工价差", "技改投资"],
+      "observation": "同时看供需、检修、原料成本和新增产能，避免把行政要求单独解释为盈利修复。",
+      "metrics": ["炼化与化工品开工率", "产品价差", "技改投资"],
+      "events": [
+        {"date":"2026-04-11","publishedAt":"2026-04-11","kind":"行动方案","title":"重点行业节能降碳改造覆盖炼化和基础化工","agency":"工业和信息化部等部门","summary":"通过能效诊断、设备改造和标准约束推动炼化、乙烯、合成氨、甲醇等行业升级。","url":"https://wap.miit.gov.cn/jgsj/jns/wjfb/art/2026/art_f07815f475004ca29909731f57853de1.html"}
+      ]
+    },
+    {
+      "id": "new-energy-competition",
+      "category": "产业政策",
+      "track": "供给侧改革",
+      "title": "光伏、锂电与新能源汽车竞争治理",
+      "summary": "跟踪产能调控、能效标准、质量监管、价格执法、兼并重组和知识产权保护。",
+      "phase": "综合治理",
+      "focus": "低价竞争、产能利用率、落后产能退出与行业整合",
+      "marketImpact": ["反内卷", "盈利修复", "优胜劣汰"],
+      "observation": "重点验证产能利用率、价格、库存、资本开支和兼并重组，会议要求不等于供给已经收缩。",
+      "metrics": ["产业链价格", "产能利用率", "库存与资本开支"],
+      "events": [
+        {"date":"2026-04-17","publishedAt":"2026-04-20","kind":"行业座谈会","title":"多部门部署光伏行业“反内卷”综合治理","agency":"工业和信息化部等部门","summary":"提出产能调控、标准引领、价格执法、质量监管、兼并重组和知识产权保护。","url":"https://wap.miit.gov.cn/gyhxxhb/jgsj/dzxxsnew/gzdt/art/2026/art_95dc0471cfb84266b375da36914d20a6.html"},
+        {"date":"2025-09-16","publishedAt":"2025-09-16","kind":"治理部署","title":"统一市场建设关注新能源领域无序竞争","agency":"国家发展改革委","summary":"把地方保护、补贴招商、价格和产能治理纳入统一市场框架。","url":"https://www.ndrc.gov.cn/fzggw/wld/zhb/zyhd/202509/t20250916_1400529.html"}
+      ]
+    },
+    {
+      "id": "advanced-manufacturing",
+      "category": "产业政策",
+      "track": "传统升级",
+      "title": "设备更新、机器人与智能制造",
+      "summary": "把制造业技改、设备更新、机器人和智能工厂的项目安排串联观察。",
+      "phase": "政策实施",
+      "focus": "技改贷款、设备投资、智能工厂与重点产业链",
+      "marketImpact": ["设备需求", "自动化渗透", "制造效率"],
+      "observation": "跟踪资金投放、设备购置投资和企业订单；会议部署、资金安排与实际支出分开核验。",
+      "metrics": ["设备购置投资", "制造业投资", "工业机器人产量"],
+      "events": [
+        {"date":"2026-04-30","publishedAt":"2026-04-30","kind":"政策通知","title":"三部门扩大科技创新和技术改造贷款支持范围","agency":"人民银行、国家发展改革委、财政部","summary":"明确扩大设备更新贷款支持范围，后续仍需观察贷款投放和项目实施。","url":"https://www.ndrc.gov.cn/xxgk/jd/jd/202604/t20260430_1405044_ext.html"},
+        {"date":"2024-04-09","publishedAt":"2024-04-09","kind":"实施方案","title":"工业领域设备更新实施方案发布","agency":"工业和信息化部等部门","summary":"明确先进设备更新、数字化转型、绿色装备推广和本质安全改造。","url":"https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2024/art_3a8bb9999baa45039305de354c868244.html"}
+      ]
+    },
+    {
+      "id": "resource-circularity",
+      "category": "产业政策",
+      "track": "传统升级",
+      "title": "资源循环利用与再制造",
+      "summary": "跟踪动力电池、光伏组件等退役产品的回收责任、规范拆解、材料再生和设备更新。",
+      "phase": "规则实施",
+      "focus": "回收体系、溯源管理、再生材料利用率和处理经济性",
+      "marketImpact": ["再生材料供给", "回收设备需求", "合规成本"],
+      "observation": "区分回收量、实际处理量和再生材料销售；法规实施不等于回收企业已获得稳定利润。",
+      "metrics": ["废旧电池规范回收量", "退役光伏组件处理量", "再生材料销量与毛利率"],
+      "events": [
+        {"date":"2026-04-01","publishedAt":"2026-01-16","kind":"规章施行","title":"新能源汽车废旧动力电池回收管理办法施行","agency":"工业和信息化部等六部门","summary":"明确动力电池全生命周期溯源、回收责任和综合利用要求，实施日期与文件发布日期分别列示。","url":"https://www.miit.gov.cn/gyhxxhb/jgsj/cyzcyfgs/bmgz/jdcjxl/art/2026/art_392462fdc40c415ea4a4129cac3028c2.html"},
+        {"date":"2026-02-13","publishedAt":"2026-03-03","kind":"指导意见","title":"六部门提出促进光伏组件综合利用的指导意见","agency":"工业和信息化部等六部门","summary":"部署报废判定、规范交售、综合利用技术和产业体系建设；项目规模仍待实际数据验证。","url":"https://www.miit.gov.cn/zwgk/zcwj/wjfb/yj/art/2026/art_95cd611e3c664dfc96cd76ace1aa24d7.html"}
+      ]
+    },
+    {
+      "id": "urban-renewal-construction",
+      "category": "产业政策",
+      "track": "传统升级",
+      "title": "房地产新模式与城市更新",
+      "summary": "从增量开发转向好房子、存量改造、城市更新和可持续投融资。",
+      "phase": "机制建设",
+      "focus": "存量盘活、城市更新项目、保障性住房与投融资闭环",
+      "marketImpact": ["存量改造", "建筑建材需求", "REITs与运营"],
+      "observation": "区分政策机制、项目入围、实际开工和现金流，避免把投资计划直接当成行业销售回升。",
+      "metrics": ["城市更新投资", "房屋新开工与竣工", "房地产销售与库存"],
+      "events": [
+        {"date":"2025-05-02","publishedAt":"2025-05-16","kind":"正式意见","title":"两办发布持续推进城市更新行动的意见","agency":"中共中央办公厅、国务院办公厅","summary":"提出存量房屋改造、低效用地盘活、多元投融资和城市更新法规标准建设。","url":"https://www.mee.gov.cn/zcwj/zyygwj/202505/t20250516_1119546.shtml"}
+      ]
+    },
+    {
+      "id": "energy-security",
+      "category": "产业政策",
+      "track": "基础供给与内需",
+      "title": "能源保供与煤电转型",
+      "summary": "同时观察煤炭油气安全保供、煤电调节能力和清洁能源替代。",
+      "phase": "规划实施",
+      "focus": "能源安全、煤电灵活性改造、油气储备与价格机制",
+      "marketImpact": ["保供投资", "煤电改造", "资源品价格"],
+      "observation": "综合看产量、进口、库存、利用小时和价格，不把安全保供与单纯扩产等同。",
+      "metrics": ["煤炭油气产量与库存", "煤电利用小时", "能源投资"],
+      "events": [
+        {"date":"2026-06-13","publishedAt":"2026-06-25","kind":"正式规划","title":"新型能源体系建设“十五五”规划统筹安全与转型","agency":"国家发展改革委、国家能源局","summary":"围绕能源安全保障、基础设施、新型电力系统和绿色转型作出系统部署。","url":"https://www.nea.gov.cn/20260625/0ccfdc1674e84868b49480edf584eb5f/c.html"}
+      ]
+    },
+    {
+      "id": "agriculture-food-security",
+      "category": "产业政策",
+      "track": "基础供给与内需",
+      "title": "农业、粮食安全与种业",
+      "summary": "覆盖粮食安全、种业、农机、农业保险、设施农业和农产品流通。",
+      "phase": "年度政策实施",
+      "focus": "粮食产能、种业创新、农机更新和农业风险保障",
+      "marketImpact": ["农资与农机", "种业研发", "农业保险"],
+      "observation": "补贴政策与企业盈利需通过播种面积、单产、价格、销量和应收款质量交叉验证。",
+      "metrics": ["粮食产量与播种面积", "农机销量", "农业保险覆盖"],
+      "events": [
+        {"date":"2026-03-25","publishedAt":"2026-03-25","kind":"政策清单","title":"农业农村部发布年度强农惠农富农政策清单","agency":"农业农村部","summary":"覆盖耕地补贴、农机购置、粮食生产者补贴和农业保险等政策工具。","url":"https://jcs.moa.gov.cn/gzdt/202603/t20260325_6482635.htm"}
+      ]
+    },
+    {
+      "id": "consumer-service-supply",
+      "category": "产业政策",
+      "track": "基础供给与内需",
+      "title": "消费品、服务业与银发经济",
+      "summary": "跟踪汽车家电、零售、文旅、健康养老、家政托育等供给扩容和质量升级。",
+      "phase": "扩容提质",
+      "focus": "供给结构、消费场景、以旧换新和服务能力",
+      "marketImpact": ["消费需求", "服务供给", "品牌集中度"],
+      "observation": "把补贴、场景建设和实际零售服务收入分开验证，关注政策退出后的需求持续性。",
+      "metrics": ["社零与服务零售额", "汽车家电销量", "服务业生产指数"],
+      "events": [
+        {"date":"2026-03-05","publishedAt":"2026-03-14","kind":"政府工作报告","title":"年度部署提振消费与扩大优质服务供给","agency":"国务院","summary":"把扩大内需与供给结构升级结合，后续按具体实施文件和消费数据跟踪。","url":"https://www.miit.gov.cn/xwfb/szyw/art/2026/art_a0f73af7d13b44b080ae9b71903939af.html"}
+      ]
+    },
+    {
+      "id": "logistics-circulation",
+      "category": "产业政策",
+      "track": "基础供给与内需",
+      "title": "交通物流与商贸流通降本",
+      "summary": "覆盖多式联运、仓储冷链、铁路物流、农村寄递和供应链数字化。",
+      "phase": "体系建设",
+      "focus": "物流成本、基础设施更新、组织效率和跨境通道",
+      "marketImpact": ["物流降本", "仓储更新", "供应链效率"],
+      "observation": "跟踪社会物流总费用率、货运量、仓储投资和头部企业单位成本。",
+      "metrics": ["社会物流总费用率", "货运量", "仓储物流投资"],
+      "events": [
+        {"date":"2026-03-05","publishedAt":"2026-03-14","kind":"政府工作报告","title":"年度部署降低全社会物流成本","agency":"国务院","summary":"后续重点核对铁路物流、多式联运、仓储改造和农村流通的具体实施。","url":"https://www.miit.gov.cn/xwfb/szyw/art/2026/art_a0f73af7d13b44b080ae9b71903939af.html"}
+      ]
+    },
+    {
+      "id": "private-economy-law",
+      "category": "制度建设",
+      "track": "市场基础制度",
+      "title": "民营经济促进法与产权保护",
+      "summary": "从法律通过、生效到部门落实，持续观察民营企业经营环境。",
+      "phase": "实施跟踪",
+      "focus": "公平竞争、投资融资、权益保护与配套制度",
+      "marketImpact": ["风险溢价", "民间投资", "融资可得性"],
+      "observation": "跟踪配套细则和民间投资，相关会议属于同主题观察，不表示法律发生修订。",
+      "metrics": ["民间固定资产投资", "企业中长期贷款", "营商环境执行案例"],
+      "events": [
+        {"date":"2025-04-30","publishedAt":"2025-04-30","kind":"法律通过","title":"全国人大常委会通过民营经济促进法","agency":"全国人大常委会","summary":"法律于2025年5月20日起施行。","url":"https://www.npc.gov.cn/c2/c30834/202504/t20250430_445069.html"},
+        {"date":"2025-05-20","publishedAt":"2025-05-20","kind":"实施通知","title":"国家发展改革委部署贯彻实施","agency":"国家发展改革委","summary":"要求完善配套制度、清理不一致文件并落实法律规定。","url":"https://www.ndrc.gov.cn/xxgk/zcfb/tz/202505/t20250520_1397832.html"}
+      ]
+    },
+    {
+      "id": "unified-market-competition",
+      "category": "制度建设",
+      "track": "市场基础制度",
+      "title": "全国统一大市场与公平竞争",
+      "summary": "合并跟踪市场准入、地方保护、公平竞争审查、招标采购和信用制度。",
+      "phase": "持续实施",
+      "focus": "五统一一开放、清理地方壁垒和规范招商补贴",
+      "marketImpact": ["要素流动", "竞争秩序", "全国市场空间"],
+      "observation": "重点观察具体壁垒清理、执法案例和跨区域经营成本，不只记录原则性表述。",
+      "metrics": ["市场准入清单更新", "公平竞争审查与执法案例", "跨区域经营成本"],
+      "events": [
+        {"date":"2025-04-23","publishedAt":"2025-04-23","kind":"正式文件","title":"市场准入负面清单（2025年版）印发","agency":"国家发展改革委、商务部、市场监管总局","summary":"新版清单实施，2022年版同时废止。","url":"https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20499"},
+        {"date":"2025-08-15","publishedAt":"2025-08-15","kind":"制度部署","title":"纵深推进全国统一大市场建设","agency":"国家发展改革委","summary":"围绕产权保护、市场准入、公平竞争和社会信用等基础制度推进统一市场。","url":"https://www.ndrc.gov.cn/wsdwhfz/202508/t20250815_1399806.html"}
+      ]
+    },
+    {
+      "id": "business-environment-enforcement",
+      "category": "制度建设",
+      "track": "市场基础制度",
+      "title": "营商环境与涉企执法规范",
+      "summary": "跟踪行政检查、涉企收费、账款拖欠、信用修复和政务服务规则。",
+      "phase": "持续治理",
+      "focus": "规范执法、降低制度性交易成本和稳定经营预期",
+      "marketImpact": ["合规成本", "现金流改善", "经营预期"],
+      "observation": "以收费清理、拖欠账款偿还、执法频次和企业反馈验证，不以政策数量评分。",
+      "metrics": ["涉企收费清理", "拖欠企业账款", "行政检查与信用修复"],
+      "events": [
+        {"date":"2026-03-05","publishedAt":"2026-03-14","kind":"政府工作报告","title":"年度部署优化营商环境和规范涉企行政执法","agency":"国务院","summary":"作为年度总纲，后续以具体法规、专项行动和执行结果跟踪。","url":"https://www.miit.gov.cn/xwfb/szyw/art/2026/art_a0f73af7d13b44b080ae9b71903939af.html"}
+      ]
+    },
+    {
+      "id": "data-elements",
+      "category": "制度建设",
+      "track": "要素与创新制度",
+      "title": "数据要素与公共数据授权运营",
+      "summary": "跟踪数据产权、登记、授权运营、价格形成、收益分配与安全治理。",
+      "phase": "试行规范实施",
+      "focus": "公共数据供给、数据产品交易和合规边界",
+      "marketImpact": ["数据资产化", "数据服务", "合规成本"],
+      "observation": "观察登记数量、授权运营项目、数据产品收入与合规成本，避免把登记等同资产价值。",
+      "metrics": ["公共数据登记与授权项目", "数据产品交易", "数据安全合规事件"],
+      "events": [
+        {"date":"2025-01-08","publishedAt":"2025-01-20","kind":"试行规范","title":"公共数据资源授权运营实施规范印发","agency":"国家发展改革委、国家数据局","summary":"明确授权程序、运营要求、登记、披露、收益和安全边界。","url":"https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20474"}
+      ]
+    },
+    {
+      "id": "innovation-ip",
+      "category": "制度建设",
+      "track": "要素与创新制度",
+      "title": "科技成果转化与知识产权",
+      "summary": "跟踪专利转化、职务科技成果、知识产权保护、中试平台和技术交易制度。",
+      "phase": "年度推进",
+      "focus": "确权激励、专利转化、中试能力和侵权保护",
+      "marketImpact": ["研发回报", "技术许可", "创新资产定价"],
+      "observation": "以专利产业化率、技术合同金额和许可收入验证，不能以专利数量替代质量。",
+      "metrics": ["技术合同成交额", "专利产业化率", "知识产权许可收入"],
+      "events": [
+        {"date":"2026-05-16","publishedAt":"2026-05-16","kind":"年度推进计划","title":"2026年知识产权强国建设推进计划印发","agency":"国家知识产权强国建设工作部际联席会议办公室","summary":"覆盖知识产权保护、转化运用和重点产业专利等年度任务。","url":"https://www.cnipa.gov.cn/col/col1408/index.html"},
+        {"date":"2025-12-22","publishedAt":"2025-12-29","kind":"专项报告","title":"国务院报告科技成果转化工作情况","agency":"国务院（全国人大网发布）","summary":"总结成果转化、中试平台和新领域知识产权制度建设进展。","url":"https://www.npc.gov.cn/npc/c2/c30834/202512/t20251229_450858.html"}
+      ]
+    },
+    {
+      "id": "land-housing-system",
+      "category": "制度建设",
+      "track": "要素与创新制度",
+      "title": "土地、住房与城市更新制度",
+      "summary": "跟踪存量低效用地、用途转换、房地产发展新模式、住房保障和城市更新投融资。",
+      "phase": "制度完善",
+      "focus": "土地用途、存量盘活、租购并举和项目现金流机制",
+      "marketImpact": ["土地价值重估", "存量资产盘活", "住房供给结构"],
+      "observation": "区分中央制度、地方细则和项目落地，关注地方财政与企业现金流约束。",
+      "metrics": ["低效用地盘活", "保障房与租赁住房", "城市更新项目与REITs"],
+      "events": [
+        {"date":"2025-05-02","publishedAt":"2025-05-16","kind":"正式意见","title":"城市更新意见完善用地与投融资制度","agency":"中共中央办公厅、国务院办公厅","summary":"提出用途转换、低效用地盘活、多元投融资、维修资金和法规标准等制度安排。","url":"https://www.mee.gov.cn/zcwj/zyygwj/202505/t20250516_1119546.shtml"}
+      ]
+    },
+    {
+      "id": "factor-mobility",
+      "category": "制度建设",
+      "track": "要素与创新制度",
+      "title": "劳动力、人才与技术要素流动",
+      "summary": "跟踪人才评价、职业资格、公共服务、技术市场和跨区域要素配置。",
+      "phase": "改革推进",
+      "focus": "要素跨区域流动、职业技能与技术交易效率",
+      "marketImpact": ["人才供给", "用工成本", "技术扩散"],
+      "observation": "关注人才净流入、工资与职位缺口、技术交易以及公共服务可携带性。",
+      "metrics": ["人才与劳动力流动", "职位空缺与工资", "技术合同成交额"],
+      "events": [
+        {"date":"2026-03-05","publishedAt":"2026-03-14","kind":"政府工作报告","title":"年度部署完善要素市场化配置和人才机制","agency":"国务院","summary":"作为改革总纲，后续以就业、人才、科技成果转化等专项制度跟踪。","url":"https://www.miit.gov.cn/xwfb/szyw/art/2026/art_a0f73af7d13b44b080ae9b71903939af.html"}
+      ]
+    },
+    {
+      "id": "fiscal-tax-debt",
+      "category": "制度建设",
+      "track": "财税金融制度",
+      "title": "财税体制与地方债务治理",
+      "summary": "跟踪预算制度、央地财政关系、税制改革、地方债务置换和财政可持续性。",
+      "phase": "改革与化债并行",
+      "focus": "预算约束、转移支付、税制、隐性债务和地方财政空间",
+      "marketImpact": ["财政空间", "城投信用", "税负结构"],
+      "observation": "同时看债务置换、利息负担、土地财政和基层支出压力，不能只看债券发行规模。",
+      "metrics": ["地方债务余额与利息", "土地出让收入", "转移支付与税收结构"],
+      "events": [
+        {"date":"2026-03-16","publishedAt":"2026-03-16","kind":"预算报告","title":"预算报告披露财税改革和化债进展","agency":"财政部","summary":"涉及预算管理、税收立法、地方债务置换和政府债务制度建设。","url":"https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260316_3985331.htm"}
+      ]
+    },
+    {
+      "id": "capital-market-reform",
+      "category": "制度建设",
+      "track": "财税金融制度",
+      "title": "资本市场投融资与长期资金",
+      "summary": "跟踪发行上市、并购重组、再融资、退市分红和中长期资金入市制度。",
+      "phase": "综合改革",
+      "focus": "制度包容性、资本形成、长期资金和投资者回报",
+      "marketImpact": ["股权风险溢价", "并购重组", "增量资金"],
+      "observation": "观察保险、养老金、公募等实际权益配置和制度落地，不把政策发布直接等同市场增量资金。",
+      "metrics": ["中长期资金权益配置", "并购重组与再融资", "分红回购与退市"],
+      "events": [
+        {"date":"2025-01-22","publishedAt":"2025-01-22","kind":"实施方案","title":"六部门推动中长期资金入市","agency":"中央金融办、中国证监会等","summary":"围绕保险、社保、养老金、年金和公募基金的长期考核与权益配置作出安排。","url":"https://www.csrc.gov.cn/csrc/c100028/c7535174/content.shtml"},
+        {"date":"2026-01-30","publishedAt":"2026-01-30","kind":"专题座谈会","title":"证监会研究十五五资本市场制度安排","agency":"中国证监会","summary":"涉及发行上市、再融资、并购重组、长期资金、分红回购和上市公司治理。","url":"https://www.csrc.gov.cn/csrc/c100028/c7612587/content.shtml"}
+      ]
+    },
+    {
+      "id": "state-owned-enterprise-reform",
+      "category": "制度建设",
+      "track": "企业治理制度",
+      "title": "国企改革与国有资本布局",
+      "summary": "跟踪国有资本向战略领域集中、专业化整合、公司治理、考核激励和低效资产退出。",
+      "phase": "深化推进",
+      "focus": "资本布局、并购整合、上市平台和经营效率",
+      "marketImpact": ["资产重组", "经营效率", "股东回报"],
+      "observation": "区分集团层面部署与上市公司可执行事项，重点看交易方案、盈利改善和资本回报。",
+      "metrics": ["央企专业化整合", "国企ROE与分红", "低效资产处置"],
+      "events": [
+        {"date":"2026-03-05","publishedAt":"2026-03-14","kind":"政府工作报告","title":"年度部署优化国有经济布局和国企改革","agency":"国务院","summary":"作为年度总体安排，后续以国资委专项文件和企业交易公告核验。","url":"https://www.miit.gov.cn/xwfb/szyw/art/2026/art_a0f73af7d13b44b080ae9b71903939af.html"},
+        {"date":"2015-08-24","publishedAt":"2015-09-13","kind":"基础制度","title":"深化国有企业改革指导意见构建基础框架","agency":"中共中央、国务院（国资委发布）","summary":"明确分类改革、以管资本为主、布局优化和市场化经营机制等基础制度。","url":"https://www.sasac.gov.cn/n2588020/n2588072/n2591426/n2591428/c3733641/content.html"}
+      ]
+    },
+    {
+      "id": "carbon-market-institutions",
+      "category": "制度建设",
+      "track": "生态与民生制度",
+      "title": "碳市场与绿色转型规则",
+      "summary": "跟踪排放核算、重点排放单位名录、配额分配及履约，并与传统行业能效改造相互对照。",
+      "phase": "年度履约管理",
+      "focus": "发电、钢铁、水泥、铝冶炼行业的核算质量与配额清缴",
+      "marketImpact": ["碳成本", "节能技改", "行业成本分化"],
+      "observation": "配额管理规则与企业实际碳成本分开记录，核对配额分配、成交价格、履约和排放数据。",
+      "metrics": ["纳管企业名录", "配额与履约情况", "碳价和单位产品排放"],
+      "events": [
+        {"date":"2026-01-27","publishedAt":"2026-02-09","kind":"年度管理通知","title":"生态环境部部署2026年全国碳市场管理工作","agency":"生态环境部","summary":"明确四个行业重点排放单位名录、排放数据核查及配额分配和清缴要求；其他行业报告管理与正式纳管需区分。","url":"https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202602/t20260209_1143900.html"}
+      ]
+    },
+    {
+      "id": "medical-payment-access",
+      "category": "制度建设",
+      "track": "生态与民生制度",
+      "title": "医保支付与医药准入制度",
+      "summary": "跟踪DRG/DIP支付规则、基本医保与商保药品目录、创新药准入及医疗机构实际使用。",
+      "phase": "目录实施与规则调整",
+      "focus": "支付方式、药品准入、医院采购与患者可及性",
+      "marketImpact": ["医院支付约束", "创新药准入", "医药需求结构"],
+      "observation": "会议论证与正式分组方案区分记录；目录纳入不代表医院已采购或企业收入兑现。",
+      "metrics": ["DRG/DIP正式分组方案", "目录药品院内配备", "医保和商保实际支付"],
+      "events": [
+        {"date":"2025-12-05","publishedAt":"2025-12-07","kind":"正式目录通知","title":"发布2025年基本医保和商保创新药目录","agency":"国家医保局、人力资源社会保障部","summary":"公布两类药品目录及实施安排，后续观察医疗机构配备与实际支付。","url":"https://www.nhsa.gov.cn/art/2025/12/7/art_104_18970.html"},
+        {"date":"2026-03-20","publishedAt":"2026-03-20","kind":"方案论证进展","title":"国家医保局介绍按病种付费3.0版分组调整","agency":"国家医保局","summary":"介绍临床论证和分组调整进展，属于方案形成过程，不标作正式实施。","url":"https://www.nhsa.gov.cn/art/2026/3/20/art_14_19970.html"}
+      ]
+    },
+    {
+      "id": "pension-long-term-capital",
+      "category": "制度建设",
+      "track": "生态与民生制度",
+      "title": "养老保障与长期资金制度",
+      "summary": "把企业年金、个人养老金和养老保险制度分层跟踪，观察长期储蓄如何转化为长期投资。",
+      "phase": "覆盖扩展",
+      "focus": "年金覆盖、缴费持续性、产品配置及养老资金投资期限",
+      "marketImpact": ["长期资金供给", "养老产品需求", "资本市场机构化"],
+      "observation": "开户数、参加人数、缴费额、积累规模及权益配置分开核对，不以开户数替代真实资金流入。",
+      "metrics": ["企业年金参加人数与基金规模", "个人养老金缴费额", "养老资金资产配置"],
+      "events": [
+        {"date":"2025-12-31","publishedAt":"2026-01-15","kind":"正式意见","title":"两部门提出进一步扩大企业年金覆盖","agency":"人力资源社会保障部、财政部","summary":"明确扩大覆盖、简化建立程序、灵活缴费及试点安排；长期资金规模需后续统计验证。","url":"https://www.mohrss.gov.cn/wap/zc/zcwj/202601/t20260115_565510.html"}
+      ]
+    },
+    {
+      "id": "platform-competition-rules",
+      "category": "制度建设",
+      "track": "开放与监管",
+      "title": "平台经济与算法竞争规则",
+      "summary": "跟踪平台抽佣、排他交易、算法定价、数据使用及反垄断合规要求。",
+      "phase": "合规指引实施",
+      "focus": "平台竞争行为、商家经营成本及执法边界",
+      "marketImpact": ["平台利润率", "商家议价能力", "合规投入"],
+      "observation": "指引不等于具体执法结论，后续核对正式执法案例、费率变化和商家经营数据。",
+      "metrics": ["平台抽佣与服务费率", "反垄断执法案例", "平台内商家经营情况"],
+      "events": [
+        {"date":"2026-01-28","publishedAt":"2026-02-13","kind":"正式指引","title":"市场监管总局发布互联网平台反垄断合规指引","agency":"市场监管总局","summary":"提示算法共谋、平台规则及差别待遇等合规风险，为后续执法和平台自查提供参照。","url":"https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fldzfys/art/2026/art_ad10c5301fcb426cb839153ca9f5a274.html"}
+      ]
+    },
+    {
+      "id": "foreign-investment-opening",
+      "category": "制度建设",
+      "track": "开放与监管",
+      "title": "外资准入与制度型开放",
+      "summary": "跟踪外资准入负面清单、服务业开放、外资并购、跨境数据和自贸试验区规则。",
+      "phase": "开放措施实施",
+      "focus": "准入放宽、投资便利、规则衔接和外资企业再投资",
+      "marketImpact": ["外资流入", "服务业开放", "跨境并购"],
+      "observation": "观察实际使用外资、外资企业利润再投资、并购案例和准入试点，不以签约额替代到资额。",
+      "metrics": ["实际使用外资", "外资企业再投资", "开放试点与并购案例"],
+      "events": [
+        {"date":"2026-06-22","publishedAt":"2026-06-22","kind":"行动方案","title":"三部门印发利用外资固稳促优行动方案","agency":"商务部、国家发展改革委、财政部","summary":"涉及扩大服务业准入、提升投资便利和完善外资并购管理制度。","url":"https://www.mofcom.gov.cn/swbhqzczt/lywz/art/2026/art_63003bbb653f45229535bce6b64ed141.html"}
+      ]
+    }
+  ],
+  "industryLenses": [
+    {"title":"资金与项目落地","description":"把预算和资金安排、项目申报、遴选、开工、采购与企业收入分阶段核对，避免把资金计划视为实际支出。","signals":["资金拨付与贷款投放","项目名单与开工","招标、订单和收入"],"url":"https://www.ndrc.gov.cn/xxgk/jd/jd/202604/t20260430_1405044_ext.html"},
+    {"title":"供给、价格与盈利","description":"对供给侧改革和反内卷主题，同时核对产能、产量、库存、价格、价差、资本开支和行业集中度。","signals":["产能与开工率","库存、价格与价差","兼并重组和退出"],"url":"https://wap.miit.gov.cn/gyhxxhb/jgsj/dzxxsnew/gzdt/art/2026/art_95dc0471cfb84266b375da36914d20a6.html"},
+    {"title":"标准、准入与竞争规则","description":"跟踪国家或行业标准、准入和适航规则、能效门槛、价格秩序与知识产权；区分规则制定、发布与执行。","signals":["标准正式发布","准入与能效门槛","执法及行业盈利"],"url":"https://www.ndrc.gov.cn/wsdwhfz/202508/t20250815_1399806.html"},
+    {"title":"需求与商业兑现","description":"对增量产业和内需主题，区分政策目标、订单、交付、收入和现金流，避免只看规划中的市场空间。","signals":["采购与订单","交付和渗透率","收入、利润和现金流"],"url":"https://www.miit.gov.cn/xwfb/szyw/art/2026/art_a0f73af7d13b44b080ae9b71903939af.html"}
+  ],
+  "futureWatchlist": {
+    "title": "未来产业观察名单",
+    "description": "量子科技、生物制造、氢能和核聚变能、脑机接口、具身智能、6G：先跟踪技术试验、标准、试点和商业场景，不与已有订单的成熟产业按同一尺度评判。",
+    "url": "https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_934ddb14d33e4cd5b787d88a15c5c0eb.html"
+  },
+  "sourceIndexes": [
+    {"label":"国务院政策文件库","url":"https://sousuo.www.gov.cn/zcwjk/policyDocumentLibrary"},
+    {"label":"国务院会议","url":"https://www.gov.cn/gwyzzjg/huiyi/home.htm"},
+    {"label":"全国人大常委会会议","url":"https://v.npc.gov.cn/cwhhy/index.shtml"},
+    {"label":"国家发展改革委","url":"https://www.ndrc.gov.cn/xwdt/xwfb/wap_index.html"},
+    {"label":"工业和信息化部","url":"https://www.miit.gov.cn/zwgk/"},
+    {"label":"财政部","url":"https://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/"},
+    {"label":"中国证监会","url":"https://www.csrc.gov.cn/csrc/c100028/common_list.shtml"},
+    {"label":"国务院国资委","url":"https://www.sasac.gov.cn/n2588030/index.html"},
+    {"label":"国家数据局","url":"https://www.nda.gov.cn/sjj/zwgk/zc/index.html"},
+    {"label":"商务部","url":"https://www.mofcom.gov.cn/zcfb/index.html"},
+    {"label":"国家知识产权局","url":"https://www.cnipa.gov.cn/col/col1408/index.html"},
+    {"label":"农业农村部","url":"https://www.moa.gov.cn/govpublic/"},
+    {"label":"国家能源局","url":"https://www.nea.gov.cn/"},
+    {"label":"国家医保局","url":"https://www.nhsa.gov.cn/"},
+    {"label":"生态环境部","url":"https://www.mee.gov.cn/"},
+    {"label":"市场监管总局","url":"https://www.samr.gov.cn/"},
+    {"label":"人力资源社会保障部","url":"https://www.mohrss.gov.cn/"},
+    {"label":"中国民用航空局","url":"https://www.caac.gov.cn/"}
+  ]
+}
