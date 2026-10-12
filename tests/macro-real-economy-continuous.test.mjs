@@ -222,4 +222,3 @@ test("all current real-economy candidates are finite 1–5 continuous scores", (
     assert.ok(points >= 1 && points <= 5, patch.id);
   }
 });
-

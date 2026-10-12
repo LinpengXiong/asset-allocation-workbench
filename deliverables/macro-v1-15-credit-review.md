@@ -237,4 +237,3 @@ F01/F02当前原始误差区间约±51.5/±200亿元，对应节点内分数误�
 | ZA South Africa | 33.7 | 33.6 | 主对照 |
 
 原始CSV及全部五个季度中国序列见同目录 `macro-v1-15-credit-evidence.json`；规则节点与观察候选见 `macro-v1-15-credit-proposal.json`。
-
